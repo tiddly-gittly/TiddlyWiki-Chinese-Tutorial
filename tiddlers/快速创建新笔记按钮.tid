@@ -1,0 +1,22 @@
+created: 20210902045426600
+creator: 林一二
+modified: 20210902045515524
+modifier: 林一二
+title: 快速创建新笔记按钮
+tmap.id: 977bfe5d-f8e1-44b8-92a1-607e375ab116
+type: text/vnd.tiddlywiki
+
+<fieldset>
+	<legend>快速添加</legend>
+
+	<$button>
+		<$action-sendmessage $message="tm-new-tiddler" title="xxx" text="""<$macrocall $name="locator-view" baseTitle=<<currentTiddler>> />""" tags="Index" />
+	添加新文件夹(Tag)
+	</$button>
+
+	<$button>
+		<$action-sendmessage $message="tm-new-tiddler" title="xxx" tags="教程" text="!! " />
+	添加新教程
+	</$button>
+
+</fieldset>
