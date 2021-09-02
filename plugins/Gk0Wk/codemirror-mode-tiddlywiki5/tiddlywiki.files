@@ -37,6 +37,14 @@
                 "module-type": "codemirror"
             },
             "file": "hint/hint-tiddlywiki5.js"
+        },
+        {
+            "fields": {
+                "type": "application/javascript",
+                "title": "$:/plugins/tiddlywiki/codemirror/addon/other/clickable-link.js",
+                "module-type": "codemirror"
+            },
+            "file": "other/clickable-link.js"
         }
     ]
 }
