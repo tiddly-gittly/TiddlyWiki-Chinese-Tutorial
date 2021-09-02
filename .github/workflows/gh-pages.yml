@@ -1,4 +1,4 @@
-name: Deploy Tiddlywiki To Github Pages
+name: 部署 Tiddlywiki 静态页面到 Github Pages
 
 on:
   push:
@@ -14,12 +14,12 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Install Dependency
+      - name: 安装 NodeJS 依赖
         run: npm install
-      - name: Build
+      - name: 构建
         run: npm run build
 
-      - name: Deploy
+      - name: 部署
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

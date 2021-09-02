@@ -1,0 +1,12 @@
+name: 内容合并投票
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, closed]
+
+jobs:
+  democracy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: 计算投票结果
+        uses: myyk/git-democracy@v1
