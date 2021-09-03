@@ -6,6 +6,10 @@
 
 ## 贡献内容
 
+### 没有Github账号版
+
+使用知乎账号，在 [中文社区共建的太微（TiddlyWiki）教程有哪些需要改进的地方？](https://www.zhihu.com/question/484539250) 里留言。
+
 ### 简单版
 
 0. 点击[申请](https://tiddlywiki-chinese-team-invite.herokuapp.com/)加入贡献团队。
