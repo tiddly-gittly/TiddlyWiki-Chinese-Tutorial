@@ -6,9 +6,22 @@
 
 ## 贡献内容
 
-- 下载 [Github Desktop](https://desktop.github.com/)，用于一键同步 Wiki 内容
-- 下载 [TiddlyGit](https://github.com/tiddly-gittly/TiddlyGit-Desktop)，用于在本地打开 Wiki
-- 用 Github Desktop 打开此项目，它会把内容同步到本地一个文件夹里，可以选择把文件夹放在桌面上
+### 简单版
+
+0. 点击[申请](https://tiddlywiki-chinese-team-invite.herokuapp.com/)加入贡献团队。
+1. 下载 [TiddlyGit](https://github.com/tiddly-gittly/TiddlyGit-Desktop)，用于在本地打开和编辑 Wiki
+2. 用 Github Desktop 打开此项目，它会把内容同步到本地一个文件夹里，可以选择把文件夹放在桌面上
+
+![docs/image/clone-code-tg.png](docs/image/clone-code-tg.png)
+![docs/image/clone-code-tg2.png](docs/image/clone-code-tg2.png)
+
+然后就能编辑了，编辑结果会每30分钟自动同步上来，或是在重启应用后自动同步上来。
+
+### 专业版
+
+- 下载 [Github Desktop](https://desktop.github.com/)，用于一键同步 Wiki 内容，它可以用于下载教程到本地文件夹，也可以用于打开本地的教程文件夹，也可以用于一键同步教程文件夹到线上的这个知识仓库里。
+- 下载 [TiddlyGit](https://github.com/tiddly-gittly/TiddlyGit-Desktop)，用于在本地打开和编辑 Wiki
+- 用 [Github Desktop](https://desktop.github.com/) 打开此项目，用它把内容同步到本地一个文件夹里，可以选择把文件夹放在桌面上
 
 ![docs/image/clone-code.png](docs/image/clone-code.png)
 
@@ -18,6 +31,10 @@
 
 - 然后就可以修改 Wiki 内容了
 - 然后在 Github Desktop 里简要介绍写一下自己这次改了什么，并点击 Commit 按钮
+
+#### 对于简单的文档类改动
+
+直接点击
 
 ![docs/image/commit-code.png](docs/image/commit-code.png)
 
