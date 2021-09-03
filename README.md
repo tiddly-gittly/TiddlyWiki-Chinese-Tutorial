@@ -32,11 +32,15 @@
 - 然后就可以修改 Wiki 内容了
 - 然后在 Github Desktop 里简要介绍写一下自己这次改了什么，并点击 Commit 按钮
 
+![docs/image/commit-code.png](docs/image/commit-code.png)
+
 #### 对于简单的文档类改动
 
-直接点击
+直接点击 Push 按钮，提交上来
 
-![docs/image/commit-code.png](docs/image/commit-code.png)
+![docs/image/push.png](docs/image/push.png)
+
+#### 对于复杂的插件、配置文件改动
 
 - 在菜单里找到 Create Pull Request 按钮，点击它，向社区仓库提交改动申请，大家会通过投票的方式确定是否合并新的内容
 
