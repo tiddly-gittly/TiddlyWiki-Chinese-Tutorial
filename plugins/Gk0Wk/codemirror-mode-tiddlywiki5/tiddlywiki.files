@@ -45,6 +45,30 @@
                 "module-type": "codemirror"
             },
             "file": "other/clickable-link.js"
+        },
+        {
+            "fields": {
+                "title": "$:/plugins/Gk0Wk/codemirror-mode-tiddlywiki5/ControlPanel"
+            },
+            "file": "ControlPanel"
+        },
+        {
+            "fields": {
+                "title": "$:/plugins/Gk0Wk/codemirror-mode-tiddlywiki5/config/hint-preview"
+            },
+            "file": "config/hint-preview"
+        },
+        {
+            "fields": {
+                "title": "$:/plugins/Gk0Wk/codemirror-mode-tiddlywiki5/config/clickable-link"
+            },
+            "file": "config/clickable-link"
+        },
+        {
+            "fields": {
+                "title": "$:/plugins/Gk0Wk/codemirror-mode-tiddlywiki5/config/realtime-hint"
+            },
+            "file": "config/realtime-hint"
         }
     ]
 }
