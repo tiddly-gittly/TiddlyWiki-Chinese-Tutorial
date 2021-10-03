@@ -1,0 +1,12 @@
+created: 20211003091131848
+creator: 林一二
+modified: 20211003091646608
+modifier: 林一二
+tags: 欢迎来到太微！
+title: 插件开发
+tmap.id: 11f423b2-b793-47ac-a5d3-15cc6fae1524
+type: text/vnd.tiddlywiki
+
+!! 相关阅读
+
+# [[https://github.com/kewapo/The-Book-Wiki]] 是[[The-Tiddlywiki-Manual|https://github.com/kewapo/The-Tiddlywiki-Manual]]的完整版，讲解了插件开发者需要了解的很多知识。
