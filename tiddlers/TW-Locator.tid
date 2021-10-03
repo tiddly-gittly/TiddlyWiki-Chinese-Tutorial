@@ -1,8 +1,24 @@
 created: 20211003071706230
 creator: 林一二
-modified: 20211003071720091
+modified: 20211003081717354
 modifier: 林一二
 tags: 插件使用
 title: TW-Locator
 tmap.id: a478b45b-e857-4ca9-b03e-713d77340583
 type: text/vnd.tiddlywiki
+
+Locator 插件平时主要就是使用两点，往文件夹里放文件、展示文件夹树：
+
+!! 往文件夹里放文件
+
+使用笔记 A 顶部的 {{$:/core/images/new-here-button}} {{$:/language/Buttons/NewHere/Caption}} 按钮来创建新笔记，等价于把笔记 A 看做文件夹，然后往里面放入新建的笔记。
+
+你可以现在就使用当前笔记上的 {{$:/core/images/new-here-button}} 来尝试一下！
+
+其原理就是给新的笔记加上一个标签，标签内容是笔记 A 的标题，所以给一篇别的笔记加上一个和笔记 A 的标题一样的标签，也可以把那篇笔记放入笔记 A 这个文件夹里。
+
+!! 展示文件夹树
+
+主要是用了 `locator-view` 这个宏，它会给出以 `baseTitle` 这个笔记作为根文件夹的子文件夹树。
+
+详见[[TW-Locator例子：当前知识库的目录]]

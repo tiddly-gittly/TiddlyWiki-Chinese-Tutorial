@@ -1,6 +1,6 @@
 created: 20210902045426600
 creator: 林一二
-modified: 20210902045515524
+modified: 20211003080423331
 modifier: 林一二
 title: 快速创建新笔记按钮
 tmap.id: 977bfe5d-f8e1-44b8-92a1-607e375ab116
@@ -10,13 +10,20 @@ type: text/vnd.tiddlywiki
 	<legend>快速添加</legend>
 
 	<$button>
-		<$action-sendmessage $message="tm-new-tiddler" title="xxx" text="""<$macrocall $name="locator-view" baseTitle=<<currentTiddler>> />""" tags="Index" />
-	添加新文件夹(Tag)
+		<$action-sendmessage $message="tm-new-tiddler" title="xxx" text="""<$macrocall $name="locator-view" baseTitle=<<currentTiddler>> />""" tags="欢迎来到太微！" />
+	添加新类别
 	</$button>
 
 	<$button>
-		<$action-sendmessage $message="tm-new-tiddler" title="xxx" tags="教程" text="!! " />
-	添加新教程
+		<$action-sendmessage $message="tm-new-tiddler" title="xxx" tags="基础知识" text="!! " />
+	添加新基础知识
+	</$button>
+	
+	<$button>
+		<$action-sendmessage $message="tm-new-tiddler" title="xxx" tags="插件使用" text="!! " />
+	添加新插件使用教程
 	</$button>
 
 </fieldset>
+
+此外，你还可以先找到想作为文件夹的笔记，然后使用笔记顶部的 {{$:/core/images/new-here-button}} {{$:/language/Buttons/NewHere/Caption}} 来创建新笔记，这将把新笔记放入文件夹内，原理详见[[TW-Locator]]。
