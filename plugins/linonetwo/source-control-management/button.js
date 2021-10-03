@@ -44,39 +44,30 @@ Requires you are using TiddlyGit, and have install the "Inject JS" API with acce
       if (this.state.needSetUp) {
         // all commit and sync to cloud
         importButton.className += 'git-sync';
-        importButton.disabled = true;
         // tooltip
         const label = '需要配置TiddlyGit';
         importButton.title = label;
         importButton['aria-label'] = label;
         // icon
-        importButton.innerHTML = $tw.wiki.getTiddlerText(
-          '$:/plugins/linonetwo/source-control-management/icons/git-sync.svg'
-        );
+        importButton.innerHTML = $tw.wiki.getTiddlerText('$:/plugins/linonetwo/source-control-management/icons/git-sync.svg');
       } else if (this.state.syncing) {
         // all commit and sync to cloud
         importButton.className += 'git-sync syncing';
-        importButton.disabled = true;
         // tooltip
         const label = '正在同步到云端';
         importButton.title = label;
         importButton['aria-label'] = label;
         // icon
-        importButton.innerHTML = $tw.wiki.getTiddlerText(
-          '$:/plugins/linonetwo/source-control-management/icons/git-sync.svg'
-        );
+        importButton.innerHTML = $tw.wiki.getTiddlerText('$:/plugins/linonetwo/source-control-management/icons/git-sync.svg');
       } else if (this.state.count === 0 && !this.state.unsync) {
         // all commit and sync to cloud
         importButton.className += 'git-sync';
-        importButton.disabled = true;
         // tooltip
         const label = '已完全同步到云端';
         importButton.title = label;
         importButton['aria-label'] = label;
         // icon
-        importButton.innerHTML = $tw.wiki.getTiddlerText(
-          '$:/plugins/linonetwo/source-control-management/icons/git-sync.svg'
-        );
+        importButton.innerHTML = $tw.wiki.getTiddlerText('$:/plugins/linonetwo/source-control-management/icons/git-sync.svg');
       } else if (this.state.count === 0 && this.state.unsync) {
         // some commit need to sync to the cloud
         importButton.className += 'git-pull-request';
@@ -85,9 +76,7 @@ Requires you are using TiddlyGit, and have install the "Inject JS" API with acce
         importButton.title = label;
         importButton['aria-label'] = label;
         // icon
-        importButton.innerHTML = $tw.wiki.getTiddlerText(
-          '$:/plugins/linonetwo/source-control-management/icons/git-pull-request.svg'
-        );
+        importButton.innerHTML = $tw.wiki.getTiddlerText('$:/plugins/linonetwo/source-control-management/icons/git-pull-request.svg');
       } else {
         // some need to commit, and not sync to cloud yet
         importButton.className += 'git-pull-request';
@@ -96,9 +85,7 @@ Requires you are using TiddlyGit, and have install the "Inject JS" API with acce
         importButton.title = label;
         importButton['aria-label'] = label;
         // icon
-        const iconSVG = $tw.wiki.getTiddlerText(
-          '$:/plugins/linonetwo/source-control-management/icons/git-pull-request.svg'
-        );
+        const iconSVG = $tw.wiki.getTiddlerText('$:/plugins/linonetwo/source-control-management/icons/git-pull-request.svg');
         // add count indicator badge
         const countIndicator = `<span class="tiddlygit-scm-count tiddlygit-scm-count-small">${this.state.count}</span>`;
         importButton.innerHTML = `<span>${iconSVG}${countIndicator}</span>`;
@@ -109,11 +96,6 @@ Requires you are using TiddlyGit, and have install the "Inject JS" API with acce
       this.domNodes.push(importButton);
     }
 
-    async getFolderInfo() {
-      const list = await window.service.workspace.getWorkspacesAsList();
-      return list.map(({ wikiFolderLocation: wikiPath, gitUrl }) => ({ wikiPath, gitUrl }));
-    }
-
     /**
      * Event listener of button
      */
@@ -122,17 +104,11 @@ Requires you are using TiddlyGit, and have install the "Inject JS" API with acce
         this.state.syncing = true;
         this.refreshSelf();
         try {
-          const folderInfo = await this.getFolderInfo();
-          const repoStatuses = await Promise.all(
-            folderInfo.map(({ wikiPath }) => window.service.git.getModifiedFileList(wikiPath))
-          );
-
-          const tasks = repoStatuses
-            .filter((repoStatus) => repoStatus.length > 0)
-            .map((repoStatus, index) => {
-              const { wikiPath, gitUrl } = folderInfo[index];
-              window.service.git.commitAndSync(wikiPath, gitUrl);
-            });
+          const workspaces = await window.service.workspace.getWorkspacesAsList();
+          const tasks = workspaces.map(async ({ wikiFolderLocation, gitUrl, storageService }) => {
+            const userInfo = await this.authService.getStorageServiceUserInfo(storageService);
+            window.service.git.debounceCommitAndSync(wikiFolderLocation, gitUrl, userInfo);
+          });
           await Promise.all(tasks);
         } catch (error) {
           console.error('NodeJSGitSyncWidget: Error syncing', error);
@@ -167,10 +143,10 @@ Requires you are using TiddlyGit, and have install the "Inject JS" API with acce
      *  Check repo git sync state and count of uncommit things
      */
     async checkGitState() {
-      const folderInfo = await this.getFolderInfo();
+      const workspaces = await window.service.workspace.getWorkspacesAsList();
       const repoStatuses = [];
-      for (const folder of folderInfo) {
-        const modifiedListString = $tw.wiki.getTiddlerText(`$:/state/scm-modified-file-list/${folder.wikiPath}`);
+      for (const workspace of workspaces) {
+        const modifiedListString = $tw.wiki.getTiddlerText(`$:/state/scm-modified-file-list/${workspace.wikiFolderLocation}`);
         if (modifiedListString !== undefined) {
           const modifiedListJSON = JSON.parse(modifiedListString);
           repoStatuses.push(modifiedListJSON);
