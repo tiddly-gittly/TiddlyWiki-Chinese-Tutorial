@@ -1,0 +1,14 @@
+created: 20211003071732972
+creator: 林一二
+modified: 20211003071932534
+modifier: 林一二
+tags: TW-Locator
+title: TW-Locator例子：当前知识库的目录
+tmap.id: 1a7ee63a-8e5d-4e64-81cc-3f837e3d3ce0
+type: text/vnd.tiddlywiki
+
+```html
+<$macrocall $name="locator-view" baseTitle=欢迎来到太微！ />
+```
+
+<$macrocall $name="locator-view" baseTitle=欢迎来到太微！ />

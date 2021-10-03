@@ -1,0 +1,23 @@
+created: 20211003070912044
+creator: 林一二
+modified: 20211003070931943
+modifier: 林一二
+tags: 太微背景介绍
+title: 他们是这样评价太微的
+tmap.id: 5ba18b77-816a-4794-b3f1-c75786cd6309
+type: text/vnd.tiddlywiki
+
+<<<.tc-big-quote
+TiddlyWiki 旨在与铭记其用户的长期需求。因为它是开放源码，且无需基础设施，我们可以确信，即使在遥远的未来，所有我们需要访问 TiddlyWiki 文件的只是一个普通的 HTML 浏览器。如果在您的职业生涯开始时使用 TiddlyWiki，您可以确信它将带您直到退休。
+<<<2016 年 01 月的[[网络世界|http://www.networkworld.com/article/3028098/open-source-tools/tiddlywiki-a-free-open-source-wiki-revisited.html]]杂志
+
+<<<.tc-big-quote
+目前市面上的个人维基系统有很多种，但它们要么体积庞大、界面丑陋，要么搭建步骤复杂、对普通用户不友好，在一番比较后我最终选择了轻量化的 Tiddlywiki。
+Tiddlywiki 的拥有丰富的功能和强大的插件，编辑时支持标签管理、条目关联、过滤器，也支持通过插件实现高亮代码、输入数学公式、标准 markdown 语法等等，还能自定义样式。
+<<<[[少数派评论员i9NGbgNq|https://sspai.com/post/47030]]
+
+<<<.tc-big-quote
+TiddlyWiki ，按官方说法是一个「非线性个人 Web 笔记本」。相比其他笔记和 Wiki 系统，其最大的特点之一是程序本体和数据全部都在一个单 html 文件内，与此同时仍然有着非常强大的功能和插件系统。在我看来，管理以文字、代码和数学公式为主的个人知识库， TiddlyWiki 可谓是最好的选择之一。
+<<<[[使用 TiddlyWiki 的用途和心得？知乎Rrupmid_Nyche的回答|https://www.zhihu.com/question/31214433/answer/244696951]]
+
+{{Product Hunt Link}}

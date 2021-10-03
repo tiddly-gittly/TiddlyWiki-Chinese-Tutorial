@@ -1,55 +1,20 @@
 created: 20210902044836979
 creator: 林一二
-modified: 20210904063304129
-modifier: Sttot
+modified: 20211003072056620
+modifier: 林一二
 title: 欢迎来到太微！
 tmap.id: 08fdd908-ecb5-4b3e-aa24-4b8369b80c9a
 type: text/vnd.tiddlywiki
 
-!! 太微是什么
 
-<<<
-太微垣，三垣之一，按《步天歌》，太微垣為三垣的上垣。 太微垣又名天庭，是政府的意思，也是貴族及大臣們居住的地方。
-<<<
+!! 如何浏览此知识库
 
-「太微」是我们对 TiddlyWiki 的中文称呼，[[TiddlyWiki|https://tiddlywiki.com/]]是一款极其强大又极具拓展性的个人 Wiki 系统。
+# 可以翻阅右边的[[文档目录|TW-Locator例子：当前知识库的目录]]，注意查看[[文档目录的使用帮助|$:/plugins/linonetwo/itonnote/Help/TW-Locator基于标签生成的文件夹目录结构使用方法]]
+# 查看每个笔记底部的[[反向链接]]
 
-为什么把 TiddlyWiki 翻译成「太微」？因为受到 [[@pimgeek|https://www.zhihu.com/people/pimgeek]] 的启发：TiddlyWiki 可以干很多细致轻量的工作，但也从不限制用法，可以无限组合叠加。故以其首字母音译为「太微」，TiddlyWiki 可以称为「太微笔记」「太微万能抽屉」「太微卡片盒」……
+!! 背景介绍
 
-<<<.tc-big-quote
-TiddlyWiki 是一个由单个 HTML 文件组成的非网络应用的 Wiki 程序。使用 HTML、CSS 及 JavaScript 技术，和MediaWiki、DokuWiki等不同，完全不需要任何的数据库（如：MySQL）及动态语言（如：PHP、ASP、Java 等）。因此任何人都可以在任何地方下载该页面并立即开始编辑和使用。适合一般个人单机的使用和对个人电脑的管理工作。
-<<< [[维基百科|https://zh.wikipedia.org/wiki/Tiddlywiki]]
-
-!! 太微能做什么
-
-太微非常强大，且不需要任何服务器和数据库知识就可以实现高度定制和私有部署，但可惜由于在国内没有活跃的社区，所以太微的爱好者们往往因此对太微“望而生畏”，''这也是我们建立这个教程网站的原因：做好「太微」本土化的“指路人”、“搬运工”和交流平台''，并为国内的TW开发者提供好开发思路和开发社区。
-
-[[TiddlyWiki官网|https://tiddlywiki.com/]]和一系列社区提供了太微完善的教程，但访问较为缓慢，不熟悉英文的爱好者请阅读由[[@BramChen|https://github.com/BramChen]]大佬翻译的[[TiddlyWiki 舞 - 官方基础文档简体中文版|https://bramchen.github.io/tw5-docs/zh-Hans/]]：
-
-<<<
-''您曾感觉您的头不是大得足以容纳一切你需要记住的事吗？''
-
-欢迎使用 ~TiddlyWiki，一个独特的[[非线性|https://bramchen.github.io/tw5-docs/zh-Hans/#Philosophy%20of%20Tiddlers]]笔记本，用于[[截取|https://bramchen.github.io/tw5-docs/zh-Hans/#Creating and editing tiddlers]]、[[管理|https://bramchen.github.io/tw5-docs/zh-Hans/#Structuring TiddlyWiki]]和[[共用|https://bramchen.github.io/tw5-docs/zh-Hans/#Sharing your tiddlers with others]]复杂的信息。
-
-用它来保留您的[[待办清单|https://bramchen.github.io/tw5-docs/zh-Hans/#TaskManagementExample]]、计划一篇[[散文或一部小说|https://bramchen.github.io/tw5-docs/zh-Hans/#%22TiddlyWiki%20for%20Scholars%22%20by%20Alberto%20Molina]]、或安排您的婚礼。记录每个闪过您脑中的想法，或创建一个灵活和反应迅速的网站。
-<<<
-
-!! 他们是这样评价太微的
-
-<<<.tc-big-quote
-TiddlyWiki 旨在与铭记其用户的长期需求。因为它是开放源码，且无需基础设施，我们可以确信，即使在遥远的未来，所有我们需要访问 TiddlyWiki 文件的只是一个普通的 HTML 浏览器。如果在您的职业生涯开始时使用 TiddlyWiki，您可以确信它将带您直到退休。
-<<<2016 年 01 月的[[网络世界|http://www.networkworld.com/article/3028098/open-source-tools/tiddlywiki-a-free-open-source-wiki-revisited.html]]杂志
-
-<<<.tc-big-quote
-目前市面上的个人维基系统有很多种，但它们要么体积庞大、界面丑陋，要么搭建步骤复杂、对普通用户不友好，在一番比较后我最终选择了轻量化的 Tiddlywiki。
-Tiddlywiki 的拥有丰富的功能和强大的插件，编辑时支持标签管理、条目关联、过滤器，也支持通过插件实现高亮代码、输入数学公式、标准 markdown 语法等等，还能自定义样式。
-<<<[[少数派评论员i9NGbgNq|https://sspai.com/post/47030]]
-
-<<<.tc-big-quote
-TiddlyWiki ，按官方说法是一个「非线性个人 Web 笔记本」。相比其他笔记和 Wiki 系统，其最大的特点之一是程序本体和数据全部都在一个单 html 文件内，与此同时仍然有着非常强大的功能和插件系统。在我看来，管理以文字、代码和数学公式为主的个人知识库， TiddlyWiki 可谓是最好的选择之一。
-<<<[[使用 TiddlyWiki 的用途和心得？知乎Rrupmid_Nyche的回答|https://www.zhihu.com/question/31214433/answer/244696951]]
-
-{{Product Hunt Link}}
+<<reuse-tiddler "太微背景介绍">>
 
 !! 如何更新此文档
 

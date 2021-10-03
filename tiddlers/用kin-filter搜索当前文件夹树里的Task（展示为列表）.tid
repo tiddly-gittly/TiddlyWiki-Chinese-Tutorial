@@ -1,0 +1,17 @@
+caption: 当前文件夹树里的Task（列表）
+created: 20200610134316199
+creator: 林一二
+modified: 20211003070218185
+modifier: 林一二
+tags: $:/tags/TextEditor/Snippet
+title: 用kin-filter搜索当前文件夹树里的Task（展示为列表）
+tmap.id: f17e67a0-1ca1-45d7-a985-b35b1339e11f
+type: text/vnd.tiddlywiki
+
+<$list filter="[tag[Task]]+[kin::to{currentTiddler}]">
+
+ <$link><<currentTiddler>></$link>
+
+ {{!!text}}
+
+</$list>
