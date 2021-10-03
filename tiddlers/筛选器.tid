@@ -1,6 +1,6 @@
 created: 20211003082407925
 creator: 林一二
-modified: 20211003082432493
+modified: 20211003085732239
 modifier: 林一二
 tags: 基础知识
 title: 筛选器
@@ -8,3 +8,13 @@ tmap.id: 33847f40-f3cd-4b31-b2a0-d2802e1246e1
 type: text/vnd.tiddlywiki
 
 首先阅读[[中文官方文档的教程|https://bramchen.github.io/tw5-docs/zh-Hans/#Filters]]。
+
+!! 相关阅读列表
+
+# [[TiddlyWiki Filter Expression：释放 TiddlyWiki 十倍威力的工具 @闷声|https://zhuanlan.zhihu.com/p/346647657]]
+
+!! 筛选器相关的概念
+
+* 筛选器由一个或多个[[运行逻辑（Run）|https://bramchen.github.io/tw5-docs/zh-Hans/#Filter%20Run]]组成
+** 运行逻辑由一个或多个[[逻辑步骤（Step）|https://bramchen.github.io/tw5-docs/zh-Hans/#Filter%20Step]]组成
+** 运行逻辑前面可以加上[[+-=~等前置码（prefix）|https://bramchen.github.io/tw5-docs/zh-Hans/#Filter%20Expression]]

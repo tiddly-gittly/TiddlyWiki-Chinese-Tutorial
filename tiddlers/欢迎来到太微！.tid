@@ -1,11 +1,12 @@
 created: 20210902044836979
 creator: 林一二
-modified: 20211003072056620
+modified: 20211003091012867
 modifier: 林一二
 title: 欢迎来到太微！
 tmap.id: 08fdd908-ecb5-4b3e-aa24-4b8369b80c9a
 type: text/vnd.tiddlywiki
 
+<<dbadge 笔记应用 "[[TGNote|https://github.com/tiddly-gittly/TiddlyGit-Desktop]]" info>> <<dbadge 部署 "[[Github Actions|https://github.com/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/actions]]" success>> <<dbadge 双向链接 "[[支持|反向链接]]" "danger">>
 
 !! 如何浏览此知识库
 
