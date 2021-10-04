@@ -1,11 +1,47 @@
 created: 20211003091131848
 creator: 林一二
-modified: 20211003091646608
+modified: 20211004042529321
 modifier: 林一二
 tags: 欢迎来到太微！
 title: 插件开发
 tmap.id: 11f423b2-b793-47ac-a5d3-15cc6fae1524
 type: text/vnd.tiddlywiki
+
+
+!! 学习方法
+
+因为太微本身的 API 文档不完善，而且没有 TS 类型。所以目前的学习主要靠阅读其它插件的代码，来了解写法。
+
+!!! 值得一读的插件
+
+* 操作编辑器
+** [[Gk0Wk/TW5-CodeMirror-Enhanced|https://github.com/Gk0Wk/TW5-CodeMirror-Enhanced]]
+* 操作事件
+** [[Souk21/TW-commandpalette|https://github.com/tiddly-gittly/tiddlywiki-plugins/tree/master/src/commandpalette]]
+
+!!! 交互式查看API
+
+可以右键打开开发者工具，在控制台里输入 `$tw.` 来交互式地看太微提供了哪些 API。
+
+例如通过输入 `$tw.wiki.render` 我们可以发现自动补全出了 `$tw.wiki.renderText` 函数，根据名字可以猜测它是用来把 Wiki Text 渲染成最终文本用的。
+
+它有哪些参数，可以通过直接回车来打印出函数源码来简单得知：
+
+```js
+> $tw.wiki.renderText
+< ƒ (outputType,textType,text,options) {
+	options = options || {};
+	var parser = this.parseText(textType,text,options),
+		widgetNode = this.makeWidget(parser,options);
+	var container = $tw.fakeDocument.c…
+```
+
+返回值直接尝试执行一次即可
+
+```js
+> $tw.wiki.renderText('text/html', 'text/vnd.tiddlywiki', '试一试{{$:/language/Buttons/NewJournal/Hint}}')
+< '<p>试一试创建一个新的日志条目</p>'
+```
 
 !! 相关阅读
 

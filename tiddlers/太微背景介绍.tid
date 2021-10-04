@@ -1,13 +1,13 @@
 created: 20211003070002469
 creator: 林一二
-modified: 20211003071516731
+modified: 20211004042822324
 modifier: 林一二
 tags: 欢迎来到太微！
 title: 太微背景介绍
 tmap.id: 71bad8c9-f3b1-44df-adfa-3c83aa8f3f54
 type: text/vnd.tiddlywiki
 
-<$list filter="[tag[太微背景介绍]]+[kin::to{currentTiddler}]">
+<$list filter="[tag<currentTiddler>]+[kin::to{currentTiddler}]">
 
 !!! <$link><<currentTiddler>></$link>
 
