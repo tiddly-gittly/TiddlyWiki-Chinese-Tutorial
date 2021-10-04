@@ -1,0 +1,101 @@
+{
+    "tiddlers": [
+        {
+            "fields": {
+                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/mode/tiddlywiki5.js",
+                "module-type": "codemirror",
+                "type": "application/javascript"
+            },
+            "file": "mode/tiddlywiki5.js"
+        },
+        {
+            "fields": {
+                "type": "text/css",
+                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/style.css",
+                "tags": "$:/tags/Stylesheet"
+            },
+            "file": "style.css"
+        },
+        {
+            "fields": {
+                "type": "application/javascript",
+                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/mode/tex.js",
+                "module-type": "codemirror"
+            },
+            "file": "mode/tex.js"
+        },
+        {
+            "fields": {
+                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/readme"
+            },
+            "file": "readme"
+        },
+        {
+            "fields": {
+                "type": "application/javascript",
+                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/core.js",
+                "module-type": "codemirror"
+            },
+            "file": "core.js"
+        },
+        {
+            "fields": {
+                "type": "application/javascript",
+                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/hint/hint-tw5-tiddler.js",
+                "tags": "$:/CodeMirrorEnhanced/RealtimeHint",
+                "module-type": "library"
+            },
+            "file": "hint/hint-tw5-tiddler.js"
+        },
+        {
+            "fields": {
+                "type": "application/javascript",
+                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/hint/hint-tw5-snippet.js",
+                "tags": "$:/CodeMirrorEnhanced/RealtimeHint",
+                "module-type": "library"
+            },
+            "file": "hint/hint-tw5-snippet.js"
+        },
+        {
+            "fields": {
+                "type": "application/json",
+                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/snippetslist/tw5-snippets.json",
+                "tags": "$:/CodeMirrorEnhanced/SnippetsList"
+            },
+            "file": "snippetslist/tw5-snippets.json"
+        },
+        {
+            "fields": {
+                "type": "application/javascript",
+                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/clickable/clickable-link.js",
+                "tags": "$:/CodeMirrorEnhanced/ClickableToken",
+                "module-type": "library"
+            },
+            "file": "clickable/clickable-link.js"
+        },
+        {
+            "fields": {
+                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/ControlPanel"
+            },
+            "file": "ControlPanel"
+        },
+        {
+            "fields": {
+                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config/hint-preview"
+            },
+            "file": "config/hint-preview"
+        },
+        {
+            "fields": {
+                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config/clickable-link"
+            },
+            "file": "config/clickable-link"
+        },
+        {
+            "fields": {
+                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config/realtime-hint"
+            },
+            "file": "config/realtime-hint"
+        }
+    ]
+}

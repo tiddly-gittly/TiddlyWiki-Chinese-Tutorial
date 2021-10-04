@@ -1,0 +1,10 @@
+{
+    "image": {
+        "snippet": "[img[$1]]",
+        "preview": "!! Insert a image.\n\n[img[$:/core/icon]] "
+    },
+    "center": {
+        "snippet": "<center>$1</center>",
+        "preview": "!! Centralize elements.\n\n<center>like this</center>"
+    }
+}
