@@ -1,0 +1,11 @@
+created: 20211005051214953
+creator: 林一二
+modified: 20211005052206401
+modifier: 林一二
+title: TiddlyGit
+tmap.id: f23a8d16-4779-47f4-9987-3b0c8d4707d3
+type: text/vnd.tiddlywiki
+
+[img[TiddlyGit-Screenshot.png]]
+
+左侧灰色的工作区是「休眠工作区」，可以在用「打开本地Wiki」打开 TiddlyWiki 官方文档后，右键工作区图标，在设置里点开「开启休眠」，来让它在未使用时不占用资源。想查看官方文档的时候，点击工作区图标就能一键开启。
