@@ -43,6 +43,7 @@
 
     const hints = [];
     /** $:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/snippetslist/tw5-snippets.json: (7) [{…}, {…}, {…}, {…}, {…}, {…}, {…}] */
+    const snippetsList = cme.service.SnippetsList.getSnippetsList();
     Object.entries(cme.service.SnippetsList.getSnippetsList()).forEach(([snippetFileName, snippets]) => {
       snippets.forEach((snippet) => {
         try {
@@ -107,7 +108,7 @@
         selectedNode.renderCache = domNode.innerHTML = $tw.wiki.renderText(
           'text/html',
           'text/vnd.tiddlywiki',
-          selectedData.text.preview ? selectedData.text.preview : '',
+          selectedData.text.preview ? selectedData.text.preview.replaceAll(/(\$\d+)/g, '') : '',
         );
         return true;
       },
