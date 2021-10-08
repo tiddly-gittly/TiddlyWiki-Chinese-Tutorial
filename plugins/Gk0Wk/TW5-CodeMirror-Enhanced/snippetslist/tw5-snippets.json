@@ -1,10 +1,51 @@
-{
-    "image": {
-        "snippet": "[img[$1]]",
-        "preview": "!! Insert a image.\n\n[img[$:/core/icon]] "
-    },
-    "center": {
-        "snippet": "<center>$1</center>",
-        "preview": "!! Centralize elements.\n\n<center>like this</center>"
-    }
-}
+[
+  {
+    "i18n": true,
+    "id": "blockquoteSingleline",
+    "name": "tw-snippet.blockquoteSingleline.name",
+    "preview": "tw-snippet.blockquoteSingleline.preview",
+    "snippet": "> $1"
+  },
+  {
+    "i18n": true,
+    "id": "blockquote",
+    "name": "tw-snippet.blockquote.name",
+    "preview": "tw-snippet.blockquote.preview",
+    "snippet": "<<<\n$1\n<<<"
+  },
+  {
+    "i18n": true,
+    "id": "blockquoteWithCSSClass",
+    "name": "tw-snippet.blockquoteWithCSSClass.name",
+    "preview": "tw-snippet.blockquoteWithCSSClass.preview",
+    "snippet": "<<<$1\n$2\n<<<"
+  },
+  {
+    "i18n": true,
+    "id": "blockquoteCitation",
+    "name": "tw-snippet.blockquoteCitation.name",
+    "preview": "tw-snippet.blockquoteCitation.preview",
+    "snippet": "<<<\n$1\n<<< $2"
+  },
+  {
+    "i18n": true,
+    "id": "codeblock",
+    "name": "tw-snippet.codeblock.name",
+    "preview": "tw-snippet.codeblock.preview",
+    "snippet": "```$1\n$2\n```"
+  },
+  {
+    "i18n": true,
+    "id": "image",
+    "name": "tw-snippet.image.name",
+    "preview": "tw-snippet.image.preview",
+    "snippet": "[img[$1]]"
+  },
+  {
+    "i18n": true,
+    "id": "center",
+    "name": "tw-snippet.center.name",
+    "preview": "tw-snippet.center.preview",
+    "snippet": "<center>$1</center>"
+  }
+]

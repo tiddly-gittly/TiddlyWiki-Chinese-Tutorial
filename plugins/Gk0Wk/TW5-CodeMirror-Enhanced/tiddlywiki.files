@@ -32,6 +32,12 @@
         },
         {
             "fields": {
+                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/LICENSE"
+            },
+            "file": "LICENSE"
+        },
+        {
+            "fields": {
                 "type": "application/javascript",
                 "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/core.js",
                 "module-type": "codemirror"
@@ -75,27 +81,42 @@
         },
         {
             "fields": {
+                "type": "application/javascript",
+                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/filters/cmei18n.js",
+                "module-type": "filteroperator"
+            },
+            "file": "filters/cmei18n.js"
+        },
+        {
+            "fields": {
                 "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/ControlPanel"
             },
             "file": "ControlPanel"
         },
         {
             "fields": {
-                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config/hint-preview"
+                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config.json",
+                "type": "application/json"
             },
-            "file": "config/hint-preview"
+            "file": "config.json"
         },
         {
             "fields": {
-                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config/clickable-link"
+                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/i18n/zh-Hans.json",
+                "type": "application/json",
+                "cmei18n": "zh-Hans zh",
+                "cmei18n-namespace": "core"
             },
-            "file": "config/clickable-link"
+            "file": "i18n/zh-Hans.json"
         },
         {
             "fields": {
-                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config/realtime-hint"
+                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/i18n/en-GB.json",
+                "type": "application/json",
+                "cmei18n": "en-GB en default",
+                "cmei18n-namespace": "core"
             },
-            "file": "config/realtime-hint"
+            "file": "i18n/en-GB.json"
         }
     ]
 }

@@ -1,0 +1,71 @@
+{
+  "readme": [
+    "如想了解更多，请关注我们的[[GitHub Repo|https://github.com/Gk0Wk/TW5-CodeMirror-Enhanced]]。",
+    "",
+    "为TiddlyWiki的CodeMirror编辑器提供一个灵活而丰富的扩展框架(包括高亮、补全、预览等功能)，任何人都可以使用此框架为编辑器编写扩展插件！目前基于此框架实现的功能有：",
+    "",
+    "* TiddlyWiki5(`text/vnd.tiddlywiki`)语法高亮；",
+    "* Wiki链接自动提示；",
+    "* Tiddler预览；",
+    "* 可点击链接；",
+    "",
+    "更多功能正在开发中，欢迎你的加入！"
+  ],
+  "control-panel": {
+    "language": {
+      "title": "当前插件所使用的语言",
+      "description": [
+        "选择适合你的语言，`system`代表跟随系统偏好。",
+        "如果没有适合你的语言，请在[[Issue|https://github.com/Gk0Wk/TW5-CodeMirror-Enhanced/issues]]中提出，欢迎任何人贡献代码！"
+      ]
+    },
+    "realtime-hint": {
+      "title": "实时代码补全",
+      "description": "无需<kbd>Ctrl</kbd>+<kbd>Space</kbd>，像VSCode一样，在输入时实时进行补全提示(现只支持WikiLink)。",
+      "button-on": "实时代码补全已开启",
+      "button-off": "实时代码补全已关闭"
+    },
+    "clickable-links": {
+      "title": "可点击的链接",
+      "description": "WikiLinks和URL是否可以点击。",
+      "button-on": "可点击链接已开启",
+      "button-off": "可点击链接补全已关闭"
+    },
+    "hint-preview": {
+      "title": "补全时预览",
+      "description": "自动补全时，根据所选建议条目，在补全框右侧弹出小的文档/预览框。",
+      "button-on": "补全时预览已开启",
+      "button-off": "补全时预览已关闭"
+    }
+  },
+  "tw-snippet": {
+    "blockquoteSingleline": {
+      "name": "单行块引用",
+      "preview": "!! 单行块引用\n> 引用的文本\n> 另一行引号文本\n!! 你也可以像这样嵌套引号\n> 一个引文\n>> 一个副引文\n> 另一个引文\n!! 你也可以将块状引号与其他列表项混合\n* 清单一\n** 清单二\n**> 一个引文\n**> 另一个引文\n*清单三"
+    },
+    "blockquote": {
+      "name": "块引用",
+      "preview": "!! 多行块引用\n\n<<<\n这是一个块引用段落\n\n写了两行中文\n<<<"
+    },
+    "blockquoteWithCSSClass": {
+      "name": "带CSS类的块引用",
+      "preview": "!! CSS 类也可以加到引用里\n\n<<<.tc-big-quote\n一个戏剧性的引用\n<<< 一个重要的人"
+    },
+    "blockquoteCitation": {
+      "name": "带引文来源的块引用",
+      "preview": "!! 一个引文来源也可以加到引用里\n\n<<<\n计算机就像我们思想的自行车\n<<< 史蒂夫-乔布斯"
+    },
+    "codeblock": {
+      "name": "代码块",
+      "preview": "!! 你可以使用三个反斜线<code>&#96;&#96;&#96;</code>来标记代码块\n```\n这将是以等宽字体显示的。\n```\n\n为了正确显示，这三个反斜线需要在行的开头，并紧跟一个换行。\n\n请注意，任何前面的段落内容也应该用双倍的换行符来适当终止。因此，下面这个例子是错误的。\n<pre>\n这是一个普通的段落\n&#96;&#96;&#96;\n这将是以等宽字体显示的。\n&#96;&#96;&#96;\n</pre>\n\n正确的版本是。\n<pre>\n这是一个普通的段落\n\n&#96;&#96;&#96;\n这将是以等宽字体显示的。\n&#96;&#96;&#96;\n</pre>\n\n注意，有些键盘布局将反斜线视为[[死键|https://en.wikipedia.org/wiki/Dead_key]]，使其难以输入。诀窍是输入三个反斜线，然后是一个空格。或者，一次性输入所有六个回车键，然后是一个空格，然后将光标向后移动三个字符来输入或粘贴内容。\n\n"
+    },
+    "image": {
+      "name": "图片",
+      "preview": "!! 插入图片\n\n[img[favicon.ico]]"
+    },
+    "center": {
+      "name": "居中",
+      "preview": "!! 居中元素\n\n<center>就像这样</center>"
+    }
+  }
+}
