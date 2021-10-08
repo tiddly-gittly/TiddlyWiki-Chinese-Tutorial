@@ -167,8 +167,7 @@ var CodeMirrorEnhanced = (function (CodeMirror) {
     var services = {};
     var api$1 = {};
     function updateService() {
-        for (var name_1 in services) {
-            var service = services[name_1];
+        $tw.utils.each(services, function (service, name) {
             // Update add-ons
             if (service.tag === undefined)
                 return;
@@ -198,15 +197,15 @@ var CodeMirrorEnhanced = (function (CodeMirror) {
                 }
             }
             // Unregister tiddlers already without tag
-            for (var tiddler in service.addons) {
+            $tw.utils.each(service.addons, function (addon, tiddler) {
                 if (!tiddlers.includes(tiddler)) {
                     // eslint-disable-next-line @typescript-eslint/no-dynamic-delete
                     delete service.addons[tiddler];
                 }
-            }
+            });
             // Update add-on update time
             service.lastAddonsUpdateTime = new Date();
-        }
+        });
     }
     function registerService(service) {
         services[service.name] = new InnerService(service);
@@ -220,12 +219,11 @@ var CodeMirrorEnhanced = (function (CodeMirror) {
         // When new editor instance is created, update addons and hook service
         CodeMirror__namespace.defineInitHook(function (editor) {
             updateService();
-            for (var name_2 in services) {
-                var service = services[name_2];
+            $tw.utils.each(services, function (service, name) {
                 if (!service.isLoad)
                     service.onLoad(cme);
                 service.onHook(editor, cme);
-            }
+            });
         });
         return api$1;
     }
@@ -391,80 +389,78 @@ var CodeMirrorEnhanced = (function (CodeMirror) {
             tag: '$:/CodeMirrorEnhanced/RealtimeHint',
             onLoad: function (cme) {
                 CodeMirror__namespace.registerHelper('hint', 'tiddlywiki5', function (editor, options) { return __awaiter(_this, void 0, void 0, function () {
-                    var addons, getHintAsyncTasks, _loop_1, addonTiddler, hintsList, result_1, error_1;
+                    var getHintAsyncTasks, hintsList, result_1, error_1;
+                    var _this = this;
                     return __generator(this, function (_a) {
                         switch (_a.label) {
                             case 0:
                                 _a.trys.push([0, 2, , 3]);
-                                addons = getAddons('RealtimeHint');
-                                getHintAsyncTasks = [];
-                                _loop_1 = function (addonTiddler) {
-                                    var addon = addons[addonTiddler];
-                                    getHintAsyncTasks.push(new Promise(function (resolve) {
-                                        // TODO: do some check here to make sure it is HintAddon
-                                        var hintAddon = addon;
-                                        try {
-                                            var hints_1 = hintAddon.hint(editor, options, cme);
-                                            var tmplist_1 = [];
-                                            var minPos_1 = editor.getCursor();
-                                            if (typeof hints_1 === 'object') {
-                                                if (hints_1.from !== undefined && CodeMirror__namespace.cmpPos(minPos_1, hints_1.from) > 0)
-                                                    minPos_1 = hints_1.from;
-                                                hints_1.list.forEach(function (hint) {
-                                                    if (typeof hint === 'string') {
-                                                        if (hints_1.from !== undefined && hints_1.to !== undefined)
-                                                            tmplist_1.push({
-                                                                text: hint,
-                                                                from: hints_1.from,
-                                                                to: hints_1.to,
-                                                                render_: hints_1.render,
-                                                                render: globalHintRender,
-                                                                renderPreview: hints_1.renderPreview,
-                                                                hint: hints_1.hint,
-                                                                type: hints_1.type,
-                                                                className: 'cm-hacked-hint',
-                                                            });
-                                                    }
-                                                    else {
-                                                        var _from = hint.from === undefined ? hints_1.from : hint.from;
-                                                        var _to = hint.to === undefined ? hints_1.to : hint.to;
-                                                        if (_from !== undefined && _to !== undefined)
-                                                            tmplist_1.push({
-                                                                text: hint.text,
-                                                                displayText: hint.displayText,
-                                                                from: _from,
-                                                                to: _to,
-                                                                render_: hint.render === undefined ? hints_1.render : hint.render,
-                                                                render: globalHintRender,
-                                                                renderPreview: hint.renderPreview === undefined ? hints_1.renderPreview : hint.renderPreview,
-                                                                hintMatch: hint.hintMatch === undefined ? hints_1.hintMatch : hint.hintMatch,
-                                                                hint: hint.hint === undefined ? hints_1.hint : hint.hint,
-                                                                type: hint.type === undefined ? hints_1.type : hint.type,
-                                                                renderCache: hint.renderCache,
-                                                                className: 'cm-hacked-hint',
-                                                            });
-                                                        if (hint.from !== undefined && CodeMirror__namespace.cmpPos(minPos_1, hint.from) > 0)
-                                                            minPos_1 = hint.from;
-                                                    }
-                                                });
+                                getHintAsyncTasks = Object.entries(getAddons('RealtimeHint')).map(function (_a) {
+                                    var addonTiddler = _a[0], addon = _a[1];
+                                    return __awaiter(_this, void 0, void 0, function () {
+                                        var hintAddon, hints_1, tmplist_1, minPos_1;
+                                        return __generator(this, function (_b) {
+                                            hintAddon = addon;
+                                            try {
+                                                hints_1 = hintAddon.hint(editor, options, cme);
+                                                tmplist_1 = [];
+                                                minPos_1 = editor.getCursor();
+                                                if (typeof hints_1 === 'object') {
+                                                    if (hints_1.from !== undefined && CodeMirror__namespace.cmpPos(minPos_1, hints_1.from) > 0)
+                                                        minPos_1 = hints_1.from;
+                                                    hints_1.list.forEach(function (hint) {
+                                                        if (typeof hint === 'string') {
+                                                            if (hints_1.from !== undefined && hints_1.to !== undefined)
+                                                                tmplist_1.push({
+                                                                    text: hint,
+                                                                    from: hints_1.from,
+                                                                    to: hints_1.to,
+                                                                    render_: hints_1.render,
+                                                                    render: globalHintRender,
+                                                                    renderPreview: hints_1.renderPreview,
+                                                                    hint: hints_1.hint,
+                                                                    type: hints_1.type,
+                                                                    className: 'cm-hacked-hint',
+                                                                });
+                                                        }
+                                                        else {
+                                                            var _from = hint.from === undefined ? hints_1.from : hint.from;
+                                                            var _to = hint.to === undefined ? hints_1.to : hint.to;
+                                                            if (_from !== undefined && _to !== undefined)
+                                                                tmplist_1.push({
+                                                                    text: hint.text,
+                                                                    displayText: hint.displayText,
+                                                                    from: _from,
+                                                                    to: _to,
+                                                                    render_: hint.render === undefined ? hints_1.render : hint.render,
+                                                                    render: globalHintRender,
+                                                                    renderPreview: hint.renderPreview === undefined ? hints_1.renderPreview : hint.renderPreview,
+                                                                    hintMatch: hint.hintMatch === undefined ? hints_1.hintMatch : hint.hintMatch,
+                                                                    hint: hint.hint === undefined ? hints_1.hint : hint.hint,
+                                                                    type: hint.type === undefined ? hints_1.type : hint.type,
+                                                                    renderCache: hint.renderCache,
+                                                                    className: 'cm-hacked-hint',
+                                                                });
+                                                            if (hint.from !== undefined && CodeMirror__namespace.cmpPos(minPos_1, hint.from) > 0)
+                                                                minPos_1 = hint.from;
+                                                        }
+                                                    });
+                                                }
+                                                return [2 /*return*/, {
+                                                        from: minPos_1,
+                                                        list: tmplist_1,
+                                                        to: editor.getCursor(),
+                                                    }];
                                             }
-                                            resolve({
-                                                from: minPos_1,
-                                                list: tmplist_1,
-                                                to: editor.getCursor(),
-                                            });
-                                        }
-                                        catch (error) {
-                                            console.error("Error occured by tiddler " + addonTiddler + ":");
-                                            console.error(error);
-                                            // eslint-disable-next-line unicorn/no-useless-undefined
-                                            resolve(undefined);
-                                        }
-                                    }));
-                                };
-                                for (addonTiddler in addons) {
-                                    _loop_1(addonTiddler);
-                                }
+                                            catch (error) {
+                                                console.error("Error occured by tiddler " + addonTiddler + ":");
+                                                console.error(error);
+                                                return [2 /*return*/, undefined];
+                                            }
+                                            return [2 /*return*/];
+                                        });
+                                    });
+                                });
                                 return [4 /*yield*/, Promise.all(getHintAsyncTasks)];
                             case 1:
                                 hintsList = _a.sent();

@@ -32,12 +32,6 @@
         },
         {
             "fields": {
-                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/LICENSE"
-            },
-            "file": "LICENSE"
-        },
-        {
-            "fields": {
                 "type": "application/javascript",
                 "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/core.js",
                 "module-type": "codemirror"

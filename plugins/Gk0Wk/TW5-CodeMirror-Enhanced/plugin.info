@@ -5,7 +5,7 @@
     "plugin-type": "plugin",
     "parent-plugin": "$:/plugins/tiddlywiki/codemirror",
     "name": "CodeMirror TW5 Enhanced",
-    "list": "readme ControlPanel LICENSE",
+    "list": "readme ControlPanel",
     "description": "TiddlyWiki5 highlighting mode for CodeMirror",
     "dependents": "$:/plugins/tiddlywiki/codemirror-autocomplete",
     "author": "Gk0Wk",

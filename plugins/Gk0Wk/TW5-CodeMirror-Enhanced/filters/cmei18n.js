@@ -39,7 +39,7 @@
       if (i18n.includes('default')) languageList[2] = tiddler;
     });
 
-    for (let index = 0; index < 3; index++) {
+    for (const index in languageList) {
       if (!languageList[index]) continue;
       let node = loadTiddler(languageList[index], options);
       const subpaths = message.split('.');
