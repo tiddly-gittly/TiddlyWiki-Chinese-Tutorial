@@ -1,6 +1,6 @@
 created: 20210902044836979
 creator: 林一二
-modified: 20211003091012867
+modified: 20211008051338435
 modifier: 林一二
 title: 欢迎来到太微！
 tmap.id: 08fdd908-ecb5-4b3e-aa24-4b8369b80c9a
@@ -11,7 +11,7 @@ type: text/vnd.tiddlywiki
 !! 如何浏览此知识库
 
 # 可以翻阅右边的[[文档目录|TW-Locator例子：当前知识库的目录]]，注意查看[[文档目录的使用帮助|$:/plugins/linonetwo/itonnote/Help/TW-Locator基于标签生成的文件夹目录结构使用方法]]
-# 查看每个笔记底部的[[反向链接]]
+# 查看每个[[条目]]底部的[[反向链接]]
 
 !! 背景介绍
 
