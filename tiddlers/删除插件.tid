@@ -1,0 +1,22 @@
+created: 20211011142412365
+creator: 林一二
+modified: 20211011143229916
+modifier: 林一二
+tags: 安装和删除插件
+title: 删除插件
+tmap.id: 30c97de2-db74-4dc1-ab6a-59261d4869be
+type: text/vnd.tiddlywiki
+
+由于太微里插件也只不过是一些打包好的条目，所以删除插件也就只需要删除这些条目就好了。对于打包好的条目，也只需要点击删除按钮{{$:/core/images/delete-button}}就能删掉。（你可能需要点击条目顶部[[页面工具栏]]上的{{$:/core/images/down-arrow}}按钮，在打开的下拉菜单里才能找到删除按钮{{$:/core/images/delete-button}}）
+
+!!! 完全删除插件
+
+首先打开[[控制面板|$:/ControlPanel]]，然后打开「插件」标签页，然后用 `ctrl/command + F` 打开页面搜索，搜到想删的插件。
+
+点击''插件标题''，将这个插件的条目打开。（注意如果你只是点击{{$:/core/images/chevron-right}}按钮展开插件信息的话，是找不到删除按钮的，得点击标题才行）
+
+然后点击这个条目的删除按钮即可。
+
+!!! 暂时禁用插件
+
+点击{{$:/core/images/chevron-right}}按钮展开插件信息，然后点击右侧的「禁用」按钮即可。
