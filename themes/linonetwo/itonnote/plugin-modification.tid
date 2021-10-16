@@ -19,5 +19,5 @@ type: text/vnd.tiddlywiki
 * opened tiddlers bar
 */
 section.story-backdrop > p, section.story-backdrop > p > div.tc-tab-buttons {
-  background-color: #fafafa !important;
+  background-color: #fafafa33 !important;
 }
