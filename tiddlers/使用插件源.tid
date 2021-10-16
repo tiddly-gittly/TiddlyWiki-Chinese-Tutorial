@@ -1,0 +1,18 @@
+created: 20211016092805967
+creator: 林一二
+modified: 20211016092830476
+modifier: 林一二
+tags: 安装插件
+title: 使用插件源
+tmap.id: 64265ebe-108f-4aef-8d2f-e5090898d259
+type: text/vnd.tiddlywiki
+
+!!! 从插件源安装插件
+
+太记自带了几个插件源，点击右上角[[页面工具栏]]里的 {{$:/core/images/options-button}} 按钮，打开[[控制面板|$:/ControlPanel]]，然后打开控制面板条目里「插件」标签页。
+
+这时你会看到一个「获取更多插件」按钮，点击它，就会加载当前安装了的插件源里的插件列表了。
+
+!!! 安装插件源
+
+TBD
