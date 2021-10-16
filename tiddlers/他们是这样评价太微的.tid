@@ -1,6 +1,6 @@
 created: 20211003070912044
 creator: 林一二
-modified: 20211003070931943
+modified: 20211016140654573
 modifier: 林一二
 tags: 太微背景介绍
 title: 他们是这样评价太微的
@@ -8,7 +8,7 @@ tmap.id: 5ba18b77-816a-4794-b3f1-c75786cd6309
 type: text/vnd.tiddlywiki
 
 <<<.tc-big-quote
-TiddlyWiki 旨在与铭记其用户的长期需求。因为它是开放源码，且无需基础设施，我们可以确信，即使在遥远的未来，所有我们需要访问 TiddlyWiki 文件的只是一个普通的 HTML 浏览器。如果在您的职业生涯开始时使用 TiddlyWiki，您可以确信它将带您直到退休。
+TiddlyWiki 旨在于铭记其用户的长期需求。因为它是开放源码的，且无需技术基础设施，我们可以确信，即使在遥远的未来，我们访问 TiddlyWiki 文件时也只需要准备一个普通的浏览器。如果在您的职业生涯开始时使用 TiddlyWiki，您可以确信它将带您直到退休。
 <<<2016 年 01 月的[[网络世界|http://www.networkworld.com/article/3028098/open-source-tools/tiddlywiki-a-free-open-source-wiki-revisited.html]]杂志
 
 <<<.tc-big-quote
