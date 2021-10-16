@@ -1,0 +1,16 @@
+title: $:/plugins/oflg/fishing/fishpond
+
+<$set name="fishrod" value={{$:/temp/fishing!!fishrod}} emptyValue="[tag[?]]">
+<$vars due="[has[due]]-[!days:due[1]]+[sort[due]]:sort:number:reverse[reduce<priority>add{!!interval}multiply{!!factor}fixed[2]]" new="[!has[due]sort[created]]">
+<$list filter="due new" variable="fishpondname">
+<$vars fishpond={{{[<fishpondname>match[due]then<due>]~[<fishpondname>match[due]then<due>]~[<fishpondname>match[new]then<new>]}}}>
+<$button tooltip={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[fishpondtip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[fishpondtip]]}}} aria-label={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[fishpondtip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[fishpondtip]]}}} class="tc-btn-invisible tc-tiddlylink" style="padding-right:2px;">
+<$action-setfield $tiddler="$:/temp/fishing" text="" fishrod=<<fishrod>> fishpond=<<fishpond>> fish={{{[subfilter<fishrod>subfilter<fishpond>first[]]}}}/>
+<$action-setfield $tiddler={{{[{$:/temp/fishing!!fish}addprefix[$:/state/folded/]]}}} text="hide"/>
+<$action-navigate $to={{$:/temp/fishing!!fish}}/>
+<$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex<fishpondname>]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex<fishpondname>]}}}/><$text text={{{[subfilter<fishrod>subfilter<fishpond>count[]]}}}/>
+</$button>
+</$vars>
+</$list>
+</$vars>
+</$set>

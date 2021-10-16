@@ -1,0 +1,6 @@
+key: ((open-command-palette))
+tags: $:/tags/KeyboardShortcut
+title: $:/core/ui/KeyboardShortcuts/CommandPalette
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage $message="open-command-palette"/>

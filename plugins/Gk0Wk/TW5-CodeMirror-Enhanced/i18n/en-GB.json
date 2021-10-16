@@ -61,7 +61,7 @@
     },
     "image": {
       "name": "image",
-      "preview": "!! Insert a image.\n\n[img[favicon.ico]]"
+      "preview": "!! Insert a image.\n\n[img[$:/favicon.ico]]"
     },
     "center": {
       "name": "center",

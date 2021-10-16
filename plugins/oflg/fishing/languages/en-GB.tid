@@ -1,0 +1,34 @@
+title: $:/plugins/oflg/fishing/languages/en-GB
+type: application/json
+
+{
+    "description": "Active Recall and Spaced Repetition system in TiddlyWiki, fishing with Anki algorithm",
+    "fishingbuttontip": "Review tiddlers",
+    "fillfiltertip": "Fill in this filter",
+    "pinfiltertip": "Pin this filter",
+    "unpinfiltertip": "Unpin this filter",
+    "adjustscheduletip": "Adjust review schedule of this filter",
+    "easybonus": "Easy Parameter",
+    "graduatinginterval": "Starting Interval (day)",
+    "hardinterval": "Hard Parameter",
+    "intervalmodifier": "Interval Modifier",
+    "maximuminterval": "Maximum Interval (day)",
+    "newinterval": "Again Parameter",
+    "startingease": "Starting Ease",
+    "again": "again",
+    "againtip": "Can't recall the answer",
+    "hard": "hard",
+    "hardtip": "Hard to recall the answer",
+    "good": "good",
+    "goodtip": "Recall the answer",
+    "easy": "easy",
+    "easytip": "Easy to recall the answer",
+    "moretip": "More",
+    "reset": "reset",
+    "resettip": "Reset this tiddler's review schedule",
+    "remove": "remove",
+    "removetip": "No more review of this tiddler",
+    "fishpondtip": "Review tiddlers of this group",
+    "due": "due:",
+    "new": "new:"
+}

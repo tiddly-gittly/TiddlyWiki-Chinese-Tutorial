@@ -1,0 +1,9 @@
+{
+  "title": "$:/plugins/linonetwo/pinyin-fuzzy-search",
+  "description": "提供模糊搜索和拼音搜索的能力",
+  "author": "LinOnetwo",
+  "core-version": ">=5.1.22",
+  "plugin-type": "plugin",
+  "version": "0.0.1",
+  "list": "readme"
+}

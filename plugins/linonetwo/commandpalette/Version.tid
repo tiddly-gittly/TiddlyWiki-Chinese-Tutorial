@@ -1,0 +1,8 @@
+command-palette-caret: 49
+command-palette-name: Version
+command-palette-type: prompt-basic
+tags: $:/tags/CommandPaletteCommand
+title: $:/plugins/linonetwo/commandpalette/Version
+type: text/vnd.tiddlywiki
+
+[[$:/plugins/linonetwo/commandpalette]get[version]]

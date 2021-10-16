@@ -1,0 +1,52 @@
+tags: $:/tags/ViewTemplate
+title: $:/core/ui/ViewTemplate/title
+
+\whitespace trim
+\define title-styles()
+fill:$(foregroundColor)$;
+\end
+\define config-title()
+$:/config/ViewToolbarButtons/Visibility/$(listItem)$
+\end
+<div class="tc-tiddler-title">
+<div class="tc-titlebar">
+<span class="tc-tiddler-controls">
+<$list filter="[all[shadows+tiddlers]tag[$:/tags/ViewToolbar]!has[draft.of]]" variable="listItem">
+<$reveal type="nomatch" state=<<config-title>> text="hide">
+<$set name="tv-config-toolbar-class" filter="[<tv-config-toolbar-class>] [<listItem>encodeuricomponent[]addprefix[tc-btn-]]">
+<$transclude tiddler=<<listItem>>/>
+</$set>
+</$reveal>
+</$list>
+<$reveal default={{$:/temp/fishing!!fish}} text=<<currentTiddler>> type="match">
+<$reveal state="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold" type="nomatch" text="show">
+<$set name="tv-config-toolbar-class" filter="[<tv-config-toolbar-class>] [[$:/core/ui/Buttons/fold]encodeuricomponent[]addprefix[tc-btn-]]">
+<$transclude tiddler="$:/core/ui/Buttons/fold"/>
+</$set>
+</$reveal>
+</$reveal>
+</span>
+<$set name="tv-wikilinks" value={{$:/config/Tiddlers/TitleLinks}}>
+<$link>
+<$set name="foregroundColor" value={{!!color}}>
+<$list filter="[all[current]has[icon]] ~[[$:/config/DefaultTiddlerIcon]has[text]]">
+<span style=<<title-styles>> class="tc-tiddler-title-icon">
+<$transclude tiddler={{!!icon}}>
+<$transclude tiddler={{$:/config/DefaultTiddlerIcon}}/>
+</$transclude>
+</span>
+</$list>
+</$set>
+<h2 class="tc-title" title={{{ [all[current]prefix[$:/]then{$:/language/SystemTiddler/Tooltip}] }}}>
+<<toc-caption>>
+</h2>
+</$link>
+</$set>
+</div>
+
+<$reveal type="nomatch" text="" default="" state=<<tiddlerInfoState>> class="tc-tiddler-info tc-popup-handle" animate="yes" retain="yes">
+
+<$list filter="[all[shadows+tiddlers]tag[$:/tags/TiddlerInfoSegment]!has[draft.of]] [[$:/core/ui/TiddlerInfo]]" variable="listItem"><$transclude tiddler=<<listItem>> mode="block"/></$list>
+
+</$reveal>
+</div>

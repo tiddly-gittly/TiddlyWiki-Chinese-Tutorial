@@ -1,0 +1,6 @@
+key: ((insert-command-palette-result))
+tags: $:/tags/KeyboardShortcut
+title: $:/plugins/linonetwo/commandpalette/InsertCommandPaletteResult
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage $message="insert-command-palette-result"/>
