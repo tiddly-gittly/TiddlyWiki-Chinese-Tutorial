@@ -1,9 +1,11 @@
 created: 20211017152917343
 creator: TiddlyGitUser
-modified: 20211017153317905
+draft.of: 增量阅读
+draft.title: 增量阅读
+modified: 20211017153331175
 modifier: oflg
 tags: Fishing插件
-title: 增量阅读
+title: Draft of '增量阅读' by oflg
 tmap.id: 310a8990-eeb3-499c-ad48-31e11df484ec
 type: text/vnd.tiddlywiki
 
@@ -13,7 +15,7 @@ type: text/vnd.tiddlywiki
 
 
 <<<
-比方说，一篇直接来自互联网或pdf的文章。学习者可以从文章中提取重要的词句，并把它们做成测试题（Q&A或Cloze），以便以后复习。
+比方说，一篇直接来自互联网或pdf的文章。学习者可以从文章中提取重要的词句，并把它们做成w题（Q&A或Cloze），以便以后复习。
 
 事实上，完全可以想象，学习者通过复习，提取重点内容并逐一记忆，文中的营养就会被吸收，这是一种令人兴奋的学习方式。
 
