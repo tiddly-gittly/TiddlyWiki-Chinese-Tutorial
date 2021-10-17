@@ -9,6 +9,7 @@ type: text/vnd.tiddlywiki
   max-height: 250px;
   overflow-y: auto;
   padding: 0;
+  list-style-type: none;
 }
 .horizontal-list-links::-webkit-scrollbar {
 	width: 0 !important

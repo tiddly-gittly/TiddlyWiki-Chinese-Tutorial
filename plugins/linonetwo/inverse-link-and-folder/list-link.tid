@@ -10,9 +10,7 @@ type: text/vnd.tiddlywiki
     <$list filter="$filter$" emptyMessage=<<__emptyMessage__>>>
       <$subtype$>
         <$link to={{!!title}}>
-          <$transclude field="caption" >
-            <<tag>>
-          </$transclude>
+          <$macrocall $name="tag-pill-body" tag=<<currentTiddler>> icon={{!!icon}} colour={{!!color}} palette={{$:/palette}} element-tag="""$button""" element-attributes="""tag='span'"""/>
         </$link>
       </$subtype$>
     </$list>
