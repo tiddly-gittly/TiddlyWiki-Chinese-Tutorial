@@ -2,7 +2,7 @@ title: $:/plugins/oflg/fishing/languages/en-GB
 type: application/json
 
 {
-    "description": "Active Recall and Spaced Repetition system in TiddlyWiki, fishing with Anki algorithm",
+    "description": "Flashcards integrated in TiddlyWiki, fishing with algorithm of Anki",
     "fishingbuttontip": "Review tiddlers",
     "fillfiltertip": "Fill in this filter",
     "pinfiltertip": "Pin this filter",

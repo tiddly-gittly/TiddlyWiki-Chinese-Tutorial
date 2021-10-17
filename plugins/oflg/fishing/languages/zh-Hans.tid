@@ -2,7 +2,7 @@ title: $:/plugins/oflg/fishing/languages/zh-Hans
 type: application/json
 
 {
-    "description": "TiddlyWiki内的主动回忆和间隔重复系统，用Anki算法“钓鱼”",
+    "description": "TiddlyWiki集成抽认卡，“钓鱼”使用Anki算法",
     "fishingbuttontip": "复习条目",
     "fillfiltertip": "填入此筛选器",
     "pinfiltertip": "固定此筛选器",

@@ -10,8 +10,8 @@ type: text/vnd.tiddlywiki
     <$list filter="$filter$" emptyMessage=<<__emptyMessage__>>>
       <$subtype$>
         <$link to={{!!title}}>
-          <$transclude field="caption">
-            <$view field="title"/>
+          <$transclude field="caption" >
+            <<tag>>
           </$transclude>
         </$link>
       </$subtype$>

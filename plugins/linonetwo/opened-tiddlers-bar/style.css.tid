@@ -1,3 +1,8 @@
+creator: LinOnetwo
+tags: $:/tags/Stylesheet
+title: $:/plugins/linonetwo/opened-tiddlers-bar/style.css
+type: text/vnd.tiddlywiki
+
 /** 顶部tab栏 */
 section.story-backdrop {
   position: fixed;
@@ -20,7 +25,7 @@ section.story-backdrop > p, section.story-backdrop > p > div.tc-tab-buttons {
   display: flex;
   background-color: white;
   backdrop-filter: blur(3px);
-  background: rgba(255, 255, 255, 0.3) !important;
+  background: <<colour button-background>>;
 }
 
 

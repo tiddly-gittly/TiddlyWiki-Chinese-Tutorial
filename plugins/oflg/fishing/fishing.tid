@@ -2,7 +2,7 @@ tags: $:/tags/ViewTemplate
 title: $:/plugins/oflg/fishing/fishing
 
 <$reveal default={{$:/temp/fishing!!fish}} type="match" text=<<currentTiddler>> animate="yes">
-<$reveal state=<<folded-state>> type="match" text="show" animate="yes">
+<$reveal state=<<folded-state>> type="nomatch" text="hide" animate="yes">
 
 <!-- set anki algorithm https://gist.github.com/oflg/6c9cc15bbe2172688a0b4bd817b12bd7 -->
 <!-- set anki parameters https://docs.ankiweb.net/deck-options.html#advanced -->

@@ -1,0 +1,7 @@
+tags: $:/tags/Stylesheet
+title: $:/plugins/linonetwo/commandpalette/HideVanillaSearch.css
+type: text/vnd.tiddlywiki
+
+.tc-sidebar-lists.tc-sidebar-search {
+  display: none;
+}
