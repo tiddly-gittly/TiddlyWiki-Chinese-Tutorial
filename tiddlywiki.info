@@ -62,7 +62,6 @@
     "linonetwo/service-worker",
     "linonetwo/source-control-management",
     "linonetwo/sub-wiki",
-    "linonetwo/watch-fs",
     "linonetwo/zx-script"
   ],
   "themes": [
