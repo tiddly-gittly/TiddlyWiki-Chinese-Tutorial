@@ -197,6 +197,20 @@ var assetList = [
         "requires-reload": "no"
     },
     {
+        "title": "$:/plugins/linonetwo/google-calendar-import",
+        "name": "Google Calendar Import",
+        "description": "Import the Google Calendar events into your TiddlyWiki",
+        "author": "LinOnetwo",
+        "core-version": ">=5.1.22",
+        "plugin-type": "plugin",
+        "version": "0.0.1",
+        "list": "readme developer",
+        "dependents": "",
+        "type": "application/json",
+        "readme": "!! Background\n\n[[google/zx|https://github.com/google/zx]] is a tool for writing better scripts, with Javascript.\n\nThis tiddlywiki plugin enables you to run any tiddler with zx.\n\n!! Usage\n\n!!! Tiddler Type\n\nTiddler with title extension `*.js *.md *.mjs` can be execute without problem. Other tiddler witout extension (no `.xxx`) will be executed as `*.md` file, for example, tid file without extions will be executed as `*.md`, but it works without problem too, even you are writing wiki text instead of markdown.\n\nIf you add filetype `application/javascript` to your tiddler, it will be recognized as `*.mjs`.\n\n!!! Button\n\n\n!! Developer Documentation\n\nSee [[$:/plugins/linonetwo/google-calendar-import/developer]]\n",
+        "requires-reload": "yes"
+    },
+    {
         "title": "$:/plugins/linonetwo/inverse-link-and-folder",
         "description": "Add inverse link (bi-directional link) and folder information to the bottom of tiddlers",
         "author": "LinOnetwo",
@@ -347,6 +361,21 @@ var assetList = [
         "requires-reload": "no"
     },
     {
+        "author": "oflg",
+        "core-version": ">=5.2.0",
+        "description": "Flashcards integrated in TiddlyWiki, fishing with algorithm of Anki",
+        "list": "readme config",
+        "name": "Fishing",
+        "plugin-type": "plugin",
+        "source": "https://github.com/oflg/fishing",
+        "title": "$:/plugins/oflg/fishing",
+        "version": "1.3.1",
+        "dependents": "",
+        "type": "application/json",
+        "readme": "Installation and usage tutorial is available at [[Fishing Manual|https://oflg.github.io/fishing/]].\n\n可在 [[钓鱼手册|https://oflg.github.io/fishing/]] 查看安装使用教程。\n",
+        "requires-reload": "yes"
+    },
+    {
         "title": "$:/plugins/sobjornstad/TiddlyRemember",
         "description": "TiddlyRemember: Embed Anki notes in your TiddlyWiki",
         "author": "Soren Bjornstad",
@@ -359,18 +388,6 @@ var assetList = [
         "type": "application/json",
         "readme": "TiddlyRemember is a tool that integrates TiddlyWiki with Anki.\nYou can interleave questions with your notes in TiddlyWiki,\n    then sync them into Anki notes with one click.\nYou can edit and move the questions around your TiddlyWiki,\n    and they will stay connected to the Anki notes.\nScheduling information in Anki is preserved when editing notes in TiddlyWiki.\n\n* [[Documentation|https://sobjornstad.github.io/TiddlyRemember/]]\n* [[GitHub|https://github.com/sobjornstad/TiddlyRemember]]\n",
         "requires-reload": "no"
-    },
-    {
-        "title": "$:/plugins/souk21/commandpalette",
-        "description": "Command palette",
-        "author": "Souk21",
-        "version": "0.0.5",
-        "core-version": ">=5.0.8",
-        "source": "https://github.com/souk21/TW-commandpalette",
-        "plugin-type": "plugin",
-        "dependents": "",
-        "type": "application/json",
-        "requires-reload": "yes"
     },
     {
         "title": "$:/plugins/telmiger/EditorCounter",
@@ -446,6 +463,7 @@ var assetList = [
         "dependents": "$:/themes/tiddlywiki/vanilla",
         "plugin-priority": "1",
         "type": "application/json",
+        "readme": "Notion and VSCode inspired theme. Adapted for light theme.\n",
         "requires-reload": "no"
     }
 ];

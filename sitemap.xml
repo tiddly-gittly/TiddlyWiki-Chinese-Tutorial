@@ -86,7 +86,13 @@
 	</url>
 	<url>
 		<loc>https://onetwo.ren/wiki/#:他们是这样评价太微的</loc>
-		<lastmod>2021-10-03</lastmod>
+		<lastmod>2021-10-16</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:使用插件源</loc>
+		<lastmod>2021-10-16</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -97,8 +103,26 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
+		<loc>https://onetwo.ren/wiki/#:修改插件文件夹</loc>
+		<lastmod>2021-10-16</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>https://onetwo.ren/wiki/#:删除插件</loc>
-		<lastmod>2021-10-11</lastmod>
+		<lastmod>2021-10-16</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:删除条目</loc>
+		<lastmod>2021-10-16</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:制作插件源</loc>
+		<lastmod>2021-10-17</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -164,7 +188,7 @@
 	</url>
 	<url>
 		<loc>https://onetwo.ren/wiki/#:安装插件</loc>
-		<lastmod>2021-10-11</lastmod>
+		<lastmod>2021-10-16</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -187,8 +211,20 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
+		<loc>https://onetwo.ren/wiki/#:拖入别的Wiki里的插件</loc>
+		<lastmod>2021-10-16</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:拖动资源</loc>
+		<lastmod>2021-10-16</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>https://onetwo.ren/wiki/#:插件使用</loc>
-		<lastmod>2021-10-03</lastmod>
+		<lastmod>2021-10-16</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -207,6 +243,18 @@
 	<url>
 		<loc>https://onetwo.ren/wiki/#:林一二</loc>
 		<lastmod>2021-09-02</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:查看工具栏</loc>
+		<lastmod>2021-10-16</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:标签</loc>
+		<lastmod>2021-10-16</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
