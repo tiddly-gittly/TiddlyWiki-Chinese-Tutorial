@@ -1,6 +1,6 @@
 created: 20211016092559949
 creator: 林一二
-modified: 20211016093705409
+modified: 20211017074943607
 modifier: 林一二
 tags: 插件开发
 title: 制作插件源
@@ -35,6 +35,12 @@ type: text/vnd.tiddlywiki
       "index.html",
       "text/plain"
     ]
+```
+
+然后在 shell 里执行
+
+```sh
+tiddlywiki ${repoFolder} --output ${folderToServe}/library --build library
 ```
 
 !! 在自己的Wiki里放入一个插件库条目
