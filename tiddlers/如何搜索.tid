@@ -1,0 +1,12 @@
+created: 20211017133211080
+creator: 林一二
+modified: 20211017133433784
+modifier: 林一二
+tags: 基础知识
+title: 如何搜索
+tmap.id: 61c24a23-22e4-455b-a351-620f8a4946a9
+type: text/vnd.tiddlywiki
+
+基本的搜索一般通过[[命令菜单]]插件来做，按下 `ctrl/cmd + P` 即可唤出搜索框。
+
+高级搜索参见[[官方文档中的内容|https://bramchen.github.io/tw5-docs/zh-Hans/#Searching]]
