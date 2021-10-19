@@ -45,6 +45,13 @@ title: $:/plugins/oflg/fishing/fishing
 </$button>
 <$reveal state=<<qualify "$:/state/popup/$:/plugins/oflg/fishing/fishing/more">> type="popup" position="aboveleft" animate="yes">
 <div class="tc-drop-down" style="min-width:0px;">
+<$button message="tm-remove-tag" param="?" tooltip={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[removetip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[removetip]]}}} aria-label={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[removetip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[removetip]]}}} class="tc-btn-invisible tc-tiddlylink" style="padding:3px 10px;">
+<$action-setfield $tiddler="$:/temp/fishing" text="" fish={{{[subfilter{$:/temp/fishing!!fishrod}subfilter{$:/temp/fishing!!fishpond}rest[]first[]]}}}/>
+<$action-setfield $tiddler={{{[{$:/temp/fishing!!fish}addprefix[$:/state/folded/]]}}} text="hide"/>
+<$action-sendmessage $message="tm-close-tiddler"/>
+<$action-navigate $to={{$:/temp/fishing!!fish}}/>
+<$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[remove]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[remove]]}}}/>
+</$button>
 <$button  tooltip={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[resettip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[resettip]]}}} aria-label={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[resettip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[resettip]]}}} class="tc-btn-invisible tc-tiddlylink" style="padding:3px 10px;">
 <$action-deletefield $tiddler={{{[subfilter{$:/temp/fishing!!fishrod}subfilter{$:/temp/fishing!!fishpond}first[]]}}} due factor interval/>
 <$action-setfield $tiddler="$:/temp/fishing" text="" fish={{{[subfilter{$:/temp/fishing!!fishrod}subfilter{$:/temp/fishing!!fishpond}first[]]}}}/>
@@ -53,12 +60,23 @@ title: $:/plugins/oflg/fishing/fishing
 <$action-navigate $to={{$:/temp/fishing!!fish}}/>
 <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[reset]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[reset]]}}}/>
 </$button>
-<$button message="tm-remove-tag" param="?" tooltip={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[removetip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[removetip]]}}} aria-label={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[removetip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[removetip]]}}} class="tc-btn-invisible tc-tiddlylink" style="padding:3px 10px;">
-<$action-setfield $tiddler="$:/temp/fishing" text="" fish={{{[subfilter{$:/temp/fishing!!fishrod}subfilter{$:/temp/fishing!!fishpond}rest[]first[]]}}}/>
+<$button  tooltip={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[add7tip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[add7tip]]}}} aria-label={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[add7tip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[add7tip]]}}} class="tc-btn-invisible tc-tiddlylink" style="padding:3px 10px;">
+<$action-setfield $field="interval" $value="7"/>
+<$action-setfield $field="due" $value=<<duejs>>/>
+<$action-setfield $tiddler="$:/temp/fishing" text="" fish={{{[subfilter{$:/temp/fishing!!fishrod}subfilter{$:/temp/fishing!!fishpond}first[]]}}}/>
 <$action-setfield $tiddler={{{[{$:/temp/fishing!!fish}addprefix[$:/state/folded/]]}}} text="hide"/>
 <$action-sendmessage $message="tm-close-tiddler"/>
 <$action-navigate $to={{$:/temp/fishing!!fish}}/>
-<$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[remove]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[remove]]}}}/>
++ 7
+</$button>
+<$button  tooltip={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[add1tip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[add1tip]]}}} aria-label={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[add1tip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[add1tip]]}}} class="tc-btn-invisible tc-tiddlylink" style="padding:3px 10px;">
+<$action-setfield $field="interval" $value="1"/>
+<$action-setfield $field="due" $value=<<duejs>>/>
+<$action-setfield $tiddler="$:/temp/fishing" text="" fish={{{[subfilter{$:/temp/fishing!!fishrod}subfilter{$:/temp/fishing!!fishpond}first[]]}}}/>
+<$action-setfield $tiddler={{{[{$:/temp/fishing!!fish}addprefix[$:/state/folded/]]}}} text="hide"/>
+<$action-sendmessage $message="tm-close-tiddler"/>
+<$action-navigate $to={{$:/temp/fishing!!fish}}/>
++ 1
 </$button>
 </div>
 </$reveal>
