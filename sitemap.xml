@@ -217,6 +217,12 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
+		<loc>https://onetwo.ren/wiki/#:尝试调整样式</loc>
+		<lastmod>2021-10-20</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>https://onetwo.ren/wiki/#:嵌入</loc>
 		<lastmod>2021-10-03</lastmod>
 		<changefreq>monthly</changefreq>
