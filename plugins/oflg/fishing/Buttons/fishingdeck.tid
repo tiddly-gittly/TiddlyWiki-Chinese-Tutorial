@@ -1,4 +1,4 @@
-caption: {{$:/plugins/oflg/fishing/icon}} fishing
+caption: {{$:/plugins/oflg/fishing/icon}} <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[fishing]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[fishing]]}}}/>
 description: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[description]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[description]]}}}/>
 tags: $:/tags/PageControls
 title: $:/plugins/oflg/fishing/Buttons/fishingdeck

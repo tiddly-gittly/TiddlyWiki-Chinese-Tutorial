@@ -2,6 +2,7 @@ title: $:/plugins/oflg/fishing/languages/en-GB
 type: application/json
 
 {
+    "fishing": "fishing",
     "description": "Flashcards integrated in TiddlyWiki, fishing with algorithm of Anki",
     "fishingbuttontip": "Review tiddlers",
     "fillfiltertip": "Fill in this filter",

@@ -45,7 +45,9 @@ title: Choice
 </$vars>
 </$list>
 
+<$reveal state=<<folded-state>> type="match" text="show" animate="yes">
 {{{[{!!title}split[__]reverse[]first[]]}}}
+</$reveal>
 </$reveal>
 <$reveal default={{{[{!!title}search:title[^^__]]}}} type="match" text="" animate="yes">
 {{!!title}}
