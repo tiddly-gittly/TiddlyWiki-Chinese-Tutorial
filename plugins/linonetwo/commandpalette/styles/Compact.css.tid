@@ -1,9 +1,6 @@
-created: 20200603190000307
-modified: 20200623022617588
 tags: $:/tags/CommandPaletteTheme $:/tags/Stylesheet
 title: $:/plugins/linonetwo/commandpalette/Compact.css
 type: text/vnd.tiddlywiki
-
 
 \rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html
 :root {
@@ -61,16 +58,20 @@ type: text/vnd.tiddlywiki
     flex: 1;
     padding-left: 7px;
 }
+.commandpalettetitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 .commandpalettehint {
-    color:  <<colour foreground>>;
     font-size: 13px;
     text-align: right;
     flex-shrink: 0;
     padding-right: 7px;
     opacity: 0.6;
+    font-weight: 800;
 }
 .commandpaletteresultselected>.commandpalettehint {
-    color: <<colour background>>;
     opacity: 1;
 }
 .commandpalettehintmain {
@@ -80,6 +81,7 @@ type: text/vnd.tiddlywiki
     background: <<colour background>>;
     font-size: 15px;
     color: <<colour foreground>>;
+    fill: <<colour foreground>>;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -87,6 +89,7 @@ type: text/vnd.tiddlywiki
     padding-top: 4px;
     padding-bottom: 4px;
     cursor: pointer;
+    width: 100%;
 }
 .commandpaletteresult:not(:last-child) {
     border-bottom: <<colour page-background>> solid 1px;
@@ -97,6 +100,7 @@ type: text/vnd.tiddlywiki
 .commandpaletteresultselected {
     background: <<colour primary>>;
     color: <<colour page-background>>;
+    fill: <<colour page-background>>;
 }
 .cp-scroll{
     max-height: 50vh;

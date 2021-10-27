@@ -1380,9 +1380,13 @@ class CommandPaletteWidget extends Widget {
 
   addResult(result, id) {
     let resultDiv = this.createElement('div', {
-      className: 'commandpaletteresult',
+      className: 'commandpaletteresult'
+    });
+    let titleDiv = this.createElement('div', {
+      className: 'commandpalettetitle',
       innerText: result.caption || result.name
     });
+    resultDiv.appendChild(titleDiv);
 
     if (result.hint !== undefined) {
       let hint = this.createElement('div', {
