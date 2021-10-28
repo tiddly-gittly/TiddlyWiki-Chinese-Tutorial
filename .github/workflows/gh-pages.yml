@@ -14,6 +14,12 @@ jobs:
         with:
           node-version: '16'
 
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: |
+            **/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/package.json') }}
       - name: 安装 NodeJS 依赖
         run: npm install
       - name: 构建
