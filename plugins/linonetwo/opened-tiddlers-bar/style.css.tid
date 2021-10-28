@@ -26,6 +26,8 @@ section.story-backdrop > p, section.story-backdrop > p > div.tc-tab-buttons {
   background-color: white;
   backdrop-filter: blur(3px);
   background: <<colour button-background>>;
+  /** make it possible to drag the app using this bar in TiddlyGit */
+  -webkit-app-region: drag;
 }
 
 

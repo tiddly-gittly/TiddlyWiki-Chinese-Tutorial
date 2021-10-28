@@ -1,0 +1,17 @@
+created: 20211027143715051
+creator: 林一二
+modified: 20211027144333985
+modifier: 林一二
+tags: TiddlyGit太记
+title: 太记使用常见问题
+tmap.id: d6872a9c-45e5-4a63-afc9-96743d251d4d
+type: text/vnd.tiddlywiki
+
+
+!! 忘了给代理配「绕过本地（绕过localhost）」
+
+因为太记在本地启动了一个太微的 Web 服务器，所以你要是忘了让你的代理工具绕过本地，就会阻碍太记加载太微：
+
+[img[太记使用常见问题-开着代理502截图.png]]
+
+解决方法：给代理配「绕过本地（绕过localhost）」，不同的代理工具有不同的配置方法，请自行在 Bing 上搜索查询。
