@@ -9,4 +9,4 @@ title: $:/plugins/oflg/fishing/macros
 </div>
 \end
 
-\define centrality() [relink:backreferences[]!is[system]count[]]=[relink:references[]!is[system]tag[questiontemplate]count[]]=[relink:references[]!is[system]has[due]!days:due[1]count[]]=[relink:references[]!is[system]has[due]count[]negate[]]+[sum[]]
+\define priority() [relink:backreferences[]!is[system]count[]]=[relink:references[]!is[system]tag[questiontemplate]count[]]=[relink:references[]!is[system]tag[?]has[due]!days:due[1]count[]]=[relink:references[]!is[system]tag[?]has[due]count[]negate[]]+[sum[]add{!!priority}add<delayjs>subtract{!!interval}multiply{!!factor}fixed[2]]

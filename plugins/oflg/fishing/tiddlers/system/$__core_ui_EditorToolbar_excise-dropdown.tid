@@ -23,7 +23,7 @@ title: $:/core/ui/EditorToolbar/excise-dropdown
 </$select>
 
 <$reveal state="""$config-title$/type""" type="match" text="macro">
-<<lingo Caption/MacroName>> <$edit-text tag="input" tiddler="""$config-title$/macro-title"""  focus="true" default="translink"/>
+<<lingo Caption/MacroName>> <$edit-text tag="input" tiddler="""$config-title$/macro-title""" default="translink"/>
 </$reveal>
 
 <$fieldmangler tiddler={{$config-title$/new-title}}>
