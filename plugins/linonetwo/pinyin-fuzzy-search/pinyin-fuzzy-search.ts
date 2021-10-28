@@ -179,11 +179,15 @@ export function fuzzySearchWiki(searchText: string, options: ISearchOptions = {}
   } else {
     tiddlerTitlesToSearch = $tw.wiki.getTiddlers();
   }
+  tiddlerTitlesToSearch = tiddlerTitlesToSearch.map((tiddlerTitle) => tiddlerTitle.toLowerCase());
 
   // 开始搜索
 
   // 首先进行精确匹配，快速搜索，需要空格隔开的各个部分都命中，顺序不重要
-  const inputKeywords: string[] = searchText.split(' ').filter((item) => item);
+  const inputKeywords: string[] = searchText
+    .toLowerCase()
+    .split(' ')
+    .filter((item) => item);
   const exactMatches = tiddlerTitlesToSearch.filter((title) => inputKeywords.every((keyword) => title.includes(keyword)));
   if (exactMatches.length > 0) {
     return exactMatches;

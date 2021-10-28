@@ -4367,11 +4367,12 @@ function fuzzySearchWiki(searchText, options = {}) {
     });
   } else {
     tiddlerTitlesToSearch = $tw.wiki.getTiddlers();
-  } // 开始搜索
+  }
+
+  tiddlerTitlesToSearch = tiddlerTitlesToSearch.map(tiddlerTitle => tiddlerTitle.toLowerCase()); // 开始搜索
   // 首先进行精确匹配，快速搜索，需要空格隔开的各个部分都命中，顺序不重要
 
-
-  const inputKeywords = searchText.split(' ').filter(item => item);
+  const inputKeywords = searchText.toLowerCase().split(' ').filter(item => item);
   const exactMatches = tiddlerTitlesToSearch.filter(title => inputKeywords.every(keyword => title.includes(keyword)));
 
   if (exactMatches.length > 0) {
