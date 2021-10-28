@@ -179,7 +179,6 @@ export function fuzzySearchWiki(searchText: string, options: ISearchOptions = {}
   } else {
     tiddlerTitlesToSearch = $tw.wiki.getTiddlers();
   }
-  tiddlerTitlesToSearch = tiddlerTitlesToSearch.map((tiddlerTitle) => tiddlerTitle.toLowerCase());
 
   // 开始搜索
 
@@ -188,7 +187,10 @@ export function fuzzySearchWiki(searchText: string, options: ISearchOptions = {}
     .toLowerCase()
     .split(' ')
     .filter((item) => item);
-  const exactMatches = tiddlerTitlesToSearch.filter((title) => inputKeywords.every((keyword) => title.includes(keyword)));
+  const exactMatches = tiddlerTitlesToSearch.filter((title) => {
+    const lowerCaseTitle = title.toLowerCase();
+    return inputKeywords.every((keyword) => lowerCaseTitle.includes(keyword));
+  });
   if (exactMatches.length > 0) {
     return exactMatches;
   }
@@ -210,7 +212,7 @@ export function fuzzySearchWiki(searchText: string, options: ISearchOptions = {}
       }
     }
   }
-  return results;
+  return results.filter((item) => item);
 }
 
 /**

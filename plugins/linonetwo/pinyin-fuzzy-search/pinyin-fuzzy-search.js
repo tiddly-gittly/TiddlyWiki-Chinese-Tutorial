@@ -4367,13 +4367,15 @@ function fuzzySearchWiki(searchText, options = {}) {
     });
   } else {
     tiddlerTitlesToSearch = $tw.wiki.getTiddlers();
-  }
-
-  tiddlerTitlesToSearch = tiddlerTitlesToSearch.map(tiddlerTitle => tiddlerTitle.toLowerCase()); // 开始搜索
+  } // 开始搜索
   // 首先进行精确匹配，快速搜索，需要空格隔开的各个部分都命中，顺序不重要
 
+
   const inputKeywords = searchText.toLowerCase().split(' ').filter(item => item);
-  const exactMatches = tiddlerTitlesToSearch.filter(title => inputKeywords.every(keyword => title.includes(keyword)));
+  const exactMatches = tiddlerTitlesToSearch.filter(title => {
+    const lowerCaseTitle = title.toLowerCase();
+    return inputKeywords.every(keyword => lowerCaseTitle.includes(keyword));
+  });
 
   if (exactMatches.length > 0) {
     return exactMatches;
@@ -4397,7 +4399,7 @@ function fuzzySearchWiki(searchText, options = {}) {
     }
   }
 
-  return results;
+  return results.filter(item => item);
 }
 /**
  *
