@@ -4,9 +4,11 @@
 
 [只读版访问地址（Github Pages）](https://tiddly-gittly.github.io/TiddlyWiki-Chinese-Tutorial/)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2d87784e-fe3b-47a2-ae73-7a2f266f74a8/deploy-status)](https://app.netlify.com/sites/tw-cn/deploys)
+
 ## 贡献内容
 
-### 没有Github账号版
+### 没有 Github 账号版
 
 使用知乎账号，在 [中文社区共建的太微（TiddlyWiki）教程有哪些需要改进的地方？](https://www.zhihu.com/question/484539250) 里留言。
 
@@ -19,7 +21,7 @@
 ![docs/image/clone-code-tg.png](docs/image/clone-code-tg.png)
 ![docs/image/clone-code-tg2.png](docs/image/clone-code-tg2.png)
 
-然后就能编辑了，编辑结果会每30分钟自动同步上来，或是在重启应用后自动同步上来。
+然后就能编辑了，编辑结果会每 30 分钟自动同步上来，或是在重启应用后自动同步上来。
 
 ### 专业版
 
