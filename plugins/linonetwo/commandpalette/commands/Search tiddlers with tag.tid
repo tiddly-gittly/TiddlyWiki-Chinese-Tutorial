@@ -1,4 +1,4 @@
-command-palette-name: Search tiddlers with tag
+command-palette-name: 用 @标签 搜索条目
 command-palette-type: prompt
 command-palette-caption: 带某个标签的Tiddler
 command-palette-hint: 在命令菜单里列出带某个标签的Tiddler

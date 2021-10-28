@@ -690,24 +690,28 @@ class CommandPaletteWidget extends Widget {
       keepPalette: true
     });
     this.actions.push({
-      name: 'See History',
+      name: 'History',
+      caption: '查看历史记录',
       action: e => this.showHistory(),
       keepPalette: true
     });
     this.actions.push({
       name: 'New Command Wizard',
+      caption: '交互式创建新命令',
       action: e => this.newCommandWizard(),
       keepPalette: true
     });
     this.actions.push({
       name: 'Add tag to tiddler',
-      action: e => this.tagOperation(e, 'Pick tiddler to tag', 'Pick tag to add (⇧⏎ to add multiple)', (tiddler, terms) => // @ts-expect-error ts-migrate(2304) FIXME: Cannot find name '$tw'.
+      caption: '向条目添加标签',
+      action: e => this.tagOperation(e, '选择一个条目来添加标签', '选择一个标签来添加 (⇧⏎ 可以多次添加)', (tiddler, terms) => // @ts-expect-error ts-migrate(2304) FIXME: Cannot find name '$tw'.
       $tw.wiki.filterTiddlers(`[!is[system]tags[]] [is[system]tags[]] -[[${tiddler}]tags[]] +[pinyinfuse[${terms}]]`), true, 'tm-add-tag'),
       keepPalette: true
     });
     this.actions.push({
       name: 'Remove tag',
-      action: e => this.tagOperation(e, 'Pick tiddler to untag', 'Pick tag to remove (⇧⏎ to remove multiple)', // @ts-expect-error ts-migrate(2304) FIXME: Cannot find name '$tw'.
+      caption: '去除标签',
+      action: e => this.tagOperation(e, '选择一个条目来去除标签', '选择一个标签来去除 (⇧⏎ 可以去除多次)', // @ts-expect-error ts-migrate(2304) FIXME: Cannot find name '$tw'.
       (tiddler, terms) => $tw.wiki.filterTiddlers(`[[${tiddler}]tags[]] +[pinyinfuse[${terms}]]`), false, 'tm-remove-tag'),
       keepPalette: true
     });
@@ -716,7 +720,7 @@ class CommandPaletteWidget extends Widget {
     for (let tiddler of commandTiddlers) {
       if (!tiddler.fields[this.typeField] === undefined) continue;
       let name = tiddler.fields[this.nameField];
-      if (typeof name !== 'string') throw new Error(`Command palette tiddler ${tiddler.fields.title} doesn't have a ${this.nameField} field`);
+      if (typeof name !== 'string') throw new Error(`命令菜单条目 ${tiddler.fields.title} 缺失 ${this.nameField} 字段`);
       let caption = this.translateCaption(tiddler.fields[this.captionField]);
       let type = tiddler.fields[this.typeField];
       let text = this.translateCaption(tiddler.fields.text);
@@ -825,14 +829,14 @@ class CommandPaletteWidget extends Widget {
   newCommandWizard() {
     this.blockProviderChange = true;
     this.input.value = '';
-    this.hint.innerText = 'Command Name';
+    this.hint.innerText = '命令名';
     let name = '';
     let type = '';
     let hint = '';
 
     let messageStep = () => {
       this.input.value = '';
-      this.hint.innerText = 'Enter Message';
+      this.hint.innerText = '输入信息';
 
       this.currentResolver = e => {
         this.tmMessageBuilder('tm-new-tiddler', {
@@ -849,7 +853,7 @@ class CommandPaletteWidget extends Widget {
 
     let hintStep = () => {
       this.input.value = '';
-      this.hint.innerText = 'Enter hint';
+      this.hint.innerText = '输入提示文本';
 
       this.currentResolver = e => {
         hint = this.input.value;
@@ -1070,11 +1074,11 @@ class CommandPaletteWidget extends Widget {
       resolver: e => this.actionResolver(e)
     };
     this.symbolProviders['》'] = this.symbolProviders['>'];
-    this.symbolProviders['#'] = {
+    this.symbolProviders['##'] = {
       searcher: terms => this.tagListProvider(terms),
       resolver: e => this.tagListResolver(e)
     };
-    this.symbolProviders['@'] = {
+    this.symbolProviders['#'] = {
       searcher: terms => this.tagProvider(terms),
       resolver: e => this.defaultResolver(e)
     };
@@ -1098,6 +1102,86 @@ class CommandPaletteWidget extends Widget {
     this.currentResults = [];
 
     this.currentProvider = () => {};
+  }
+
+  helpProvider(terms) {
+    //TODO: tiddlerify?
+    this.currentSelection = 0;
+    this.hint.innerText = 'Help';
+    let searches = [{
+      name: '直接打字是搜索条目标题和内容；而以下述特殊字符开头可以执行特殊搜索',
+      action: () => this.promptCommand('')
+    }, {
+      name: '> 查看和搜索命令列表',
+      action: () => this.promptCommand('>')
+    }, {
+      name: '+ 创建条目，先输入条目名，然后可以带上#打标签',
+      action: () => this.promptCommand('+')
+    }, {
+      name: '# 列出带标签的条目（标签不可包含空格，用空格隔开多个#开头的标签，不带#的作为搜索词）',
+      action: () => this.promptCommand('#')
+    }, {
+      name: '## 搜索标签列表',
+      action: () => this.promptCommand('##', 2)
+    }, {
+      name: '[ 筛选器语句',
+      action: () => this.promptCommand('[')
+    }, {
+      name: '| 命令菜单设置',
+      action: () => this.promptCommand('|')
+    }, {
+      name: '\\ 规避第一个字符是上述命令字符的情况，例如「\\#」可搜标题以「#」起头的条目',
+      action: () => this.promptCommand('\\')
+    }, {
+      name: '? 打开帮助',
+      action: () => this.promptCommand('?')
+    }];
+    this.showResults(searches);
+  }
+  /**
+   * 解析输入，默认前两位可能是命令字符，会到 this.symbolProviders 里查找相应的 provider
+   */
+
+
+  parseCommand(text) {
+    let terms = '';
+    let resolver;
+    let provider;
+    let shortcut = this.triggers.find(t => text.startsWith(t.trigger));
+
+    if (shortcut !== undefined) {
+      resolver = e => {
+        let inputWithoutShortcut = this.input.value.substr(shortcut.trigger.length);
+        this.invokeActionString(shortcut.text, this, e, {
+          commandpaletteinput: inputWithoutShortcut
+        });
+        this.closePalette();
+      };
+
+      provider = terms => {
+        this.hint.innerText = shortcut.hint;
+        this.showResults([]);
+      };
+    } else {
+      // 从上到下找，先找长的，再找短的，以便 ## 优先匹配 ## 而不是 #
+      let providerSymbol = Object.keys(this.symbolProviders).sort((a, b) => -a.length + b.length).find(symbol => text.startsWith(symbol));
+
+      if (providerSymbol === undefined) {
+        resolver = this.defaultResolver;
+        provider = this.defaultProvider;
+        terms = text;
+      } else {
+        provider = this.symbolProviders[providerSymbol].searcher;
+        resolver = this.symbolProviders[providerSymbol].resolver;
+        terms = text.replace(providerSymbol, '');
+      }
+    }
+
+    return {
+      resolver,
+      provider,
+      terms
+    };
   }
 
   refreshSearchSteps() {
@@ -1226,47 +1310,6 @@ class CommandPaletteWidget extends Widget {
     this.currentProvider = provider;
     this.currentProvider(terms);
     this.setSelectionToFirst();
-  }
-
-  parseCommand(text) {
-    let terms = '';
-    let prefix = text.substr(0, 1);
-    let resolver;
-    let provider;
-    let shortcut = this.triggers.find(t => text.startsWith(t.trigger));
-
-    if (shortcut !== undefined) {
-      resolver = e => {
-        let inputWithoutShortcut = this.input.value.substr(shortcut.trigger.length);
-        this.invokeActionString(shortcut.text, this, e, {
-          commandpaletteinput: inputWithoutShortcut
-        });
-        this.closePalette();
-      };
-
-      provider = terms => {
-        this.hint.innerText = shortcut.hint;
-        this.showResults([]);
-      };
-    } else {
-      let providerSymbol = Object.keys(this.symbolProviders).find(p => p === prefix);
-
-      if (providerSymbol === undefined) {
-        resolver = this.defaultResolver;
-        provider = this.defaultProvider;
-        terms = text;
-      } else {
-        provider = this.symbolProviders[providerSymbol].searcher;
-        resolver = this.symbolProviders[providerSymbol].resolver;
-        terms = text.substring(1);
-      }
-    }
-
-    return {
-      resolver,
-      provider,
-      terms
-    };
   }
 
   onClick(event) {
@@ -1438,19 +1481,24 @@ class CommandPaletteWidget extends Widget {
     let selectionTitle = this.getDataFromResultDiv(this.currentResults[this.currentSelection - 1], 'name');
     this.closePalette();
     this.navigateTo(selectionTitle);
-  } // @ts-expect-error ts-migrate(7006) FIXME: Parameter 'title' implicitly has an 'any' type.
+  }
+  /**
+   * 调用 tm-navigate 跳转到标题对应的条目处
+   */
 
 
   navigateTo(title) {
-    this.parentWidget.dispatchEvent({
-      type: 'tm-navigate',
-      param: title,
-      navigateTo: title
-    });
+    if (title) {
+      this.parentWidget.dispatchEvent({
+        type: 'tm-navigate',
+        param: title,
+        navigateTo: title
+      });
+    }
   }
 
   showHistory() {
-    this.hint.innerText = 'History';
+    this.hint.innerText = '历史记录';
 
     this.currentProvider = terms => {
       let results;
@@ -1458,14 +1506,14 @@ class CommandPaletteWidget extends Widget {
       if (terms.length === 0) {
         results = this.getHistory();
       } else {
-        results = $tw.utils.pinyinfuse(this.getHistory(), terms, ['title']).map(item => item.item);
+        results = $tw.utils.pinyinfuse(this.getHistory(), terms).map(item => item.item);
       }
 
-      this.showResults(results.map(r => {
+      this.showResults(results.map(title => {
         return {
-          name: r.title,
+          name: title,
           action: () => {
-            this.navigateTo(r);
+            this.navigateTo(title);
             this.closePalette();
           }
         };
@@ -1473,8 +1521,10 @@ class CommandPaletteWidget extends Widget {
     };
 
     this.currentResolver = e => {
+      var _a;
+
       if (this.currentSelection === 0) return;
-      this.getActionFromResultDiv(this.currentResults[this.currentSelection - 1]);
+      (_a = this.getActionFromResultDiv(this.currentResults[this.currentSelection - 1])) === null || _a === void 0 ? void 0 : _a(e);
     };
 
     this.input.value = '';
@@ -1548,7 +1598,7 @@ class CommandPaletteWidget extends Widget {
   }
 
   defaultProvider(terms) {
-    this.hint.innerText = 'Search tiddlers (⇧⏎ to create)';
+    this.hint.innerText = '⏎搜索条目（⇧⏎ 创建条目）（？问号查看帮助）';
     let searches;
     if (terms.startsWith('\\')) terms = terms.substr(1);
 
@@ -1588,7 +1638,7 @@ class CommandPaletteWidget extends Widget {
 
   tagListProvider(terms) {
     this.currentSelection = 0;
-    this.hint.innerText = 'Search tags';
+    this.hint.innerText = '搜索标签列表';
     let searches;
 
     if (terms.length === 0) {
@@ -1610,24 +1660,23 @@ class CommandPaletteWidget extends Widget {
 
   tagListResolver(e) {
     if (this.currentSelection === 0) {
-      let input = this.input.value.substr(1); // @ts-expect-error ts-migrate(2304) FIXME: Cannot find name '$tw'.
+      let input = this.input.value.substring(2); // @ts-expect-error ts-migrate(2304) FIXME: Cannot find name '$tw'.
 
       let exist = $tw.wiki.filterTiddlers('[tag[' + input + ']]');
       if (!exist) return;
-      this.input.value = '@' + input;
+      this.input.value = '##' + input;
       return;
     }
 
     let result = this.currentResults[this.currentSelection - 1];
-    this.input.value = '@' + result.innerText;
+    this.input.value = '##' + result.innerText;
     this.onInput(this.input.value);
   }
 
   tagProvider(terms) {
     this.currentSelection = 0;
-    this.hint.innerText = 'Search tiddlers with @tag(s)'; // @ts-expect-error ts-migrate(7034) FIXME: Variable 'searches' implicitly has type 'any[]' in... Remove this comment to see the full error message
-
-    let searches = [];
+    this.hint.innerText = '用「#标签 #标签2」搜索条目';
+    let tiddlerNameSearchResults = [];
 
     if (terms.length !== 0) {
       let {
@@ -1642,21 +1691,23 @@ class CommandPaletteWidget extends Widget {
         if (tags.length === 1) {
           let tag = tags[0];
           let tagTiddlerExists = this.tiddlerOrShadowExists(tag);
-          if (tagTiddlerExists && searchTerms.some(s => tag.includes(s))) searches.push(tag);
+          if (tagTiddlerExists && searchTerms.some(s => tag.includes(s))) tiddlerNameSearchResults.push(tag);
         }
 
-        searches = [...searches, ...taggedTiddlers];
+        tiddlerNameSearchResults = [...tiddlerNameSearchResults, ...taggedTiddlers];
       }
-    } // @ts-expect-error ts-migrate(7005) FIXME: Variable 'searches' implicitly has an 'any[]' type... Remove this comment to see the full error message
+    }
 
-
-    searches = searches.map(s => {
+    this.showResults(tiddlerNameSearchResults.map(tiddlerName => {
       return {
-        name: s
+        name: tiddlerName
       };
-    });
-    this.showResults(searches);
+    }));
   }
+  /**
+   * @param input `'#aaa 1 #bbb#ccc'` => `['aaa', 'bbb#ccc']` and search `1`
+   */
+
 
   parseTags(input) {
     let splits = input.split(' ').filter(s => s !== '');
@@ -1664,10 +1715,12 @@ class CommandPaletteWidget extends Widget {
     let searchTerms = [];
 
     for (let i = 0; i < splits.length; i++) {
-      if (splits[i].startsWith('@')) {
+      // 空格分隔的结果可以以 # 开头，表示标签
+      if (splits[i].startsWith('#')) {
         tags.push(splits[i].substr(1));
         continue;
-      }
+      } // 也可以不带 # ，表示搜索词
+
 
       searchTerms.push(splits[i]);
     }
@@ -1732,10 +1785,10 @@ class CommandPaletteWidget extends Widget {
 
     this.currentProvider = terms => {
       this.currentSelection = 0;
-      this.hint.innerText = 'Choose a theme';
+      this.hint.innerText = '选择一个主题';
       let defaultValue = this.defaultSettings['theme'];
       let results = [{
-        name: 'Revert to default value: ' + defaultValue.match(/[^\/]*$/),
+        name: '恢复默认值: ' + defaultValue.match(/[^\/]*$/),
         action: () => {
           this.setSetting('theme', defaultValue); // @ts-expect-error ts-migrate(2554) FIXME: Expected 1 arguments, but got 0.
 
@@ -1854,7 +1907,7 @@ class CommandPaletteWidget extends Widget {
 
   actionProvider(terms) {
     this.currentSelection = 0;
-    this.hint.innerText = 'Search commands';
+    this.hint.innerText = '查看和搜索命令列表';
     let results;
 
     if (terms.length === 0) {
@@ -1874,46 +1927,11 @@ class CommandPaletteWidget extends Widget {
     this.showResults(results);
   }
 
-  helpProvider(terms) {
-    //TODO: tiddlerify?
-    this.currentSelection = 0;
-    this.hint.innerText = 'Help';
-    let searches = [{
-      name: '... Search',
-      action: () => this.promptCommand('')
-    }, {
-      name: '> Commands',
-      action: () => this.promptCommand('>')
-    }, {
-      name: '+ Create tiddler with title',
-      action: () => this.promptCommand('+')
-    }, {
-      name: '# Search tags',
-      action: () => this.promptCommand('#')
-    }, {
-      name: '@ List tiddlers with tag',
-      action: () => this.promptCommand('@')
-    }, {
-      name: '[ Filter operation',
-      action: () => this.promptCommand('[')
-    }, {
-      name: '| Command Palette Settings',
-      action: () => this.promptCommand('|')
-    }, {
-      name: '\\ Escape first character',
-      action: () => this.promptCommand('\\')
-    }, {
-      name: '? Help',
-      action: () => this.promptCommand('?')
-    }];
-    this.showResults(searches);
-  }
-
   filterProvider(terms, hint) {
     var _a;
 
     this.currentSelection = 0;
-    this.hint.innerText = hint === undefined ? 'Filter operation' : hint;
+    this.hint.innerText = hint === undefined ? '筛选器语句' : hint;
     terms = '[' + terms; // @ts-expect-error ts-migrate(2304) FIXME: Cannot find name '$tw'.
 
     let fields = $tw.wiki.filterTiddlers('[fields[]]'); // @ts-expect-error ts-migrate(2304) FIXME: Cannot find name '$tw'.
@@ -1954,7 +1972,7 @@ class CommandPaletteWidget extends Widget {
           i += 1;
         }
 
-        results[i].action = () => this.promptCommand('@' + initialResult.name);
+        results[i].action = () => this.promptCommand('#' + initialResult.name);
 
         results[i].hint = 'Tag'; //Todo more info?
 
@@ -2053,7 +2071,7 @@ class CommandPaletteWidget extends Widget {
 
   createTiddlerProvider(terms) {
     this.currentSelection = 0;
-    this.hint.innerText = 'Create new tiddler with title @tag(s)';
+    this.hint.innerText = '创建条目，空格隔开可以用#打多个标签';
     this.showResults([]);
   }
 
@@ -2061,7 +2079,7 @@ class CommandPaletteWidget extends Widget {
     let {
       tags,
       searchTerms
-    } = this.parseTags(this.input.value.substr(1));
+    } = this.parseTags(this.input.value.substring(1));
     let title = searchTerms.join(' '); // @ts-expect-error ts-migrate(2322) FIXME: Type 'string' is not assignable to type 'any[]'.
 
     tags = tags.join(' ');

@@ -61,6 +61,7 @@ export function hasPinyinMatchOrFuseMatch<T extends Record<string, string>, Ks e
   const { threshold = 0.3, distance = 60, minMatchCharLength = 1, searchTiddlerByTitle = false } = options;
   const fuse = new Fuse<T>(items, {
     getFn: (object: T, keyPath: string | string[]): string => {
+      if (!keyPath) return '';
       // general usage
       let value: string;
       let realKeyPath: string;
@@ -74,7 +75,8 @@ export function hasPinyinMatchOrFuseMatch<T extends Record<string, string>, Ks e
       if (searchTiddlerByTitle) {
         const title = object['title'];
         const fieldName = realKeyPath;
-        const tiddler = $tw.wiki.getTiddler(title).fields;
+        const tiddler = $tw.wiki.getTiddler(title)?.fields;
+        if (!tiddler) return '';
         const fieldValue = typeof tiddler[fieldName] === 'string' ? tiddler[fieldName] : String(tiddler[fieldName] ?? '');
         // parse pinyin for long text is time consuming
         // if use chinese to search chinese, no need for pinyin
@@ -146,7 +148,7 @@ The search mode is determined by the first of these boolean flags to be true:
 - words: (default) treats search string as a list of tokens, and matches if all tokens are found, regardless of adjacency or ordering
 
 */
-export function fuzzySearchWiki(searchText: string, options: ISearchOptions = {}) {
+export function fuzzySearchWiki(searchText: string, options: ISearchOptions = {}): string[] {
   const { exclude } = options;
   // Accumulate the array of fields to be searched or excluded from the search
   let fields: string[] = [];
@@ -177,6 +179,17 @@ export function fuzzySearchWiki(searchText: string, options: ISearchOptions = {}
   } else {
     tiddlerTitlesToSearch = $tw.wiki.getTiddlers();
   }
+
+  // 开始搜索
+
+  // 首先进行精确匹配，快速搜索，需要空格隔开的各个部分都命中，顺序不重要
+  const inputKeywords: string[] = searchText.split(' ').filter((item) => item);
+  const exactMatches = tiddlerTitlesToSearch.filter((title) => inputKeywords.every((keyword) => title.includes(keyword)));
+  if (exactMatches.length > 0) {
+    return exactMatches;
+  }
+
+  // 没有发现完全匹配的，首先模糊拼音搜索兜底
   // seems getFn is not working here if it searches string[] , so we have to make items { title: string } first, and turn it back later
   const results = hasPinyinMatchOrFuseMatch<any, any>(
     tiddlerTitlesToSearch.map((title) => ({ title })),
@@ -193,7 +206,7 @@ export function fuzzySearchWiki(searchText: string, options: ISearchOptions = {}
       }
     }
   }
-  return results.map((item) => item);
+  return results;
 }
 
 /**

@@ -4264,8 +4264,9 @@ function hasPinyinMatchOrFuseMatch(items, input, keys = [], options = {}) {
   } = options;
   const fuse = new Fuse(items, {
     getFn: (object, keyPath) => {
-      var _a; // general usage
+      var _a, _b;
 
+      if (!keyPath) return ''; // general usage
 
       let value;
       let realKeyPath;
@@ -4281,8 +4282,9 @@ function hasPinyinMatchOrFuseMatch(items, input, keys = [], options = {}) {
       if (searchTiddlerByTitle) {
         const title = object['title'];
         const fieldName = realKeyPath;
-        const tiddler = $tw.wiki.getTiddler(title).fields;
-        const fieldValue = typeof tiddler[fieldName] === 'string' ? tiddler[fieldName] : String((_a = tiddler[fieldName]) !== null && _a !== void 0 ? _a : ''); // parse pinyin for long text is time consuming
+        const tiddler = (_a = $tw.wiki.getTiddler(title)) === null || _a === void 0 ? void 0 : _a.fields;
+        if (!tiddler) return '';
+        const fieldValue = typeof tiddler[fieldName] === 'string' ? tiddler[fieldName] : String((_b = tiddler[fieldName]) !== null && _b !== void 0 ? _b : ''); // parse pinyin for long text is time consuming
         // if use chinese to search chinese, no need for pinyin
 
         if (fieldName === 'text' || containsChinese(input)) {
@@ -4365,7 +4367,17 @@ function fuzzySearchWiki(searchText, options = {}) {
     });
   } else {
     tiddlerTitlesToSearch = $tw.wiki.getTiddlers();
-  } // seems getFn is not working here if it searches string[] , so we have to make items { title: string } first, and turn it back later
+  } // 开始搜索
+  // 首先进行精确匹配，快速搜索，需要空格隔开的各个部分都命中，顺序不重要
+
+
+  const inputKeywords = searchText.split(' ').filter(item => item);
+  const exactMatches = tiddlerTitlesToSearch.filter(title => inputKeywords.every(keyword => title.includes(keyword)));
+
+  if (exactMatches.length > 0) {
+    return exactMatches;
+  } // 没有发现完全匹配的，首先模糊拼音搜索兜底
+  // seems getFn is not working here if it searches string[] , so we have to make items { title: string } first, and turn it back later
 
 
   const results = hasPinyinMatchOrFuseMatch(tiddlerTitlesToSearch.map(title => ({
@@ -4384,7 +4396,7 @@ function fuzzySearchWiki(searchText, options = {}) {
     }
   }
 
-  return results.map(item => item);
+  return results;
 }
 /**
  *

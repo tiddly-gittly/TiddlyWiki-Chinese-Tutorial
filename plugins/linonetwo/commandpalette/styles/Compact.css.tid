@@ -98,9 +98,9 @@ type: text/vnd.tiddlywiki
     background: <<colour page-background>>;
 }
 .commandpaletteresultselected {
-    background: <<colour primary>>;
-    color: <<colour page-background>>;
-    fill: <<colour page-background>>;
+    background: <<colour tiddler-link-foreground>>;
+    color: <<colour tiddler-link-background>>;
+    fill: <<colour tiddler-link-background>>;
 }
 .cp-scroll{
     max-height: 50vh;
