@@ -1,0 +1,9 @@
+caption: 太微中文社区插件库(备用)
+tags: $:/tags/PluginLibrary
+title: $:/config/ChinesePluginLibraryBackup
+type: text/vnd.tiddlywiki
+url: https://tiddly-gittly.github.io/TiddlyWiki-Chinese-Tutorial/library/index.html
+
+太微中文社区插件库希望为中国的太微用户提供一键安装、更新插件的体验，使用方法详见[[中文社区共建的太微（TiddlyWiki）教程|https://tiddly-gittly.github.io/TiddlyWiki-Chinese-Tutorial/]]里插件相关的部分。
+
+要添加这个插件库到你的 Wiki 中，只需鼠标拖动这个链接到你的 Wiki 里即可：[[太微中文社区插件库(备用)|$:/config/ChinesePluginLibraryBackup]]
