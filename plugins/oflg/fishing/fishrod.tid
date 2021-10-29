@@ -8,7 +8,7 @@ startingease: 2.50
 title: $:/plugins/oflg/fishing/fishrod
 
 <div style="margin:5px 15px;">
-<$edit-text tiddler="$:/temp/fishing" field="fishrod" tag="input" focus="true" placeholder="[tag[?]]"/>
+<$edit-text tiddler="$:/temp/fishing" field="fishrod" tag="input" focus="true" placeholder="[tag[?]]" inputActions='<$action-setfield $tiddler="$:/temp/fishing" fish=""/>'/>
 </div>
 <div style="display:flex;margin:0 15px;flex-flow:wrap;align-items:center;">
 <$list filter="[{$:/temp/fishing!!fishrod}][prefix[$:/plugins/oflg/fishing/fishrod/]removeprefix[$:/plugins/oflg/fishing/fishrod/]]+[sort[]]" variable="fishrod">
