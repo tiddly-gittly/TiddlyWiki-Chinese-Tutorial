@@ -110,7 +110,7 @@ code { font-family: 'Fira Code', monospace; }
 */
 
 /** 除了工具栏上的按钮以外，其它按钮 */
-button:not(.tc-btn-invisible):not(.tc-unfold-banner):not(.tc-fold-banner):not(.tc-tab-selected):not(.tc-tab) {
+button:not(.tc-btn-invisible) {
   color: <<colour button-foreground>>;
   background-color: <<colour button-background>>;
   padding: 5px 10px;
@@ -121,12 +121,39 @@ button:not(.tc-btn-invisible):not(.tc-unfold-banner):not(.tc-fold-banner):not(.t
   /** hover动画 */
   transition: background-color 0.2s;
 }
-button:not(.tc-btn-invisible):not(.tc-unfold-banner):not(.tc-fold-banner):hover {
+button:not(.tc-btn-invisible):hover {
 	background-color: <<colour button-background-hover>>;
 }
 
-button:not(.tc-btn-invisible):not(.tc-unfold-banner):not(.tc-fold-banner) svg {
+button:not(.tc-btn-invisible) svg {
 	fill: <<colour tab-foreground>>;
+}
+
+/** 收合栏 */
+button.tc-fold-banner {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  width: 23px;
+  text-align: center;
+  margin-left: -35px;
+  top: 6px;
+  bottom: 6px;
+}
+button.tc-unfold-banner {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  width: 100%;
+  width: calc(100% + 2px);
+  margin-left: -43px;
+  text-align: center;
+  border-top: 2px solid #f8f8f8;
+  margin-top: 4px;
 }
 
 
@@ -134,24 +161,26 @@ button:not(.tc-btn-invisible):not(.tc-unfold-banner):not(.tc-fold-banner) svg {
 .tc-tab-buttons > button {
 	border-radius: 0px;
 }
-.tc-tab-buttons button:not(.tc-tab-selected):not(.tc-unfold-banner):not(.tc-fold-banner) {
+.tc-tab-buttons button:not(.tc-tab-selected) {
 	fill: none;
 	background-color: <<colour tab-background>>;
 	color: <<colour tab-foreground>>;
 	border: none;
   border-radius: 0px;
 }
-.tc-tab-buttons button:not(.tc-tab-selected):not(.tc-unfold-banner):not(.tc-fold-banner):hover {
+.tc-tab-buttons button:not(.tc-tab-selected):hover {
 	background-color: <<colour button-background-hover>>;
 }
 .tc-sidebar-lists .tc-tab-buttons button.tc-tab-selected {
 	border: none;
 	border-bottom: 2px solid silver;
+  border-radius: 0px;
 }
 .tc-tab-buttons button.tc-tab-selected {
 	border: none;
 	border-bottom: 2px solid silver;
 	background-color: #f4f4f4;
+  border-radius: 0px;
 }
 
 /** 标签 */
