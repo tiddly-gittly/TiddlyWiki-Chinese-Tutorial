@@ -5,10 +5,10 @@ type: application/json
     "fishing": "钓鱼",
     "description": "TiddlyWiki集成抽认卡，钓鱼使用Anki算法",
     "fishingbuttontip": "复习条目",
-    "fillfiltertip": "填入此筛选器",
-    "pinfiltertip": "固定此筛选器",
-    "unpinfiltertip": "解除此筛选器",
-    "adjustscheduletip": "调整此筛选器的复习计划",
+    "excisecloze": "填空/选择",
+    "exciseclozetip": "剪切所选文本到一个填空或选择题",
+    "exciseqa": "摘抄/问答",
+    "exciseqatip": "剪切所选文本到一个摘抄条目或问答题",
     "easybonus": "简单参数",
     "graduatinginterval": "初始间隔（天）",
     "hardinterval": "困难参数",
@@ -33,5 +33,9 @@ type: application/json
     "add1tip": "明天复习此条目",
     "fishpondtip": "复习此组条目",
     "due": "已到期：",
-    "new": "新添加："
+    "new": "新添加：",
+    "fillfiltertip": "填入此筛选器",
+    "pinfiltertip": "固定此筛选器",
+    "unpinfiltertip": "解除此筛选器",
+    "adjustscheduletip": "调整此筛选器的复习计划"
 }

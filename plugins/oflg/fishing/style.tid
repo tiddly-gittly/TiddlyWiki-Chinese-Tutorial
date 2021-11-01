@@ -1,0 +1,21 @@
+tags: $:/tags/Stylesheet
+title: $:/plugins/oflg/fishing/style.css
+type: text/vnd.tiddlywiki
+
+/** 
+ * Hide title when answing a question.
+ * If hidden, the attribute is hidden="true" , if shown, this attribute is not existed.
+ */
+.tc-reveal.fishing-question + .tc-tiddler-title {
+  display: none;
+}
+.tc-reveal.fishing-question[hidden="true"] + .tc-tiddler-title {
+  display: unset;
+}
+
+/** 
+ * Hide title when editing a question.
+ */
+.fishing-edit-title + input.tc-edit-texteditor {
+  display: none;
+}

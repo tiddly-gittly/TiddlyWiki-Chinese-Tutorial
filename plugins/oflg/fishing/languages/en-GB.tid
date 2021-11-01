@@ -5,10 +5,10 @@ type: application/json
     "fishing": "fishing",
     "description": "Flashcards integrated in TiddlyWiki, fishing with algorithm of Anki",
     "fishingbuttontip": "Review tiddlers",
-    "fillfiltertip": "Fill in this filter",
-    "pinfiltertip": "Pin this filter",
-    "unpinfiltertip": "Unpin this filter",
-    "adjustscheduletip": "Adjust review schedule of this filter",
+    "excisecloze": "Cloze/Choice",
+    "exciseclozetip": "Excise the selected text into a Cloze or Choice question",
+    "exciseqa": "Excerpt/Q&A",
+    "exciseqatip": "Excise the selected text into a Excerpt tiddler or Q&A question",
     "easybonus": "Easy Parameter",
     "graduatinginterval": "Starting Interval (day)",
     "hardinterval": "Hard Parameter",
@@ -33,5 +33,9 @@ type: application/json
     "add1tip": "Review this tiddler tomorrow",
     "fishpondtip": "Review tiddlers of this group",
     "due": "due:",
-    "new": "new:"
+    "new": "new:",
+    "fillfiltertip": "Fill in this filter",
+    "pinfiltertip": "Pin this filter",
+    "unpinfiltertip": "Unpin this filter",
+    "adjustscheduletip": "Adjust review schedule of this filter"
 }

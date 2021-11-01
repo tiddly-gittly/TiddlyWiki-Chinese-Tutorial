@@ -1,0 +1,20 @@
+tags: $:/tags/ViewTemplate
+title: $:/plugins/oflg/fishing/expand
+list-after: $:/core/ui/ViewTemplate/title
+
+<$reveal default={{$:/temp/fishing!!fish}} type="match" text=<<currentTiddler>> animate="yes">
+  <!-- Copy from TW's core/ui/ViewTemplate/unfold.tid -->
+  <$reveal tag="div" type="nomatch" stateTitle=<<folded-state>> text="hide" default="show" retain="yes" animate="yes">
+  <$button tooltip={{$:/language/Buttons/Fold/Hint}} aria-label={{$:/language/Buttons/Fold/Caption}} class="tc-fold-banner">
+  <$action-sendmessage $message="tm-fold-tiddler" $param=<<currentTiddler>> foldedState=<<folded-state>>/>
+  {{$:/core/images/chevron-up}}
+  </$button>
+  </$reveal>
+  <$reveal tag="div" type="nomatch" stateTitle=<<folded-state>> text="show" default="show" retain="yes" animate="yes">
+  <$button tooltip={{$:/language/Buttons/Unfold/Hint}} aria-label={{$:/language/Buttons/Unfold/Caption}} class="tc-unfold-banner">
+  <$action-sendmessage $message="tm-fold-tiddler" $param=<<currentTiddler>> foldedState=<<folded-state>>/>
+  {{$:/core/images/chevron-down}}
+  </$button>
+  </$reveal>
+
+</$reveal>

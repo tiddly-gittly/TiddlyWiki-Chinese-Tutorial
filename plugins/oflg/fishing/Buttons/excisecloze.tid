@@ -1,0 +1,17 @@
+title: $:/plugins/oflg/fishing/Buttons/excisecloze
+tags: $:/tags/EditorToolbar
+icon: $:/plugins/oflg/fishing/icons/excisecloze-icon
+caption: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[excisecloze]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[excisecloze]]}}}/>
+description: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[exciseclozetip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[exciseclozetip]]}}}/>
+condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]] [<targetTiddler>type[text/x-markdown]]
+shortcuts: ((fishing-excisecloze))
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="excisefishing"
+	fishingTag="?"
+	macro="?"
+	selectionAsAnswer="no"
+	tagnew="yes"
+	template="Cloze"
+/>
