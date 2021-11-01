@@ -110,7 +110,7 @@ code { font-family: 'Fira Code', monospace; }
 */
 
 /** 除了工具栏上的按钮以外，其它按钮 */
-button:not(.tc-btn-invisible) {
+button:not(.tc-btn-invisible):not(.tc-unfold-banner):not(.tc-fold-banner) {
   color: <<colour button-foreground>>;
   background-color: <<colour button-background>>;
   padding: 5px 10px;
@@ -121,11 +121,11 @@ button:not(.tc-btn-invisible) {
   /** hover动画 */
   transition: background-color 0.2s;
 }
-button:not(.tc-btn-invisible):hover {
+button:not(.tc-btn-invisible):not(.tc-unfold-banner):not(.tc-fold-banner):hover {
 	background-color: <<colour button-background-hover>>;
 }
 
-button:not(.tc-btn-invisible) svg {
+button:not(.tc-btn-invisible):not(.tc-unfold-banner):not(.tc-fold-banner) svg {
 	fill: <<colour tab-foreground>>;
 }
 
