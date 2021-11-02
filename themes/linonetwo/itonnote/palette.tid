@@ -60,7 +60,7 @@ notification-border: #999999
 page-background: #fafafa
 pre-background: #f5f5f5
 pre-border: #cccccc
-primary: #eeeeee
+primary: rgb(46, 170, 220)
 selection-background:
 selection-foreground:
 select-tag-background:

@@ -98,7 +98,7 @@ type: text/vnd.tiddlywiki
     background: <<colour page-background>>;
 }
 .commandpaletteresultselected {
-    background: <<colour tiddler-link-foreground>>;
+    background: <<colour primary>>;
     color: <<colour tiddler-link-background>>;
     fill: <<colour tiddler-link-background>>;
 }
