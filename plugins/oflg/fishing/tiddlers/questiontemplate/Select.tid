@@ -1,0 +1,139 @@
+tags: questiontemplate
+title: Select
+
+<$reveal
+	default={{$:/temp/fishing!!fish}}
+	type="nomatch"
+	text=<<currentTiddler>>
+	animate="yes"
+>
+	{{!!title}}
+</$reveal>
+<$reveal
+	default={{$:/temp/fishing!!fish}}
+	type="match"
+	text=<<currentTiddler>>
+	animate="yes"
+>
+	<$reveal
+	default={{{[{!!title}search:title[^^__]]}}}
+	type="nomatch"
+	text=""
+	animate="yes"
+	>
+		{{{[{!!title}split[__]first[]]}}}
+		<$list
+			filter="[{!!title}split[__]search[^^]]"
+			variable="titleitem"
+		>
+			<$vars
+				choiceid={{{[<titleitem>split[^^]rest[]]}}}
+				choicecontent={{{[<titleitem>split[^^]first[]]}}}
+			>
+				<$vars
+					answerid={{{[{!!title}split[__]search[^^]search['']count[]match[1]then[answerid]else<choiceid>]}}}
+				>
+					<$reveal
+						state=<<folded-state>>
+						type="nomatch"
+						text="show"
+						animate="yes"
+					>
+
+						<$reveal
+							default={{{[{!!title}split[__]search[^^]search['']count[]]}}}
+							type="lteq"
+							text="1"
+						>
+							<$radio
+								tiddler="$:/temp/fishing"
+								index=<<answerid>>
+								value=<<choiceid>>
+								default=""
+							>
+								<<choiceid>>. {{{[<choicecontent>search-replace:g:[''],[]]}}}
+							</$radio>
+						</$reveal>
+						<$reveal
+							default={{{[{!!title}split[__]search[^^]search['']count[]]}}}
+							type="gt"
+							text="1"
+						>
+							<$checkbox
+								tiddler="$:/temp/fishing"
+								index=<<answerid>>
+								checked=<<choiceid>>
+								unchecked=""
+								default=""
+							>
+								<<choiceid>>. {{{[<choicecontent>search-replace:g:[''],[]]}}}
+							</$checkbox>
+						</$reveal>
+					</$reveal>
+					<$reveal
+						state=<<folded-state>>
+						type="match"
+						text="show"
+						animate="yes"
+					>
+
+						<$button
+							disabled="yes"
+							class="tc-btn-invisible"
+						>
+							<$reveal
+								default={{{[<choicecontent>search['']then[1]else[0]]=[[$:/temp/fishing]getindex<answerid>match<answerid>then[1]else[0]]+[join[]]}}}
+								type="match"
+								text="00"
+								animate="yes"
+							>
+								{{$:/core/images/blank}}
+							</$reveal>
+							<$reveal
+								default={{{[<choicecontent>search['']then[1]else[0]]=[[$:/temp/fishing]getindex<answerid>match<answerid>then[1]else[0]]+[join[]]}}}
+								type="match"
+								text="01"
+								animate="yes"
+							>
+								{{$:/core/images/close-button}}
+							</$reveal>
+							<$reveal
+								default={{{[<choicecontent>search['']then[1]else[0]]=[[$:/temp/fishing]getindex<answerid>match<answerid>then[1]else[0]]+[join[]]}}}
+								type="match"
+								text="10"
+								animate="yes"
+							>
+								{{$:/core/images/warning}}
+							</$reveal>
+							<$reveal
+								default={{{[<choicecontent>search['']then[1]else[0]]=[[$:/temp/fishing]getindex<answerid>match<answerid>then[1]else[0]]+[join[]]}}}
+								type="match"
+								text="11"
+								animate="yes"
+							>
+								{{$:/core/images/done-button}}
+							</$reveal>
+						</$button> <<choiceid>>. {{{[<choicecontent>search-replace:g:[''],[]]}}}
+					</$reveal>
+				</$vars>
+			</$vars>
+		</$list>
+
+		<$reveal
+			state=<<folded-state>>
+			type="match"
+			text="show"
+			animate="yes"
+		>
+			{{{[{!!title}split[__]reverse[]first[]]}}}
+		</$reveal>
+	</$reveal>
+	<$reveal
+		default={{{[{!!title}search:title[^^__]]}}}
+		type="match"
+		text=""
+		animate="yes"
+	>
+		{{!!title}}
+	</$reveal>
+</$reveal>

@@ -1,0 +1,17 @@
+title: $:/plugins/oflg/fishing/Buttons/exciseselect
+tags: $:/tags/EditorToolbar
+icon: $:/plugins/oflg/fishing/icons/exciseselect
+caption: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[exciseselect]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[exciseselect]]}}}/>
+description: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[exciseselecttip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[exciseselecttip]]}}}/>
+condition: [<targetTiddler>tag[?]] [<targetTiddler>has[due]] [<targetTiddler>match{$:/temp/fishing!!fish}]
+shortcuts: ((fishing-exciseselect))
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="excisefishing"
+	fishingTag="?"
+	macro="?"
+	selectionAsAnswer="no"
+	tagnew="yes"
+	template="Select"
+/>
