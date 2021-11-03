@@ -192,7 +192,8 @@ button.tc-tag-label, span.tc-tag-label {
   transition: background-color 0.2s;
   /** 适配长标题作为标签的情况 */
   white-space: normal;
-  margin: 0.1em 0;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
 }
 button.tc-tag-label, span.tc-tag-label:hover {
   background-color: <<colour tag-background-hover>>;
