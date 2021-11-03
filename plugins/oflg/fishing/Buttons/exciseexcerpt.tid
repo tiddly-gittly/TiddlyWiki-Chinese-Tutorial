@@ -1,0 +1,18 @@
+title: $:/plugins/oflg/fishing/Buttons/exciseexcerpt
+tags: $:/tags/EditorToolbar
+icon: $:/plugins/oflg/fishing/icons/exciseexcerpt
+caption: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[exciseexcerpt]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[exciseexcerpt]]}}}/>
+description: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[exciseexcerpttip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[exciseexcerpttip]]}}}/>
+condition: [<targetTiddler>tag[?]] [<targetTiddler>has[due]] [<targetTiddler>match{$:/temp/fishing!!fish}]
+shortcuts: ((fishing-exciseexcerpt))
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="excisefishing"
+	cut="yes"
+	fishingTag="?"
+	macro="?"
+	selectionAsAnswer="yes"
+	tagnew="yes"
+	template="Excerpt"
+/>

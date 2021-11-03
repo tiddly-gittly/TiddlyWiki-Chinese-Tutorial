@@ -1,9 +1,0 @@
-tags: $:/tags/ViewTemplate
-title: $:/plugins/oflg/fishing/question
-list-before: $:/core/ui/ViewTemplate/title
-
-<$reveal class="fishing-question" default={{$:/temp/fishing!!fish}} type="match" text=<<currentTiddler>> animate="yes">
-    <h2 class="tc-title" title={{{ [all[current]prefix[$:/]then{$:/language/SystemTiddler/Tooltip}] }}}>
-      <<toc-caption>>
-    </h2>
-</$reveal>

@@ -1,0 +1,33 @@
+caption: {{$:/plugins/oflg/fishing/icon}} <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[fishing]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[fishing]]}}}/>
+description: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[description]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[description]]}}}/>
+tags: $:/tags/PageControls
+title: $:/plugins/oflg/fishing/fishingfloat
+
+<!-- creat fishingfloat -->
+<$button
+	popup=<<qualify "$:/state/popup/$:/plugins/oflg/fishing/Buttons/fishingdeck">>
+	tooltip={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[fishingbuttontip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[fishingbuttontip]]}}}
+	aria-label={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[fishingbuttontip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[fishingbuttontip]]}}}
+	class=<<tv-config-toolbar-class>>
+	selectedClass="tc-selected"
+>
+	<span style="color:green;">
+		{{$:/plugins/oflg/fishing/icon}}<$text text={{{[tag[?]has[due]]-[tag[?]!days:due[1]]+[count[]compare:number:gt[0]then[•]else[]]}}}/>
+	</span>
+</$button>
+<!-- creat fishingdeck -->
+<$reveal
+	state=<<qualify "$:/state/popup/$:/plugins/oflg/fishing/Buttons/fishingdeck">>type="popup"
+	position="below"
+	animate="yes"
+>
+	<div
+		class="tc-drop-down tc-popup-keep"
+		style="min-width:0;"
+	>
+		<!-- creat fishingpond -->
+		{{$:/plugins/oflg/fishing/fishingpond}}
+		<!-- creat fishingrod -->
+		{{$:/plugins/oflg/fishing/fishingrod}}
+	</div>
+</$reveal>

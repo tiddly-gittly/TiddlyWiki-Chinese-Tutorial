@@ -1,0 +1,14 @@
+title: $:/plugins/oflg/fishing/Buttons/markanswer
+tags: $:/tags/EditorToolbar
+icon: $:/core/images/bold
+caption: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[markanswer]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[markanswer]]}}}/>
+description: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[markanswertip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[markanswertip]]}}}/>
+condition: [<targetTiddler>tag[?]] [<targetTiddler>has[due]] [<targetTiddler>match{$:/temp/fishing!!fish}]
+shortcuts: ((bold))
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="wrap-selection"
+	prefix="''"
+	suffix="''"
+/>

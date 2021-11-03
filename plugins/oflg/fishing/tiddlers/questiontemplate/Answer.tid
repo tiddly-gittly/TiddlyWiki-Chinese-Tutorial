@@ -1,0 +1,49 @@
+tags: questiontemplate
+title: Answer
+
+{{!!title}}
+<$reveal default={{$:/temp/fishing!!fish}} type="match" text=<<currentTiddler>> animate="yes">
+	<$edit
+		tiddler="$:/temp/fishing"
+		placeholder={{$:/language/EditTemplate/Body/Placeholder}}
+		focus="true"
+		minHeight="15px"
+		class="tc-edit-texteditor tc-edit-texteditor-body"
+	>
+		<$set value=<<currentTiddler>> name="targetTiddler">
+			<$list filter="[all[shadows+tiddlers]tag[$:/tags/EditorToolbar]!has[draft.of]]">
+				<$reveal
+					type="nomatch"
+					state=<<config-visibility-title>>
+					text="hide"
+					class="tc-text-editor-toolbar-item-wrapper"
+				>
+					<$transclude tiddler="$:/core/ui/EditTemplate/body/toolbar/button" mode="inline"/>
+				</$reveal>
+			</$list>
+			<$list filter="[all[shadows+tiddlers]tag[$:/tags/EditorTools]!has[draft.of]]">
+				<$list filter={{!!condition}} variable="list-condition">
+					<$transclude/>
+				</$list>
+			</$list>
+		</$set>
+	</$edit>
+	<$reveal
+		default={{$:/temp/fishing}}
+		type="nomatch"
+		text=""
+		animate="yes"
+	>
+		<$reveal
+			state=<<folded-state>>
+			type="match"
+			text="show"
+			animate="yes"
+		>
+			<$diff-text
+				source={{$:/temp/fishing}}
+				dest={{!!text}}
+			/>
+		</$reveal>
+	</$reveal>
+</$reveal>
