@@ -190,6 +190,8 @@ button.tc-tag-label, span.tc-tag-label {
   color: <<colour foreground>>;
   /** hover动画 */
   transition: background-color 0.2s;
+  /** 适配长标题作为标签的情况 */
+  white-space: normal;
 }
 button.tc-tag-label, span.tc-tag-label:hover {
   background-color: <<colour tag-background-hover>>;
