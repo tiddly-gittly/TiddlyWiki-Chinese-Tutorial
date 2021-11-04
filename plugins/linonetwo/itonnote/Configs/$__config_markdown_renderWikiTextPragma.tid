@@ -1,0 +1,4 @@
+title: $:/config/markdown/renderWikiTextPragma
+type: text/vnd.tiddlywiki
+
+\rules only html image macrocallinline syslink transcludeinline wikilink prettylink filteredtranscludeblock macrocallblock transcludeblock 
