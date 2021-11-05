@@ -41,7 +41,7 @@ exports['excisefishing'] = function (event, operation) {
     })
   );
   // "?" is the default fishing macro
-  const fishingprefix = event.paramObject.macro === '?' ? ' ﷼' : '';
+  const fishingprefix = event.paramObject.macro === '?' ? '❔' : '';
   operation.replacement = `${fishingprefix}[[${fishtitle}]]`;
   if (event.paramObject.cut === 'yes') {
     operation.cutStart = operation.selStart;
