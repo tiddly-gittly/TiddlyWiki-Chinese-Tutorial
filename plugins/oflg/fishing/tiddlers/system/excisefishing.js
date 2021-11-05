@@ -13,21 +13,23 @@ exports['excisefishing'] = function (event, operation) {
   if (editTiddler && editTiddler.fields['draft.of']) {
     editTiddlerTitle = editTiddler.fields['draft.of'];
   }
+  const selectionarry = operation.selection.split('\n')
+  const title = selectionarry[0].replace(/\||\{|\}|\[|\]/g, '');
+  const text = selectionarry.length === 1 ? selectionarry[0] : selectionarry.slice(1).join('\n');
+  const currenttime = new Date(new Date().getTime()).toISOString().replace(/-|T|:|\.|Z/g, '');
   // we add current time to legacy title, so won't collide with parent title
-  const currentTime = new Date(new Date().getTime()).toISOString().replace(/-|T|:|\.|Z/g, '');
-
+  const fishtitle = this.wiki.generateNewTitle(title);
+  const fishtext = event.paramObject.selectionAsAnswer === 'yes' ? text : '';
   const fishtag = event.paramObject.fishtag || '?';
   const fishfactor = event.paramObject.fishfactor || '2.50';
   const fishinterval = event.paramObject.fishtag || '1';
   // add due, default due in one day
   const fishdue = new Date(new Date().getTime() + Number(fishinterval) * 86400000).toISOString().replace(/-|T|:|\.|Z/g, '');
-  const fishtitle = this.wiki.generateNewTitle(operation.selection);
-  const fishtext = event.paramObject.selectionAsAnswer === 'yes' ? operation.selection : '';
   // add template
   const fishcaption = event.paramObject.template
     ? `{{||${event.paramObject.template}}}`
     : event.paramObject.randomCaption
-      ? `${editTiddlerTitle}/${currentTime}`
+      ? `${editTiddlerTitle}/${currenttime}`
       : '';
   this.wiki.addTiddler(
     new $tw.Tiddler(this.wiki.getCreationFields(), this.wiki.getModificationFields(), {
@@ -41,8 +43,8 @@ exports['excisefishing'] = function (event, operation) {
     })
   );
   // "?" is the default fishing macro
-  const fishingprefix = event.paramObject.macro === '?' ? '❔' : '';
-  operation.replacement = `${fishingprefix}[[${fishtitle}]]`;
+  const fishsymbol = event.paramObject.macro === '?' ? '❔' : '';
+  operation.replacement = `[[${fishtitle}]]${fishsymbol}__{{${fishtitle}}}__`;
   if (event.paramObject.cut === 'yes') {
     operation.cutStart = operation.selStart;
     operation.cutEnd = operation.selEnd;
