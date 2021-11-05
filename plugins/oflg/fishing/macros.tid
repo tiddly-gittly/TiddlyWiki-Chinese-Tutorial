@@ -1,15 +1,4 @@
 tags: $:/tags/Macro
 title: $:/plugins/oflg/fishing/macros
 
-\define ?(title)
-<div
-	style="padding:28px 42px 42px 42px;border-radius:2px;box-shadow:1px 1px 5px rgb(0 0 0 / 30%);margin:10px 0;"
->
-	{{$title$||$:/plugins/oflg/fishing/fishhead}}
-	{{$title$||$:/core/ui/ViewTemplate/title}}
-	{{$title$||$:/core/ui/ViewTemplate/tags}}
-	{{$title$||$:/core/ui/ViewTemplate/body}}
-</div>
-\end
-
-\define priority() [relink:backreferences[]!is[system]count[]]=[relink:references[]!is[system]tag[questiontemplate]count[]]=[relink:references[]!is[system]tag[?]has[due]!days:due[1]count[]]=[relink:references[]!is[system]tag[?]has[due]count[]negate[]]+[sum[]add{!!priority}add<delayjs>subtract{!!interval}multiply{!!factor}fixed[2]]
+\define priority() [get[caption]search-replace[{{||],[]search-replace[}}],[]tag[questiontemplate]count[]]=[backlinks[]count[]]=[links[]has[due]count[]negate[]]=[links[]has[due]!days:due[1]count[]]+[sum[]add{!!priority}multiply{!!factor}fixed[2]]

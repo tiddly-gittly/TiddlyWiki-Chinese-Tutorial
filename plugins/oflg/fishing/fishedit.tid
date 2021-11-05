@@ -26,7 +26,7 @@ tags: $:/tags/EditTemplate
       value=<<currentTiddler>>
     >
       <$list
-        filter="$:/plugins/oflg/fishing/Buttons/markclozeoption $:/plugins/oflg/fishing/Buttons/addclozeoptionid $:/plugins/oflg/fishing/Buttons/markanswer $:/plugins/oflg/fishing/Buttons/converttoanswer $:/plugins/oflg/fishing/Buttons/converttocloze $:/plugins/oflg/fishing/Buttons/converttoselect"
+        filter="$:/plugins/oflg/fishing/Buttons/markclozeoption $:/plugins/oflg/fishing/Buttons/addclozeoptionid $:/plugins/oflg/fishing/Buttons/markanswer $:/plugins/oflg/fishing/Buttons/converttoexcerpt $:/plugins/oflg/fishing/Buttons/converttoanswer $:/plugins/oflg/fishing/Buttons/converttocloze $:/plugins/oflg/fishing/Buttons/converttoselect"
       >
         <span
           class="tc-text-editor-toolbar-item-wrapper"

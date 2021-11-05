@@ -7,14 +7,15 @@ title: $:/plugins/oflg/fishing/fishingpond
 >
 	<$vars
 		due="[has[due]]-[has[due]!days:due[1]]+[sort[due]reverse[]sortsub:number<priority>reverse[]]"
+		undue="[has[due]!days:due[1]sort[due]reverse[]sortsub:number<priority>reverse[]]"
 		new="[!has[due]sort[created]]"
 	>
 		<$list
-			filter="due new"
+			filter="due undue new"
 			variable="fishingpondname"
 		>
 			<$vars
-				fishingpond={{{[<fishingpondname>match[due]then<due>]~[<fishingpondname>match[new]then<new>]}}}
+				fishingpond={{{[<fishingpondname>match[due]then<due>]~[<fishingpondname>match[undue]then<undue>]~[<fishingpondname>match[new]then<new>]}}}
 			>
 				<$button
 					tooltip={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[fishingpondtip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[fishingpondtip]]}}}

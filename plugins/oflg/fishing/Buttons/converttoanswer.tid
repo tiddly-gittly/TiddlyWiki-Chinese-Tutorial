@@ -4,5 +4,6 @@ icon: $:/plugins/oflg/fishing/icons/converttoanswer
 caption: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[converttoanswer]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[converttoanswer]]}}}/>
 description: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[converttoanswertip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[converttoanswertip]]}}}/>
 condition: [<targetTiddler>tag[?]] [<targetTiddler>has[due]] [<targetTiddler>match{$:/temp/fishing!!fish}]
+shortcuts: ((fishing-converttoanswer))
 
-<$action-setfield caption="{{||Answer}}"/>
+<$action-setfield $tiddler=<<targetTiddler>> caption="{{||Answer}}"/>

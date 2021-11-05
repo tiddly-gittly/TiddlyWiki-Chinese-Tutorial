@@ -4,5 +4,6 @@ icon: $:/plugins/oflg/fishing/icons/converttocloze
 caption: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[converttocloze]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[converttocloze]]}}}/>
 description: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[converttoclozetip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[converttoclozetip]]}}}/>
 condition: [<targetTiddler>tag[?]] [<targetTiddler>has[due]] [<targetTiddler>match{$:/temp/fishing!!fish}]
+shortcuts: ((fishing-converttocloze))
 
-<$action-setfield caption="{{||Cloze}}"/>
+<$action-setfield $tiddler=<<targetTiddler>> caption="{{||Cloze}}"/>

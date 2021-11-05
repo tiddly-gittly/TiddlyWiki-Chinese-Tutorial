@@ -4,5 +4,6 @@ icon: $:/plugins/oflg/fishing/icons/converttoselect
 caption: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[converttoselect]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[converttoselect]]}}}/>
 description: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[converttoselecttip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[converttoselecttip]]}}}/>
 condition: [<targetTiddler>tag[?]] [<targetTiddler>has[due]] [<targetTiddler>match{$:/temp/fishing!!fish}]
+shortcuts: ((fishing-converttoselect))
 
-<$action-setfield caption="{{||Select}}"/>
+<$action-setfield $tiddler=<<targetTiddler>> caption="{{||Select}}"/>

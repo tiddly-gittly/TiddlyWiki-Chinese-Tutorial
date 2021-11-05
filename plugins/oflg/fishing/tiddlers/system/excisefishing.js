@@ -13,32 +13,36 @@ exports['excisefishing'] = function (event, operation) {
   if (editTiddler && editTiddler.fields['draft.of']) {
     editTiddlerTitle = editTiddler.fields['draft.of'];
   }
-  const fishingTag = event.paramObject.fishingTag || '?';
-  // add due, default due in one day
-  const due = new Date(new Date().getTime() + 86400000).toISOString().replace(/-|T|:|\.|Z/g, '');
   // we add current time to legacy title, so won't collide with parent title
   const currentTime = new Date(new Date().getTime()).toISOString().replace(/-|T|:|\.|Z/g, '');
 
-  const excisionQuestion = this.wiki.generateNewTitle(operation.selection);
-  const title = excisionQuestion;
-  const excisionAnswer = event.paramObject.selectionAsAnswer === 'yes' ? operation.selection : '';
+  const fishtag = event.paramObject.fishtag || '?';
+  const fishfactor = event.paramObject.fishfactor || '2.50';
+  const fishinterval = event.paramObject.fishtag || '1';
+  // add due, default due in one day
+  const fishdue = new Date(new Date().getTime() + Number(fishinterval) * 86400000).toISOString().replace(/-|T|:|\.|Z/g, '');
+  const fishtitle = this.wiki.generateNewTitle(operation.selection);
+  const fishtext = event.paramObject.selectionAsAnswer === 'yes' ? operation.selection : '';
   // add template
-  const captionTemplate = event.paramObject.template
+  const fishcaption = event.paramObject.template
     ? `{{||${event.paramObject.template}}}`
     : event.paramObject.randomCaption
-    ? `${editTiddlerTitle}/${currentTime}`
-    : '';
+      ? `${editTiddlerTitle}/${currentTime}`
+      : '';
   this.wiki.addTiddler(
     new $tw.Tiddler(this.wiki.getCreationFields(), this.wiki.getModificationFields(), {
-      title,
-      text: excisionAnswer,
-      tags: event.paramObject.tagnew === 'yes' ? [editTiddlerTitle, fishingTag] : [fishingTag],
-      due,
-      caption: captionTemplate,
+      title: fishtitle,
+      text: fishtext,
+      tags: event.paramObject.tagnew === 'yes' ? [editTiddlerTitle, fishtag] : [fishtag],
+      due: fishdue,
+      factor: fishfactor,
+      interval: fishinterval,
+      caption: fishcaption,
     })
   );
   // "?" is the default fishing macro
-  operation.replacement = `<<${event.paramObject.macro || '?'} """${excisionQuestion}""">>`;
+  const fishingprefix = event.paramObject.macro === '?' ? ' ﷼' : '';
+  operation.replacement = `${fishingprefix}[[${fishtitle}]]`;
   if (event.paramObject.cut === 'yes') {
     operation.cutStart = operation.selStart;
     operation.cutEnd = operation.selEnd;
