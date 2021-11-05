@@ -206,7 +206,8 @@ button.tc-tag-label, span.tc-tag-label:hover {
 a.tc-tiddlylink, a.tc-tiddlylink:hover {
   padding: 2px;
   padding-bottom: 0;
-  white-space: nowrap;
+  white-space: normal;
+  word-break: break-all;
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: bold;
