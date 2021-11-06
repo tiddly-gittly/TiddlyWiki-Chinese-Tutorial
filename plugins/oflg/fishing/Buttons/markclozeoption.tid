@@ -1,14 +1,14 @@
 title: $:/plugins/oflg/fishing/Buttons/markclozeoption
 tags: $:/tags/EditorToolbar
-icon: $:/core/images/underline
+icon: $:/plugins/oflg/fishing/icons/markclozeoption
 caption: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[markclozeoption]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[markclozeoption]]}}}/>
 description: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[markclozeoptiontip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[markclozeoptiontip]]}}}/>
 condition: [<targetTiddler>tag[?]] [<targetTiddler>has[due]] [<targetTiddler>match{$:/temp/fishing!!fish}]
-shortcuts: ((underline))
+shortcuts: ((fishing-markclozeoption))
 
 <$action-sendmessage
 	$message="tm-edit-text-operation"
 	$param="wrap-selection"
 	prefix="__"
-	suffix="__"
+	suffix="^^1^^__"
 />

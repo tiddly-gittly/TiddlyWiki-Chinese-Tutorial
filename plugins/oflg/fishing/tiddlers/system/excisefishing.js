@@ -13,48 +13,32 @@ exports['excisefishing'] = function (event, operation) {
   if (editTiddler && editTiddler.fields['draft.of']) {
     editTiddlerTitle = editTiddler.fields['draft.of'];
   }
-  const selectionarry = operation.selection.split('\n')
-  const title = selectionarry[0].replace(/\||\{|\}|\[|\]/g, '');
-  const text = selectionarry.length === 1 ? selectionarry[0] : selectionarry.slice(1).join('\n');
   const currenttime = new Date(new Date().getTime()).toISOString().replace(/-|T|:|\.|Z/g, '');
+  const fishtitle = event.paramObject.selectionAsAnswer === 'yes' ? (operation.selection.indexOf('^^?^^__') == -1 ? editTiddlerTitle + '/' + currenttime : operation.selection.split('^^?^^__')[0].split('__').slice(-1)[0]) : operation.selection;
+  const fishtext = event.paramObject.selectionAsAnswer === 'yes' ? (operation.selection.indexOf('^^?^^__') == -1 ? operation.selection : operation.selection.split('^^?^^__')[1]) : '';
   // we add current time to legacy title, so won't collide with parent title
-  const fishtitle = this.wiki.generateNewTitle(title);
-  const fishtext = event.paramObject.selectionAsAnswer === 'yes' ? text : '';
-  const fishtag = event.paramObject.fishtag || '?';
-  const fishfactor = event.paramObject.fishfactor || '2.50';
-  const fishinterval = event.paramObject.fishtag || '1';
+  const title = this.wiki.generateNewTitle(fishtitle.replace(/\||\{|\}|\[|\]/g, ''));
+  const text = fishtext;
+  const tags = [editTiddlerTitle, '?'];
   // add due, default due in one day
-  const fishdue = new Date(new Date().getTime() + Number(fishinterval) * 86400000).toISOString().replace(/-|T|:|\.|Z/g, '');
+  const due = new Date(new Date().getTime() + 86400000).toISOString().replace(/-|T|:|\.|Z/g, '');
   // add template
-  const fishcaption = event.paramObject.template
-    ? `{{||${event.paramObject.template}}}`
-    : event.paramObject.randomCaption
-      ? `${editTiddlerTitle}/${currenttime}`
-      : '';
+  const caption = event.paramObject.template ? '{{||' + event.paramObject.template + '}}' : editTiddlerTitle + '/' + currenttime;
   this.wiki.addTiddler(
     new $tw.Tiddler(this.wiki.getCreationFields(), this.wiki.getModificationFields(), {
-      title: fishtitle,
-      text: fishtext,
-      tags: event.paramObject.tagnew === 'yes' ? [editTiddlerTitle, fishtag] : [fishtag],
-      due: fishdue,
-      factor: fishfactor,
-      interval: fishinterval,
-      caption: fishcaption,
+      title,
+      text,
+      tags,
+      due,
+      caption,
+      factor: 2.50,
+      interval: 1
     })
   );
-  // "?" is the default fishing macro
-  const fishsymbol = event.paramObject.macro === '?' ? '❔' : '';
-  operation.replacement = `[[${fishtitle}]]${fishsymbol}__{{${fishtitle}}}__`;
-  if (event.paramObject.cut === 'yes') {
-    operation.cutStart = operation.selStart;
-    operation.cutEnd = operation.selEnd;
-    operation.newSelStart = operation.selStart;
-    operation.newSelEnd = operation.selStart + operation.replacement.length;
-  } else {
-    // don't need to delete original texts
-    operation.cutStart = operation.selEnd;
-    operation.cutEnd = operation.selEnd;
-    operation.newSelStart = operation.selStart + operation.replacement.length;
-    operation.newSelEnd = operation.selStart + operation.replacement.length;
-  }
+
+  operation.replacement = (event.paramObject.selectionAsAnswer === 'yes' && event.paramObject.template) ? '\n<<<.tc-big-quote\n{{' + title + '}}\n<<<[[' + title + ']]\n' : '\n<<<.tc-big-quote\n{{' + title + '||' + event.paramObject.template + '}}\n<<<[[' + title + ']]\n';
+  operation.cutStart = operation.selStart;
+  operation.cutEnd = operation.selEnd;
+  operation.newSelStart = operation.selStart;
+  operation.newSelEnd = operation.selStart + operation.replacement.length;
 };

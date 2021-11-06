@@ -1,0 +1,39 @@
+title: $:/plugins/oflg/fishing/icons/setselect
+tags: $:/tags/Image
+
+<svg
+  width="22pt"
+  height="22pt"
+  viewBox="0 0 128 128"
+  xmlns="http://www.w3.org/2000/svg"
+  class="tc-image-bold tc-image-button"
+>
+  <g>
+    <text
+      transform="matrix(2.56467, 0, 0, 6.78366, -70.4793, -361.722)"
+      font-weight="bold"
+      xml:space="preserve"
+      text-anchor="start"
+      font-size="24"
+      id="svg_5"
+      y="71.27162"
+      x="26.8242"
+      stroke-width="0"
+      >
+        →
+      </text>
+    <text
+      transform="matrix(3.88287, 0, 0, 6.21184, -350.205, -233.081)"
+      font-weight="bold"
+      xml:space="preserve"
+      text-anchor="start"
+      font-size="24"
+      y="56.16649"
+      x="106.39803"
+      stroke-width="0"
+      id="svg_2"
+    >
+      S
+    </text>
+  </g>
+</svg>

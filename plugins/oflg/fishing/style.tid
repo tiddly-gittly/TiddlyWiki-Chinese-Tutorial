@@ -12,25 +12,3 @@ type: text/vnd.tiddlywiki
 .tc-reveal.fishing-head[hidden="true"] + .tc-tiddler-title > .tc-titlebar {
   display: unset;
 }
-
-
-/** 
- * Hide title when editing a question.
- */
-.fishing-edit-title + input.tc-edit-texteditor {
-  display: none;
-}
-.fishing-edit-title[hidden="true"] + input.tc-edit-texteditor {
-  display: unset;
-}
-/**
- * Add control buttons back to edit mode. Because we hide the title that contains the control buttons, in the above css.
- */
-.tc-reveal.fishing-head > h2.tc-title {
-  display: flex;
-  flex-direction: column;
-}
-.tc-reveal.fishing-head > h2.tc-title > .tc-tiddler-controls {
-  display: flex;
-  justify-content: flex-end;
-}

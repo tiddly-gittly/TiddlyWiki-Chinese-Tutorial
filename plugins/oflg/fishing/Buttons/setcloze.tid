@@ -1,0 +1,9 @@
+title: $:/plugins/oflg/fishing/Buttons/setcloze
+tags: $:/tags/EditorToolbar
+icon: $:/plugins/oflg/fishing/icons/setcloze
+caption: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[setcloze]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[setcloze]]}}}/>
+description: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[setclozetip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[setclozetip]]}}}/>
+condition: [<targetTiddler>tag[?]] [<targetTiddler>has[due]] [<targetTiddler>match{$:/temp/fishing!!fish}]
+shortcuts: ((fishing-setcloze))
+
+<$action-setfield $tiddler=<<targetTiddler>> caption="{{||Cloze}}"/>

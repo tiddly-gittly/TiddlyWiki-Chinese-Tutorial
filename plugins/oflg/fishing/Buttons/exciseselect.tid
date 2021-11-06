@@ -9,9 +9,6 @@ shortcuts: ((fishing-exciseselect))
 <$action-sendmessage
 	$message="tm-edit-text-operation"
 	$param="excisefishing"
-	fishingTag="?"
-	macro="?"
 	selectionAsAnswer="no"
-	tagnew="yes"
 	template="Select"
 />
