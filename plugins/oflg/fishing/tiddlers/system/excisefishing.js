@@ -14,8 +14,8 @@ exports['excisefishing'] = function (event, operation) {
     editTiddlerTitle = editTiddler.fields['draft.of'];
   }
   const currenttime = new Date(new Date().getTime()).toISOString().replace(/-|T|:|\.|Z/g, '');
-  const fishtitle = event.paramObject.selectionAsAnswer === 'yes' ? (operation.selection.indexOf('^^?^^__') == -1 ? editTiddlerTitle + '/' + currenttime : operation.selection.split('^^?^^__')[0].split('__').slice(-1)[0]) : operation.selection;
-  const fishtext = event.paramObject.selectionAsAnswer === 'yes' ? (operation.selection.indexOf('^^?^^__') == -1 ? operation.selection : operation.selection.split('^^?^^__')[1]) : '';
+  const fishtitle = event.paramObject.selectionAsAnswer === 'yes' ? (operation.selection.indexOf('^^?^^__') == -1 ? editTiddlerTitle + '/' + currenttime : operation.selection.split('^^?^^__')[0].split('__').slice(-1)[0]) : operation.selection.split('\n')[0];
+  const fishtext = event.paramObject.selectionAsAnswer === 'yes' ? (operation.selection.indexOf('^^?^^__') == -1 ? operation.selection : operation.selection.replace('__' + fishtitle + '^^?^^__', '')) : operation.selection.replace(fishtitle, '');
   // we add current time to legacy title, so won't collide with parent title
   const title = this.wiki.generateNewTitle(fishtitle.replace(/\||\{|\}|\[|\]/g, ''));
   const text = fishtext;

@@ -118,15 +118,8 @@ title: Select
 				</$vars>
 			</$vars>
 		</$list>
-
-		<$reveal
-			state=<<folded-state>>
-			type="match"
-			text="show"
-			animate="yes"
-		>
-			{{{[{!!title}split[__]reverse[]first[]]}}}
-		</$reveal>
+		
+		{{{[{!!title}split[__]reverse[]first[]]}}}
 	</$reveal>
 	<$reveal
 		default={{{[{!!title}search:title[^^__]]}}}
