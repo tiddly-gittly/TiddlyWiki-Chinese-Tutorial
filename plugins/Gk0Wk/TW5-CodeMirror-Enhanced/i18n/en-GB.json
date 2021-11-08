@@ -41,31 +41,150 @@
   "tw-snippet": {
     "blockquoteSingleline": {
       "name": "single line blockquote",
-      "preview": "!! Single-line Block Quotes\n\n> Quoted text\n> Another line of quoted text\n\n!! You can also nest quotes like this:\n\n> A top quote\n>> A subquote\n> Another top quote\n\n!! You can also mix block quotes with other list items. For example:\n\n* List One\n** List Two\n**> A quote\n**> Another quote\n* List Three"
+      "preview": [
+        "!! Single-line Block Quotes",
+        "",
+        "> Quoted text",
+        "> Another line of quoted text",
+        "",
+        "!! You can also nest quotes like this:",
+        "",
+        "> A top quote",
+        ">> A subquote",
+        "> Another top quote",
+        "",
+        "!! You can also mix block quotes with other list items. For example:",
+        "",
+        "* List One",
+        "** List Two",
+        "**> A quote",
+        "**> Another quote",
+        "* List Three"
+      ]
     },
     "blockquote": {
       "name": "blockquote",
-      "preview": "!! Multi-line block quotes\n\n<<<\nThis is a block quoted paragraph\n\nwritten in English\n<<<"
+      "preview": ["!! Multi-line block quotes", "", "<<<", "This is a block quoted paragraph", "", "written in English", "<<<"]
     },
     "blockquoteWithCSSClass": {
       "name": "blockquoteWithCSSClass",
-      "preview": "!! CSS classes can be added to a block quote\n\n<<<.tc-big-quote\nA dramatic quote\n<<< Somebody Important"
+      "preview": ["!! CSS classes can be added to a block quote", "", "<<<.tc-big-quote", "A dramatic quote", "<<< Somebody Important"]
     },
     "blockquoteCitation": {
       "name": "blockquoteCitation",
-      "preview": "!! A citation can be added to the quote like this\n\n<<<\nComputers are like a bicycle for our minds\n<<< Steve Jobs"
+      "preview": ["!! A citation can be added to the quote like this", "", "<<<", "Computers are like a bicycle for our minds", "<<< Steve Jobs"]
     },
     "codeblock": {
       "name": "codeblock",
-      "preview": "!! You can use triple backticks <code>&#96;&#96;&#96;</code> to mark code blocks\n\n```\nThis will be monospaced\n```\n\nTo be interpreted correctly, the three backticks need to be at the start of the line and immediately followed by a line-break.\n\nBe aware that any preceding paragraph content should be properly terminated with a double line break, too. So, this example is wrong:\n\n<pre>\nThis is an ordinary paragraph\n&#96;&#96;&#96;\nThis will be monospaced\n&#96;&#96;&#96;\n</pre>\n\nThe correct version is:\n\n<pre>\nThis is an ordinary paragraph\n\n&#96;&#96;&#96;\nThis will be monospaced\n&#96;&#96;&#96;\n</pre>\n\nNote that some keyboard layouts treat the backtick as a [[dead key|https://en.wikipedia.org/wiki/Dead_key]], making it hard to type. The trick is to type three backticks followed by a space. Alternatively, type all six backticks in one go, then a space, and then move the cursor back three characters to type or paste the content.\n\n"
+      "preview": [
+        "!! You can use triple backticks <code>&#96;&#96;&#96;</code> to mark code blocks",
+        "",
+        "```",
+        "This will be monospaced",
+        "```",
+        "",
+        "To be interpreted correctly, the three backticks need to be at the start of the line and immediately followed by a line-break.",
+        "",
+        "Be aware that any preceding paragraph content should be properly terminated with a double line break, too. So, this example is wrong:",
+        "",
+        "<pre>",
+        "This is an ordinary paragraph",
+        "&#96;&#96;&#96;",
+        "This will be monospaced",
+        "&#96;&#96;&#96;",
+        "</pre>",
+        "",
+        "The correct version is:",
+        "",
+        "<pre>",
+        "This is an ordinary paragraph",
+        "",
+        "&#96;&#96;&#96;",
+        "This will be monospaced",
+        "&#96;&#96;&#96;",
+        "</pre>",
+        "",
+        "Note that some keyboard layouts treat the backtick as a [[dead key|https://en.wikipedia.org/wiki/Dead_key]], making it hard to type. ",
+        "The trick is to type three backticks followed by a space. Alternatively, type all six backticks in one go, then a space, and then move the cursor back three characters to type or paste the content."
+      ]
+    },
+    "dash": {
+      "name": "dashes",
+      "preview": [
+        "!! Insert a dash line.",
+        "",
+        "You can create an n-dash with a double hyphen -- and an m-dash with a triple hyphen ---. For example – this is an example — and so is this "
+      ]
+    },
+    "definitions": {
+      "name": "Definitions",
+      "preview": [
+        "!! Insert a Definitions.",
+        "",
+        "```tw5",
+        "; Term being defined",
+        ": Definition of that term",
+        "; Another term",
+        ": Another definition",
+        "```",
+        "",
+        "That renders as:",
+        "",
+        "```",
+        "Term being defined",
+        "    Definition of that term",
+        "Another term",
+        "    Another definition",
+        "```",
+        "",
+        "and the underlying HTML is:",
+        "",
+        "```html",
+        "<dl><dt>Term being defined</dt><dd>Definition of that term</dd><dt>Another term</dt><dd>Another definition</dd></dl>",
+        "```"
+      ]
+    },
+    "codeinline": {
+      "name": "codeinline",
+      "preview": [
+        "!! insert codeinline",
+        "",
+        "<code>&#96;backticks&#96;</code> for `code`",
+        "",
+        "* Alternatively, <code>&#96;&#96;double backticks allows &#96;embedded&#96; backticks&#96;&#96;</code>"
+      ]
+    },
+    "bold": {
+      "name": "bold",
+      "preview": ["!! insert bold", "", "`''bold''` for ''bold text''"]
+    },
+    "italic": {
+      "name": "italic",
+      "preview": ["!! insert italic", "", "`//italic//` for //italic text//"]
+    },
+    "underline": {
+      "name": "underline",
+      "preview": ["!! insert underline", "", "`__underscore__` for __underscored text__"]
+    },
+    "superscript": {
+      "name": "superscript",
+      "preview": ["!! insert superscript", "", "`^^superscript^^` for ^^superscripted^^ text"]
+    },
+    "subscript": {
+      "name": "subscript",
+      "preview": ["!! insert subscript", "", "`,,subscript,,` for ,,subscripted,, text"]
+    },
+    "deleteStrikeThrough": {
+      "name": "strikeThrough",
+      "preview": ["!! insert strikeThrough", "", "`~~strikethrough~~` for ~~strikethrough~~ text"]
     },
     "image": {
       "name": "image",
-      "preview": "!! Insert a image.\n\n[img[$:/favicon.ico]]"
+      "preview": ["!! Insert a image.", "", "[img[$:/favicon.ico]]"]
     },
     "center": {
       "name": "center",
-      "preview": "!! Centralize elements.\n\n<center>like this</center>"
+      "preview": ["!! Centralize elements.", "", "<center>like this</center>"]
     }
   }
 }

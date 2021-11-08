@@ -39,7 +39,7 @@
     const exactLanguage = language;
     const majorLanguage = language.split('-')[0];
     const languageFallbackList = [undefined, undefined, undefined];
-    options.wiki.filterTiddlers('[all[tiddlers+shadows]!field:cmei18n[]!is[draft]cmei18n-namespace[' + namespace + ']]').forEach(function (tiddler) {
+    options.wiki.filterTiddlers('[all[tiddlers+shadows]!field:cmei18n[]!is[draft]cmei18n-namespace[' + namespace + ']]').forEach(function(tiddler) {
       const i18n = options.wiki.filterTiddlers('[[' + tiddler + ']get[cmei18n]]')[0];
       if (i18n.includes(exactLanguage)) languageFallbackList[0] = tiddler;
       if (i18n.includes(majorLanguage)) languageFallbackList[1] = tiddler;

@@ -557,6 +557,8 @@
                 }
                 return CodeMirror.Pass;
             },
+            blockCommentStart: '<!--',
+            blockCommentEnd: '-->'
         };
         return mode;
     });
