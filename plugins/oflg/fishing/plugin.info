@@ -7,5 +7,5 @@
     "plugin-type": "plugin",
     "source": "https://github.com/oflg/fishing",
     "title": "$:/plugins/oflg/fishing",
-    "version": "1.5.4"
+    "version": "1.5.5"
 }
