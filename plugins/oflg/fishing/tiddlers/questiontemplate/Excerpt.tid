@@ -1,3 +1,20 @@
 title: Excerpt
 
-{{!!title}}
+<$reveal
+	default={{{[{!!title}search:title[/]]}}}
+	type="nomatch"
+	text=""
+	animate="yes"
+>
+	<$text
+		text={{{[{!!text}split[]limit[36]join[]addsuffix[...]]}}}
+	/>
+</$reveal>
+<$reveal
+	default={{{[{!!title}search:title[/]]}}}
+	type="match"
+	text=""
+	animate="yes"
+>
+	{{!!title}}
+</$reveal>
