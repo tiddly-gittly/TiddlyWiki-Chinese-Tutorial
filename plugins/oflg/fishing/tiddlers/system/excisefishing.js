@@ -14,8 +14,8 @@ exports['excisefishing'] = function (event, operation) {
     editTiddlerTitle = editTiddler.fields['draft.of'];
   }
   const currenttime = new Date(new Date().getTime()).toISOString().replace(/-|T|:|\.|Z/g, '');
-  const fishtitle = event.paramObject.selectionAsAnswer === 'yes' ? (operation.selection.indexOf('^^?^^__') == -1 ? editTiddlerTitle + '/' + currenttime : operation.selection.split('^^?^^__')[0].split('__').slice(-1)[0]) : operation.selection.split('\n')[0];
-  const fishtext = event.paramObject.selectionAsAnswer === 'yes' ? (operation.selection.indexOf('^^?^^__') == -1 ? operation.selection : operation.selection.replace('__' + fishtitle + '^^?^^__', '')) : operation.selection.replace(fishtitle, '');
+  const fishtitle = event.paramObject.selectionAsAnswer === 'yes' ? (operation.selection.indexOf('^^T^^__') == -1 ? editTiddlerTitle + '/' + currenttime : operation.selection.split('^^T^^__')[0].replace('__', '')) : operation.selection.split('\n')[0];
+  const fishtext = event.paramObject.selectionAsAnswer === 'yes' ? (operation.selection.indexOf('^^T^^__') == -1 ? operation.selection : operation.selection.replace('__' + fishtitle + '^^T^^__', '')) : operation.selection.replace(fishtitle, '').replace('\n', '');
   // we add current time to legacy title, so won't collide with parent title
   const title = this.wiki.generateNewTitle(fishtitle.replace(/\||\{|\}|\[|\]/g, ''));
   const text = fishtext;
@@ -36,7 +36,7 @@ exports['excisefishing'] = function (event, operation) {
     })
   );
 
-  operation.replacement = (event.paramObject.selectionAsAnswer === 'yes' && event.paramObject.template) ? '\n<<<.tc-big-quote\n{{' + title + '}}\n<<<[[' + title + ']]\n' : '\n<<<.tc-big-quote\n{{' + title + '||' + event.paramObject.template + '}}\n<<<[[' + title + ']]\n';
+  operation.replacement = '· [[' + title + ']]\n\n<<<.tc-fish-quote\n{{' + title + '}}\n<<<\n\n';
   operation.cutStart = operation.selStart;
   operation.cutEnd = operation.selEnd;
   operation.newSelStart = operation.selStart;

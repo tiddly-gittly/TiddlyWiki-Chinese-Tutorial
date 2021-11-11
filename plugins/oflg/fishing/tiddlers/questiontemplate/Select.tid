@@ -16,10 +16,10 @@ title: Select
 	animate="yes"
 >
 	<$reveal
-	default={{{[{!!title}search:title[^^__]]}}}
-	type="nomatch"
-	text=""
-	animate="yes"
+		default={{{[{!!title}search:title[^^__]]}}}
+		type="nomatch"
+		text=""
+		animate="yes"
 	>
 		{{{[{!!title}split[__]first[]]}}}
 		<$list
@@ -27,11 +27,11 @@ title: Select
 			variable="titleitem"
 		>
 			<$vars
-				choiceid={{{[<titleitem>split[^^]rest[]]}}}
-				choicecontent={{{[<titleitem>split[^^]first[]]}}}
+				optionid={{{[<titleitem>split[^^]rest[]]}}}
+				optioncontent={{{[<titleitem>split[^^]first[]]}}}
 			>
 				<$vars
-					answerid={{{[{!!title}split[__]search[^^]search['']count[]match[1]then[answerid]else<choiceid>]}}}
+					selectid={{{[{!!title}split[__]search[^^]search['']count[]match[1]then[id]else<optionid>]}}}
 				>
 					<$reveal
 						state=<<folded-state>>
@@ -47,11 +47,11 @@ title: Select
 						>
 							<$radio
 								tiddler="$:/temp/fishing"
-								index=<<answerid>>
-								value=<<choiceid>>
+								index=<<selectid>>
+								value=<<optionid>>
 								default=""
 							>
-								<<choiceid>>. {{{[<choicecontent>search-replace:g:[''],[]]}}}
+								<<optionid>>. {{{[<optioncontent>search-replace:g:[''],[]]}}}
 							</$radio>
 						</$reveal>
 						<$reveal
@@ -61,12 +61,12 @@ title: Select
 						>
 							<$checkbox
 								tiddler="$:/temp/fishing"
-								index=<<answerid>>
-								checked=<<choiceid>>
+								index=<<selectid>>
+								checked=<<optionid>>
 								unchecked=""
 								default=""
 							>
-								<<choiceid>>. {{{[<choicecontent>search-replace:g:[''],[]]}}}
+								<<optionid>>. {{{[<optioncontent>search-replace:g:[''],[]]}}}
 							</$checkbox>
 						</$reveal>
 					</$reveal>
@@ -82,7 +82,7 @@ title: Select
 							class="tc-btn-invisible"
 						>
 							<$reveal
-								default={{{[<choicecontent>search['']then[1]else[0]]=[[$:/temp/fishing]getindex<answerid>match<answerid>then[1]else[0]]+[join[]]}}}
+								default={{{[<optioncontent>search['']then[1]else[0]]=[[$:/temp/fishing]getindex<selectid>match<optionid>then[1]else[0]]+[join[]]}}}
 								type="match"
 								text="00"
 								animate="yes"
@@ -90,7 +90,7 @@ title: Select
 								{{$:/core/images/blank}}
 							</$reveal>
 							<$reveal
-								default={{{[<choicecontent>search['']then[1]else[0]]=[[$:/temp/fishing]getindex<answerid>match<answerid>then[1]else[0]]+[join[]]}}}
+								default={{{[<optioncontent>search['']then[1]else[0]]=[[$:/temp/fishing]getindex<selectid>match<optionid>then[1]else[0]]+[join[]]}}}
 								type="match"
 								text="01"
 								animate="yes"
@@ -98,7 +98,7 @@ title: Select
 								{{$:/core/images/close-button}}
 							</$reveal>
 							<$reveal
-								default={{{[<choicecontent>search['']then[1]else[0]]=[[$:/temp/fishing]getindex<answerid>match<answerid>then[1]else[0]]+[join[]]}}}
+								default={{{[<optioncontent>search['']then[1]else[0]]=[[$:/temp/fishing]getindex<selectid>match<optionid>then[1]else[0]]+[join[]]}}}
 								type="match"
 								text="10"
 								animate="yes"
@@ -106,14 +106,14 @@ title: Select
 								{{$:/core/images/warning}}
 							</$reveal>
 							<$reveal
-								default={{{[<choicecontent>search['']then[1]else[0]]=[[$:/temp/fishing]getindex<answerid>match<answerid>then[1]else[0]]+[join[]]}}}
+								default={{{[<optioncontent>search['']then[1]else[0]]=[[$:/temp/fishing]getindex<selectid>match<optionid>then[1]else[0]]+[join[]]}}}
 								type="match"
 								text="11"
 								animate="yes"
 							>
 								{{$:/core/images/done-button}}
 							</$reveal>
-						</$button> <<choiceid>>. {{{[<choicecontent>search-replace:g:[''],[]]}}}
+						</$button> <<optionid>>. {{{[<optioncontent>search-replace:g:[''],[]]}}}
 					</$reveal>
 				</$vars>
 			</$vars>

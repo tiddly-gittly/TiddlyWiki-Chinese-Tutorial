@@ -11,7 +11,7 @@ tags: $:/tags/Image
     />
     <text
       font-weight="bold"
-      transform="matrix(2.60973, 0, 0, 2.60973, -64.0161, -180.98)"
+      transform="matrix(2.60973, 0, 0, 2.60973, -70.5161, -180.98)"
       xml:space="preserve"
       text-anchor="start"
       font-size="24"
@@ -20,7 +20,7 @@ tags: $:/tags/Image
       stroke-width="0"
       id="svg_5"
     >
-      ?
+      T
     </text>
   </g>
 </svg>

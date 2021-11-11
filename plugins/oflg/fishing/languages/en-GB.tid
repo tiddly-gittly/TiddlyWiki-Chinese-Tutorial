@@ -50,11 +50,11 @@ type: application/json
     "add7tip": "Review this tiddler next week",
     "add1tip": "Review this tiddler tomorrow",
     "fishingpondtip": "Review tiddlers of this group",
-    "due": "due:",
-    "undue": "undue:",
-    "new": "new:",
-    "fillfiltertip": "Fill in this filter",
-    "pinfiltertip": "Pin this filter",
-    "unpinfiltertip": "Unpin this filter",
-    "adjustscheduletip": "Adjust review schedule of this filter"
+    "due": "due: ",
+    "undue": "undue: ",
+    "new": "new: ",
+    "fillfiltertip": "Fill in this filter: ",
+    "pinfiltertip": "Pin this filter: ",
+    "unpinfiltertip": "Unpin this filter: ",
+    "adjustscheduletip": "Adjust review schedule of this filter: "
 }

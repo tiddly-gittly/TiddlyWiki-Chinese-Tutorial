@@ -53,8 +53,8 @@ type: application/json
     "due": "已到期：",
     "undue": "未到期：",
     "new": "新添加：",
-    "fillfiltertip": "填入此筛选器",
-    "pinfiltertip": "固定此筛选器",
-    "unpinfiltertip": "解除此筛选器",
-    "adjustscheduletip": "调整此筛选器的复习计划"
+    "fillfiltertip": "填入此筛选器：",
+    "pinfiltertip": "固定此筛选器：",
+    "unpinfiltertip": "解除此筛选器：",
+    "adjustscheduletip": "调整此筛选器的复习计划："
 }
