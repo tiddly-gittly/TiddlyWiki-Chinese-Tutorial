@@ -1,6 +1,6 @@
 created: 20211112091421145
 creator: Sttot
-modified: 20211112115421946
+modified: 20211112133832950
 modifier: Sttot
 tags: 插件开发
 title: 可是我的插件还是空的
@@ -55,7 +55,7 @@ tags: 12345
 
 如果我想要排除掉一些文件和文件夹，该怎么办？可以在想要排除文件的那一层目录下创建一个`tiddlywiki.files`文件。当TiddlyWiki解析插件时，如果看到目录下面有`tiddlywiki.files`，就不会继续搜索该文件夹下的其他文件和文件夹，在这一个文件夹下面，`tiddlywiki.files`一个人说了算！
 
-`tiddlywiki.files`文件描述了在这个文件夹下，应当加载那些文件、应当继续递归遍历哪些子文件夹，而且可以为文件添加元数据信息，接下来我们来看看它怎么用。
+`tiddlywiki.files`文件描述了在这个文件夹下，应当加载哪些文件，以及哪些子文件夹下的哪些文件，而且可以为文件添加元数据信息，接下来我们来看看它怎么用。
 
 注意`tiddlywiki.files`也是JSON文件，以下是一个例子：
 
@@ -122,15 +122,15 @@ tags: 12345
 "text": { "prefix": "xxx" }
 ```
 </div>
-** `psuffix`【可选】：为tiddler的内容添加后缀，等价于在`fields`中写：
+** `suffix`【可选】：为tiddler的内容添加后缀，等价于在`fields`中写：
 **: <div>
 
 ```json
-"text": { "psuffix": "xxx" }
+"text": { "suffix": "xxx" }
 ```
 </div>
 
-* `directories`【可选】：可以继续递归遍历的子路径，如果没有出现在里面的子文件夹就是被排除的；`directories`数组内可能有两种类型的数据：
+* `directories`【可选】：包含的子路径，如果没有出现在里面的子文件夹就是被排除的；`directories`数组内可能有两种类型的数据：
 ** 如果是字符串类型，那么就是包含对应名称的文件夹；
 ** 如果是对象类型，就说明是指定了要读取子路径下的指定文件，其内可能有如下字段：
 *** `path`【必填】：要读取的子路径(相对路径)；

@@ -1,6 +1,6 @@
 created: 20211112032733951
 creator: Sttot
-modified: 20211112122030661
+modified: 20211112133952522
 modifier: Sttot
 tags: 插件开发
 title: 如何写一个TW插件
@@ -16,7 +16,7 @@ type: text/vnd.tiddlywiki
 
 ''建议：''本教程需要简单使用Git和NodeJS的技能以及编写JSON文件的能力，如果没有相关的知识，应当先去学一下，并且在电脑上安装`git`和`node`。
 
-@@position:absolute;bottom:0;right:20px;margin:0;font-size:130px;line-height:1em;opacity:0.1;user-select:none;
+@@position:absolute;bottom:10px;right:20px;margin:0;font-size:130px;line-height:1em;opacity:0.1;user-select:none;
 ⚠️
 @@
 """>>
@@ -66,7 +66,7 @@ mkdir tiddlers plugins themes languages
 * `package-lock.json`和`package.json`：NodeJS配置文件，不用管。
 * `tiddlywiki.info`：TiddlyWiki项目的配置文件，其实是一个JSON文件，配置了项目的自定义指令、添加的主题、插件和语言。上面已经配置过。
 
-接下来还有一步，请先阅读[[如何启动一个NodeJS的TiddlyWiki项目]]，然后我想告诉你一些事情，如果想要编写和生成插件，仅仅使用`tiddlywiki . --listen port=8080`是不够的，这样会导致TiddlyWiki找不到你的写插件在哪，因此我们需要设置三个环境变量，让TiddlyWiki知道你写的插件在哪：
+接下来还有一步，请先阅读[[如何启动一个NodeJS的TiddlyWiki项目]]，然后我想告诉你一些事情，如果想要编写和生成插件，仅仅使用`npx tiddlywiki . --listen port=8080`是不够的，这样会导致TiddlyWiki找不到你的写插件在哪，因此我们需要设置三个环境变量，让TiddlyWiki知道你写的插件在哪：
 
 ```shell
 npx cross-env \
