@@ -3,7 +3,13 @@ tags: $:/tags/EditorToolbar
 icon: $:/plugins/oflg/fishing/icons/setexcerpt
 caption: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[setexcerpt]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[setexcerpt]]}}}/>
 description: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[setexcerpttip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[setexcerpttip]]}}}/>
-condition: [<targetTiddler>tag[?]] [<targetTiddler>has[due]] [<targetTiddler>match{$:/temp/fishing!!fish}]
+condition: [<targetTiddler>]
 shortcuts: ((fishing-setexcerpt))
 
-<$action-setfield $tiddler=<<targetTiddler>> caption="{{||Excerpt}}"/>
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="excisefish"
+	exciseto="currentTiddler"
+	exciseform="title<br>"
+	caption="{{||Excerpt}}"
+/>
