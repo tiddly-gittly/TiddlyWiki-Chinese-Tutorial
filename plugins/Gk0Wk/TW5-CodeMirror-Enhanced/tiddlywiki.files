@@ -10,7 +10,6 @@
         },
         {
             "fields": {
-                "type": "text/css",
                 "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/style.css",
                 "tags": "$:/tags/Stylesheet"
             },
@@ -89,7 +88,9 @@
         },
         {
             "fields": {
-                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/ControlPanel"
+                "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/ControlPanel",
+                "tags": "$:/tags/ControlPanel/SettingsTab $:/tags/MoreSideBar",
+                "caption": "CME"
             },
             "file": "ControlPanel"
         },
@@ -104,7 +105,7 @@
             "fields": {
                 "title": "$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/i18n/zh-Hans.json",
                 "type": "application/json",
-                "cmei18n": "zh-Hans zh",
+                "cmei18n": "zh-Hans zh-CN zh",
                 "cmei18n-namespace": "core"
             },
             "file": "i18n/zh-Hans.json"

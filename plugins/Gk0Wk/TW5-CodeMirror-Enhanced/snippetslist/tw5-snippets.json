@@ -43,6 +43,69 @@
   },
   {
     "i18n": true,
+    "id": "dash",
+    "name": "tw-snippet.dash.name",
+    "preview": "tw-snippet.dash.preview",
+    "snippet": "---"
+  },
+  {
+    "i18n": true,
+    "id": "definitions",
+    "name": "tw-snippet.definitions.name",
+    "preview": "tw-snippet.definitions.preview",
+    "snippet": "; $1\n: $2\n"
+  },
+  {
+    "i18n": true,
+    "id": "codeinline",
+    "name": "tw-snippet.codeinline.name",
+    "preview": "tw-snippet.codeinline.preview",
+    "snippet": "`$1`"
+  },
+  {
+    "i18n": true,
+    "id": "bold",
+    "name": "tw-snippet.bold.name",
+    "preview": "tw-snippet.bold.preview",
+    "snippet": "''$1''"
+  },
+  {
+    "i18n": true,
+    "id": "italic",
+    "name": "tw-snippet.italic.name",
+    "preview": "tw-snippet.italic.preview",
+    "snippet": "//$1//"
+  },
+  {
+    "i18n": true,
+    "id": "underlinescore",
+    "name": "tw-snippet.underline.name",
+    "preview": "tw-snippet.underline.preview",
+    "snippet": "__$1__"
+  },
+  {
+    "i18n": true,
+    "id": "superscript",
+    "name": "tw-snippet.superscript.name",
+    "preview": "tw-snippet.superscript.preview",
+    "snippet": "^^$1^^"
+  },
+  {
+    "i18n": true,
+    "id": "subscript",
+    "name": "tw-snippet.subscript.name",
+    "preview": "tw-snippet.subscript.preview",
+    "snippet": ",,$1,,"
+  },
+  {
+    "i18n": true,
+    "id": "deleteStrikeThrough",
+    "name": "tw-snippet.deleteStrikeThrough.name",
+    "preview": "tw-snippet.deleteStrikeThrough.preview",
+    "snippet": "~~$1~~"
+  },
+  {
+    "i18n": true,
     "id": "center",
     "name": "tw-snippet.center.name",
     "preview": "tw-snippet.center.preview",

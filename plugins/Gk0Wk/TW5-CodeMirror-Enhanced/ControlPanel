@@ -15,8 +15,8 @@
 <$wikify name="rendered" text={{{[cmei18n[control-panel.realtime-hint.description]]}}} output=html><<rendered>></$wikify>
 
 : <$checkbox tiddler="$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config.json" index="realtime-hint" field="text" checked="true" unchecked="false" default="true">
-    <$reveal type="match" stateTitle="$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config" stateIndex="realtime-hint" text="true"><$text text={{{[cmei18n[control-panel.realtime-hint.button-on]]}}}/></$reveal>
-    <$reveal type="nomatch" stateTitle="$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config" stateIndex="realtime-hint" text="true"><$text text={{{[cmei18n[control-panel.realtime-hint.button-off]]}}}/></$reveal>
+    <$reveal type="match" stateTitle="$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config.json" stateIndex="realtime-hint" text="true"><$text text={{{[cmei18n[control-panel.realtime-hint.button-on]]}}}/></$reveal>
+    <$reveal type="nomatch" stateTitle="$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config.json" stateIndex="realtime-hint" text="true"><$text text={{{[cmei18n[control-panel.realtime-hint.button-off]]}}}/></$reveal>
 </$checkbox>
 
 ---
@@ -26,8 +26,8 @@
 <$wikify name="rendered" text={{{[cmei18n[control-panel.clickable-links.description]]}}} output=html><<rendered>></$wikify>
 
 : <$checkbox tiddler="$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config.json" index="clickable-links" field="text" checked="true" unchecked="false" default="true">
-    <$reveal type="match" stateTitle="$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config" stateIndex="clickable-links" text="true"><$text text={{{[cmei18n[control-panel.clickable-links.button-on]]}}}/></$reveal>
-    <$reveal type="nomatch" stateTitle="$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config" stateIndex="clickable-links" text="true"><$text text={{{[cmei18n[control-panel.clickable-links.button-off]]}}}/></$reveal>
+    <$reveal type="match" stateTitle="$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config.json" stateIndex="clickable-links" text="true"><$text text={{{[cmei18n[control-panel.clickable-links.button-on]]}}}/></$reveal>
+    <$reveal type="nomatch" stateTitle="$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config.json" stateIndex="clickable-links" text="true"><$text text={{{[cmei18n[control-panel.clickable-links.button-off]]}}}/></$reveal>
 </$checkbox>
 
 ---
@@ -37,6 +37,6 @@
 <$wikify name="rendered" text={{{[cmei18n[control-panel.hint-preview.description]]}}} output=html><<rendered>></$wikify>
 
 : <$checkbox tiddler="$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config.json" index="hint-preview" field="text" checked="true" unchecked="false" default="true">
-    <$reveal type="match" stateTitle="$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config" stateIndex="hint-preview" text="true"><$text text={{{[cmei18n[control-panel.hint-preview.button-on]]}}}/></$reveal>
-    <$reveal type="nomatch" stateTitle="$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config" stateIndex="hint-preview" text="true"><$text text={{{[cmei18n[control-panel.hint-preview.button-off]]}}}/></$reveal>
+    <$reveal type="match" stateTitle="$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config.json" stateIndex="hint-preview" text="true"><$text text={{{[cmei18n[control-panel.hint-preview.button-on]]}}}/></$reveal>
+    <$reveal type="nomatch" stateTitle="$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced/config.json" stateIndex="hint-preview" text="true"><$text text={{{[cmei18n[control-panel.hint-preview.button-off]]}}}/></$reveal>
 </$checkbox>

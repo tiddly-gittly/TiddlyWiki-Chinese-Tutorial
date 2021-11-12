@@ -42,12 +42,12 @@
             currentLine.charAt(pointer) === '$' ?
             $tw.wiki.filterTiddlers('[all[tiddlers]search:title:literal[' + curWord + ']!prefix[$:/state]]') :
             $tw.wiki.filterTiddlers('[all[tiddlers]!is[system]search:title:literal[' + curWord + ']!prefix[$:/state]]');
-        filteredTiddler.forEach(function(tiddler) {
+        $tw.utils.each(filteredTiddler, (tiddler) => {
             tiddlerList.push({
                 text: tiddler,
                 hintMatch: cme.service.RealtimeHint.makeLiteralHintMatch(tiddler, curWord),
             });
-        });
+        })
 
         return {
             from: cme.CodeMirror.Pos(current.line, pointer),

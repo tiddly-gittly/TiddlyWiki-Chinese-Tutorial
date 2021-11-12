@@ -25,6 +25,10 @@ p > code, li > code {
   box-shadow: <<colour sidebar-foreground-shadow>>
 }
 
+pre {
+  word-break: break-all;
+}
+
 /**
   卡片、编辑器和背景样式
 */
