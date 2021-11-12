@@ -8,7 +8,8 @@ shortcuts: ((fishing-excisecloze))
 
 <$action-sendmessage
 	$message="tm-edit-text-operation"
-	$param="excisefishing"
-	selectionAsAnswer="no"
-	template="Cloze"
+	$param="excisefish"
+	exciseto="newTiddler"
+	exciseform="title<br>text"
+	caption="{{||Cloze}}"
 />
