@@ -1,5 +1,5 @@
 {
-  "description": "Basic client-server edition",
+  "description": "太微中文教程",
   "plugins": [
     "tiddlywiki/highlight",
     "tiddlywiki/pluginlibrary",
@@ -98,22 +98,6 @@
       "--rendertiddler",
       "$:/core/templates/tiddlywiki5.js",
       "tiddlywiki5.js",
-      "text/plain"
-    ],
-    "library": [
-      "--makelibrary",
-      "$:/UpgradeLibrary",
-      "--savelibrarytiddlers",
-      "$:/UpgradeLibrary",
-      "[prefix[$:/]] -[prefix[$:/plugins/tiddlywiki/]] -[prefix[$:/themes/tiddlywiki/]] -[prefix[$:/languages/]] -[[$:/plugins/tiddlywiki/upgrade]] -[[$:/plugins/tiddlywiki/translators]] -[tag[$:/tags/PluginLibrary]] -[prefix[$:/plugins/kookma]]",
-      "recipes/library/tiddlers/",
-      "$:/UpgradeLibrary/List",
-      "--savetiddler",
-      "$:/UpgradeLibrary/List",
-      "recipes/library/tiddlers.json",
-      "--rendertiddler",
-      "$:/plugins/tiddlywiki/pluginlibrary/library.template.html",
-      "index.html",
       "text/plain"
     ]
   }

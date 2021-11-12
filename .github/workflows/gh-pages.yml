@@ -23,7 +23,7 @@ jobs:
       - name: 安装 NodeJS 依赖
         run: npm install
       - name: 构建
-        run: npm run build
+        run: npm run buildonline && npm run buildlibrary
 
       - name: 部署
         uses: peaceiris/actions-gh-pages@v3

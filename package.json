@@ -1,12 +1,12 @@
 {
   "scripts": {
-    "build": "node -e \"require('./scripts/build-wiki')()\""
-  },
-  "dependencies": {
-    "@tiddlygit/tiddlywiki": "5.2.0-prerelease.20211002"
+    "buildonline": "node -e \"require('./scripts/build').buildOnlineHTML('public-dist', 'index.html');\"",
+    "buildoffline": "node -e \"require('./scripts/build').buildOfflineHTML('public-dist', 'offline.html');\"",
+    "buildlibrary": "node -e \"require('./scripts/build').buildLibrary('[prefix[$:/]!prefix[$:/plugins/tiddlywiki/]!prefix[$:/themes/tiddlywiki/]!prefix[$:/languages/]!tag[$:/tags/PluginLibrary]!prefix[$:/plugins/kookma]]', 'public-dist/library');\""
   },
   "devDependencies": {
     "html-minifier-terser": "6.0.2",
-    "workbox-cli": "6.3.0"
+    "workbox-cli": "6.3.0",
+    "@tiddlygit/tiddlywiki": "5.2.0-prerelease.20211002"
   }
 }
