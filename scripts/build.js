@@ -77,6 +77,7 @@ function buildOnlineHTML(distDir, htmlName, minify) {
     shell('rm -rf tiddlers && mv tmp_tiddlers_backup tiddlers &> /dev/null'); // 还原
 
     // 最小化：核心JS和HTML
+  shell(`echo '${distDir}/tiddlywikicore-'${getVersion}'.js'`);
     if (minify) {
         shellI(`npx uglifyjs ${distDir}/tiddlywikicore.js -c -m --v8 --webkit --ie --output '${distDir}/tiddlywikicore-'${getVersion}'.js' && rm ${distDir}/tiddlywikicore.js`);
         shellI(`npx html-minifier-terser -c scripts/html-minifier-terser.config.json -o ${distDir}/${htmlName} ${distDir}/index-raw.html && rm ${distDir}/index-raw.html`);
