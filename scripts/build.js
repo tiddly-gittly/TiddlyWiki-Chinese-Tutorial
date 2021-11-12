@@ -21,6 +21,7 @@ process.env.TIDDLYWIKI_EDITION_PATH = `${repoFolder}/editions`;
  */
 function shell(command, options) {
     if (options !== undefined) options = {};
+    console.log(`[RUN] ${command}`);
     console.log(String(execSync(command, {
         cwd: repoFolder,
         ...options,
@@ -74,10 +75,10 @@ function buildOnlineHTML(distDir, htmlName, minify) {
 
     // 最小化：核心JS和HTML
     if (minify) {
-        shellI(`npx uglifyjs ${distDir}/tiddlywikicore.js -c -m --v8 --webkit --ie --output '${distDir}/tiddlywikicore-'${'$(echo $(npx tiddlywiki . --version) | awk \'{print $1}\')'}'.js' && rm ${distDir}/tiddlywikicore.js`);
+        shellI(`npx uglifyjs ${distDir}/tiddlywikicore.js -c -m --v8 --webkit --ie --output '${distDir}/tiddlywikicore-'${'$(npx tiddlywiki . --version | grep -Eo \'^[0-9]+\.[0-9]+\.[0-9]+.*$\' | head -n 1)'}'.js' && rm ${distDir}/tiddlywikicore.js`);
         shellI(`npx html-minifier-terser -c scripts/html-minifier-terser.config.json -o ${distDir}/${htmlName} ${distDir}/index-raw.html && rm ${distDir}/index-raw.html`);
     } else {
-        shellI(`mv ${distDir}/tiddlywikicore.js '${distDir}/tiddlywikicore-'${'$(echo $(npx tiddlywiki . --version) | awk \'{print $1}\')'}'.js'`);
+        shellI(`mv ${distDir}/tiddlywikicore.js '${distDir}/tiddlywikicore-'${'$(npx tiddlywiki . --version | grep -Eo \'^[0-9]+\.[0-9]+\.[0-9]+.*$\' | head -n 1)'}'.js'`);
         shellI(`mv ${distDir}/index-raw.html ${distDir}/${htmlName}`);
     }
 }
