@@ -5,8 +5,11 @@
     "buildlibrary": "node -e \"require('./scripts/build').buildLibrary('[prefix[$:/]!prefix[$:/plugins/tiddlywiki/]!prefix[$:/themes/tiddlywiki/]!prefix[$:/languages/]!tag[$:/tags/PluginLibrary]!prefix[$:/plugins/kookma]]', 'public-dist/library');\""
   },
   "devDependencies": {
+    "@tiddlygit/tiddlywiki": "5.2.0-prerelease.20211002",
     "html-minifier-terser": "6.0.2",
-    "workbox-cli": "6.3.0",
-    "@tiddlygit/tiddlywiki": "5.2.0-prerelease.20211002"
+    "workbox-cli": "6.3.0"
+  },
+  "dependencies": {
+    "uglifyjs": "^2.4.11"
   }
 }

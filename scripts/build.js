@@ -5,6 +5,8 @@ const {
 
 /** 项目路径 */
 const repoFolder = path.join(path.dirname(__filename), '..');
+/** 获得TW版本号 */
+const getVersion = '$(npx tiddlywiki . --version | grep -Eo \'^[0-9]+\.[0-9]+\.[0-9]+.*$\' | head -n 1)';
 
 /** 设置环境变量，TW会同时在自己的源码路径以及环境变量定义的路径中寻找插件、主题和语言
  *  如果不这样写，plugins、themes、languages和editions里的内容就无法被加载
@@ -15,27 +17,28 @@ process.env.TIDDLYWIKI_LANGUAGE_PATH = `${repoFolder}/languages`;
 process.env.TIDDLYWIKI_EDITION_PATH = `${repoFolder}/editions`;
 
 /**
- * 执行命令行指令，并打印该指令
+ * 执行命令行指令，并打印该指令的结果
  * @param {string} command 要执行的命令
  * @param {object} options execSync的参数
  */
 function shell(command, options) {
     if (options !== undefined) options = {};
-    console.log(`[RUN] ${command}`);
     console.log(String(execSync(command, {
         cwd: repoFolder,
         ...options,
     })));
 }
 /**
- * 执行命令行指令，并打印该指令，同时忽略任何错误
+ * 执行命令行指令，并打印该指令的结果，同时忽略任何错误
  * @param {string} command 要执行的命令
  * @param {object} options execSync的参数
  */
 function shellI(command, options) {
     try {
         shell(command, options);
-    } catch (error) {}
+    } catch (error) {
+        console.error(`[Shell Command Error] ${error}`)
+    }
 }
 
 /**
@@ -75,10 +78,10 @@ function buildOnlineHTML(distDir, htmlName, minify) {
 
     // 最小化：核心JS和HTML
     if (minify) {
-        shellI(`npx uglifyjs ${distDir}/tiddlywikicore.js -c -m --v8 --webkit --ie --output '${distDir}/tiddlywikicore-'${'$(npx tiddlywiki . --version | grep -Eo \'^[0-9]+\.[0-9]+\.[0-9]+.*$\' | head -n 1)'}'.js' && rm ${distDir}/tiddlywikicore.js`);
+        shellI(`npx uglifyjs ${distDir}/tiddlywikicore.js -c -m --v8 --webkit --ie --output '${distDir}/tiddlywikicore-'${getVersion}'.js' && rm ${distDir}/tiddlywikicore.js`);
         shellI(`npx html-minifier-terser -c scripts/html-minifier-terser.config.json -o ${distDir}/${htmlName} ${distDir}/index-raw.html && rm ${distDir}/index-raw.html`);
     } else {
-        shellI(`mv ${distDir}/tiddlywikicore.js '${distDir}/tiddlywikicore-'${'$(npx tiddlywiki . --version | grep -Eo \'^[0-9]+\.[0-9]+\.[0-9]+.*$\' | head -n 1)'}'.js'`);
+        shellI(`mv ${distDir}/tiddlywikicore.js '${distDir}/tiddlywikicore-'${getVersion}'.js'`);
         shellI(`mv ${distDir}/index-raw.html ${distDir}/${htmlName}`);
     }
 }
