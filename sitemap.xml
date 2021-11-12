@@ -91,6 +91,12 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
+		<loc>https://onetwo.ren/wiki/#:plugin.info文件介绍</loc>
+		<lastmod>2021-11-12</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>https://onetwo.ren/wiki/#:他们是这样评价太微的</loc>
 		<lastmod>2021-10-16</lastmod>
 		<changefreq>monthly</changefreq>
@@ -151,6 +157,12 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
+		<loc>https://onetwo.ren/wiki/#:可是我的插件还是空的</loc>
+		<lastmod>2021-11-12</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>https://onetwo.ren/wiki/#:基础知识</loc>
 		<lastmod>2021-09-03</lastmod>
 		<changefreq>monthly</changefreq>
@@ -201,6 +213,24 @@
 	<url>
 		<loc>https://onetwo.ren/wiki/#:如何保存内容到社区仓库里</loc>
 		<lastmod>2021-10-03</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:如何写一个TW插件(TiddlyGit版)</loc>
+		<lastmod>2021-11-12</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:如何写一个TW插件</loc>
+		<lastmod>2021-11-12</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:如何启动一个NodeJS的TiddlyWiki项目</loc>
+		<lastmod>2021-11-12</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
