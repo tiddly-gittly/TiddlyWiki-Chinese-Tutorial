@@ -1,0 +1,19 @@
+<$reveal state="$:/state/sidebar" type="match" text="no">
+.tc-sidebar-scrollable {
+	display: none;
+}
+</$reveal>
+
+div#gk0wk-sidebar-resize-area {
+	height: 100vh;
+	width: 10px;
+	position: absolute;
+	top: 0;
+	left: -5px;
+	cursor: ew-resize;
+	transition: all {{$:/config/AnimationDuration}}ms;
+}
+
+div#gk0wk-sidebar-resize-area:hover {
+	background: <<colour primary>>;
+}
