@@ -25,7 +25,7 @@
         "author": "Gk0Wk",
         "source": "https://github.com/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/tree/master/plugins/Gk0Wk/sidebar-resizer",
         "dependents": "",
-        "readme": "\\define lingo-base() $:/language/ThemeTweaks/\n\n原理是更改[[$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth]]的值。\n\n注意：首先请将 <$link to=\"$:/themes/tiddlywiki/vanilla/options/sidebarlayout\"><<lingo Options/SidebarLayout>></$link> 调整为`fluid-fixed`，本插件才可生效。\n",
+        "readme": "\\define lingo-base() $:/language/ThemeTweaks/\n\n原理是更改[[$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth]]的值。\n\n注意：首先请将 <$link to=\"$:/themes/tiddlywiki/vanilla/options/sidebarlayout\"><<lingo Options/SidebarLayout>></$link> 调整为`fluid-fixed`，本插件才可生效。\n\n<$button set=\"$:/themes/tiddlywiki/vanilla/options/sidebarlayout\" setTo=\"fluid-fixed\">点击设置<<lingo Options/SidebarLayout>></$button>\n",
         "requires-reload": "yes"
     },
     {
