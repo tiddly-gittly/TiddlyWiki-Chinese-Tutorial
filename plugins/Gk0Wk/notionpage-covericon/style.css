@@ -1,0 +1,255 @@
+.gk0wk-notionpagebg {
+	width: 100%;
+	position: relative;
+	z-index: 1000;
+  top: {{$:/plugins/Gk0Wk/notionpage-covericon/style/top-offset/wide}};
+}
+
+.gk0wk-notionpagebg .gk0wk-notionpagebg-image {
+  width: calc(100% - {{$:/plugins/Gk0Wk/notionpage-covericon/style/cover-left/wide}} - {{$:/plugins/Gk0Wk/notionpage-covericon/style/cover-right/wide}});
+	left: {{$:/plugins/Gk0Wk/notionpage-covericon/style/cover-left/wide}};
+	height: {{$:/plugins/Gk0Wk/notionpage-covericon/style/cover-height/wide}};
+	overflow: hidden;
+	position: relative;
+}
+
+@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .gk0wk-notionpagebg {
+    top: {{$:/plugins/Gk0Wk/notionpage-covericon/style/topoffset/narrow}};
+  }
+	.gk0wk-notionpagebg .gk0wk-notionpagebg-image {
+    width: calc(100% - {{$:/plugins/Gk0Wk/notionpage-covericon/style/cover-left/narrow}} - {{$:/plugins/Gk0Wk/notionpage-covericon/style/cover-right/narrow}});
+		left: {{$:/plugins/Gk0Wk/notionpage-covericon/style/cover-left/narrow}};
+    height: {{$:/plugins/Gk0Wk/notionpage-covericon/style/cover-height/narrow}};
+	}
+}
+
+.gk0wk-notionpagebg .gk0wk-notionpagebg-image img {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.gk0wk-notionpagebg button {
+	background: transparent;
+	border: 0;
+}
+
+.gk0wk-notionpagebg-icon1 {
+	margin: 50px 0 50px 0;
+	font-size: 65px;
+	user-select: none;
+	cursor: pointer;
+	font-family: "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols;
+	color: <<colour foreground>> !important;
+	fill: <<colour foreground>> !important;
+}
+
+.gk0wk-notionpagebg-icon2 {
+	position: relative;
+	top: -32.5px;
+	font-size: 65px;
+	user-select: none;
+	cursor: pointer;
+	font-family: "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols;
+	color: <<colour foreground>> !important;
+	fill: <<colour foreground>> !important;
+}
+
+.gk0wk-notionpagebg p {
+	margin: 0;
+}
+
+.gk0wk-notionbg-icon-selection-box {
+	border-radius: 3px;
+	box-shadow: #00000070 0 2px 6px;
+	overflow: auto;
+	filter: contrast(90%);
+	background: <<colour background>>;
+	max-height: min(60vh, 390px);
+  max-width: 480px;
+}
+
+.gk0wk-notionbg-icon-selection-type {
+	padding: 6px 0;
+}
+
+.gk0wk-notionbg-icon-selection-typetitle {
+	color: <<colour muted-foreground>>;
+	display: block;
+	padding-left: 14px;
+	padding-right: 14px;
+	margin-top: 6px;
+	margin-bottom: 8px;
+	font-size: 1em;
+	font-weight: 600;
+	line-height: 120%;
+	user-select: none;
+	text-transform: uppercase;
+}
+
+.gk0wk-notionbg-icon-selection-icons {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  background: transparent;
+  padding: 0px 0px 0px 12px;
+  margin-bottom: 1px;
+	font-family: "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols;
+}
+
+.gk0wk-notionbg-icon-selection-icons > button {
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+}
+
+.gk0wk-notionbg-icon-selection-type button {
+	background: transparent !important;
+	border: none !important;
+	border-radius: 3px;
+	padding: 4px 8px;
+	transition: all {{$:/config/AnimationDuration}}ms;
+	color: <<colour foreground>> !important;
+	fill: <<colour foreground>> !important;
+}
+
+.gk0wk-notionbg-icon-selection-type button:hover {
+  background: <<colour background>> !important;
+	color: <<colour foreground>> !important;
+	fill: <<colour foreground>> !important;
+	filter: contrast(85%);
+}
+
+.gk0wk-notionbg-icon-selection-type button:active {
+  background: <<colour background>> !important;
+	color: <<colour foreground>> !important;
+	fill: <<colour foreground>> !important;
+	filter: contrast(70%);
+}
+
+.gk0wk-notionbg-selection-box-emojifilter,
+.gk0wk-notionbg-selection-box-tiddlerurlinput,
+.gk0wk-notionpageb-changecover-box > div {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 28px);
+  font-size: 14px;
+  line-height: 20px;
+  padding: 3px 6px;
+  position: relative;
+  border-radius: 3px;
+  cursor: text;
+  height: 28px;
+	margin: 10px 14px 0px 14px;
+	background: <<colour background>>;
+	filter: contrast(90%);
+}
+
+.gk0wk-notionbg-selection-box-tiddlerurlinput {
+	margin-bottom: 10px;
+}
+
+.gk0wk-notionbg-selection-box-emojifilter > textarea,
+.gk0wk-notionbg-selection-box-tiddlerurlinput > textarea,
+.gk0wk-notionpageb-changecover-box > div > input,
+.gk0wk-notionbg-selection-box-tiddlerurlinput > input {
+	height: 22px !important;
+	font-size: inherit;
+	line-height: inherit;
+	border: none;
+	background: none;
+	width: 100%;
+	display: block;
+	resize: none;
+	padding: 0px;
+	width: 100%;
+}
+
+.gk0wk-notionbg-selection-box-header {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	background: <<colour background>>;
+	padding-bottom: 6px;
+	z-index: 1000;
+}
+
+.gk0wk-notionbg-selection-box-tabs {
+  width: 100%;
+  padding-left: 8px;
+	box-shadow: <<colour very-muted-foreground>> 0px 1px 0px;
+}
+
+.gk0wk-notionbg-selection-box-tabs button {
+  padding: 6px 8px 10px 8px;
+  line-height: 1.2;
+  margin: 4px 4px 0 4px;
+  cursor: pointer;
+  white-space: nowrap;
+	color: <<colour foreground>>;
+	fill: <<colour foreground>>;
+	border-radius: 3px 3px 0 0;
+}
+
+.gk0wk-notionbg-selection-box-tabs button {
+  padding: 6px 8px 10px 8px;
+  line-height: 1.2;
+  margin: 4px 4px 0 4px;
+  cursor: pointer;
+  white-space: nowrap;
+	color: <<colour foreground>>;
+	border-radius: 3px 3px 0 0;
+}
+
+.gk0wk-notionbg-selection-box-tabs button.gk0wk-notionbg-tab-selected {
+  font-weight: 600;
+	box-shadow: <<colour foreground>> 0px 2px 0px;
+}
+
+.gk0wk-notionbg-addbuttons {
+	width: 100%;
+	height: 30px;
+	opacity: 0;
+	transition: all {{$:/config/AnimationDuration}}ms;
+	display: flex;
+}
+
+.gk0wk-notionpagebg:hover .gk0wk-notionbg-addbuttons {
+	opacity: 1;
+}
+
+.gk0wk-notionbg-addbuttons button {
+  padding: 3px 6px;
+  margin-right: 12px;
+	opacity: 0.8;
+}
+
+.gk0wk-notionpageb-changecover {
+	position: absolute;
+	top: 265px;
+	right: 10px;
+	padding: 4px 6px;
+	background: <<colour background>> !important;
+	filter: contrast(90%);
+	opacity: 0;
+	transition: all {{$:/config/AnimationDuration}}ms;
+}
+
+.gk0wk-notionpagebg:hover .gk0wk-notionpageb-changecover {
+	opacity: 1;
+}
+
+.gk0wk-notionpageb-changecover-box {
+	border-radius: 3px;
+	box-shadow: #00000070 0 2px 6px;
+	background: <<colour background>>;
+	padding: 10px 6px 20px 6px;
+	width: 318px;
+}
