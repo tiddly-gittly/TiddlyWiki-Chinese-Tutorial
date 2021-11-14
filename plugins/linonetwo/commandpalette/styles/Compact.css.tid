@@ -18,7 +18,7 @@ type: text/vnd.tiddlywiki
     flex-direction: column;
     font-size: 21px;
     border-radius: var(--palette-radius);
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 14px;
+    <<box-shadow "rgba(0, 0, 0, 0.15) 0px 0px 14px">>
     border: 2px solid <<colour page-background>>;
 }
 @media (max-width: 540px) {

@@ -19,7 +19,6 @@
     "tiddlywiki/codemirror-search-replace",
     "tiddlywiki/dynannotate",
     "tiddlywiki/dynaview",
-    "tiddlywiki/googleanalytics",
     "tiddlywiki/highlight",
     "tiddlywiki/katex",
     "tiddlywiki/markdown",
