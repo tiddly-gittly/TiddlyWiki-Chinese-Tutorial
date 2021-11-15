@@ -1,0 +1,10 @@
+description: 导出文件 Export File
+extension: 
+tags: $:/tags/Exporter
+title: 导出文件 Export File
+type: text/vnd.tiddlywiki
+
+\define renderContent()
+{{{ $(exportFilter)$ ||$:/core/templates/plain-text-tiddler}}}
+\end
+<<renderContent>>
