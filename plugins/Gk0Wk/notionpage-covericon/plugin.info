@@ -1,5 +1,5 @@
 {
-    "version": "0.0.1",
+    "version": "0.0.2",
     "type": "application/json",
     "title": "$:/plugins/Gk0Wk/notionpage-covericon",
     "plugin-type": "plugin",
@@ -38,6 +38,9 @@
       },
       "$:/plugins/Gk0Wk/notionpage-covericon/style/cover-right/wide": {
         "text": "-42px"
+      },
+      "$:/plugins/Gk0Wk/notionpage-covericon/style/icon-size": {
+        "text": "65px"
       }
     }
 }

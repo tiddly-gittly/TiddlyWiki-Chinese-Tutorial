@@ -17,13 +17,14 @@ title: $:/plugins/Gk0Wk/notionpage-covericon/readme
 ; 默认封面
 : <$edit-text tiddler="$:/plugins/Gk0Wk/notionpage-covericon/default-pagecover-url" default="https://source.unsplash.com/random" placeholder="URL or Tiddler"/>
 
-; 封面高度(宽屏模式) <$edit-text tiddler="$:/plugins/Gk0Wk/notionpage-covericon/style/cover-height/narrow" placeholder="封面高度(宽屏模式)" tag="input"/>
-; 封面高度(紧凑模式) <$edit-text tiddler="$:/plugins/Gk0Wk/notionpage-covericon/style/cover-height/wide" placeholder="封面高度(紧凑模式)" tag="input"/>
-; 封面顶端位置(宽屏模式) <$edit-text tiddler="$:/plugins/Gk0Wk/notionpage-covericon/style/top-offset/narrow" placeholder="封面顶端位置(宽屏模式)" tag="input"/>
-; 封面顶端位置(紧凑模式) <$edit-text tiddler="$:/plugins/Gk0Wk/notionpage-covericon/style/top-offset/wide" placeholder="封面顶端位置(紧凑模式)" tag="input"/>
-; 封面左侧位置(宽屏模式) <$edit-text tiddler="$:/plugins/Gk0Wk/notionpage-covericon/style/cover-left/narrow" placeholder="封面左侧位置(宽屏模式)" tag="input"/>
-; 封面左侧位置(紧凑模式) <$edit-text tiddler="$:/plugins/Gk0Wk/notionpage-covericon/style/cover-left/wide" placeholder="封面左侧位置(紧凑模式)" tag="input"/>
-; 封面右侧位置(宽屏模式) <$edit-text tiddler="$:/plugins/Gk0Wk/notionpage-covericon/style/cover-right/narrow" placeholder="封面右侧位置(宽屏模式)" tag="input"/>
-; 封面右侧位置(紧凑模式) <$edit-text tiddler="$:/plugins/Gk0Wk/notionpage-covericon/style/cover-right/wide" placeholder="封面右侧位置(紧凑模式)" tag="input"/>
+; 图标大小 <$edit-text tiddler="$:/plugins/Gk0Wk/notionpage-covericon/style/icon-size" placeholder="图标大小" tag="input"/>
+; 封面高度(紧凑模式) <$edit-text tiddler="$:/plugins/Gk0Wk/notionpage-covericon/style/cover-height/narrow" placeholder="封面高度(紧凑模式)" tag="input"/>
+; 封面高度(宽屏模式) <$edit-text tiddler="$:/plugins/Gk0Wk/notionpage-covericon/style/cover-height/wide" placeholder="封面高度(宽屏模式)" tag="input"/>
+; 封面顶端位置(紧凑模式) <$edit-text tiddler="$:/plugins/Gk0Wk/notionpage-covericon/style/top-offset/narrow" placeholder="封面顶端位置(紧凑模式)" tag="input"/>
+; 封面顶端位置(宽屏模式) <$edit-text tiddler="$:/plugins/Gk0Wk/notionpage-covericon/style/top-offset/wide" placeholder="封面顶端位置(宽屏模式)" tag="input"/>
+; 封面左侧位置(紧凑模式) <$edit-text tiddler="$:/plugins/Gk0Wk/notionpage-covericon/style/cover-left/narrow" placeholder="封面左侧位置(紧凑模式)" tag="input"/>
+; 封面左侧位置(宽屏模式) <$edit-text tiddler="$:/plugins/Gk0Wk/notionpage-covericon/style/cover-left/wide" placeholder="封面左侧位置(宽屏模式)" tag="input"/>
+; 封面右侧位置(紧凑模式) <$edit-text tiddler="$:/plugins/Gk0Wk/notionpage-covericon/style/cover-right/narrow" placeholder="封面右侧位置(紧凑模式)" tag="input"/>
+; 封面右侧位置(宽屏模式) <$edit-text tiddler="$:/plugins/Gk0Wk/notionpage-covericon/style/cover-right/wide" placeholder="封面右侧位置(宽屏模式)" tag="input"/>
 
 * 注：【宽屏模式】和【紧凑模式】是由 <$link to="$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint"><<lingo Metrics/SidebarBreakpoint>></$link> 决定的，当前<<lingo Metrics/SidebarBreakpoint>>为{{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}。

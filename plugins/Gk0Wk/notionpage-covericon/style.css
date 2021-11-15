@@ -2,6 +2,9 @@
 	width: 100%;
 	position: relative;
 	z-index: 1000;
+}
+
+.gk0wk-notionpagebg-c, .gk0wk-notionpagebg-ci {
   top: {{$:/plugins/Gk0Wk/notionpage-covericon/style/top-offset/wide}};
 }
 
@@ -13,15 +16,29 @@
 	position: relative;
 }
 
+.gk0wk-notionpagebg-ci {
+  height: calc({{$:/plugins/Gk0Wk/notionpage-covericon/style/cover-height/wide}} + {{$:/plugins/Gk0Wk/notionpage-covericon/style/icon-size}} / 2 + {{$:/plugins/Gk0Wk/notionpage-covericon/style/top-offset/wide}} + 10px);
+}
+
+.gk0wk-notionpagebg-c {
+  height: calc({{$:/plugins/Gk0Wk/notionpage-covericon/style/cover-height/wide}} + {{$:/plugins/Gk0Wk/notionpage-covericon/style/top-offset/wide}} + 30px + 10px);
+}
+
 @media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
-  .gk0wk-notionpagebg {
-    top: {{$:/plugins/Gk0Wk/notionpage-covericon/style/topoffset/narrow}};
+  .gk0wk-notionpagebg-c, .gk0wk-notionpagebg-ci {
+    top: {{$:/plugins/Gk0Wk/notionpage-covericon/style/top-offset/narrow}};
   }
 	.gk0wk-notionpagebg .gk0wk-notionpagebg-image {
     width: calc(100% - {{$:/plugins/Gk0Wk/notionpage-covericon/style/cover-left/narrow}} - {{$:/plugins/Gk0Wk/notionpage-covericon/style/cover-right/narrow}});
 		left: {{$:/plugins/Gk0Wk/notionpage-covericon/style/cover-left/narrow}};
     height: {{$:/plugins/Gk0Wk/notionpage-covericon/style/cover-height/narrow}};
 	}
+  .gk0wk-notionpagebg-ci {
+    height: calc({{$:/plugins/Gk0Wk/notionpage-covericon/style/cover-height/narrow}} + {{$:/plugins/Gk0Wk/notionpage-covericon/style/icon-size}} / 2 + {{$:/plugins/Gk0Wk/notionpage-covericon/style/top-offset/narrow}} + 10px);
+  }
+  .gk0wk-notionpagebg-c {
+    height: calc({{$:/plugins/Gk0Wk/notionpage-covericon/style/cover-height/narrow}} + {{$:/plugins/Gk0Wk/notionpage-covericon/style/top-offset/narrow}} + 30px + 10px);
+  }
 }
 
 .gk0wk-notionpagebg .gk0wk-notionpagebg-image img {
@@ -36,8 +53,7 @@
 }
 
 .gk0wk-notionpagebg-icon1 {
-	margin: 50px 0 50px 0;
-	font-size: 65px;
+	font-size: {{$:/plugins/Gk0Wk/notionpage-covericon/style/icon-size}};
 	user-select: none;
 	cursor: pointer;
 	font-family: "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols;
@@ -47,8 +63,8 @@
 
 .gk0wk-notionpagebg-icon2 {
 	position: relative;
-	top: -32.5px;
-	font-size: 65px;
+	top: calc(-{{$:/plugins/Gk0Wk/notionpage-covericon/style/icon-size}} / 1.6);
+	font-size: {{$:/plugins/Gk0Wk/notionpage-covericon/style/icon-size}};
 	user-select: none;
 	cursor: pointer;
 	font-family: "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols;
@@ -219,6 +235,7 @@
 	opacity: 0;
 	transition: all {{$:/config/AnimationDuration}}ms;
 	display: flex;
+  margin-top: 5px;
 }
 
 .gk0wk-notionpagebg:hover .gk0wk-notionbg-addbuttons {
