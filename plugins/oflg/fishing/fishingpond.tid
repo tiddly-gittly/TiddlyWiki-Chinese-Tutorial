@@ -7,7 +7,7 @@ title: $:/plugins/oflg/fishing/fishingpond
 >
 	<$vars
 		due="[has[due]]-[has[due]!days:due[1]]+[sort[due]reverse[]sortsub:number<priority>reverse[]]"
-		undue="[has[due]!days:due[1]sort[due]reverse[]sortsub:number<priority>reverse[]]"
+		undue="[has[due]!days:due[1]sort[due]]"
 		new="[!has[due]sort[created]]"
 	>
 		<$list

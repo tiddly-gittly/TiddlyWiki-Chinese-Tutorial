@@ -117,17 +117,25 @@ title: $:/plugins/oflg/fishing/fishing
 											>
 												<div class="tc-drop-down" style="min-width:0px;">
 													<$button
-														message="tm-remove-tag"
-														param="?"
 														tooltip={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[removetip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[removetip]]}}}
 														aria-label={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[removetip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[removetip]]}}}
 														class="tc-btn-invisible tc-tiddlylink"
 														style="padding:3px 10px;"
 													>
+														<$action-sendmessage
+															$message="tm-remove-tag"
+															$param="?"
+														/>
+														<$action-deletefield
+															due
+															factor
+															interval
+														/>
 														<$action-setfield
 															$tiddler="$:/temp/fishing"
 															text=""
-															fish={{{[subfilter{$:/temp/fishing!!fishingrod}subfilter{$:/temp/fishing!!fishingpond}rest[]first[]]}}}
+															type=""
+															fish={{{[subfilter{$:/temp/fishing!!fishingrod}subfilter{$:/temp/fishing!!fishingpond}first[]]}}}
 														/>
 														<$action-setfield
 															$tiddler={{{[{$:/temp/fishing!!fish}addprefix[$:/state/folded/]]}}}
@@ -148,7 +156,6 @@ title: $:/plugins/oflg/fishing/fishing
 														style="padding:3px 10px;"
 													>
 														<$action-deletefield
-															$tiddler={{{[subfilter{$:/temp/fishing!!fishingrod}subfilter{$:/temp/fishing!!fishingpond}first[]]}}}
 															due
 															factor
 															interval

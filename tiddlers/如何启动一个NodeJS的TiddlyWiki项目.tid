@@ -1,0 +1,41 @@
+created: 20211112050622427
+creator: Sttot
+modified: 20211112083025771
+modifier: Sttot
+tags: 基础知识
+title: 如何启动一个NodeJS的TiddlyWiki项目
+tmap.id: cc23e10f-e378-48a8-bfac-99ba6970e808
+type: text/vnd.tiddlywiki
+
+首先确保已经安装了`TiddlyWiki`，我猜你可能用两种方式安装了TiddlyWiki：全局和非全局，两种安装方法下，运行的命令是不一样的：
+
+对于使用`npm install tiddlywiki -g`进行全局安装的情况，请执行：
+
+```shell
+tiddlywiki . --listen port=8080
+```
+
+反之就是非全局(安装的时候没有加`-g`，目录下有个`package.json`和`node_modules`)，执行：
+
+```shell
+npx tiddlywiki . --listen port=8080
+```
+
+就可以启动一个NodeJS项目了，现在命令行应该会有以下的输出：
+
+```
+ syncer-server-filesystem: Dispatching 'save' task: $:/StoryList
+Serving on http://127.0.0.1:8080
+(press ctrl-C to exit)
+```
+
+看到那个`http://127.0.0.1:8080`了吗？在浏览器里打开这个地址，就可以浏览和编辑这个项目了。
+
+如果出现类似如下的错误提示：
+
+```
+Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
+...(其他内容)
+```
+
+就说明`8080`号端口已经被占用，随便换几个试试，将`--listen port=8080`里面的`8080`换成`8081`什么的试试。

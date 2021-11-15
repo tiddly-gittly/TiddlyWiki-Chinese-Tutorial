@@ -22,7 +22,7 @@ type: application/json
     "setselect": "Set as Select tiddler",
     "setselecttip": "Set as this tiddler as a Select Question",
     "marktitle": "Mark title",
-    "marktitletip": "Mark the selected text as title of Excerpt Tiddler or Q&A Question. For example: __title^^?^^__",
+    "marktitletip": "Mark the selected text as title of Excerpt Tiddler or Q&A Question. For example: __title^^T^^__",
     "markclozeoption": "Mark cloze/option",
     "markclozeoptiontip": "Mark the selected text as a cloze of Cloze Question or an option of Select Question. For example: __cloze__ or __option__",
     "markcorrectoption": "Mark correct option",
@@ -50,11 +50,11 @@ type: application/json
     "add7tip": "Review this tiddler next week",
     "add1tip": "Review this tiddler tomorrow",
     "fishingpondtip": "Review tiddlers of this group",
-    "due": "due:",
-    "undue": "undue:",
-    "new": "new:",
-    "fillfiltertip": "Fill in this filter",
-    "pinfiltertip": "Pin this filter",
-    "unpinfiltertip": "Unpin this filter",
-    "adjustscheduletip": "Adjust review schedule of this filter"
+    "due": "due: ",
+    "undue": "undue: ",
+    "new": "new: ",
+    "fillfiltertip": "Fill in this filter: ",
+    "pinfiltertip": "Pin this filter: ",
+    "unpinfiltertip": "Unpin this filter: ",
+    "adjustscheduletip": "Adjust review schedule of this filter: "
 }

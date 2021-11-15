@@ -17,7 +17,8 @@ title: $:/plugins/oflg/fishing/fishingfloat
 </$button>
 <!-- creat fishingdeck -->
 <$reveal
-	state=<<qualify "$:/state/popup/$:/plugins/oflg/fishing/Buttons/fishingdeck">>type="popup"
+	state=<<qualify "$:/state/popup/$:/plugins/oflg/fishing/Buttons/fishingdeck">>
+	type="popup"
 	position="below"
 	animate="yes"
 >

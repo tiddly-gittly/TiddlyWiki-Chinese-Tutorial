@@ -10,5 +10,5 @@ shortcuts: ((fishing-marktitle))
 	$message="tm-edit-text-operation"
 	$param="wrap-selection"
 	prefix="__"
-	suffix="^^?^^__"
+	suffix="^^T^^__"
 />

@@ -20,10 +20,15 @@ jobs:
           path: |
             **/node_modules
           key: ${{ runner.os }}-${{ hashFiles('**/package.json') }}
+
       - name: 安装 NodeJS 依赖
         run: npm install
-      - name: 构建
-        run: npm run build
+      - name: 构建在线版本网页
+        run: npm run buildonline
+      - name: Workbox 离线缓存
+        run: npx workbox injectManifest workbox-config.js
+      - name: 构建插件库
+        run: npm run buildlibrary
 
       - name: 部署
         uses: peaceiris/actions-gh-pages@v3
