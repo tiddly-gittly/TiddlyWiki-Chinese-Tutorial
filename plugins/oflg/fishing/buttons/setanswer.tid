@@ -1,4 +1,4 @@
-title: $:/plugins/oflg/fishing/Buttons/setanswer
+title: $:/plugins/oflg/fishing/buttons/setanswer
 tags: $:/tags/EditorToolbar
 icon: $:/plugins/oflg/fishing/icons/setanswer
 caption: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[setanswer]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[setanswer]]}}}/>

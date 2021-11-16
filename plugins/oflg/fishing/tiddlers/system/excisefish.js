@@ -32,7 +32,6 @@ Based on TW's core/modules/editor/operations/text/excise.js
     }
     const title = this.wiki.generateNewTitle(fishtitle.replace(/\||\{|\}|\[|\]/g, ''));
     const due = new Date(new Date().getTime() + 86400000).toISOString().replace(/-|T|:|\.|Z/g, '');
-    // add caption
     const caption = event.paramObject.caption ? event.paramObject.caption : editTiddlerTitle + '/' + currenttime;
     if (event.paramObject.exciseto === 'newTiddler') {
 
@@ -47,12 +46,16 @@ Based on TW's core/modules/editor/operations/text/excise.js
           tags,
           due,
           caption,
-          factor: 2.50,
-          interval: 1
+          factor: editTiddler.getFieldString("factor") || 2.50,
+          interval: editTiddler.getFieldString("interval") || 1
         })
       );
 
-      operation.replacement = '\n· [[' + title + ']]\n\n<<<.tc-fish-quote\n{{' + title + '}}\n<<<\n\n';
+      if (editTiddler.type === 'text/x-markdown') {
+        operation.replacement = '· [[' + title + ']]{{' + title + '}}';
+      } else {
+        operation.replacement = '\n· [[' + title + ']]\n\n<<<.tc-fish-quote\n{{' + title + '}}\n<<<\n\n';
+      }
       operation.cutStart = operation.selStart;
       operation.cutEnd = operation.selEnd;
       operation.newSelStart = operation.selStart;

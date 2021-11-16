@@ -1,4 +1,4 @@
-title: $:/plugins/oflg/fishing/Buttons/setselect
+title: $:/plugins/oflg/fishing/buttons/setselect
 tags: $:/tags/EditorToolbar
 icon: $:/plugins/oflg/fishing/icons/setselect
 caption: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[setselect]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[setselect]]}}}/>

@@ -1,4 +1,4 @@
-title: $:/plugins/oflg/fishing/Buttons/exciseanswer
+title: $:/plugins/oflg/fishing/buttons/exciseanswer
 tags: $:/tags/EditorToolbar
 icon: $:/plugins/oflg/fishing/icons/exciseanswer
 caption: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[exciseanswer]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[exciseanswer]]}}}/>

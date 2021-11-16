@@ -1,4 +1,4 @@
-title: $:/plugins/oflg/fishing/Buttons/exciseexcerpt
+title: $:/plugins/oflg/fishing/buttons/exciseexcerpt
 tags: $:/tags/EditorToolbar
 icon: $:/plugins/oflg/fishing/icons/exciseexcerpt
 caption: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[exciseexcerpt]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[exciseexcerpt]]}}}/>
