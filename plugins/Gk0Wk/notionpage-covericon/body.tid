@@ -41,6 +41,7 @@ list-before: $:/core/ui/ViewTemplate/title
   <div class="gk0wk-notionpagebg gk0wk-notionpagebg-i">
     <$button popup=<<stateTiddler1>> class="gk0wk-notionpagebg-icon1"><$list filter="[title<icon>is[tiddler]]"><$transclude tiddler=<<icon>>/></$list>
     <$list filter="[title<icon>is[shadow]]"><$transclude tiddler=<<icon>>/></$list>
+    <$list filter="[title<icon>is[tiddler]]"><$transclude tiddler=<<icon>>/></$list>
     <$list filter="[title<icon>!is[shadow]!is[tiddler]]"><$wikify name="rendered" text=<<icon>> output=html><<rendered>></$wikify></$list></$button>
     <$reveal type="popup" state=<<stateTiddler1>> position="below" tag="div" class="tc-popup-keep">
       {{$:/plugins/Gk0Wk/notionpage-covericon/icon-selector}}
@@ -56,6 +57,7 @@ list-before: $:/core/ui/ViewTemplate/title
     <div class="gk0wk-notionpagebg-image"><$image source=<<cover>> width="100%" height="auto"/></div>
     <$button popup=<<stateTiddler1>> class="gk0wk-notionpagebg-icon2"><$list filter="[title<icon>is[tiddler]]"><$transclude tiddler=<<icon>>/></$list>
     <$list filter="[title<icon>is[shadow]]"><$transclude tiddler=<<icon>>/></$list>
+    <$list filter="[title<icon>is[tiddler]]"><$transclude tiddler=<<icon>>/></$list>
     <$list filter="[title<icon>!is[shadow]!is[tiddler]]"><$wikify name="rendered" text=<<icon>> output=html><<rendered>></$wikify></$list></$button>
     <$reveal type="popup" state=<<stateTiddler1>> position="below" tag="div" class="tc-popup-keep">
       {{$:/plugins/Gk0Wk/notionpage-covericon/icon-selector}}

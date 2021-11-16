@@ -1,0 +1,20 @@
+title: $:/plugins/Gk0Wk/notionpage-backlink/body
+tags: $:/tags/ViewTemplate
+list-before: $:/core/ui/ViewTemplate/subtitle
+
+<$list filter="[<currentTiddler>!is[shadow]!is[system]!is[draft]backlinks[]!is[draft]!is[shadow]!is[system]count[]!match[0]]" variable="backlinkCount">
+<$list filter="[<currentTiddler>addprefix[$:/temp/Gk0Wk/BacklinkBox/]]" variable="stateTiddler">
+<$button popup=<<stateTiddler>> class="gk0wk-backlinksbox-title" tooltip="Show backlinks">{{$:/core/images/link}}&nbsp;<strong><<backlinkCount>> backlink<$reveal type="nomatch" text=<<backlinkCount>> default="1">s</$reveal></strong></$button>
+<$reveal type="popup" state=<<stateTiddler>> position="below" tag="div" class="tc-popup-keep gk0wk-backlinksbox-box">
+<div class="gk0wk-backlinksbox-box-description">Linked to <$reveal type="nomatch" text=<<backlinkCount>> default="1">these pages</$reveal><$reveal type="match" text=<<backlinkCount>> default="1">this page</$reveal>:</div>
+<$list filter="[<currentTiddler>!is[shadow]!is[system]!is[draft]backlinks[]!is[draft]!is[shadow]!is[system]]">
+<$link class="gk0wk-backlinksbox-box-link" to=<<currentTiddler>>>
+<div class="gk0wk-backlinksbox-box-link-icon"><$list filter="[<currentTiddler>get[icon]]" variable="icon">
+  <$list filter="[title<icon>is[shadow]]"><$transclude tiddler=<<icon>>/></$list>
+  <$list filter="[title<icon>is[tiddler]]"><$transclude tiddler=<<icon>>/></$list>
+  <$list filter="[title<icon>!is[shadow]!is[tiddler]]"><$wikify name="rendered" text=<<icon>> output=html><<rendered>></$wikify></$list>
+</$list></div>''<$text text=<<currentTiddler>>/>''</$link>
+</$list>
+</$reveal>
+</$list>
+</$list>

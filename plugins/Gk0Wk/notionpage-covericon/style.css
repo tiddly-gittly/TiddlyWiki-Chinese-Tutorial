@@ -1,7 +1,7 @@
 .gk0wk-notionpagebg {
 	width: 100%;
 	position: relative;
-	z-index: 1000;
+	z-index: -1000;
 }
 
 .gk0wk-notionpagebg-c, .gk0wk-notionpagebg-ci {

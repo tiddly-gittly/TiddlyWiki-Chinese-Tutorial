@@ -1,0 +1,82 @@
+.gk0wk-backlinksbox-title {
+	filter: contrast(70%);
+	opacity: 0.7;
+	user-select: none;
+	transition: all {{$:/config/AnimationDuration}}ms;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	flex-shrink: 0;
+	white-space: nowrap;
+	height: 28px;
+	border-radius: 3px;
+	line-height: 1.2;
+	padding-left: 6px;
+	padding-right: 8px;
+}
+
+.gk0wk-backlinksbox-title:hover,
+.gk0wk-backlinksbox-title:active {
+	filter: contrast(100%);
+	opacity: 1;
+}
+
+.gk0wk-backlinksbox-box {
+	border-radius: 3px;
+    background: <<colour page-background>>;
+    position: relative;
+    max-height: 300px;
+	width: min(90vw, 450px);
+    box-shadow: #00000070 0 2px 6px;
+    overflow: hidden;
+	filter: contrast(90%);
+	padding-bottom: 6px;
+}
+
+.gk0wk-backlinksbox-box-description {
+	user-select: none;
+    font-size: 0.9em;
+    line-height: 16px;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	margin: 12px 0 8px 4px;
+    flex: 1 1 0%;
+    padding-left: 8px;
+}
+
+.gk0wk-backlinksbox-box-link {
+	user-select: none !important;
+	transition: all {{$:/config/AnimationDuration}}ms !important;
+	cursor: pointer;
+	width: 100%;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	margin-bottom: 2px;
+	margin-right: 4px;
+	padding: 4px 18px 4px 20px !important;
+  border-bottom: none !important;
+}
+
+.gk0wk-backlinksbox-box-link:hover {
+	background: <<colour page-background>>;
+	filter: contrast(70%) !important;
+}
+
+.gk0wk-backlinksbox-box-link strong {
+    border-bottom: 1px solid <<colour muted-foreground>>;
+    line-height: 1.3;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.gk0wk-backlinksbox-box-link-icon {
+	font-family: "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols;
+	margin-right: 10px;
+}
+
+.gk0wk-backlinksbox-box-link-icon > p {
+	margin: 0;
+}
