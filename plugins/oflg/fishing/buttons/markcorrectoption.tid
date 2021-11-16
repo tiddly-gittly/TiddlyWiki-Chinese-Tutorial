@@ -1,4 +1,4 @@
-title: $:/plugins/oflg/fishing/Buttons/markcorrectoption
+title: $:/plugins/oflg/fishing/buttons/markcorrectoption
 tags: $:/tags/EditorToolbar
 icon: $:/plugins/oflg/fishing/icons/markcorrectoption
 caption: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[markcorrectoption]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[markcorrectoption]]}}}/>

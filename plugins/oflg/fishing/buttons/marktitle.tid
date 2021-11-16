@@ -1,4 +1,4 @@
-title: $:/plugins/oflg/fishing/Buttons/marktitle
+title: $:/plugins/oflg/fishing/buttons/marktitle
 tags: $:/tags/EditorToolbar
 icon: $:/plugins/oflg/fishing/icons/marktitle
 caption: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[marktitle]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[marktitle]]}}}/>

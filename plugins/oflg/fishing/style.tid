@@ -16,4 +16,5 @@ type: text/vnd.tiddlywiki
 blockquote.tc-fish-quote {
 	border-left: 1px solid <<colour message-border>>;
   margin-right: 0;
+  margin-left: 1px;
 }

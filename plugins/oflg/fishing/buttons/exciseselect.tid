@@ -1,4 +1,4 @@
-title: $:/plugins/oflg/fishing/Buttons/exciseselect
+title: $:/plugins/oflg/fishing/buttons/exciseselect
 tags: $:/tags/EditorToolbar
 icon: $:/plugins/oflg/fishing/icons/exciseselect
 caption: <$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[exciseselect]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[exciseselect]]}}}/>
