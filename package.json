@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "@tiddlygit/tiddlywiki": "5.2.0-prerelease.20211002",
-    "cross-env": "^7.0.3",
+    "cross-env": "7.0.3",
     "html-minifier-terser": "6.1.0",
     "uglify-js": "3.14.4",
     "workbox-cli": "6.4.1"
