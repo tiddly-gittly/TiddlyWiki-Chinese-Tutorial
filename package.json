@@ -6,7 +6,7 @@
   },
   "devDependencies": {
     "@tiddlygit/tiddlywiki": "5.2.0-prerelease.20211002",
-    "html-minifier-terser": "6.0.2",
+    "html-minifier-terser": "6.1.0",
     "uglify-js": "3.14.4",
     "workbox-cli": "6.3.0"
   }
