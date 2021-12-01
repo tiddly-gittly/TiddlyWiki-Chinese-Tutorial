@@ -19,7 +19,6 @@
     "tiddlywiki/codemirror-search-replace",
     "tiddlywiki/dynannotate",
     "tiddlywiki/dynaview",
-    "tiddlywiki/highlight",
     "tiddlywiki/katex",
     "tiddlywiki/markdown",
     "tiddlywiki/sax",
@@ -44,7 +43,6 @@
     "linonetwo/source-control-management",
     "linonetwo/sub-wiki",
     "linonetwo/zx-script",
-
     "tobibeer/appear",
     "bimlas/locator",
     "bimlas/kin-filter",

@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "test": "node -e \"require('./scripts/build').runServer();\"",
     "buildonline": "node -e \"require('./scripts/build').buildOnlineHTML('public-dist', 'index.html');\"",
     "buildoffline": "node -e \"require('./scripts/build').buildOfflineHTML('public-dist', 'offline.html');\"",
     "buildlibrary": "node -e \"require('./scripts/build').buildLibrary('[prefix[$:/]!prefix[$:/plugins/tiddlywiki/]!prefix[$:/themes/tiddlywiki/]!prefix[$:/languages/]!tag[$:/tags/PluginLibrary]!prefix[$:/plugins/kookma]]', 'public-dist/library');\""
