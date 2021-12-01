@@ -1,6 +1,6 @@
 created: 20211112091421145
 creator: Sttot
-modified: 20211112133832950
+modified: 20211201142627387
 modifier: Sttot
 tags: 插件开发
 title: 可是我的插件还是空的
@@ -84,7 +84,7 @@ tags: 12345
 		"dir1",
 		{
 			"path": "dir2",
-			"filesRegExp": "\.jpe?g$",
+			"filesRegExp": "\\.jpe?g$",
 			"isTiddlerFile": false,
 			"fields": {
 				"type": "image/jpg"
@@ -93,7 +93,7 @@ tags: 12345
 		},
 		{
 			"path": "i18n/zh-Hans",
-			"filesRegExp": "\.tid$",
+			"filesRegExp": "\\.tid$",
 			"isTiddlerFile": true,
 			"fields": {
 				"title": {

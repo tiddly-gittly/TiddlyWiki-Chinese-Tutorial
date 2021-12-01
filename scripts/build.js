@@ -139,17 +139,6 @@ function buildLibrary(pluginFilter, distDir, minify) {
     }
 }
 
-/**
- * 启动TW项目
- * @param {*} host 监听端口，默认为8080
- * @param {*} port 监听地址，默认为127.0.0.1
- */
-function runServer(host, port) {
-    if (typeof port !== 'number' || port < 0 || port > 65535) port = 8080;
-    if (typeof host !== 'string') host = '127.0.0.1';
-    shell(`npx tiddlywiki . --listen port=${port} host='${host}'`);
-}
-
 module.exports = {
     buildOnlineHTML: buildOnlineHTML,
     buildOfflineHTML: buildOfflineHTML,
