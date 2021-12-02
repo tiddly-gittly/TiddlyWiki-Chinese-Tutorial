@@ -143,5 +143,4 @@ module.exports = {
     buildOnlineHTML: buildOnlineHTML,
     buildOfflineHTML: buildOfflineHTML,
     buildLibrary: buildLibrary,
-    runServer: runServer,
 };
