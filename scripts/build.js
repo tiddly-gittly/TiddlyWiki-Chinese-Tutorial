@@ -46,11 +46,13 @@ function shellI(command, options) {
  * @param {string} distDir 目标路径，空或者不填则默认为'dist'
  * @param {string} htmlName HTML名称，空或者不填则默认为'index.html'
  * @param {boolean} minify 是否最小化JS和HTML，默认为true
+ * @param {string} excludeFilter 要排除的tiddler的过滤表达式，默认为'-[is[draft]]'
  */
-function buildOnlineHTML(distDir, htmlName, minify) {
+function buildOnlineHTML(distDir, htmlName, minify, excludeFilter) {
     if (typeof distDir !== 'string' || distDir.length === 0) distDir = 'dist';
     if (typeof htmlName !== 'string' || htmlName.length === 0) htmlName = 'index.html';
     if (typeof minify !== 'boolean') minify = true;
+    if (typeof excludeFilter !== 'string') excludeFilter = '-[is[draft]]';
 
     // 清空生成目标
     shell(`rm -rf ${distDir}`);
@@ -64,9 +66,10 @@ function buildOnlineHTML(distDir, htmlName, minify) {
     // 构建HTML
     shell('cp -r tiddlers/ tmp_tiddlers_backup &> /dev/null'); // 备份 因为下面有改变tiddler的field的操作(媒体文件全部转为canonical)
     shell(`npx tiddlywiki . --output ${distDir}` +
+        ' --deletetiddlers \'[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]\'' +
         ' --setfield \'[is[image]] [is[binary]] [type[application/msword]] [type[image/svg+xml]]\' _canonical_uri $:/core/templates/canonical-uri-external-image text/plain' +
         ' --setfield \'[is[image]] [is[binary]] [type[application/msword]] [type[image/svg+xml]]\' text "" text/plain' + /* 注意这一步也会把所有媒体文件的内容变成空的 */
-        ' --rendertiddler $:/core/save/offline-external-js index-raw.html text/plain "" publishFilter "-[is[draft]]"' +
+        ` --rendertiddler $:/core/save/offline-external-js index-raw.html text/plain "" publishFilter "${excludeFilter}"` +
         ' --rendertiddler $:/core/templates/tiddlywiki5.js tiddlywikicore.js text/plain'
     );
     shell('cp -r tmp_tiddlers_backup/* tiddlers &> /dev/null'); // 恢复被清空内容的媒体文件
@@ -91,15 +94,18 @@ function buildOnlineHTML(distDir, htmlName, minify) {
  * @param {string} distDir 目标路径，空或者不填则默认为'dist'
  * @param {string} htmlName HTML名称，空或者不填则默认为'index.html'
  * @param {boolean} minify 是否最小化JS和HTML，默认为true
+ * @param {string} excludeFilter 要排除的tiddler的过滤表达式，默认为'-[is[draft]]'
  */
-function buildOfflineHTML(distDir, htmlName, minify) {
+function buildOfflineHTML(distDir, htmlName, minify, excludeFilter) {
     if (typeof distDir !== 'string' || distDir.length === 0) distDir = 'dist';
     if (typeof htmlName !== 'string' || htmlName.length === 0) htmlName = 'index.html';
     if (typeof minify !== 'boolean') minify = true;
+    if (typeof excludeFilter !== 'string') excludeFilter = '-[is[draft]]';
 
     // 构建HTML
     shell(`npx tiddlywiki . --output ${distDir}` +
-        ' --rendertiddler $:/plugins/tiddlywiki/tiddlyweb/save/offline index-raw.html text/plain "" publishFilter "-[is[draft]]"'
+        ' --deletetiddlers \'[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]\'' +
+        ` --rendertiddler $:/plugins/tiddlywiki/tiddlyweb/save/offline index-raw.html text/plain "" publishFilter "${excludeFilter}"`
     );
 
     // 最小化：HTML
@@ -112,10 +118,7 @@ function buildOfflineHTML(distDir, htmlName, minify) {
 
 /**
  * 构建插件源
- * @param {
-     string
- }
- pluginFilter 要发布插件的过滤器， 默认为 '[prefix[$:/plugins/]!prefix[$:/plugins/tiddlywiki/]!prefix[$:/languages/]!prefix[$:/themes/tiddlywiki/]!tag[$:/tags/PluginLibrary]]'
+ * @param {string} pluginFilter 要发布插件的过滤器，默认为 '[prefix[$:/plugins/]!prefix[$:/plugins/tiddlywiki/]!prefix[$:/languages/]!prefix[$:/themes/tiddlywiki/]!tag[$:/tags/PluginLibrary]]'
  * @param {string} distDir 目标路径，空或者不填则默认为'dist/library'
  * @param {boolean} minify 是否最小化HTML，默认为true
  */
@@ -128,7 +131,8 @@ function buildLibrary(pluginFilter, distDir, minify) {
         ' --makelibrary $:/UpgradeLibrary' +
         ` --savelibrarytiddlers $:/UpgradeLibrary ${pluginFilter} recipes/library/tiddlers/ $:/UpgradeLibrary/List` +
         ' --savetiddler $:/UpgradeLibrary/List recipes/library/tiddlers.json' +
-        ' --rendertiddler $:/plugins/tiddlywiki/pluginlibrary/library.template.html index-raw.html text/plain'
+        ' --rendertiddler $:/plugins/tiddlywiki/pluginlibrary/library.template.html index-raw.html text/plain' +
+        ' --deletetiddlers \'[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]\''
     );
 
     // 最小化：HTML

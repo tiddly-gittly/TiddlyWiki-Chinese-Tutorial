@@ -1,0 +1,14 @@
+author: Gk0Wk
+created: 20211205135249073
+dependents: $:/plugins/tiddlywiki/codemirror-autocomplete
+description: TiddlyWiki5 highlighting mode for CodeMirror
+email: nmg_wk@yeah.net
+list: readme ControlPanel
+modified: 20211205135249073
+name: CodeMirror TW5 Enhanced
+parent-plugin: $:/plugins/tiddlywiki/codemirror
+plugin-type: plugin
+source: https://github.com/Gk0Wk/TW5-CodeMirror-Enhanced
+title: $:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced
+type: application/json
+version: 0.1.1

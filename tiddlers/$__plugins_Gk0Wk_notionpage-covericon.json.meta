@@ -1,0 +1,12 @@
+author: Gk0Wk
+created: 20211205134551894
+dependents: 
+description: Add notion-like page cover and icon display and control panel
+list: readme
+modified: 20211205134551894
+name: Notion Page(Cover + Icon)
+plugin-type: plugin
+source: https://github.com/Gk0Wk/TiddlySeq/tree/master/plugins/Gk0Wk/notionpage-covericon
+title: $:/plugins/Gk0Wk/notionpage-covericon
+type: application/json
+version: 0.0.5

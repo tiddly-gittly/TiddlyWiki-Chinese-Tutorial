@@ -2,7 +2,7 @@ caption: <$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[e
 tags: $:/tags/PluginLibrary
 title: $:/config/ChinesePluginLibraryBackup
 type: text/vnd.tiddlywiki
-url: https://tiddly-gittly.github.io/TiddlyWiki-Chinese-Tutorial/library/index.html
+url: https://tiddly-gittly.github.io/TiddlyWiki-CPL/library/index.html
 
 <!-- lang变量就是当前语言 -->
 <$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang">
