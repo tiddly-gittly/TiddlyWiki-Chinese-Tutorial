@@ -1,3 +1,0 @@
-title: $:/config/ShortcutInfo/fishing-setexcerpt
-
-<$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[setexcerpttip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[setexcerpttip]]}}}/>

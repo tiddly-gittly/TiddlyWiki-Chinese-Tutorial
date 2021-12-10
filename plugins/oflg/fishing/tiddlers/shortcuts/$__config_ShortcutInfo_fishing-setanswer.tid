@@ -1,3 +1,0 @@
-title: $:/config/ShortcutInfo/fishing-setanswer
-
-<$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[setanswertip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[setanswertip]]}}}/>

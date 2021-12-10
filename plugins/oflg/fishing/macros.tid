@@ -1,4 +1,0 @@
-tags: $:/tags/Macro
-title: $:/plugins/oflg/fishing/macros
-
-\define priority() [get[caption]search-replace[{{||],[]search-replace[}}],[]tag[questiontemplate]count[]]=[backlinks[]count[]]=[links[]has[due]count[]negate[]]=[links[]has[due]!days:due[1]count[]]+[sum[]add{!!priority}multiply{!!factor}fixed[2]]

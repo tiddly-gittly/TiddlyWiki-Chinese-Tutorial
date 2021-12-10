@@ -1,9 +1,0 @@
-command-palette-name: Close Tiddler
-command-palette-type: history
-command-palette-caption: {{$:/language/Buttons/Close/Caption}}
-command-palette-hint: {{$:/language/Buttons/Close/Hint}}
-tags: $:/tags/CommandPaletteCommand
-title: $:/plugins/linonetwo/commandpalette/Close Tiddler
-type: text/vnd.tiddlywiki
-
-tm-close-tiddler

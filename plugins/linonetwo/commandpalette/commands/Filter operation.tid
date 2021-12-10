@@ -1,9 +1,0 @@
-command-palette-name: Filter operation
-command-palette-type: prompt
-command-palette-caption: {{$:/language/Buttons/AdvancedSearch/Caption}}
-command-palette-hint: {{$:/language/Buttons/AdvancedSearch/Hint}}
-tags: $:/tags/CommandPaletteCommand
-title: $:/plugins/linonetwo/commandpalette/Filter operation
-type: text/vnd.tiddlywiki
-
-[

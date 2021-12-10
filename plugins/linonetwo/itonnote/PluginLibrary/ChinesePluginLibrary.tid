@@ -2,7 +2,7 @@ caption: <$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[e
 tags: $:/tags/PluginLibrary
 title: $:/config/ChinesePluginLibrary
 type: text/vnd.tiddlywiki
-url: https://tw-cn-cpl.netlify.app/library/index.html
+url: https://tw-cpl.netlify.app/library/index.html
 
 <!-- lang变量就是当前语言 -->
 <$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang">

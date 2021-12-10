@@ -1,9 +1,0 @@
-command-palette-name: Toggle Fullscreen
-command-palette-type: message
-command-palette-caption: {{$:/language/Buttons/FullScreen/Caption}}
-command-palette-hint: {{$:/language/Buttons/FullScreen/Hint}}
-tags: $:/tags/CommandPaletteCommand
-title: $:/plugins/linonetwo/commandpalette/Toggle Fullscreen
-type: text/vnd.tiddlywiki
-
-tm-full-screen

@@ -1,3 +1,0 @@
-title: $:/config/ShortcutInfo/fishing-markcorrectoption
-
-<$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[markcorrectoptiontip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[markcorrectoptiontip]]}}}/>

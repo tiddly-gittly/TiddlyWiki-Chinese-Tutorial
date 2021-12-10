@@ -1,3 +1,0 @@
-title: $:/config/ShortcutInfo/fishing-marktitle
-
-<$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[marktitletip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[marktitletip]]}}}/>

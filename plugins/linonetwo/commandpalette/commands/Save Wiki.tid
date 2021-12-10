@@ -1,9 +1,0 @@
-command-palette-name: Save Wiki
-command-palette-type: message
-command-palette-caption: {{$:/language/Buttons/SaveWiki/Caption}}
-command-palette-hint: {{$:/language/Buttons/SaveWiki/Hint}}
-tags: $:/tags/CommandPaletteCommand
-title: $:/plugins/linonetwo/commandpalette/Save Wiki
-type: text/vnd.tiddlywiki
-
-tm-save-wiki

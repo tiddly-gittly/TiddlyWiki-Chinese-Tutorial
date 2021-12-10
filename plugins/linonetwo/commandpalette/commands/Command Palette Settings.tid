@@ -1,9 +1,0 @@
-command-palette-name: Command Palette Settings
-command-palette-type: prompt
-command-palette-caption: 命令菜单设置
-command-palette-hint: 打开命令菜单的设置，快捷设置命令菜单相关配置
-tags: $:/tags/CommandPaletteCommand
-title: $:/plugins/linonetwo/commandpalette/Command Palette Settings
-type: text/vnd.tiddlywiki
-
-|

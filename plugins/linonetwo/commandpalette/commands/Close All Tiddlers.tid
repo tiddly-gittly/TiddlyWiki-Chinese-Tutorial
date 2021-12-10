@@ -1,9 +1,0 @@
-command-palette-name: Close All Tiddlers
-command-palette-type: message
-command-palette-caption: {{$:/language/Buttons/CloseAll/Caption}}
-command-palette-hint: {{$:/language/Buttons/CloseAll/Hint}}
-tags: $:/tags/CommandPaletteCommand
-title: $:/plugins/linonetwo/commandpalette/Close All Tiddlers
-type: text/vnd.tiddlywiki
-
-tm-close-all-tiddlers

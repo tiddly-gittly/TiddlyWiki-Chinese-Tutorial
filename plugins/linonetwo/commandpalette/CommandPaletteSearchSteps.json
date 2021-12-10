@@ -1,9 +1,0 @@
-{
-  "steps": [
-    { "filter": "[list[$:/StoryList]pinyinfuse[]]", "hint": "历史记录", "caret": "30" },
-    { "filter": "[!is[system]pinyinfuse:title[]]", "hint": "在标题中", "caret": "29" },
-    { "filter": "[all[system+shadows]pinyinfuse:title[]]", "hint": "在标题中 (系统)", "caret": "37" },
-    { "filter": "[!is[system]pinyinfuse[]]", "hint": "全局搜索", "caret": "23" },
-    { "filter": "[all[shadows]pinyinfuse[]]", "hint": "shadows", "caret": "24" }
-  ]
-}

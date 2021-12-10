@@ -1,9 +1,0 @@
-command-palette-name: Show help
-command-palette-type: prompt
-command-palette-caption: 展示帮助
-command-palette-hint: 列出有哪些用法
-tags: $:/tags/CommandPaletteCommand
-title: $:/plugins/linonetwo/commandpalette/Show help
-type: text/vnd.tiddlywiki
-
-?

@@ -1,3 +1,0 @@
-title: $:/config/ShortcutInfo/fishing-setselect
-
-<$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[setselecttip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[setselecttip]]}}}/>

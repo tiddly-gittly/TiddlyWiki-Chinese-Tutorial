@@ -1,9 +1,0 @@
-command-palette-name: Refresh Server
-command-palette-type: message
-command-palette-caption: 服务器{{$:/language/Buttons/Refresh/Caption}}
-command-palette-hint: 服务器{{$:/language/Buttons/Refresh/Hint}}
-tags: $:/tags/CommandPaletteCommand
-title: $:/plugins/linonetwo/commandpalette/Refresh Server
-type: text/vnd.tiddlywiki
-
-tm-server-refresh

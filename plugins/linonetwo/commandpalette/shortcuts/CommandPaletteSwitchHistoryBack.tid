@@ -1,6 +1,0 @@
-key: ((command-palette-switch-history-back))
-tags: $:/tags/KeyboardShortcut
-title: $:/plugins/linonetwo/commandpalette/CommandPaletteSwitchHistoryBack
-type: text/vnd.tiddlywiki
-
-<$action-sendmessage $message="command-palette-switch-history-back" />

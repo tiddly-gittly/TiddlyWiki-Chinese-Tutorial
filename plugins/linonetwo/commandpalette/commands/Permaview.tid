@@ -1,9 +1,0 @@
-command-palette-name: Permaview
-command-palette-type: message
-command-palette-caption: {{$:/language/Buttons/Permaview/Caption}}
-command-palette-hint: {{$:/language/Buttons/Permaview/Hint}}
-tags: $:/tags/CommandPaletteCommand
-title: $:/plugins/linonetwo/commandpalette/Permaview
-type: text/vnd.tiddlywiki
-
-tm-permaview

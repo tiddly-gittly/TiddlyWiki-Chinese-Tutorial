@@ -1,9 +1,0 @@
-command-palette-name: New Tiddler with title
-command-palette-type: prompt
-command-palette-caption: 以标题{{$:/language/Buttons/NewTiddler/Caption}}
-command-palette-hint: 以标题{{$:/language/Buttons/NewTiddler/Hint}}
-tags: $:/tags/CommandPaletteCommand
-title: $:/plugins/linonetwo/commandpalette/New Tiddler with title
-type: text/vnd.tiddlywiki
-
-+

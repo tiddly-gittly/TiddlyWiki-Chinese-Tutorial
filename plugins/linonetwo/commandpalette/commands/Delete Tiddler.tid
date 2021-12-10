@@ -1,9 +1,0 @@
-command-palette-name: Delete Tiddler
-command-palette-type: history
-command-palette-caption: {{$:/language/Buttons/Delete/Caption}}
-command-palette-hint: {{$:/language/Buttons/Delete/Hint}}
-tags: $:/tags/CommandPaletteCommand
-title: $:/plugins/linonetwo/commandpalette/Delete Tiddler
-type: text/vnd.tiddlywiki
-
-tm-delete-tiddler

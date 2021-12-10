@@ -1,9 +1,0 @@
-command-palette-name: Permalink
-command-palette-type: history
-command-palette-caption: {{$:/language/Buttons/Permalink/Caption}}
-command-palette-hint: {{$:/language/Buttons/Permalink/Hint}}
-tags: $:/tags/CommandPaletteCommand
-title: $:/plugins/linonetwo/commandpalette/Permalink
-type: text/vnd.tiddlywiki
-
-tm-permalink

@@ -1,3 +1,0 @@
-title: $:/config/ShortcutInfo/fishing-exciseselect
-
-<$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[exciseselecttip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[exciseselecttip]]}}}/>

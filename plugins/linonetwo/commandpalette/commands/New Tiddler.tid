@@ -1,9 +1,0 @@
-command-palette-name: New Tiddler
-command-palette-type: message
-command-palette-caption: {{$:/language/Buttons/NewTiddler/Caption}}
-command-palette-hint: {{$:/language/Buttons/NewTiddler/Hint}}
-tags: $:/tags/CommandPaletteCommand
-title: $:/plugins/linonetwo/commandpalette/New Tiddler
-type: text/vnd.tiddlywiki
-
-tm-new-tiddler

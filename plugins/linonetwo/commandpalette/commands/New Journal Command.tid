@@ -1,9 +1,0 @@
-command-palette-name: New Journal
-command-palette-type: actionString
-command-palette-caption: {{$:/language/Buttons/NewJournal/Caption}}
-command-palette-hint: {{$:/language/Buttons/NewJournal/Hint}}
-tags: $:/tags/CommandPaletteCommand
-title: $:/plugins/linonetwo/commandpalette/New Journal Command
-type: text/vnd.tiddlywiki
-
-{{$:/core/ui/Actions/new-journal}}

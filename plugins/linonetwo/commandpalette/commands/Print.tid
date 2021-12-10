@@ -1,9 +1,0 @@
-command-palette-name: Print
-command-palette-type: message
-command-palette-caption: {{$:/language/Buttons/Print/Caption}}
-command-palette-hint: {{$:/language/Buttons/Print/Hint}}
-tags: $:/tags/CommandPaletteCommand
-title: $:/plugins/linonetwo/commandpalette/Print
-type: text/vnd.tiddlywiki
-
-tm-print

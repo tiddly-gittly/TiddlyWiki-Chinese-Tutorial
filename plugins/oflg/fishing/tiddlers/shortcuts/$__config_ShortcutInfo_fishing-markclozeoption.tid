@@ -1,3 +1,0 @@
-title: $:/config/ShortcutInfo/fishing-markclozeoption
-
-<$text text={{{[{$:/language}removeprefix[$:/]addprefix[$:/plugins/oflg/fishing/]getindex[markclozeoptiontip]]~[[$:/plugins/oflg/fishing/languages/en-GB]getindex[markclozeoptiontip]]}}}/>
