@@ -1,9 +1,6 @@
 {
   "description": "太微中文教程",
   "plugins": [
-    "linonetwo/itonnote"
-  ],
-  "themes": [
     "tiddlywiki/filesystem",
     "tiddlywiki/tiddlyweb",
     "tiddlywiki/highlight",
@@ -28,6 +25,9 @@
     "tiddlywiki/menubar",
     "tiddlywiki/mobiledragdrop",
     "tiddlywiki/railroad",
+    "linonetwo/itonnote"
+  ],
+  "themes": [
     "tiddlywiki/vanilla"
   ],
   "languages": [
