@@ -1,6 +1,6 @@
 created: 20211016092805967
 creator: 林一二
-modified: 20211016094421079
+modified: 20211212151615926
 modifier: 林一二
 tags: 安装插件
 title: 使用插件源
@@ -15,6 +15,6 @@ type: text/vnd.tiddlywiki
 
 !!! 安装插件源
 
-以[[太微中文社区插件库|$:/config/ChinesePluginLibrary]]为例，只要把这种插件库条目链接拖到你自己的 Wiki 里，并点击确认导入，就算装好了。
+以[[太微中文社区插件库|$:/config/ChinesePluginLibrary/Netlify]]为例，只要用鼠标把左边这个插件库条目链接拖到你自己的 Wiki 里，并点击出现的确认导入按钮，就算装好了。
 
 关于条目拖动的原理和更多用法，详见[[拖动资源]]。
