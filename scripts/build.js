@@ -127,7 +127,7 @@ function buildLibrary(pluginFilter, distDir, minify) {
     if (typeof distDir !== 'string' || distDir.length === 0) distDir = 'dist/library';
     if (typeof minify !== 'boolean') minify = true;
 
-    shell(`npx tiddlywiki . --output ${distDir}` +
+    shell(`export TIDDLYWIKI_PLUGIN_PATH=${path.resolve(distDir, '..', 'plugins')} && npx tiddlywiki . --output ${distDir}` +
         ' --makelibrary $:/UpgradeLibrary' +
         ` --savelibrarytiddlers $:/UpgradeLibrary ${pluginFilter} recipes/library/tiddlers/ $:/UpgradeLibrary/List` +
         ' --savetiddler $:/UpgradeLibrary/List recipes/library/tiddlers.json' +
