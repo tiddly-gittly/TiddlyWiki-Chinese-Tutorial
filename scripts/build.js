@@ -127,12 +127,12 @@ function buildLibrary(pluginFilter, distDir, minify) {
     if (typeof distDir !== 'string' || distDir.length === 0) distDir = 'dist/library';
     if (typeof minify !== 'boolean') minify = true;
 
-    shell(`export TIDDLYWIKI_PLUGIN_PATH=${path.resolve(distDir, '..', 'plugins')} && npx tiddlywiki . --output ${distDir}` +
+    shell(`npx tiddlywiki . --output ${distDir}` +
         ' --makelibrary $:/UpgradeLibrary' +
         ` --savelibrarytiddlers $:/UpgradeLibrary ${pluginFilter} recipes/library/tiddlers/ $:/UpgradeLibrary/List` +
         ' --savetiddler $:/UpgradeLibrary/List recipes/library/tiddlers.json' +
         ' --rendertiddler $:/plugins/tiddlywiki/pluginlibrary/library.template.html index-raw.html text/plain' +
-        ' --deletetiddlers \'[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]\''
+        ' --deletetiddlers \'[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]\'', { env: { TIDDLYWIKI_PLUGIN_PATH: path.resolve(distDir, '..', 'plugins')}}
     );
 
     // 最小化：HTML
