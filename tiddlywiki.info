@@ -3,6 +3,7 @@
   "plugins": [
     "tiddlywiki/filesystem",
     "tiddlywiki/tiddlyweb",
+    "tiddlywiki/pluginlibrary",
     "tiddlywiki/highlight",
     "tiddlywiki/codemirror",
     "tiddlywiki/codemirror-autocomplete",
