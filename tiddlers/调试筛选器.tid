@@ -1,11 +1,13 @@
 created: 20211216162500468
 creator: 林一二
-modified: 20211216162800618
+modified: 20211217050508535
 modifier: 林一二
 tags: 筛选器
 title: 调试筛选器
 tmap.id: b788cdfe-60db-4170-9ea7-0277e8e90b1b
 type: text/vnd.tiddlywiki
+
+!! 用清单直接显示
 
 结合 [[清单宏|https://bramchen.github.io/tw5-docs/zh-Hans/#ListWidget]] 和 [[currentTiddler 变量|https://bramchen.github.io/tw5-docs/zh-Hans/#currentTiddler%20Variable]]，可以在页面上展示出筛选器表达式的结果。
 
@@ -20,3 +22,7 @@ type: text/vnd.tiddlywiki
 <$list filter="[{!!title}addprefix[我是前缀哈哈哈]]">
 <<currentTiddler>>
 </$list>
+
+!! 用 Log 显示在开发者工具里
+
+[[log 微件|https://bramchen.github.io/tw5-docs/zh-Hans/#LogWidget]]
