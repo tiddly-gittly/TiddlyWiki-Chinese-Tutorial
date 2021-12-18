@@ -1,6 +1,6 @@
 created: 20211216162500468
 creator: 林一二
-modified: 20211217050508535
+modified: 20211218035922820
 modifier: 林一二
 tags: 筛选器
 title: 调试筛选器
@@ -25,4 +25,4 @@ type: text/vnd.tiddlywiki
 
 !! 用 Log 显示在开发者工具里
 
-[[log 微件|https://bramchen.github.io/tw5-docs/zh-Hans/#LogWidget]]
+[[log 微件|https://bramchen.github.io/tw5-docs/zh-Hans/#LogWidget]] [[使用带调用位置的Log微件|https://talk.tiddlywiki.org/t/set-let-a-word-of-advice/1842/7]]
