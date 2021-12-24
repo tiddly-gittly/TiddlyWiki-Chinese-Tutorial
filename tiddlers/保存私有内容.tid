@@ -1,10 +1,18 @@
 created: 20211008054725356
 creator: 林一二
-modified: 20211008054937800
+modified: 20211224155728488
 modifier: 林一二
 tags: 如何保存
 title: 保存私有内容
 tmap.id: 2e5c5a92-6c8e-4329-a398-b46b25589c73
 type: text/vnd.tiddlywiki
+
+太微是一个维基应用，其默认逻辑是你是一个分享式写作者（想想维基百科的伟大贡献者们），所以内容默认是公开的。
+
+所以如果你希望自己的部分内容私有加密不公开，需要明确声明这些内容不公开。有多种方法可以在太微里添加私有内容，下面将一一介绍。
+
+!! 太记子wiki
+
+如上所述，你一开始创建的维基（wiki），我们称之为主维基（主wiki），是公开的。不过你可以创建几个私有的子维基（子wiki）链接到它上面。
 
 通过[[linonetwo/sub-wiki|https://onetwo.ren/wiki/#%24%3A%2Fplugins%2Flinonetwo%2Fsub-wiki%2Freadme]]等方案可以实现保存私有内容。
