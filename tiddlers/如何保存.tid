@@ -22,4 +22,12 @@ type: text/vnd.tiddlywiki
 
 !! 内置功能
 
-[[GithubSaver]]
+!!!保存到 GitHub 
+
+使用 GitHub 在线保存、访问、修改和备份 TiddlyWiki。ps: 可能需科学上网
+
+#在 TiddlyWiki 里填入以下信息 <br>[img[https://pic1.zhimg.com/v2-5a078b8340f46fc38edadba7fc7147c4_r.jpg]]
+#在 GitHub 上创建一个名为 wiki 的仓库，所有步骤都默认（可参考：https://docs.github.com/cn/repositories/creating-and-managing-repositories/creating-a-new-repository ）。再创建一个令牌并复制保存在本地（参照 https://docs.github.com/cn/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token）
+#回到步骤一的 TiddlyWiki ，将令牌填入，点侧边栏的红色按钮保存成功，按钮变灰。
+#回到第二步的GitHub ，可见 index.html 已存入 wiki 库，但无法在线访问。需再创建一个 wiki 库的 GitHub 网站（参照 https://docs.github.com/cn/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site），实现在线访问。
+#打开刚刚创建的网站网址，可在修改在线 TiddlyWiki后，按步骤三将令牌填入，实现在线修改并保存。
