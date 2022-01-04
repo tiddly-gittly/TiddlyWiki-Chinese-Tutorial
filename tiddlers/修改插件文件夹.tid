@@ -4,7 +4,6 @@ modified: 20211016092919587
 modifier: 林一二
 tags: 安装插件
 title: 修改插件文件夹
-tmap.id: 3e0755e1-1678-42dc-82ee-cf230cea4a98
 type: text/vnd.tiddlywiki
 
 这是第三种比较少用到的方法，根据[[太微开发者的一次讨论|https://github.com/Jermolene/TiddlyWiki5/discussions/6096]]，只有需要用到 NodeJS API 的插件才需要放进 `/plugins` 文件夹里。

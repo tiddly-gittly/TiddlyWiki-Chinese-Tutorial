@@ -4,7 +4,6 @@ modified: 20211028155905930
 modifier: 林一二
 tags: 插件使用
 title: 更新插件
-tmap.id: 473ae6bf-506d-4e9e-9cbd-6e40e378b0f9
 type: text/vnd.tiddlywiki
 
 首先，是像[[使用插件源]]里的操作一样，打开控制面板-插件-获取更多插件，然后打开插件源的弹出窗口：

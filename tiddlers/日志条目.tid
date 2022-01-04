@@ -4,7 +4,6 @@ modified: 20220103160622957
 modifier: 林一二
 tags: 基础知识
 title: 日志条目
-tmap.id: 647365e0-e3ba-471c-992e-1b80c49cea86
 type: text/vnd.tiddlywiki
 
 你可以每天用太微记录一下日记。通过右侧菜单里（可能需要点击{{$:/core/images/down-arrow}}展开被收起的更多按钮）的添加日志按钮{{$:/core/images/new-journal-button}}即可创建标题类似「2022年01月04日」这样的日志。

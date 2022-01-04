@@ -4,7 +4,6 @@ modified: 20211112083025771
 modifier: Sttot
 tags: 基础知识
 title: 如何启动一个NodeJS的TiddlyWiki项目
-tmap.id: cc23e10f-e378-48a8-bfac-99ba6970e808
 type: text/vnd.tiddlywiki
 
 首先确保已经安装了`TiddlyWiki`，我猜你可能用两种方式安装了TiddlyWiki：全局和非全局，两种安装方法下，运行的命令是不一样的：

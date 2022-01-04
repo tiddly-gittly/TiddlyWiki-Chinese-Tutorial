@@ -4,7 +4,6 @@ modified: 20211016101028035
 modifier: 林一二
 tags: 基础知识
 title: 删除条目
-tmap.id: b3232095-8058-47ac-8c20-e80ebb08f242
 type: text/vnd.tiddlywiki
 
 点击条目上方[[查看工具栏]]里的{{$:/core/images/down-arrow}}按钮，展开的列表里有一个{{$:/core/images/delete-button}}按钮，点击就可以删除。

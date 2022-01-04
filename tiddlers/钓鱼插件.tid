@@ -4,7 +4,6 @@ modified: 20211017162519462
 modifier: oflg
 tags: 插件使用
 title: 钓鱼插件
-tmap.id: 044e6e5c-f5c9-47ef-91dc-2be651291356
 type: text/vnd.tiddlywiki
 
 [[TiddlyWiki|https://tiddlywiki.com/]]集成[[抽认卡|https://docs.ankiweb.net/background.html]]，“钓鱼”使用[[Anki算法|https://gist.github.com/oflg/6c9cc15bbe2172688a0b4bd817b12bd7]]。

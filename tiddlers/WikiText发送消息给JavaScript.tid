@@ -4,7 +4,6 @@ modified: 20211004050757541
 modifier: 林一二
 tags: WikiText与JavaScript的交互
 title: WikiText发送消息给JavaScript
-tmap.id: 8ff34d0c-09b2-4512-8d66-aad246054636
 type: text/vnd.tiddlywiki
 
 !! JS侧注册消息

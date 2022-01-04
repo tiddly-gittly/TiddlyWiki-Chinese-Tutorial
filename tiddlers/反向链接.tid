@@ -4,7 +4,6 @@ modified: 20211003083619574
 modifier: 林一二
 tags: 基础知识
 title: 反向链接
-tmap.id: c60885b8-a6a0-4ede-a22a-11705f580faf
 type: text/vnd.tiddlywiki
 
 太微内置了反向链接基础能力，插件开发者一般是通过[[筛选器]]来使用它们开发不同展示方式的反向链接插件（例如本知识库内置的[[反向链接插件|$:/plugins/linonetwo/inverse-link-and-folder]]），而普通用户在安装反向链接相关插件后，笔记底部（或插件定义的其它位置）就会出现反向链接内容。

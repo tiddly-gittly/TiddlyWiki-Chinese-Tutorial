@@ -4,7 +4,6 @@ modified: 20211016092533428
 modifier: 林一二
 tags: 安装和删除插件
 title: 删除插件
-tmap.id: 30c97de2-db74-4dc1-ab6a-59261d4869be
 type: text/vnd.tiddlywiki
 
 由于太微里插件也只不过是一些打包好的条目，所以删除插件也就只需要删除这些条目就好了。对于打包好的条目，也只需要点击删除按钮{{$:/core/images/delete-button}}就能删掉。（你可能需要点击条目顶部[[页面工具栏]]上的{{$:/core/images/down-arrow}}按钮，在打开的下拉菜单里才能找到删除按钮{{$:/core/images/delete-button}}）

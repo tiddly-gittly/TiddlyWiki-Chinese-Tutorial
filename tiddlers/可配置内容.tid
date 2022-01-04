@@ -4,7 +4,6 @@ modified: 20220103160846141
 modifier: 林一二
 tags: 基础知识
 title: 可配置内容
-tmap.id: 915a416d-e773-4f67-bdc0-e1d086299429
 type: text/vnd.tiddlywiki
 
 太微很多可配置内容暴露在了控制面板里。点击右上角[[页面工具栏]]里的 {{$:/core/images/options-button}} 按钮，打开[[控制面板|$:/ControlPanel]]，可以看到很多可配置项。

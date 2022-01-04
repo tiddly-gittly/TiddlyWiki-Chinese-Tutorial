@@ -4,7 +4,6 @@ modified: 20211028175218805
 modifier: 林一二
 tags: 欢迎来到太微！
 title: 徽章列表
-tmap.id: b072666b-8bfa-4ebb-8882-4f384f56df75
 type: text/vnd.tiddlywiki
 
 <<dbadge 笔记应用 "[[TGNote|https://github.com/tiddly-gittly/TiddlyGit-Desktop]]" info>> <<dbadge 部署 "[[Github Actions|https://github.com/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/actions]]" success>> <<dbadge 双向链接 "[[支持|反向链接]]" "danger">>
