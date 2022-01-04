@@ -1,7 +1,9 @@
 created: 20220104055133208
 creator: 林一二
-modified: 20220104055147985
+modified: 20220104122003761
 modifier: 林一二
 tags: 欢迎来到太微！
 title: 入门幻灯片
 type: text/vnd.tiddlywiki
+
+<<presenter tag:"入门幻灯片" template:""  loop:"no" footer:"太微新手入门宣传演示 | 太微中文社区" theme:"irana">>
