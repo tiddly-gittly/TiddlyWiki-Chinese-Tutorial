@@ -1,0 +1,9 @@
+author: Nathan Jones
+core-version: >=5.0.0
+dependents: 
+description: Utility classes for gt6796c plugins
+list: readme license
+plugin-type: plugin
+title: $:/plugins/gt6796c/rocklib
+type: application/json
+version: 0.1.6

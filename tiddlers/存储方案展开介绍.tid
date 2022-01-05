@@ -1,0 +1,23 @@
+created: 20220105150846941
+creator: 林一二
+list-after: 太微的数据如何存储
+modified: 20220105153946239
+modifier: 林一二
+tags: 入门幻灯片
+title: 存储方案展开介绍
+type: text/vnd.tiddlywiki
+
+根据用户的喜好和需求，有十数种方法将数据保存到
+
+* 本地硬盘
+* 自建云服务器
+* WebDav
+* Git服务器
+* Web3基础设施
+
+等各种存储服务里。（大部分列在[[基础文档简体中文版-开始使用|https://bramchen.github.io/tw5-docs/zh-Hans/#GettingStarted]]里，也有一些在社区插件源里）
+
+不过我们推荐使用[[如何保存]]里列出的桌面APP或内置的Github保存器来保存。
+
+* 其中桌面APP可以即开即用并附带版本回溯备份功能
+* Github保存器则可以让你在桌面端和移动端都方便地保存数据。
