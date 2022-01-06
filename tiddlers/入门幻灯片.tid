@@ -1,9 +1,16 @@
 created: 20220104055133208
 creator: 林一二
-modified: 20220105154254269
+modified: 20220106140057073
 modifier: 林一二
 tags: 幻灯片
 title: 入门幻灯片
 type: text/vnd.tiddlywiki
 
+<div id="入门幻灯片">
 <<presenter tag:"入门幻灯片" template:""  loop:"no" footer:"太微新手入门教程演示 | 太微中文社区" theme:"irana">>
+<style>
+#入门幻灯片 .tamasha-slide-content {
+	max-width: unset;
+}
+</style>
+</div>
