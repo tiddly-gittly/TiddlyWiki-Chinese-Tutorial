@@ -1,12 +1,12 @@
 created: 20211003070002469
 creator: 林一二
-modified: 20211004042822324
+modified: 20220107013230414
 modifier: 林一二
 tags: 欢迎来到太微！
 title: 太微背景介绍
 type: text/vnd.tiddlywiki
 
-<$list filter="[tag<currentTiddler>]+[kin::to{currentTiddler}]">
+<$list filter="[tag<currentTiddler>]">
 
 !!! <$link><<currentTiddler>></$link>
 
