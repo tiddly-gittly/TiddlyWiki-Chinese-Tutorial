@@ -1,6 +1,6 @@
 created: 20220105150846941
 creator: 林一二
-modified: 20220108044847211
+modified: 20220108095420512
 modifier: 林一二
 tags: 入门幻灯片
 title: 存储方案展开介绍
@@ -12,7 +12,8 @@ type: text/vnd.tiddlywiki
 
 等各种存储服务里。（大部分列在[[基础文档简体中文版-开始使用|https://bramchen.github.io/tw5-docs/zh-Hans/#GettingStarted]]里，也有一些在社区插件源里）
 
-不过我们推荐使用[[如何保存]]里列出的桌面APP或内置的Github保存器来保存。
+我们推荐使用[[如何保存]]里列出的桌面APP或内置的Github保存器、Timimi浏览器插件来保存。
 
 * 其中桌面APP可以即开即用并附带版本回溯备份功能
 * Github保存器则可以让你在桌面端和移动端都方便地保存数据。
+* Timimi浏览器插件可以保存HTML版内容，内容可以用网盘同步到手机端使用

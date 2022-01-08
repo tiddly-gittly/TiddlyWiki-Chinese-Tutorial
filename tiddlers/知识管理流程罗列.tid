@@ -1,10 +1,12 @@
 created: 20220106131707949
 creator: 林一二
-modified: 20220107134642030
+modified: 20220108103225962
 modifier: 林一二
 tags: 科普幻灯片
 title: 知识管理流程罗列
 type: text/vnd.tiddlywiki
+
+快速复习一下常见的几种非线性笔记方法（与拿小本本从头记到尾的线性笔记相比较）：
 
 # PARA方法 [[林一二关于Para的笔记|https://onetwo.ren/wiki/#PARA]]
 # CODE方法 （收集（Collect） 组织（Organize - PARA） 提取（Distill - progressive summarization） 表达（Express））
@@ -12,4 +14,4 @@ type: text/vnd.tiddlywiki
 # ITKG方法 [[林一二关于ITKG的介绍|https://onetwo.ren/wiki/#ITKG]]
 # 常青笔记法 [[叶峻峣对Andy的常青笔记的翻译|https://zhuanlan.zhihu.com/p/416319260]]
 # 卡片笔记法 （闪念笔记、永久笔记和项目笔记，详见书籍）
-# ……其它鼓励整理、分门别类的方法
+# ……其它鼓励整理、分门别类的方法，它们的共性是…
