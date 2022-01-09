@@ -1,9 +1,15 @@
 created: 20220105131815306
 creator: 林一二
-modified: 20220105151515598
+modified: 20220108050830783
 modifier: 林一二
 tags: 入门幻灯片
 title: 入门大纲
 type: text/vnd.tiddlywiki
 
 * 太微的数据如何存储
+* 如何新建笔记库、新建笔记
+* WikiText 和 MD 的写法
+* 微件和筛选器入门
+* 记忆相关的插件
+* 美化相关的插件
+* 中文教程站带逛

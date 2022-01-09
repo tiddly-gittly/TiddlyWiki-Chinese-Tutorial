@@ -1,7 +1,7 @@
 created: 20211005050603937
 creator: 林一二
 list-after: 基础知识
-modified: 20211011140150424
+modified: 20220108095531525
 modifier: 林一二
 tags: 欢迎来到太微！
 title: 如何保存
@@ -17,7 +17,9 @@ type: text/vnd.tiddlywiki
 
 [[TiddlyDesktop]]：跨平台桌面版应用，也可以同时启动多个Wiki，每个Wiki保存为一整个HTML文件，可以手动备份HTML文件，通过网盘可以让HTML文件在移动端打开。
 
-!!! 移动端
+!!! 移动端/跨平台
+
+Timimi
 
 !! 内置功能
 

@@ -1,0 +1,13 @@
+created: 20220108051817547
+creator: 林一二
+modified: 20220108055744713
+modifier: 林一二
+tags: 入门幻灯片
+title: 微件和筛选器入门
+type: text/vnd.tiddlywiki
+
+[[微件]]和[[筛选器]]常常配合在一起使用，构建动态的视图。
+
+我们可以从[[用kin-filter搜索当前文件夹树里的文件（展示为列表）]]中看出筛选器，尤其是[[Kin-Filter|$:/plugins/bimlas/kin-filter]]这类图论筛选器的威力。
+
+[img[$:/plugins/bimlas/kin-filter/README/concept.svg]]

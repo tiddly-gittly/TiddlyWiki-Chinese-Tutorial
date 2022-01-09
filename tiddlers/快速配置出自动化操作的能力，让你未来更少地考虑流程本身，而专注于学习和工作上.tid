@@ -1,0 +1,11 @@
+created: 20220106144058274
+creator: 林一二
+modified: 20220108103518526
+modifier: 林一二
+tags: 科普幻灯片
+title: 快速配置出自动化操作的能力，让你未来更少地考虑流程本身，而专注于学习和工作上
+type: text/vnd.tiddlywiki
+
+* 自定义模板按钮，在各分类下快速新建卡片笔记，并带上元信息字段：[[快速创建新笔记按钮]] （当然也可以通过命令菜单来添加）
+* 自定义卡片上的按钮，将卡片一键转移到其它分类、归档、设为常用、修改状态 [[Projectify的任务例子|https://projectify.wiki/demo.html#Design%20initial%20mockup:%24%3A%2Fplugins%2Fnico%2Fprojectify%2Fui%2Fbuttons%2FToggleTodo%20%5B%5BDesign%20initial%20mockup%5D%5D]]
+* 将常用模板（九宫格/晨间日记/项目流程）添加为[[文本片段]]，通过 `/` 打开菜单快速添加

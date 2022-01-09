@@ -1,0 +1,18 @@
+created: 20220108042848033
+creator: 林一二
+modified: 20220108043857255
+modifier: 林一二
+tags: 科普幻灯片
+title: 数据自有
+type: text/vnd.tiddlywiki
+
+<div style="float: right; display: flex; flex-direction: row; height: 300px">
+	<img src="https://solid.inrupt.com/sites/default/files/2018-09/How%20It%20Works-1%402x.png" />
+	<img src="https://solid.inrupt.com/sites/default/files/2018-09/How%20It%20Works-2%402x.png" />
+</div>
+
+> 在过去的几年里，我们目睹了网络上个人数据前所未有的集中化。无论你同意与否，大型社交媒体都在收集我们的信息，并在其强大的数据处理中心存储和分发这些信息。人们为了获取更好的服务，不得不将数据共享给软件服务商。
+
+> 让人们重新控制数据的方式是允许数据存储在他们想存储的任何地方，而这和他们想要使用的应用程序无关。—— [[SoLiD|https://learnsolid.cn]]
+
+我们长久以来积累的笔记数据不该成为我们的枷锁，当我们不喜欢一个服务商时，我们应该要能自由地切换到别的服务商。

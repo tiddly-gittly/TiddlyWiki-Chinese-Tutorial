@@ -1,6 +1,7 @@
 created: 20220104055133208
 creator: 林一二
-modified: 20220106140057073
+list: 入门幻灯片封面 入门大纲 太微的数据如何存储 存储方案展开介绍 如何新建笔记库、新建笔记 [[WikiText 和 MD 的写法]] 微件和筛选器入门 筛选器 微件 记忆相关的插件 美化相关的插件 中文教程站带逛、答疑
+modified: 20220108094946576
 modifier: 林一二
 tags: 幻灯片
 title: 入门幻灯片
@@ -11,6 +12,7 @@ type: text/vnd.tiddlywiki
 <style>
 #入门幻灯片 .tamasha-slide-content {
 	max-width: unset;
+	font-weight: bolder;
 }
 </style>
 </div>

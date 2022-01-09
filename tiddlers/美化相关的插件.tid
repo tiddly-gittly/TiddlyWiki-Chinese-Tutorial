@@ -1,0 +1,18 @@
+created: 20220108060308675
+creator: 林一二
+modified: 20220108094132617
+modifier: 林一二
+tags: 入门幻灯片
+title: 美化相关的插件
+type: text/vnd.tiddlywiki
+
+!! 可视化
+
+* [[Echarts可视化插件]]提供了对[[Echarts可视化系统|https://echarts.apache.org/examples/zh/index.html]]的调用能力，可以从上百种可视化效果中挑选出适合自己笔记系统的样例，稍加改造后用[[微件]]的形式接入你的条目里。
+* [[TiddlyMap|http://tiddlymap.org/]]提供了可拖动编辑的图谱，也可以通过筛选器表达式自动生成图谱。
+
+!! 样式美化和主题
+
+* [[TW-Shiraz|https://kookma.github.io/TW-Shiraz/]] 就像一个前端库，包含了各种样式微件。
+* [[Itonnote]] 是一个仿 Notion 的主题。
+* [[TiddlySeq|https://gk0wk.github.io/TiddlySeq/]] 是一个仿 LogSeq 的主题。
