@@ -1,6 +1,6 @@
 created: 20220108051857931
 creator: 林一二
-modified: 20220108094049302
+modified: 20220110022437037
 modifier: 林一二
 tags: 基础知识 入门幻灯片
 title: 微件
@@ -13,3 +13,15 @@ type: text/vnd.tiddlywiki
 除了用维基语法创造出微件，你也可以直接使用微件，例如 `<$list filter="[tag[基础知识]sort[title]]"/>`：
 
 <$list filter="[tag[基础知识]sort[title]]"/>
+
+如果想让结果不挤在一起，就加上 div 标签，或者 `<li><$text text=<<currentTiddler>>/></li>` 标签
+
+```html
+<$list filter="[tag[基础知识]sort[title]]">
+	<div><$text text=<<currentTiddler>>/></div>
+</$list>
+```
+
+<$list filter="[tag[基础知识]sort[title]]"><div><$text text=<<currentTiddler>>/></div></$list>
+
+<$list filter="[tag[基础知识]sort[title]]"><li><$text text=<<currentTiddler>>/></li></$list>
