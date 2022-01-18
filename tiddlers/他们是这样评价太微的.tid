@@ -1,6 +1,6 @@
 created: 20211003070912044
 creator: 林一二
-modified: 20211016140654573
+modified: 20220118094535063
 modifier: 林一二
 tags: 太微背景介绍
 title: 他们是这样评价太微的
@@ -18,5 +18,9 @@ Tiddlywiki 的拥有丰富的功能和强大的插件，编辑时支持标签管
 <<<.tc-big-quote
 TiddlyWiki ，按官方说法是一个「非线性个人 Web 笔记本」。相比其他笔记和 Wiki 系统，其最大的特点之一是程序本体和数据全部都在一个单 html 文件内，与此同时仍然有着非常强大的功能和插件系统。在我看来，管理以文字、代码和数学公式为主的个人知识库， TiddlyWiki 可谓是最好的选择之一。
 <<<[[使用 TiddlyWiki 的用途和心得？知乎Rrupmid_Nyche的回答|https://www.zhihu.com/question/31214433/answer/244696951]]
+
+<<<.tc-big-quote
+以及热爱太微的更多用户……
+<<<[[更多用户评论]]
 
 {{Product Hunt Link}}
