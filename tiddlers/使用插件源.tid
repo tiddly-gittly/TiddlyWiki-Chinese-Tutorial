@@ -1,6 +1,6 @@
 created: 20211016092805967
 creator: 林一二
-modified: 20220109101506743
+modified: 20220118033239541
 modifier: 林一二
 tags: 安装插件
 title: 使用插件源
@@ -12,7 +12,7 @@ type: text/vnd.tiddlywiki
 
 这时你会看到一个「获取更多插件」按钮，点击它，就会加载当前安装了的插件源里的插件列表了。
 
-!!! 安装插件源
+!!! 安装官方插件源
 
 如果你是用 NodeJS 版的，有可能无法安装官方插件，不过可以将[[$:/config/OfficialPluginLibrary]]拖入你的 Wiki，就可以解锁安装官方插件了。
 
