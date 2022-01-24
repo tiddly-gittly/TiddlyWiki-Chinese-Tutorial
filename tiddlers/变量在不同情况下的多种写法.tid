@@ -1,0 +1,23 @@
+created: 20220124152259863
+creator: 林一二
+modified: 20220124152604843
+modifier: 林一二
+tags: 变量
+title: 变量在不同情况下的多种写法
+type: text/vnd.tiddlywiki
+
+!! 双尖括号
+
+默认的写法，例如：
+
+```tid
+<$md-to-tid-button title=<<title>> typeName=<<type>> k=<<key>>/>
+```
+
+!! 单尖括号
+
+在筛选器表达式里，就像[[嵌入]]要写成单花括号一样，变量也要变成单尖括号：
+
+```tid
+<$let target=<<currentTiddler>> targetTitle={{{ [<target>get[draft.title]] ~[<target>get[title]] }}} search={{{ [[$:/state/search-template-list/input]get[text]] }}} draftOf={{{ [<target>get[draft.of]] }}} >
+```

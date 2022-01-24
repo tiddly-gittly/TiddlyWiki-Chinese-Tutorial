@@ -1,0 +1,11 @@
+created: 20220124152252644
+creator: 林一二
+modified: 20220124152452777
+modifier: 林一二
+tags: 基础知识
+title: 变量
+type: text/vnd.tiddlywiki
+
+[[官方介绍文档|https://bramchen.github.io/tw5-docs/zh-Hans/#Variables%20in%20WikiText]]
+
+[[可用的环境变量|https://bramchen.github.io/tw5-docs/zh-Hans/#Core%20Variables]]
