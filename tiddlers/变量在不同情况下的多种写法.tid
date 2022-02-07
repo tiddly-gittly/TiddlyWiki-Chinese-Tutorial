@@ -1,6 +1,6 @@
 created: 20220124152259863
 creator: 林一二
-modified: 20220124152604843
+modified: 20220125033708633
 modifier: 林一二
 tags: 变量
 title: 变量在不同情况下的多种写法
@@ -21,3 +21,7 @@ type: text/vnd.tiddlywiki
 ```tid
 <$let target=<<currentTiddler>> targetTitle={{{ [<target>get[draft.title]] ~[<target>get[title]] }}} search={{{ [[$:/state/search-template-list/input]get[text]] }}} draftOf={{{ [<target>get[draft.of]] }}} >
 ```
+
+例如判断当前条目是否和变量一样。
+
+`[<currentTiddler>has<xxx>]`

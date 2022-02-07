@@ -1,12 +1,12 @@
 created: 20211112091421145
 creator: Sttot
-modified: 20211201142627387
-modifier: Sttot
+modified: 20220207045519608
+modifier: 林一二
 tags: 插件开发
 title: 可是我的插件还是空的
 type: text/vnd.tiddlywiki
 
-前置阅读：[[如何写一个TW插件]]
+前置阅读：[[如何在NodeJS里写一个TW插件]]
 
 万事开头难，我们已经成功创建了一个插件，可喜可贺！不过...如何为插件添加内容呢？直接在文件夹内创建文件就可以吗？如何排除掉不想包括的文件？我们继续来探究。
 

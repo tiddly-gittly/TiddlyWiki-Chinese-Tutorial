@@ -1,0 +1,9 @@
+created: 20220207045559774
+creator: 林一二
+modified: 20220207045646506
+modifier: 林一二
+tags: 插件开发
+title: 如何在单文件版里写一个TW插件
+type: text/vnd.tiddlywiki
+
+使用[[Gatha|https://talk.tiddlywiki.org/t/gatha-plugin-experimental-release/2272]]插件，可以直接在任何Wiki里把一些条目打包成插件。它也可以管理做到一半的插件的草稿。
