@@ -1,0 +1,29 @@
+created: 20220215123643886
+creator: 林一二
+modified: 20220215123651368
+modifier: 林一二
+tags: 插件开发
+title: 交互式查看API
+type: text/vnd.tiddlywiki
+
+可以右键打开开发者工具，在控制台里输入 `$tw.` 来交互式地看太微提供了哪些 API。
+
+例如通过输入 `$tw.wiki.render` 我们可以发现自动补全出了 `$tw.wiki.renderText` 函数，根据名字可以猜测它是用来把 Wiki Text 渲染成最终文本用的。
+
+它有哪些参数，可以通过直接回车来打印出函数源码来简单得知：
+
+```js
+> $tw.wiki.renderText
+< ƒ (outputType,textType,text,options) {
+	options = options || {};
+	var parser = this.parseText(textType,text,options),
+		widgetNode = this.makeWidget(parser,options);
+	var container = $tw.fakeDocument.c…
+```
+
+返回值直接尝试执行一次即可
+
+```js
+> $tw.wiki.renderText('text/html', 'text/vnd.tiddlywiki', '试一试{{$:/language/Buttons/NewJournal/Hint}}')
+< '<p>试一试创建一个新的日志条目</p>'
+```

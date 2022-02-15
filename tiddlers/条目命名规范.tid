@@ -1,0 +1,46 @@
+created: 20220215123128189
+creator: 林一二
+modified: 20220215124115214
+modifier: 林一二
+tags: 基础知识
+title: 条目命名规范
+type: text/vnd.tiddlywiki
+
+太微中条目的功能只与其加的标签有关，与其标题写了什么无关。例如你想创建新的[[文本片段]]，只需要带上相应标签即可。但你可能会发现有的插件里[[分发|插件可以包含的内容]]的文本片段条目是以 `$:/` 开头的，看起来像是系统条目，插件作者为什么要这样取名呢？
+
+这是因为我们尽量遵循一定的命名规范，让用户更好搜到所需的条目、批量操作时更好操作。
+
+系统条目的命名规范详见[[中文文档-系统条目的命名|https://bramchen.github.io/tw5-docs/zh-Hans/#Naming%20of%20System%20Tiddlers]]
+
+!! 系统条目为核心的一部分，其命名规则如下:
+
+|!命名空间 |!格式 |!描述 |
+|`$:/*` |~CamelCase |根用户接口条目 (例如控制台、 高端搜索) |
+|`$:/config/*` |~CamelCase |用户导向的配置设置 |
+|`$:/core/images/*` |hyphen-case |核心图像 |
+|`$:/core/modules/*` |lowercase |JavaScript 模块条目 |
+|`$:/core/save/*` |lowercase |用于创建 TiddlyWiki 文件的保存范本 |
+|`$:/core/templates/*` |//inconsistent// |TiddlyWiki 操作所需的范本。目前使用短划线和句号的组合隔开单词 |
+|`$:/core/ui/*` |//inconsistent// |组成 TiddlyWiki 缺省用户接口的条目。目前使用混合驼峰式和小写的命名约定 |
+|`$:/core/wiki/*` |lowercase |关于整个维基的中继数据 |
+|`$:/docs/*` |lowercase |文档条目 |
+|`$:/messages/*` |~CamelCase |系统消息 |
+|`$:/plugins/*` |lowercase |插件条目，与插件内容 |
+|`$:/snippets/*` |//inconsistent// |可重用的片段 (将由宏替换) |
+|`$:/state/*` |lowercase |用户接口状态条目 |
+|`$:/tags/*` |~CamelCase |用户接口配置标签|
+|`$:/temp/*` |lowercase |不应被保存的临时条目 |
+|`$:/themes/*` |lowercase |布景主题插件 |
+
+「格式」这一列的意思：
+
+* ''hyphen-case'' 指的是以连字号连接多个小写单字 （ hyphen就是连字符 - ）
+* ''~CamelCase'' 指的是直接连接多个首字母大写的小写单字 （ Camel 是骆驼，此处表示驼峰起伏的意思）
+* ''lowercase'' 指的是直接连接多个小写单字
+* ''inconsistent'' 标志目前不一致的命名空间，可以随便用
+
+!! 插件里如何命名
+
+插件里的文件，一般都以 $:/ 开头，以表明它们类似于系统条目，不建议直接修改。
+
+但如果你想通过插件分发文本片段，那么还是建议将你分发的文本片段以 `$:/snippets/` 开头，而不是以 `$:/plugins/snippets/*` 等方式开头。分发其它内容时也类似。
