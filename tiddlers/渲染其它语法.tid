@@ -1,0 +1,24 @@
+created: 20220218052901501
+creator: 林一二
+modified: 20220218053613623
+modifier: 林一二
+tags: 基础知识
+title: 渲染其它语法
+type: text/vnd.tiddlywiki
+
+有时候我们希望用 [[Mermaid|Mermaid插件
+]] 这样的 DSL（领域特定语言）来快速做画图之类的操作，可以用类似 `$$$text/vnd.tiddlywiki.mermaid` 这样的语法，详见 [[Jeremy 的讨论|https://github.com/Jermolene/TiddlyWiki5/discussions/6466]]。
+
+[img[渲染Mermaid语法-编辑.png]]
+
+把填在文件类型字段里的 text/vnd.tiddlywiki.mermaid 这样的类型名放到 `$$$` 后面，包住内容，就可以渲染出这个类型的内容效果
+
+[img[渲染Mermaid语法-预览.png]]
+
+这个用法于 typora 里的
+
+```
+```mermaid
+```
+
+了，但是可以支持任意文件格式的渲染。
