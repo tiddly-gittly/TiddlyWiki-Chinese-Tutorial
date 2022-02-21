@@ -1,0 +1,22 @@
+created: 20220221123601719
+creator: 林一二
+modified: 20220221123624685
+modifier: 林一二
+tags: 自动化
+title: 一键操作某标签下的所有条目
+type: text/vnd.tiddlywiki
+
+例如把它们都折叠：
+
+```tid
+<$button>
+  <$list
+      filter="[tag[x]]"
+  >
+        <$action-setfield
+            $tiddler={{{[<currentTiddler>addprefix[$:/state/folded/]]}}}
+            text="hide"
+        />
+  </$list>
+</$button>
+```
