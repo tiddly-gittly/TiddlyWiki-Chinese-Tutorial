@@ -1,0 +1,20 @@
+created: 20220317043939380
+creator: 林一二
+modified: 20220317044228278
+modifier: 林一二
+tags: 基础知识
+title: 添加css样式
+type: text/vnd.tiddlywiki
+
+详见[[中文文档-样式及 CSS 类别|https://bramchen.github.io/tw5-docs/zh-Hans/#Styles%20and%20Classes%20in%20WikiText]]，来使用 `@@` 这种[[区块解析器|https://bramchen.github.io/tw5-docs/zh-Hans/#Block%20Mode%20WikiText]]。
+
+参考[[http://listtree.tiddlyspot.com/]]，用 `@@.list-tree` 的语法，给 `@@` 包住的列表加上了自定义的 css 样式，让列表变成了树形图。
+
+```
+@@.list-tree
+*Parent 1
+*Parent 2
+**Child 1
+*[[Parent 3]] (incidentally a link)
+@@
+```
