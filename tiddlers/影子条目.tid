@@ -1,0 +1,9 @@
+created: 20220331025834606
+creator: 林一二
+modified: 20220331025944386
+modifier: 林一二
+tags: 基础知识
+title: 影子条目
+type: text/vnd.tiddlywiki
+
+[[影子条目-中文文档|https://bramchen.github.io/tw5-docs/zh-Hans/#ShadowTiddlers]]是对插件内容做了修改之后产生的条目，不会随着插件的更新而更新，在插件删除后也会保留。一般用于覆盖插件的配置、记录[[钓鱼插件]]的学习记录等等，是一个很有用的在本地保存个人信息的机制。
