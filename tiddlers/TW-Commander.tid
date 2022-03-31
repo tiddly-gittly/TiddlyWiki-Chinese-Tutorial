@@ -1,9 +1,17 @@
 created: 20220331030124617
 creator: 林一二
-modified: 20220331030334234
+modified: 20220331030540644
 modifier: 林一二
 tags: 插件使用
 title: TW-Commander
 type: text/vnd.tiddlywiki
 
 太微中校是一个批量操作条目的工具。[[Github|https://github.com/kookma/TW-Commander]] [[文档|https://kookma.github.io/TW-Commander/]]
+
+!! 案例
+
+!!! 想问一下群里大佬一个问题，我要批量删除所有条目中的tmap.id这个属性该怎样做？
+
+<<<
+可以用 tw commander，配合 [all[tiddlers+shadows]has[tmap.id]] 筛选器 ，从字段里全部删除。
+<<<
