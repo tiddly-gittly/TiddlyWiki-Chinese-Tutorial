@@ -1,0 +1,13 @@
+created: 20220402073243576
+creator: 林一二
+modified: 20220402073344043
+modifier: 林一二
+tags: 筛选器 嵌入
+title: 在筛选器中使用嵌入
+type: text/vnd.tiddlywiki
+
+根据[[筛选器参数-中文教程|https://bramchen.github.io/tw5-docs/zh-Hans/#Filter%20Parameter]]，筛选器操作符的参数可以是：
+
+软式 - 间接：`{like this}` 该参数是由位于大括号之间的文本参考表示的文本，即一指定条目的一个字段，或指定的数据条目的属性值。
+
+简单来说，就是把原版宏两个的花括号，变成一个就好。
