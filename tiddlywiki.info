@@ -54,5 +54,8 @@
       "tiddlywiki5.js",
       "text/plain"
     ]
-  }
+  },
+    "config": {
+        "retain-original-tiddler-path": true
+    }
 }
