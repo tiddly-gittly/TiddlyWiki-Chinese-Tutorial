@@ -1,6 +1,6 @@
 created: 20211003082407925
 creator: 林一二
-modified: 20220125033617417
+modified: 20220407073657992
 modifier: 林一二
 tags: 基础知识 入门幻灯片 筛选器表达式教程幻灯片
 title: 筛选器
@@ -11,6 +11,12 @@ type: text/vnd.tiddlywiki
 筛选器长得类似链接 `[[ ]]` 尤其像图片引用 `[img[ProductHunt-Badge.svg]]`：
 
 > 名称开头为「插」的所有条目 `[prefix[插]]` <<list-links "[prefix[插]]">>
+
+!! 使用筛选器
+
+{{在列表微件中使用筛选器}}
+
+{{在嵌入中使用筛选器}}
 
 !! 相关阅读列表
 

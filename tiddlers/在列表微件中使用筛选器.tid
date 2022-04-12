@@ -1,0 +1,9 @@
+created: 20220407073209948
+creator: 林一二
+modified: 20220407073650492
+modifier: 林一二
+tags: 筛选器
+title: 在列表微件中使用筛选器
+type: text/vnd.tiddlywiki
+
+以列出带有「基础知识」标签的条目为例子，`<$list filter="[tag[基础知识]]"></$list>` 可以列出带有「基础知识」标签的条目。
