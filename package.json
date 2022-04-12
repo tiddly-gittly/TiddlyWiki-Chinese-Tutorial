@@ -6,7 +6,7 @@
     "buildlibrary": "node -e \"require('./scripts/build').buildLibrary('[prefix[$:/]!prefix[$:/plugins/tiddlywiki/]!prefix[$:/themes/tiddlywiki/]!prefix[$:/languages/]!tag[$:/tags/PluginLibrary]!prefix[$:/plugins/kookma]]', 'public-dist/library');\""
   },
   "devDependencies": {
-    "@tiddlygit/tiddlywiki": "5.2.2-prerelease-2021-12-10",
+    "@tiddlygit/tiddlywiki": "5.2.3-prerelease-2022-04-09",
     "cross-env": "7.0.3",
     "html-minifier-terser": "6.1.0",
     "uglify-js": "3.15.4",
