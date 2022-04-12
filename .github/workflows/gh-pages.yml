@@ -25,6 +25,8 @@ jobs:
         run: npm install
       - name: 构建在线版本网页
         run: npm run buildonline
+      - name: 构建可下载离线版本的网页
+        run: npm run buildoffline
       - name: Workbox 离线缓存
         run: npx workbox injectManifest workbox-config.js
       - name: 构建插件库
