@@ -3,6 +3,7 @@ core-version: >=5.1.5
 dependents: 
 description: HotZone – Be notified when tiddlers are scrolled into view
 list: Configuration License Readme
+name: hotzone
 plugin-type: plugin
 released: 
 source: https://github.com/felixhayashi/TW5-HotZone
