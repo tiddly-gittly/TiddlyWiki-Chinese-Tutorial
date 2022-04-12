@@ -1,6 +1,8 @@
 # 太微教程
 
-[只读版访问地址加速版（高速访问）](https://tw-cn.netlify.app)
+[只读版访问地址 Vercel 加速版（高速访问）](https://tiddly-wiki-chinese-tutorial.vercel.app)
+
+[只读版访问地址 Netlify 加速版（中速访问）](https://tw-cn.netlify.app)
 
 [只读版访问地址（Github Pages）](https://tiddly-gittly.github.io/TiddlyWiki-Chinese-Tutorial/)
 
