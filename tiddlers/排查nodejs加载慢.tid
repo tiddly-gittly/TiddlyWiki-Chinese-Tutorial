@@ -1,6 +1,6 @@
 created: 20220416104241253
 creator: 林一二
-modified: 20220416135353007
+modified: 20220416135555929
 modifier: 林一二
 tags: 排查问题
 title: 排查nodejs加载慢
@@ -17,6 +17,8 @@ cd /xxx/TiddlyGit-Desktop/node_modules/@tiddlygit/tiddlywiki
 ```shell
 node --prof-process --preprocess ./tiddlywiki.js +plugins/tiddlywiki/filesystem +plugins/tiddlywiki/tiddlyweb /xxx/wiki/wiki --listen root-tiddler=$:/core/save/lazy-images
 ```
+
+注意是用 node 去执行 tiddlywiki 的入口 JS 文件，你也可以写成 `node --prof-process --preprocess ./node_modules/tiddlywiki/tiddlywiki/tiddlywiki.js` 之类的。
 
 这会在之前 cd 进去的文件夹 `node_modules/@tiddlygit/tiddlywiki` 里生成一个名字如 `isolate-0x7faf7ea00000-58485-v8.log` 的文件，我们需要把它转换成火焰图文件：
 
