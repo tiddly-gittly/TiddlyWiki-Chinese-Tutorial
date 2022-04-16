@@ -1,0 +1,13 @@
+created: 20220416104718037
+creator: 林一二
+modified: 20220416104954408
+modifier: 林一二
+tags: 排查问题
+title: 进入安全模式
+type: text/vnd.tiddlywiki
+
+用某个插件导致页面无法打开了，这时候想要把这个插件关掉该怎么办？详见[[中文官网-安全模式|https://bramchen.github.io/tw5-docs/zh-Hans/#SafeMode]]，安全模式会在禁用所有插件的情况下进入知识库，这时候你就可以进入控制面板，把这个插件关掉了。
+
+把 `/#:safe` 拼在地址后面就行了，类似 `http://0.0.0.0:5212/#:safe`。
+
+不过有时候会变成打开 `safe` 条目，再按一次回车，多试几次就能进去了。
