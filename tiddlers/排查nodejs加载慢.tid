@@ -1,6 +1,6 @@
 created: 20220416104241253
 creator: 林一二
-modified: 20220416135555929
+modified: 20220416140935979
 modifier: 林一二
 tags: 排查问题
 title: 排查nodejs加载慢
@@ -15,7 +15,7 @@ cd /xxx/TiddlyGit-Desktop/node_modules/@tiddlygit/tiddlywiki
 然后加载一个wiki文件夹，以 `/xxx/wiki/wiki` 为例就是
 
 ```shell
-node --prof-process --preprocess ./tiddlywiki.js +plugins/tiddlywiki/filesystem +plugins/tiddlywiki/tiddlyweb /xxx/wiki/wiki --listen root-tiddler=$:/core/save/lazy-images
+node -prof ./tiddlywiki.js +plugins/tiddlywiki/filesystem +plugins/tiddlywiki/tiddlyweb /xxx/wiki/wiki --listen root-tiddler=$:/core/save/lazy-images
 ```
 
 注意是用 node 去执行 tiddlywiki 的入口 JS 文件，你也可以写成 `node --prof-process --preprocess ./node_modules/tiddlywiki/tiddlywiki/tiddlywiki.js` 之类的。
