@@ -1,6 +1,6 @@
 created: 20220331030124617
 creator: 林一二
-modified: 20220331030540644
+modified: 20220502045645000
 modifier: 林一二
 tags: 插件使用
 title: TW-Commander
@@ -14,4 +14,10 @@ type: text/vnd.tiddlywiki
 
 <<<
 可以用 tw commander，配合 [all[tiddlers+shadows]has[tmap.id]] 筛选器 ，从字段里全部删除。
+<<<
+
+!!! 有没有办法给所有的tiddler批量添加标签，或者在筛选中选择添加？
+
+<<<
+可以用 tw commander，配合筛选器 ，然后使用 add tag 功能。
 <<<
