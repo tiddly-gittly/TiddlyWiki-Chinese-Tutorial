@@ -1,7 +1,7 @@
 caption: 太记
 created: 20211005051214953
 creator: 林一二
-modified: 20211011140150667
+modified: 20220511040932259
 modifier: 林一二
 title: TiddlyGit太记
 type: text/vnd.tiddlywiki
@@ -9,6 +9,10 @@ type: text/vnd.tiddlywiki
 [img[TiddlyGit-Screenshot.png]]
 
 可以用「打开本地Wiki」功能来打开 TiddlyWiki 官方文档。
+
+!!! 断网
+
+注意太记会启动一个本地知识库服务器，如果你切换了 Wifi、断网了，太记的界面上会弹一个黄色的框提示你「网络连接断开，数据将在联网后重新同步」，但太记暂时不会自动重连（需要更多开发者帮忙开发），所以需要手动重启太记应用，就好了。
 
 !!! 休眠工作区
 
