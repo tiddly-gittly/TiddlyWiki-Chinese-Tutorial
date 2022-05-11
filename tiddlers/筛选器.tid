@@ -1,12 +1,14 @@
 created: 20211003082407925
 creator: 林一二
-modified: 20220407073657992
+modified: 20220511080701713
 modifier: 林一二
 tags: 基础知识 入门幻灯片 筛选器表达式教程幻灯片
 title: 筛选器
 type: text/vnd.tiddlywiki
 
 !! 类比
+
+> 这东西等价于 Ob 的 dataview 和 Logseq 的 datascript ，各家的方案用起来都有一定难度，但太微毕竟有 10 年以上的历史，谷歌搜索能搜到国际上很多相关讨论和解决方案
 
 筛选器长得类似链接 `[[ ]]` 尤其像图片引用 `[img[ProductHunt-Badge.svg]]`：
 
