@@ -19,8 +19,8 @@
 0. 点击[申请](https://tiddlywiki-chinese-team-invite.herokuapp.com/)加入贡献团队。
 1. 下载 [TiddlyGit](https://github.com/tiddly-gittly/TiddlyGit-Desktop)，用于在本地打开和编辑 Wiki
 
-![docs/image/clone-code-tg.png](docs/image/clone-code-tg.png)
-![docs/image/clone-code-tg2.png](docs/image/clone-code-tg2.png)
+![docs/image/clone-code-tg.png](https://cdn.jsdelivr.net/gh/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/docs/image/clone-code-tg.png)
+![docs/image/clone-code-tg2.png](https://cdn.jsdelivr.net/gh/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/docs/image/clone-code-tg2.png)
 
 然后就能编辑了，编辑结果会每 30 分钟自动同步上来，或是在重启应用后自动同步上来。也可以右键点击左侧边栏的工作区头像，有一个立即同步选项。
 
@@ -30,27 +30,27 @@
 - 下载 [TiddlyGit](https://github.com/tiddly-gittly/TiddlyGit-Desktop)，用于在本地打开和编辑 Wiki
 - 用 [Github Desktop](https://desktop.github.com/) 打开此项目，用它把内容同步到本地一个文件夹里，可以选择把文件夹放在桌面上
 
-![docs/image/clone-code.png](docs/image/clone-code.png)
+![docs/image/clone-code.png](https://cdn.jsdelivr.net/gh/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/docs/image/clone-code.png)
 
 - 用 TiddlyGit 打开刚同步到本地的文件夹，注意看图！是「打开本地 Wiki」「本地知识库」「主知识库」
 
-![docs/image/open-code.png](docs/image/open-code.png)
+![docs/image/open-code.png](https://cdn.jsdelivr.net/gh/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/docs/image/open-code.png)
 
 - 然后就可以修改 Wiki 内容了
 - 然后在 Github Desktop 里简要介绍写一下自己这次改了什么，并点击 Commit 按钮
 
-![docs/image/commit-code.png](docs/image/commit-code.png)
+![docs/image/commit-code.png](https://cdn.jsdelivr.net/gh/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/docs/image/commit-code.png)
 
 #### 对于简单的文档类改动
 
 直接点击 Push 按钮，提交上来
 
-![docs/image/push.png](docs/image/push.png)
+![docs/image/push.png](https://cdn.jsdelivr.net/gh/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/docs/image/push.png)
 
 #### 对于复杂的插件、配置文件改动
 
 - 在菜单里找到 Create Pull Request 按钮，点击它，向社区仓库提交改动申请，大家会通过投票的方式确定是否合并新的内容
 
-![docs/image/pr-code.png](docs/image/pr-code.png)
+![docs/image/pr-code.png](https://cdn.jsdelivr.net/gh/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/docs/image/pr-code.png)
 
 - 投票通过且合并之后，你新增的内容就会出现在网站上啦~
