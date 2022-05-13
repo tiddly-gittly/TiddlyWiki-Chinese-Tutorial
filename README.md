@@ -18,12 +18,11 @@
 
 0. 点击[申请](https://tiddlywiki-chinese-team-invite.herokuapp.com/)加入贡献团队。
 1. 下载 [TiddlyGit](https://github.com/tiddly-gittly/TiddlyGit-Desktop)，用于在本地打开和编辑 Wiki
-2. 用 Github Desktop 打开此项目，它会把内容同步到本地一个文件夹里，可以选择把文件夹放在桌面上
 
 ![docs/image/clone-code-tg.png](docs/image/clone-code-tg.png)
 ![docs/image/clone-code-tg2.png](docs/image/clone-code-tg2.png)
 
-然后就能编辑了，编辑结果会每 30 分钟自动同步上来，或是在重启应用后自动同步上来。
+然后就能编辑了，编辑结果会每 30 分钟自动同步上来，或是在重启应用后自动同步上来。也可以右键点击左侧边栏的工作区头像，有一个立即同步选项。
 
 ### 专业版
 
