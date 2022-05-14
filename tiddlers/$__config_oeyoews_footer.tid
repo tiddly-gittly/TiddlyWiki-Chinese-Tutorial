@@ -1,0 +1,12 @@
+caption: Footer
+created: 20220310033519322
+creator: @oeyoews
+modified: 20220514001446314
+modifier: oeyoews
+tags: config $:/tags/footer
+title: $:/config/oeyoews/footer
+type: text/vnd.tiddlywiki
+
+<$list filter="[!is[system]!has[draft.of]!sort[modified]limit[1]]">
+Updated
+<$view field="modified" format="relativedate"/>
