@@ -1,0 +1,47 @@
+created: 20220515112847020
+modified: 20220515125926252
+tags: 如何保存
+title: timimi浏览器扩展安装和使用
+type: text/vnd.tiddlywiki
+
+[[帮助手册源地址|https://ibnishak.github.io/Timimi/]]
+
+
+!!!安装
+
+
+* 从[[Chrome应用商店|https://chrome.google.com/webstore/detail/timimi/mnggafnmmhdoplbffagjihajeeikgbcg]]安装timimi浏览器扩展
+* 在 Edge 浏览器中，打开扩展 > 扩展管理 > Timimi 选中“允许访问文件 URL”
+* 从[[Github|https://github.com/ibnishak/Timimi/releases]]下载并运行timimi-2-1-1-Windows-Chrome-Chromium-Opera.exe
+
+!!!使用
+
+
+* 添加备份路径
+**如果留空，备份将在与原始文件相同的文件夹中创建
+
+
+**您可以设置绝对路径或相对路径。如果它是绝对路径，则将在该文件夹中创建所有文件的备份。如果是相对路径，则每个文件的备份将保存在相对于原始文件的文件夹中。
+
+
+*选择备份方法并根据您的喜好更改相应的设置。
+
+
+*单击提交按钮。
+
+
+*"重要提示"：如果您在浏览器中打开了一个 tiddlywiki 文件，则在刷新该选项卡之前，更改后的设置不会反映出来。
+ 
+ 
+
+
+!!!备份方式
+
+
+*Every nth save（每 n 次保存）
+
+*Every nth minute（每隔n分钟）
+
+*First In First Out（先进先出）
+
+*Tower of Hanoi（汉诺塔/河内塔算法）
