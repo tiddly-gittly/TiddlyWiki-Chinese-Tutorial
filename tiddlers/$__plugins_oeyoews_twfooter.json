@@ -36,12 +36,12 @@
 },
 
 "$:/plugins/oeyoews/twfooter/readme": {
-    "title": "$:/plugins/oeyoews/twfooter/readme",
     "created": "20220514134420639",
-    "modified": "20220514164020194",
+    "text": "* ''Note'': The footer time just update when loading",
+    "title": "$:/plugins/oeyoews/twfooter/readme",
+    "modified": "20220515153352248",
     "tags": "",
     "type": "text/vnd.tiddlywiki",
-    "text": "* The footer time just update when loading, if the page have changed, this footer time will not update different common situtions, because this footer time with a special tag, more details please click `todo write`.",
     "revision": "0",
     "bag": "default"
 },
@@ -67,6 +67,29 @@
     "tags": "",
     "type": "text/vnd.tiddlywiki",
     "text": "{{$:/plugins/oeyoews/twfooter!!version}}",
+    "revision": "0",
+    "bag": "default"
+},
+
+"oeyoews/twfooter": {
+    "created": "20220515153504517",
+    "text": "",
+    "title": "oeyoews/twfooter",
+    "cpl.author": "oeyoews",
+    "cpl.core-version": ">=5.2.2",
+    "cpl.description": "Show Page Footer",
+    "cpl.documentation": "",
+    "cpl.name": "TiddlyWiki5 Footer",
+    "cpl.plugin-type": "plugin",
+    "cpl.readme": "Show Page Footer",
+    "cpl.source": "",
+    "cpl.title": "$:/plugins/oeyoews/twfooter",
+    "cpl.uri": "https://twms.vercel.app/index.html",
+    "icon": "🦶",
+    "modified": "20220515154228813",
+    "page-cover": "https://images.unsplash.com/photo-1639423314139-683e2ec231b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vdGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "tags": "$:/tags/PluginWiki",
+    "type": "text/vnd.tiddlywiki",
     "revision": "0",
     "bag": "default"
 }}
