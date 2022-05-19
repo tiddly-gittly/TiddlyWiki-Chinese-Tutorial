@@ -1,6 +1,6 @@
 created: 20210902045426600
 creator: 林一二
-modified: 20211003080423331
+modified: 20220519024135587
 modifier: 林一二
 title: 快速创建新笔记按钮
 type: text/vnd.tiddlywiki
@@ -25,4 +25,4 @@ type: text/vnd.tiddlywiki
 
 </fieldset>
 
-此外，你还可以先找到想作为文件夹的笔记，然后使用笔记顶部的 {{$:/core/images/new-here-button}} {{$:/language/Buttons/NewHere/Caption}} 来创建新笔记，这将把新笔记放入文件夹内，原理详见[[TW-Locator]]。
+此外，你还可以先找到想作为文件夹的笔记，然后使用笔记顶部的 {{$:/core/images/new-here-button}} {{$:/language/Buttons/NewHere/Caption}} 来创建新笔记。这将把新笔记放入文件夹内，文件夹系统的原理详见[[TW-Locator]]。
