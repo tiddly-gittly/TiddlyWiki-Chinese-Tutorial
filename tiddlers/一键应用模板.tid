@@ -1,6 +1,6 @@
 created: 20220519024006087
 creator: 林一二
-modified: 20220519024844018
+modified: 20220519025701796
 modifier: 林一二
 tags: 自动化
 title: 一键应用模板
@@ -24,14 +24,16 @@ type: text/vnd.tiddlywiki
 
 它首先用 `<$button>` 微件（及其带反斜杠 `</$` 的另一半）做了一个按钮，在按钮里面包上一个 `<$action-sendmessage` 微件（详见 [[中文文档 action-sendmessage|https://bramchen.github.io/tw5-docs/zh-Hans/#ActionSendMessageWidget]]），发送消息给太微系统，消息是 `tm-new-tiddler` 也就是 `tiddlywiki message ：新建条目` 的意思，这样就会在点击按钮时触发发送消息给太微系统新建条目。
 
-消息还表明，新条目的标题要填成「标题填在这里」，内容则是 `text` 里的，用三个引号括起来就可以包含换行，然后可以加多个标签。你可以点击下面的例子来看看效果：
+消息的内容是：新条目的标题要填成「标题填在这里」，内容则是 `text` 里的，用三个引号括起来就可以包含换行，然后可以加多个标签。你可以点击下面的例子来看看效果：
 
-	<$button>
-		<$action-sendmessage $message="tm-new-tiddler" title="标题填在这里" text="""这里是预置的文本
-		可以换行""" tags="想法 待整理" />
-	添加新想法
-	</$button>
-	
+<$button>
+	<$action-sendmessage $message="tm-new-tiddler" title="标题填在这里" text="""这里是预置的文本
+	可以换行""" tags="想法 待整理" />
+添加新想法
+</$button>
+
 !! 使用模板相关插件
 
-可以[[使用插件源]]搜索「temlplate list 模板列表插件」，可以找到类似飞书文档风格的模板复用系统插件，其原理和上面介绍的基本差不多，只不过多加了一个类似[[一键操作某标签下的所有条目]]里的 `<$list` 微件来列出所有系统里现存的模板。
+可以[[使用插件源]]搜索「temlplate list 模板列表插件」，可以找到类似飞书文档风格的模板复用系统插件。
+
+其原理和上面介绍的基本差不多，只不过多加了一个类似[[一键操作某标签下的所有条目]]里的 `<$list` 微件来列出所有系统里现存的模板。
