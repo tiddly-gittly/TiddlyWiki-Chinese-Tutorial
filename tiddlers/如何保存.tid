@@ -1,6 +1,6 @@
 created: 20211005050603937
 creator: 林一二
-modified: 20220511040655635
+modified: 20220527071010633
 modifier: 林一二
 tags: 欢迎来到太微！
 title: 如何保存
@@ -12,13 +12,13 @@ type: text/vnd.tiddlywiki
 
 !!! 桌面端
 
-[[TiddlyGit太记]]：跨平台桌面版应用，可以同时启动多个Wiki，每个Wiki保存为一个文件夹，文件夹里每条笔记都保存为单独的文件，并通过Git在节约空间的情况下保存多个历史版本备份。推荐使用此应用，可以减少很多折腾和配置的时间，直接用起来。
+[[TidGi太记]]：跨平台桌面版应用，可以同时启动多个Wiki，每个Wiki保存为一个文件夹，文件夹里每条笔记都保存为单独的文件，并通过Git在节约空间的情况下保存多个历史版本备份。推荐使用此应用，可以减少很多折腾和配置的时间，直接用起来。
 
 [[TiddlyDesktop]]：跨平台桌面版应用，也可以同时启动多个Wiki，每个Wiki保存为一整个HTML文件，可以手动备份HTML文件，通过网盘可以让HTML文件在移动端打开。
 
 !!! 移动端/跨平台
 
-推荐Android用户使用[[Tiddloid|https://www.coolapk.com/apk/top.donmor.tiddloid]]，有插件可以和[[TiddlyGit太记]]同步数据。
+推荐Android用户使用[[Tiddloid]]，有插件可以和[[TidGi太记]]同步数据。
 
 !! 内置功能
 

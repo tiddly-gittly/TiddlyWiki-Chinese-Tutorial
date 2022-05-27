@@ -1,10 +1,18 @@
 caption: 太记
 created: 20211005051214953
 creator: 林一二
-modified: 20220511040932259
+modified: 20220527070841917
 modifier: 林一二
-title: TiddlyGit太记
+title: TidGi太记
 type: text/vnd.tiddlywiki
+
+!! 介绍
+
+太记是一个桌面版启动器，可以用于启动太微 TiddlyWiki。启动器可以帮你自动保存、自动备份等等，太微的其它启动器还有[[Tiddloid]]等，详见[[官方中文文档-开始使用|https://bramchen.github.io/tw5-docs/zh-Hans/#GettingStarted]]。
+
+TidGi 是 TiddlyWiki + Git 的缩写简称，因为太记除了可以启动太微以外，还能自动进行 Git 细粒度同步备份，在备份的同时节省硬盘空间。
+
+!! 使用
 
 [img[TiddlyGit-Screenshot.png]]
 
