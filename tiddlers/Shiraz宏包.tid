@@ -1,6 +1,6 @@
 created: 20220527054251451
 creator: 林一二
-modified: 20220527054701893
+modified: 20220527055041793
 modifier: 林一二
 tags: 插件使用
 title: Shiraz宏包
@@ -27,3 +27,7 @@ type: text/vnd.tiddlywiki
 ```
 
 <<reuse-tiddler "待开始任务列表">>
+
+!! 使用
+
+安装的插件只包含宏定义，不包含使用手册（为了减小安装大小），你需要到官网 [[https://kookma.github.io/TW-Shiraz/]] 了解有哪些宏、每个宏的参数有哪些，里面也有很多复制黏贴就可以抄过来美化自己知识库的例子。
