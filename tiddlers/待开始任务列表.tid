@@ -1,0 +1,9 @@
+created: 20220527054205299
+creator: 林一二
+modified: 20220527054227582
+modifier: 林一二
+tags: 社区建设
+title: 待开始任务列表
+type: text/vnd.tiddlywiki
+
+<$macrocall $name=table-dynamic caption="共建待办列表" filter="[tag[任务]]-[tag[done]]" fields="title tags" class="w-100"/>

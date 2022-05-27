@@ -1,6 +1,6 @@
 created: 20210902045426600
 creator: 林一二
-modified: 20220519024135587
+modified: 20220527053748070
 modifier: 林一二
 title: 快速创建新笔记按钮
 type: text/vnd.tiddlywiki
@@ -21,6 +21,11 @@ type: text/vnd.tiddlywiki
 	<$button>
 		<$action-sendmessage $message="tm-new-tiddler" title="xxx" tags="插件使用" text="!! " />
 	添加新插件使用教程
+	</$button>
+	
+	<$button>
+		<$action-sendmessage $message="tm-new-tiddler" title="新任务" tags="任务" text="" />
+	添加社区共建待办
 	</$button>
 
 </fieldset>

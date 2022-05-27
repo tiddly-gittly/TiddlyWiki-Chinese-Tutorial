@@ -1,6 +1,6 @@
 created: 20220317043939380
 creator: 林一二
-modified: 20220524084941531
+modified: 20220527052936658
 modifier: 林一二
 tags: 基础知识
 title: 添加css样式
@@ -39,6 +39,4 @@ type: text/vnd.tiddlywiki
 
 !!! 如何把 CSS 应用到界面上自己想修改的地方
 
-学习[[如何使用浏览器开发者工具|https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Debugging_CSS#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7]]，一般按 `option+shift+I` 或者右键菜单里点 「检查」 就能打开。
-
-这是个通用工具，在任何浏览器里都有，包括[[TiddlyGit太记]] 和 Obsidian 都有这个功能。
+<<reuse-tiddler "使用开发者工具查看CSS">>

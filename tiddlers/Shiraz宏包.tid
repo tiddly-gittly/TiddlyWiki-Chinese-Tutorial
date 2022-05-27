@@ -1,0 +1,29 @@
+created: 20220527054251451
+creator: 林一二
+modified: 20220527054701893
+modifier: 林一二
+tags: 插件使用
+title: Shiraz宏包
+type: text/vnd.tiddlywiki
+
+!! 安装
+
+参考[[安装插件]]，从 CPL 插件源安装即可。
+
+!! 介绍
+
+就像 LaTeX 有很多美化样式的宏包，太微也有很多宏包，[[Shiraz|https://kookma.github.io/TW-Shiraz/]] 是其中的佼佼者，它除了提供样式美化，例如：
+
+```tid
+<<alert primary "美化样式的封装了CSS的宏" width:60%>>
+```
+
+<<alert primary "美化样式的封装了CSS的宏" width:60%>>
+
+还提供自动化操作宏包，例如我们在[[待开始任务列表]]里用的 dynamic-table 宏：
+
+```tid
+<$macrocall $name=table-dynamic caption="共建待办列表" filter="[tag[任务]]-[tag[done]]" fields="title tags" class="w-100"/>
+```
+
+<<reuse-tiddler "待开始任务列表">>
