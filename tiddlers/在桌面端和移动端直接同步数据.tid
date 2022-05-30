@@ -1,0 +1,15 @@
+created: 20220530024326138
+creator: 林一二
+modified: 20220530024518884
+modifier: 林一二
+tags: 如何保存
+title: 在桌面端和移动端直接同步数据
+type: text/vnd.tiddlywiki
+
+!! 使用太记（NodeJS）桌面端
+
+到 CPL 里搜（CPL 使用方法见[[安装插件]]）tw-mobile-sync 插件，可以在桌面和手机端同步数据，支持 Android 的 [[Tiddloid]] 和 iOS 的 [[Quine2]]。
+
+!! 使用 TiddlyWikiDesktop 或者 Timimi 桌面端（HTML）
+
+直接用网盘同步 HTML 文件即可！
