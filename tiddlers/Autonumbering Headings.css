@@ -1,0 +1,56 @@
+/** Inspired by https://zhuanlan.zhihu.com/p/506929317 */
+/** initialize css counter */
+.tc-tiddler-body {
+    counter-set: h1 h2 h3 h4 h5 h6
+}
+
+.tc-tiddler-body > h1 {
+    counter-set: h2
+}
+
+.tc-tiddler-body > h2 {
+    counter-set: h3
+}
+
+.tc-tiddler-body > h3 {
+    counter-set: h4
+}
+
+.tc-tiddler-body > h4 {
+    counter-set: h5
+}
+
+.tc-tiddler-body > h5 {
+    counter-set: h6
+}
+
+/** put counter result into headings */
+.tc-tiddler-body > h1:before {
+    counter-increment: h1;
+    content: 
+}
+
+ .tc-tiddler-body > h2:before {
+    counter-increment: h2;
+    content: counter(h2) ". "
+}
+
+.tc-tiddler-body > h3:before {
+    counter-increment: h3;
+    content: counter(h2) "." counter(h3) " "
+}
+
+.tc-tiddler-body > h4:before{
+    counter-increment: h4;
+    content: counter(h2) "." counter(h3) "." counter(h4) " "
+}
+
+.tc-tiddler-body >  h5:before {
+    counter-increment: h5;
+    content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) " "
+}
+
+.tc-tiddler-body > h6:before {
+    counter-increment: h6;
+    content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) " "
+}
