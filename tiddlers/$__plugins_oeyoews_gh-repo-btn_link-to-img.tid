@@ -1,0 +1,9 @@
+created: 20220722065923656
+modified: 20220722081557400
+tags: 
+title: $:/plugins/oeyoews/gh-repo-btn/link-to-img
+type: text/vnd.tiddlywiki
+
+<a href="https://github.com/tiddly-gittly/TiddlyWiki-Chinese-Tutorial" target="_blank">
+{{$:/plugins/oeyoews/gh-repo-btn/icon}}
+</a>
