@@ -1,0 +1,19 @@
+created: 20220815044942720
+creator: Miao
+modified: 20220815045544550
+modifier: Miao
+tags: 使太微更易用
+title: 删除或导出文件夹下所有文件（Kin 筛选器）
+type: text/vnd.tiddlywiki
+
+# 安装【Kin filter】插件，并使用表达式完成筛选并删除。
+
+# 表达式：[kin::to[文件夹条目]]
+
+# 表达式说明：这将会连同【文件夹条目】以及条目名称下的所有子条目全部筛选出来。
+
+
+
+
+[img[删除或导出文件夹下所有文件.png]]
+
