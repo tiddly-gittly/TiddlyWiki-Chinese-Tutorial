@@ -1,6 +1,6 @@
 created: 20220815050627222
 creator: Miao
-modified: 20220815051357151
+modified: 20220815053352253
 modifier: Miao
 tags: 使太微更易用
 title: 使用你的浏览器作为太微主力工具吧
@@ -8,6 +8,13 @@ type: text/vnd.tiddlywiki
 
 在桌面端使用你的浏览器作为太微的主力工具吧！
 
-TiddlyStow（创建）、Timimi（回写保存）、 FSA Uploader（太微插件，基于File System Access API的上传器）、Kopia（定时备份）
+TiddlyStow（创建）、Timimi（回写保存文件）、 FSA Uploader（太微插件，基于File System Access API的上传器）、Kopia（定时备份）
 
-创建一个文件夹存储所有的TiddlyWiki，然后使用Kopia定时备份，Timimi回写文件数据，Tiddlystow用已有的太微模板新建太微。
+<<<
+TiddlyStow链接：https://twpub-book.vercel.app/tiddlystow.html
+<<<
+
+''使用方式：''创建一个文件夹存储所有的TiddlyWiki文档，这个文件夹可以当做太微文件列表，然后使用Kopia定时备份这个文件夹，Timimi回写文件数据，Tiddlystow用已有的太微模板新建太微。
+
+
+

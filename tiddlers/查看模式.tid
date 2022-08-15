@@ -1,7 +1,7 @@
 created: 20220717065411682
 creator: 林一二
-modified: 20220717065830484
-modifier: 林一二
+modified: 20220815053012920
+modifier: Miao
 tags: 基础知识
 title: 查看模式
 type: text/vnd.tiddlywiki
@@ -12,7 +12,7 @@ type: text/vnd.tiddlywiki
 太微自带的几个查看模式：
 
 * Classic：经典模式，打开条目是从上往下的动画，关闭是往左移动直到消失的动画关闭
-* POP：弹出模式，pop打开条目是从大缩小的动画，关闭条目是继续缩小知道看不见
+* POP：弹出模式，pop打开条目是从大缩小的动画，关闭条目是继续缩小直到看不见
 
 这两个他们都是多个条目同时在的，往下翻可以看到多个条目。
 
