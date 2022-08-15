@@ -1,0 +1,20 @@
+created: 20220815043730719
+creator: Miao
+modified: 20220815044309043
+modifier: Miao
+tags: 使太微更易用
+title: 筛选出标签大于等于两个的表达式
+type: text/vnd.tiddlywiki
+
+
+
+```
+[all[tiddlers]!is[system]] :filter[tags[]count[]compare:number:gteq[2]]
+```
+
+
+说明：
+
+# [all[tiddlers]!is[system]] 限定条目为普通条目。
+
+# compare:number:gteq[2]：判断数量大于2，可以自己修改。
