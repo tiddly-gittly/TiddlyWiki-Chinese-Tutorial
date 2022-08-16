@@ -1,9 +1,9 @@
 created: 20220815035633469
 creator: Miao
-modified: 20220815042714499
+modified: 20220816124645459
 modifier: Miao
 tags: 使太微更易用
-title: TiddlyWiki单文件与文件夹的数据转换
+title: 单文件与文件夹数据形式转换
 type: text/vnd.tiddlywiki
 
 需要环境：安装nodejs，在nodejs安装中TiddlyWiki软件包。
