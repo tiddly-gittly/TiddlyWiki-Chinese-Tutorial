@@ -1,0 +1,29 @@
+created: 20220815044942720
+creator: Miao
+modified: 20220817230652504
+modifier: Miao
+tags: 使太微更易用
+title: 选择给定tiddler的所有继承者
+type: text/vnd.tiddlywiki
+
+! 删除或导出文件夹下所有文件（Kin 筛选器）
+
+>''选择给定B条目的所有继承者''
+>
+>筛选器语法：[kin::to[B]]
+>
+>[img[kin::to选定.png]]
+
+
+
+# 安装【Kin filter】插件，并使用表达式完成筛选并删除。
+
+# 表达式：[kin::to[文件夹条目]]
+
+# 表达式说明：这将会连同【文件夹条目】以及条目名称下继承的所有子条目全部筛选出来。
+
+
+
+
+[img[删除或导出文件夹下所有文件.png]]
+
