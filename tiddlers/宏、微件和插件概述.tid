@@ -1,6 +1,6 @@
 created: 20220817024219376
 creator: Miao
-modified: 20220817115729675
+modified: 20220817161317618
 modifier: Miao
 tags: 使太微更易用
 title: 宏、微件和插件概述
@@ -26,6 +26,25 @@ type: text/vnd.tiddlywiki
 宏调用语法：https://bramchen.github.io/tw5-docs/zh-Hans/#Macro%20Call%20Syntax
 
 
+<br><br>
+
+<<<
+''list-links 宏（示例）''
+
+此示例列出名称开头为 J 的所有条目：
+
+```
+<<list-links filter:"[prefix[J]]">>
+```
+
+显示结果：
+
+<<list-links filter:"[prefix[J]]">>
+<<<
+
+<br><br>
+
+更多的宏：`<<tag>>`（标签宏）、`<<tabs>>`（选项卡宏）、`<<timeline>>`（时间线宏）、`<<now YYYY年0MM月0DD日>>`（当前时间宏）、`<<tree>>`(树状视图宏)、`<<thumbnail>>`（可链接缩略图宏）、`<<Table-of-Contents Macros>>`（目录宏）、`<<toc>>`等等非常有用的宏。
 
 !! 宏定义
 
@@ -51,16 +70,14 @@ type: text/vnd.tiddlywiki
 宏定义详细链接(包含访问变量和参数以及范围的描述，总之更详细了)：https://bramchen.github.io/tw5-docs/zh-Hans/#Macro%20Definitions%20in%20WikiText
 
 
-''占位符''，代码段可以包含参数的占位符。它们由美元符号之间的参数名称组成，比如 `$this$`。它也可以包含变量的占位符。 它们由美元符号和圆括号之间的变量名称（或宏名称）组成，比如 `$(this)$`
-
 
 我们对宏的总结是这样的：
 
 * 宏是对微件的调用，自动化地复用内容的；
 
-* 宏可以封装 WikiText 的重复片段（比如timeline时间线宏可以将已有的条目按照时间创建先后顺序显示出来），以便您可以轻松地重复使用它们。
+* 宏可以封装 WikiText 的重复片段（例如timeline时间线宏可以将已有的条目按照时间创建先后顺序显示出来），以便您可以轻松地重复使用它们。
 
-比如在条目中嵌入目录，并且指定sort参数名对目录排序.例如
+比如在条目中嵌入目录（目录宏），并且指定sort参数名对目录排序.例如
 
 ```
 <<toc-selective-expandable '目录'sort : "sortan[]">>
@@ -104,7 +121,9 @@ type: text/vnd.tiddlywiki
 Gatha：https://talk.tiddlywiki.org/t/gatha-plugin-experimental-release/2272
 
 
-<br><br><br><br><br><br>
+<br><br>
+
+!! 几个有趣的插件
 公式插件：http://chronicles.wiki/TiddlyWikiFormula/
 
 在底部显示annotation的功能插件,Refnotes：https://kookma.github.io/TW-Refnotes/
