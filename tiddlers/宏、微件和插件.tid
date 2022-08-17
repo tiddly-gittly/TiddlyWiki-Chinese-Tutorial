@@ -1,42 +1,37 @@
 created: 20220817024219376
 creator: Miao
-modified: 20220817030832764
+modified: 20220817114004468
 modifier: Miao
 tags: 使太微更易用
 title: 宏、微件和插件
 type: text/vnd.tiddlywiki
 
 
-未完成编辑。。。
 
 ! 一、宏
 
 !! 宏调用
 
+
+宏本身是一些文本片段（例子：`<<colour code-border>>`）。它包含宏名称、参数名称、参数。使用尖括号嵌入宏，这种嵌入方式被称为 ''调用宏''。
+
 宏调用语法：`<<两个尖括号>>`。
-
-宏是一些文本片段。WikiText 可使用该名称为嵌入片段的简写方法。
-
 
 ```
 变量的使用：<<名称 空格 参数值参数名称 空格 : 空格 参数值 空格>>
 
 ```
 
-使用尖括号嵌入宏，这种嵌入方式被称为 调用宏，且每个调用可以提供一组不同的参数，替换在宏定义片段中的特定占位符。
 
-详细介绍地址：https://bramchen.github.io/tw5-docs/zh-Hans/#Macro%20Call%20Syntax
+宏调用语法：https://bramchen.github.io/tw5-docs/zh-Hans/#Macro%20Call%20Syntax
 
-宏：对微件的调用，自动化地复用内容的；宏可以封装 WikiText 的重复片段，以便您可以轻松地重复使用它们。比如在条目中嵌入目录，并且指定sort参数名对目录排序.例如
 
-```
-<<toc-selective-expandable '目录'sort : "sortan[]">>
-```
 
 !! 宏定义
 
+如果你知道一个宏的名字，那可以通过高级搜索-默认条目找到这个宏的定义条目。
 
-一个宏是用一个 \define 编译指令定义的。像所有编译指令一样，这只能出现在条目的开始。
+一个宏是用一个 \define 编译指令定义的。像所有编译指令一样，这只能出现在条目的开始。（字面意义上的，如果前面有普通文本内容（不是宏定义），调用宏将会失效）
 
 ```
 \define 宏名称(tag,sort:"",参数名列表)
@@ -47,18 +42,33 @@ type: text/vnd.tiddlywiki
 
 宏可以对很多小工具进行封装以达到某个特定的功能，解决我们的问题。即站在实用的角度来看插件里有多个宏，宏里提供微件被使用；
 
-最好的例子~$:/core/macros/toc，搜索toc-selective-expandable宏定义，以此开头的宏定义`\define toc-selective-expandable(tag,sort:"",itemClassFilter,exclude,path)`
+最好的例子`$:/core/macros/toc`，搜索toc-selective-expandable宏定义。
 
-''占位符''，代码段可以包含参数的占位符。它们由美元符号之间的参数名称组成，比如 `$this$`
 
-它也可以包含变量的占位符。 它们由美元符号和圆括号之间的变量名称（或宏名称）组成，比如 `$(this)$`
+[img[toc-selective-expandable宏定义.png]]
 
-''范围''，宏在定义它们的条目以及嵌入（transcludes）它的任何条目中有效。定义了宏内容的条目可以添加 `$:/tags/Macro` 系统标签，使所有的条目都可以使用宏
 
+宏定义详细链接(包含访问变量和参数以及范围的描述，总之更详细了)：https://bramchen.github.io/tw5-docs/zh-Hans/#Macro%20Definitions%20in%20WikiText
+
+
+''占位符''，代码段可以包含参数的占位符。它们由美元符号之间的参数名称组成，比如 `$this$`。它也可以包含变量的占位符。 它们由美元符号和圆括号之间的变量名称（或宏名称）组成，比如 `$(this)$`
+
+
+我们对宏的总结是这样的：
+
+* 宏是对微件的调用，自动化地复用内容的；
+
+* 宏可以封装 WikiText 的重复片段（比如timeline时间线宏可以将已有的条目按照时间创建先后顺序显示出来），以便您可以轻松地重复使用它们。
+
+比如在条目中嵌入目录，并且指定sort参数名对目录排序.例如
+
+```
+<<toc-selective-expandable '目录'sort : "sortan[]">>
+```
 
 ! 二、微件Widget小工具
 
-微件（小工具）是页面渲染的基本组成部分。即页面可见的部分。比如列表微件、标题微件、链接微件。
+微件（[[小工具|https://bramchen.github.io/tw5-docs/zh-Hans/#Widgets]]）是页面渲染的基本组成部分。即页面可见的部分。比如列表微件、标题微件、链接微件。
 
 微件的使用语法：
 
@@ -66,13 +76,15 @@ type: text/vnd.tiddlywiki
 <$xxx>特殊的HTML标签</xxx>
 ```
 
-说明：小工具提供 WikiText 更丰富的功能。它们与 HTML 元素 使用相同的标记方式，但是标记的名称前包含一个 $ 符号。例子：`<$button message="tm-navigate" to="HelloThere">打开 ~HelloThere</$button>`
+说明：小工具提供 WikiText 更丰富的功能。它们与 HTML 元素 使用相同的标记方式，但是标记的名称前包含一个 $ 符号。
+
+例子：`<$button message="tm-navigate" to="HelloThere">打开 ~HelloThere</$button>`
 
 
-''变量''，是一个可以通过在小工具树的某一分支的名称访问的文本片段。该片段被称为变量的值。
+它们也可以拥有自己的属性。就像HTML标签一样。
 
 
-维基文本中的小工具：action、button、set、browse等等。大概64个小工具。详细说明：https://bramchen.github.io/tw5-docs/zh-Hans/#Widgets%20in%20WikiText
+[[维基文本中的小工具|https://bramchen.github.io/tw5-docs/zh-Hans/#Widgets%20in%20WikiText]]：action、button、set、browse等等。大概64个小工具。
 
 
 
@@ -83,7 +95,16 @@ type: text/vnd.tiddlywiki
 一个插件就是一组条目的集合，它将众多相互关联的为实现特定功能的条目封装在一起，成为一个以 $:/ 开头的系统条目。
 
 
+!! 将用户配置封装为插件
 
+把一些常用的设置都放到一个插件里，以插件的形式加载存储。便于携带和安装。
+
+使用[[Gatha|https://talk.tiddlywiki.org/t/gatha-plugin-experimental-release/2272]]插件，可以直接在任何Wiki里把一些条目打包成插件。它也可以管理做到一半的插件的草稿。
+
+Gatha：https://talk.tiddlywiki.org/t/gatha-plugin-experimental-release/2272
+
+
+<br><br><br><br><br><br>
 公式插件：http://chronicles.wiki/TiddlyWikiFormula/
 
 在底部显示annotation的功能插件,Refnotes：https://kookma.github.io/TW-Refnotes/
