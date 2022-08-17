@@ -1,6 +1,6 @@
 created: 20220815044942720
 creator: Miao
-modified: 20220817230652504
+modified: 20220817231750341
 modifier: Miao
 tags: 使太微更易用
 title: 选择给定tiddler的所有继承者
@@ -12,7 +12,7 @@ type: text/vnd.tiddlywiki
 >
 >筛选器语法：[kin::to[B]]
 >
->[img[kin::to选定.png]]
+>[img[kinto选定.png]]
 
 
 
