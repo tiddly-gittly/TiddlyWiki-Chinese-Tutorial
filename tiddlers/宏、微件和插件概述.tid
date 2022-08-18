@@ -1,6 +1,6 @@
 created: 20220817024219376
 creator: Miao
-modified: 20220817161317618
+modified: 20220818014102748
 modifier: Miao
 tags: 使太微更易用
 title: 宏、微件和插件概述
@@ -18,7 +18,8 @@ type: text/vnd.tiddlywiki
 宏调用语法：`<<两个尖括号>>`。
 
 ```
-变量的使用：<<名称 空格 参数值参数名称 空格 : 空格 参数值 空格>>
+变量的使用：<<名称 空格 参数值>>
+每个参数值的语法：参数名称 空格 : 空格 参数值 空格
 
 ```
 
@@ -40,11 +41,15 @@ type: text/vnd.tiddlywiki
 显示结果：
 
 <<list-links filter:"[prefix[J]]">>
+
+说明：list-links是宏的名称，filter是名称为筛选器的参数名称，后面跟的字符串是参数值，其中的prefix是筛选器操作符，J 是筛选器参数。参数值[prefix[J]]的意思是筛选出名称开头为J的所有条目。
+
+所以list-links宏的意图是列出链接并使用filter设置筛选范围，范围限定在"[prefix[J]]"。
 <<<
 
 <br><br>
 
-更多的宏：`<<tag>>`（标签宏）、`<<tabs>>`（选项卡宏）、`<<timeline>>`（时间线宏）、`<<now YYYY年0MM月0DD日>>`（当前时间宏）、`<<tree>>`(树状视图宏)、`<<thumbnail>>`（可链接缩略图宏）、`<<Table-of-Contents Macros>>`（目录宏）、`<<toc>>`等等非常有用的宏。
+[[更多的宏|https://bramchen.github.io/tw5-docs/zh-Hans/#Core%20Macros]]：`<<tag>>`（标签宏）、`<<tabs>>`（选项卡宏）、`<<timeline>>`（时间线宏）、`<<now YYYY年0MM月0DD日>>`（当前时间宏）、`<<tree>>`(树状视图宏)、`<<thumbnail>>`（可链接缩略图宏）、`<<Table-of-Contents Macros>>`（目录宏）、`<<toc>>`等等非常有用的宏。
 
 !! 宏定义
 
@@ -85,7 +90,11 @@ type: text/vnd.tiddlywiki
 
 ! 二、微件Widget小工具
 
-微件（[[小工具|https://bramchen.github.io/tw5-docs/zh-Hans/#Widgets]]）是页面渲染的基本组成部分。即页面可见的部分。比如列表微件、标题微件、链接微件。
+微件（[[小工具|https://bramchen.github.io/tw5-docs/zh-Hans/#Widgets]]）是页面渲染的基本组成部分。即页面可见的部分。比如列表微件、标题微件、链接微件、按钮微件。
+
+<<<
+按钮微件的例子：`<$button message="tm-navigate" to="HelloThere">打开 ~HelloThere</$button>`（复制此文本片段并保存到新的条目中将会生成一个【打开 HelloThere】按钮，点击按钮将会打开标题为HelloThere的条目。）
+<<<
 
 微件的使用语法：
 
@@ -95,10 +104,8 @@ type: text/vnd.tiddlywiki
 
 说明：小工具提供 WikiText 更丰富的功能。它们与 HTML 元素 使用相同的标记方式，但是标记的名称前包含一个 $ 符号。
 
-例子：`<$button message="tm-navigate" to="HelloThere">打开 ~HelloThere</$button>`
 
-
-它们也可以拥有自己的属性。就像HTML标签一样。
+就像HTML标签一样，它们也可以拥有自己的属性。比如上述Button微件它自己的to属性以及"HelloThere"属性值。
 
 
 [[维基文本中的小工具|https://bramchen.github.io/tw5-docs/zh-Hans/#Widgets%20in%20WikiText]]：action、button、set、browse等等。大概64个小工具。
