@@ -1,6 +1,6 @@
 created: 20220817024219376
 creator: Miao
-modified: 20220818014102748
+modified: 20220818033118509
 modifier: Miao
 tags: 使太微更易用
 title: 宏、微件和插件概述
@@ -13,9 +13,9 @@ type: text/vnd.tiddlywiki
 !! 宏调用
 
 
-宏本身是一些文本片段（例子：`<<colour code-border>>`）。它包含宏名称、参数名称、参数。使用尖括号嵌入宏，这种嵌入方式被称为 ''调用宏''。
+宏本身是一些文本片段（比如`<<colour code-border>>`宏文本片段）。它包含宏名称、参数名称、参数。使用尖括号嵌入宏，这种嵌入方式被称为 ''调用宏''。
 
-宏调用语法：`<<两个尖括号>>`。
+[[宏调用语法|https://bramchen.github.io/tw5-docs/zh-Hans/#Macro%20Call%20Syntax]]：`<<两个尖括号>>`。
 
 ```
 变量的使用：<<名称 空格 参数值>>
@@ -23,8 +23,6 @@ type: text/vnd.tiddlywiki
 
 ```
 
-
-宏调用语法：https://bramchen.github.io/tw5-docs/zh-Hans/#Macro%20Call%20Syntax
 
 
 <br><br>
@@ -66,16 +64,16 @@ type: text/vnd.tiddlywiki
 
 宏可以对很多小工具进行封装以达到某个特定的功能，解决我们的问题。即站在实用的角度来看插件里有多个宏，宏里提供微件被使用；
 
-最好的例子`$:/core/macros/toc`，搜索toc-selective-expandable宏定义。
+最好的例子：在`$:/core/macros/toc`系统条目中，搜索toc-selective-expandable关键词可以找到该宏的完整定义。
 
 
 [img[toc-selective-expandable宏定义.png]]
 
 
-宏定义详细链接(包含访问变量和参数以及范围的描述，总之更详细了)：https://bramchen.github.io/tw5-docs/zh-Hans/#Macro%20Definitions%20in%20WikiText
+[[宏定义详细链接(包含访问变量、参数、范围以及更多详细的描述)|https://bramchen.github.io/tw5-docs/zh-Hans/#Macro%20Definitions%20in%20WikiText]]
 
 
-
+<br><br>
 我们对宏的总结是这样的：
 
 * 宏是对微件的调用，自动化地复用内容的；
@@ -85,7 +83,7 @@ type: text/vnd.tiddlywiki
 比如在条目中嵌入目录（目录宏），并且指定sort参数名对目录排序.例如
 
 ```
-<<toc-selective-expandable '目录'sort : "sortan[]">>
+<<toc-selective-expandable '目录' sort : "sortan[]">>
 ```
 
 ! 二、微件Widget小工具
