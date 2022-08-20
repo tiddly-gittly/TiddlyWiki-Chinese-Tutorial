@@ -1,7 +1,7 @@
 created: 20211005050603937
 creator: 林一二
 list: 如何保存内容到社区仓库里 保存其他人的Wiki 保存私有内容 timimi浏览器扩展安装和使用
-modified: 20220528151244043
+modified: 20220820082557675
 modifier: 林一二
 tags: 欢迎来到太微！
 title: 如何保存
@@ -19,7 +19,15 @@ type: text/vnd.tiddlywiki
 
 !!! 移动端/跨平台
 
-推荐Android用户使用[[Tiddloid]]，有插件可以和[[TidGi太记]]同步数据。
+推荐 Android 手机用户使用开源免费的[[Tiddloid]]。
+
+i0S 则使用 Quine2 等 AppStore 里的付费应用 。
+
+不论使用 Android 还是 i0S 手机 ， 都可以使用[[TW-MobiLe-Sync手机移动端同步桌面端插件]]和[[TidGi太记]]同步数据。
+
+!! 常用插件
+
+!!! 手机和电脑同步数据
 
 !! 内置功能
 
