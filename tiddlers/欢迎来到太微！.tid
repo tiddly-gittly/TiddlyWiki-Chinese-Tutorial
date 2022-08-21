@@ -2,7 +2,7 @@ created: 20210902044836979
 creator: 林一二
 icon: 🎉
 list: 太微背景介绍 幻灯片 如何保存 基础知识 自动化 排查问题 资源链接 插件开发 插件使用 笔记思维 社区建设 徽章列表
-modified: 20220815034618505
+modified: 20220821050503582
 modifier: Miao
 page-cover: https://pic4.zhimg.com/v2-881f391ae052f85939fcfeb40bc2056c
 tags: 欢迎来到太微！
@@ -37,3 +37,5 @@ type: text/vnd.tiddlywiki
 !! 我们的计划
 
 <<reuse-tiddler "社区建设">>
+
+<<reuse-tiddler "homepage footer">>
