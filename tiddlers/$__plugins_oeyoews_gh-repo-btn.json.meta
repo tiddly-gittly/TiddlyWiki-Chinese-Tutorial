@@ -2,12 +2,13 @@ author: oeyoews
 core-version: >=5.2.2
 created: 20220722064626058
 description: grb
+icon: 
 list: readme
-modified: 20220722075623421
+modified: 20220722112417613
 name: grb
-packaged-by: Gatha on 22nd July 2022, 15:56:27
+packaged-by: Gatha on 22nd July 2022, 19:25:08
 plugin-type: plugin
 tags: 
 title: $:/plugins/oeyoews/gh-repo-btn
 type: application/json
-version: v0.1.0
+version: v0.1.4
