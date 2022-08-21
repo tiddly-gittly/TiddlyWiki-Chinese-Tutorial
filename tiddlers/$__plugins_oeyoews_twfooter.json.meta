@@ -1,0 +1,12 @@
+author: oeyoews
+core-version: >=5.2.2
+created: 20220514041042772
+description: TiddlyWiki5 Time Footer
+list: readme
+modified: 20220517161449370
+name: TiddlyWiki5 Footer
+packaged-by: Gatha on 18th May 2022, 00:14:56
+plugin-type: plugin
+title: $:/plugins/oeyoews/twfooter
+type: application/json
+version: v0.0.8
