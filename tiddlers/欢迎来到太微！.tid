@@ -2,7 +2,7 @@ created: 20210902044836979
 creator: 林一二
 icon: 🎉
 list: 太微背景介绍 幻灯片 如何保存 基础知识 自动化 排查问题 资源链接 插件开发 插件使用 笔记思维 社区建设 徽章列表
-modified: 20220821050503582
+modified: 20220826055106531
 modifier: Miao
 page-cover: https://pic4.zhimg.com/v2-881f391ae052f85939fcfeb40bc2056c
 tags: 欢迎来到太微！
@@ -11,7 +11,11 @@ type: text/vnd.tiddlywiki
 
 {{徽章列表}}
 
+
+<<reuse-tiddler "$:/plugins/PublisherName/switch-palette/core/switch-palette">>
+
 !! 如何浏览此知识库
+
 
 # 可以翻阅右边的[[文档目录|TW-Locator例子：当前知识库的目录]]，注意查看[[文档目录的使用帮助|$:/plugins/linonetwo/itonnote/Help/TW-Locator基于标签生成的文件夹目录结构使用方法]]
 # 查看每个[[条目]]底部的[[反向链接]]
