@@ -1,0 +1,30 @@
+created: 20220830054857671
+creator: oeyoews
+modified: 20220830055513856
+modifier: oeyoews
+tags: 
+title: $:/config/switch tip
+type: text/vnd.tiddlywiki
+
+\define help-wanted(key) [[$:/state/seen/$key$]is[tiddler]then[]else[yes]!is[blank]] -[<renderingStatic>match[yes]]
+
+\define help-seen(key) <$action-setfield $tiddler="$:/state/seen/$key$" text=""/>
+
+<$list filter="[<renderingStatic>!match[yes]]" >
+
+
+<$list filter=<<help-wanted "takeaways">> variable=_>
+<div class="tr-contextual-help">
+
+{{$:/plugins/PublisherName/switch-palette/core/switch-palette}}
+
+<div style="text-align: right;">
+<$button actions=<<help-seen "takeaways">> class="tc-btn-invisible tc-tiddlylink">
+I've got it, don't remind me again
+</$button>
+</div>
+
+</div>
+</$list>
+
+</$list>
