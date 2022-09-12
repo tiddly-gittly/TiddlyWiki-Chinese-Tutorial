@@ -54,3 +54,4 @@
 ![docs/image/pr-code.png](https://cdn.jsdelivr.net/gh/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/docs/image/pr-code.png)
 
 - 投票通过且合并之后，你新增的内容就会出现在网站上啦~
+
