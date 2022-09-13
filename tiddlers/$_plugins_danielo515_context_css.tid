@@ -1,0 +1,15 @@
+created: 20220913014144914
+modified: 20220913014158369
+tags: $:/tags/Stylesheet
+title: $/plugins/danielo515/context/css
+type: text/vnd.tiddlywiki
+
+.matched{
+	background-color:cyan;
+	padding: 0 3px;
+	border-radius: 3px;
+}
+
+.tw-context {
+  border:2px solid none;
+  word-break: break-all; word-wrap: break-word;}
