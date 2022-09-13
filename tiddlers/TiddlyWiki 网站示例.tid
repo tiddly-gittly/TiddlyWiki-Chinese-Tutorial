@@ -1,25 +1,16 @@
 created: 20220515160411034
 creator: oeyoews
-modified: 20220829010824279
+modified: 20220913021030140
 modifier: oeyoews
 tags: 
 title: TiddlyWiki 网站示例
 type: text/vnd.tiddlywiki
 
-<details open="" style="background: wheat;border-radius: 5px; padding: 5px;">
-<summary>一些使用`TiddlyWiki5` 的网站, 欢迎补充</summary>
-</details>
-
-
-link: [[neotw|https://neotw.tiddlyhost.com]]
-
-code: https://github.com/oeyoews/neotw 
-
-[img[neotw-example.png]]
+{{neotw example}}
 
 [[onetw.ren/wiki|https://onetwo.ren/wiki/]]
 
----
+<!-- disable show
 <iframe src="https://keatonlao.github.io/tiddlywiki-xp/" scrolling="no" />
 
 <iframe src="https://tw-cn.netlify.app" scrolling="no" />
@@ -29,3 +20,4 @@ code: https://github.com/oeyoews/neotw
 <iframe src="https://onetwo.ren/wiki/" scrolling="no" />
 
 <iframe src="https://oeyoew.fun" scrolling="no" />
+-->
