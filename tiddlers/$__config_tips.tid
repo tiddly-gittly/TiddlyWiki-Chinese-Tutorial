@@ -1,8 +1,14 @@
 created: 20220913022257369
-modified: 20220913022334772
+modified: 20220913161407005
 subtitle: welcome
 tags: 
 title: $:/config/tips
 type: text/vnd.tiddlywiki
 
-Hello, welcome to tiddlywiki
+! Hello, welcome to tiddlywiki
+
+!! Tips
+
+You can press <kbd>alt h </kbd> find more shortkeys, and press <kbd>Ctrl K </kbd> to search contents
+
+<!-- maybe should use chinese -->
