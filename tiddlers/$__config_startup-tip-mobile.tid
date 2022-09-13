@@ -1,0 +1,9 @@
+created: 20220913022136161
+modified: 20220913022646745
+tags: $:/tags/StartupAction/PostRender
+title: $:/config/startup-tip-mobile
+type: text/vnd.tiddlywiki
+
+<$list filter="[{$:/info/url/protocol}prefix[https]]">
+<$action-sendmessage $message="tm-modal" $param="$:/config/tips" />
+</$list>
