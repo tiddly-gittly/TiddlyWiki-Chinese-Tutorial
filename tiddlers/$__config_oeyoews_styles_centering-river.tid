@@ -1,0 +1,19 @@
+created: 20220919005402205
+modified: 20220919005737991
+tags: $:/tags/Stylesheet
+title: $:/config/oeyoews/styles/centering-river
+type: text/vnd.tiddlywiki
+
+
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> 
+<$list filter="[{$:/state/sidebar}match[no]]">
+
+.tc-tiddler-frame {
+min-width: 900px;
+max-width: 60vw;
+margin-left: auto;
+margin-right: auto;
+}
+
+</$list>
+</$list>
