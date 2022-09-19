@@ -11,5 +11,8 @@
     "html-minifier-terser": "6.1.0",
     "uglify-js": "3.15.4",
     "workbox-cli": "6.5.3"
+  },
+  "dependencies": {
+    "tiddlywiki": "^5.2.3"
   }
 }
