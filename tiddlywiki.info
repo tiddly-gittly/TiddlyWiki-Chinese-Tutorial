@@ -1,6 +1,7 @@
 {
   "description": "太微中文教程",
   "plugins": [
+    "tiddlywiki/browser-sniff",
     "tiddlywiki/filesystem",
     "tiddlywiki/tiddlyweb",
     "tiddlywiki/pluginlibrary",
@@ -55,7 +56,7 @@
       "text/plain"
     ]
   },
-    "config": {
-        "retain-original-tiddler-path": true
-    }
+  "config": {
+    "retain-original-tiddler-path": true
+  }
 }
