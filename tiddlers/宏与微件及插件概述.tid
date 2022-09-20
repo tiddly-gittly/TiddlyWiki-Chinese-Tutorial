@@ -1,6 +1,6 @@
 created: 20220817024219376
 creator: Miao
-modified: 20220827121823128
+modified: 20220920134443152
 modifier: Miao
 tags: 使太微更易用
 title: 宏与微件及插件概述
@@ -124,21 +124,3 @@ type: text/vnd.tiddlywiki
 使用[[Gatha|https://talk.tiddlywiki.org/t/gatha-plugin-experimental-release/2272]]插件，可以直接在任何Wiki里把一些条目打包成插件。它也可以管理做到一半的插件的草稿。
 
 Gatha：https://talk.tiddlywiki.org/t/gatha-plugin-experimental-release/2272
-
-
-<br><br>
-
-!! 几个有趣的插件
-公式插件：http://chronicles.wiki/TiddlyWikiFormula/
-
-在底部显示annotation的功能插件,Refnotes：https://kookma.github.io/TW-Refnotes/
-
-http://newtids.tiddlyspot.com/，这个挺好用，如果你有一个列表title,想快速创建所有列表文本的tid用这个很爽。
-
-
-http://tw-tables.tiddlyspot.com/还有这个，这个是一个搜索和表格结合的示例，可以参考，我就是按他这个，把它里面的表格改成shiraz的，他这个用的是老版本的shiraz表格，如果用得用新表格的宏。
-
-[img[shiraz动态表格.jpg]]
-
-可以联动放到一个页面或者放侧边栏，跟有样式的列表和表格联动，我倾向于放在侧边栏。而且保留一些常用的筛选器放在侧边会很方便。
-

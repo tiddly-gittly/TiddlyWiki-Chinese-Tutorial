@@ -1,18 +1,71 @@
 created: 20220918140144677
 creator: Miao
 icon: 
-modified: 20220920104243507
+modified: 20220920134642939
 modifier: Miao
 tags: 资源链接
 title: 知识链-创建保存-插件列表
 type: text/vnd.tiddlywiki
 
-! TiddlyWiki新手必备信息（知识链、创建保存、插件列表）
+! TiddlyWiki新人小白必备信息（知识链、创建保存、插件列表）
 
 
 <<<
 适用于对tiddlywiki感兴趣并决定使用tiddlywiki的小伙伴
 <<<
+
+
+!! 知识链集合与箴言
+
+可以通过已有的例子（比如tiddlywiki xp中的实现）仿写学习或者实现自己需要的功能
+
+提问的智慧：[[提问的智慧（GitHub）|https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md]]
+
+# TiddlyWiki官网：https://tiddlywiki.com/
+# TiddlyWiki开发者文档：https://tiddlywiki.com/dev
+# 一个友好的TiddlyWiki指南https://oss.hintsnet.com/mirror/tiddlywiki.cn.html#HelloThere
+# TiddlyWiki XP快速体验指南：https://keatonlao.github.io/tiddlywiki-xp/
+# Grok TiddlyWiki:https://groktiddlywiki.com/read/  最强 Tiddlywiki 学习手册，没有之一
+
+# TiddlyWiki舞-基础文档简体中文教程：
+## https://bramchen.github.io/tw5-docs/zh-Hans/
+## http://tw5-zh-hans.tiddlyspot.com/
+
+# 太微中文教程——太微共建知识库
+## https://tw-cn.netlify.app/
+## https://tiddly-gittly.github.io/TiddlyWiki-Chinese-Tutorial/
+## https://tiddly-wiki-chinese-tutorial.vercel.app/
+# 太微思维知识导图：https://www.zhixi.com/view/70759713
+# 墨屉版太微：https://tiddlymemo.org/manual/zh-Hans
+# TiddlyWiki简易指南（教程）
+## 知乎文章：https://zhuanlan.zhihu.com/p/555893660
+## PDF版：https://github.com/Zacharia2/TWPUB-BOOK/releases/download/0.1.0/TiddlyWiki.PDF.pdf
+# 开始:桌面端浏览器中的太微
+## 知乎文章：https://zhuanlan.zhihu.com/p/560276936
+## 本站条目：[[开始:桌面端浏览器中的太微]]
+
+# TiddlyStow创建保存你的太微：https://twpub-book.netlify.app/tiddlystow.html
+# 墨屉共享书库：https://twpub-book.netlify.app/
+# TidGi介绍与下载链接：https://github.com/tiddly-gittly/TiddlyGit-Desktop
+# TiddlyWiki唯一官方讨论组：https://talk.tiddlywiki.org/
+# TiddlyWiki 单文件版在线升级：https://tiddlywiki.com/upgrade.html
+# 在线的创建并托管你的TiddlyWiki网站： https://tiddlyhost.com/sites
+
+# TiddlyWiki教学：https://roulesophy.github.io/20210102-tiddlywiki-tutorial-viewtemplate-header/
+# 林一二的模因和想法:https://onetwo.ren/wiki/
+
+# 中文实例
+## https://wiki.zhiheng.io/
+## https://meihaobiji.com/jiaoCheng-TiddlyWiki.html
+## https://rizi.me/
+
+# TiddlyWiki Link:https://links.tiddlywiki.com/ Tiddlywiki 官方的资源库，整合了社区绝大多数的资源，非常强大，英文
+# TiddlyWiki toolmap:https://dynalist.io/d/zUP-nIWu2FFoXH-oM7L7d9DM  来自社区的插件整合库，分门别类涵盖了绝大多数插件定制需求，英文
+# TiddlyWiki svg 素材库:http://fa5-free-svg.tiddlyspot.com/
+# 简单整合了 Roam Research 的双向链接方案:https://giffmex.org/stroll/stroll.html
+<br><br>
+
+
 
 
 !! 创建保存
@@ -31,6 +84,8 @@ type: text/vnd.tiddlywiki
 
 
 TiddlyStow:https://twpub-book.netlify.app/tiddlystow.html  
+
+TidGi介绍与下载链接：https://github.com/tiddly-gittly/TiddlyGit-Desktop
 
 NodeJS:[[如何启动一个NodeJS的TiddlyWiki项目]]
 
@@ -59,6 +114,8 @@ webdav服务器、系统与浏览器API、nodejs运行环境
 Termux的bash.bashrc文件位置：$PREFIX/etc/bash.bashrc
 Termux中手机内部存储位置：$HOME/storage/shared   
 [[在桌面端访问Termux终端]] 
+
+[[TiddlyWiki-XP Serving TW5 from Android|https://keatonlao.github.io/tiddlywiki-xp/#Serving%20TW5%20from%20Android]]
 """
 
 
@@ -66,38 +123,6 @@ Termux中手机内部存储位置：$HOME/storage/shared
 <br><br>
 
 
-
-!! 知识链集合与箴言
-
-可以通过已有的例子（比如tiddlywiki xp中的实现）仿写学习或者实现自己需要的功能
-
-提问的智慧：[[提问的智慧（GitHub）|https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md]]
-
-# TiddlyWiki官网：https://tiddlywiki.com/
-# TiddlyWiki开发者文档：https://tiddlywiki.com/dev
-# 一个友好的TiddlyWiki指南https://oss.hintsnet.com/mirror/tiddlywiki.cn.html#HelloThere
-# TiddlyWiki快速体验指南：https://keatonlao.github.io/tiddlywiki-xp/
-
-# TiddlyWiki舞-基础文档简体中文教程：
-## https://bramchen.github.io/tw5-docs/zh-Hans/
-## http://tw5-zh-hans.tiddlyspot.com/
-
-# 太微中文教程——太微共建知识库：https://tw-cn.netlify.app/
-# 太微思维知识导图：https://www.zhixi.com/view/70759713
-# 墨屉版太微：https://tiddlymemo.org/manual/zh-Hans
-# TiddlyWiki简易指南（教程）：https://zhuanlan.zhihu.com/p/555893660
-# 开始:桌面端浏览器中的太微：https://zhuanlan.zhihu.com/p/560276936
-
-# TiddlyStow创建保存你的太微：https://twpub-book.netlify.app/tiddlystow.html
-# 墨屉共享书库：https://twpub-book.netlify.app/
-# TidGi介绍与下载链接：https://github.com/tiddly-gittly/TiddlyGit-Desktop
-# TiddlyWiki唯一官方讨论组：https://talk.tiddlywiki.org/
-# TiddlyWiki 单文件版在线升级：https://tiddlywiki.com/upgrade.html
-# 在线的创建并托管你的TiddlyWiki网站： https://tiddlyhost.com/sites
-
-# TiddlyWiki教学：https://roulesophy.github.io/20210102-tiddlywiki-tutorial-viewtemplate-header/
-
-<br><br>
 
 
 !! 常用插件列表
@@ -116,6 +141,15 @@ Toggle,按钮类
 
 
 !!! 插件库	
+
+
+<<<
+Chinese Community Plugin太微中文社区插件源
+
+太微中文社区插件源是由太微(TiddlyWiki)中文社区维护的、致力于搜集网络上所有与 TiddlyWiki5 有关插件的、希望为中国以及全世界的太微用户提供一键安装、更新插件体验的公开插件源。
+<<<
+
+
 # Chinese Community Plugin：https://tw-cpl.netlify.app/
 # Kookma Plugin Library：https://kookma.github.io/TW-PluginLibrary/library/index.html
 # tobibeer
@@ -222,3 +256,21 @@ projectify
 !!! 导入导出	
 # 导入表格为条目 xlsx-utils
 # Markdown-Export
+
+
+!!! 有趣的插件组合
+
+公式插件：http://chronicles.wiki/TiddlyWikiFormula/
+
+在底部显示annotation的功能插件,
+
+Refnotes：https://kookma.github.io/TW-Refnotes/
+
+http://newtids.tiddlyspot.com/ 这个挺好用，如果你有一个列表title,想快速创建所有列表文本的tid用这个很爽。
+
+
+http://tw-tables.tiddlyspot.com/ 还有这个，这个是一个搜索和表格结合的示例，可以参考，我就是按他这个，把它里面的表格改成shiraz的，他这个用的是老版本的shiraz表格，如果用得用新表格的宏。
+
+[img[shiraz动态表格.jpg]]
+
+可以联动放到一个页面或者放侧边栏，跟有样式的列表和表格联动，我倾向于放在侧边栏。而且保留一些常用的筛选器放在侧边会很方便。
