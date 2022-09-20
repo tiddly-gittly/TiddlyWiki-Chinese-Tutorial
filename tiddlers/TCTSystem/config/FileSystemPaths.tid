@@ -1,0 +1,8 @@
+created: 20220920122423234
+modified: 20220920123709738
+tags: $:/plugins/linonetwo/sub-wiki/readme
+title: $:/config/FileSystemPaths
+type: text/vnd.tiddlywiki
+
+[prefix[$:/]removeprefix[$:/]addprefix[TCTSystem/]]
+[suffix[png]addprefix[TCTSystem/images/]]
