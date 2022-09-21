@@ -3,6 +3,7 @@ node_modules
 output
 public-dist
 $__StoryList.tid
+StoryList.tid
 settings/settings.json
 tiddlers/subwiki/
 
