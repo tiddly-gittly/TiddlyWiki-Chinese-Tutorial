@@ -1,0 +1,38 @@
+created: 20220919005402205
+modified: 20220923002749047
+tags: $:/tags/Stylesheet
+title: $:/config/oeyoews/styles/better-view
+type: text/vnd.tiddlywiki
+
+
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[no]match[no]]"> 
+<$list filter="[{$:/state/sidebar}match[no]]">
+
+@media (min-width:960px) {
+.tc-tiddler-frame {
+min-width: 960px;
+max-width: 60vw;
+margin-left: auto;
+margin-right: auto;
+}
+}
+
+</$list>
+</$list>
+
+.tc-tiddler-view-frame .tc-titlebar {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.tc-tiddler-view-frame .tc-titlebar span.tc-tiddler-controls {
+   flex: 1 0 max-content;
+   width: min-content;
+   text-align: right;
+}
+
+.tc-tiddler-view-frame .tc-titlebar span + span {
+   flex: 1 1 auto;
+}
