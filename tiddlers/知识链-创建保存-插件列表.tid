@@ -1,7 +1,7 @@
 created: 20220918140144677
 creator: Miao
 icon: 
-modified: 20220920134642939
+modified: 20220925052144583
 modifier: Miao
 tags: 资源链接
 title: 知识链-创建保存-插件列表
@@ -152,7 +152,7 @@ Chinese Community Plugin太微中文社区插件源
 
 # Chinese Community Plugin：https://tw-cpl.netlify.app/
 # Kookma Plugin Library：https://kookma.github.io/TW-PluginLibrary/library/index.html
-# tobibeer
+# tobibeer：http://tobibeer.github.io/tw5-plugins/#Welcome
 # Relink Library：https://flibbles.github.io/tw5-relink/library/index.html
 # Wikilabs Library (latest)：https://wikilabs.github.io/editions/pluginlibraryWL/library/latest/index.html
 
@@ -178,7 +178,7 @@ Chinese Community Plugin太微中文社区插件源
 # 回收站Trashbin
 # 自动下载修改后的Tiddlers（官方库）Save Trail
 # Section Editor：https://kookma.github.io/TW-Section/
-# 大纲编辑器steams
+# 大纲编辑器steams：https://saqimtiaz.github.io/streams/
 # 折叠subsume
 # 弹出appear
 # 创建学术文本 refnotes + bibtex
@@ -190,6 +190,10 @@ Chinese Community Plugin太微中文社区插件源
 # Section Editor
 # TiddlyWIki/Markdown
 # linonetwo/markdown-transformer插件
+# MegaMenu：https://jc-ose.github.io/MegaMenu/
+# 侧边编辑器sideeditor：http://sideeditor.tiddlyspot.com/
+
+
 
 
 # 音乐乐谱
@@ -199,7 +203,8 @@ Chinese Community Plugin太微中文社区插件源
 
 
 !!! 阅读	
-# epub转twpub
+# epub转twpub：https://github.com/Zacharia2/TWPUB-BOOK
+# TWPUB、Fishing
 # 目录插件page-toc
 # 脑图tidgraph
 # 链接弹出预览 preview glass
@@ -208,7 +213,6 @@ Chinese Community Plugin太微中文社区插件源
 # 播放幻灯片 tamasha
 # 仿浏览器条目栏tabstory
 # 图书追踪器 library tracker
-# TWPUB、Fishing
 # TiddlerSets：https://tiddlersets.tiddlyhost.com/TiddlerSets
 # inverse-link-and-folder，
 # Gk0Wk/page-toc，
