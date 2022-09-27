@@ -1,7 +1,7 @@
 created: 20220918140144677
 creator: Miao
 icon: 
-modified: 20220925052144583
+modified: 20220927083519924
 modifier: Miao
 tags: 资源链接
 title: 知识链-创建保存-插件列表
@@ -22,24 +22,31 @@ type: text/vnd.tiddlywiki
 提问的智慧：[[提问的智慧（GitHub）|https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md]]
 
 # TiddlyWiki官网：https://tiddlywiki.com/
+# 社群链接聚合器：https://links.tiddlywiki.org/
 # TiddlyWiki开发者文档：https://tiddlywiki.com/dev
 # 一个友好的TiddlyWiki指南https://oss.hintsnet.com/mirror/tiddlywiki.cn.html#HelloThere
 # TiddlyWiki XP快速体验指南：https://keatonlao.github.io/tiddlywiki-xp/
 # Grok TiddlyWiki:https://groktiddlywiki.com/read/  最强 Tiddlywiki 学习手册，没有之一
 
+
+
 # TiddlyWiki舞-基础文档简体中文教程：
 ## https://bramchen.github.io/tw5-docs/zh-Hans/
 ## http://tw5-zh-hans.tiddlyspot.com/
+## TiddlyWiki网页服务器：https://bramchen.github.io/tw5-docs/zh-Hans/#WebServer  运行于NodeJS，有关身份验证和授权的内容在这儿。
 
 # 太微中文教程——太微共建知识库
 ## https://tw-cn.netlify.app/
 ## https://tiddly-gittly.github.io/TiddlyWiki-Chinese-Tutorial/
 ## https://tiddly-wiki-chinese-tutorial.vercel.app/
+
 # 太微思维知识导图：https://www.zhixi.com/view/70759713
 # 墨屉版太微：https://tiddlymemo.org/manual/zh-Hans
+
 # TiddlyWiki简易指南（教程）
 ## 知乎文章：https://zhuanlan.zhihu.com/p/555893660
 ## PDF版：https://github.com/Zacharia2/TWPUB-BOOK/releases/download/0.1.0/TiddlyWiki.PDF.pdf
+
 # 开始:桌面端浏览器中的太微
 ## 知乎文章：https://zhuanlan.zhihu.com/p/560276936
 ## 本站条目：[[开始:桌面端浏览器中的太微]]
@@ -237,6 +244,7 @@ Chinese Community Plugin太微中文社区插件源
 # 左置开启标签页，xp/leftopentab，开启标签页将在浏览器左边单独显示。
 # Horizontal Story River（水平故事河）：https://crazko.github.io/krystal/
 # Tag词云：TiddlyTools/FilterGenerators/TagCloud
+# 卡片布局(用于短文的模式Muuri)：https://burningtreec.github.io/tiddlywiki-muuri/
 
 
 !!! 条目线索（目录、标签）	

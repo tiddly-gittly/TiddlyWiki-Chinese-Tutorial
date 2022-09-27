@@ -1,0 +1,24 @@
+created: 20220927081222671
+creator: Miao
+modified: 20220927081733838
+modifier: Miao
+tags: 如何保存
+title: NodeJS程序打包成EXE
+type: text/vnd.tiddlywiki
+
+# 安装pkg软件包
+
+<<<
+软件包项目地址：https://github.com/vercel/pkg
+<<<
+
+
+```sh
+npm install -g pkg
+```
+
+# 打包成可执行程序
+
+```sh
+pkg -t win 启动页.js
+```
