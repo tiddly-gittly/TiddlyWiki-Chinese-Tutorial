@@ -1,7 +1,7 @@
 created: 20220918140144677
 creator: Miao
 icon: 
-modified: 20220927083519924
+modified: 20220928045501859
 modifier: Miao
 tags: 资源链接
 title: 知识链-创建保存-插件列表
@@ -70,6 +70,8 @@ type: text/vnd.tiddlywiki
 # TiddlyWiki toolmap:https://dynalist.io/d/zUP-nIWu2FFoXH-oM7L7d9DM  来自社区的插件整合库，分门别类涵盖了绝大多数插件定制需求，英文
 # TiddlyWiki svg 素材库:http://fa5-free-svg.tiddlyspot.com/
 # 简单整合了 Roam Research 的双向链接方案:https://giffmex.org/stroll/stroll.html
+# tiddlywikis-collection：https://zhangaz1-pro.github.io/tiddlywikis-collection/
+
 <br><br>
 
 
@@ -165,7 +167,6 @@ Chinese Community Plugin太微中文社区插件源
 
 
 !!! 图形表格	
-# Tables 
 # 动态表格：tiddlytables：http://tiddlytables.tiddlyspot.com/
 # Shiraz（初学者工具包）：https://kookma.github.io/TW-Shiraz/ 太微整个笔记就是个互相关联的数据库，可以用 shiraz 插件里的 dynamic table 宏来可视化成多维表
 # Echarts：https://tiddly-gittly.github.io/tw-echarts/
@@ -227,6 +228,9 @@ Chinese Community Plugin太微中文社区插件源
 # RandomTiddlerButton：https://sonephetr2.github.io/
 # random：https://tobibeer.github.io/tw5-plugins/#random
 # tw5与anki：https://github.com/sobjornstad/TiddlyRemember
+# 条目加密（Encrypt Tiddler Plugin）
+## demo：https://danielorodriguez.com/TW5-EncryptTiddlerPlugin/
+## 主页：https://github.com/danielo515/TW5-EncryptTiddlerPlugin
 
 
 
