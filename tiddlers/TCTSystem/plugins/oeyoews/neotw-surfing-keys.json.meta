@@ -1,10 +1,13 @@
-created: 20220913005623222
+author: 
+core-version: 5.2.3
+dependents: 
 description: Some shortcuts
 list: readme
-modified: 20220913011740149
 name: Some shortcuts
-packaged-by: Gatha on 13th September 2022, 09:17:42
+packaged-by: Gatha on 20th September 2022, 17:09:56
+parent-plugin: 
 plugin-type: plugin
+source: 
 title: $:/plugins/oeyoews/neotw-surfing-keys
 type: application/json
 version: v0.2.2
