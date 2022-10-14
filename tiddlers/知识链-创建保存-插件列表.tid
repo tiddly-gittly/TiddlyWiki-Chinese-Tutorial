@@ -213,7 +213,7 @@ Chinese Community Plugin太微中文社区插件源
 !!! 阅读	
 # epub转twpub：https://github.com/Zacharia2/TWPUB-BOOK
 # TWPUB、Fishing
-# 目录插件page-toc
+# 目录插件Gk0Wk/page-toc
 # 脑图tidgraph
 # 链接弹出预览 preview glass
 # 调整侧边栏 siderbar resizer
@@ -223,7 +223,6 @@ Chinese Community Plugin太微中文社区插件源
 # 图书追踪器 library tracker
 # TiddlerSets：https://tiddlersets.tiddlyhost.com/TiddlerSets
 # inverse-link-and-folder，
-# Gk0Wk/page-toc，
 # ToC generic
 # RandomTiddlerButton：https://sonephetr2.github.io/
 # random：https://tobibeer.github.io/tw5-plugins/#random
@@ -252,7 +251,8 @@ Chinese Community Plugin太微中文社区插件源
 
 
 !!! 条目线索（目录、标签）	
-Locator：文件目录插件：https://tw-cn.netlify.app/#TW-Locator
+# Locator：文件目录插件：https://tw-cn.netlify.app/#TW-Locator
+# TiddlyTools网站中的时间工具：https://tiddlytools.com/timer.html  其中包括日历、时钟、计时器等等一些有趣的关于时间的工具。而且日历工具可以按时间日期显示条目。
 
 
 !!! 数据库	
@@ -264,7 +264,7 @@ projectify
 # Timimi电脑浏览器插件 +  Tiddloid + Onedrive
 # Syncthing 文件同步工具开源版（商业版：微力）
 # 图床插件：OSS Uploader
-# FileUploads，File Uploads: PUT应用WebDav 服务存储文件到本地或云端
+# WebDav 服务存储文件到本地或云端的两个插件：FileUploads，FileUploads: PUT  
 # tiddlystow ，timimi ，kopia。
 
 
