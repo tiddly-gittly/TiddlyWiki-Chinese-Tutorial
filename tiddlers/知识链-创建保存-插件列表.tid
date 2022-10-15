@@ -105,7 +105,7 @@ WebDav: WsgiDAV(python通过PIP安装或者MSI直接安装程序)，Rclone，IIS
 <br><br>
 
 
-''安卓移动服务器''
+''01、安卓移动服务器''
 
 """
 将手机作为知识库存储位置吧。  
@@ -113,12 +113,12 @@ WebDav: WsgiDAV(python通过PIP安装或者MSI直接安装程序)，Rclone，IIS
 安卓方案：WebDav_Server_Pro_1.17 + Tiddloid
 
 WebDav_Server_Pro_1.17安装使用简单
-支持太微文档列表 支持为太微在桌面创建快捷方式，支持备份、创建副本，支持其它设备通过浏览器、文件资源管理器和局域网访问，Tiddloid暂时不用，等待修复底部多余字符bug
+支持太微文档列表 支持为太微在桌面创建快捷方式，支持备份、创建副本，支持其它设备通过浏览器、文件资源管理器和局域网访问，你可以和Tiddloid配合使用，解锁高级功能。
 webdav服务器、系统与浏览器API、nodejs运行环境
 移动服务器、桌面服务器、网站服务器、云盘与同步
 
 
-''Termux与NodeJS''
+''02、Termux与NodeJS''
 
 Termux的bash.bashrc文件位置：$PREFIX/etc/bash.bashrc
 Termux中手机内部存储位置：$HOME/storage/shared   
