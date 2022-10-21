@@ -22,7 +22,7 @@ type: text/vnd.tiddlywiki
 |`tags` |	条目的标签清单 |
 |`type` |	条目的内容类型 |
 |`list` |条目的列表，指定一些条目的标题清单|
-|`caption` |显示于页签或按钮上的标题文字 |
+|`caption` |除非装了特殊的插件，或者你自己学会了方式来改，不然只显示title。 例如在tab里默认会显示条目的caption |
 
 
 
