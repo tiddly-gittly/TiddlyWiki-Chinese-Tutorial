@@ -180,7 +180,6 @@ Chinese Community Plugin太微中文社区插件源
 # mermaid-tw5：https://efurlanm.github.io/mermaid-tw5#HelloThere
 # TW-Timelines（时间线）：https://kookma.github.io/TW-Timelines/
 # Tidgraph：http://ihm4u.github.io/tw5plugs/#
-# PPT：https://kookma.github.io/TW-Tamasha/  ，cpl 搜 Tamasha 可以安装，就是提供了个宏
 
 
 !!! 编辑
@@ -192,16 +191,19 @@ Chinese Community Plugin太微中文社区插件源
 # 折叠subsume
 # 弹出appear
 # 创建学术文本 refnotes + bibtex
+## Refnotes在底部显示annotation的功能插件：https://kookma.github.io/TW-Refnotes/
+# 公式计算插件：http://chronicles.wiki/TiddlyWikiFormula/
 # 全部展开折叠categoryLists
 # 多列标签下拉列表 multi column tag dropdown：https://wikilabs.github.io/editions/multicol-dropdown/
 # ReLink：解决重新命名 Tiddler后链接更新的插件
 # 复制标题：oeyoews/copy-title，安装后在页面工具栏可以看到。
 # 高亮文本，xp/mark-button，安装后，在编辑条目时的编辑工具栏图标显示为一个马克笔。
-# Section Editor
+# 段落编辑：Section Editor
 # TiddlyWIki/Markdown
 # linonetwo/markdown-transformer插件
 # MegaMenu：https://jc-ose.github.io/MegaMenu/
 # 侧边编辑器sideeditor：http://sideeditor.tiddlyspot.com/
+# http://newtids.tiddlyspot.com/ 这个挺好用，如果你有一个列表title,想快速创建所有列表文本的tid用这个很爽。
 
 
 
@@ -220,7 +222,7 @@ Chinese Community Plugin太微中文社区插件源
 # 链接弹出预览 preview glass
 # 调整侧边栏 siderbar resizer
 # 仿浏览器网页栏 tabstory
-# 播放幻灯片 tamasha
+# PPT幻灯片（tamasha）：https://kookma.github.io/TW-Tamasha/  ，cpl 搜 Tamasha 可以安装，就是提供了个宏。
 # 仿浏览器条目栏tabstory
 # 图书追踪器 library tracker
 # TiddlerSets：https://tiddlersets.tiddlyhost.com/TiddlerSets
@@ -277,15 +279,6 @@ projectify
 
 
 !!! 有趣的插件组合
-
-公式插件：http://chronicles.wiki/TiddlyWikiFormula/
-
-在底部显示annotation的功能插件,
-
-Refnotes：https://kookma.github.io/TW-Refnotes/
-
-http://newtids.tiddlyspot.com/ 这个挺好用，如果你有一个列表title,想快速创建所有列表文本的tid用这个很爽。
-
 
 http://tw-tables.tiddlyspot.com/ 还有这个，这个是一个搜索和表格结合的示例，可以参考，我就是按他这个，把它里面的表格改成shiraz的，他这个用的是老版本的shiraz表格，如果用得用新表格的宏。
 
