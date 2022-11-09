@@ -1,0 +1,20 @@
+created: 20221109103303371
+creator: Miao
+modified: 20221109104824946
+modifier: Miao
+tags: 使太微更易用
+title: 删除未使用的图片
+type: text/vnd.tiddlywiki
+
+需要插件：Relink
+
+筛选器语法：[relink:orphans[]!is[system]is[image]]
+
+支持的引用：`[img[]]`、`<$link to=“”>`等等。
+
+不支持的引用：包含在宏中的任意WikiText、小部件等。
+
+说明：这个表达式可以筛选出未使用的非系统图片条目，你可以将公式输入到高级搜索（点击搜索图标或使用快捷键Ctrl+shift+A）中的筛选选项卡，即可得到结果，然后仔细确认，如果有不想删除的图片可以使用表达式排除。之后使用旁边的删除按钮删除筛选后的条目。
+
+在relink-2.1.4、relink field names-2.1.3、relink titles-2.1.3版本在中，如果在wiki中导入图像，并不能被relink正确的接收。你需要保存wiki并刷新浏览器然后再重新输入表达式才可以。这个问题与图像无关，作者说会先放一放，知道可以被解决。
+
