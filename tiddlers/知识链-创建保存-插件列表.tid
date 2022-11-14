@@ -1,7 +1,7 @@
 created: 20220918140144677
 creator: Miao
 icon: 
-modified: 20220928045501859
+modified: 20221114123120821
 modifier: Miao
 tags: 资源链接
 title: 知识链-创建保存-插件列表
@@ -73,6 +73,8 @@ type: text/vnd.tiddlywiki
 # TiddlyWiki svg 素材库:http://fa5-free-svg.tiddlyspot.com/
 # 简单整合了 Roam Research 的双向链接方案:https://giffmex.org/stroll/stroll.html
 # tiddlywikis-collection：https://zhangaz1-pro.github.io/tiddlywikis-collection/
+# 一个好看的tiddlywiki实例网站：https://rizi.me/
+# 这是一个新东西，用tiddlywiki来写那种剧情游戏还是其它，值得一看：http://snowgoon88.github.io/TW5-extendedit/index_5.1.13.html
 
 <br><br>
 
@@ -172,6 +174,7 @@ Chinese Community Plugin太微中文社区插件源
 
 !!! 图形表格	
 # 动态表格：tiddlytables：http://tiddlytables.tiddlyspot.com/
+# 表格table-dynamic:https://ooktech.com/jed/ExampleWikis/DynamicTables/
 # Shiraz（初学者工具包）：https://kookma.github.io/TW-Shiraz/ 太微整个笔记就是个互相关联的数据库，可以用 shiraz 插件里的 dynamic table 宏来可视化成多维表
 # Echarts：https://tiddly-gittly.github.io/tw-echarts/
 # TiddlyMap：http://tiddlymap.org/
@@ -206,14 +209,11 @@ Chinese Community Plugin太微中文社区插件源
 # MegaMenu：https://jc-ose.github.io/MegaMenu/
 # 侧边编辑器sideeditor：http://sideeditor.tiddlyspot.com/
 # http://newtids.tiddlyspot.com/ 这个挺好用，如果你有一个列表title,想快速创建所有列表文本的tid用这个很爽。
-
-
-
-
 # 音乐乐谱
 ## https://burningtreec.github.io/tw5-musicsheets/
 ## https://talk.tiddlywiki.org/t/musicsheets-a-new-release/154
 ## https://github.com/BurningTreeC/tw5-musicsheets
+# tw5-monaco（vscode的编辑器移植）
 
 
 !!! 阅读	
@@ -232,11 +232,12 @@ Chinese Community Plugin太微中文社区插件源
 # ToC generic
 # RandomTiddlerButton：https://sonephetr2.github.io/
 # random：https://tobibeer.github.io/tw5-plugins/#random
-# tw5与anki：https://github.com/sobjornstad/TiddlyRemember
+# tiddlyremember（tw5与anki）和anki结合，有闪卡、增强阅读、问答题等附在⽂章下⾯。：https://github.com/sobjornstad/TiddlyRemember
 # 条目加密（Encrypt Tiddler Plugin）
 ## demo：https://danielorodriguez.com/TW5-EncryptTiddlerPlugin/
 ## 主页：https://github.com/danielo515/TW5-EncryptTiddlerPlugin
 # 条目别名tw5插件：https://github.com/hfichtenberger/tiddlywiki-aliasplugin
+# 为tw加上rss：https://techlifeweb.com/tiddlywiki/tw5tribalknowledge/static/RSS%2520and%2520Atom%2520Feeds%2520for%2520your%2520TiddlyWiki.html
 
 
 !!! 筛选器	
@@ -272,6 +273,10 @@ projectify
 # 图床插件：OSS Uploader
 # WebDav 服务存储文件到本地或云端的两个插件：FileUploads，FileUploads: PUT  
 # tiddlystow ，timimi ，kopia。
+# widdler：https://github.com/qbit/widdler
+# savetrail：把改动存为json
+# TiddlyWiki-Server（Rust写的WebDav服务器）:https://github.com/nathanielknight/tiddly-wiki-server
+# zx-script：tid当作js执⾏，在tw中执⾏js，类似jupyter。https://talk.tiddlywiki.org/t/interactive-code-executing-in-tiddlygit-like-ipython-notebook/780
 
 
 
