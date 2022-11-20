@@ -75,6 +75,7 @@ type: text/vnd.tiddlywiki
 # tiddlywikis-collection：https://zhangaz1-pro.github.io/tiddlywikis-collection/
 # 一个好看的tiddlywiki实例网站：https://rizi.me/
 # 这是一个新东西，用tiddlywiki来写那种剧情游戏还是其它，值得一看：http://snowgoon88.github.io/TW5-extendedit/index_5.1.13.html
+# "RegExp in Tiddlywiki" 包含 Tiddlywiki 中的正则表达式的实际用例。正则表达式是一种使用字符串行来描述复杂搜索模式的方法。http://tw-regexp.tiddlyspot.com/ 
 
 <br><br>
 
