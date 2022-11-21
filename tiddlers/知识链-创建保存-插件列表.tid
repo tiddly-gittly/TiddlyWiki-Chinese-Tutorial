@@ -1,7 +1,7 @@
 created: 20220918140144677
 creator: Miao
 icon: 
-modified: 20221121084751043
+modified: 20221121091950953
 modifier: Miao
 tags: 资源链接
 title: 知识链-创建保存-插件列表
@@ -58,7 +58,7 @@ type: text/vnd.tiddlywiki
 # TidGi介绍与下载链接：https://github.com/tiddly-gittly/TiddlyGit-Desktop
 # TiddlyWiki唯一官方讨论组：https://talk.tiddlywiki.org/
 # TiddlyWiki 单文件版在线升级：https://tiddlywiki.com/upgrade.html
-# 在线的创建并托管你的TiddlyWiki网站： https://tiddlyhost.com/sites
+# 在线的创建并托管你的TiddlyWiki网站： https://tiddlyhost.com
 
 # TiddlyWiki教学：https://roulesophy.github.io/20210102-tiddlywiki-tutorial-viewtemplate-header/
 # 林一二的模因和想法:https://onetwo.ren/wiki/
@@ -91,15 +91,15 @@ type: text/vnd.tiddlywiki
 """
 
 <<<
-聚集，自由组合，因子
+因子，聚集，自由组合
 
 创建保存思维导图（在左上角）：https://www.zhixi.com/view/70759713
 <<<
 
-* PC（Windows、macOS、Linux）：[[TidGi|https://github.com/tiddly-gittly/TiddlyGit-Desktop]]、[[TiddlyDesktop|https://github.com/TiddlyWiki/TiddlyDesktop/releases]]、[[Timimi|https://ibnishak.github.io/Timimi/]]、[[TiddlyStow|https://twpub-book.netlify.app/tiddlystow.html]]、NodeJS
-* Android：[[Tiddloid|https://github.com/donmor/Tiddloid]] + WebDav_Server_Pro_1.17
-* IOS与IPad：Quine2、云服务器
-* 服务器：NodeJS、WebDav、TiddlyHost
+* PC（Windows、macOS、Linux）：[[TidGi|https://github.com/tiddly-gittly/TiddlyGit-Desktop]]、[[TiddlyDesktop|https://github.com/TiddlyWiki/TiddlyDesktop/releases]]、[[Timimi|https://ibnishak.github.io/Timimi/]]、[[TiddlyStow|https://twpub-book.netlify.app/tiddlystow.html]]、NodeJS（npm install -g tiddlywiki）
+* Android：[[Tiddloid|https://github.com/donmor/Tiddloid]] + [[WebDav_Server_Pro_1.17|https://zhuanlan.zhihu.com/p/543783107]]
+* IOS与IPad：Quine2、VPS（虚拟专用服务器）
+* VPS与服务器：NodeJS、WebDav、[[TiddlyHost|https://tiddlyhost.com]]
 
 
 NodeJS:[[如何启动一个NodeJS的TiddlyWiki项目]]
@@ -111,11 +111,10 @@ WebDav: WsgiDAV(python通过PIP安装或者MSI直接安装程序)，Rclone，IIS
 <br><br>
 
 
+"""
 ''01、安卓移动服务器''
 
-"""
 将手机作为知识库存储位置吧。  
-
 安卓方案：WebDav_Server_Pro_1.17 + Tiddloid
 
 WebDav_Server_Pro_1.17安装使用简单
@@ -129,8 +128,7 @@ webdav服务器、系统与浏览器API、nodejs运行环境
 Termux的bash.bashrc文件位置：$PREFIX/etc/bash.bashrc
 Termux中手机内部存储位置：$HOME/storage/shared   
 [[在桌面端访问Termux终端]] 
-
-[[TiddlyWiki-XP Serving TW5 from Android|https://keatonlao.github.io/tiddlywiki-xp/#Serving%20TW5%20from%20Android]]
+在Android中配置NodeJS：[[TiddlyWiki-XP Serving TW5 from Android|https://keatonlao.github.io/tiddlywiki-xp/#Serving%20TW5%20from%20Android]]
 """
 
 
@@ -271,8 +269,8 @@ projectify
 # TiddlyStow：https://twpub-book.netlify.app/tiddlystow.html
 # Timimi电脑浏览器插件 +  Tiddloid + Onedrive
 # Syncthing 文件同步工具开源版（商业版：微力）
-# 图床插件：OSS Uploader
-# WebDav 服务存储文件到本地或云端的两个插件：FileUploads，FileUploads: PUT  
+# 网络图床插件：OSS Uploader。
+# WebDav 服务存储文件到本地或云端的两个插件：FileUploads、FileUploads:PUT。
 # HtmlWiki三剑客：tiddlystow ，timimi ，kopia。
 # widdler：https://github.com/qbit/widdler
 # savetrail：把改动保存为json格式数据。
@@ -282,8 +280,8 @@ projectify
 
 
 !!! 导入导出	
-# 导入表格为条目 xlsx-utils
-# Markdown-Export
+# 导入表格：xlsx-utils
+# 导出为MD：Markdown-Export
 
 
 !!! 有趣的插件组合
