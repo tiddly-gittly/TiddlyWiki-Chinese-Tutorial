@@ -1,7 +1,7 @@
 created: 20220918140144677
 creator: Miao
 icon: 
-modified: 20221114123120821
+modified: 20221121084751043
 modifier: Miao
 tags: 资源链接
 title: 知识链-创建保存-插件列表
@@ -96,11 +96,11 @@ type: text/vnd.tiddlywiki
 创建保存思维导图（在左上角）：https://www.zhixi.com/view/70759713
 <<<
 
+* PC（Windows、macOS、Linux）：[[TidGi|https://github.com/tiddly-gittly/TiddlyGit-Desktop]]、[[TiddlyDesktop|https://github.com/TiddlyWiki/TiddlyDesktop/releases]]、[[Timimi|https://ibnishak.github.io/Timimi/]]、[[TiddlyStow|https://twpub-book.netlify.app/tiddlystow.html]]、NodeJS
+* Android：[[Tiddloid|https://github.com/donmor/Tiddloid]] + WebDav_Server_Pro_1.17
+* IOS与IPad：Quine2、云服务器
+* 服务器：NodeJS、WebDav、TiddlyHost
 
-
-TiddlyStow:https://twpub-book.netlify.app/tiddlystow.html  
-
-TidGi介绍与下载链接：https://github.com/tiddly-gittly/TiddlyGit-Desktop
 
 NodeJS:[[如何启动一个NodeJS的TiddlyWiki项目]]
 
@@ -147,12 +147,10 @@ Termux中手机内部存储位置：$HOME/storage/shared
 <<<
 插件要尤为注意插件之间的依赖关系
 
-Gatha（创建TiddlyWiki插件）
+Gatha（创建TiddlyWiki插件）、按钮类。
 
 * https://talk.tiddlywiki.org/t/gatha-plugin-experimental-release/2272
 * https://kookma.github.io/TW-Gatha/
-
-Toggle,按钮类
 <<<
 
 
@@ -216,6 +214,7 @@ Chinese Community Plugin太微中文社区插件源
 ## https://talk.tiddlywiki.org/t/musicsheets-a-new-release/154
 ## https://github.com/BurningTreeC/tw5-musicsheets
 # tw5-monaco（vscode的编辑器移植）
+# zx-script：tid当作js执⾏，在tw中执⾏js，类似jupyter。https://talk.tiddlywiki.org/t/interactive-code-executing-in-tiddlygit-like-ipython-notebook/780
 
 
 !!! 阅读	
@@ -274,11 +273,11 @@ projectify
 # Syncthing 文件同步工具开源版（商业版：微力）
 # 图床插件：OSS Uploader
 # WebDav 服务存储文件到本地或云端的两个插件：FileUploads，FileUploads: PUT  
-# tiddlystow ，timimi ，kopia。
+# HtmlWiki三剑客：tiddlystow ，timimi ，kopia。
 # widdler：https://github.com/qbit/widdler
-# savetrail：把改动存为json
-# TiddlyWiki-Server（Rust写的WebDav服务器）:https://github.com/nathanielknight/tiddly-wiki-server
-# zx-script：tid当作js执⾏，在tw中执⾏js，类似jupyter。https://talk.tiddlywiki.org/t/interactive-code-executing-in-tiddlygit-like-ipython-notebook/780
+# savetrail：把改动保存为json格式数据。
+# TiddlyWiki-Server（Rust写的WebDav服务器）： https://github.com/nathanielknight/tiddly-wiki-server
+# 备份软件：Kopia、Git。
 
 
 
