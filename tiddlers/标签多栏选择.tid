@@ -1,0 +1,23 @@
+created: 20221126024624402
+creator: WhiteFall
+modified: 20221126142108368
+modifier: WhiteFall
+tags: 使太微更易用
+title: 标签多栏选择
+type: text/vnd.tiddlywiki
+
+"""
+Author：马不前，TiddlyWiki XP
+Description：添加标签时的下拉列表由单栏变成多栏。
+依赖插件：无
+使用方法：复制内容到你的wiki，然后打上注明的标签。
+"""
+
+
+```
+标签：`$:/tags/Stylesheet`
+```
+
+<$let selected-tiddler="Multi-column-dropdown">
+	<$macrocall $name="code" language={{{[<selected-tiddler>get[type]]}}} src={{{[<selected-tiddler>get[text]]}}} caption={{{[<selected-tiddler>get[title]]}}} />
+</$let>

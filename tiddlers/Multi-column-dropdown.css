@@ -1,0 +1,52 @@
+\define sidebarbreakpoint()
+<$text text={{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}/>
+\end
+
+<pre>
+/*
+ * Multi-column-dropdown
+ * https://wikilabs.github.io/editions/multicol-dropdown/
+ * 对源代码做了修改（修复）：
+ * 1. 限制了下拉菜单及其背景颜色的作用域。（源代码改变了搜索下拉菜单的背景，且会造成主题的兼容性问题）
+ * 2. 对字段选择器下拉菜单的最大宽度做了限制，以获得更好的浏览体验。
+ */
+
+
+@media (min-width: <<sidebarbreakpoint>>) {
+
+  .tc-block-dropdown.tc-block-tags-dropdown,
+  .tc-block-dropdown.tc-edit-type-dropdown {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tc-block-tags-dropdown {
+    min-width: 900px;
+    <$reveal state="$:/palette" type="match" text="$:/palettes/Vanilla">
+    background-color: #eee;
+    </$reveal>
+    <$reveal default="yes" type="match" text={{{[{$:/_sq/Stories/Story2StoryList!!list}length[]match[0]then[no]] ~[{$:/config/_sq/Stories/story2}]}}}>
+    /* Compatible with $:/plugins/sq/Stories */
+    min-width: 460px;
+    margin-left: -45px;
+    </$reveal>
+  }
+
+  .tc-dropdown-item {
+    flex: 1 0 5%;
+  }
+
+  .tc-block-dropdown.tc-block-tags-dropdown a,
+  .tc-block-dropdown.tc-edit-type-dropdown a {
+    flex: 1 0 calc(15% / 1);
+  }
+
+  .tc-edit-type-dropdown {
+    max-width: 650px;
+    <$reveal state="$:/palette" type="match" text="$:/palettes/Vanilla">
+    background-color: #f5f5f5;
+    </$reveal>
+  }
+
+}
+</pre>

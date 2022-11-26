@@ -1,0 +1,95 @@
+apex_tag: Contents
+created: 20221126143044343
+creator: WhiteFall
+length_limit: 3
+list-after: $:/core/ui/ViewTemplate/title
+modified: 20221126143801240
+modifier: WhiteFall
+tags: 当前位置（Breadcrumbs）
+title: Tiddler Breadcrumbs Template
+type: text/vnd.tiddlywiki
+use_apex_tag: true
+
+\define yetAgain()
+<$reveal type='match' state='Tiddler Breadcrumbs Template!!use_apex_tag' text='true'>
+	<$reveal type='match' state='!!title' text={{Tiddler Breadcrumbs Template!!apex_tag}}>
+		<$link to=<<currentTiddler>>>
+			<$view field='title'/>
+		</$link>
+		> 
+		<$list filter=<<Extra>> emptyMessage=''>
+			... > 
+		</$list>
+		<$list filter="""$(End)$""">
+			<$link to=<<currentTiddler>>>
+				<$view field='title'/>
+			</$link>
+			> 
+		</$list>
+		<br>
+	</$reveal>
+</$reveal>
+<$reveal type='nomatch' state='Tiddler Breadcrumbs Template!!use_apex_tag' text='true'>
+	<$link to=<<currentTiddler>>>
+		<$view field='title'/>
+	</$link>
+	> 
+	<$list filter=<<Extra>> emptyMessage=''>
+			.. > 
+	</$list>
+	<$list filter="""$(End)$""">
+		<$link to=<<currentTiddler>>>
+			<$view field='title'/>
+		</$link>
+		> 
+	</$list>
+	<br>
+</$reveal>
+\end
+
+\define again()
+<$list filter=<<First>>>
+	<<yetAgain>>
+</$list>
+\end
+
+\define finalFilter()
+<$set name=First filter="""$(TheFilter)$ +[last[]]""">
+	<$set name=End filter="""$(TheFilter)$ +[butlast[]]  +[butfirst[]] +[first{Tiddler Breadcrumbs Template!!length_limit}] +[reverse[]]""">
+		<$set name=Extra filter="""$(TheFilter)$ +[butlast[]] +[butfirst[]] +[butfirst{Tiddler Breadcrumbs Template!!length_limit}] +[limit[1]]""" emptyValue='[is[system]!is[system]]'>
+			<<again>>
+		</$set>
+	</$set>
+</$set>
+\end
+
+\define breadcrumbsEmptyMessage()
+<$set name=TheFilter filter="""$(TheFilter)$ [<CurrentTag>]"""><<breadcrumbs>></$set>
+\end
+
+\define breadcrumbs()
+<$list filter='[<CurrentTag>tags[]] -[[$:/tags/SideBar]]' variable=CurrentTag emptyMessage=<<finalFilter>>>
+	<$list filter="""$(TheFilter)$ +[field:title<CurrentTag>]""" emptyMessage=<<breadcrumbsEmptyMessage>>>
+	</$list>
+</$list>
+\end
+
+<div style='width:100%'>
+<$reveal type='nomatch' state='$:/state/Global/ShowBreadcrumbs' text=true>
+	<$button class='tc-btn-invisible' set='$:/state/Global/ShowBreadcrumbs' setTo='true'>
+		{{$:/core/images/right-arrow}} 当前位置:
+	</$button>
+</$reveal>
+
+<$reveal type='match' state='$:/state/Global/ShowBreadcrumbs' text=true>
+	<$button class='tc-btn-invisible' set='$:/state/Global/ShowBreadcrumbs' setTo='false'>
+		{{$:/core/images/down-arrow}} 当前位置:
+	</$button><br>
+	<$set name=CurrentTag value={{!!title}}>
+		<$set name=TheFilter filter='[is[current]]'>
+			<<breadcrumbs>>
+		</$set>
+	</$set>
+	<hr color="#0081ff" size="0.7" noshade />
+</$reveal>
+</div>
