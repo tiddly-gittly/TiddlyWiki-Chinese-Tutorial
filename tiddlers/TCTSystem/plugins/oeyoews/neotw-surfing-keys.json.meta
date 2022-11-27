@@ -1,13 +1,11 @@
-author: 
+author: oeyoews
 core-version: 5.2.3
 dependents: 
-description: Some shortcuts
+description: Surfing On TiddlyWiki
 list: readme
-name: Some shortcuts
-packaged-by: Gatha on 20th September 2022, 17:09:56
-parent-plugin: 
+name: Surfing on TiddlyWiki
 plugin-type: plugin
 source: 
 title: $:/plugins/oeyoews/neotw-surfing-keys
 type: application/json
-version: v0.2.2
+version: v0.2.3

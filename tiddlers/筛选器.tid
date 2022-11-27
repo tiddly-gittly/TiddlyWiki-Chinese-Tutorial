@@ -1,6 +1,6 @@
 created: 20211003082407925
 creator: 林一二
-modified: 20220511080701713
+modified: 20221127072117340
 modifier: 林一二
 tags: 基础知识 入门幻灯片 筛选器表达式教程幻灯片
 title: 筛选器
@@ -32,13 +32,4 @@ type: text/vnd.tiddlywiki
 ** 运行逻辑由一个或多个[[逻辑步骤（Step）|https://bramchen.github.io/tw5-docs/zh-Hans/#Filter%20Step]]组成
 ** 运行逻辑前面可以加上[[+-=~等前置码（prefix）|https://bramchen.github.io/tw5-docs/zh-Hans/#Filter%20Expression]]
 
-!! 筛选器中使用变量
-
-* `[xxx]`就是指"xxx"字符串
-* `<xxx>`是指xxx变量
-* `{xxx}`是指xxx条目的text字段
-* `{xxx!!yyy}`是指xxx条目的yyy字段
-* `{!!yyy}`是指当前条目的yyy字段
-* `[<xxx>!match[]]`是判断当前变量存不存在
-
-详见[[变量在不同情况下的多种写法]]和[[嵌入在不同情况下的多种写法]]。
+高级用法详见[[宏变量筛选器嵌入连用]]。

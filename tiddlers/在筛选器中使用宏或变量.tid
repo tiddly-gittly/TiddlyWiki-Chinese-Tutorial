@@ -1,14 +1,21 @@
 created: 20220402072744122
 creator: 林一二
-modified: 20220402073403327
+modified: 20221127071643643
 modifier: 林一二
-tags: 宏 筛选器
+tags: 宏 筛选器 宏变量筛选器嵌入连用
 title: 在筛选器中使用宏或变量
 type: text/vnd.tiddlywiki
 
 根据[[筛选器参数-中文教程|https://bramchen.github.io/tw5-docs/zh-Hans/#Filter%20Parameter]]，筛选器操作符的参数可以是：
 
 软式 - 变量：`<like this>` 该参数是变量当前的值，角括号之间的文本为参数名称。
+
+* `[xxx]`就是指"xxx"字符串
+* `<xxx>`是指xxx变量
+* `{xxx}`是指xxx条目的text字段
+* `{xxx!!yyy}`是指xxx条目的yyy字段
+* `{!!yyy}`是指当前条目的yyy字段
+* `[<xxx>!match[]]`是判断当前变量存不存在
 
 简单来说，就是把原版宏两个的尖括号，变成一个就好。
 
