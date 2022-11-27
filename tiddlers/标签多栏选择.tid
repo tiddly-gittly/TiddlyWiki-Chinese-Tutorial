@@ -1,20 +1,20 @@
 created: 20221126024624402
 creator: WhiteFall
-modified: 20221126142108368
+modified: 20221127042148344
 modifier: WhiteFall
 tags: 使太微更易用
 title: 标签多栏选择
 type: text/vnd.tiddlywiki
 
-"""
-Author：马不前，TiddlyWiki XP
-Description：添加标签时的下拉列表由单栏变成多栏。
-依赖插件：无
-使用方法：复制内容到你的wiki，然后打上注明的标签。
-"""
+
+* Author：马不前，TiddlyWiki XP
+* 描述：添加标签时的下拉列表由单栏变成多栏。
+* 使用方法：复制内容到你的wiki，然后打上注明的标签。
+
 
 
 ```
+依赖插件：无
 标签：`$:/tags/Stylesheet`
 ```
 

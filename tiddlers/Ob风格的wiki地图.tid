@@ -1,0 +1,35 @@
+created: 20221127111232331
+creator: WhiteFall
+modified: 20221127112730429
+modifier: WhiteFall
+tags: 使太微更易用
+title: Ob风格的wiki地图
+type: text/vnd.tiddlywiki
+
+* Author：`WhiteFall`，[[Peter Hajas|https://github.com/peterhajas]]
+* 描述：Ob风格的wiki地图
+* 使用方法：来源：https://github.com/tiddly-gittly/tw-echarts/discussions/65 ，创建两个条目根据下列提示设置条目。
+
+
+```
+条目标题：BrainMap
+依赖插件：Gk0Wk/echarts
+条目类型：默认TiddlyWiki5
+```
+
+<$let selected-tiddler="BrainMap">
+	<$macrocall $name="code" language={{{[<selected-tiddler>get[type]]}}} src={{{[<selected-tiddler>get[text]]}}} caption={{{[<selected-tiddler>get[title]]}}} />
+</$let>
+
+
+```
+条目标题：ObMap.json
+依赖插件：Gk0Wk/echarts
+条目类型：默认TiddlyWiki5
+字段：
+	echarts-refresh-trigger:	[all[]get[modified]]
+```
+
+<$let selected-tiddler="ObMap.json">
+	<$macrocall $name="code" language={{{[<selected-tiddler>get[type]]}}} src={{{[<selected-tiddler>get[text]]}}} caption={{{[<selected-tiddler>get[title]]}}} />
+</$let>

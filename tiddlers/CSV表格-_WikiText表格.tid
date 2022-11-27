@@ -1,0 +1,24 @@
+created: 20221127113012830
+creator: WhiteFall
+modified: 20221127114153550
+modifier: WhiteFall
+tags: 使太微更易用
+title: CSV表格->WikiText表格
+type: text/vnd.tiddlywiki
+
+* Author：tobibeer
+* 描述：CSV表格粘贴转换为WikiText表格。
+* 使用方法：新建一个条目，按照下列提示内容创建条目。再新建一个条目，内容填`<$convertable/>`，然后保存。你将看到输入框和按钮，将CSV表格粘贴到输入框，点按钮即可转换为WikiText表格。
+
+
+```
+条目名称：tobibeer/convertable.js
+条目类型：application/javascript
+字段：
+	module-type: widget
+```
+
+
+<$let selected-tiddler="tobibeer/convertable.js">
+	<$macrocall $name="code" language={{{[<selected-tiddler>get[type]]}}} src={{{[<selected-tiddler>get[text]]}}} caption={{{[<selected-tiddler>get[title]]}}} />
+</$let>

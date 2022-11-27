@@ -1,0 +1,217 @@
+created: 20221127032926805
+creator: WhiteFall
+modified: 20221127110649641
+modifier: WhiteFall
+order: 3
+tags: 知识链-创建保存-插件列表
+title: 常用插件列表
+type: text/vnd.tiddlywiki
+
+<<<
+插件要尤为注意插件之间的依赖关系
+
+Gatha（创建TiddlyWiki插件）、按钮类。
+
+* https://talk.tiddlywiki.org/t/gatha-plugin-experimental-release/2272
+* https://kookma.github.io/TW-Gatha/
+<<<
+
+
+
+!!! 插件库	
+
+
+<<<
+Chinese Community Plugin太微中文社区插件源
+
+太微中文社区插件源是由太微(TiddlyWiki)中文社区维护的、致力于搜集网络上所有与 TiddlyWiki5 有关插件的、希望为中国以及全世界的太微用户提供一键安装、更新插件体验的公开插件源。
+
+符号❤️：表示推荐安装
+<<<
+
+
+# Chinese Community Plugin：https://tw-cpl.netlify.app/
+# Kookma Plugin Library：https://kookma.github.io/TW-PluginLibrary/library/index.html
+# tobibeer：http://tobibeer.github.io/tw5-plugins/#Welcome
+# Relink Library：https://flibbles.github.io/tw5-relink/library/index.html
+# Wikilabs Library (latest)：https://wikilabs.github.io/editions/pluginlibraryWL/library/latest/index.html
+
+
+!!! 图形表格	
+# ❤️动态表格：tiddlytables：http://tiddlytables.tiddlyspot.com/
+# 表格table-dynamic:https://ooktech.com/jed/ExampleWikis/DynamicTables/
+# ❤️Shiraz（初学者工具包）：https://kookma.github.io/TW-Shiraz/ 太微整个笔记就是个互相关联的数据库，可以用 shiraz 插件里的 dynamic table 宏来可视化成多维表
+# Echarts：https://tiddly-gittly.github.io/tw-echarts/
+# ❤️TiddlyMap：http://tiddlymap.org/
+# ❤️Graphviz plugin for tw5：图形描述语言，绘制结构化的图形网络，制作图表 （链接跳转语法：定理[URL="#定理"]  ）
+## https://github.com/chanilino/tw5viz
+## https://chanilino.github.io/tw5viz/tw5.html
+# tiddlywiki/railroad   铁路图插件
+# mermaid-tw5：https://efurlanm.github.io/mermaid-tw5#HelloThere
+# TW-Timelines（时间线）：https://kookma.github.io/TW-Timelines/
+# ❤️Tidgraph：http://ihm4u.github.io/tw5plugs/#
+
+
+!!! 编辑
+# 底部选项卡buttontabs：http://bottomtabs.tiddlyspot.com/
+# ❤️回收站Trashbin
+# 自动下载修改后的Tiddlers（官方库）Save Trail
+# Section Editor：https://kookma.github.io/TW-Section/
+# 大纲编辑器steams：https://saqimtiaz.github.io/streams/
+# 折叠subsume
+# 弹出appear
+# 创建学术文本 refnotes + bibtex
+## Refnotes在底部显示annotation的功能插件：https://kookma.github.io/TW-Refnotes/
+# 公式计算插件：http://chronicles.wiki/TiddlyWikiFormula/
+# 全部展开折叠categoryLists
+# 多列标签下拉列表 multi column tag dropdown：https://wikilabs.github.io/editions/multicol-dropdown/
+# ❤️ReLink：解决重新命名 Tiddler后链接更新的插件
+# ❤️复制标题：oeyoews/copy-title，安装后在页面工具栏可以看到。
+# ❤️高亮文本，xp/mark-button，安装后，在编辑条目时的编辑工具栏图标显示为一个马克笔。
+# 段落编辑：Section Editor
+# TiddlyWIki/Markdown
+# linonetwo/markdown-transformer插件
+# MegaMenu：https://jc-ose.github.io/MegaMenu/
+# 侧边编辑器sideeditor：http://sideeditor.tiddlyspot.com/
+# http://newtids.tiddlyspot.com/ 这个挺好用，如果你有一个列表title,想快速创建所有列表文本的tid用这个很爽。
+# 音乐乐谱
+## https://burningtreec.github.io/tw5-musicsheets/
+## https://talk.tiddlywiki.org/t/musicsheets-a-new-release/154
+## https://github.com/BurningTreeC/tw5-musicsheets
+# tw5-monaco（vscode的编辑器移植）
+# zx-script：tid当作js执⾏，在tw中执⾏js，类似jupyter。https://talk.tiddlywiki.org/t/interactive-code-executing-in-tiddlygit-like-ipython-notebook/780
+
+
+!!! 阅读	
+# epub转twpub：https://github.com/Zacharia2/TWPUB-BOOK
+# TWPUB、Fishing
+# 目录插件Gk0Wk/page-toc
+# 脑图tidgraph
+# 链接弹出预览 preview glass
+# 调整侧边栏 siderbar resizer
+# 仿浏览器网页栏 tabstory
+# ❤️PPT幻灯片（tamasha）：https://kookma.github.io/TW-Tamasha/  ，cpl 搜 Tamasha 可以安装，就是提供了个宏。
+# 仿浏览器条目栏tabstory
+# 图书追踪器 library tracker
+# TiddlerSets：https://tiddlersets.tiddlyhost.com/TiddlerSets
+# ❤️inverse-link-and-folder，双链插件。
+# ToC generic
+# RandomTiddlerButton：https://sonephetr2.github.io/
+# random：https://tobibeer.github.io/tw5-plugins/#random
+# tiddlyremember（tw5与anki）和anki结合，有闪卡、增强阅读、问答题等附在⽂章下⾯。：https://github.com/sobjornstad/TiddlyRemember
+# 条目加密（Encrypt Tiddler Plugin）
+## demo：https://danielorodriguez.com/TW5-EncryptTiddlerPlugin/
+## 主页：https://github.com/danielo515/TW5-EncryptTiddlerPlugin
+# 条目别名tw5插件：https://github.com/hfichtenberger/tiddlywiki-aliasplugin
+# 为tw加上rss：https://techlifeweb.com/tiddlywiki/tw5tribalknowledge/static/RSS%2520and%2520Atom%2520Feeds%2520for%2520your%2520TiddlyWiki.html
+
+
+!!! 筛选器	
+# ❤️kin-filter（递归地查找tiddler titles之间的隶属关系）
+# ❤️Tiddler Commander
+# ❤️内容搜索（context search）:danielo/context
+# random：https://tobibeer.github.io/tw5-plugins/#random
+# ❤️FilterBuilder条目：xp/Aggregation的FilterBuilder条目快速构建一个筛选表达式
+
+
+!!! 布局、样式与主题	
+# 字体管理FontManager：https://fontmanager.tiddlyhost.com/
+# 快捷菜单栏，tiddlywiki/menubar或者xp/quickbar，它可以适配移动端，使移动端更容易使用，在桌面端也是非常好的实用工具，建议安装。
+# 左置开启标签页，xp/leftopentab，开启标签页将在浏览器左边单独显示。
+# Horizontal Story River（水平故事河）：https://crazko.github.io/krystal/
+# Tag词云：TiddlyTools/FilterGenerators/TagCloud
+# 卡片布局(用于短文的模式Muuri)：https://burningtreec.github.io/tiddlywiki-muuri/
+
+
+!!! 条目线索（目录、标签）	
+# ❤️Locator：文件目录插件：https://tw-cn.netlify.app/#TW-Locator
+# TiddlyTools网站中的时间工具：https://tiddlytools.com/timer.html  其中包括日历、时钟、计时器等等一些有趣的关于时间的工具。而且日历工具可以按时间日期显示条目。
+
+
+!!! 数据库	
+projectify
+
+
+!!! 保存备份同步	
+# TiddlyStow：https://twpub-book.netlify.app/tiddlystow.html
+# Timimi电脑浏览器插件 +  Tiddloid + Onedrive
+# Syncthing 文件同步工具开源版（商业版：微力）
+# 网络图床插件：OSS Uploader。
+# WebDav 服务存储文件到本地或云端的两个插件：FileUploads、FileUploads:PUT。
+# HtmlWiki三剑客：tiddlystow ，timimi ，kopia。
+# widdler：https://github.com/qbit/widdler
+# savetrail：把改动保存为json格式数据。
+# TiddlyWiki-Server（Rust写的WebDav服务器）： https://github.com/nathanielknight/tiddly-wiki-server
+# 备份软件：Kopia、Git。
+
+
+
+!!! 导入导出	
+# 导入表格：xlsx-utils
+# 导出为MD：Markdown-Export
+
+!!! TidGi插件
+# bimlas/kin-filter（目录树选择筛选器）
+# dullroar/sitemap（网站地图：https://zhuanlan.zhihu.com/p/354920861）
+# linonetwo/github-external-image（使用GitHub作为你的图像存储，为所有图像添加_canonical_uri，指向raw,github。）
+# linonetwo/prevent-edit（这个插件主要是让在线部署后的 Wiki 不会弹出「有变动关闭网页前请保存」这样的对话框。）
+# linonetwo/preview-glass（修改tobibeer/preview插件，使其在鼠标移出链接时自动关闭。添加自定义样式，使其像玻璃一样。）
+# mat/field-value-selector（一个EditView模板，它在 "新字段 "区域下面添加了一个小箭头按钮。当你填入一个自定义字段名，然后点击这个按钮，你会得到一个下拉菜单，显示该字段名的所有现有字段值。）
+# tobibeer/appear（这个插件提供了$appear小组件，可以呈现弹出式窗口和滑块（内联或块）以及手风琴菜单。）
+# tiddlywiki/codemirror、codemirror-autocomplete、codemirror-closebrackets、codemirror-closetag、codemirror-keymap-sublime-text、codemirror-mode-css、codemirror-mode-htmlmixed、codemirror-mode-javascript、odemirror-mode-markdown、codemirror-mode-xml、codemirror-search-replace
+# Gk0Wk/TW5-CodeMirror-Enhanced（为TiddlyWiki的CodeMirror编辑器提供一个灵活而丰富的扩展框架(包括高亮、补全、预览等功能)，任何人都可以使用此框架为编辑器编写扩展插件！）
+# linonetwo/commandpalette
+# linonetwo/copy-on-select（当按住鼠标1秒时，将你在维基中选择的内容复制到剪贴板中。）
+# tiddlywiki/dynannotate（Dynannotate插件允许创建和显示文本内容的注释。依赖于Dynaview插件。）
+# tiddlywiki/dynaview
+# Gk0Wk/echarts（将强大的可视化工具 ECharts 以优雅的方式与 TiddlyWiki 相结合。）
+# wikilabs/edit-tabs（这个插件为每个标签添加了一个小链接图标。）
+# telmiger/EditorCounter（EditorCounter插件可以在编辑视图中显示单词和字符的计数器。在单页维基中，它可以在后台自动保存文本）
+# kookma/favorites（Favorites插件是一套用于在Tiddlywiki中创建收藏夹（书签）的工具。每个收藏夹项目都是一个Tiddler的快捷方式。收藏夹可以被组织在文件夹中。）
+# tiddlywiki/filesystem
+# oflg/fishing（可在[[墨屉手册|https://tiddlymemo.org/manual/zh-Hans]]查看安装使用教程。）
+# oflg/fishing-analysis
+# oflg/fishing-catchfish
+# oflg/fishing-zh-Hans
+# telmiger/HarveyBalls（哈维球是用于定性信息视觉交流的圆形表意文字。它们通常用于比较表，以表示某一特定项目符合某一标准的程度。）
+# tiddlywiki/highlight（这个插件使用Ivan Sagalaev的v9.18.1 highlight.js提供代码块的语法高亮。）
+# kookma/hsl（Highlight Selected Lines (HSL)）
+# felixhayashi/hotzone
+# linonetwo/inverse-link-and-folder（反向链接和文件夹）
+# linonetwo/itonnote
+# tiddlywiki/katex（这是一个用于数学和化学排版的TiddlyWiki插件。它是完全独立的，不需要互联网连接就能工作。它在浏览器和Node.js下都能工作。）
+# bimlas/locator（Locator提供了一个通用接口，用于在你的tiddlers之间进行导航和搜索，过滤它们，而不需要编写过滤表达式。该插件包含一个目录小部件和一个增强的搜索引擎，其中包含一个可视化的过滤器生成器，可以通过标签和字段值过滤结果。你可以将tiddlers组织成任何数量的树，甚至按自定义字段或文本中的链接。与经典的目录、标准搜索、过滤搜索和标签列表不同，这个插件有机地处理这些功能。）
+# linonetwo/tw-mobile-sync（手机应用 ↔ 桌面应用 ↔ 云端。本插件可以让你在基于NodeJS技术的桌面应用（例如太记）和基于HTML文件的手机端（例如Tiddloid安卓应用）之间同步数据。）
+# linonetwo/source-control-management（SCM、本插件利用暴露的自定义 API 实现：查看本地 NodeJS 版 TiddlyWiki 是否完全与 Github 备份云同步了。一键同步本地和云端。当点开 SCM 标签页的时候，会进行一次 git 环境检查，因为使用的 git 库 dugite 比较卡，所以只进行一次检查，如果需要刷新，需要来回切换一下 tab。）
+# Gk0Wk/notionpage-covericon（安装插件后，在每个tiddler的标题上方会有两个按钮(鼠标悬浮在上面就会显示)，分别用于添加图标(默认是emoji📒)和添加页面封面。点击图标就可以修改图标内容，点击修改封面就可以修改封面地址(可以是url或者tiddler标题)。）
+# linonetwo/open-in-external-app（Requiers TidGi，一个工具条按钮，用于在OS默认阅读器中打开PDF tiddler。）
+# linonetwo/opened-tiddlers-bar（这个插件提供了VSCode风格的 "已打开的Tiddlers "顶栏）
+# Gk0Wk/page-toc（利用条目的H1~H6标题为条目生成可导航的目录。没错，就是对单个条目生成的标题目录。而且目录是点击可导航的，就是说会滚动到标题所在的位置！）
+# linonetwo/pinyin-fuzzy-search（提供模糊搜索和拼音搜索的能力）
+# telmiger/PluginSize（这个插件可以计算所有已安装的插件的大小，包括主题和语言。）
+# linonetwo/sub-wiki
+# tiddlywiki/qrcode
+# linonetwo/tw-react
+# kookma/refnotes（Refnotes是一个Tiddlywiki插件，用于创建和管理脚注、缩略语、引文和参考文献。Refnotes可以创建书目，但为了获得最佳性能，以及使用导入bibtex条目，需要使用官方bibtex导入器插件。）
+# flibbles/relink（当重命名一个tiddler时，Relink可以更新所有其他tiddler的字段、过滤器和小工具。）
+# flibbles/relink-markdown（对Relink的Markdown支持。）
+# flibbles/relink-titles（用来自重新链接的tiddler的标题重命名tiddlers）
+# linonetwo/service-worker（使用service worker来缓存内容，使其即使在离线状态下也能工作，并且可以作为一个App添加到桌面。安装后，你必须将你的维基发布为一个HTTPS网站，以使其发挥作用。）
+# kookma/shiraz（Shiraz是一个由样式表、模板和宏组成的小框架，用于在Tiddlywiki中创建时尚内容。Shiraz具有自定义的元素，如警报、卡片、面板、图像、静态表格、动态表格、快速表格、徽章、文本等。）
+# Gk0Wk/sidebar-resizer（会在侧边栏的左侧边缘添加一个可拖动的边框，当鼠标移动到左侧边缘时会看到这个边框。拖动这个边框可以改变侧边栏的宽度，拖动到靠近窗口右侧边缘时就会自动收起侧边栏。）
+# linonetwo/slate-write（所见即所得辑模式插件）
+# kookma/solution
+# linonetwo/template-list（在新建条目时展示一系列可用模板）
+# kookma/commander（简而言之，Commander是一个对tiddlers进行批量操作的独特工具。）
+# tiddlywiki/tiddlyweb（这个插件在浏览器中运行，以同步TiddlyWeb兼容的服务器（包括TiddlyWiki 5本身，在Node.js上运行）的tiddler变化。在Node.js下运行时，它是惰性的。由于该插件提供了与服务器同步设置的机制，所以通过浏览器禁用该插件不能被撤销。）
+# kookma/todolist（用于创建todo列表和间隙性日记。）
+# kookma/utility（这个实用插件的目的是为作者提供一套工具。这些工具包括：简单的跨页，显示tiddlers的原始内容，读者模式，wikitext宏，在视图模式下显示字段，linkify，代码，docit，以及更多的工具。）
+# linonetwo/zx-script（在tw中执⾏js，类似jupyter）
+
+!!! 有趣的插件组合
+
+http://tw-tables.tiddlyspot.com/ 还有这个，这个是一个搜索和表格结合的示例，可以参考，我就是按他这个，把它里面的表格改成shiraz的，他这个用的是老版本的shiraz表格，如果用得用新表格的宏。
+
+[img[shiraz动态表格.jpg]]
+
+可以联动放到一个页面或者放侧边栏，跟有样式的列表和表格联动，我倾向于放在侧边栏。而且保留一些常用的筛选器放在侧边会很方便。

@@ -1,6 +1,6 @@
 created: 20220815034705508
 creator: Miao
-modified: 20221126145940873
+modified: 20221127111517477
 modifier: WhiteFall
 tags: 欢迎来到太微！
 title: 使太微更易用
@@ -13,29 +13,33 @@ type: text/vnd.tiddlywiki
 
 
 !! 【条目集】
-是为了收集并分享条目卡片，这些卡片通常是用户积累的条目组合（使用）方式或快速小工具。我们将在一个条目中为你介绍功能与使用方法。你需要做的只是复制粘贴到你的wiki中，修改三两字，然后就可以在你的wiki中应用了。
+是为了收集并分享条目卡片，这些卡片通常是用户积累的条目组合（使用）技巧或便捷小工具，类似印象笔记的知识模板、Notion的笔记模板。我们将在一个条目中为你介绍功能与使用方法。你需要做的只是复制粘贴到你的wiki中，修改三两字，然后就可以应用在你的wiki中了。
 
 这些条目卡片包括但不局限于：快速导入CSV表格、自定义标签多栏选择、应用于每个条目的条目模板、知识条目的管理卡片，自动归类的卡片等等。<br><br>
 
 
-每个条目卡片大约由不大于三个条目组成，它们的格式大致如下，你需要认真填写每一个位置。
+每个条目卡片大约由不多于三个条目组成，它们的格式大致如下，你需要认真填写每一个位置。
 
 ---
 
-* Author：`author`
-* Description：卡片条目介绍
-* 依赖插件：插件A、插件B
+* Author：`Second Author`，`First author`
+* 描述：卡片条目介绍
 * 使用方法：xxxxxxxx
 
 
 ```
-条目标题：`XXX（任意）
-标签：`$:/XXX`、`$:/XXX`
-条目类型：XXX
+条目标题：XXX（任意）
+依赖插件：Plugin A，Plugin B
+标签：$:/XXX/XXX、$:/XXX/XXX
+条目类型：XXXX/XXXXXXX
 字段：
 	字段名：字段值
 ```
 
 ```
 功能卡片内容：通常为对宏、小部件、以及JS模块的封装
+
+<$let selected-tiddler="条目名">
+	<$macrocall $name="code" language={{{[<selected-tiddler>get[type]]}}} src={{{[<selected-tiddler>get[text]]}}} caption={{{[<selected-tiddler>get[title]]}}} />
+</$let>
 ```

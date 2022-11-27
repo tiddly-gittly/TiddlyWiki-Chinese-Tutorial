@@ -1,0 +1,28 @@
+created: 20221127114258528
+creator: WhiteFall
+modified: 20221127115306159
+modifier: WhiteFall
+tags: 使太微更易用
+title: 语词集（主题）
+type: text/vnd.tiddlywiki
+
+* Author：WhiteFall
+* 描述：仅需要打上标签A就可以自动收集Tiddlers到一个条目卡片中。
+* 使用方法：修改filter="[tag[日志]]"中的“日志”标签为你需要的标签。然后无论在什么地方创建一个条目，只需要为该条目打上此标签，就可以自动收集到 语词集（主题）卡片中。__主题__ 意味着以某个中心，比如日志为中心聚集并显示的语词集。
+
+
+```
+条目标题：语词集（主题）
+条目类型：默认TiddlyWiki5
+```
+
+```html
+<$list filter="[tag[主题]]">
+
+---
+!!! <$link><<currentTiddler>></$link>
+
+ {{!!text}}
+
+</$list>
+```
