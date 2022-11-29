@@ -1,6 +1,6 @@
 created: 20221127032909691
 creator: WhiteFall
-modified: 20221127041012486
+modified: 20221129055216072
 modifier: WhiteFall
 order: 2
 tags: 知识链-创建保存-插件列表
@@ -20,15 +20,15 @@ type: text/vnd.tiddlywiki
 创建保存思维导图（在左上角）：https://www.zhixi.com/view/70759713
 <<<
 
-* PC（Windows、macOS、Linux）：[[TidGi|https://github.com/tiddly-gittly/TiddlyGit-Desktop]]、[[TiddlyDesktop|https://github.com/TiddlyWiki/TiddlyDesktop/releases]]、[[Timimi|https://ibnishak.github.io/Timimi/]]、[[TiddlyStow|https://twpub-book.netlify.app/tiddlystow.html]]、NodeJS（npm install -g tiddlywiki）
+* PC（Windows、macOS、Linux）：[[TidGi|https://github.com/tiddly-gittly/TiddlyGit-Desktop]]、[[TiddlyDesktop|https://github.com/TiddlyWiki/TiddlyDesktop/releases]]、[[Timimi|https://ibnishak.github.io/Timimi/]]、[[TiddlyStow|https://twpub-book.netlify.app/tiddlystow.html]]、[[NodeJS|https://nodejs.org/zh-cn/]]
 * Android：[[Tiddloid|https://github.com/donmor/Tiddloid]] + [[WebDav_Server_Pro_1.17|https://zhuanlan.zhihu.com/p/543783107]]
 * IOS与IPad：Quine2、VPS（虚拟专用服务器）
-* VPS与服务器：NodeJS、WebDav、[[TiddlyHost|https://tiddlyhost.com]]
-
+* VPS与服务器：[[NodeJS|https://nodejs.org/zh-cn/]]、WebDav、[[TiddlyHost|https://tiddlyhost.com]]
+* [[GitHub桌面版|https://desktop.github.com/]]、[[Git分布式版本控制系统|https://git-scm.com/]]、[[TidGi默认Wiki知识库模板（GitHub）|https://github.com/tiddly-gittly/Tiddlywiki-NodeJS-Github-Template]]
 
 NodeJS:[[如何启动一个NodeJS的TiddlyWiki项目]]
 
-WebDav: WsgiDAV(python通过PIP安装或者MSI直接安装程序)，Rclone，IIS WebDav
+WebDav: WsgiDAV(python通过PIP安装或者MSI安装程序)，Rclone，IIS WebDav
 
 [[HTML与文件夹的转换]]:tiddlywiki单文件可以解压后提供给nodejs，TidGi使用
 

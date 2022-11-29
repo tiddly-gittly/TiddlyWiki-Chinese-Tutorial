@@ -1,13 +1,13 @@
 created: 20221126142954151
 creator: WhiteFall
-modified: 20221127042134090
+modified: 20221128133441162
 modifier: WhiteFall
 tags: 使太微更易用
 title: 当前位置（Breadcrumbs）
 type: text/vnd.tiddlywiki
 
 
-* Author：WhiteFall
+* Author：
 * 描述：Tiddler Breadcrumbs Template条目名称可以更改，但更改时需要连带修改条目内容中的具有相同名称的字段。apex_tag字段表示虚拟目录树的根目录（起始目录），例如太记中的Index或者太微中文教程的首页。length_limit表示显示的目录深度。如果一个条目有多个标签的话（属于多个目录）就会显示多个路径。
 * 使用方法：第一种，你可以拖放Tiddler Breadcrumbs Template条目到你的wiki，然后钉上标注的标签即可；第二种，复制标题、字段与内容，到你的wiki中，确保无误之后然后保存。最后根据''描述''修改字段，使条目为你工作。
 

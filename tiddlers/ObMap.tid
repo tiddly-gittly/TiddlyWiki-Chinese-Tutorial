@@ -1,3 +1,12 @@
+created: 20221127112033587
+creator: WhiteFall
+echarts-refresh-trigger: [all[]get[modified]]
+modified: 20221129100104409
+modifier: WhiteFall
+tags: Ob风格的wiki地图
+title: ObMap.json
+type: text/vnd.tiddlywiki
+
 {
   "tooltip": {
     "trigger": "item"
@@ -16,7 +25,7 @@
 <$list>
 {"name": "<<currentTiddler>>"},
 </$list>
-      {"name": "___" }
+      {"name": "🍀🎉" }
     ],
     "force": {
       "edgeLength": 25,
