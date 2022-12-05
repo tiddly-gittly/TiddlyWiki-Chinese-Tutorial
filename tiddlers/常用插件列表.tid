@@ -1,6 +1,6 @@
 created: 20221127032926805
 creator: WhiteFall
-modified: 20221129101931014
+modified: 20221201013035731
 modifier: WhiteFall
 order: 3
 tags: 知识链-创建保存-插件列表
@@ -220,7 +220,7 @@ projectify
 # Gk0Wk/page-toc（利用条目的H1~H6标题为条目生成可导航的目录。没错，就是对单个条目生成的标题目录。而且目录是点击可导航的，就是说会滚动到标题所在的位置！）
 
 # telmiger/PluginSize（这个插件可以计算所有已安装的插件的大小，包括主题和语言。）
-# telmiger/HarveyBalls（哈维球是用于定性信息视觉交流的圆形表意文字。它们通常用于比较表，以表示某一特定项目符合某一标准的程度。）
+# telmiger/HarveyBalls（哈维球：百分比计划圆形表意文字。PluginSize插件会用到它。哈维球是用于定性信息视觉交流的圆形表意文字。它们通常用于比较表，以表示某一特定项目符合某一标准的程度。）
 # telmiger/EditorCounter（EditorCounter插件可以在编辑视图中显示单词和字符的计数器。在单页维基中，它可以在后台自动保存文本）
 
 
