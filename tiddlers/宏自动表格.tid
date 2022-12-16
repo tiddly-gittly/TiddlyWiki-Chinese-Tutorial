@@ -6,7 +6,7 @@ field3: full_name
 field4: link
 filteritem: title
 filtertag: 表格字段
-modified: 20221216034104838
+modified: 20221216060955386
 modifier: WhiteFall
 notitem: 
 sortby: last_name
@@ -21,106 +21,134 @@ type: text/vnd.tiddlywiki
 
 \define FieldChoice(name:"title")
 <$select field=$name$ default='title'>
-<option value="">none</option>
-<$set name="currentTiddler" value="FieldsData">
-<$list filter="[all[current]indexes[]]" variable="fieldName">
-<option value=<<fieldName>>>
-<$macrocall $name="FieldThing" name=<<fieldName>> />
-</option>
-</$list>
-</$set>
+    <option value="">none</option>
+    <$set name="currentTiddler" value="FieldsData">
+        <$list filter="[all[current]indexes[]]" variable="fieldName">
+            <option value=<<fieldName>>>
+                <$macrocall $name="FieldThing" name=<<fieldName>> />
+            </option>
+        </$list>
+    </$set>
 </$select>
 \end
 
 <style>
-.styled-select { overflow: hidden; }
-.styled-select select { -moz-appearance: none; -webkit-appearance: none;
-background-color:<<colour table-header-background>>; font-size: 14px; border:0px;}
-.styled-input {border: none;  border-color: transparent;}
-.noborder, .noborder td { border-width:0px; background-color:<<colour background>>
+    .styled-select {
+        overflow: hidden;
+    }
+
+    .styled-select select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        background-color: <<colour table-header-background>>;
+        font-size: 14px;
+        border: 0px;
+    }
+
+    .styled-input {
+        border: none;
+        border-color: transparent;
+    }
+
+    .noborder,
+    .noborder td {
+        border-width: 0px;
+        background-color: <<colour background>>
 </style>
 
 <div class="styled-select">
-<table class="noborder">
-<tr>
-<td>
-搜索: <$edit-text tiddler="$:/config/Manager/Filter" tag="input" default="" placeholder={{$:/language/Manager/Controls/Search/Placeholder}}/>
-</td>
-<td>
-Sort by: 
-<<FieldChoice sortby>>
-</td>
-<td>
-<$checkbox field="sortdir" checked="reverse" unchecked="forward" default="forward"> Descending</$checkbox>
-</td>
-</tr>
-<tr>
-<td>
-Must Have: 
-<<FieldChoice filteritem>>
-</td>
-<td>
-Must NOT Have: 
-<<FieldChoice notitem>>
-</td>
-<td>
-Required Tag 
-<$select  field="filtertag" default="">
-<option value="">none</option>
-<$list filter="[tags[]!is[system]sort[title]]" variable="tag">
-<option value=<<tag>>><$text text=<<tag>>/></option>
-</$list>
-</$select>
-</td>
-</tr>
-</table>
+    <table class="noborder">
+        <tr>
+            <td>
+                搜索: <$edit-text tiddler="$:/config/Manager/Filter" tag="input" default="" placeholder={{$:/language/Manager/Controls/Search/Placeholder}} />
+            </td>
+            <td>
+                Sort by: <<FieldChoice sortby>>
+            </td>
+            <td>
+                <$checkbox field="sortdir" checked="reverse" unchecked="forward" default="forward"> Descending </$checkbox>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Must Have: <<FieldChoice filteritem>>
+            </td>
+            <td>
+                Must NOT Have: <<FieldChoice notitem>>
+            </td>
+            <td>
+                Required Tag
+                <$select field="filtertag" default="">
+                    <option value="">none</option>
+                    <$list filter="[tags[]!is[system]sort[title]]" variable="tag">
+                        <option value=<<tag>>><$text text=<<tag>>/></option>
+                    </$list>
+                </$select>
+            </td>
+        </tr>
+    </table>
 
-<$set name="var1" value={{!!field1}}>
-<$set name="var2" value={{!!field2}}>
-<$set name="var3" value={{!!field3}}>
-<$set name="var4" value={{!!field4}}>
-<table id="myTable2">
-<tr>
-<th>Title</th>
-<th>
-<<FieldChoice field1>>
-</th>
-<th>
-<<FieldChoice field2>>
-</th>
-<th>
-<<FieldChoice field3>>
-</th>
-<th>
-<<FieldChoice field4>>
-</th>
-</tr>
-<$list filter="[!is[system]!is[shadow]has{!!filteritem}!has{!!notitem}search{$:/config/Manager/Filter}tag:strict{!!filtertag}sort{!!sortby}order{!!sortdir}]">
-<tr>
-<td>
-<$link>{{!!title}}</$link>
-</td>
-<td>
-<$edit-text class="styled-input" tiddler=<<ThisTiddler>> field=<<var1>>/>
-</td>
-<td>
-<$edit-text class="styled-input" tiddler=<<ThisTiddler>> field=<<var2>>/>
-</td>
-<td>
-<$edit-text class="styled-input" tiddler=<<ThisTiddler>> field=<<var3>>/>
-</td>
-<td>
-<$edit-text class="styled-input" tiddler=<<ThisTiddler>> field=<<var4>>/>
-</td>
-</tr>
-</$list>
-<tr><td>count</td><td><<ColumnCalc myTable2 count 2 -1 all>></td><td><<ColumnCalc myTable2 count 2 -1 all>></td><td><<ColumnCalc myTable2 count 2 -1 all>></td><td><<ColumnCalc myTable2 count 2 -1 all>></td></tr>
+    <$set name="var1" value={{!!field1}}>
+        <$set name="var2" value={{!!field2}}>
+            <$set name="var3" value={{!!field3}}>
+                <$set name="var4" value={{!!field4}}>
+                    <table id="myTable2">
+                        <tr>
+                            <th>Title</th>
+                            <th>
+                                <<FieldChoice field1>>
+                            </th>
+                            <th>
+                                <<FieldChoice field2>>
+                            </th>
+                            <th>
+                                <<FieldChoice field3>>
+                            </th>
+                            <th>
+                                <<FieldChoice field4>>
+                            </th>
+                        </tr>
+                        <$list
+                            filter="[!is[system]!is[shadow]has{!!filteritem}!has{!!notitem}search{$:/config/Manager/Filter}tag:strict{!!filtertag}sort{!!sortby}order{!!sortdir}]">
+                            <tr>
+                                <td>
+                                    <$link>{{!!title}}</$link>
+                                </td>
+                                <td>
+                                    <$edit-text class="styled-input" tiddler=<<ThisTiddler>> field=<<var1>>/>
+                                </td>
+                                <td>
+                                    <$edit-text class="styled-input" tiddler=<<ThisTiddler>> field=<<var2>>/>
+                                </td>
+                                <td>
+                                    <$edit-text class="styled-input" tiddler=<<ThisTiddler>> field=<<var3>>/>
+                                </td>
+                                <td>
+                                    <$edit-text class="styled-input" tiddler=<<ThisTiddler>> field=<<var4>>/>
+                                </td>
+                            </tr>
+                        </$list>
+                        <tr>
+                            <td>count</td>
+                            <td>
+                                <<ColumnCalc myTable2 count 2 -1 all>>
+                            </td>
+                            <td>
+                                <<ColumnCalc myTable2 count 2 -1 all>>
+                            </td>
+                            <td>
+                                <<ColumnCalc myTable2 count 2 -1 all>>
+                            </td>
+                            <td>
+                                <<ColumnCalc myTable2 count 2 -1 all>>
+                            </td>
+                        </tr>
 
-</table>
-</$set>
-</$set>
-</$set>
-</$set>
+                    </table>
+                </$set>
+            </$set>
+        </$set>
+    </$set>
 </div>
 
 条目总数: <$list filter="[!is[system]!is[shadow]has{!!filteritem}!has{!!notitem}search{$:/config/Manager/Filter}tag:strict{!!filtertag}sort{!!sortby}order{!!sortdir}count[]]"/>

@@ -1,6 +1,6 @@
 created: 20221216015655721
 creator: WhiteFall
-modified: 20221216051200460
+modified: 20221216061148417
 modifier: WhiteFall
 tags: 使太微更易用 笔记思维 条目集
 title: 宏定义表格
@@ -14,5 +14,5 @@ type: text/vnd.tiddlywiki
 
 
 <$let selected-tiddler="宏自动表格">
-	<$macrocall $name="code" language={{{[<selected-tiddler>get[type]]}}} src={{{[<selected-tiddler>get[text]]}}} caption={{{[<selected-tiddler>get[title]]}}} />
+	<$macrocall $name="code" language="html" src={{{[<selected-tiddler>get[text]]}}} caption={{{[<selected-tiddler>get[title]]}}} />
 </$let>
