@@ -1,0 +1,31 @@
+created: 20221216014602538
+creator: WhiteFall
+modified: 20221216014908202
+modifier: WhiteFall
+tags: 目录导航栏 $:/tags/Macro
+title: tabs加强版
+type: text/vnd.tiddlywiki
+
+\define navx(tag,sort:"",selectedTiddler:"$:/temp/toc/selectedTiddler",unselectedText,missingText,template:"")
+\whitespace trim
+<$tiddler tiddler={{{ [<__selectedTiddler__>get[text]] }}}>
+  <div class="tc-tabbed-table-of-contents">
+    <$linkcatcher to=<<__selectedTiddler__>>>
+      <div class="tc-table-of-contents">
+        <$macrocall $name="toc-selective-expandable" tag=<<__tag__>> sort=<<__sort__>> itemClassFilter="[all[current]] -[<__selectedTiddler__>get[text]]"/></div>
+    </$linkcatcher>
+    <div class="tc-tabbed-table-of-contents-content">
+      <$reveal stateTitle=<<__selectedTiddler__>> type="nomatch" text="">
+        <$transclude mode="block" tiddler=<<__template__>>>
+          <h1><$link><<toc-caption>></$link></h1>
+          <$transclude mode="block">$missingText$</$transclude>
+          <<tabs "[tag<currentTiddler>]" "tc-vertical">>
+        </$transclude>
+      </$reveal>
+      <$reveal stateTitle=<<__selectedTiddler__>> type="match" text="">
+        $unselectedText$
+      </$reveal>
+    </div>
+  </div>
+</$tiddler>
+\end

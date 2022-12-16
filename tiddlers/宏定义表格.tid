@@ -1,0 +1,18 @@
+created: 20221216015655721
+creator: WhiteFall
+modified: 20221216045741370
+modifier: WhiteFall
+tags: 使太微更易用 笔记思维 条目集
+title: 宏定义表格
+type: text/vnd.tiddlywiki
+
+* Author：Stephen
+* 描述：这是一个用宏自定义的自动表格，当条目中钉上特定的标签时会自动收集到这个表格中，同时如果条目中有字段，那么字段的内容也会出现在表格中。[[My Table.json]]文件包含了作者对这个宏的说明，是一系列条目文件的集合，感兴趣可以看看。
+* 使用方法：拖放[[宏自动表格]]条目到你的wiki中。在条目中钉上`表格字段`标签会自动在这个表格中增加一行。你可以自定义[[宏自动表格]]条目的filtertag字段，修改成你需要的标签名。
+
+
+
+
+<$let selected-tiddler="宏自动表格">
+	<$macrocall $name="code" language={{{[<selected-tiddler>get[type]]}}} src={{{[<selected-tiddler>get[text]]}}} caption={{{[<selected-tiddler>get[title]]}}} />
+</$let>
