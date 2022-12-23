@@ -43,4 +43,9 @@ tiddlywiki  ./mywikifolder(你的wiki文件夹)  --rendertiddler  '$:/core/save/
 ```sh
 window.service.wiki.extractWikiHTML(htmlWikiPath, saveWikiFolderPath)
 window.service.wiki.packetHTMLFromWikiFolder(folderWikiPath, saveWikiHtmlFolder)
+
+Windows下的路径分隔符应使用双斜杠`\\` 。
+例如：“C:\\Users\\Mxun\\Desktop”, 展开提示`Promise {<pending>}`显示 fulfilled 表示成功
+
+saveWikiHtmlFolder应具体到文件名及后缀。
 ```
