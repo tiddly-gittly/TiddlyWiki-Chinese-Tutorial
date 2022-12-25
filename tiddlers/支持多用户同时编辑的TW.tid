@@ -1,0 +1,33 @@
+created: 20221225031906984
+creator: WhiteFall
+modified: 20221225035011407
+modifier: WhiteFall
+tags: 如何保存
+title: 支持多用户同时编辑的TW
+type: text/vnd.tiddlywiki
+
+!! TW5-Bob
+
+运行在NodeJS环境的TiddlyWiki，支持多用户同时使用/编辑相同的wiki的插件：https://github.com/OokTech/TW5-Bob
+
+最简单的版本（捆绑应用程序）：https://github.com/OokTech/TW5-BobEXE 。适用系统linux、Windows、mac。
+
+!! TW5-Bob它有什么作用？
+
+# 多用户支持同时使用/编辑相同的wiki
+# 多维基支持 - 运行一次，为多个维基提供服务
+# 从根维基内部创建和配置新的维基
+# 以多种方式导出单个文件维基
+# 浏览器和文件系统之间的双向实时同步
+# 所有配置都可以从维基内部完成
+# 提供外部文件（如图像），以便您可以将它们包含在您的wiki中
+# 允许您从 wiki 内部运行 shell 脚本和命令
+# 可以用作插件库，使插件可供其他wiki使用（需要其他wiki上的TWederBob插件才能连接）
+# 服务器间联合。不同的 Bob 服务器可以与共享的 tiddler 和聊天服务器/中继进行通信
+# 用于与服务器交互的 HTTP API
+# 很多文档都在文档文件夹的 tiddler 文件中 的插件，或在 wiki 中的控制面板上的插件信息。
+
+!! 运行环境
+
+# NodeJS，如果不使用捆绑应用程序的方式，您需要查看项目主页，手动安装及配置插件。更新插件也需要手动配置。
+# 更多信息，请查看项目主页。
