@@ -1,6 +1,6 @@
 created: 20221127032656430
 creator: WhiteFall
-modified: 20221213081517790
+modified: 20221230101620863
 modifier: WhiteFall
 order: 1
 tags: 知识链-创建保存-插件列表
@@ -31,7 +31,8 @@ type: text/vnd.tiddlywiki
 
 # TiddlyWiki简易指南（教程）
 ## 知乎文章：https://zhuanlan.zhihu.com/p/555893660
-## PDF版：https://github.com/Zacharia2/TWPUB-BOOK/releases/download/0.1.0/TiddlyWiki.PDF.pdf
+## PDF版：https://github.com/tiddly-gittly/TiddlyWiki-Easy-Guide-to-TiddlyMemo-Edition/releases/download/2022-12-30/TiddlyWiki-Easy-Guide.PDF.pdf
+## TiddlyWiki简易教程之墨屉钓鱼版：https://github.com/tiddly-gittly/TiddlyWiki-Easy-Guide-to-TiddlyMemo-Edition
 
 # ''B站太微视频教程（丰富）''：巨夜的主页 https://space.bilibili.com/372302442
 
