@@ -17,7 +17,7 @@
 ### 简单版
 
 0. 点击[申请](https://tiddlywiki-chinese-team-invite.herokuapp.com/)加入贡献团队。
-1. 下载 [TiddlyGit](https://github.com/tiddly-gittly/TiddlyGit-Desktop)，用于在本地打开和编辑 Wiki
+1. 下载 [TidGi-Desktop](https://github.com/tiddly-gittly/TidGi-Desktop)，用于在本地打开和编辑 Wiki
 
 ![docs/image/clone-code-tg.png](https://cdn.jsdelivr.net/gh/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/docs/image/clone-code-tg.png)
 ![docs/image/clone-code-tg2.png](https://cdn.jsdelivr.net/gh/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/docs/image/clone-code-tg2.png)
@@ -31,12 +31,12 @@
 ### 专业版
 
 - 下载 [Github Desktop](https://desktop.github.com/)，用于一键同步 Wiki 内容，它可以用于下载教程到本地文件夹，也可以用于打开本地的教程文件夹，也可以用于一键同步教程文件夹到线上的这个知识仓库里。
-- 下载 [TiddlyGit](https://github.com/tiddly-gittly/TiddlyGit-Desktop)，用于在本地打开和编辑 Wiki
+- 下载 [TidGi-Desktop](https://github.com/tiddly-gittly/TidGi-Desktop)，用于在本地打开和编辑 Wiki
 - 用 [Github Desktop](https://desktop.github.com/) 打开此项目，用它把内容同步到本地一个文件夹里，可以选择把文件夹放在桌面上
 
 ![docs/image/clone-code.png](https://cdn.jsdelivr.net/gh/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/docs/image/clone-code.png)
 
-- 用 TiddlyGit 打开刚同步到本地的文件夹，注意看图！是「打开本地 Wiki」「本地知识库」「主知识库」
+- 用 TidGi-Desktop 打开刚同步到本地的文件夹，注意看图！是「打开本地 Wiki」「本地知识库」「主知识库」
 
 ![docs/image/open-code.png](https://cdn.jsdelivr.net/gh/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/docs/image/open-code.png)
 
