@@ -1,0 +1,13 @@
+created: 20230101082155233
+creator: 马不前
+modified: 20230101082155233
+modifier: 马不前
+tags: 常用插件
+title: 搜索与表格的结合
+type: text/vnd.tiddlywiki
+
+http://tw-tables.tiddlyspot.com/ 还有这个，这个是一个搜索和表格结合的示例，可以参考，我就是按他这个，把它里面的表格改成shiraz的，他这个用的是老版本的shiraz表格，如果用得用新表格的宏。
+
+[img[shiraz动态表格.jpg]]
+
+可以联动放到一个页面或者放侧边栏，跟有样式的列表和表格联动，我倾向于放在侧边栏。而且保留一些常用的筛选器放在侧边会很方便。
