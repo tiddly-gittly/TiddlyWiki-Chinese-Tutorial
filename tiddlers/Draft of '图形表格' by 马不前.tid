@@ -1,0 +1,23 @@
+created: 20230101080951202
+creator: 马不前
+draft.of: 图形表格
+draft.title: 图形表格
+modified: 20230101084718034
+modifier: 马不前
+tags: 常用插件
+title: Draft of '图形表格' by 马不前
+type: text/vnd.tiddlywiki
+
+* ❤️动态表格：[[tiddlytables|http://tiddlytables.tiddlyspot.com/]]
+* 表格[[table-dynamic|https://ooktech.com/jed/ExampleWikis/DynamicTables/]]
+* ❤️（初学者工具包）[[Shiraz|https://kookma.github.io/TW-Shiraz/]] 太微整个笔记就是个互相关联的数据库，可以用 shiraz 插件里的 dynamic table 宏来可视化成多维表
+* [[Echarts|https://tiddly-gittly.github.io/tw-echarts/
+* ❤️TiddlyMap：http://tiddlymap.org/
+* ❤️Graphviz plugin for tw5：图形描述语言，绘制结构化的图形网络，制作图表 （链接跳转语法：定理[URL="#定理"]  ）
+** https://github.com/chanilino/tw5viz
+** https://chanilino.github.io/tw5viz/tw5.html
+* tiddlywiki/railroad   铁路图插件
+* mermaid-tw5：https://efurlanm.github.io/mermaid-tw5#HelloThere
+* TW-Timelines（时间线）：https://kookma.github.io/TW-Timelines/
+* ❤️Tidgraph：http://ihm4u.github.io/tw5plugs/#
+* projectify
