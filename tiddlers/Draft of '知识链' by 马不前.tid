@@ -1,10 +1,12 @@
 created: 20221127032656430
 creator: WhiteFall
-modified: 20230101100649952
+draft.of: 知识链
+draft.title: 知识链
+modified: 20230101100839045
 modifier: 马不前
 order: 1
 tags: 资源链接
-title: 知识链
+title: Draft of '知识链' by 马不前
 type: text/vnd.tiddlywiki
 
 * [[TiddlyWiki官网|https://tiddlywiki.com/]]
@@ -16,7 +18,7 @@ type: text/vnd.tiddlywiki
 ## 本站条目：[[开始:桌面端浏览器中的太微]]
 * TiddlyStow创建保存你的太微：https://twpub-book.netlify.app/tiddlystow.html
 * 墨屉共享书库：https://twpub-book.netlify.app/
-* TidGi介绍与下载链接：https://github.com/tiddly-gittly/TiddlyGit-Desktop
+* 【【TidGi介绍与下载链接|https://github.com/tiddly-gittly/TiddlyGit-Desktop
 * TiddlyWiki唯一官方讨论组：https://talk.tiddlywiki.org/
 * TiddlyWiki 单文件版在线升级：https://tiddlywiki.com/upgrade.html
 * [[tiddlyhost|https://tiddlyhost.com]]在线的创建并托管你的TiddlyWiki网站,免费，QQ邮箱可注册 
