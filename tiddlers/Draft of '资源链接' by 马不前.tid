@@ -1,9 +1,11 @@
 created: 20211028174840078
 creator: 林一二
-modified: 20230101090704201
+draft.of: 资源链接
+draft.title: 资源链接
+modified: 20230101090731535
 modifier: 马不前
 tags: 欢迎来到太微！
-title: 资源链接
+title: Draft of '资源链接' by 马不前
 type: text/vnd.tiddlywiki
 
 ! 教程链接
@@ -20,3 +22,5 @@ type: text/vnd.tiddlywiki
 ** [[github|https://tiddly-gittly.github.io/TiddlyWiki-Chinese-Tutorial/]]
 ** [[vercel|https://tiddly-wiki-chinese-tutorial.vercel.app/]]
 ** 这是三种不同的部署方式，内容是一样的
+* [[一个友好的TiddlyWiki指南|https://oss.hintsnet.com/mirror/tiddlywiki.cn.html#HelloThere]]
+* [[太微思维知识导图|https://www.zhixi.com/view/70759713]]
