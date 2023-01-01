@@ -1,14 +1,13 @@
 created: 20230101081143044
 creator: 马不前
-modified: 20230101085319670
+modified: 20230101093545237
 modifier: 马不前
-tags: 插件安装说明与插件库
+tags: 插件列表
 title: 筛选器插件
 type: text/vnd.tiddlywiki
 
-!! 筛选器	
-# ❤️kin-filter（递归地查找tiddler titles之间的隶属关系）
-# ❤️Tiddler Commander
-# ❤️内容搜索（context search）:danielo/context
-# random：https://tobibeer.github.io/tw5-plugins/#random
-# ❤️FilterBuilder条目：xp/Aggregation的FilterBuilder条目快速构建一个筛选表达式
+* ❤️kin-filter（递归地查找tiddler titles之间的隶属关系）
+* ❤️Tiddler Commander
+* ❤️内容搜索（context search）:danielo/context
+* 随机[[random|https://tobibeer.github.io/tw5-plugins/#random]]
+* ❤️FilterBuilder条目：xp/Aggregation的FilterBuilder条目快速构建一个筛选表达式

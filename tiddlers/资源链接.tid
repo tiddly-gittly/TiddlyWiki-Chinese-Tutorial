@@ -1,6 +1,6 @@
 created: 20211028174840078
 creator: 林一二
-modified: 20230101092745826
+modified: 20230101093056764
 modifier: 马不前
 tags: 欢迎来到太微！
 title: 资源链接
@@ -20,35 +20,7 @@ TiddlyWiki新人小白必备信息（知识链集合与箴言、创建保存全�
 可以通过已有的例子（比如tiddlywiki xp中的实现）仿写学习或者实现自己需要的功能
 
 
-! 教程链接
-* [[TiddlyXP 教程站 - 全面的入门、进阶教程|https://keatonlao.github.io/tiddlywiki-xp/]]
-* TiddlyWiki简易指南（教程）
-** [[知乎文章|https://zhuanlan.zhihu.com/p/555893660]]
-** [[PDF版|https://github.com/tiddly-gittly/TiddlyWiki-Easy-Guide-to-TiddlyMemo-Edition/releases/download/2022-12-30/TiddlyWiki-Easy-Guide.PDF.pdf]]
-** [[TiddlyWiki简易教程之墨屉钓鱼版|https://github.com/tiddly-gittly/TiddlyWiki-Easy-Guide-to-TiddlyMemo-Edition]]
-*  TiddlyWiki舞-基础文档简体中文教程：
-** [[文档网址|https://bramchen.github.io/tw5-docs/zh-Hans/]]
-** [[tiddlyhost备份|http://tw5-zh-hans.tiddlyspot.com/]]
-** [[TiddlyWiki网页服务器|https://bramchen.github.io/tw5-docs/zh-Hans/#WebServer]]运行于NodeJS，有关身份验证和授权的内容在这儿。
-* 太微中文教程——太微共建知识库
-** [[netlify|https://tw-cn.netlify.app/]]
-** [[github|https://tiddly-gittly.github.io/TiddlyWiki-Chinese-Tutorial/]]
-** [[vercel|https://tiddly-wiki-chinese-tutorial.vercel.app/]]
-** 这是三种不同的部署方式，内容是一样的
-* [[Grok TiddlyWiki|https://groktiddlywiki.com/read/]] 最强 Tiddlywiki 学习手册，没有之一
-* ''B站太微视频教程（丰富）''[[巨夜的主页|https://space.bilibili.com/372302442]]
-* [[TW-Scripts - 资深用户总结的各种写法方案|https://kookma.github.io/TW-Scripts/]]
-* [[TiddlyWiki太微在线的思维导图（包含四个主题）|https://www.zhixi.com/view/70759713]]
-* [[一个友好的TiddlyWiki指南|https://oss.hintsnet.com/mirror/tiddlywiki.cn.html#HelloThere]]
-* [[太微思维知识导图|https://www.zhixi.com/view/70759713]]
-
----
-''说明''
-
-* 建议按照给出教程的顺序来学习，从简单到深度使用，从系统到定制化使用。
-* 同一教程往往有不同部署或者发行方式，挑自己能用或者喜欢的方式就可以
-* 不同教程内容上会有重叠，但各自有其特点。细节上的处理也不尽相同。不妨多学习一下。
-* 不看教程，上手至少需要一个月起步，看教程最多一周就可以实现个人定制化。
+{{教程链接}}
 
 ''其他说明''
 

@@ -1,15 +1,14 @@
 created: 20230101081204043
 creator: 马不前
-modified: 20230101085319670
+modified: 20230101093455562
 modifier: 马不前
-tags: 插件安装说明与插件库
+tags: 插件列表
 title: 布局样式与主题相关插件
 type: text/vnd.tiddlywiki
 
-!! 布局、样式与主题	
-# 字体管理FontManager：https://fontmanager.tiddlyhost.com/
-# 快捷菜单栏，tiddlywiki/menubar或者xp/quickbar，它可以适配移动端，使移动端更容易使用，在桌面端也是非常好的实用工具，建议安装。
-# 左置开启标签页，xp/leftopentab，开启标签页将在浏览器左边单独显示。
-# Horizontal Story River（水平故事河）：https://crazko.github.io/krystal/
-# Tag词云：TiddlyTools/FilterGenerators/TagCloud
-# 卡片布局(用于短文的模式Muuri)：https://burningtreec.github.io/tiddlywiki-muuri/
+* 字体管理[[FontManager|https://fontmanager.tiddlyhost.com/]]
+* 快捷菜单栏，tiddlywiki/menubar或者xp/quickbar，它可以适配移动端，使移动端更容易使用，在桌面端也是非常好的实用工具，建议安装。
+* 左置开启标签页，xp/leftopentab，开启标签页将在浏览器左边单独显示。
+* 水平故事河[[Horizontal Story River|https://crazko.github.io/krystal/]]
+* Tag词云：TiddlyTools/FilterGenerators/TagCloud
+* 卡片布局(用于短文的模式)[[Muuri|https://burningtreec.github.io/tiddlywiki-muuri/]]
