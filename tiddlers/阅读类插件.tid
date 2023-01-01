@@ -1,0 +1,32 @@
+created: 20230101081123956
+creator: 马不前
+modified: 20230101081123956
+modifier: 马不前
+tags: 常用插件
+title: 阅读类插件
+type: text/vnd.tiddlywiki
+
+!! 阅读	
+# epub转twpub：https://github.com/Zacharia2/TWPUB-BOOK
+# TWPUB、Fishing
+# 目录插件Gk0Wk/page-toc
+# 脑图tidgraph
+# 链接弹出预览 preview glass
+# 调整侧边栏 siderbar resizer
+# 仿浏览器网页栏 tabstory
+# ❤️PPT演示文稿
+## sukima/reveal-js： https://sukima.github.io/tiddlywiki-reveal-js/  CPL搜索reveal-js安装。
+## tamasha：https://kookma.github.io/TW-Tamasha/  ，CPL搜Tamasha安装，就是提供了个宏。
+# 仿浏览器条目栏tabstory
+# 图书追踪器 library tracker
+# TiddlerSets：https://tiddlersets.tiddlyhost.com/TiddlerSets
+# ❤️inverse-link-and-folder，双链插件。
+# ToC generic
+# RandomTiddlerButton：https://sonephetr2.github.io/
+# random：https://tobibeer.github.io/tw5-plugins/#random
+# tiddlyremember（tw5与anki）和anki结合，有闪卡、增强阅读、问答题等附在⽂章下⾯。：https://github.com/sobjornstad/TiddlyRemember
+# 条目加密（Encrypt Tiddler Plugin）
+## demo：https://danielorodriguez.com/TW5-EncryptTiddlerPlugin/
+## 主页：https://github.com/danielo515/TW5-EncryptTiddlerPlugin
+# 条目别名tw5插件：https://github.com/hfichtenberger/tiddlywiki-aliasplugin
+# 为tw加上rss：https://techlifeweb.com/tiddlywiki/tw5tribalknowledge/static/RSS%2520and%2520Atom%2520Feeds%2520for%2520your%2520TiddlyWiki.html

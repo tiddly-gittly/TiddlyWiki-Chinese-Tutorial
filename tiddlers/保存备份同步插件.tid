@@ -1,0 +1,19 @@
+created: 20230101081235254
+creator: 马不前
+modified: 20230101081235254
+modifier: 马不前
+tags: 常用插件
+title: 保存备份同步插件
+type: text/vnd.tiddlywiki
+
+!! 保存备份同步	
+# TiddlyStow：https://twpub-book.netlify.app/tiddlystow.html
+# Timimi电脑浏览器插件 +  Tiddloid + Onedrive
+# Syncthing 文件同步工具开源版（商业版：微力）
+# 网络图床插件：OSS Uploader。
+# WebDav 服务存储文件到本地或云端的两个插件：FileUploads、FileUploads:PUT。
+# 单文件Wiki工作流：tiddlystow ，timimi ，kopia。
+# widdler：https://github.com/qbit/widdler
+# savetrail：把改动保存为json格式数据。
+# TiddlyWiki-Server（Rust写的WebDav服务器）： https://github.com/nathanielknight/tiddly-wiki-server
+# 备份软件：Kopia、Git。

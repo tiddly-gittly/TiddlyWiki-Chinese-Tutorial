@@ -1,8 +1,8 @@
 created: 20220918140144677
 creator: Miao
 icon: 
-modified: 20221213081517792
-modifier: WhiteFall
+modified: 20230101080804815
+modifier: 马不前
 tags: 资源链接
 title: 知识链-创建保存-插件列表
 type: text/vnd.tiddlywiki
@@ -19,12 +19,3 @@ TiddlyWiki新人小白必备信息（知识链集合与箴言、创建保存全�
 ''提问的智慧：'' [[提问的智慧（GitHub）|https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md]]
 
 可以通过已有的例子（比如tiddlywiki xp中的实现）仿写学习或者实现自己需要的功能
-
-
-<$macrocall
-  $name="tabs"
-  tabsList="[tag[知识链-创建保存-插件列表]sort[order]]"
-  default="知识链"
-  state="$:/state/tab5"
-  class="tc-vertical"
-/>
