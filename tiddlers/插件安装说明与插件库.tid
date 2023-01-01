@@ -1,6 +1,6 @@
 created: 20221127032926805
 creator: WhiteFall
-modified: 20230101094254166
+modified: 20230101095053633
 modifier: 马不前
 order: 3
 tags: 插件列表
@@ -11,7 +11,7 @@ type: text/vnd.tiddlywiki
 <<<
 插件要尤为注意插件之间的依赖关系
 
-Gatha（创建TiddlyWiki插件）、按钮类。
+''Gatha''（创建TiddlyWiki插件）、按钮类。可以创建插件，demo，备份，强烈推荐学习。
 
 * https://talk.tiddlywiki.org/t/gatha-plugin-experimental-release/2272
 * https://kookma.github.io/TW-Gatha/
