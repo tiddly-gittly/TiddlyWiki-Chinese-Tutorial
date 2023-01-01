@@ -1,13 +1,13 @@
 created: 20221127032909691
 creator: WhiteFall
-modified: 20230101095326721
+modified: 20230101101240463
 modifier: 马不前
 order: 2
 tags: 资源链接
 title: 创建保存
 type: text/vnd.tiddlywiki
 
-!! 使用、存储方式与全平台软件
+! 使用、存储方式与全平台软件
 
 """
 ''HTML文件''与''文件夹'' 2种存储形式
@@ -33,7 +33,7 @@ WebDav: WsgiDAV(python通过PIP安装或者MSI安装程序)，Rclone，IIS WebDa
 [[HTML与文件夹的转换]]:tiddlywiki单文件可以解压后提供给nodejs，TidGi使用
 <br><br>
 
-!! 安卓移动服务器
+!安卓移动服务器
 
 将手机作为知识库存储位置吧。  
 
@@ -45,7 +45,7 @@ webdav服务器、系统与浏览器API、nodejs运行环境。移动服务器�
 
 <br><br>
 
-!! Termux与NodeJS
+!Termux与NodeJS
 
 
 * Termux的bash.bashrc文件位置：$PREFIX/etc/bash.bashrc
@@ -55,6 +55,6 @@ webdav服务器、系统与浏览器API、nodejs运行环境。移动服务器�
 <br><br>
 
 
-!! HTML与文件夹的转换
+!HTML与文件夹的转换
 
 {{HTML与文件夹的转换}}

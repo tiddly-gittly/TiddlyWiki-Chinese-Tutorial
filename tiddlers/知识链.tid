@@ -1,6 +1,6 @@
 created: 20221127032656430
 creator: WhiteFall
-modified: 20230101100649952
+modified: 20230101101345301
 modifier: 马不前
 order: 1
 tags: 资源链接
@@ -11,16 +11,16 @@ type: text/vnd.tiddlywiki
 * [[社群链接聚合器|https://links.tiddlywiki.org/]]
 * [[TiddlyWiki开发者文档|https://tiddlywiki.com/dev]]
 * [[墨屉版太微|https://tiddlymemo.org/manual/zh-Hans]]
-# 开始:桌面端浏览器中的太微
-## 知乎文章：https://zhuanlan.zhihu.com/p/560276936
-## 本站条目：[[开始:桌面端浏览器中的太微]]
-* TiddlyStow创建保存你的太微：https://twpub-book.netlify.app/tiddlystow.html
-* 墨屉共享书库：https://twpub-book.netlify.app/
-* TidGi介绍与下载链接：https://github.com/tiddly-gittly/TiddlyGit-Desktop
-* TiddlyWiki唯一官方讨论组：https://talk.tiddlywiki.org/
-* TiddlyWiki 单文件版在线升级：https://tiddlywiki.com/upgrade.html
+* 开始:桌面端浏览器中的太微
+** [[知乎文章|https://zhuanlan.zhihu.com/p/560276936]]
+** [[本站条目|开始:桌面端浏览器中的太微]]
+* [[TiddlyStow|https://twpub-book.netlify.app/tiddlystow.html]]创建保存你的太微
+
+* [[TidGi介绍与下载链接|https://github.com/tiddly-gittly/TiddlyGit-Desktop]]
+* [[TiddlyWiki官方讨论组|https://talk.tiddlywiki.org/]]
+* TiddlyWiki 单文件版[[在线升级|https://tiddlywiki.com/upgrade.html]]
 * [[tiddlyhost|https://tiddlyhost.com]]在线的创建并托管你的TiddlyWiki网站,免费，QQ邮箱可注册 
-* TiddlyWiki教学：https://roulesophy.github.io/20210102-tiddlywiki-tutorial-viewtemplate-header/
+* [[TiddlyWiki教学|https://roulesophy.github.io/20210102-tiddlywiki-tutorial-viewtemplate-header/]]
 * [[TiddlyWiki Link|https://links.tiddlywiki.com/]] Tiddlywiki 官方的资源库，整合了社区绝大多数的资源，非常强大，英文
 * [[TiddlyWiki toolmap|https://dynalist.io/d/zUP-nIWu2FFoXH-oM7L7d9DM]] 来自社区的插件整合库，分门别类涵盖了绝大多数插件定制需求，英文
 * [[TiddlyWiki svg 素材库|http://fa5-free-svg.tiddlyspot.com/]]
