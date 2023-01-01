@@ -1,6 +1,6 @@
 created: 20221213072313240
 creator: 马不前
-modified: 20230101093159618
+modified: 20230101094128993
 modifier: 马不前
 order: 5
 tags: 插件列表
@@ -16,7 +16,7 @@ type: text/vnd.tiddlywiki
 ''大部分官方插件都是为了开发新的内容，所以一般用户可能暂时用不上，但新的插件代表着新的可能。我们期待tiddlywiki发展更好。''
 <<<
 
-!! 常用插件
+!常用插件
 ;tiddlywiki/highlight-legacy
 :为传统浏览器提供Highlight.js语法高亮功能。
 ;tiddlywiki/menubar
@@ -40,7 +40,7 @@ type: text/vnd.tiddlywiki
 ;tiddlywiki/external-attachments
 :TiddlyDesktop的外部附件，这个插件提供了对作为外部附件导入tiddlers的支持。这意味着不是将二进制文件作为独立的tiddlers导入，而是将其作为 "瘦小的 "tiddlers导入，通过_canonical_uri字段引用原始文件。这减少了wiki的大小，从而提高了性能。然而，这确实意味着维基不再是完全独立的。
 
-!! tiddlywiki探索插件
+! tiddlywiki探索插件
 ;tiddlywiki/internals
 :用于探索TiddlyWiki内部的工具.
 ;tiddlywiki/tw5.com-docs
@@ -77,7 +77,7 @@ type: text/vnd.tiddlywiki
 :通过URL共享tiddlers。这个实验性插件提供了通过URL共享tiddlers的工具，包括：在启动时从浏览器位置哈希中加载一组提示符的能力，用向导和模板从一组提示符中创建URLs
 
 
-!! 供开发者参考的插件
+! 供开发者参考的插件
 ;tiddlywiki/tw2parser
 :TiddlyWiki经典解析器。
 ;tiddlywiki/xmldom

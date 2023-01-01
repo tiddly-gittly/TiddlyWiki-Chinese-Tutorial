@@ -1,9 +1,11 @@
 created: 20230101081024435
 creator: 马不前
-modified: 20230101094651628
+draft.of: 编辑类插件
+draft.title: 编辑类插件
+modified: 20230101094818689
 modifier: 马不前
 tags: 插件列表
-title: 编辑类插件
+title: Draft of '编辑类插件' by 马不前
 type: text/vnd.tiddlywiki
 
 * 底部选项卡[[buttontabs|http://bottomtabs.tiddlyspot.com/]]
@@ -22,17 +24,18 @@ type: text/vnd.tiddlywiki
 * ❤️复制标题：oeyoews/copy-title，安装后在页面工具栏可以看到。
 * ❤️高亮文本，xp/mark-button，安装后，在编辑条目时的编辑工具栏图标显示为一个马克笔。
 * 段落编辑：Section Editor
-* TiddlyWIki/Markdown
-* linonetwo/markdown-transformer插件
+
 * [[MegaMenu|https://jc-ose.github.io/MegaMenu/]]
 * 侧边编辑器[[sideeditor|http://sideeditor.tiddlyspot.com/]]
 * http://newtids.tiddlyspot.com/ 这个挺好用，如果你有一个列表title,想快速创建所有列表文本的tid用这个很爽。
 * 音乐乐谱
-** https://burningtreec.github.io/tw5-musicsheets/
+** 发布https://burningtreec.github.io/tw5-musicsheets/
 ** https://talk.tiddlywiki.org/t/musicsheets-a-new-release/154
 ** https://github.com/BurningTreeC/tw5-musicsheets
 * tw5-monaco（vscode的编辑器移植）
 * [[zx-script|https://talk.tiddlywiki.org/t/interactive-code-executing-in-tiddlygit-like-ipython-notebook/780]]tid当作js执⾏，在tw中执⾏js，类似jupyter。
 * 导入表格：xlsx-utils
-* 导出为MD：Markdown-Export
-
+* markdown相关
+** 导出为MD：Markdown-Export
+** TiddlyWIki/Markdown
+** linonetwo/markdown-transformer插件
