@@ -1,0 +1,31 @@
+created: 20230106062338694
+creator: 马不前
+modified: 20230106063340949
+modifier: 马不前
+tags: 排查问题
+title: 在太记里使用gatha插件需要注意的
+type: text/vnd.tiddlywiki
+
+* $：/控制面板 > 设置> Gatha 选项卡>全局发布筛选器
+
+找到全局发布筛选器，然后添加下面的内容。
+
+<<code src:"[[$:/DefaultTiddlers]]
+[[$:/themes/tiddlywiki/vanilla]]
+[subfilter{$:/DefaultTiddlers}]
+[[$:/themes/linonetwo/itonnote]]
+[[$:/plugins/linonetwo/itonnote]]" >>
+
+其中一个是默认条目和默认条目的筛选器。另外三个分别是原生主题，太记默认主题，主题配套插件。需要这三个设置为全局发布器，才能生效。
+
+* 侧边栏 > Gatha > 插件选项卡 > 导出插件部分
+
+本地发布筛选器，是只作用当前编辑插件的。找到下面demo，demo旁边有三个小点，点击就可以跳转到本地发布筛选器了。在里面写和上面类似的筛选表达式，这样发布的时候就会带上里面的条目。
+
+* 注意：如果两个筛选器有冲突的话，本地筛选器会覆盖全局发布筛选器。
+
+gatha插件可以制作插件，但我以为更常见的用途是可以把条目系统地分享给别人，用来分发内容很方便。
+
+当然如果一直有分享的需要，那么还是搞一个个人网站更方便一点。
+
+[[gatha插件demo|https://kookma.github.io/TW-Gatha/]]
