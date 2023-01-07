@@ -1,0 +1,15 @@
+created: 20230107085148765
+creator: 林一二
+modified: 20230107085425856
+modifier: 林一二
+tags: 筛选器
+title: 把筛选器结果展示在文本里
+type: text/vnd.tiddlywiki
+
+!! 使用 Text 微件
+
+类似[[在微件参数中使用筛选器]]使用三花括号获得筛选器的结果，作为[[嵌入]]的输入。然后再把嵌入的内容作为 Text 微件的 text 参数的输入，微件会把 text 参数的内容展示出来。
+
+```tw5
+<$text text={{{ [{!!endDate}divide{!!startDate}] }}} />
+```

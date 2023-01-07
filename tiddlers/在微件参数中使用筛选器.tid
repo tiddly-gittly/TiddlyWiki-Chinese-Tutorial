@@ -1,6 +1,6 @@
 created: 20221127071250021
 creator: 林一二
-modified: 20221127071654110
+modified: 20230107085340420
 modifier: 林一二
 tags: 筛选器 宏变量筛选器嵌入连用
 title: 在微件参数中使用筛选器
@@ -18,3 +18,5 @@ type: text/vnd.tiddlywiki
 # 将它的结果传给 `whiteboard` 微件的 `tiddler` 参数
 
 所以将这个筛选器用 `{{{ }}}` 括起来，放在 `tiddler=` 这个参数的等号后即可。
+
+总结一下，三花括号可以把筛选器的结果作为[[嵌入]]的输入。
