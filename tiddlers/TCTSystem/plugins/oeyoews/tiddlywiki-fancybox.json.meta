@@ -1,0 +1,10 @@
+author: oeyoews
+core-version: >=5.2.3
+dependents: 
+description: Tiddlywiki Gallery
+list: readme config
+name: Tiddlywiki Fancybox
+plugin-type: plugin
+title: $:/plugins/oeyoews/tiddlywiki-fancybox
+type: application/json
+version: 0.2.9

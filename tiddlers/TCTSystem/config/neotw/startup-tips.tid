@@ -3,6 +3,7 @@ modified: 20220921001303697
 subtitle: welcome
 title: $:/config/neotw/startup-tips
 type: text/vnd.tiddlywiki
+mask-closable: yes
 
 ! Hello, welcome to tiddlywiki
 

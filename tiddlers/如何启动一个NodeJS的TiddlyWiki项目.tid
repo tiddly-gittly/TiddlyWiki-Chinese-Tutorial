@@ -1,7 +1,7 @@
 created: 20211112050622427
 creator: Sttot
-modified: 20211112083025771
-modifier: Sttot
+modified: 20221225034618358
+modifier: WhiteFall
 tags: 基础知识
 title: 如何启动一个NodeJS的TiddlyWiki项目
 type: text/vnd.tiddlywiki
@@ -38,3 +38,9 @@ Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
 ```
 
 就说明`8080`号端口已经被占用，随便换几个试试，将`--listen port=8080`里面的`8080`换成`8081`什么的试试。
+
+对于HTMLWiki执行解压后的文件夹wiki，你可以使用这条命令：
+
+```shell
+tiddlywiki +plugins/tiddlywiki/filesystem +plugins/tiddlywiki/tiddlyweb ./你的wiki文件夹目录 --listen port=8080（自定义且没有被占用的端口）
+```

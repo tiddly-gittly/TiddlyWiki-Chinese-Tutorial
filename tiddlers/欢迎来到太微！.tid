@@ -2,8 +2,8 @@ created: 20210902044836979
 creator: 林一二
 icon: 🎉
 list: 太微背景介绍 幻灯片 如何保存 基础知识 自动化 排查问题 资源链接 插件开发 插件使用 笔记思维 社区建设 徽章列表
-modified: 20221126022822589
-modifier: WhiteFall
+modified: 20230107062039661
+modifier: 马不前
 page-cover: https://pic4.zhimg.com/v2-881f391ae052f85939fcfeb40bc2056c
 tags: 欢迎来到太微！
 title: 欢迎来到太微！
@@ -12,6 +12,8 @@ type: text/vnd.tiddlywiki
 {{徽章列表}}
 
 {{$:/config/switch tip}}
+
+{{Gallary}}
 
 !! 如何浏览此知识库
 
@@ -26,7 +28,7 @@ type: text/vnd.tiddlywiki
 # 查看[[如何保存]]来下载相关应用程序，创建你自己的知识库。
 # 在网页上直接修改此知识库试试，放心，[[你不会真正修改到我们数据库里的内容|如何保存内容到社区仓库里]]。
 # 访问 [ext[可离线版本|/offline.html]] 可以让你点击侧边栏上的下载按钮把网页下载为单个HTML文件离线阅读
-# 阅读[[知识链-创建保存-插件列表]]，获取新人小白大礼包，其中涵盖了TiddlyWiki教程、知识链接与正在使用的太微实例，还有常用的插件介绍，包括一份TiddlyWiki游戏，更有TiddlyWiki的全平台软件及工作流程。
+# 阅读[[资源链接]]，获取新人小白大礼包，其中涵盖了TiddlyWiki教程、知识链接与正在使用的太微实例，还有常用的插件介绍，包括一份TiddlyWiki游戏，更有TiddlyWiki的全平台软件及工作流程。
 
 !! 背景介绍
 

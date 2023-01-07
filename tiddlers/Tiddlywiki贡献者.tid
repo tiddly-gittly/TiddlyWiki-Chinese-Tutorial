@@ -1,0 +1,33 @@
+created: 20230102045032482
+creator: 马不前
+modified: 20230102072245638
+modifier: 马不前
+page-cover: 
+tags: 社区建设
+title: Tiddlywiki贡献者
+type: text/vnd.tiddlywiki
+
+\define card-image(filter)
+<div class="card-columns">
+<$list filter=<<__filter__>>>
+<div class="card">
+<div class="card-body text-center">
+
+!! <$link><<currentTiddler>></$link>
+
+ {{!!text}}
+</div>
+</div>
+</$list>
+</div>
+\end
+
+<<card-image filter:"[tag[Tiddlywiki贡献者]]">>
+
+''说明''
+
+* 官方中文文档没有翻译他们的人名。讨论起来很不方便，因此建立系列条目，目的是让更多的人记住他们。并且他们通常也会有自己的网站，可以去访问欣赏和学习。
+
+* 采用设拉子里的图片卡组设计。官网上的图片效果不知道如何处理，在这边效果显示不好。
+
+* 卡片主体由三部分组成，一部分是标题，为中文译名。显示为二级标题的样式。一部分为原英文名，有caption字段，正文里也有。格式为一级标题。突出重点。第三部分就是介绍和github链接了。
