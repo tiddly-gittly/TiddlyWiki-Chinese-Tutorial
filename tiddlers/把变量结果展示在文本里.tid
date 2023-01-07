@@ -1,0 +1,19 @@
+created: 20230107090829166
+creator: 林一二
+modified: 20230107093010107
+modifier: 林一二
+tags: 变量 文本拼接
+title: 把变量结果展示在文本里
+type: text/vnd.tiddlywiki
+
+!! 直接展示
+
+太微里[[宏]]和变量使用的方法是统一的，都是两个尖括号。
+
+```tw5
+<<xxx>>
+```
+
+!! 拼上东西再展示
+
+<<reuse-tiddler "在宏里使用变量">>
