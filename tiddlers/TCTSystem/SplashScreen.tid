@@ -1,12 +1,11 @@
-created: 20180927082601825
-modified: 20220515145252407
 tags: $:/tags/RawMarkupWikified/TopBody
 title: $:/SplashScreen
 type: text/vnd.tiddlywiki
 
 \import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
 \rules only filteredtranscludeinline transcludeinline macrocallinline
-<div class="tc-remove-when-wiki-loaded">
+<!-- <div class="tc-remove-when-wiki-loaded"> -->
+<div>
 <style scoped>
 
 .tc-splash-text {
@@ -89,10 +88,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 }
 
 @keyframes sk-bouncedelay {
-	0%, 80%, 100% { 
+	0%, 80%, 100% {
 	-webkit-transform: scale(0);
 	transform: scale(0);
-	} 40% { 
+	} 40% {
 	-webkit-transform: scale(1.0);
 	transform: scale(1.0);
 	}
@@ -110,13 +109,13 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 {{$:/SiteTitle}} <hr/> {{$:/SiteSubtitle}}
 </div>
 
-<!-- Demonstrating how to embed a bitmap graphic 
+<!-- Demonstrating how to embed a bitmap graphic
 <div class="tc-splash-text">
 <img src="data:image/jpeg;base64,{{New Release Banner||$:/core/templates/plain-text-tiddler}}" width="100"/>
 </div>
---> 
+-->
 
-<!-- Demonstrating how to embed a wikitext SVG graphic --> 
+<!-- Demonstrating how to embed a wikitext SVG graphic -->
 <div class="tc-splash-text">
 {{$:/core/icon||$:/core/templates/plain-text-tiddler}}
 </div>
