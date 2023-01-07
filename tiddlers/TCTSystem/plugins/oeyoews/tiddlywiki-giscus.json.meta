@@ -1,0 +1,10 @@
+author: oeyoews
+core-version: >=5.2.5
+dependents: 
+description: A Commenting System Powered By Github Discussions
+list: readme giscus-config
+name: Tiddlywiki Giscus
+plugin-type: plugin
+title: $:/plugins/oeyoews/tiddlywiki-giscus
+type: application/json
+version: 0.0.1
