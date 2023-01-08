@@ -1,0 +1,20 @@
+created: 20230108093703829
+creator: 林一二
+modified: 20230108093832664
+modifier: 林一二
+tags: 蒯恩
+title: 能编辑自己的笔记
+type: text/vnd.tiddlywiki
+
+  Text（试着在这里打一个1):
+  <$edit-text
+    field="text"
+    class="tc-edit-texteditor tc-edit-texteditor-body"
+    default=""
+    placeholder={{$:/language/EditTemplate/Body/Placeholder}}
+    tabindex=-1
+    focus=false
+    cancelPopups="yes"
+    fileDrop=no
+    minHeight="30px"
+  />

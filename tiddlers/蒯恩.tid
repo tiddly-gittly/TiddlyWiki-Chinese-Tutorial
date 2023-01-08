@@ -1,0 +1,24 @@
+created: 20230108093633018
+creator: 林一二
+modified: 20230108093701695
+modifier: 林一二
+tags: 基础知识
+title: 蒯恩
+type: text/vnd.tiddlywiki
+
+创造一个能编辑自己的笔记：
+
+```
+  Text1:
+  <$edit-text
+    field="text"
+    class="tc-edit-texteditor tc-edit-texteditor-body"
+    default=""
+    placeholder={{$:/language/EditTemplate/Body/Placeholder}}
+    tabindex=-1
+    focus=false
+    cancelPopups="yes"
+    fileDrop=no
+    minHeight="30px"
+  />
+```
