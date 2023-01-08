@@ -1,0 +1,11 @@
+categoryId: DIC_kwDOF_p9Qc4CTdAM
+created: 20230108230244749
+modified: 20230108230300410
+repo: tiddly-gittly/TiddlyWiki-Chinese-Tutorial
+repoId: MDEwOlJlcG9zaXRvcnk0MDIyOTIwMzM=
+title: $:/plugins/oeyoews/tiddlywiki-giscus/config
+type: text/vnd.tiddlywiki
+
+<!-- \define tid() $:/plugins/oeyoews/gh-repo-btn/github-address -->
+
+<!-- ''filter'' : <$edit-text tiddler=<<tid>> tag="input" placeholder="[all[current]prefix[]tag[]!is[draft]]"/> -->
