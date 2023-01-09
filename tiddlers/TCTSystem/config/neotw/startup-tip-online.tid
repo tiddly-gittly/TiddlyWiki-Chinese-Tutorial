@@ -1,15 +1,15 @@
 created: 20220913022136161
 creator: WhiteFall
-modified: 20221127122128919
+modified: 20230109123902681
 modifier: WhiteFall
 tags: $:/tags/StartupAction/PostRender
-title: $:/config/neotw/startup-tip-mobile
+title: $:/config/neotw/startup-tip-online
 type: text/vnd.tiddlywiki
 
 \define delay-modal() <$action-sendmessage $message="tm-modal" $param="$:/config/neotw/startup-tips"/>
 
 <$list filter="[{$:/info/url/protocol}prefix[https]]">
-<$action-timeout delay=1000 actions=<<delay-modal>>/>
+<$action-timeout delay=2000 actions=<<delay-modal>>/>
 </$list>
 
 <$button> demo <<delay-modal>> </$button>

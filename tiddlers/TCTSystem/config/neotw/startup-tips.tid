@@ -1,14 +1,10 @@
 created: 20220913022257369
-modified: 20220921001303697
-subtitle: welcome
+mask-closable: yes
+modified: 20230109123821991
+subtitle: 
 title: $:/config/neotw/startup-tips
 type: text/vnd.tiddlywiki
-mask-closable: yes
 
-! Hello, welcome to tiddlywiki
-
-!! Tips
-
-You can press <kbd>alt h </kbd> find more shortkeys, and press <kbd>Ctrl K </kbd> to search contents
-
-<!-- maybe should use chinese -->
+<h2>
+<center> 🎉 欢迎来到太微 </center>
+</h2>
