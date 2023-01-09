@@ -2,9 +2,9 @@ author: oeyoews
 core-version: >=5.2.3
 dependents: 
 description: Tiddlywiki Gallery
-list: readme config
+list: readme config example
 name: Tiddlywiki Fancybox
 plugin-type: plugin
 title: $:/plugins/oeyoews/tiddlywiki-fancybox
 type: application/json
-version: 0.2.9
+version: 0.4.0
