@@ -7,6 +7,7 @@
 [只读版访问地址（Github Pages）](https://tiddly-gittly.github.io/TiddlyWiki-Chinese-Tutorial/)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2d87784e-fe3b-47a2-ae73-7a2f266f74a8/deploy-status)](https://app.netlify.com/sites/tw-cn/deploys)
+[![太微中文讨论区](https://img.shields.io/badge/太微中文讨论区-blueviolet.svg?style=flat-square&logo=APache-Tomcat&logoColor=black)](https://github.com/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/discussions)
 
 ## 贡献内容
 
@@ -58,4 +59,3 @@
 ![docs/image/pr-code.png](https://cdn.jsdelivr.net/gh/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/docs/image/pr-code.png)
 
 - 投票通过且合并之后，你新增的内容就会出现在网站上啦~
-
