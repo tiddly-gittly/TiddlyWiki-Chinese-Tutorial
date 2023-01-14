@@ -20,3 +20,4 @@ type: text/vnd.tiddlywiki
 
 可能引用图片的系统条目：`$:/Import` 导入时
 
+This problem should be fully resolved as of Relink v2.3.0. You should no longer need to restart to have imported tiddlers and images show up in the orphan list. (except that $:/Imports might point to them, which makes them not orphans).
