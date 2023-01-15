@@ -1,11 +1,11 @@
 created: 20230115125547524
-modified: 20230115131601229
+modified: 20230115133105860
 tags: 
 title: 最近更新状态
 type: text/vnd.tiddlywiki
 
 <ul>
-  <$list filter="[!is[system]!<currentTiddler>!sort[modified]]">
+  <$list filter="[!is[system]days[-180]!<currentTiddler>!sort[modified]]">
     <li>
 		<$link><$view field="title"/></$link>
         <$list filter="[<currentTiddler>days[-14]]"> @@color:red;^^新^^@@</$list>
