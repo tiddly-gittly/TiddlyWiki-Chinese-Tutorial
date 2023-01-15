@@ -1,0 +1,15 @@
+created: 20230115125547524
+modified: 20230115131601229
+tags: 
+title: 最近更新状态
+type: text/vnd.tiddlywiki
+
+<ul>
+  <$list filter="[!is[system]!<currentTiddler>!sort[modified]]">
+    <li>
+		<$link><$view field="title"/></$link>
+        <$list filter="[<currentTiddler>days[-14]]"> @@color:red;^^新^^@@</$list>
+        <$list filter="[<currentTiddler>days[-90]!days[-14]]"> @@color:black;^^近期^^@@</$list>
+    </li>
+  </$list>
+</ul>
