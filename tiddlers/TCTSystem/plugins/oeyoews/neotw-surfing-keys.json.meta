@@ -1,5 +1,5 @@
 author: oeyoews
-core-version: 5.2.3
+core-version: 5.2.5
 dependents: 
 description: Surfing On TiddlyWiki
 list: readme
@@ -8,4 +8,4 @@ plugin-type: plugin
 source: 
 title: $:/plugins/oeyoews/neotw-surfing-keys
 type: application/json
-version: v0.2.3
+version: 0.3.0
