@@ -1,0 +1,7 @@
+created: 20230202103542140
+modified: 20230202103603507
+tags: 
+title: $:/config/EmptyStoryMessage
+type: text/vnd.tiddlywiki
+
+{{{ [[欢迎来到太微！]] ||$:/core/ui/ViewTemplate }}}
