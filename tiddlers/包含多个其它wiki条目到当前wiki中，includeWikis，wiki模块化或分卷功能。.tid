@@ -1,26 +1,31 @@
 created: 20230204083924972
 creator: WhiteFall
-modified: 20230204092105910
+modified: 20230204111307755
 modifier: WhiteFall
 tags: 基础知识
 title: 包含多个其它wiki条目到当前wiki中，includeWikis，wiki模块化或分卷功能。
 type: text/vnd.tiddlywiki
 
+!! 1. 介绍
 
-! 包含多个其它wiki条目到当前wiki中，使多个其它wiki中的条目可以在当前wiki嵌入，链接，搜索。
-
+> 摘自：https://keatonlao.github.io/tiddlywiki-xp/#%E5%8C%85%E5%90%AB%E7%BB%B4%E5%9F%BA
 
 <<alert info "include是一个计算机专业术语，一指C/C++中包含头文件命令，用于将指定头文件嵌入源文件中。" >>
 
-文件夹版TiddlyWiki使用一个单独的 tiddlywiki.info 文件进行配置，该文件在维基文件夹的根目录中。它应该包含一个JSON对象，其中包含includeWikis属性，该includeWikis属性让我们可以在一个维基中阅读其他维基的内容（其他维基不需要启动）
+<<alert info "includeWikis，包含多个其它wiki条目到当前wiki中，使多个其它wiki中的条目可以在当前wiki嵌入，链接，搜索。" >>
+
+
+文件夹版TiddlyWiki使用一个单独的 tiddlywiki.info 文件进行配置，该文件在维基文件夹的根目录中。它应该包含一个JSON对象，其中包含includeWikis属性.
+
+includeWikis属性让我们可以在一个维基中阅读其他维基的内容（其他维基不需要启动）
 
 
 
-!!includeWikis案例
+!! 2. includeWikis案例
 
 在 test 文件夹下有三个维基：mywiki、chinese 和 english。要在 mywiki 中访问 chinese / english 的内容，可以在 mywiki 的 tiddlywiki.info 中的 `"plugins"` 后添加如下内容：
 
-```json
+```
 	"includeWikis": [
 		{"path": "../chinese", "read-only": true},
 		{"path": "../english", "read-only": true}
@@ -31,56 +36,16 @@ type: text/vnd.tiddlywiki
 
 
 
-!! includeWikis -- 包含维基
+!! 3. includeWikis -- 包含维基
 
 在''includeWikis''数组中的条目可以是指定维基的相对路径的字符串，也可以是具有以下字段的一个对象：
 
 * ''path'' - 维基文件夹的相对路径
 * ''read-only'' - 设置为//true//以防止被包含的维基中的条目被修改。 修改将被写入到下面描述的 ''default-tiddler-location''指定的目录中
 
-''default-tiddler-location''配置包含在''config''属性中。
+''default-tiddler-location''配置包含在''config''属性中。点击链接查看[[tiddlywiki.info Files|https://keatonlao.github.io/tiddlywiki-xp/#tiddlywiki.info%20Files]]
 
 
-
-!!! config属性的配置选项：
-
-* ''default-tiddler-location'' - 到文件系统适配器的默认位置的路径字符串，以保存新的条目（相对于维基文件夹解析）
-* ''retain-original-tiddler-path'' - 如果为true，则服务器将生成一个[[$:/config/OriginalTiddlerPaths]]条目，其中包含维基中每个条目原始文件的路径
-
-
-
-!!!tiddlywiki.info 文件示例：
-
-```json
-{
-	"plugins": [
-		"tiddlywiki/tiddlyweb",
-		"tiddlywiki/filesystem"
-	],
-	"includeWikis": [
-		{"path": "../tw5.com", "read-only": true}
-	],
-	"build": {
-		"index": [
-			"--rendertiddler","$:/core/save/all","index.html","text/plain"],
-		"favicon": [
-			"--savetiddler","$:/favicon.ico","favicon.ico",
-			"--savetiddler","$:/green_favicon.ico","static/favicon.ico"]
-	},
-	"config": {
-		"retain-original-tiddler-path": true	
-	}
-}
-```
-
-!! 注意事项（太记）
+!! 4. 注意事项（太记）
 
 TidGI（太记）中，在没有includeWikis属性的A wiki中新建两个条目，然后在有includeWikis属性的B wiki中使用链接引用它们（指A wiki中新建两个条目）。太记可能需要右键快捷重启服务后才能看到 B wiki 的链接`[[A wiki 的条目]]`是存在的，可以访问的。
-
-!! 相关链接
-
-摘自：
-
-1. https://keatonlao.github.io/tiddlywiki-xp/#tiddlywiki.info%20Files
-
-2. https://keatonlao.github.io/tiddlywiki-xp/#%E5%8C%85%E5%90%AB%E7%BB%B4%E5%9F%BA
