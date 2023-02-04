@@ -1,9 +1,9 @@
 created: 20220815044942720
 creator: Miao
-modified: 20221216050250316
+modified: 20230204072958279
 modifier: WhiteFall
 tags: 使太微更易用 自动化 主题集
-title: 选择给定tiddler的所有继承者
+title: 选择给定tiddler（文件夹）下的所有文件夹及条目
 type: text/vnd.tiddlywiki
 
 ! 删除或导出文件夹下所有文件（Kin 筛选器）

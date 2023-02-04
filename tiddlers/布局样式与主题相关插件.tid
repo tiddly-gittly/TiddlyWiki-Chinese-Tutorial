@@ -1,7 +1,7 @@
 created: 20230101081204043
 creator: 马不前
-modified: 20230101093455562
-modifier: 马不前
+modified: 20230204072529485
+modifier: WhiteFall
 tags: 插件列表
 title: 布局样式与主题相关插件
 type: text/vnd.tiddlywiki
@@ -12,3 +12,4 @@ type: text/vnd.tiddlywiki
 * 水平故事河[[Horizontal Story River|https://crazko.github.io/krystal/]]
 * Tag词云：TiddlyTools/FilterGenerators/TagCloud
 * 卡片布局(用于短文的模式)[[Muuri|https://burningtreec.github.io/tiddlywiki-muuri/]]
+* jd的作品：CoolMint配色，主页，主题：[[jd(j.d.)]]
