@@ -1,0 +1,15 @@
+created: 20230206144231024
+modified: 20230206144821779
+tags: 
+title: $:/config/oeyoews/info
+type: text/vnd.tiddlywiki
+
+\define fb(label:label filter color:green)
+<$image source={{{ [[]addprefix[https://img.shields.io/badge/]] [<__label__>addsuffix[-]]  $filter$ [[-]addsuffix<__color__>] +[join[]] }}} />
+\end
+
+
+<<fb Tiddlers [!is[system]count[]] yellow>> 
+<<fb Updated [!is[system]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]] 9cf>> 
+<<fb Plugins [plugin-type[plugin]count[]] green>>
+<img src="https://img.shields.io/badge/Powered by-太微-lightblue?style=flat&logo=dev.to&logoColor=green" />
