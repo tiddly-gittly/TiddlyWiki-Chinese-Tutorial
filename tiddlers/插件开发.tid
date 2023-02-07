@@ -1,6 +1,6 @@
 created: 20211003091131848
 creator: 林一二
-modified: 20220217094216001
+modified: 20230207151252799
 modifier: 林一二
 page-cover: https://tiddlywiki.com/talkytalky/images/TiddlyWiki%2520Architecture.svg
 tags: 欢迎来到太微！
@@ -14,6 +14,8 @@ type: text/vnd.tiddlywiki
 只需要通读[[中文文档]]了解所有 WikiText 语法即可，然后推荐使用[[Gatha插件来开发|如何在单文件版里写一个TW插件]]。
 
 !!! JS 高级插件
+
+可以阅读[[太微原理]]里的一些指南。
 
 因为太微本身的 API 文档不完善，而且没有原生的 TS 类型。所以目前的学习主要靠阅读其它插件的代码，来了解写法。
 
