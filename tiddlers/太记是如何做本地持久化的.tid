@@ -1,0 +1,75 @@
+created: 20230207162528804
+creator: 林一二
+modified: 20230207162739988
+modifier: 林一二
+tags: 太微原理
+title: 太记是如何做本地持久化的
+type: text/vnd.tiddlywiki
+
+[太记 tiddly-gittly/TidGi-Desktop](https://github.com/tiddly-gittly/TidGi-Desktop) 的设计目标：
+
+1. 用户（我）拥有通过 Github Pages 部署后可分享的在线工作区
+2. 用户的所有工作区都可以通过免费的 Github 来同步和存储，在企业内机密信息可以通过企业内网 Git 服务存储
+3. 所有工作区的内容可以一并被聚合和检索
+
+太微（TiddlyWiki）的卖点之一是单 HTML 文件就是一个可执行的轻量级便携知识库，但 HTML 文件在 Git 里 diff 太大，因此在 19 年开始往太微里狂记笔记之后，我就考虑把太微的核心当做库来使用，做一个桌面端应用，从文件系统加载多个 .tid 格式的笔记，以便备份时 git diff 只发生在小条的这些 .tid 文件上。
+
+!! 和 Git 的用法基本一致的工作区
+
+用户打开 App 后，目前是一个工作区也没有的（未来在社区 wiki 库建设完成后，我会如 Obsidian 那样默认展示一个来自 wiki 库的帮助 wiki。），需要点击「添加」按钮新建工作区。
+
+[img[https://pic4.zhimg.com/80/v2-551c4a348b14b6293c704adf1132fe4f_720w.webp]]
+
+在这个 App 里，创建工作区时可以选择创建本地知识库或在线知识库。而知识库和 git 仓库是一一对应的关系。
+
+下图中左边是创建一个本地知识库，和初始化一个本地 git 仓库。
+
+右边是新用户在一台电脑上创建了一个本地 git 仓库后，可以打开「云端同步知识库」的开关，应用会根据用户（点登录按钮调 authing 登录框去登录 Github 获取的）token，拉取 Github 上已有的在线仓库（或当场创建一个），之后把本地 git 内容立即推送到 Github 上，（当然也可以选择 Gitlab 等其它服务作为提供商）。
+
+之后在另一台电脑上就能看到来自 Github、Gitlab 等不同存储提供商的在线 Git 仓库，然后通过「导入线上 Wiki」将线上同步的工作区克隆到本地，实现本地化。
+
+[img[https://pic3.zhimg.com/80/v2-e7fa71266d3b2061ffadd93f675dcf42_720w.webp]]
+
+[img[https://pic4.zhimg.com/80/v2-674ccb2173735fe620f20a3afbf534fb_720w.webp]]
+
+[img[https://pic4.zhimg.com/80/v2-0ed1e60981c5e8660261906fc0572aa7_720w.webp]]
+
+技术上说，还将在应用的一个全局配置文件里创建一个新字段，key 为新工作区 id，value 为一个工作区配置 JSON，里面包含工作区的名字、端口号、本地文件夹位置、是本地工作区还是有对应的远端存储服务器（Github 仓库）地址的在线工作区等等。
+
+桌面端根据这个配置文件 Object.keys 一下，在应用左边的侧边栏显示工作区列表。
+
+除了这些需要在 wiki 启动前就知道的元信息以外的东西，都作为笔记存在 wiki 里，例如 wiki 的主题色、插件列表等等。
+
+!! 私有内容
+
+上面说的工作区称为主工作区，还有一种子工作区，它们对应的 git 仓库在用户电脑上通过 soft link （软链接、快捷方式）连接到别的工作区的 git 文件夹里。这种工作区，称为子工作区。
+
+通过创建同步到 Github Private repo 的子工作区，然后将它在用户电脑上做一个这种快捷方式，就可以在本地的主工作区里看到所有笔记，但是在线上公开的 Github 仓库里则不会包含隐私内容。
+
+太微里有一个功能，可以根据条目所加的标签（及标签的树状父子关系等），把条目在文件系统上放入不同文件夹，所以就可以把加了 「Private」 标签的条目及其子条目自动放进去。
+
+!! 前端和硬盘的同步
+
+太微里每个笔记（叫 Tiddlers ，条目，很小的小鱼的意思，寓意适合卡片笔记写作法）都是一个 JSON，其中 text 字段是具体的笔记内容，还有 title、created、tags、authors 等字段。
+
+这个 JSON 会通过一个叫 `tiddlywiki/tiddlyweb` 的 SyncAdaptor （同步适配器）插件将渲染进程里的前端页面上新增的条目同步到客户端主进程里的内存中，然后通过 `tiddlywiki/filesystem` 这个同步适配器再将主进程内存中的 JSON 持久化到文件系统上，变成纯文本的 .tid 文件（顺应了很多用户喜欢看得见摸得着的文件的喜好，也方便 git diff）。
+
+此后桌面端应用会用 [tiddly-gittly/git-sync-js](https://github.com/tiddly-gittly/git-sync-js) 包定时自动 rebase push 到 Github。
+
+在太记这个桌面应用中，主进程会为每一个工作区启动一个 worker_thread ，在里面启动一个 http 服务器运行太微，并通过 HTTP 路由插件提供 CRUD。渲染进程加载 `/` 路由获取 wiki 框架、加载插件和笔记，展示给用户。
+
+因此 `tiddlywiki/tiddlyweb` 同步适配器插件在主进程和渲染进程都各有一个实例，它们通过插件提供的 `PUT /tiddler` 等路由来同步笔记。
+
+!! 其它同步适配器和保存器和自定义同步插件
+
+太微里的插件可以访问到所有笔记内容，可以在主线程启动 HTTP 路由，因此可以随便手写一个 JS 脚本笔记来同步、导入导出数据。例如 `tw-mobile-sync` 插件就添加了一个 `POST /tw-mobile-sync/html-node-sync` 路由，让手机端的单 HTML WIKI 可以向桌面端 POST 新增的条目，并收到桌面端新增的条目，完成简单的同步。
+
+更正式一点的是符合 Saver 接口的 Saver （保存器）插件，例如 `github-saver` 插件会利用用户填的 token，将 wiki 内容序列化为 HTML 后，通过 HTTP 接口提交上去，新建一个 commit 完成备份。`fallback-saver` 则可以在其它保存方式不生效的时候，强制将序列化的 wiki 导出为 HTML 文件下载到本地。
+
+最高效的是符合同步适配器接口的插件，例如 [linonetwo/solid-tiddlywiki-syncadaptor](https://github.com/linonetwo/solid-tiddlywiki-syncadaptor) 会在用户将它启用后，在每次有笔记变更时被调用，自行将最新的变更提交到配置的后端上。同步适配器一般会从用户 wiki 中找到特定标题或加了特定标签的笔记，从中获取 token 以及同步地址 url。例如这个将数据持久化到 SoLiD 语义网服务器的同步适配器，将会尝试从标题为 `$:/plugins/linonetwo/solid-tiddlywiki-syncadaptor/TWContainers` 的条目中找 [LDP](https://www.w3.org/TR/ldp/) （互联数据平台）的 url，作为存储地址。
+
+而 `tiddlywiki/tiddly-web` 是官方提供的同步适配器示例，可以用于单文件 HTML 随时随地向 [https://tiddlyhost.com/](https://tiddlyhost.com/) （也是一个 NodeJS wiki 实例）上同步数据，也可以用于向桌面应用主进程启动的 NodeJS wiki 同步数据。
+
+!! 总结
+
+[img[https://pic2.zhimg.com/80/v2-92d0d7c717231deef82e06b0edcd75dd_720w.webp]]
