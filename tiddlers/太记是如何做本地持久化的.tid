@@ -6,7 +6,7 @@ tags: 太微原理
 title: 太记是如何做本地持久化的
 type: text/vnd.tiddlywiki
 
-[太记 tiddly-gittly/TidGi-Desktop](https://github.com/tiddly-gittly/TidGi-Desktop) 的设计目标：
+[太记 tiddly-gittly/TidGi-Desktop|https://github.com/tiddly-gittly/TidGi-Desktop]] 的设计目标：
 
 1. 用户（我）拥有通过 Github Pages 部署后可分享的在线工作区
 2. 用户的所有工作区都可以通过免费的 Github 来同步和存储，在企业内机密信息可以通过企业内网 Git 服务存储
@@ -54,7 +54,7 @@ type: text/vnd.tiddlywiki
 
 这个 JSON 会通过一个叫 `tiddlywiki/tiddlyweb` 的 SyncAdaptor （同步适配器）插件将渲染进程里的前端页面上新增的条目同步到客户端主进程里的内存中，然后通过 `tiddlywiki/filesystem` 这个同步适配器再将主进程内存中的 JSON 持久化到文件系统上，变成纯文本的 .tid 文件（顺应了很多用户喜欢看得见摸得着的文件的喜好，也方便 git diff）。
 
-此后桌面端应用会用 [tiddly-gittly/git-sync-js](https://github.com/tiddly-gittly/git-sync-js) 包定时自动 rebase push 到 Github。
+此后桌面端应用会用 [[tiddly-gittly/git-sync-js|https://github.com/tiddly-gittly/git-sync-js]] 包定时自动 rebase push 到 Github。
 
 在太记这个桌面应用中，主进程会为每一个工作区启动一个 worker_thread ，在里面启动一个 http 服务器运行太微，并通过 HTTP 路由插件提供 CRUD。渲染进程加载 `/` 路由获取 wiki 框架、加载插件和笔记，展示给用户。
 
@@ -66,9 +66,9 @@ type: text/vnd.tiddlywiki
 
 更正式一点的是符合 Saver 接口的 Saver （保存器）插件，例如 `github-saver` 插件会利用用户填的 token，将 wiki 内容序列化为 HTML 后，通过 HTTP 接口提交上去，新建一个 commit 完成备份。`fallback-saver` 则可以在其它保存方式不生效的时候，强制将序列化的 wiki 导出为 HTML 文件下载到本地。
 
-最高效的是符合同步适配器接口的插件，例如 [linonetwo/solid-tiddlywiki-syncadaptor](https://github.com/linonetwo/solid-tiddlywiki-syncadaptor) 会在用户将它启用后，在每次有笔记变更时被调用，自行将最新的变更提交到配置的后端上。同步适配器一般会从用户 wiki 中找到特定标题或加了特定标签的笔记，从中获取 token 以及同步地址 url。例如这个将数据持久化到 SoLiD 语义网服务器的同步适配器，将会尝试从标题为 `$:/plugins/linonetwo/solid-tiddlywiki-syncadaptor/TWContainers` 的条目中找 [LDP](https://www.w3.org/TR/ldp/) （互联数据平台）的 url，作为存储地址。
+最高效的是符合同步适配器接口的插件，例如 [[linonetwo/solid-tiddlywiki-syncadaptor|https://github.com/linonetwo/solid-tiddlywiki-syncadaptor]] 会在用户将它启用后，在每次有笔记变更时被调用，自行将最新的变更提交到配置的后端上。同步适配器一般会从用户 wiki 中找到特定标题或加了特定标签的笔记，从中获取 token 以及同步地址 url。例如这个将数据持久化到 SoLiD 语义网服务器的同步适配器，将会尝试从标题为 `$:/plugins/linonetwo/solid-tiddlywiki-syncadaptor/TWContainers` 的条目中找 [[LDP|https://www.w3.org/TR/ldp/]] （互联数据平台）的 url，作为存储地址。
 
-而 `tiddlywiki/tiddly-web` 是官方提供的同步适配器示例，可以用于单文件 HTML 随时随地向 [https://tiddlyhost.com/](https://tiddlyhost.com/) （也是一个 NodeJS wiki 实例）上同步数据，也可以用于向桌面应用主进程启动的 NodeJS wiki 同步数据。
+而 `tiddlywiki/tiddly-web` 是官方提供的同步适配器示例，可以用于单文件 HTML 随时随地向 [[https://tiddlyhost.com/|https://tiddlyhost.com/]] （也是一个 NodeJS wiki 实例）上同步数据，也可以用于向桌面应用主进程启动的 NodeJS wiki 同步数据。
 
 !! 总结
 

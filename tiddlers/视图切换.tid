@@ -38,15 +38,15 @@ type: text/vnd.tiddlywiki
 
 !! 框架部分
 
-太微大部分界面是用维基文本文式编程写的，可以通过 message 等机制调用 JS 侧的能力，JS 侧也可以通过 `$tw.wiki.`<em>makeTranscludeWidget</em> 等方式取到笔记里的内容。
+太微大部分界面是用维基文本文式编程写的，可以通过 message 等机制调用 JS 侧的能力，JS 侧也可以通过 `$tw.wiki.`makeTranscludeWidget 等方式取到笔记里的内容。
 
 设计上维基文本是希望成为低代码，不过对普通人来说用起来和 HTML 差不多，不看文档学也不会用，下面简单介绍一下。
 
 页面工具栏上的按钮是这样的：
 
 ```
-title: <u>$:/core/ui/Buttons/layout
-</u>tags: <u>$:/tags/PageControls</u>
+title: $:/core/ui/Buttons/layout
+tags: $:/tags/PageControls
 
 <$button tooltip={{$:/language/Buttons/LayoutSwitcher/Hint}}>
   <$action-sendmessage $message="tm-show-switcher" switch="layout"/>
@@ -68,16 +68,16 @@ exports.synchronous = true;
 
 // ...
 
-  $tw.rootWidget.<em>addEventListener</em>("tm-show-switcher",function(event) {
-    $tw.modal.<em>display</em>("$:/core/ui/SwitcherModal",{variables: event.paramObject, event: event});
+  $tw.rootWidget.addEventListener("tm-show-switcher",function(event) {
+    $tw.modal.display("$:/core/ui/SwitcherModal",{variables: event.paramObject, event: event});
   });
 ```
 
 在维基文本里，可以通过 `<varName>` 的方式把上下文中的变量拼入文本里，总之下面的维基文本拼出了 `$:/config/SwitcherTargets/layout`，取出对应的值 `$:/snippets/LayoutSwitcher`，然后嵌入了这条笔记。
 
 ```
-title: <u>$:/core/ui/SwitcherModal
-</u>subtitle: <$text text={{{[<switch>lookup[$:/language/Switcher/Subtitle/]]}}}/>
+title: $:/core/ui/SwitcherModal
+subtitle: <$text text={{{[<switch>lookup[$:/language/Switcher/Subtitle/]]}}}/>
 class: tc-modal-centered
 mask-closable: yes
 
@@ -89,18 +89,18 @@ mask-closable: yes
 ```
 
 ```
-title: <u>$:/config/SwitcherTargets/
-</u>
-layout: <u>$:/snippets/LayoutSwitcher
-</u>language: <u>$:/snippets/languageswitcher
-</u>palette: <u>$:/core/ui/ControlPanel/Palette
-</u>theme: <u>$:/core/ui/ControlPanel/Theme</u>
+title: $:/config/SwitcherTargets/
+
+layout: $:/snippets/LayoutSwitcher
+language: $:/snippets/languageswitcher
+palette: $:/core/ui/ControlPanel/Palette
+theme: $:/core/ui/ControlPanel/Theme
 ```
 
 这条笔记是切换视图的弹框，通过 `<$list>` 微件，筛选出带有标签 `$:/tags/Layout` 的笔记，把它们作为链接列在列表里，点了就会把点击的视图笔记的 title 设置到 `$:/layout` 笔记的内容里。
 
 ```
-title: <u>$:/snippets/LayoutSwitcher</u>
+title: $:/snippets/LayoutSwitcher
 
 <$linkcatcher to="$:/layout">
   <$list
@@ -118,24 +118,24 @@ title: <u>$:/snippets/LayoutSwitcher</u>
 然后就会把我们所选的视图笔记嵌入进来，作为 `$:/core/ui/RootTemplate` 的实际内容。
 
 ```
-title: <u>$:/core/ui/RootTemplate
-</u>
+title: $:/core/ui/RootTemplate
+
 <$transclude
   tiddler={{{ [{$:/layout}has[text]] ~[[$:/core/ui/PageTemplate]] }}}
   mode="inline"
- />
+/>
 ```
 
 在 JS 侧挂载这个笔记到 dom 上，类似于 react-dom 挂载 react 组件到 dom 上：
 
 ```
-const pageWidgetNode = $tw.wiki.<em>makeTranscludeWidget</em>('$:/core/ui/RootTemplate', {
+const pageWidgetNode = $tw.wiki.makeTranscludeWidget('$:/core/ui/RootTemplate', {
   parentWidget: $tw.rootWidget,
 });
 
-const pageContainer = document.<em>createElement</em>('div');
-document.body.<em>insertBefore</em>(pageContainer, document.body.firstChild);
-$tw.pageWidgetNode.<em>render</em>(pageContainer);
+const pageContainer = document.createElement('div');
+document.body.insertBefore(pageContainer, document.body.firstChild);
+$tw.pageWidgetNode.render(pageContainer);
 ```
 
 !! 插件部分
@@ -153,14 +153,14 @@ import './widget.css';
 
 const Widget = (require('$:/core/modules/widgets/widget.js') as { widget: typeof IWidget }).widget;
 
-class CalendarWidget extends <u>Widget</u> {
+class CalendarWidget extends Widget {
   /**
    * Lifecycle method: Render this widget into the DOM
    */
-  <em>render</em>(parent: Node, _nextSibling: Node): void {
-    <em>this</em>.#calendar = new <em>Calendar</em>(<em>this</em>.#mountElement, { ...settings });
-    <em>this</em>.#calendar?.<em>render</em>();
-    parent.<em>appendChild</em>(<em>this</em>.#containerElement);
+  render(parent: Node, _nextSibling: Node): void {
+    this.#calendar = new Calendar(this.#mountElement, { ...settings });
+    this.#calendar?.render();
+    parent.appendChild(this.#containerElement);
   }
 }
 
@@ -172,9 +172,9 @@ exports.widget = CalendarWidget;
 src/calendar-widget/widget.js.meta
 
 ```
-creator: <u>LinOnetwo
-</u>title: <u>$:/plugins/linonetwo/tw-calendar/calendar-widget/widget.js
-</u>type: application/javascript
+creator: LinOnetwo
+title: $:/plugins/linonetwo/tw-calendar/calendar-widget/widget.js
+type: application/javascript
 module-type: widget
 hide-body: yes
 ```
@@ -182,11 +182,11 @@ hide-body: yes
 之后就可以在维基文本侧使用定义的微件，用类似 XML 的语法使用它 `<$calendar height="100vh" />`
 
 ```
-title: <u>$:/plugins/linonetwo/tw-calendar/tiddlywiki-ui/PageLayout/CalendarLayout
-</u>name: Calendar
+title: $:/plugins/linonetwo/tw-calendar/tiddlywiki-ui/PageLayout/CalendarLayout
+name: Calendar
 description: view tiddlers in agenda or calendar by their date related fields
-tags: <u>$:/tags/Layout
-</u>
+tags: $:/tags/Layout
+
 \import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
 
 <$navigator story="$:/StoryList" history="$:/HistoryList" openLinkFromInsideRiver={{$:/config/Navigation/openLinkFromInsideRiver}} openLinkFromOutsideRiver={{$:/config/Navigation/openLinkFromOutsideRiver}} relinkOnRename={{$:/config/RelinkOnRename}}>
@@ -198,6 +198,6 @@ tags: <u>$:/tags/Layout
 </$navigator>
 ```
 
-通过给这个笔记加上 `tags: `<u>$:/tags/Layout</u> 这个标签，它就会被太微的框架部分使用到，展示在可用视图列表里
+通过给这个笔记加上 `tags: $:/tags/Layout` 这个标签，它就会被太微的框架部分使用到，展示在可用视图列表里
 
 并在它的 title 作为 `$:/layout` 这个笔记的内容时，替换掉默认的故事流视图，全屏展示这个新的视图。
