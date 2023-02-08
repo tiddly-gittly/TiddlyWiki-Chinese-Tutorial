@@ -1,0 +1,53 @@
+created: 20230208071654375
+creator: 林一二
+modified: 20230208072227767
+modifier: 林一二
+tags: 如何启动一个NodeJS的TiddlyWiki项目
+title: 修改SSR单条目静态模板的样式
+type: text/vnd.tiddlywiki
+
+使用[[NodeJS服务端渲染单条目卡片]]时，样式表会额外加上一些内容，可能会长得和直接打开完整版 Wiki 不同。
+
+把想添加的 css 填到 `$:/core/templates/static.template.css` 里，可以修改单条目静态模板的样式。
+
+不过建议保留顶部原有的内容，只把你新加的内容放到底部。例如：
+
+```tw5
+title: $:/core/templates/static.template.css
+
+<!-- from the tiddlywiki repo, core/templates/static.template.css.tid -->
+
+{{$:/boot/boot.css||$:/core/templates/wikified-tiddler}}
+
+{{$:/core/ui/PageStylesheet||$:/core/templates/wikified-tiddler}}
+
+<!-- override the core tiddler to add this -->
+
+<$importvariables filter="[[$:/themes/tiddlywiki/vanilla/base]]">
+/* Hide sidebar in static template on mobile
+  Normally the sidebar will hide using js in itonnote plugin. But in static template there is no js in static template
+*/
+@media (max-width: <<sidebarbreakpoint>>) {
+  .tc-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .tc-sidebar-scrollable {
+    height: auto;
+    position: unset;
+    width: 100%;
+    padding-left: 20px;
+  }
+}
+<!-- fix width related css variable not set in static mode -->
+@media (min-width: <<sidebarbreakpoint>>) {
+  .tc-sidebar-scrollable {
+    width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth}};
+    max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth}};
+  }
+}
+</$importvariables>
+```
+
