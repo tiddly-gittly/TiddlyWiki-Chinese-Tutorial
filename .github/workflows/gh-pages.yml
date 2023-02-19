@@ -52,7 +52,7 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_PERSONAL_ACCESS_TOKEN }}
           NETLIFY_DEPLOY_TO_PROD: true
           NETLIFY_SITE_ID: 2d87784e-fe3b-47a2-ae73-7a2f266f74a8
-          build_directory: ./dist
+          build_directory: ./public-dist
           NETLIFY_DEPLOY_MESSAGE: "Deployed from GitHub action"
           install_command: "echo Skipping installing the dependencies"
           build_command: "echo Skipping building the web files"
