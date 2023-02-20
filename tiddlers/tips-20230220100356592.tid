@@ -1,0 +1,12 @@
+class: o-random-tip
+created: 20230220100356597
+mask-closable: yes
+modified: 20230220100616299
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
+tags: Tiddlywiki5Tip
+title: tips-20230220100356592
+type: text/vnd.tiddlywiki
+
+> 在太微中文教程上， 点击侧边栏的 {{$:/plugins/oeyoews/tiddlywiki-random-tip/icon}} 图标， 即可添加启动随机提示
+
+<<random-author>>
