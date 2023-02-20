@@ -1,0 +1,10 @@
+author: oeyoews
+core-version: >=5.2.5
+dependents: 
+description: Tiddlywiki Random Tip
+list: readme explore
+name: Tiddlywiki Random Tip
+plugin-type: plugin
+title: $:/plugins/oeyoews/tiddlywiki-random-tip
+type: application/json
+version: 0.0.4
