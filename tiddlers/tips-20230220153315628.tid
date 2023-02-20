@@ -1,0 +1,12 @@
+class: o-random-tip
+created: 20230220153315632
+mask-closable: yes
+modified: 20230220154727555
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
+tags: Tiddlywiki5Tip
+title: tips-20230220153315628
+type: text/vnd.tiddlywiki
+
+<!-- add tips here -->
+> 如果你刚刚接触tiddlywiki, 你一定会被它的单文件特性惊艳到.
+> <<random-author>>
