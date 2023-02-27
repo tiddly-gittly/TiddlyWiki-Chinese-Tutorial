@@ -1,6 +1,6 @@
 created: 20220820082612147
 creator: 林一二
-modified: 20220820083442388
+modified: 20230227022203095
 modifier: 林一二
 tags: 插件使用
 title: TW-MobiLe-Sync手机移动端同步桌面端插件
@@ -17,7 +17,7 @@ type: text/vnd.tiddlywiki
 
 !! 安装
 
-# 通过[[CPL|安装第三方插件源]]搜索 `tw-mobile-sync` 安装此插件（名字可能为「Mobile NodeJS Sync」）。
+# 通过[[CPL|安装CPL插件源]]搜索 `tw-mobile-sync` 安装此插件（名字可能为「Mobile NodeJS Sync」）。
 # 还有通过官方插件源搜索 `qrcode` 安装 QRCode 插件（二维码插件）。
 
 （建议在安装好后，打开插件看这个插件的Readme，以查看最新的使用方式和相关链接）
