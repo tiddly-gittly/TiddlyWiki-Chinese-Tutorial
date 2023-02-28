@@ -1,6 +1,6 @@
 created: 20230227022021083
 creator: 林一二
-modified: 20230227022431462
+modified: 20230228031008180
 modifier: 林一二
 tags: 排查问题
 title: undefined widget xxx
@@ -8,13 +8,13 @@ type: text/vnd.tiddlywiki
 
 例如 `undefined widget 'dynannotate'`
 
-## 常见原因
+*常见原因
 
 没有从 [[CPL|安装CPL插件源]] 安装插件，而是自己通过拖动等方式安装，容易出现这个问题。
 
 从 CPL 安装你刚装的插件一般就能解决，而且一劳永逸，以后不容易再出现这个问题。
 
-## 根本原因
+*根本原因
 
 有一个提供 xxx （例如例子里的 dynannotate） [[微件]] 的插件没有安装。
 
