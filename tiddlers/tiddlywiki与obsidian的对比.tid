@@ -1,5 +1,5 @@
 created: 20230228081528347
-modified: 20230228082108832
+modified: 20230303014206881
 tags: 太微背景介绍
 title: tiddlywiki与obsidian的对比
 type: text/vnd.tiddlywiki
@@ -9,3 +9,13 @@ type: text/vnd.tiddlywiki
 有不少人是从obsidian转换到tiddlywiki的，可能会对两款软件进行对比。通过上述网站可以看到比较详细的对比内容。不过对比内容好像是用户自发写的，有一定的主观色彩。
 
 也可参考群友写的另一篇[[文章|https://imzm.im/note-taking-apps/]]。
+
+* TiddlyWiki 默认情况下单页面信息量（或称笔记数量）相比 Obsidian 更多，方便笔记之间跳转；Obsidian 支持笔记多窗口，自由排布
+* TiddlyWiki 可以不依赖任何软件运行（除了浏览器本身），本身就是一个简单的 HTML 文件，而 Obsidian 本质上是一个 Markdown 编辑器，可以在不打开软件的情况下增删改所有笔记
+* TiddlyWiki 的编辑器默认情况下较为局促，写作空间没有 Obsidian 敞亮
+* Obsidian 默认拥有标题和列表缩放功能，Tiddlywiki 缺乏这个功能（需要插件或 Macro 辅助）
+* 两者都是基本上全平台，Obsidian 新兴但是社区热闹氛围好，TiddlyWiki 历史悠久但是小众，圈子较窄
+* TiddlyWiki 完全免费开源（基于 BSD3 开源许可协议），官方不提供任何付费服务，纯粹的用爱发电项目，而 Obsidian 免费但不开源，官方提供付费同步 Sync 和付费发布 Publish 服务
+* 两者均为程序/数据分离设计（Node.js 版 TiddlyWiki），故支持各种不同的同步/备份方式，可根据自身喜好设定，不受软件本身限制
+* TiddlyWiki 基于 WikiText（方言）语法，Obsidian 基于 Markdown，默认情况下前者的表格表现形式比后者更好（例如可以很轻松地合并单元格），语法优秀功能非常丰富，后者更加易上手，但是受语言限制较大
+* Tiddlywiki 自带单个笔记加密和整个笔记本加密（单文件版）功能，Obsidian 原生不支持加密功能（本质上是管理本地文件夹），通常通过插件或者第三方应用（如 VeraCrypt）
