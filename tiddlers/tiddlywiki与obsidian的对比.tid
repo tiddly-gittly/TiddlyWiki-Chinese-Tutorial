@@ -1,14 +1,18 @@
 created: 20230228081528347
-modified: 20230303014206881
+creator: zm
+modified: 20230303014752445
+modifier: zm
 tags: 太微背景介绍
 title: tiddlywiki与obsidian的对比
 type: text/vnd.tiddlywiki
 
 [[对比网站链接|https://www.slant.co/versus/5116/37045/~tiddlywiki_vs_obsidian-md]]
 
-有不少人是从obsidian转换到tiddlywiki的，可能会对两款软件进行对比。通过上述网站可以看到比较详细的对比内容。不过对比内容好像是用户自发写的，有一定的主观色彩。
+有不少人是从 Obsidian 转换到 TiddlyWiki 的，可能会对两款软件进行对比。通过上述网站可以看到比较详细的对比内容。不过对比内容好像是用户自发写的，有一定的主观色彩。
 
 也可参考群友写的另一篇[[文章|https://imzm.im/note-taking-apps/]]。
+
+TiddlyWiki 与 Obsidian 的简要对比：
 
 * TiddlyWiki 默认情况下单页面信息量（或称笔记数量）相比 Obsidian 更多，方便笔记之间跳转；Obsidian 支持笔记多窗口，自由排布
 * TiddlyWiki 可以不依赖任何软件运行（除了浏览器本身），本身就是一个简单的 HTML 文件，而 Obsidian 本质上是一个 Markdown 编辑器，可以在不打开软件的情况下增删改所有笔记
