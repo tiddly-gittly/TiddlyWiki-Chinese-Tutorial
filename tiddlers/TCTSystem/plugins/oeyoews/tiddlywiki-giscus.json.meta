@@ -1,10 +1,10 @@
 author: oeyoews
 core-version: >=5.2.5
-dependents: $:/plugins/Gk0Wk/focused-tiddler
+dependents: $:/plugins/Gk0Wk/focused-tiddler $:/plugins/oeyoews/tiddlywiki-modal-ui
 description: A Commenting System Powered By Github Discussions
 list: readme giscus-config explore
 name: Tiddlywiki Giscus
 plugin-type: plugin
 title: $:/plugins/oeyoews/tiddlywiki-giscus
 type: application/json
-version: 1.6.4
+version: 1.6.7
