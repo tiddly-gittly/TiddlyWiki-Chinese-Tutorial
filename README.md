@@ -17,11 +17,15 @@
 
 ### 简单版
 
-0. 点击[申请](https://tiddlywiki-chinese-team-invite.herokuapp.com/)加入贡献团队。
+0. 找QQ群主联系提供加入贡献团队。
 1. 下载 [TidGi-Desktop](https://github.com/tiddly-gittly/TidGi-Desktop)，用于在本地打开和编辑 Wiki
 
 ![docs/image/clone-code-tg.png](https://cdn.jsdelivr.net/gh/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/docs/image/clone-code-tg.png)
 ![docs/image/clone-code-tg2.png](https://cdn.jsdelivr.net/gh/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/docs/image/clone-code-tg2.png)
+
+记得设置里分支改成 master 才能下载成功
+
+![9e0ea6e767d0be96ceee947f3e060558](https://user-images.githubusercontent.com/3746270/222055744-55342edf-4184-440c-bae4-3ec4e5a4e758.png)
 
 然后就能编辑了，编辑结果会每 30 分钟自动同步上来，或是在重启应用后自动同步上来。也可以右键点击左侧边栏的工作区头像，有一个立即同步选项。
 
