@@ -1,0 +1,74 @@
+created: 20230307133742876
+creator: 林一二
+modified: 20230307152411495
+modifier: 林一二
+tags: 如何添加在线字体
+title: 如何内嵌字体
+type: text/vnd.tiddlywiki
+
+参考[[论坛教程（英文）|https://talk.tiddlywiki.org/t/tw5-re-tw5-how-to-embed-a-font-using-font-face-and-data-url/6318]]：
+
+!! 使用 datauri 宏
+
+看看嵌入在「Startlight」主题中的字体，可以通过 `<<datauri>>` 宏访问你的字体文件：
+
+[[https://github.com/Jermolene/TiddlyWiki5/blob/master/themes/tiddlywiki/starlight/styles.tid]]
+
+```tw5
+title: $:/themes/tiddlywiki/starlight/styles.tid
+tags: [[$:/tags/Stylesheet]]
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+
+/*
+Placeholder for a more thorough refinement of Snow White
+*/
+
+@font-face {
+	font-family: "Arvo";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Arvo"), url(<<datauri "$:/themes/tiddlywiki/starlight/arvo.woff">>) format("woff");
+}
+
+html body, .tc-sidebar-scrollable-backdrop {
+	font-family: "Arvo", "Times";
+	background: url(<<datauri "$:/themes/tiddlywiki/starlight/ltbg.jpg">>);
+}
+```
+
+注意其中 `src: local("Arvo"), url(<<datauri "$:/themes/tiddlywiki/starlight/arvo.woff">>) format("woff");` 这一行。
+
+它通过宏嵌入了 `$:/themes/tiddlywiki/starlight/arvo.woff` 这个字体文件条目。
+
+!!! 具体做法
+
+# 下载 woff2 字体（体积比例子里的 woff 小），拖入 wiki 里，形成一个条目，获得条目名，例如 `字体名.woff2`。
+# 创建一个带有 `$:/tags/Stylesheet` 标签的 CSS 条目
+# 在里面添加 CSS 的 `@font-face` 语法：
+
+```css
+@font-face {
+	font-family: "字体名";
+	font-style: normal;
+	font-weight: 400;
+	src: local("字体名"), url(<<datauri "字体名.woff2">>) format("woff2");
+}
+```
+
+注意 `font-family` 和 `src` 那边都改成字体的真实名字，例如黑体就是 `SimHei`。
+
+之后在控制面板-视觉外观-主题调整-设置-字型里就可以使用这个字体名了。
+
+
+!! 手动操作（高级）
+
+一般来说没有必要手动进行 base64 编码，因为 `datauri` 宏就会做运行时的 base64 编码。但如果你希望节省运行时的性能，又是技术人员，可以尝试下面的做法：
+
+# 下载字体文件，例如 `FiraCode-VF.woff2`
+# 正如[[转换和渲染 web 字体到 base64-保持原始外观-stackoverflow|https://stackoverflow.com/questions/26867893/converting-and-rendering-web-fonts-to-base64-keep-original-look]]中所说，在终端里执行 `base64 '~/Downloads/Fira_Code_v6.2/woff2/FiraCode-VF.woff2' -o '~/Downloads/Fira_Code_v6.2/woff2/FiraCode-VF.woff2.base64.txt'`
+# 将得到的 base64 字符串放入 `src: url(‘data:@file/octet-stream;base64,yourbase64’);`
+
+正如[[Base64编码的 OpenType 字体使用数据 URI-Stack Overflow|https://stackoverflow.com/questions/35120217/base64-encoded-opentype-font-face-using-data-uri]]中所说的那样。
+
+例如: fix: fira 代码加载很慢，使用本地版本 · tiddle-gitonnote-theme@ff75e1a · GitHub 1

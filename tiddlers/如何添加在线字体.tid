@@ -1,7 +1,9 @@
 created: 20230307085803297
-modified: 20230307090413502
+creator: 林一二
+modified: 20230307152523600
+modifier: 林一二
 tags: 使太微更易用
-title: 如何更新字体？
+title: 如何添加在线字体
 type: text/vnd.tiddlywiki
 
 怎么更新的呢？首先去[[谷歌字体网|https://fonts.google.com/]]找一款喜欢的。
@@ -11,7 +13,10 @@ type: text/vnd.tiddlywiki
 ```
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200&display=swap" rel="stylesheet">
 ```
-找到网站右边复制一段类似上面的代码放到条目正文里。然后去[[$:/themes/tiddlywiki/vanilla/settings/fontfamily]]这个条目里添加上你选择的格式放在最前面。比如我的是`'Noto Serif SC', serif;`。保存刷新就可以看到效果了。
+找到网站右边复制一段类似上面的代码放到条目正文里。然后
+
+* 在控制面板-视觉外观-主题调整-设置-字型里使用这个字体名
+* 或者直接去[[$:/themes/tiddlywiki/vanilla/settings/fontfamily]]这个条目里添加上你选择的格式放在最前面。比如我的是`'Noto Serif SC', serif;`。保存刷新就可以看到效果了。
 
 不过我发现上面网站里没几款字体。楷体都没找到，只有这种宋体或者衬线体。另一款比较黑的，对英文支持不太好。英文根本就不能阅读了，简直是草书。目前先用这个字体吧，配合整体的绿色，感觉还是很小清新的。
 
@@ -33,4 +38,4 @@ https://www.npmjs.com/search?q=lxgw
 
 https://www.jsdelivr.com/?query=lxgw
 
-
+这样使用字体最为快捷，不过断网就用不了了。如果想折腾离线版字体，可以学习[[如何内嵌字体]]。
