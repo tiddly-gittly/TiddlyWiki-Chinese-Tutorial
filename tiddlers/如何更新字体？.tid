@@ -1,0 +1,36 @@
+created: 20230307085803297
+modified: 20230307090413502
+tags: 使太微更易用
+title: 如何更新字体？
+type: text/vnd.tiddlywiki
+
+怎么更新的呢？首先去[[谷歌字体网|https://fonts.google.com/]]找一款喜欢的。
+
+然后新建一个条目，标题随便写，或者写某种字体类型也可以，打上标签`$:/tags/RawMarkup`，里面的正文一般是下面的格式。
+
+```
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200&display=swap" rel="stylesheet">
+```
+找到网站右边复制一段类似上面的代码放到条目正文里。然后去[[$:/themes/tiddlywiki/vanilla/settings/fontfamily]]这个条目里添加上你选择的格式放在最前面。比如我的是`'Noto Serif SC', serif;`。保存刷新就可以看到效果了。
+
+不过我发现上面网站里没几款字体。楷体都没找到，只有这种宋体或者衬线体。另一款比较黑的，对英文支持不太好。英文根本就不能阅读了，简直是草书。目前先用这个字体吧，配合整体的绿色，感觉还是很小清新的。
+
+[[霞鹜文楷|https://github.com/lxgw/LxgwWenKai]]
+
+这是一个开源字体，效果还不错。配置如下。
+
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css" />
+```
+
+和上面描述的一样，需要加上`$:/tags/RawMarkup`标签，正文是一个link链接，直接复制就可以。type设置为`text/html`。再到[[$:/themes/tiddlywiki/vanilla/settings/fontfamily]]最前面添加`"LXGW WenKai Lite";`。然后需要在标签层级里把`霞鹜文楷`（或者你设置的标题）放到最前。
+
+不放到最前是看不到效果的。点开标签就可以看到层级。
+
+一些其他的网站也可以搜索到。
+
+https://www.npmjs.com/search?q=lxgw
+
+https://www.jsdelivr.com/?query=lxgw
+
+
