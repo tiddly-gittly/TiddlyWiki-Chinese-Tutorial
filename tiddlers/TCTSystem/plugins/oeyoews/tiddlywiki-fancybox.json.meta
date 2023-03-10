@@ -1,10 +1,10 @@
 author: oeyoews
-core-version: >=5.2.3
-dependents: 
+core-version: >=5.2.5
+dependents: $:/plugins/oeyoews/tiddlywiki-modal-ui
 description: Tiddlywiki Gallery
 list: readme config example explore
 name: Tiddlywiki Fancybox
 plugin-type: plugin
 title: $:/plugins/oeyoews/tiddlywiki-fancybox
 type: application/json
-version: 0.5.0
+version: 0.9.0

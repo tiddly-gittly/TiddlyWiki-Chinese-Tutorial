@@ -1,11 +1,11 @@
 author: oeyoews
 core-version: 5.2.5
-dependents: 
+dependents: $:/plugins/kookma/shiraz-callout $:/plugins/oeyoews/tiddlywiki-modal-ui
 description: Surfing On TiddlyWiki
-list: readme
+list: readme explore
 name: Surfing on TiddlyWiki
 plugin-type: plugin
 source: 
 title: $:/plugins/oeyoews/neotw-surfing-keys
 type: application/json
-version: 0.3.0
+version: 0.8.1
