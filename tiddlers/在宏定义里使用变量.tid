@@ -1,9 +1,9 @@
 created: 20230107091629373
 creator: 林一二
-modified: 20230107092929476
+modified: 20230312155708196
 modifier: 林一二
 tags: 变量 宏
-title: 在宏里使用变量
+title: 在宏定义里使用变量
 type: text/vnd.tiddlywiki
 
 参考[[中文文档-宏|https://bramchen.github.io/tw5-docs/zh-Hans/#Macros]]

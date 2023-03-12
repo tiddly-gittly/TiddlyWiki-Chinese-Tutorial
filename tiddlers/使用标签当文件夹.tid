@@ -1,0 +1,50 @@
+created: 20230312154044824
+creator: 林一二
+friends: bbb
+modified: 20230312160414667
+modifier: 林一二
+tags: 笔记思维
+title: 使用标签当文件夹
+type: text/vnd.tiddlywiki
+
+<<<.tc-big-quote
+标签是将性质不同的项目联系起来的简单方法，但用以描述关系的话，信息量就太低了。
+
+所有标记上特定标签的条目，都显示为是相关的......但很难看出是怎样的关系。这些条目只是混乱无序的列表。
+
+其中一些条目比其他条目与特定标签的主题更相关，所以我们应该[[优先选择明确的关联，而不是推断的关联|https://zhuanlan.zhihu.com/p/426606275]]。
+
+其中一些条目只有几个句子是和标签有关的，但该标签却与整体条目相关联。我们应该[[优先使用细粒度的关联|https://zhuanlan.zhihu.com/p/425749221]]。与此相关的是，标签往往相当模糊或宽泛。更好的方法是更精确地链接到关联想法。
+
+而且有时候，如果能标注一点上下文，描述「为什么」某个条目是和标记上的标签有关的，就更好了。我们应该[[优先使用经过标注的关联|https://zhuanlan.zhihu.com/p/425763923]]。
+<<<[[标签是无效的关联结构 - 叶峻峣的文章 - 知乎|https://zhuanlan.zhihu.com/p/425400912]]
+
+我觉得标签用来当文件夹就够了，提供一个简单的树状结构信息，其他网状关联可以用字段和链接。有的工具可能直接提供了有向无环图的文件夹功能，那其实应该就没必要用标签了。
+
+「标签是将性质不同的项目联系起来的简单方法」其实说的也是文件夹，如果将一个条目作为项目文件夹，那么其它加了这个条目名作为标签的子条目，就相当于都是和这个项目相关的笔记了。
+
+!! 用标签的方式表示「精确的关系」
+
+标签相当于是一个条目「tags」字段下的数组，如果想描述更精确的三元组关系，例如「好朋友」，那么可以在「friends」字段下的数组里填朋友的名字。
+
+然后在太微（Tiddlywiki）里，可以把标签的 UI 「[[tag-picker 宏|https://bramchen.github.io/tw5-docs/zh-Hans/#tag-picker%20Macro]]」用于任何字段。所以可以自己放一个专门用于添加「好朋友」标签的标签栏在条目上，用于填这种精确的「三元组标签」。
+
+例如这样用[[宏]]做一个上述用于填「好朋友」字段的，看起来像是标签的 UI 组件：
+
+```tw5
+<<tag-picker tagField:"friends">> 
+```
+
+<<tag-picker tagField:"friends">>
+
+再把这字段里的内容以标签的形式展示出来，这里用到了[[在列表微件中使用筛选器]]，并[[在宏调用里使用变量]]：
+
+```tw5
+<$list filter="[all[current]get[friends]] +[sort[title]]" variable="tag">
+	<$macrocall $name="tag-pill" tag=<<tag>>/>
+</$list>
+```
+
+<$list filter="[all[current]get[friends]] +[sort[title]]" variable="tag">
+	<$macrocall $name="tag-pill" tag=<<tag>>/>
+</$list>

@@ -1,0 +1,19 @@
+created: 20230312155714645
+creator: 林一二
+modified: 20230312160432418
+modifier: 林一二
+tags: 宏
+title: 在宏调用里使用变量
+type: text/vnd.tiddlywiki
+
+一般是用 `<$macrocall $name=macroName xxx=<<variableName>> />` 的写法。
+
+这里 `xxx` 是宏接收的一个参数，`variableName` 是你想使用的变量。
+
+可以看到我们这里用到了[[微件]]、[[宏]]、[[变量]]三个概念：
+
+# 通过 `macrocall` 微件来使用宏，宏的名字放在 `$name=` 后面
+#* `<$macrocall $name=macroName />` 等价于 `<<macroName>>`
+#* 但 `<<macroName>>` 这种写法不支持使用变量作为宏的参数，所以我们才需要使用这里介绍的更复杂的写法
+# `<<variableName>>` 是正常的使用变量的写法，我们通过[[在微件调用中使用宏或变量]]来把它传给 `macrocall` 微件的 `xxx` 参数
+# `macrocall` 微件的 `xxx` 参数就会传给 `macroName` 这个我们想调用的宏，作为它的同名的 `xxx` 参数，被宏用起来

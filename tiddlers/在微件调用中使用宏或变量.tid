@@ -1,0 +1,25 @@
+created: 20230312160154681
+creator: 林一二
+modified: 20230312160951551
+modifier: 林一二
+tags: 微件
+title: 在微件调用中使用宏或变量
+type: text/vnd.tiddlywiki
+
+直接在放微件参数的地方，使用 `<<xxx>>` 的正常的[[宏]]的使用方法即可。
+
+例如[[中文官方教程-link 微件|https://bramchen.github.io/tw5-docs/zh-Hans/#LinkWidget]]中的例子：
+
+```tw5
+<$link to=<<currentTiddler>> >
+	<$view field="title"/>
+</$link>
+```
+
+<$link to=<<currentTiddler>>>
+	<$view field="title"/>
+</$link>
+
+`<<currentTiddler>>` 这个变量就直接传给了 `to` 这个参数，中间用「等号」 `=` 连接。
+
+更多例子可见[[变量在不同情况下的多种写法]]。
