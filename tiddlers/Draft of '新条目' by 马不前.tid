@@ -1,0 +1,15 @@
+created: 20230316035845728
+creator: 马不前
+draft.of: 新条目
+draft.title: 字段无法显示在编辑栏中
+modified: 20230316040215974
+modifier: 马不前
+tags: 排查问题
+title: Draft of '新条目' by 马不前
+type: text/vnd.tiddlywiki
+
+最近钓鱼插件大更新了。题目设置在caption中。然后制作了一个更方便的编辑模板，并把caption字段隐藏起来了。
+
+但平时添加条目用到caption字段时，隐藏起来编辑就很不方便了。所以我们需要新建一个条目，标题填`$:/config/EditTemplateFields/Visibility/caption`，里面的内容填`yes`。
+
+类似的，如果其他字段也无法正常显示了，一般也是因为插件隐藏起来了，所以只需要建一个条目，标题写`$:/config/EditTemplateFields/Visibility/`
