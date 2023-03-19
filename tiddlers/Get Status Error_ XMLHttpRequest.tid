@@ -1,6 +1,6 @@
 created: 20230319021321283
 creator: 马不前
-modified: 20230319021542234
+modified: 20230319121608405
 modifier: 马不前
 tags: 排查问题
 title: Get Status Error: XMLHttpRequest
@@ -11,3 +11,7 @@ type: text/vnd.tiddlywiki
 原因：可能是在发布HTML的时候，没有禁用掉nodejs保存用的tiddlyweb插件吧。
 
 禁用tiddlyweb插件再git推上去，就可以了。
+
+再然后需要把`$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/tiddlyweb`文件删除。然后移除太记里的tiddlywiki，但不要删除文件夹。不然就没了。再重新添加一下文件夹，导入本地wiki。
+
+不然会一直处于单文件版本。
