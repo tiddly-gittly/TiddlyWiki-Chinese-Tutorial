@@ -1,0 +1,13 @@
+created: 20230319021321283
+creator: 马不前
+modified: 20230319021542234
+modifier: 马不前
+tags: 排查问题
+title: Get Status Error: XMLHttpRequest
+type: text/vnd.tiddlywiki
+
+会有下面的报错提示`Get Status Error: XMLHttpRequest 错误代码: 404`和`简要条目清单提取错误: XMLHttpRequest 错误代码: 404`以及类似的`syncer-browser-tiddlyweb - 2023年03月19日 10:07`，显示为tiddlyweb插件出了问题。
+
+原因：可能是在发布HTML的时候，没有禁用掉nodejs保存用的tiddlyweb插件吧。
+
+禁用tiddlyweb插件再git推上去，就可以了。
