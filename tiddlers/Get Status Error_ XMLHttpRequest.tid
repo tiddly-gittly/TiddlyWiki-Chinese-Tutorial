@@ -1,6 +1,6 @@
 created: 20230319021321283
 creator: 马不前
-modified: 20230319121608405
+modified: 20230319125928656
 modifier: 马不前
 tags: 排查问题
 title: Get Status Error: XMLHttpRequest
@@ -12,6 +12,8 @@ type: text/vnd.tiddlywiki
 
 禁用tiddlyweb插件再git推上去，就可以了。
 
-再然后需要把`$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/tiddlyweb`文件删除。然后移除太记里的tiddlywiki，但不要删除文件夹。不然就没了。再重新添加一下文件夹，导入本地wiki。
+再然后需要把`$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/tiddlyweb`文件删除。然后移除太记里的tiddlywiki，但不要删除文件夹。不然就没了。再重新添加一下文件夹，导入本地wiki。不然会一直处于单文件版本。
 
-不然会一直处于单文件版本。
+上面的操作还不能解决的话，就新建一个空wiki，把`tiddlywiki.info`文件里的内容复制，然后复制到出问题的wiki中的`tiddlywiki.info`里去，替换原有的文件。也就是更新`tiddlywiki.info`这个文件。
+
+因为太记里旧的wiki文件不会自动更新配置。一些新的配置需要手动更新。从新的模板里复制过去更新。
