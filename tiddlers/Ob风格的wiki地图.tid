@@ -1,14 +1,14 @@
 created: 20221127111232331
 creator: WhiteFall
-modified: 20221216045730030
+modified: 20230322144947350
 modifier: WhiteFall
 tags: 使太微更易用 条目集
 title: Ob风格的wiki地图
 type: text/vnd.tiddlywiki
 
-* Author：WhiteFall，[[Peter Hajas|https://github.com/peterhajas]]
-* 描述：Ob风格的wiki地图，点击BrainMap条目即可查看效果。
-* 使用方法：来源：https://github.com/tiddly-gittly/tw-echarts/discussions/65 。方法一，根据下列提示创建并设置两个条目。方法二，安装echarts插件，将下面两个条目拖放到你的Wiki中。
+* Author：linonetwo，WhiteFall，[[Peter Hajas|https://github.com/peterhajas]]
+* 描述：Ob风格的wiki地图。需要安装Gk0Wk/echarts插件。插件版本>=v0.2.2 。
+* 使用方法：根据下列提示创建并设置条目。来源：https://github.com/tiddly-gittly/tw-echarts/discussions/65 。
 
 
 ```
@@ -17,19 +17,10 @@ type: text/vnd.tiddlywiki
 条目类型：默认TiddlyWiki5
 ```
 
-<$let selected-tiddler="BrainMap">
-	<$macrocall $name="code" language={{{[<selected-tiddler>get[type]]}}} src={{{[<selected-tiddler>get[text]]}}} caption={{{[<selected-tiddler>get[title]]}}} />
-</$let>
-
-
 ```
-条目标题：ObMap.json
-依赖插件：Gk0Wk/echarts
-条目类型：默认TiddlyWiki5
-字段：
-	echarts-refresh-trigger:	[all[]get[modified]]
+<$echarts
+  $tiddler="$:/plugins/Gk0Wk/echarts/addons/BrainMap"
+  $height="500px"
+  dblclick="(params, parentWidget) => { parentWidget.dispatchEvent({ type: 'tm-navigate', navigateTo: params.data.name }) }"
+/>
 ```
-
-<$let selected-tiddler="ObMap.json">
-	<$macrocall $name="code" language={{{[<selected-tiddler>get[type]]}}} src={{{[<selected-tiddler>get[text]]}}} caption={{{[<selected-tiddler>get[title]]}}} />
-</$let>

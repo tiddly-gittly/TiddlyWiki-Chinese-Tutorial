@@ -1,9 +1,0 @@
-created: 20221127111907383
-creator: WhiteFall
-modified: 20221129100414139
-modifier: WhiteFall
-tags: Ob风格的wiki地图
-title: BrainMap
-type: text/vnd.tiddlywiki
-
-<$echarts $height=500px $tiddler="ObMap.json"/>
