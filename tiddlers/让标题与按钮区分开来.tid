@@ -1,0 +1,23 @@
+created: 20230323224209645
+creator: 马不前
+modified: 20230323224234318
+modifier: 马不前
+tags: 使太微更易用
+title: 让标题与按钮区分开来
+type: text/vnd.tiddlywiki
+
+
+```
+.tc-titlebar h2 {
+    font-size: 1em;
+    display: table-row-group;
+}
+.tc-tiddler-frame .tc-tiddler-controls {
+	display: table-header-group;
+    float: right;
+    padding: 0px;
+}
+
+```
+
+上面的代码加上样式标签就基本上可以实现标题与按钮区分了
