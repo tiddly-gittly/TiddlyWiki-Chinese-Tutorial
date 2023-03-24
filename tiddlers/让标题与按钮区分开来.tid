@@ -1,13 +1,14 @@
 created: 20230323224209645
 creator: 马不前
-modified: 20230323224234318
+modified: 20230324115051062
 modifier: 马不前
 tags: 使太微更易用
 title: 让标题与按钮区分开来
 type: text/vnd.tiddlywiki
 
+太微原生的样式里，条目的标题与按钮是放在一起的，在移动端显示就会显示为一分两半，一点也不好看。
 
-```
+```css
 .tc-titlebar h2 {
     font-size: 1em;
     display: table-row-group;
@@ -20,4 +21,4 @@ type: text/vnd.tiddlywiki
 
 ```
 
-上面的代码加上样式标签就基本上可以实现标题与按钮区分了
+上面的代码加上样式标签`$:/tags/Stylesheet`就基本上可以实现标题与按钮区分了。当标题很短时，标题与按钮保持一致，当标题很长时，按钮会在标题的上方。
