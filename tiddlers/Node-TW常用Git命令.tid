@@ -154,6 +154,9 @@ git push -f origin main # 注意：你的主分支也可能是main
 打开对话框的方式：在终端中输入 `git credential-helper-selector` 命令，然后按回车键。 
 
 
-!! 有趣的Git动画视频
+!! 有趣的Git动画视频和网站
 
 【纯享Git小动画！轻松看懂git命令-哔哩哔哩】 https://b23.tv/unZnX7j
+
+
+如何优雅的使用Git：https://dangitgit.com/zh
