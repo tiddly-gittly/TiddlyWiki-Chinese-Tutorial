@@ -1,0 +1,13 @@
+created: 20230331080448907
+creator: 林一二
+modified: 20230331080517065
+modifier: 林一二
+tags: 自动化
+title: 数据库表格
+type: text/vnd.tiddlywiki
+
+类似 Ob、Notion 的 Database 功能。
+
+通过[[Shiraz宏包]]里的动态表格实现。
+
+{{shiraz动态表格.jpg}}
