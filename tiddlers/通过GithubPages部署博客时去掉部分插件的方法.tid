@@ -1,9 +1,41 @@
 created: 20230331081004962
 creator: 林一二
-modified: 20230331081735005
-modifier: 林一二
+modified: 20230331151756903
+modifier: 马不前
 tags: B站直播 任务
 title: 通过GithubPages部署博客时去掉部分插件的方法
 type: text/vnd.tiddlywiki
 
 [[qq频道里的分享|https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&appChannel=share&inviteCode=1ZBIwh3BfSf&contentID=1jyJDo&businessType=2&from=181174&shareSource=5&biz=ka]]
+
+方法是改构建脚本，加上这个构建方案 
+
+```json
+"readonlyexternalimages": [
+      "--setfield",
+      "[is[binary]] [type[application/msword]]",
+      "_canonical_uri",
+      "$:/core/templates/canonical-uri-external-image",
+      "text/plain",
+      "--setfield",
+      "[is[binary]] [type[application/msword]] [type[application/pdf]] [[$:/plugins/tiddlywiki/filesystem]] [[$:/plugins/tiddlywiki/tiddlyweb]] [[$:/plugins/twcloud/tiddlyweb-sse]] [[$:/plugins/linonetwo/source-control-management]] [[$:/plugins/linonetwo/super-tag]] [[$:/plugins/linonetwo/flow-chart]] [[$:/plugins/linonetwo/slate-write]] [[$:/plugins/linonetwo/smart-field]] [[$:/plugins/linonetwo/markdown-transformer]] [[$:/plugins/gt6796c/mermaid-tw5]] [[$:/plugins/linonetwo/tw-mobile-sync]] [[$:/plugins/linonetwo/zx-script]] [[$:/plugins/tiddlywiki/highlight]] [prefix[$:/plugins/tiddlywiki/codemirror]] [[$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced]] [[$:/plugins/flibbles/relink]] [[$:/plugins/kookma/commander]] [[$:/plugins/kookma/section]] [[$:/plugins/linonetwo/calendar]] [[$:/plugins/linonetwo/pinyin-fuzzy-search]]",
+      "text",
+      "",
+      "text/plain",]
+```
+
+ 
+ 注意这里面通过筛选器选中要`--setfield``"text","",``"text/plain",`的内容，把它们置为空字符，就相当于在发布博客时删掉了插件。 
+ 
+然后记得把`scripts/build-wiki.js`里面的`externalimages`改为用刚刚加上的 `readonlyexternalimages：` 
+从旧的 
+
+```
+scripts/build-wiki.js   execAndLog(`tiddlywiki ${repoFolder} --build externalimages`, { cwd: repoFolder });   
+```
+ 
+改为 
+
+```
+  execAndLog(`tiddlywiki ${repoFolder} --build readonlyexternalimages`, { cwd: repoFolder });
+```
