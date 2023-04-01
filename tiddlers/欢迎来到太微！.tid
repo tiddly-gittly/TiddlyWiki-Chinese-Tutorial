@@ -3,8 +3,8 @@ created: 20210902044836979
 creator: 林一二
 icon: 🎉
 list: 太微背景介绍 幻灯片 如何保存 基础知识 自动化 排查问题 资源链接 插件开发 插件使用 笔记思维 社区建设 徽章列表
-modified: 20230206144647373
-modifier: 马不前
+modified: 20230401085543047
+modifier: WhiteFall
 page-cover: https://pic4.zhimg.com/v2-881f391ae052f85939fcfeb40bc2056c
 tags: 欢迎来到太微！
 title: 欢迎来到太微！
@@ -20,14 +20,14 @@ type: text/vnd.tiddlywiki
 # 可以翻阅右边的[[文档目录|TW-Locator例子：当前知识库的目录]]，注意查看[[文档目录的使用帮助|$:/plugins/linonetwo/itonnote/Help/TW-Locator基于标签生成的文件夹目录结构使用方法]]
 # 查看每个[[条目]]底部的[[反向链接]]
 # 点击右边栏上的 {{$:/core/ui/Buttons/CommandPalette}} 按钮来打开搜索框（或直接点击 {{$:/core/ui/Buttons/CommandPalette}} ！）
-# 还是找不到的话可以到[[资源链接]]里在其它社区资源里搜索~
 
 !! 如何开始使用太微
 
 # 查看[[如何保存]]来下载相关应用程序，创建你自己的知识库。
 # 在网页上直接修改此知识库试试，放心，[[你不会真正修改到我们数据库里的内容|如何保存内容到社区仓库里]]。
-# 访问 [ext[可离线版本|/offline.html]] 可以让你点击侧边栏上的下载按钮把网页下载为单个HTML文件离线阅读
-# 阅读[[资源链接]]，获取新人小白大礼包，其中涵盖了TiddlyWiki教程、知识链接与正在使用的太微实例，还有常用的插件介绍，包括一份TiddlyWiki游戏，更有TiddlyWiki的全平台软件及工作流程。
+# 访问 [ext[可离线版本|/offline.html]] 可以让你点击侧边栏上的下载按钮__把网页下载为单个HTML文件__离线阅读
+# 你可以在[[资源链接]]里找到''其它社区资源链接''、[[TiddlyWiki教程|教程链接]]、[[知识链接|知识链]]与正在使用的[[个人太微Wiki示例|TiddlyWiki中文网站示例]]，还有常用的[[插件介绍|插件列表]]（包括TidGi预制插件）、一份__TiddlyWiki游戏__和[[TiddlyWiki的全平台软件|创建保存]]以及工作流程。
+
 
 !! 背景介绍
 
