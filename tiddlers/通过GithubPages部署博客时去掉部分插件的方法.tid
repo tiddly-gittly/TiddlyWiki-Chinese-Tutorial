@@ -1,10 +1,11 @@
 created: 20230331081004962
 creator: 林一二
-modified: 20230331151756903
+modified: 20230402020017987
 modifier: 马不前
-tags: B站直播 任务
+tags: B站直播 任务 done
 title: 通过GithubPages部署博客时去掉部分插件的方法
 type: text/vnd.tiddlywiki
+video-link: [[视频链接|https://www.bilibili.com/video/BV1FX4y1k7Rv/]]
 
 [[qq频道里的分享|https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&appChannel=share&inviteCode=1ZBIwh3BfSf&contentID=1jyJDo&businessType=2&from=181174&shareSource=5&biz=ka]]
 
@@ -39,3 +40,4 @@ scripts/build-wiki.js   execAndLog(`tiddlywiki ${repoFolder} --build externalima
 ```
   execAndLog(`tiddlywiki ${repoFolder} --build readonlyexternalimages`, { cwd: repoFolder });
 ```
+
