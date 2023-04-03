@@ -1,7 +1,7 @@
 created: 20230311141240592
 creator: 林一二
-modified: 20230402020258249
-modifier: 马不前
+modified: 20230402032921833
+modifier: 林一二
 tags: 社区建设
 title: B站直播
 type: text/vnd.tiddlywiki
@@ -13,7 +13,7 @@ type: text/vnd.tiddlywiki
 <$macrocall $name=table-dynamic caption="待分享的主题列表" filter="[tag[B站直播]tag[任务]]-[tag[done]]" fields="title tags" class="w-100"/>
 
 	<$button>
-		<$action-sendmessage $message="tm-new-tiddler" title="xxx" text="""<$macrocall $name="locator-view" baseTitle=<<currentTiddler>> />""" tags="B站直播 任务" />
+		<$action-sendmessage $message="tm-new-tiddler" title="xxx" text="" tags="B站直播 任务" />
 	添加新待分享
 	</$button>
 	
