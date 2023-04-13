@@ -1,6 +1,6 @@
 created: 20230322125515191
 creator: WhiteFall
-modified: 20230322143326454
+modified: 20230413084821979
 modifier: WhiteFall
 tags: 使太微更易用
 title: Node-TW常用Git命令
@@ -85,6 +85,27 @@ squash 326e415 This is third commit.
 
 参考链接：https://docs.github.com/zh/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
 
+
+!! GC仓库压缩瘦身
+
+
+参考链接：https://blog.csdn.net/qq_40233736/article/details/86668768
+
+''快速使用''
+
+```sh
+# 查看历史大文件
+git rev-list --objects --all | grep "$(git verify-pack -v .git/objects/pack/*.idx | sort -k 3 -n | tail -5 | awk '{print$1}')"
+# 从历史中删除 target/ 这个文件夹
+git filter-branch --force --index-filter 'git rm -r  --cached --ignore-unmatch target/' --prune-empty --tag-name-filter cat -- --all
+# 执行仓库压缩
+git gc --prune=now
+# 推送到远程仓库
+git push origin --force --all
+```
+
+
+
 !! 硬回退
 
 ```sh
@@ -95,7 +116,7 @@ git reset --hard HEAD~n
 
 硬回退，意味着放弃从当前commit版本到n版本的提交，并删除这段历史commit记录。
 
-!! 撤销commit后提交
+!! 取消指定的提交
 
 ```sh
  git revert <commit id>
