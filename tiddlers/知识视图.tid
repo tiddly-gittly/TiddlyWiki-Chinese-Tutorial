@@ -1,6 +1,6 @@
 created: 20230413085250264
 creator: WhiteFall
-modified: 20230413090711396
+modified: 20230413091213136
 modifier: WhiteFall
 tags: 笔记思维
 title: 知识视图
@@ -15,3 +15,30 @@ type: text/vnd.tiddlywiki
 我并不确定【知识视图】这个描述是否合理，之前想到一个合适的名词描述，可惜忘记了。元素视图模式？
 
 chatGPT建议为：知识图谱视图（Knowledge Graph View）
+
+
+''展示知识方式的视图''
+
+展示知识的方式有多种视图，常见的包括：
+
+1.树状图（Tree）
+
+2.表格（Table）
+
+3.流程图（Flowchart）
+
+4.时间轴（Timeline）
+
+5.地图（Map）
+
+6.散点图（Scatterplot）
+
+7.雷达图（Radar chart）
+
+8.条形图（Bar chart）
+
+9.饼图（Pie chart）
+
+10.网络图（Network graph）
+
+综合起来，展示知识的方式的视图可以被称为“知识树状图”、“知识表格”、“知识流程图”、“知识时间轴”、“知识地图”、“知识散点图”、“知识雷达图”、“知识条形图”、“知识饼图”或者“知识网络图”。
