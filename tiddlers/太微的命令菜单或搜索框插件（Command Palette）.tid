@@ -1,0 +1,10 @@
+created: 20230411124641674
+creator: 马不前
+modified: 20230411124833067
+modifier: 马不前
+tags: B站直播 done 插件使用
+title: 太微的命令菜单或搜索框插件（Command Palette）
+type: text/vnd.tiddlywiki
+video-link: [[视频链接|https://www.bilibili.com/video/BV1Kc411p7S3/]]
+
+太微中通过 CPL 中文社区插件源里的 Command Palette 插件，可以实现类似 Alfred 的搜索框 + 命令执行框功能，可以创建笔记、用筛选器搜索笔记等等。
