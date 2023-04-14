@@ -1,6 +1,6 @@
 created: 20230322125515191
 creator: WhiteFall
-modified: 20230413084821979
+modified: 20230414022737981
 modifier: WhiteFall
 tags: 使太微更易用
 title: Node-TW常用Git命令
@@ -79,30 +79,39 @@ squash 326e415 This is third commit.
 
 
 
-!! 单独删除某个文件的所有历史记录
-
- 要从存储库的历史记录中彻底删除不需要的文件，可以使用 git filter-repo 工具或 BFG Repo-Cleaner 开放源代码工具。
-
-参考链接：https://docs.github.com/zh/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
 
 
-!! GC仓库压缩瘦身
+!! GC（仓库垃圾回收）
 
+> 参考链接：[[如何瘦身Git仓库|https://linux.cn/article-8556-1.html]]
 
+!!! git仓库压缩瘦身
 参考链接：https://blog.csdn.net/qq_40233736/article/details/86668768
+
+git gc命令：https://blog.csdn.net/yjl2055/article/details/101072073
+
+
 
 ''快速使用''
 
 ```sh
-# 查看历史大文件
+# 查看历史大文件(含有linux命令)
 git rev-list --objects --all | grep "$(git verify-pack -v .git/objects/pack/*.idx | sort -k 3 -n | tail -5 | awk '{print$1}')"
-# 从历史中删除 target/ 这个文件夹
+# 从历史中删除 target/ 这个文件夹(含有linux命令)
 git filter-branch --force --index-filter 'git rm -r  --cached --ignore-unmatch target/' --prune-empty --tag-name-filter cat -- --all
 # 执行仓库压缩
 git gc --prune=now
 # 推送到远程仓库
 git push origin --force --all
 ```
+
+
+
+!!! 单独删除某个文件的所有历史记录
+
+ 要从存储库的历史记录中彻底删除不需要的文件，可以使用 git filter-repo 工具或 BFG Repo-Cleaner 开放源代码工具。
+
+参考链接：https://docs.github.com/zh/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
 
 
 
