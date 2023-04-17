@@ -1,0 +1,31 @@
+created: 20230809234409764
+creator: WhiteFall
+modified: 20230814015121555
+modifier: WhiteFall
+tags: 插件开发 笔记思维
+title: WikiText编程
+
+"编程"是我们为了完成某项任务，将解决问题的步骤，用计算机能够理解的语言写成指令，这就是"编程"。而后，计算机会根据这些指令一步步执行，最后完成任务。
+
+"编程"涉及到3个组成部分：
+
+# 我们，负责思考解决问题的步骤
+# 我们，负责使用计算机能够理解的语言，来描述解决的步骤
+# 计算机，负责执行这些步骤
+
+TiddlyWiki可以大致分成几个部分wikitext写作，wikitext编程、插件开发。自定义可以归属于wikitext编程范围。
+
+tree宏为我们提供了一种WikiText编程参考，
+
+WikiText编程核心是：小工具（Widget），小工具消息（Messages），和筛选器（Filters）。可以使用的WikiText变量（WikiText Variables），这些变量是由TiddlyWiki提供好的，具有特殊功能，可以直接引用的数据。
+
+https://bramchen.github.io/tw5-docs/zh-Hans/#Variable%20Usage 原来宏，进程，微件$set、$let、$vars、\function、javascript macros都可以是变量。
+
+你可以自己定义方法（动作）在TiddlyWiki中叫作进程或宏，推荐使用进程（Procedures），它可以接受参数，不同位置，变量是引用方式不一样。你可以使用小工具定义变量。也可以在某个小工具添加属性导出变量。在方法体中，你可以使用小工具、筛选器、小工具消息、变量进行一系列动作。
+
+你也可以定义函数，函数在TiddlyWiki中被定义为包含筛选器表达式的命名文本片段。函数可以具有命名参数，这些参数在函数内当作变量使用。感觉基本上是操作条目的各个字段，对字段内容进行增查删改。然后输出一组内容，表现形式为编程语言中的列表类型。
+
+似乎整个WikiText编程都围绕条目进行操作。
+
+之所以叫WikiText编程是因为，WikiText编程核心由js实现且降低了复杂度但又和平常的记录笔记相差较大，更类似一种功能实现，即它介于写作与编程语言之间，且偏向编程语言的方面。
+
