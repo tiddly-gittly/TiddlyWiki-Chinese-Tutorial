@@ -1,0 +1,37 @@
+created: 20211222105510091
+creator: 马不前
+modified: 20230401124014085
+modifier: 马不前
+tags: 功能条目 $:/tags/Stylesheet
+title: mysettings/scrollbars
+tmap.id: 669d97ff-9ac7-4fe1-94e6-7dc9f8abc25a
+type: text/vnd.tiddlywiki
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline html
+
+html {
+  --scrollbarBG: <<color page-background>>;
+  --thumbBG: <<color sidebar-tiddler-link-foreground>>; /*other candidate colors: foreground, sidebar-tiddler-link-foreground */
+}
+
+/* only for Twilight palette use <<color sidebar-muted-foreground>> */
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+}
+/* for Chrome, Edge */
+::-webkit-scrollbar,
+  scrollbar-width {
+  width: 8px;
+  height:8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  border: 1.5px solid var(--scrollbarBG);
+  background-color: var(--thumbBG) ;
+}
