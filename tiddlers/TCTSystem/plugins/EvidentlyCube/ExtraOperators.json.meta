@@ -8,4 +8,4 @@ plugin-type: plugin
 source: https://github.com/EvidentlyCube/TW5-FilterOperators
 title: $:/plugins/EvidentlyCube/ExtraOperators
 type: application/json
-version: 1.1.0
+version: 1.2.0
