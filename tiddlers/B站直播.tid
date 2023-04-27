@@ -1,10 +1,12 @@
 created: 20230311141240592
 creator: 林一二
-modified: 20230402032921833
+modified: 20230427150126479
 modifier: 林一二
 tags: 社区建设
 title: B站直播
 type: text/vnd.tiddlywiki
+
+\define sv-exclude-tags() B站直播 任务 done
 
 每周六晚上9点在B站[[林一二的直播间|http://live.bilibili.com/823307]]有交流会。[[QQ群|社区建设]]里会发腾讯会议链接，可以加入分享自己最近的感想。
 
@@ -12,14 +14,14 @@ type: text/vnd.tiddlywiki
 
 <$macrocall $name=table-dynamic caption="待分享的主题列表" filter="[tag[B站直播]tag[任务]]-[tag[done]]" fields="title tags" class="w-100"/>
 
-	<$button>
-		<$action-sendmessage $message="tm-new-tiddler" title="xxx" text="" tags="B站直播 任务" />
-	添加新待分享
-	</$button>
+<$button>
+	<$action-sendmessage $message="tm-new-tiddler" title="xxx" text="" tags="B站直播 任务" />
+添加新待分享
+</$button>
 	
-<$macrocall $name=table-dynamic caption="已完成的主题列表" filter="[tag[done]]" fields="title tags video-link" class="w-100"/>
+<$macrocall $name=table-dynamic caption="已完成的主题列表" filter="[tag[B站直播]tag[done]]" fields="title tags video-link" class="w-100"/>
 
-	<$button>
-		<$action-sendmessage $message="tm-new-tiddler" title="xxx" text="""<$macrocall $name="locator-view" baseTitle=<<currentTiddler>> />""" tags="B站直播 done" />
-	添加已完成的直播分享
-	</$button>
+<$button>
+	<$action-sendmessage $message="tm-new-tiddler" title="xxx" text="" video-link=""  tags="B站直播 done" />
+添加已完成的直播分享
+</$button>
