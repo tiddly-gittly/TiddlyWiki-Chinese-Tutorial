@@ -1,11 +1,13 @@
 created: 20230307085803297
 creator: 林一二
-modified: 20230427030202931
+modified: 20230427030449133
 modifier: 林一二
 tags: 使太微更易用 B站直播
 title: 如何添加在线字体
 type: text/vnd.tiddlywiki
 video-link: https://www.bilibili.com/video/BV1K84y1A7aJ/
+
+!! 添加条目
 
 怎么更新的呢？首先去[[谷歌字体网|https://fonts.google.com/]]找一款喜欢的。
 
@@ -40,3 +42,9 @@ https://www.npmjs.com/search?q=lxgw
 https://www.jsdelivr.com/?query=lxgw
 
 这样使用字体最为快捷，不过断网就用不了了。如果想折腾离线版字体，可以学习[[如何内嵌字体]]。
+
+!! 修改设置
+
+最后记得把字体名字填到 控制面板-视觉外观-主题调整-字形 里面，然后要刷新浏览器，不生效记得看看右键开发者工具-网络，里面字体文件网络加载成功没有
+
+编辑器字体则是改那个 控制面板-视觉外观-主题调整-编辑器字形。还有个代码字形，是指预览状态下的代码块里的字体。
