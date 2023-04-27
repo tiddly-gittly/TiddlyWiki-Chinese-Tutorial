@@ -1,0 +1,33 @@
+created: 20230427145051210
+creator: 林一二
+modified: 20230427145509456
+modifier: 林一二
+tags: B站直播 $:/tags/Table/BodyTemplate
+tbl-column-list: video-link
+title: 表格直播链接内容模板
+type: text/vnd.tiddlywiki
+
+\define display-link-with-label()
+<$let href={{{[<currentRecord>get<currentColumn>]}}}>
+<a class=tc-tiddlylink-external href=<<href>>rel="noopener noreferrer"target=_blank>
+录播视频链接
+</a>
+
+<!--same as above, just keep the format that Shiraz plugin recomments-->
+\end
+\define display-link-with-label_Locked()
+<$let href={{{[<currentRecord>get<currentColumn>]}}}>
+<a class=tc-tiddlylink-external href=<<href>>rel="noopener noreferrer"target=_blank>
+录播视频链接
+</a>
+
+\end
+
+<$reveal type=nomatch stateTitle=<<tempTableEdit>>stateIndex=mode text=edit tag=td>
+<<display-link-with-label>>
+</$reveal>
+<$reveal type=match stateTitle=<<tempTableEdit>>stateIndex=mode text=edit tag=td>
+<!---->
+<$list filter="[<tempTableSort>getindex[sortIndex]match<currentColumn>]"emptyMessage=<<editCell>>variable=ignore>
+<<display-link-with-label_Locked>>
+</$list>

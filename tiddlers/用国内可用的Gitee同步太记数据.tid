@@ -5,7 +5,7 @@ modifier: 马不前
 tags: B站直播 任务 done
 title: 用国内可用的Gitee同步太记数据
 type: text/vnd.tiddlywiki
-video-link: [[视频链接|https://www.bilibili.com/video/BV1tm4y1z7bt/]]
+video-link: https://www.bilibili.com/video/BV1tm4y1z7bt/
 
 有同学说Github不会用，而且需要翻墙，不好同步。
 

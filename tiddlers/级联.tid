@@ -5,7 +5,7 @@ modifier: 马不前
 tags: 基础知识 B站直播 任务 done
 title: 级联
 type: text/vnd.tiddlywiki
-video-link: [[视频链接|https://www.bilibili.com/video/BV1CM411K7uW/]]
+video-link: https://www.bilibili.com/video/BV1CM411K7uW/
 
 级联，在国际社区讨论中称为 Cascade。它可以在条目带有某个字段或标签时，自动给条目加上一些内容，类似宏。也可以设置一些和默认模板并置的新模板。通过筛选器来控制不同条目显示不同内容或者以不同的样式显示。
 
