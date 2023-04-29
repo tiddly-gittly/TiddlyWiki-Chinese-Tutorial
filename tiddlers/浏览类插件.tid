@@ -1,12 +1,12 @@
 created: 20230101081123956
 creator: 马不前
-modified: 20230101092928120
-modifier: 马不前
+modified: 20230429134312057
+modifier: WhiteFall
 tags: 插件列表
 title: 浏览类插件
 type: text/vnd.tiddlywiki
 
-* [[epub转twpub|https://github.com/Zacharia2/TWPUB-BOOK]]
+* Epub转TWpub：https://github.com/Zacharia2/TWPUB-BOOK
 * TWPUB、Fishing
 * 目录插件Gk0Wk/page-toc
 * 脑图tidgraph
@@ -21,8 +21,7 @@ type: text/vnd.tiddlywiki
 * [[TiddlerSets|https://tiddlersets.tiddlyhost.com/TiddlerSets]]
 * ❤️inverse-link-and-folder，双链插件。
 * ToC generic
-* [[RandomTiddlerButton|https://sonephetr2.github.io/]]
-* [[random|https://tobibeer.github.io/tw5-plugins/#random]]
+* 随机条目漫游：[[RandomTiddlerButton|https://sonephetr2.github.io/]] + [[random|https://tobibeer.github.io/tw5-plugins/#random]] 这两个插件要一起安装使用。
 * [[tiddlyremember|https://github.com/sobjornstad/TiddlyRemember]]（tw5与anki）和anki结合，有闪卡、增强阅读、问答题等附在⽂章下⾯。
 * 条目加密（Encrypt Tiddler Plugin）
 **[[demo|https://danielorodriguez.com/TW5-EncryptTiddlerPlugin/]]

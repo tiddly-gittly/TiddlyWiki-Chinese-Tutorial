@@ -1,21 +1,22 @@
 created: 20230101080951202
 creator: 马不前
-modified: 20230101092910638
-modifier: 马不前
+modified: 20230429134009943
+modifier: WhiteFall
 tags: 插件列表
 title: 图形表格
 type: text/vnd.tiddlywiki
 
 * ❤️动态表格：[[tiddlytables|http://tiddlytables.tiddlyspot.com/]]
+* ❤️自动补全表格：Editor Autolist
 * 表格[[table-dynamic|https://ooktech.com/jed/ExampleWikis/DynamicTables/]]
 * ❤️（初学者工具包）[[Shiraz|https://kookma.github.io/TW-Shiraz/]] 太微整个笔记就是个互相关联的数据库，可以用 shiraz 插件里的 dynamic table 宏来可视化成多维表
-* [[Echarts|https://tiddly-gittly.github.io/tw-echarts/]]
+* 数据可视化插件：[[Echarts|https://tiddly-gittly.github.io/tw-echarts/]] TheBrain视图的必要插件。封装Echarts Javascript 图表库，支持各种图表。
 * ❤️[[TiddlyMap|http://tiddlymap.org/]]这里指向的演示网址，但不要在这里安装，因为版本很旧，没有更新。直接通过cpl安装就可以。
 * ❤️Graphviz plugin for tw5：图形描述语言，绘制结构化的图形网络，制作图表 （链接跳转语法：定理[URL="#定理"]  ）
 ** [[code|https://github.com/chanilino/tw5viz]]
 ** [[demo|https://chanilino.github.io/tw5viz/tw5.html]]
 * tiddlywiki/railroad   铁路图插件
-* [[mermaid-tw5|https://efurlanm.github.io/mermaid-tw5#HelloThere]]
+* 图表绘制插件：[[mermaid-tw5|https://efurlanm.github.io/mermaid-tw5#HelloThere]] 支持绘制流程图、状态图、时序图、甘特图等等。
 * 时间线[[TW-Timelines|https://kookma.github.io/TW-Timelines/]]
-* ❤️[[Tidgraph|http://ihm4u.github.io/tw5plugs/#]]
-* [[projectify|https://thaddeusjiang.github.io/Projectify/]]
+* ❤️轻量级条目思维导图：[[TidGraph|http://ihm4u.github.io/tw5plugs/#]]
+* 待办事项与GTD插件：[[projectify|https://thaddeusjiang.github.io/Projectify/]]

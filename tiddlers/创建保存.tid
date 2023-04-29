@@ -1,7 +1,7 @@
 created: 20221127032909691
 creator: WhiteFall
-modified: 20230101101240463
-modifier: 马不前
+modified: 20230429141038846
+modifier: WhiteFall
 order: 2
 tags: 资源链接
 title: 创建保存
@@ -9,23 +9,28 @@ type: text/vnd.tiddlywiki
 
 ! 使用、存储方式与全平台软件
 
-"""
-''HTML文件''与''文件夹'' 2种存储形式
-''桌面浏览器''，''服务端软件''，''应用软件'' 3种使用方式。
-"""
+<<alert-leftbar secondary "思维导图（左上角）：https://www.zhixi.com/view/70759713 （因子，聚集，自由组合）" width:60%>>
 
-<<<
-因子，聚集，自由组合
+<<alert info "''Notes''：TiddlyWiki非常灵活拥有：''HTML文件''与''文件夹'' 2种存储形式；''桌面浏览器''，''服务端软件''，''应用软件'' 3种使用方式。">>
 
-创建保存思维导图（在左上角）：https://www.zhixi.com/view/70759713
-<<<
+<$macrocall $name="alert" type="primary" src="
+''全平台软件列表：''
 
-* PC（Windows、macOS、Linux）：[[TidGi|https://github.com/tiddly-gittly/TiddlyGit-Desktop]]、[[TiddlyDesktop|https://github.com/TiddlyWiki/TiddlyDesktop/releases]]、[[Timimi|https://ibnishak.github.io/Timimi/]]、[[TiddlyStow|https://twpub-book.netlify.app/tiddlystow.html]]、[[NodeJS|https://nodejs.org/zh-cn/]]
+* Windows、macOS、Linux ：[[TidGi|https://github.com/tiddly-gittly/TiddlyGit-Desktop]]、[[Timimi|https://ibnishak.github.io/Timimi/]]、[[TiddlyDesktop|https://github.com/TiddlyWiki/TiddlyDesktop/releases]]、[[TiddlyStow|https://twpub-book.netlify.app/tiddlystow.html]]、[[NodeJS|https://nodejs.org/zh-cn/]]
+
 * Android：[[Tiddloid|https://github.com/donmor/Tiddloid]] + [[WebDav_Server_Pro_1.17|https://zhuanlan.zhihu.com/p/543783107]]
-* IOS与IPad：Quine2、VPS（虚拟专用服务器）
-* VPS与服务器：[[NodeJS|https://nodejs.org/zh-cn/]]、WebDav、[[TiddlyHost|https://tiddlyhost.com]]
-* [[GitHub桌面版|https://desktop.github.com/]]、[[Git分布式版本控制系统|https://git-scm.com/]]、[[TidGi默认Wiki知识库模板（GitHub）|https://github.com/tiddly-gittly/Tiddlywiki-NodeJS-Github-Template]]
 
+* IOS与IPad：Quine2、VPS（虚拟专用服务器）
+
+* VPS与服务器：[[NodeJS|https://nodejs.org/zh-cn/]]、WebDav、[[TiddlyHost|https://tiddlyhost.com]]
+
+* [[GitHub桌面版|https://desktop.github.com/]]、[[Git分布式版本控制系统|https://git-scm.com/]]、[[TidGi默认Wiki知识库模板（GitHub）|https://github.com/tiddly-gittly/Tiddlywiki-NodeJS-Github-Template]]
+" class="bg-transparent"/>
+
+
+
+
+---
 NodeJS:[[如何启动一个NodeJS的TiddlyWiki项目]]
 
 WebDav: WsgiDAV(python通过PIP安装或者MSI安装程序)，Rclone，IIS WebDav
