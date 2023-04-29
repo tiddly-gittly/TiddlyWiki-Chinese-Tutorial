@@ -1,0 +1,15 @@
+class: o-random-tip tc-modal-centered
+created: 20230429124015480
+creator: WhiteFall
+mask-closable: yes
+modified: 20230429124419696
+modifier: WhiteFall
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
+tags: Tiddlywiki5Tip
+title: tips-20230429124015477
+type: text/vnd.tiddlywiki
+
+> 发现太微中文网站没有更新？
+> 使用 Ctrl + F5 强制刷新浏览器缓存后，在看一下吧。
+
+<<random-author "WhiteFall" "https://github.com/Zacharia2">>
