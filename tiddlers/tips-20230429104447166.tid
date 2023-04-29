@@ -1,0 +1,14 @@
+class: o-random-tip tc-modal-centered
+created: 20230429104447172
+creator: WhiteFall
+mask-closable: yes
+modified: 20230429110415685
+modifier: WhiteFall
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
+tags: Tiddlywiki5Tip
+title: tips-20230429104447166
+type: text/vnd.tiddlywiki
+
+> TidGi（太记）、墨屉、NodeJS版TiddlyWiki等等，本质上都是TiddlyWiki（太微）。不同的是：TidGi更容易使用，因为它是应用而非系统或框架。
+
+<<random-author "WhiteFall" "https://github.com/Zacharia2">>
