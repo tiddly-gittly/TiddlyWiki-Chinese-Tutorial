@@ -1,0 +1,14 @@
+class: o-random-tip tc-modal-centered
+created: 20230429115731671
+creator: WhiteFall
+mask-closable: yes
+modified: 20230429115809076
+modifier: WhiteFall
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
+tags: Tiddlywiki5Tip
+title: tips-20230429115731668
+type: text/vnd.tiddlywiki
+
+> 条目模板是指''预制的具有特定布局和样式的模板条目''。它通常是为了美化和简化输入内容或瞒住特定需要的一种特殊的条目，比如在xp中你可以通过引用条目模板瞬间美化当前的条目使其变得好看，在墨屉中，通过引用问答或者填空模板进行渐进式学习。
+
+<<random-author "WhiteFall" "https://github.com/Zacharia2">>

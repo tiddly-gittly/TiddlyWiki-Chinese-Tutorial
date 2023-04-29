@@ -1,0 +1,14 @@
+class: o-random-tip tc-modal-centered
+created: 20230429113605622
+creator: WhiteFall
+mask-closable: yes
+modified: 20230429113639299
+modifier: WhiteFall
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
+tags: Tiddlywiki5Tip
+title: tips-20230429113605614
+type: text/vnd.tiddlywiki
+
+> Tips：插件要尤为注意插件之间的依赖关系，缺少依赖将会导致功能性错误或者其它的不可知问题。安装插件之前请谨慎备份自己的TiddlyWiki。
+
+<<random-author "WhiteFall" "https://github.com/Zacharia2">>

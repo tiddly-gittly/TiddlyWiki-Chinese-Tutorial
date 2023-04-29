@@ -1,0 +1,16 @@
+class: o-random-tip tc-modal-centered
+created: 20230429112332983
+creator: WhiteFall
+mask-closable: yes
+modified: 20230429112752393
+modifier: WhiteFall
+subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
+tags: Tiddlywiki5Tip
+title: tips-20230429112332978
+type: text/vnd.tiddlywiki
+
+> Q：如何升级Wiki.HTML（单文件Wiki）? 
+
+> A：使用在线的 [[Upgrade Wizard|https://tiddlywiki.com/upgrade.html]] 拖动你的Wiki升级吧！
+
+<<random-author "WhiteFall" "https://github.com/Zacharia2">>
