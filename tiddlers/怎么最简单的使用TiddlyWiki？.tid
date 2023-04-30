@@ -1,11 +1,7 @@
 created: 20230430112539127
 creator: WhiteFall
-<<<<<<< HEAD
-modified: 20230430121713747
-=======
-modified: 20230430114639176
->>>>>>> 04eb825 (Update 怎么最简单的使用TiddlyWiki？.tid)
-modifier: WhiteFall
+modified: 20230430123950743
+modifier: 马不前
 tags: 使太微更易用
 title: 怎么最简单的使用TiddlyWiki？
 type: text/vnd.tiddlywiki
@@ -19,11 +15,7 @@ type: text/vnd.tiddlywiki
 
 # 仅使用wikitext与筛选器进行写作。你不使用边界之外的功能，例如微件，宏，即使使用也是模仿插件提供的已有示例，而不是自己进行创造。
 
-<<<<<<< HEAD
-# 关于在使用太记以及太记默认TiddlyWiki模板遇到的问题（指程序设计问题，比如bug，UI混乱等等）可以在GitHub提交issue，然后等待处理。
-=======
-# 关于在使用太记以及太记默认TiddlyWiki模板遇到的问题（指程序设计问题，比如bug，UI混乱等等）可以在GitHub提交issue，之后等待处理就可以了。
->>>>>>> 04eb825 (Update 怎么最简单的使用TiddlyWiki？.tid)
+# 关于在使用太记以及太记默认TiddlyWiki模板遇到的问题（指程序设计问题，比如bug，UI混乱等等）可以在GitHub提交issue，然后等待处理。最好是去看一眼issues，很多问题之前已经提出了，得等林一二有时间修复。
 
 # 阅读随机tips（点击骰子图标），积累常识性认知与知识。
 ---
