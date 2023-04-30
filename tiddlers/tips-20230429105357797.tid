@@ -2,14 +2,14 @@ class: o-random-tip tc-modal-centered
 created: 20230429105357802
 creator: WhiteFall
 mask-closable: yes
-modified: 20230429105629358
-modifier: WhiteFall
+modified: 20230430115646821
+modifier: 马不前
 subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
 tags: Tiddlywiki5Tip
 title: tips-20230429105357797
 type: text/vnd.tiddlywiki
 
-> [[太微是开发框架/知识管理操作系统，不是笔记软件|https://onetwo.ren/wiki/#%E5%A4%AA%E5%BE%AE%E6%98%AF%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6%EF%BC%8C%E4%B8%8D%E6%98%AF%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6]] ——林一二
+> [[太微是开发框架/知识管理操作系统，不是笔记软件|太微与太记的区别]] ——林一二
 
 <<random-author "WhiteFall" "https://github.com/Zacharia2">>
 
