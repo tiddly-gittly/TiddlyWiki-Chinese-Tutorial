@@ -2,13 +2,13 @@ class: o-random-tip tc-modal-centered
 created: 20230429110936393
 creator: WhiteFall
 mask-closable: yes
-modified: 20230429141443800
+modified: 20230501114653114
 modifier: WhiteFall
 subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
 tags: Tiddlywiki5Tip
 title: tips-20230429110936391
 type: text/vnd.tiddlywiki
 
-> 最简单的TiddlyWiki使用方法：学习简单的WikiText语法、筛选器（用于筛选条目）、[[学习使用Shiraz|$:/plugins/kookma/shiraz]]、使用TidGi（太记）。剩下的就交给开发者和Geek（极客）吧！
+> [[最简单的TiddlyWiki使用方法|怎么最简单地使用TiddlyWiki？]]：学习简单的WikiText语法、筛选器（用于筛选条目）、[[学习使用Shiraz|$:/plugins/kookma/shiraz]]、使用TidGi（太记）。剩下的就交给开发者和Geek（极客）吧！
 
 <<random-author "WhiteFall" "https://github.com/Zacharia2">>
