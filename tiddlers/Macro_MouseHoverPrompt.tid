@@ -1,0 +1,11 @@
+created: 20230505102017851
+creator: WhiteFall
+modified: 20230505102028275
+modifier: WhiteFall
+tags: 鼠标悬浮提示文本
+title: Macro_MouseHoverPrompt
+type: text/vnd.tiddlywiki
+
+\define mhp(name,desc)
+<span style="border-bottom: 1px dashed; cursor: help;" title="$desc$">$name$</span>
+\end
