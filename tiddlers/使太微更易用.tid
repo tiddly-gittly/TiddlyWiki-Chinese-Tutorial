@@ -1,6 +1,6 @@
 created: 20220815034705508
 creator: Miao
-modified: 20230505122226620
+modified: 20230505130317376
 modifier: WhiteFall
 tags: 欢迎来到太微！
 title: 使太微更易用
@@ -23,6 +23,7 @@ type: text/vnd.tiddlywiki
 每个单功能条目卡片大约由不多于三个条目组成，它们的格式大致如下，你需要认真填写每一个位置。
 
 ---
+【卡片集】
 
 * Author Or TLF(Team)：`Second Author`，`First author`；authors
 * 描述：卡片条目介绍
