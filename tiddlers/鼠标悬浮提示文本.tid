@@ -1,0 +1,31 @@
+created: 20230505094846758
+creator: WhiteFall
+modified: 20230505101659976
+modifier: WhiteFall
+tags: 使太微更易用
+title: 鼠标悬浮提示文本
+type: text/vnd.tiddlywiki
+
+\define mhp(name,desc)
+<span style="color:green; border-bottom: 1px dashed; cursor: help;" title="$desc$">$name$</span>
+\end
+
+
+* 制作团队: 山岛竦峙，[[马不前]]
+* 描述：鼠标悬浮提示文本 Mouse hover prompt（mhp）
+* 使用方法：根据下列提示信息创建新的条目。然后，在条目中使用`<<mhp "name" "desc">>`，其中name为被标记的文本，desc为描述框里的描述。完成编辑后保存即可看到效果。
+* 例子： 将鼠标置于  <<mhp "示例" "这是一个示例">>  文字上方，查看效果。
+
+
+```
+条目标题：Macro_MouseHoverPrompt（任意）
+标签：$:/tags/Macro
+```
+
+```
+\define mhp(name,desc)
+<span style="border-bottom: 1px dashed; cursor: help;" title="$desc$">$name$</span>
+\end
+```
+
+注意，此宏定义只可以写在条目内容最开始位置，参考：[[宏与微件及插件概述]]
