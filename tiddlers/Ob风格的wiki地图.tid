@@ -1,10 +1,12 @@
 created: 20221127111232331
 creator: WhiteFall
-modified: 20230322144947350
+modified: 20230506135107423
 modifier: WhiteFall
-tags: 使太微更易用 条目集
+tags: 使太微更易用
 title: Ob风格的wiki地图
 type: text/vnd.tiddlywiki
+
+【卡片集】
 
 * Author：linonetwo，WhiteFall，[[Peter Hajas|https://github.com/peterhajas]]
 * 描述：Ob风格的wiki地图。需要安装Gk0Wk/echarts插件。插件版本>=v0.2.2 。

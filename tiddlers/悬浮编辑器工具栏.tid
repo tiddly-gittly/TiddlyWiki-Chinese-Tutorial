@@ -1,12 +1,12 @@
 created: 20220816124710159
 creator: Miao
-modified: 20221216050217611
+modified: 20230506135512113
 modifier: WhiteFall
 tags: 使太微更易用 主题集
 title: 悬浮编辑器工具栏
 type: text/vnd.tiddlywiki
 
-新建条目，标题随意，添加系统标签 $:/tags/Stylesheet
+新建条目，标题随意，添加系统标签 `$:/tags/Stylesheet`
 
 然后下面的代码填入条目内容中，点击保存条目，即可实现此功能。
 

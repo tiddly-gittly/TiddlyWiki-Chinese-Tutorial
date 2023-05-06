@@ -1,10 +1,12 @@
 created: 20221216014548991
 creator: WhiteFall
-modified: 20221216045749761
+modified: 20230506135548880
 modifier: WhiteFall
-tags: 使太微更易用 条目集
+tags: 使太微更易用
 title: 目录导航栏
 type: text/vnd.tiddlywiki
+
+【卡片集】
 
 * Author：机杼
 * 描述：目录导航栏，又名卡片图书。可以自定义卡片高度、图书的根条目（根目录，可以参考[[目录导航栏实例]]理解根条目的意思）。本目录下有三个条目，目录导航栏使用说明、Tabs加强版、目录导航栏实例。

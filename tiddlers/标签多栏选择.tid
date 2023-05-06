@@ -1,11 +1,12 @@
 created: 20221126024624402
 creator: WhiteFall
-modified: 20221216045756310
+modified: 20230506135537488
 modifier: WhiteFall
-tags: 使太微更易用 条目集
+tags: 使太微更易用
 title: 标签多栏选择
 type: text/vnd.tiddlywiki
 
+【卡片集】
 
 * Author：马不前，TiddlyWiki XP
 * 描述：添加标签时的下拉列表由单栏变成多栏。
