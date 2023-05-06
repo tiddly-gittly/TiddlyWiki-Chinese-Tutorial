@@ -1,10 +1,12 @@
 created: 20221127113012830
 creator: WhiteFall
-modified: 20221216045714352
+modified: 20230506134910116
 modifier: WhiteFall
-tags: 使太微更易用 条目集
+tags: 使太微更易用
 title: CSV表格->WikiText表格
 type: text/vnd.tiddlywiki
+
+【卡片集】
 
 * Author：tobibeer
 * 描述：CSV表格粘贴转换为WikiText表格。

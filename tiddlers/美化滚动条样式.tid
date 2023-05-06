@@ -1,10 +1,12 @@
 created: 20221216002610102
 creator: WhiteFall
-modified: 20221216045817320
+modified: 20230506135604445
 modifier: WhiteFall
-tags: 使太微更易用 条目集
+tags: 使太微更易用
 title: 美化滚动条样式
 type: text/vnd.tiddlywiki
+
+【卡片集】
 
 * Author：kookma
 * 描述：滚动条样式，浏览器垂直滚动条样式。支持的浏览器：Firefox，Chrome, Edge

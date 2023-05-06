@@ -1,6 +1,6 @@
 created: 20220815034705508
 creator: Miao
-modified: 20230505130317376
+modified: 20230506134803495
 modifier: WhiteFall
 tags: 欢迎来到太微！
 title: 使太微更易用
@@ -46,3 +46,6 @@ type: text/vnd.tiddlywiki
 	<$macrocall $name="code" language={{{[<selected-tiddler>get[type]]}}} src={{{[<selected-tiddler>get[text]]}}} caption={{{[<selected-tiddler>get[title]]}}} />
 </$let>
 ```
+
+!! 【示例集】
+表格图文混排，常用方式示例。

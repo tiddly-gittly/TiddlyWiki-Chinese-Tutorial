@@ -1,6 +1,6 @@
 created: 20230505094846758
 creator: WhiteFall
-modified: 20230505104723670
+modified: 20230506135702238
 modifier: WhiteFall
 tags: 使太微更易用
 title: 鼠标悬浮提示文本
@@ -10,6 +10,7 @@ type: text/vnd.tiddlywiki
 <span style="color:green; border-bottom: 1px dashed; cursor: help;" title="$desc$">$name$</span>
 \end
 
+【卡片集】
 
 * Author: 山岛竦峙
 * 描述：鼠标悬浮提示文本 Mouse hover prompt（mhp）。

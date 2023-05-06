@@ -1,10 +1,12 @@
 created: 20221222111339474
 creator: WhiteFall
-modified: 20221222114011558
+modified: 20230506135251062
 modifier: WhiteFall
 tags: 使太微更易用
 title: 分层导航（遍历查看目录树中的所有条目）
 type: text/vnd.tiddlywiki
+
+【卡片集】
 
 * Author：kookma
 * 描述：分层导航，或者称为简单导航是kookma/toc中的一个宏，可以实现遍历查看目录树的所有条目，点击条目底下的next按钮，就会实现像书籍一样的翻页功能。翻页顺序为文件目录中显示的顺序。

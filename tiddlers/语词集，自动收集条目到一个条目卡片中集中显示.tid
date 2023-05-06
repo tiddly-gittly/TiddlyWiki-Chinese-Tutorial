@@ -1,10 +1,12 @@
 created: 20221127114258528
 creator: WhiteFall
-modified: 20230204072102918
+modified: 20230506135628521
 modifier: WhiteFall
-tags: 使太微更易用 笔记思维 条目集
+tags: 使太微更易用 笔记思维
 title: 语词集，自动收集条目到一个条目卡片中集中显示
 type: text/vnd.tiddlywiki
+
+【卡片集】
 
 * Author：WhiteFall
 * 描述：仅需要打上标签A就可以自动收集Tiddlers到一个条目卡片中。
