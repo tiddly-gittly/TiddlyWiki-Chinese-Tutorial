@@ -1,7 +1,7 @@
 created: 20220530071515491
 creator: 林一二
-modified: 20220530071545095
-modifier: 林一二
+modified: 20230508132717664
+modifier: WhiteFall
 tags: 如何保存
 title: 如何加速访问Github
 type: text/vnd.tiddlywiki
@@ -9,3 +9,5 @@ type: text/vnd.tiddlywiki
 !! 使用仅加速Github的开发者工具
 
 [[https://github.com/docmirror/dev-sidecar]]
+
+[[https://github.com/dotnetcore/FastGithub/releases]]
