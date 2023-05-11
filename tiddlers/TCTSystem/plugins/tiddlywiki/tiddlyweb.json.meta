@@ -1,9 +1,9 @@
+author: tiddlywiki
 dependents: 
 description: Sync changes from the browser to TW5 (node.js) or TiddlyWeb server
 list: readme
 name: TiddlyWeb
-plugin-priority: 10
 plugin-type: plugin
 title: $:/plugins/tiddlywiki/tiddlyweb
 type: application/json
-version: 5.2.3
+version: 5.2.7
