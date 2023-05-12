@@ -1,0 +1,21 @@
+created: 20230512100704406
+creator: WhiteFall
+modified: 20230512111421754
+modifier: WhiteFall
+tags: 条目内->嵌入多个卡片风格的条目
+title: Macro_内嵌卡片
+type: text/vnd.tiddlywiki
+
+\define .card(tiddler)
+<div title=$tiddler$ class="mtransclude mcard">
+    <h2>
+        <$link to=$tiddler$/> 
+        
+            <$button tooltip="编辑此条目" style="font-size: .8em;vertical-align: middle;"
+        class="tc-btn-invisible" message="tm-edit-tiddler" param=$tiddler$>
+        <$transclude tiddler="$:/core/images/edit-button" mode="inline" />
+        </$button>
+    </h2>
+    <$transclude tiddler=$tiddler$ mode="block"/>
+</div>
+\end
