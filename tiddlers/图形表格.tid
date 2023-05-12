@@ -1,6 +1,6 @@
 created: 20230101080951202
 creator: 马不前
-modified: 20230429134009943
+modified: 20230512024426697
 modifier: WhiteFall
 tags: 插件列表
 title: 图形表格
@@ -18,5 +18,6 @@ type: text/vnd.tiddlywiki
 * tiddlywiki/railroad   铁路图插件
 * 图表绘制插件：[[mermaid-tw5|https://efurlanm.github.io/mermaid-tw5#HelloThere]] 支持绘制流程图、状态图、时序图、甘特图等等。
 * 时间线[[TW-Timelines|https://kookma.github.io/TW-Timelines/]]
-* ❤️轻量级条目思维导图：[[TidGraph|http://ihm4u.github.io/tw5plugs/#]]
+* 可缩放的时间轴：kixam/timeline
+* ❤️轻量级的条目思维导图：[[TidGraph|http://ihm4u.github.io/tw5plugs/#]]
 * 待办事项与GTD插件：[[projectify|https://thaddeusjiang.github.io/Projectify/]]
