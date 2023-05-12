@@ -1,0 +1,71 @@
+created: 20230512123031005
+creator: WhiteFall
+modified: 20230512131602747
+modifier: WhiteFall
+tags: 插件开发
+title: 通过自定义的WidGet微件调用JS模块
+type: text/vnd.tiddlywiki
+
+
+可以通过定义宏调用WidGet小工具，小工具在调用JS模块，然后button触发小工具设置actions触发活动调用定义的宏。
+
+其他的[[触发小工具|https://bramchen.github.io/tw5-docs/zh-Hans/#TriggeringWidgets]]；
+
+* 触发小工具 => 宏 => 自定义的调用小工具 => JS模块
+* 自定义的调用小工具 => JS模块
+
+```wikitext
+<$button actions=<<macro—name>>></$button>
+```
+
+```
+\define macro—name()
+<$nameWidget paramater=""/>
+\end
+```
+
+```js
+/*\
+title: $:/plugins/作者/名称.js
+type: application/javascript
+module-type: widget
+
+小工具描述
+
+\*/
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+"use strict";
+
+var Widget = require("$:/core/modules/widgets/widget.js").widget;
+
+var nameWidget = function(parseTreeNode,options) {
+	this.initialise(parseTreeNode,options);
+};
+
+nameWidget.prototype = new Widget();
+exports.nameWidget = nameWidget;
+
+})();
+```
+
+```js
+/*\
+title: $:/plugins/作者/名称.js
+type: application/javascript
+module-type: library
+
+js模块描述
+
+\*/
+
+exports.js_module_name = name {
+// js模块
+bar:"",
+data: [],
+foo: function () {},
+foo: function () {},
+};
+```
