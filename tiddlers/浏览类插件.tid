@@ -1,11 +1,12 @@
 created: 20230101081123956
 creator: 马不前
-modified: 20230429134312057
+modified: 20230513131147001
 modifier: WhiteFall
 tags: 插件列表
 title: 浏览类插件
 type: text/vnd.tiddlywiki
 
+* respawn 复位，当故事河（river）为空时打开默认的tiddlers。
 * Epub转TWpub：https://github.com/Zacharia2/TWPUB-BOOK
 * TWPUB、Fishing
 * 目录插件Gk0Wk/page-toc
