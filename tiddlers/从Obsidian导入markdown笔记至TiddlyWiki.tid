@@ -1,0 +1,14 @@
+created: 20230514131225308
+creator: WhiteFall
+modified: 20230514132227467
+modifier: WhiteFall
+tags: 使太微更易用
+title: 从Obsidian导入markdown笔记至TiddlyWiki
+type: text/vnd.tiddlywiki
+
+! 从Obsidian导入markdown笔记至TiddlyWiki（include和tiddlywiki.files的使用）
+
+先参考此仓库：https://github.com/oeyoews/md-to-tiddlywiki
+
+TODO：有时间补充。
+

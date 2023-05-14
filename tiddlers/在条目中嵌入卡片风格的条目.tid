@@ -1,0 +1,85 @@
+created: 20230512100649681
+creator: WhiteFall
+modified: 20230514130833489
+modifier: WhiteFall
+tags: 使太微更易用
+title: 在条目中嵌入卡片风格的条目
+type: text/vnd.tiddlywiki
+
+\import Macro_内嵌卡片
+
+【卡片集】
+
+* Author：@荆棘巢凤
+* 描述：在条目内部嵌入多个卡片风格的条目。拖放[[Macro_内嵌卡片]]到你的wiki中并点击导入。并为“Macro_内嵌卡片” 添加`$:/tags/Macro`标签，以便全局访问宏。
+* 使用方法：现在，你可以通过书写`<<.card 条目名>>`宏来嵌入卡片样式的条目啦！是不是很好看呢？不足，需要使用模版和级联，等待补充完善。
+* 启发：你可以在定义宏的时候一并书写CSS样式。还可以不必使用`$:/tags/Macro`标签全局设置，而在一个条目中使用`\import 宏条目名`单独引用此宏然后使用它。
+
+
+示例：
+
+<<<
+<<.card "all-in-one">>
+<<.card 如何加速访问Github>>
+<<<
+
+
+```
+条目名：Macro_内嵌卡片（任意）
+标签：$:/tags/Macro
+```
+<$let selected-tiddler="Macro_内嵌卡片">
+	<$macrocall $name="code" language={{{[<selected-tiddler>get[type]]}}} src={{{[<selected-tiddler>get[text]]}}} caption={{{[<selected-tiddler>get[title]]}}} />
+</$let>
+
+模版
+
+```
+\whitespace trim
+<$list filter="[is[current]has[version]]">
+    <div style="font-size: .9em;">
+        <b>适用版本：</b>{{!!version}}
+    </div>
+    <hr>
+</$list>
+<div class="mcol">
+    <$transclude mode="block">
+        <$transclude tiddler="$:/language/MissingTiddler/Hint" mode="block" />
+    </$transclude>
+</div>
+<$list filter="[is[current]has[dependence]]">
+    <hr>
+    <b style="color:#ffa39e">依赖项</b>
+    <p>{{!!dependence}}</p>
+</$list>
+```
+
+级联
+
+```
+7.定制>级联>定制项>内容
+[prefix[定制>]![定制>说明]then[定制>模板>级联>定制项]]
+
+8.定制>级联>通用>内容
+[tag[编程]then[定制>模板>级联>代码片段汇总]]
+[tag[Index]has[index-prefix]then[定制>模板>级联>索引卡]]
+[tag[Aggregate]then[定制>模板>级联>MultiColumn]]
+[!is[system]!is[binary]!tag[ECharts]then[定制>模板>级联>Uni]]
+```
+
+CSS样式
+
+```
+/* pdf 高度修正 */
+embed[src$=pdf] {
+  height: 80vh;
+}
+
+/* 多列布局 */
+.mcol {
+  column-count: 2;
+  column-gap: 2em;
+  column-rule: 1px solid #f1f1f1;
+}
+```
+
