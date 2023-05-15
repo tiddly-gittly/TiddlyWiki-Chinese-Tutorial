@@ -1,0 +1,9 @@
+created: 20230515132341663
+creator: 林一二
+modified: 20230515132426506
+modifier: 林一二
+tags: B站直播 任务
+title: 插件源机制和导入独立插件源到CPL的方法
+type: text/vnd.tiddlywiki
+
+刚导入了 [[benwebber插件源]]， CPL 那个仓库可以用 npm run importlibrary 导入别的插件库
