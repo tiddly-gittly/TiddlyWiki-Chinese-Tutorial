@@ -1,0 +1,9 @@
+.tc-titlebar h2 {
+    font-size: 1em;
+    display: table-row-group;
+}
+.tc-tiddler-frame .tc-tiddler-controls {
+	display: table-header-group;
+    float: right;
+    padding: 0px;
+}
