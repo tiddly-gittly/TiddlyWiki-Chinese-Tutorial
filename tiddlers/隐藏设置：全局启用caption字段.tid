@@ -1,11 +1,10 @@
 created: 20230104033103641
 creator: WhiteFall
-modified: 20230104041135498
-modifier: WhiteFall
-tags: 使太微更易用
+modified: 20230516134039688
+modifier: 马不前
+tags: 太微自身的自定义设置
 title: 隐藏设置：全局启用caption字段
 type: text/vnd.tiddlywiki
-
 
 * 描述：caption字段也称别名字段，用于代替标题显示，但不能代替标题使用。单词caption作名词时意为“标题；字幕；说明；逮捕”，作动词时意为“加上说明；加上标题”。caption与title的区别：只有title（条目标题）可以被嵌入`{{title}}`和链接`[[title]]`识别而caption不可以。
 * 使用方法：按下列说明创建两个系统条目。

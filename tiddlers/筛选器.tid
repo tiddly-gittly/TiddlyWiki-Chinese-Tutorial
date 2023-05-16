@@ -1,7 +1,7 @@
 created: 20211003082407925
 creator: 林一二
-modified: 20221127072117340
-modifier: 林一二
+modified: 20230516133819114
+modifier: 马不前
 tags: 基础知识 入门幻灯片 筛选器表达式教程幻灯片
 title: 筛选器
 type: text/vnd.tiddlywiki
@@ -25,6 +25,7 @@ type: text/vnd.tiddlywiki
 首先阅读[[中文官方文档的教程|https://bramchen.github.io/tw5-docs/zh-Hans/#Filters]]。
 
 # [[TiddlyWiki Filter Expression：释放 TiddlyWiki 十倍威力的工具 @闷声|https://zhuanlan.zhihu.com/p/346647657]]
+# [[筛选器类]]
 
 !! 筛选器相关的概念
 
