@@ -1,0 +1,18 @@
+created: 20230517051350943
+creator: 林一二
+modified: 20230517061733021
+modifier: 林一二
+tags: 排查问题
+title: 其它红框报错排查
+type: text/vnd.tiddlywiki
+
+右键-开发者工具，在里面的 Console 标签里，看看是哪个插件报的错。不懂的话完整截图问群友。
+
+Console 标签在汉化版的开发者工具里也叫「控制台」。
+
+详见下图：
+
+[img[红框报错开发者工具实例.png]]
+
+看到其中的 `plugins/linonetwo/slate-write` 就知道是一个名叫 `slate-write` 的插件报错了。如果一直报错可以暂时禁用，如果刷新后不报错了只是偶尔触发报错，也可以注意用法，下次不要那样用触发了。
+
