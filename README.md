@@ -1,10 +1,12 @@
 # 太微教程
 
-[只读版访问地址 Vercel 加速版（高速访问）](https://tiddly-wiki-chinese-tutorial.vercel.app)
+[只读版访问地址 Vercel 加速版（翻墙高速访问）](https://tiddly-wiki-chinese-tutorial.vercel.app)
 
-[只读版访问地址 Netlify 加速版（中速访问）](https://tw-cn.netlify.app)
+[只读版访问地址 Netlify 加速版（国内中速访问）](https://tw-cn.netlify.app)
 
-[只读版访问地址（Github Pages）](https://tiddly-gittly.github.io/TiddlyWiki-Chinese-Tutorial/)
+[只读版访问地址机器人共用版（国内中速访问）](https://tw-cn.cpolar.top/) （QQ群内直接打「cn 搜索词」时，机器人就是使用它提取知识）
+
+[只读版访问地址（翻墙 Github Pages）](https://tiddly-gittly.github.io/TiddlyWiki-Chinese-Tutorial/)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2d87784e-fe3b-47a2-ae73-7a2f266f74a8/deploy-status)](https://app.netlify.com/sites/tw-cn/deploys)
 [![太微中文讨论区](https://img.shields.io/badge/太微中文讨论区-blueviolet.svg?style=flat-square&logo=APache-Tomcat&logoColor=black)](https://github.com/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/discussions)
