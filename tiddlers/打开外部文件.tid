@@ -1,7 +1,7 @@
 created: 20220612102246413
 creator: 林一二
-modified: 20220612114115681
-modifier: 林一二
+modified: 20230520151816963
+modifier: 马不前
 tags: 基础知识 TidGi太记
 title: 打开外部文件
 type: text/vnd.tiddlywiki
@@ -24,7 +24,7 @@ type: text/vnd.tiddlywiki
 [ext[open://./files/ItonNote Desktop.png]]
 ```
 
-太记不使用传统的 `file://` 开头，因为 Electron 框架做了一些保证用户安全的限制。
+太记不使用传统的 `file://` 开头，因为 Electron 框架做了一些保证用户安全的限制。这里引用的''图片名称需要是英文名，中文名不行''，显示不出来。具体可见[[b站上的视频|https://www.bilibili.com/video/BV1qV4y1L7UP/?share_source=copy_web&vd_source=ad336ef0278153bd16bdab5eac42fdfa&t=4337]]<<fnote "视频很粗糙，简单看下操作就行。">>。
 
 !! TiddlyWikiDesktop
 
@@ -33,3 +33,5 @@ type: text/vnd.tiddlywiki
 ```
 [ext[file://~/Desktop/ItonNote Mobile.png]]
 ```
+
+在太记里想要直接显示外部图片，并把图片归类到文件夹里的话，可以参考[[让导入的图片放在特定目录中]]。其他pdf文件也是类似。唯一的是音频文件不好处理，可能会出错。
