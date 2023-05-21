@@ -1,6 +1,6 @@
 created: 20230521092852917
 creator: 马不前
-modified: 20230521093047729
+modified: 20230521131826801
 modifier: 马不前
 tags: 插件技巧类
 title: 如何制作语音题？
@@ -16,7 +16,7 @@ type: text/vnd.tiddlywiki
 ```
 新建一个条目，把上面的代码放进去。其中`$:/core/images/erase`是随意找的官网的一个图标，可以替换成其他图标。`text={{!!title}}`其中的title是要读的内容。我们用钓鱼插件制卡的话，需要改成caption。也就是`text={{!!caption}}`。并加上标签`$:/tags/ViewToolbar`。
 
-点击就可以听到读caption的内容了。一般来说这样就够了。但有些人可能会想只有在做语音题的时候才用到这个功能，那就可以在前面加上一个list筛选器，然后这样就只会在筛选出来的条目标题上显示这个按钮了。其他条目上不会显示。
+点击就可以听到读caption的内容了。一般来说这样就够了。~~但有些人可能会想只有在做语音题的时候才用到这个功能，那就可以在前面加上一个list筛选器，然后这样就只会在筛选出来的条目标题上显示这个按钮了。其他条目上不会显示。~~目前还没有什么特别好的办法实现，通过筛选器在特定条目前展示按钮。但编辑栏的按钮是可以通过特定字段来控制的。
 
 完整代码如下
 
@@ -24,12 +24,10 @@ type: text/vnd.tiddlywiki
 ```
 \whitespace trim
 
-<$list filter="[all[tiddlers]IsOtherText[mp3]]">
 <$button class=<<tv-config-toolbar-class>>>
   {{$:/core/images/erase}}
   <$speech-synthesis text={{!!caption}} />
 </$button>
-</$list>
 ```
 
 目前我测试了一些主流的语言大部分都是可以读的。就是日语，韩语，俄语读不出来。法语，德语，西班牙语，意大利语，葡萄牙语都是可以读的。就是感觉读起来很生硬。具体见[[issue|https://github.com/tiddly-gittly/speech-synthesis/issues/2]]。
