@@ -1,0 +1,19 @@
+caption: 语音按钮
+code-body: yes
+condition: [<targetTiddler>tag[?]]
+created: 20230522154822142
+creator: 马不前
+description: 用来添加语音题
+icon: $:/images/forge-icons/play
+modified: 20230522155050355
+modifier: 马不前
+tags: $:/tags/EditorToolbar
+title: TTS-button
+type: text/vnd.tiddlywiki
+
+<$action-sendmessage
+    $message="tm-edit-text-operation"
+    $param="wrap-selection"
+    prefix="<<?tts "
+    suffix=">>"
+/>

@@ -1,0 +1,18 @@
+created: 20230522153025442
+creator: 马不前
+modified: 20230522154454047
+modifier: 马不前
+tags: $:/tags/Macro
+title: TTS宏
+type: text/vnd.tiddlywiki
+
+\define ?tts(content)
+\whitespace trim
+
+<$button class=<<tv-config-toolbar-class>>>
+  {{$:/images/forge-icons/play}}
+  <$speech-synthesis text="$content$" />
+</$button>
+\end
+
+<<?tts "test">>

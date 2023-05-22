@@ -1,0 +1,13 @@
+caption: play
+collection: 
+created: 20230522154424403
+creator: 马不前
+library: Forge Icons
+library_version: 
+modified: 20230522154429611
+modifier: 马不前
+tags: $:/tags/Image
+title: $:/images/forge-icons/play
+type: text/vnd.tiddlywiki
+
+<svg width="22pt" height="22pt" class="tc-image-frg-play tc-image-button" viewBox="0 0 64 64" stroke-width="3" stroke="currentColor" fill="none"><path d="M24.35,42.59V21.41A.49.49,0,0,1,25.1,21L41.77,31.59a.49.49,0,0,1,0,.82L25.1,43A.49.49,0,0,1,24.35,42.59Z"/><circle cx="32" cy="32" r="25.48"/></svg>

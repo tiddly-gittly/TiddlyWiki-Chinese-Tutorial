@@ -1,12 +1,46 @@
-created: 20230521092852917
+created: 20230521090551369
 creator: 马不前
-modified: 20230521131826801
+modified: 20230522160447940
 modifier: 马不前
 tags: 插件技巧类
 title: 如何制作语音题？
 type: text/vnd.tiddlywiki
 
 需要安装`speech-synthesis`插件。
+
+目前我测试了一些主流的语言大部分都是可以读的。就是日语，韩语，俄语读不出来。法语，德语，西班牙语，意大利语，葡萄牙语都是可以读的。就是感觉读起来很生硬。具体见[[issue|https://github.com/tiddly-gittly/speech-synthesis/issues/2]]。[[原api演示链接|https://mdn.github.io/dom-examples/web-speech-api/speak-easy-synthesis/]]。
+
+本方法是用宏来实现文本替代，但宏太多有可能影响性能。<<fnote "或许可以用新版本的语法，但目前还看不太懂，就不用了">>
+
+
+```
+\define ?tts(content)
+\whitespace trim
+
+<$button class=<<tv-config-toolbar-class>>>
+  {{$:/core/images/erase}}
+  <$speech-synthesis text="$content$" />
+</$button>
+\end
+
+<<?tts "test">>
+```
+
+新建一个条目，把上面的代码复制进去，然后加上`$:/tags/Macro`标签，就可以全局使用了。或者直接把[[TTS宏]]条目拖进去。里面的图标可以改。考虑到太微没有自带播放的图标，我就加了一个图标[[$:/images/forge-icons/play]]。
+
+这样就可以直接用宏来使用了。当然不支持的语言在上面列出。
+
+`<<?tts "你好，世界">>`实现效果如下，点击按钮就可以听到声音了。
+
+<<?tts "你好，世界">><<fnote "因为本站没安装speech-synthesis插件，所以就听不出来。具体可去[[链接|https://dongrentianyu.github.io/WENAI/#%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E8%AF%AD%E9%9F%B3%E9%A2%98%EF%BC%9F]]里听。">>
+
+当然为了更好地学习，我们还可以制作一个同钓鱼插件里其他编辑按钮一样的按钮。具体可参考这个条目的内容[[TTS-button]]。
+
+总结：安装`speech-synthesis`插件，把[[TTS宏]]和[[TTS-button]]和[[$:/images/forge-icons/play]]三个条目拖到你的wiki里去，就可以在钓鱼插件里制作语音题了。
+
+---
+下面是制作条目页面上按钮。仅供参考。
+
 
 ```
 <$button class=<<tv-config-toolbar-class>>>
@@ -16,7 +50,7 @@ type: text/vnd.tiddlywiki
 ```
 新建一个条目，把上面的代码放进去。其中`$:/core/images/erase`是随意找的官网的一个图标，可以替换成其他图标。`text={{!!title}}`其中的title是要读的内容。我们用钓鱼插件制卡的话，需要改成caption。也就是`text={{!!caption}}`。并加上标签`$:/tags/ViewToolbar`。
 
-点击就可以听到读caption的内容了。一般来说这样就够了。~~但有些人可能会想只有在做语音题的时候才用到这个功能，那就可以在前面加上一个list筛选器，然后这样就只会在筛选出来的条目标题上显示这个按钮了。其他条目上不会显示。~~目前还没有什么特别好的办法实现，通过筛选器在特定条目前展示按钮。但编辑栏的按钮是可以通过特定字段来控制的。
+点击就可以听到读caption的内容了。一般来说这样就够了。~~但有些人可能会想只有在做语音题的时候才用到这个功能，那就可以在前面加上一个list筛选器，然后这样就只会在筛选出来的条目标题上显示这个按钮了。其他条目上不会显示。~~
 
 完整代码如下
 
@@ -24,10 +58,10 @@ type: text/vnd.tiddlywiki
 ```
 \whitespace trim
 
+
 <$button class=<<tv-config-toolbar-class>>>
   {{$:/core/images/erase}}
   <$speech-synthesis text={{!!caption}} />
 </$button>
-```
 
-目前我测试了一些主流的语言大部分都是可以读的。就是日语，韩语，俄语读不出来。法语，德语，西班牙语，意大利语，葡萄牙语都是可以读的。就是感觉读起来很生硬。具体见[[issue|https://github.com/tiddly-gittly/speech-synthesis/issues/2]]。
+```
