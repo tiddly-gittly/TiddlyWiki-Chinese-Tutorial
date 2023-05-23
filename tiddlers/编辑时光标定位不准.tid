@@ -1,0 +1,9 @@
+created: 20230523081129518
+creator: 马不前
+modified: 20230523081347065
+modifier: 马不前
+tags: 排查问题
+title: 编辑时光标定位不准
+type: text/vnd.tiddlywiki
+
+目前最好的解决办法是开启codemirror活动行高亮，也开启行号显示，这样就基本上可以正常使用了。如果不想开启的话，就删除codemirror一系列插件吧。
