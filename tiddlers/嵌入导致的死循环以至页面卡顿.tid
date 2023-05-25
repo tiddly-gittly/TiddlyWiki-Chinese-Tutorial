@@ -1,0 +1,15 @@
+created: 20230525163413046
+creator: 马不前
+modified: 20230525164133143
+modifier: 马不前
+tags: 排查问题
+title: 嵌入导致的死循环以至页面卡顿
+type: text/vnd.tiddlywiki
+
+没有任何报错，然后又无法点击跳转过去的链接，并且整个页面卡顿了。那么问题可能就是某个条目其内容一直在循环重复加载，也就需要退出程序才能运行。
+
+因为我一直有在尝试通过级联的方式来自定义页面模板，但我就像写普通条目一样写内容，忘了应该要区分[[不同文本解析式模式的|https://bramchen.github.io/tw5-docs/zh-Hans/#WikiText%20Parser%20Modes]]。
+
+我在给级联模板的条目加上`code-body`字段后，其值设为`yes`，就能够正常链接跳转了。具体可见[[论坛讨论|https://talk.tiddlywiki.org/t/a-bug-without-any-reporting-of-errors/7105]]。
+
+这是5.3.0版本的新变化，之前都是直接显示“嵌入失败”，也就是常见的红色方框，但这次允许嵌入，导致一直重复加载，死循环。
