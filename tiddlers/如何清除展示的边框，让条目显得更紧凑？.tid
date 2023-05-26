@@ -1,6 +1,6 @@
 created: 20230317051804534
 creator: 马不前
-modified: 20230516132208675
+modified: 20230526021728002
 modifier: 马不前
 tags: 自定义样式修改类
 title: 如何清除展示的边框，让条目显得更紧凑？
@@ -30,3 +30,5 @@ type: text/vnd.tiddlywiki
     padding-left: 20px;
 		}
 ```
+
+官方有一个`$:/themes/tiddlywiki/seamless`插件。也是移除边框的，可以试试。
