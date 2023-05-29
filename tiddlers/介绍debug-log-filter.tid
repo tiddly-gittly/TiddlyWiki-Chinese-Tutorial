@@ -1,0 +1,11 @@
+created: 20230528100149614
+creator: 马不前
+modified: 20230528100312339
+modifier: 马不前
+tags: B站直播 任务
+title: 介绍debug-log-filter
+type: text/vnd.tiddlywiki
+
+这个插件貌似可以有debug功能，但之前没用过，也没什么经验，就等林一二直播来分享一下好了。
+
+`$：/plugins/yaisog/debug-log-filter`
