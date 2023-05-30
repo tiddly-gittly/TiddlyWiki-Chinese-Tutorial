@@ -1,10 +1,11 @@
 created: 20230525163413046
 creator: 马不前
-modified: 20230526020600445
+modified: 20230530053813699
 modifier: 马不前
-tags: 排查问题
+tags: 排查问题 B站直播
 title: 嵌入导致的死循环以至页面卡顿
 type: text/vnd.tiddlywiki
+video-link: https://www.bilibili.com/video/BV1Pg4y1F77Y
 
 没有任何报错，然后又无法点击跳转过去的链接，并且整个页面卡顿了。那么问题可能就是某个条目其内容一直在循环重复加载，也就需要退出程序才能运行。
 
