@@ -1,7 +1,7 @@
 created: 20230530102543169
 creator: 马不前
-modified: 20230530102816421
-modifier: 马不前
+modified: 20230530120455770
+modifier: WhiteFall
 tags: 问题以及想法
 title: 懒加载效果如何？
 type: text/vnd.tiddlywiki
@@ -11,3 +11,5 @@ type: text/vnd.tiddlywiki
 懒加载也称延迟加载，具体可见[[文档|https://bramchen.github.io/tw5-docs/zh-Hans/#LazyLoading]]。
 
 或者懒加载未来会改善太微的性能。
+
+补充：懒加载性能还可以，近两万条目加载起来，会比原来快很多，较少有卡顿感。
