@@ -2,8 +2,6 @@
   "description": "太微中文教程",
   "plugins": [
     "tiddlywiki/browser-sniff",
-    "tiddlywiki/filesystem",
-    "tiddlywiki/tiddlyweb",
     "tiddlywiki/pluginlibrary",
     "tiddlywiki/highlight",
     "tiddlywiki/codemirror",
