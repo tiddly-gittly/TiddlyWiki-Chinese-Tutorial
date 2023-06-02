@@ -1,9 +1,0 @@
-author: tiddlywiki
-dependents: 
-description: Sync changes from the browser to TW5 (node.js) or TiddlyWeb server
-list: readme
-name: TiddlyWeb
-plugin-type: plugin
-title: $:/plugins/tiddlywiki/tiddlyweb
-type: application/json
-version: 5.2.7
