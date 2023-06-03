@@ -1,7 +1,7 @@
 created: 20221127032909691
 creator: WhiteFall
-modified: 20230508131917880
-modifier: WhiteFall
+modified: 20230603045608712
+modifier: 马不前
 order: 2
 tags: 资源链接 如何保存
 title: 全平台软件和存储方式
@@ -16,7 +16,7 @@ type: text/vnd.tiddlywiki
 <$macrocall $name="alert" type="primary" src="
 ''全平台软件列表：''
 
-* Windows、macOS、Linux ：[[TidGi|https://github.com/tiddly-gittly/TiddlyGit-Desktop]]、[[Timimi|https://ibnishak.github.io/Timimi/]]、[[TiddlyDesktop|https://github.com/TiddlyWiki/TiddlyDesktop/releases]]、[[TiddlyStow|https://twpub-book.netlify.app/tiddlystow.html]]、[[NodeJS|https://nodejs.org/zh-cn/]]
+* Windows、macOS、Linux ：[[TidGi|TidGi太记]]、[[Timimi|https://ibnishak.github.io/Timimi/]]、[[TiddlyDesktop|https://github.com/TiddlyWiki/TiddlyDesktop/releases]]、[[TiddlyStow|https://twpub-book.netlify.app/tiddlystow.html]]、[[NodeJS|https://nodejs.org/zh-cn/]]
 
 * Android：[[Tiddloid|https://github.com/donmor/Tiddloid]] + [[WebDav_Server_Pro_1.17|https://zhuanlan.zhihu.com/p/543783107]]
 

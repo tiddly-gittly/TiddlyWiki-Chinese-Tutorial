@@ -1,6 +1,6 @@
 created: 20230602140440631
 creator: 马不前
-modified: 20230602140737408
+modified: 20230603051444743
 modifier: 马不前
 tags: 编程知识类
 title: 文式编程
@@ -41,3 +41,5 @@ Leo Editor 等编辑器忠实还原了这个体验，将任意业务代码和注
 * 转自[[林一二的wiki|https://onetwo.ren/wiki/#:%E6%96%87%E5%BC%8F%E7%BC%96%E7%A8%8B]]
 * 也可访问[[知乎版|https://www.zhihu.com/question/26978956/answer/2349585817]]
 * [[literate programming维基链接（英文）|https://en.wikipedia.org/wiki/Literate_programming]]
+
+我对这一概念的理解是，代码更容易写成一长串的内容，不加以区分，可以像读书一样，而不是听人讲话那种断断续续的，但维护起来不太容易。

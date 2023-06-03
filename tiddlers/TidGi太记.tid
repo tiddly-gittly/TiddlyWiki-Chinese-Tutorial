@@ -1,8 +1,9 @@
 caption: 太记
 created: 20211005051214953
 creator: 林一二
-modified: 20220527070841917
-modifier: 林一二
+modified: 20230603045524771
+modifier: 马不前
+tags: 全平台软件和存储方式
 title: TidGi太记
 type: text/vnd.tiddlywiki
 
@@ -25,3 +26,7 @@ TidGi 是 TiddlyWiki + Git 的缩写简称，因为太记除了可以启动太�
 !!! 休眠工作区
 
 左侧灰色的工作区是「休眠工作区」，右键工作区图标，在设置里点开「开启休眠」，可以让这个 Wiki 在未使用时不占用系统资源。例如让官方文档工作区处于休眠状态节省 CPU，等到想查看官方文档的时候，再点击工作区图标就能一键开启。
+
+[[太记官网|https://tiddly-gittly.github.io/TidGi-Official-Website/#:Index]]
+
+也可访问https://tidgi.fun/，但半小时更新一次。
