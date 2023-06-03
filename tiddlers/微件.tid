@@ -1,8 +1,8 @@
 created: 20220108051857931
 creator: 林一二
-modified: 20220110022437037
-modifier: 林一二
-tags: 基础知识 入门幻灯片
+modified: 20230603030542279
+modifier: 马不前
+tags: 基础知识 入门幻灯片 高级知识
 title: 微件
 type: text/vnd.tiddlywiki
 
@@ -25,3 +25,5 @@ type: text/vnd.tiddlywiki
 <$list filter="[tag[基础知识]sort[title]]"><div><$text text=<<currentTiddler>>/></div></$list>
 
 <$list filter="[tag[基础知识]sort[title]]"><li><$text text=<<currentTiddler>>/></li></$list>
+
+<$macrocall $name="alert" type="primary" src="同筛选器一样，微件也是一定要掌握的，但后续同样有更高级的用法需要放到高级知识里去介绍。" class="bg-transparent"/>

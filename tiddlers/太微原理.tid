@@ -1,7 +1,9 @@
 created: 20230207151228536
 creator: 林一二
-modified: 20230207151231866
-modifier: 林一二
+modified: 20230603021219794
+modifier: 马不前
 tags: 插件开发
 title: 太微原理
 type: text/vnd.tiddlywiki
+
+这个条目下的一般是一些涉及到代码的高级操作，简单的操作可以去看[[太微自身的自定义设置]]。

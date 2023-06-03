@@ -1,8 +1,8 @@
 created: 20211003082407925
 creator: 林一二
-modified: 20230516133819114
+modified: 20230603024318176
 modifier: 马不前
-tags: 基础知识 入门幻灯片 筛选器表达式教程幻灯片
+tags: 入门幻灯片 筛选器表达式教程幻灯片 高级知识 基础知识
 title: 筛选器
 type: text/vnd.tiddlywiki
 
@@ -34,3 +34,5 @@ type: text/vnd.tiddlywiki
 ** 运行逻辑前面可以加上[[+-=~等前置码（prefix）|https://bramchen.github.io/tw5-docs/zh-Hans/#Filter%20Expression]]
 
 高级用法详见[[宏变量筛选器嵌入连用]]。
+
+<$macrocall $name="alert" type="primary" src="本条目同时添加了两个标签，基础知识和高级知识。因为筛选器比较特别，筛选器的基础知识，比如像tags标签是一定要掌握的，但像一些listtops筛选器，就很复杂了，就需要放到高级知识里去理解了。" class="bg-transparent"/>

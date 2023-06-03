@@ -1,7 +1,9 @@
 created: 20230107093158967
 creator: 林一二
-modified: 20230107093202101
-modifier: 林一二
-tags: 基础知识
+modified: 20230603030928791
+modifier: 马不前
+tags: 高级知识
 title: 文本拼接
 type: text/vnd.tiddlywiki
+
+文本拼接在太微里一般是通过筛选器和各种小微件来实现，本身挺复杂，就不放在基础知识里了。

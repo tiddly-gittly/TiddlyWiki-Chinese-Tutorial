@@ -1,0 +1,62 @@
+created: 20230603032517140
+creator: 马不前
+modified: 20230603032517140
+modifier: 马不前
+tags: 自定义字段内容
+title: 使用set小部件
+type: text/vnd.tiddlywiki
+
+! 用set小部件
+
+你看上面的代码是不是很烦琐啊，如果我要重复调用这个代码，难道一直复制过去吗？
+
+那肯定不是啊。我们可以用set小部件来把这个值变成某个变量。
+
+`<$set name="day-1" value={{{ [<now "0DD">] +[subtract[1]]+[addprefix[-]]+[addprefix<now "0MM">]+[addprefix[2023-]] }}}>`
+
+比如上面的代码里，我们新建一个day-1的变量，后面的值就可以直接使用这个了。
+
+
+```
+<$button>
+<$set name="day-1" value={{{ 
+[<now "0DD">] +[subtract[1]]+[addprefix[-]]+[addprefix<now "0MM">]+[addprefix[2023-]]
+}}}>
+<$action-sendmessage $message="tm-new-tiddler" 
+
+title=<<day-1>>
+
+tags={{{ [<now "0WW">] +[addprefix[2023-]] }}}
+
+test1={{{ [Timeform<day-1>] +[get[TimeNumber]sum[]] }}}
+
+IsOtherText="timedays" >
+</$action-sendmessage>
+</$set>
+	当天减一天
+	</$button>
+```
+
+上面代码中button小工具写完后，接一个set小工具。当然类似set的小工具还有很多，比如let或者var或者插件里用的，这个下次弄明白了再说。从`title=<<day-1>>`就可以看出，直接用双尖括号调用我们自定义的变量。
+
+`test1={{{ [Timeform<day-1>] +[get[TimeNumber]sum[]] }}}`
+
+而上面的代码则是把`day-1`作为和`now`一样的宏变量放进筛选器里，后面通过get来获取到`[Timeform<day-1>]`筛选出来的条目里`TimeNumber`的值，并用sum相加成总和。最终嵌入到test1这个字段里。
+
+<$button>
+<$set name="day-1" value={{{ 
+[<now "0DD">] +[subtract[1]]+[addprefix[-]]+[addprefix<now "0MM">]+[addprefix[2023-]]
+}}}>
+<$action-sendmessage $message="tm-new-tiddler" 
+
+title=<<day-1>>
+
+tags={{{ [<now "0WW">] +[addprefix[2023-]] }}}
+
+test1={{{ [Timeform<day-1>] +[get[TimeNumber]sum[]] }}}
+
+IsOtherText="timedays" >
+</$action-sendmessage>
+</$set>
+	当天减一天
+</$button>

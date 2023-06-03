@@ -1,11 +1,11 @@
 created: 20211011135322194
 creator: 林一二
-modified: 20211011135935171
-modifier: 林一二
-tags: 基础知识
+modified: 20230603021527802
+modifier: 马不前
+tags: 太微原理
 title: JavaScript
 type: text/vnd.tiddlywiki
 
 JS 是一门世界范围内都很流行的常用程序设计语言，可以在 [[MDN 官方 JavaScript 教程|https://developer.mozilla.org/zh-CN/docs/Web/JavaScript]]里学习怎么用 JS 扩展太微的能力。也有很多插件开始用 [[TS|https://www.tslang.cn/docs/home.html]] 来写了。
 
-太微本身就是用 JS 写的，所以 WikiText 等功能本质上就是对 JS 能力的调用。可以阅读[[WikiText与JavaScript的交互]]等教程来简单了解 WikiText 与 JS 的关系，更深入的了解需要阅读太微源码中的 [[parser|https://github.com/Jermolene/TiddlyWiki5/tree/master/core/modules/parsers]] 部分，并对编译原理有基本的了解才行。
+太微本身就是用 JS 写的，所以 WikiText 等功能本质上就是对 JS 能力的调用。可以阅读[[WikiText与JavaScript的交互]]等教程来简单了解 WikiText 与 JS 的关系，更深入的了解需要阅读太微源码中的 [[parser|https://github.com/Jermolene/TiddlyWiki5/tree/master/core/modules/parsers]] 部分，并对编译原理有基本的了解才行。<<fnote "删除基础知识的标签，而放到太微原理那边去。">>
