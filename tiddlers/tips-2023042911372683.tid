@@ -2,7 +2,7 @@ class: o-random-tip tc-modal-centered
 created: 20230429113726087
 creator: WhiteFall
 mask-closable: yes
-modified: 20230513075848679
+modified: 20230607105956522
 modifier: WhiteFall
 subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
 tags: Tiddlywiki5Tip
@@ -10,6 +10,8 @@ title: tips-2023042911372683
 type: text/vnd.tiddlywiki
 
 > ''掌握少量的快捷键有助于提高效率。'' 
-> `alt-N`（新建条目）、`ctrl-Enter`（保存条目）、`Esc`（取消保存条目）、`Ctrl + S`（保存wiki快捷键）、从条目标题跳转到条目内容快捷键：`TAB`、双击编辑条目插件：`2click2edit`
+> `alt-N`（新建条目）、`ctrl-Enter`（保存条目）、`Esc`（取消保存条目）、`shift-Esc`（取消保存条目之太记默认知识模版）、`Ctrl + S`（保存wiki快捷键）、`TAB`：从条目标题跳转到条目内容快捷键、双击编辑条目插件：`2click2edit`。
+
+> 更多的快捷键请查看：控制台 - [[快捷键|$:/core/ui/ControlPanel/KeyboardShortcuts]]选项卡。
 
 <<random-author "WhiteFall" "https://github.com/Zacharia2">>
