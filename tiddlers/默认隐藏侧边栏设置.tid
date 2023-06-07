@@ -1,0 +1,12 @@
+created: 20230607074720211
+creator: WhiteFall
+modified: 20230607075330447
+modifier: WhiteFall
+tags: 太微自身的自定义设置
+title: 默认隐藏侧边栏设置
+type: text/vnd.tiddlywiki
+
+`$:/state/sidebar`条目用于保存侧边栏隐藏显示状态。
+
+此条目内容一般有两种选项，“no”为隐藏，“yes”为显示。
+
