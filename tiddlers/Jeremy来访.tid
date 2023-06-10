@@ -1,6 +1,6 @@
 created: 20230520113144773
 creator: 林一二
-modified: 20230520130622670
+modified: 20230610050902733
 modifier: 马不前
 tags: B站直播 任务
 title: Jeremy来访
@@ -11,23 +11,40 @@ type: text/vnd.tiddlywiki
 待介绍的现状
 
 # 中文社区QQ群近千人，大都来自知乎和B站
-# 太记近千star
+# 太记一千多star
 # 群机器人，用太记上的中文教程作为数据库
 
 待问的问题：
 
-# 如何看待把太微比作操作系统、主要推荐发行版的观点
-# 当时为啥做了 NodeJS wiki
+# 如何看待把太微比作操作系统、主要推荐发行版的观点。
+# 当时为啥做了 NodeJS wiki？
 # Wikitext 与其它 Wikitext 的兼容度，能引进一些markdown语法吗？
-# 最近生活、健康和收入如何，退休了吗
-# TiddlyWeb 等商业化公司如何了
-# 插件源的进度，是不是没空开发，还有哪些没空开发的方向
-# 最近主要打算往哪些方向发力开发
-# 如何看待 AI，有什么想和太微结合的
+# 最近生活、健康和收入如何，退休了吗？
+# TiddlyWeb 等商业化公司如何了？
+# 插件源的进度，是不是没空开发，还有哪些没空开发的方向？
+# 最近主要打算往哪些方向发力开发。
+# 如何看待 AI，有什么想和太微结合的。
 # 性能如何进一步提高？有什么可行的办法吗？比如依赖太记这一类桌面版软件？
 # 故事河的设计是怎么想出来的，未来有打算改变吗？能否采取一些更便利的交互方式？
-# 导出多个条目时，可以导出多个tid文件吗？生成一个zip打包文件，解压出来是多个tid文件。分享给别人时会更方便一点。
 # 浏览太微类网站时，不少人会觉得重复浏览条目，从而浪费时间或者浪费注意力，对这一点怎么看呢？
 # 如何让太微更简单地上手？使用高级筛选器语法功能时如何更简单便利？
 # 如何实现跳转到条目指定位置，作为普遍性的用法，比标题链接更方便？
-# 有什么想和中文社区的用户说的
+# 有什么想和中文社区的用户说的。
+
+英文版，采用deepl翻译
+
+<<details label:"English" src:"# How do you feel about the idea of comparing tiddlywiki to an operating system, the main recommended distribution.
+# Why did you make a NodeJS wiki at that time?
+# How compatible is Wikitext with other Wikitext, can you introduce some markdown syntax?
+# How's life, health and income these days, retired?
+# How are commercial companies like TiddlyWeb doing?
+# Progress on the plugin source, is there no time to develop it, and what are the other directions you haven't had time to develop?
+# What are the main areas of development you are planning to work on these days.
+# What do you think about AI and what do you want to combine with tiddlywiki.
+# How can performance be further improved? Are there any possible solutions? Like relying on desktop versions of software like tidgi?
+# How did you come up with the design of Story River and are there any plans to change it in the future? Could some more convenient ways of interaction be adopted?
+# When browsing tiddlywiki websites, many people find it a waste of time or attention to go through the entries repeatedly, what do you think about this?
+# How can one make tiddlywiki easier to use? How can the advanced filter syntax function be made easier to use?
+# How can we make it easier to jump to an entry's specified location as a general use than a title link?
+# Anything you'd like to say to the Chinese community users.">>
+
