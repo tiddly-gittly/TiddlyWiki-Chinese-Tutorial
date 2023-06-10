@@ -1,6 +1,6 @@
 created: 20230520113144773
 creator: 林一二
-modified: 20230610050902733
+modified: 20230610123903596
 modifier: 马不前
 tags: B站直播 任务
 title: Jeremy来访
@@ -29,7 +29,12 @@ type: text/vnd.tiddlywiki
 # 浏览太微类网站时，不少人会觉得重复浏览条目，从而浪费时间或者浪费注意力，对这一点怎么看呢？
 # 如何让太微更简单地上手？使用高级筛选器语法功能时如何更简单便利？
 # 如何实现跳转到条目指定位置，作为普遍性的用法，比标题链接更方便？
+# 如何用tiddlywiki来进行知识管理，使tiddlywiki成为第二大脑？
 # 有什么想和中文社区的用户说的。
+
+
+
+有时间可以问下。
 
 英文版，采用deepl翻译
 
@@ -46,5 +51,6 @@ type: text/vnd.tiddlywiki
 # When browsing tiddlywiki websites, many people find it a waste of time or attention to go through the entries repeatedly, what do you think about this?
 # How can one make tiddlywiki easier to use? How can the advanced filter syntax function be made easier to use?
 # How can we make it easier to jump to an entry's specified location as a general use than a title link?
+# How to use tiddlywiki for knowledge management and make tiddlywiki a second brain?
 # Anything you'd like to say to the Chinese community users.">>
 
