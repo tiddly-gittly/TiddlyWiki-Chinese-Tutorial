@@ -1,6 +1,6 @@
 .tc-titlebar h2 {
-    font-size: 1em;
-    display: inline;
+    font-size: 0.8em;
+    display: table-row-group;
 }
 .tc-tiddler-frame .tc-tiddler-controls {
 	display: table-header-group;

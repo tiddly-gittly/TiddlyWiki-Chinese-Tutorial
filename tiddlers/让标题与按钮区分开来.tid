@@ -1,6 +1,6 @@
 created: 20230323224209645
 creator: 马不前
-modified: 20230612111541037
+modified: 20230612134244235
 modifier: 马不前
 tags: 自定义样式修改类
 title: 让标题与按钮区分开来
@@ -10,8 +10,8 @@ type: text/vnd.tiddlywiki
 
 ```css
 .tc-titlebar h2 {
-    font-size: 1em;
-    display: inline;
+    font-size: 0.8em;
+    display: table-row-group;
 }
 .tc-tiddler-frame .tc-tiddler-controls {
 	display: table-header-group;
