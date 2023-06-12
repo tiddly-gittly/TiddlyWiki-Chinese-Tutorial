@@ -1,7 +1,7 @@
 created: 20220331025954186
 creator: 林一二
-modified: 20220331030635108
-modifier: 林一二
+modified: 20230612093710399
+modifier: WhiteFall
 tags: 自动化
 title: 批量删除
 type: text/vnd.tiddlywiki
@@ -18,4 +18,4 @@ type: text/vnd.tiddlywiki
 
 ! 使用插件
 
-此外也可以使用[[TW-Commander]]插件来批量删除、增删字段。
+此外也可以使用[[TW-Commander|TW-Commander：批量操作条目]]插件来批量删除、增删字段。

@@ -1,9 +1,9 @@
 created: 20220331030124617
 creator: 林一二
-modified: 20220502045645000
-modifier: 林一二
+modified: 20230612093456725
+modifier: WhiteFall
 tags: 插件使用
-title: TW-Commander
+title: TW-Commander：批量操作条目
 type: text/vnd.tiddlywiki
 
 太微中校是一个批量操作条目的工具。[[Github|https://github.com/kookma/TW-Commander]] [[文档|https://kookma.github.io/TW-Commander/]]

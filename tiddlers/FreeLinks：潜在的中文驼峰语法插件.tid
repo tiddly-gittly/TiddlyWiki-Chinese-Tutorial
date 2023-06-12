@@ -1,0 +1,12 @@
+created: 20230612093104003
+creator: WhiteFall
+modified: 20230612093414267
+modifier: WhiteFall
+tags: 插件使用
+title: FreeLinks：潜在的中文驼峰语法插件
+type: text/vnd.tiddlywiki
+
+从两个角度看：
+
+1.自动筛选列表，列表中的条目，条目名可作为驼峰链接
+2.条目标记为可识别，条目中的字段标记，标记后改条目名可作为驼峰链接。

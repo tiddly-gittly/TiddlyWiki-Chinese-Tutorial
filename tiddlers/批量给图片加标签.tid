@@ -1,7 +1,7 @@
 created: 20230310072029869
 creator: 林一二
-modified: 20230310073455391
-modifier: 林一二
+modified: 20230612093730182
+modifier: WhiteFall
 tags: 自动化
 title: 批量给图片加标签
 type: text/vnd.tiddlywiki
@@ -20,7 +20,7 @@ type: text/vnd.tiddlywiki
 
 !!! 用 Commander 插件批量操作
 
-通过页面工具栏按钮里的 {{$:/plugins/kookma/commander/images/commander.svg}} ，打开[[TW-Commander]]插件。
+通过页面工具栏按钮里的 {{$:/plugins/kookma/commander/images/commander.svg}} ，打开[[TW-Commander|TW-Commander：批量操作条目]]插件。
 
 [img[对批量重命名的文件批量用commander插件操作.png]]
 
