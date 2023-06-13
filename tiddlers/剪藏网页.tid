@@ -1,12 +1,14 @@
 created: 20230613084608671
 creator: 林一二
-modified: 20230613084913055
+modified: 20230613085144323
 modifier: 林一二
 tags: 插件使用
 title: 剪藏网页
 type: text/vnd.tiddlywiki
 
-!! Tiddlyclip
+!! 剪藏网页内容
+
+!!! Tiddlyclip
 
 [ext[国际论坛上的 Tiddlyclip 教程|https://talk.tiddlywiki.org/t/file-uploads-plugin-beta-feedback/83
 
@@ -14,6 +16,13 @@ type: text/vnd.tiddlywiki
 
 这个仅能用于在浏览器上打开的 Wiki，例如你先用太记启动，然后右键「在浏览器打开」。或者用其它[[timimi浏览器扩展安装和使用]]等允许你在浏览器中打开的保存方式。
 
-!! Maoxian-web-clipper + Tiddlywiki-webclipper-userscript
+!!! Maoxian-web-clipper + Tiddlywiki-webclipper-userscript
 
 开发进度：[ext[https://github.com/mika-cn/maoxian-web-clipper/pull/172]]
+
+!! 剪藏链接
+
+!!! Tiddloid
+
+# 在列表页长按你的 Wiki，将这个 wiki 勾选设置为「默认 Wiki」
+# 在其它 Android 应用里使用系统的分享功能，分享链接给 Tiddloid，即可将链接插入为一个新条目
