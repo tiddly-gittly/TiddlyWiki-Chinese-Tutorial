@@ -1,0 +1,19 @@
+created: 20230613084608671
+creator: 林一二
+modified: 20230613084913055
+modifier: 林一二
+tags: 插件使用
+title: 剪藏网页
+type: text/vnd.tiddlywiki
+
+!! Tiddlyclip
+
+[ext[国际论坛上的 Tiddlyclip 教程|https://talk.tiddlywiki.org/t/file-uploads-plugin-beta-feedback/83
+
+[ext[Workflow using Tiddlyclip + html2tw macro + Section editor|https://talk.tiddlywiki.org/t/workflow-using-tiddlyclip-html2tw-macro-section-editor/4587]]
+
+这个仅能用于在浏览器上打开的 Wiki，例如你先用太记启动，然后右键「在浏览器打开」。或者用其它[[timimi浏览器扩展安装和使用]]等允许你在浏览器中打开的保存方式。
+
+!! Maoxian-web-clipper + Tiddlywiki-webclipper-userscript
+
+开发进度：[ext[https://github.com/mika-cn/maoxian-web-clipper/pull/172]]
