@@ -1,7 +1,7 @@
 created: 20230323224209645
 creator: 马不前
-modified: 20230612134244235
-modifier: 马不前
+modified: 20230613022307800
+modifier: WhiteFall
 tags: 自定义样式修改类
 title: 让标题与按钮区分开来
 type: text/vnd.tiddlywiki
@@ -10,17 +10,19 @@ type: text/vnd.tiddlywiki
 
 ```css
 .tc-titlebar h2 {
-    font-size: 0.8em;
-    display: table-row-group;
+	font-size: 1em;
+	display: table-header-group;
+	word-wrap:break-word;
+	word-break:break-all;
 }
 .tc-tiddler-frame .tc-tiddler-controls {
 	display: table-header-group;
-    float: right;
-    padding: 0px;
+	float: right;
+	padding: 0px;
 }
 
 ```
 
 上面的代码加上样式标签`$:/tags/Stylesheet`就基本上可以实现标题与按钮区分了。当标题很短时，标题与按钮保持一致，当标题很长时，按钮会在标题的上方。
 
-现已导入本站，[[让标题与按钮分隔开来]]。
+现已导入本站，[[Stylesheet-让标题与按钮分隔开来]]。
