@@ -1,0 +1,13 @@
+created: 20230323152819725
+creator: 马不前
+modified: 20230614123822432
+modifier: WhiteFall
+tags: $:/tags/Stylesheet
+title: Stylesheet-让标题与按钮分隔开来
+type: text/vnd.tiddlywiki
+
+.tc-titlebar h2 {
+	display: table-header-group;
+	word-wrap:break-word;
+	word-break:break-all;
+}
