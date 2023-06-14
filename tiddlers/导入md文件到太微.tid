@@ -1,0 +1,50 @@
+created: 20230614130913849
+creator: WhiteFall
+modified: 20230614134942894
+modifier: WhiteFall
+tags: 太微自身的自定义设置
+title: 导入md文件到太微
+type: text/vnd.tiddlywiki
+
+TiddlyWiki知识库目录树
+
+```
+.
+├─.github
+│  └─workflows
+├─plugins
+│  └─github-external-image
+├─public
+├─scripts
+└─tiddlers
+    └─md
+```
+
+在tiddlers文件夹下建立一个md文件夹。
+
+在md文件夹中创建tiddlywiki.files文件。文件内容如下：
+
+```json
+{
+    "directories": [
+        {
+            "path": ".",
+            "filesRegExp": "^.*\\.md$",
+            "isTiddlerFile": false,
+            "isEditableFile": true,
+            "searchSubdirectories": true,
+            "fields": {
+                "title": {"source": "basename"},
+                "created": {"source": "created"},
+                "modified": {"source": "modified"},
+                "type": "text/markdown"
+            }
+        }
+  ]
+}
+```
+
+再将md类型的文件放到md文件夹中，之后重启服务就可以看到太微中出现md的文件条目了。条目名为基本文件名，无后缀。
+
+
+具体可以参考：https://github.com/oeyoews/md-to-tiddlywiki
