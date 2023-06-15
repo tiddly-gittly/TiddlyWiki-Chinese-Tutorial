@@ -1,7 +1,7 @@
 created: 20220612102246413
 creator: 林一二
-modified: 20230603030825697
-modifier: 马不前
+modified: 20230615134208020
+modifier: WhiteFall
 tags: 基础知识 TidGi太记 B站直播
 title: 打开外部文件
 type: text/vnd.tiddlywiki
@@ -19,13 +19,29 @@ video-link: https://www.bilibili.com/video/BV1Ah411c7rc
 [ext[open:///Users/linonetwo/Desktop]]
 ```
 
+```
+.
+├─plugins
+│  └─github-external-image
+├─tiddlers
+├─files
+└─tiddlywiki.info
+```
+
 也可以是以 `./` 开头的相对路径，表示文件位置相对于知识库文件夹，例如我们常常在 `tiddlywiki.info` 同一层会有一个 `files` 文件夹用于放大文件附件：
 
 ```
 [ext[open://./files/ItonNote Desktop.png]]
 ```
+这里引用的''图片名称需要是英文名，中文名不行''，显示不出来。具体可见[[b站上的视频|https://www.bilibili.com/video/BV1qV4y1L7UP/?share_source=copy_web&vd_source=ad336ef0278153bd16bdab5eac42fdfa&t=4337]]<<fnote "视频很粗糙，简单看下操作就行。">>。
 
-太记不使用传统的 `file://` 开头，因为 Electron 框架做了一些保证用户安全的限制。这里引用的''图片名称需要是英文名，中文名不行''，显示不出来。具体可见[[b站上的视频|https://www.bilibili.com/video/BV1qV4y1L7UP/?share_source=copy_web&vd_source=ad336ef0278153bd16bdab5eac42fdfa&t=4337]]<<fnote "视频很粗糙，简单看下操作就行。">>。
+你也可以使用 `file://` 访问外部文件：
+
+```
+[ext[file://<文件或文件夹路径>]]
+```
+路径可以是相对路径，也可以是绝对路径（目前好像不支持绝对路径）。绝对路径可以用斜杠或反斜杠，例如`file://C:\Users\Snowy\Downloads`。
+
 
 !! TiddlyWikiDesktop
 
