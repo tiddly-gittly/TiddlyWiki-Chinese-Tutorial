@@ -1,6 +1,6 @@
 created: 20230101093054869
 creator: 马不前
-modified: 20230615061546199
+modified: 20230616064551291
 modifier: 林一二
 tags: 资源链接
 title: 教程链接
@@ -27,6 +27,7 @@ type: text/vnd.tiddlywiki
 * [[TiddlyWiki太微在线的思维导图（包含四个主题）|https://www.zhixi.com/view/70759713]]
 * 英文资源
 ** [[Tiddlywiki Links]] 英文资源聚合器（也有部分其他语言），包含十年间积累的大量教程网站
+** [[Tiddlywiki工具地图|https://dynalist.io/d/zUP-nIWu2FFoXH-oM7L7d9DM]] 用 dynalist 写的很全的工具列表，不过目前插件部分没有[[CPL插件源|安装CPL插件源]]齐全，链接部分没有[[Tiddlywiki Links]]全，但各内容都有简单的介绍文本
 ** 建议使用[ext[沉浸式翻译|https://immersivetranslate.com]]阅读，不要被语言障碍隔开
 
 ---
