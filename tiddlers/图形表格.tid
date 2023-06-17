@@ -1,6 +1,6 @@
 created: 20230101080951202
 creator: 马不前
-modified: 20230512024426697
+modified: 20230617090551415
 modifier: WhiteFall
 tags: 插件列表
 title: 图形表格
@@ -21,3 +21,4 @@ type: text/vnd.tiddlywiki
 * 可缩放的时间轴：kixam/timeline
 * ❤️轻量级的条目思维导图：[[TidGraph|http://ihm4u.github.io/tw5plugs/#]]
 * 待办事项与GTD插件：[[projectify|https://thaddeusjiang.github.io/Projectify/]]
+* 从剪贴板导入时重命名图片 wikilabs/bundler：[[讨论链接|https://talk.tiddlywiki.org/t/changing-image-png-for-importing-images/2698/26]]
