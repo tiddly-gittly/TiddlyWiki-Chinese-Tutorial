@@ -1,6 +1,6 @@
 created: 20230331080448907
 creator: 林一二
-modified: 20230411125228323
+modified: 20230619155119808
 modifier: 马不前
 tags: 自动化 B站直播 done
 title: 数据库表格
@@ -12,3 +12,5 @@ video-link: https://www.bilibili.com/video/BV1wN411w7n5/
 通过[[Shiraz宏包]]里的动态表格实现。
 
 {{shiraz动态表格.jpg}}
+
+目前可用更强大的aggregation插件来实现，需要更新到0.5.0版本及以上。直接通过[[筛选器]]来实现datebase。具体使用方法参考aggregation插件readme文档。当然这个功能也是在shiraz的基础完成的，所以也需要安装shiraz插件。
