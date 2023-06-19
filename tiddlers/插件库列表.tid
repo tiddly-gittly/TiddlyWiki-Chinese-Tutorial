@@ -1,7 +1,7 @@
 created: 20221127032926805
 creator: WhiteFall
-modified: 20230617091439871
-modifier: WhiteFall
+modified: 20230619155404602
+modifier: 马不前
 order: 3
 tags: 插件列表
 title: 插件库列表
@@ -26,4 +26,4 @@ type: text/vnd.tiddlywiki
 * https://talk.tiddlywiki.org/t/gatha-plugin-experimental-release/2272
 * https://kookma.github.io/TW-Gatha/
 
-<<alert-leftbar warning "插件要尤为注意插件之间的依赖关系">>
+<<alert-leftbar warning "插件要尤为注意插件之间的依赖关系。在太记里通常会因为没有安装适当的依赖插件，而导致报错无法正常打开wiki。">>
