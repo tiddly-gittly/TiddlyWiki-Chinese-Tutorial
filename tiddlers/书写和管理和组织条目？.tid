@@ -1,6 +1,6 @@
 created: 20230617041515783
 creator: WhiteFall
-modified: 20230617090600173
+modified: 20230620140532206
 modifier: WhiteFall
 tags: 问题以及想法
 title: 书写和管理和组织条目？
@@ -8,6 +8,16 @@ type: text/vnd.tiddlywiki
 
 关键词：使用频次、常用、管理、书写，专注内容
 
+* ''像obsidian官方默认教程一样，描述ob的用法。''
+
+https://help.obsidian.md/Home
+
+https://publish.obsidian.md/help-zh/
+
+
+* ''满足基本的书写需求，然后尽情的创作就可以了。''
+
+---
 
 如何满足普通的类似md、latex、word的书写效果？类似obsidian官方教程的md文档的用例文档？对使用难度和常用程度进行分层。分层两类，一类是普通文本的书写，一类是[[文式编程]]。
 
