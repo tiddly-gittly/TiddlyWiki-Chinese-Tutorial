@@ -1,0 +1,6 @@
+created: 20230621044850591
+creator: WhiteFall
+list: $:/core/ui/Buttons/more-tiddler-actions $:/plugins/kookma/utility/ui/Buttons/DraggableLink $:/plugins/oeyoews/copy-title/copybutton $:/plugins/breakzplatform/github-comments/viewtoolbar/github-comments-open $:/core/ui/Buttons/info $:/core/ui/Buttons/new-here $:/core/ui/Buttons/new-journal-here $:/core/ui/Buttons/clone $:/core/ui/Buttons/export-tiddler $:/core/ui/Buttons/edit $:/core/ui/Buttons/delete $:/core/ui/Buttons/permalink $:/core/ui/Buttons/permaview $:/plugins/bimlas/locator/viewtemplate/open-in-sidebar $:/core/ui/Buttons/open-window $:/core/ui/Buttons/close-others $:/plugins/tiddlywiki/qrcode/ViewToolbarButton $:/core/ui/Buttons/close $:/core/ui/Buttons/fold-others $:/core/ui/Buttons/fold $:/core/ui/Buttons/fold-bar
+modified: 20230621044850591
+modifier: WhiteFall
+title: $:/tags/ViewToolbar
