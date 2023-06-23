@@ -1,6 +1,6 @@
 created: 20230222052232170
 creator: 林一二
-modified: 20230222052732141
+modified: 20230623170526131
 modifier: 林一二
 tags: 插件开发
 title: 写插件配置页面
@@ -52,5 +52,7 @@ These settings let you customise the behaviour of Shiraz plugin.
 :<$checkbox tiddler="$:/state/multicols/storyriver"> Multicolumn story river</$checkbox>
 
 然后你可以在你的插件里使用 `{{ $:/plugins/kookma/shiraz/styles/multicols/storyriver }}` 或者 `filter=[{$:/plugins/kookma/shiraz/styles/multicols/storyriver}]` 等方式来取配置的值。
+
+或使用 JS 形式来获取值：`$tw.wiki.getTiddlerText(ENABLE_EXTERNAL_ATTACHMENTS_TITLE, '') === 'yes'`
 
 配置页面里可以使用任何太微的微件来提供多种多样的配置框，不要仅限于打勾选框。

@@ -1,0 +1,21 @@
+created: 20230623170534562
+creator: 林一二
+modified: 20230623170643002
+modifier: 林一二
+tags: 写插件配置页面
+title: 给插件配置提供预置值
+
+可以新建文件 `config.multids` ， 内容类似：
+
+```tw5
+title: $:/config/ExternalAttachments/
+
+Enable: yes
+DisableForImage: yes
+UseAbsoluteForDescendents: no
+UseAbsoluteForNonDescendents: yes
+```
+
+这样就可以在运行时批量生成四个条目 `$:/config/ExternalAttachments/Enable` 等等，并带有相应的值 `yes` 等等。
+
+
