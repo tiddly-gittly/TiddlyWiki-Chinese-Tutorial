@@ -1,0 +1,35 @@
+created: 20230623160837845
+creator: 林一二
+modified: 20230623160945990
+modifier: 林一二
+tags: 翻译内容
+title: 切换中英文的页面按钮
+
+参考[[CPL插件源|安装CPL插件源]]网页上的按钮：
+
+```tw5
+list-after: $:/core/ui/ViewTemplate/tags
+tags: $:/tags/ViewTemplate
+title: LanguageSwitcher
+type: text/vnd.tiddlywiki
+
+<$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang">
+<$list filter="[<lang>search[zh]]">
+<$button set="$:/language" setTo="$:/languages/en-GB" style="">🇬🇧 Switch to English</$button>
+</$list>
+<$list filter="[<lang>!search[zh]]">
+<$button set="$:/language" setTo="$:/languages/zh-Hans" style="">🇨🇳 切换至中文</$button>
+</$list>
+</$list>
+```
+
+效果类似
+
+<$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang">
+<$list filter="[<lang>search[zh]]">
+<$button set="$:/language" setTo="$:/languages/en-GB" style="">🇬🇧 Switch to English</$button>
+</$list>
+<$list filter="[<lang>!search[zh]]">
+<$button set="$:/language" setTo="$:/languages/zh-Hans" style="">🇨🇳 切换至中文</$button>
+</$list>
+</$list>

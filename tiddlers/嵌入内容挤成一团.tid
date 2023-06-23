@@ -1,0 +1,25 @@
+created: 20230623160147109
+creator: 林一二
+modified: 20230623160731989
+modifier: 林一二
+tags: 排查问题 在列表微件中使用筛选器
+title: 嵌入内容挤成一团
+
+如果你发现使用 List 微件和嵌入时，内容挤成了一团，只要加上空行就行了
+
+```tw5
+<$list filter="[<lang>search[zh]]">
+	{{readme/zh-Hans}}
+</$list>
+```
+
+改为这样就修好了：
+
+```tw5
+```tw5
+<$list filter="[<lang>search[zh]]">
+
+{{readme/zh-Hans}}
+
+</$list>
+```
