@@ -1,7 +1,7 @@
 created: 20230222052232170
 creator: 林一二
-modified: 20230623170526131
-modifier: 林一二
+modified: 20230626150942321
+modifier: 马不前
 tags: 插件开发
 title: 写插件配置页面
 type: text/vnd.tiddlywiki
@@ -10,7 +10,7 @@ type: text/vnd.tiddlywiki
 
 !! 添加配置页
 
-加一个带 `:/tags/ControlPanel/SettingsTab` 标签的条目，并用 `caption` 字段作为给用户显示的真正标题，例如：
+加一个带 `$:/tags/ControlPanel/SettingsTab` 标签的条目，并用 `caption` 字段作为给用户显示的真正标题，例如：
 
 ```
 title: $:/plugins/linonetwo/intention-tower-knowledge-graph/ControlPanel/Settings
@@ -18,7 +18,7 @@ caption: ITKG
 tags: $:/tags/ControlPanel/SettingsTab
 ```
 
-内容就随便放了，可以像 [[库克马(穆罕默德•拉赫马尼)]] 的 [[Shiraz宏包]] 插件一样，用这种形式：
+内容就随便放了，可以像 [[库克马|库克马(穆罕默德•拉赫马尼)]] 的 [[Shiraz宏包]] 插件一样，用这种形式：
 
 ```
 These settings let you customise the behaviour of Shiraz plugin.
@@ -56,3 +56,5 @@ These settings let you customise the behaviour of Shiraz plugin.
 或使用 JS 形式来获取值：`$tw.wiki.getTiddlerText(ENABLE_EXTERNAL_ATTACHMENTS_TITLE, '') === 'yes'`
 
 配置页面里可以使用任何太微的微件来提供多种多样的配置框，不要仅限于打勾选框。
+
+ControlPanel是控制台的意思，控制其实是由多个tabs微件把多个控制内容聚合起来的。上面说明的是一般插件的设置，如果是主题插件设置，对应的标签则是不一样的。勾选框是最常用的，但最好同时设置一个状态条目，以state开头或者config，里面的值是yes或no，然后控制某一条目的状态。具体实现方式类似[[使用List微件让内容可以切换中英文]]，也可参考[[给插件配置提供预置值]]。
