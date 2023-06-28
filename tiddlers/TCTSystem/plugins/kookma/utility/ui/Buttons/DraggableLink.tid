@@ -1,0 +1,44 @@
+caption: {{$:/core/images/link}} {{$:/language/Buttons/DraggableHandle/Caption}}
+created: 20230628144104330
+creator: 马不前
+description: {{$:/language/Buttons/DraggableHandle/Hint}}
+modified: 20230628144104330
+modifier: 马不前
+tags: $:/tags/ViewToolbar
+title: $:/plugins/kookma/utility/ui/Buttons/DraggableLink
+type: text/vnd.tiddlywiki
+
+\define btn-actions()
+<!-- bring to top -->
+<$list filter="[<modifier>match[normal]]" variable=ignore>
+<$action-navigate $to=<<currentTiddler>> $scroll="yes"/>
+</$list>
+
+<!-- focus -->
+<$list filter="[<modifier>match[alt]]" variable=ignore>
+<$action-sendmessage $message="tm-close-other-tiddlers" param=<<currentTiddler>> />
+</$list>
+
+<!-- permalink -->
+<$list filter="[<modifier>match[ctrl]]" variable=ignore>
+<$action-sendmessage $message="tm-permalink" param=<<currentTiddler>> />
+</$list>
+
+<!-- permaview -->
+<$list filter="[<modifier>match[shift]]" variable=ignore>
+<$action-sendmessage $message="tm-permaview" param=<<currentTiddler>> />
+</$list>
+
+\end
+
+\whitespace trim
+<$button tooltip={{$:/language/Buttons/DraggableHandle/Hint}} aria-label={{$:/language/Buttons/DraggableHandle/Caption}} class=<<tv-config-toolbar-class>> dragTiddler=<<currentTiddler>> actions=<<btn-actions>> >
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{$:/core/images/link}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text">
+<$text text={{$:/language/Buttons/DraggableHandle/Caption}}/>
+</span>
+</$list>
+</$button>

@@ -1,8 +1,9 @@
 caption: {{$:/core/images/add-comment}} GitHub comments
 created: 20230106154328382
+creator: 马不前
 description: View Github comments
-list-before: $:/core/ui/Buttons/info
-modified: 20230106154334846
+modified: 20230628144104330
+modifier: 马不前
 tags: $:/tags/ViewToolbar
 title: $:/plugins/breakzplatform/github-comments/viewtoolbar/github-comments-open
 type: text/vnd.tiddlywiki

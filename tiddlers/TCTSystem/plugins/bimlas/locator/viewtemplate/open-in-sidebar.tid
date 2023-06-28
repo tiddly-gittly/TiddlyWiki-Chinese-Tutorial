@@ -1,0 +1,29 @@
+caption: {{$:/core/images/chevron-right}} locator sidebar
+created: 20230628144104331
+creator: 马不前
+description: Browse hierarchy of tag in Locator sidebar
+modified: 20230628144104331
+modifier: 马不前
+tags: $:/tags/ViewToolbar
+title: $:/plugins/bimlas/locator/viewtemplate/open-in-sidebar
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<$button tooltip="Browse hierarchy of tag in Locator sidebar" aria-label="locator sidebar" class=<<tv-config-toolbar-class>>>
+<$vars
+  contextState="$:/state/bimlas/locator/view/context/"
+  intersectionState="$:/state/bimlas/locator/view/intersection/"
+  differenceState="$:/state/bimlas/locator/view/difference/"
+>
+  {{||$:/plugins/bimlas/locator/actions/add-to-history}}
+</$vars>
+<$list filter="[<tv-config-toolbar-icons>prefix[yes]]" variable="listItem">
+{{$:/core/images/chevron-right}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>prefix[yes]]">
+<span class="tc-btn-text">
+<$text text=" "/>
+<$text text="locator sidebar"/>
+</span>
+</$list>
+</$button>
