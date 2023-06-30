@@ -1,0 +1,41 @@
+counts: 3
+created: 20230630165813084
+creator: 马不前
+modified: 20230630170819146
+modifier: 马不前
+tags: 高级知识 自动化
+title: 完成次数按钮
+
+现在的需求是要做一个按钮，点击不断添加1或者指定数值。并修改字段内容。
+
+```
+<$button>
+<$action-listops $field="counts" $filter="[{!!counts}add{COUNTS}]"/>
+完成次数
+<span>
+{{!!counts}}
+</span>
+</$button>
+```
+
+上面的代码就会生成一个按钮，点击就会使用action-listops小工具。对应的字段是counts，在counts的基础上添加COUNTS里text的值，一般是数字。这样就可以添加并显示了。如果需要样式的话，可以借助设拉子插件。未指定条目就默认是当前条目，如果需要修改其他条目的某个数值，可以指定条目。
+
+```
+<$button class="btn btn-primary">
+<$action-listops $field="counts" $filter="[{!!counts}add{COUNTS}]"/>
+完成次数
+<span class="badge badge-light">
+{{!!counts}}
+</span>
+</$button>
+```
+
+<$button class="btn btn-warning">
+<$action-listops $field="counts" $filter="[{!!counts}add{COUNTS}]"/>
+完成次数
+<span class="badge badge-light">
+{{!!counts}}
+</span>
+</$button>
+
+不知道为什么样式无法完整显示出来，待排查。
