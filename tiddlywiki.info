@@ -15,8 +15,7 @@
     "tiddlywiki/codemirror-mode-markdown",
     "tiddlywiki/codemirror-mode-xml",
     "tiddlywiki/codemirror-search-replace",
-    "tiddlywiki/katex",
-    "linonetwo/itonnote"
+    "tiddlywiki/katex"
   ],
   "themes": [
     "tiddlywiki/vanilla"

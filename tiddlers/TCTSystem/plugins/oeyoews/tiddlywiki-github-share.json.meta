@@ -1,5 +1,5 @@
 author: oeyoews
-core-version: >=5.2.5
+core-version: >=5.2.7
 dependents: 
 description: Github Share Button
 list: readme config
@@ -7,4 +7,4 @@ name: Tiddlywiki Github Share
 plugin-type: plugin
 title: $:/plugins/oeyoews/tiddlywiki-github-share
 type: application/json
-version: 0.2.0
+version: 0.3.0
