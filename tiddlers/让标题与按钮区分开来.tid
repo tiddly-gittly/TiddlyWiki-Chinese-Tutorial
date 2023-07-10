@@ -1,6 +1,6 @@
 created: 20230323224209645
 creator: 马不前
-modified: 20230614124046462
+modified: 20230710235953952
 modifier: WhiteFall
 tags: 自定义样式修改类
 title: 让标题与按钮区分开来
@@ -19,4 +19,4 @@ type: text/vnd.tiddlywiki
 
 上面的代码加上样式标签`$:/tags/Stylesheet`就基本上可以实现标题与按钮区分了。当标题很短时，标题与按钮保持一致，当标题很长时，按钮会在标题的上方。
 
-现已导入本站，[[Stylesheet-让标题与按钮分隔开来]]。
+现已整合到itonnote主题插件中，[[themes/itonnote/settings|$:/themes/linonetwo/itonnote/settings]]。
