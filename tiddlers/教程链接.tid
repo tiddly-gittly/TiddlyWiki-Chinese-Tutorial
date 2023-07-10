@@ -1,17 +1,17 @@
 created: 20230101093054869
 creator: 马不前
-modified: 20230616064551291
-modifier: 林一二
+modified: 20230710234223954
+modifier: WhiteFall
 tags: 资源链接
 title: 教程链接
 type: text/vnd.tiddlywiki
 
 ! 教程链接
 * [[TiddlyXP 教程站 - 全面的入门、进阶教程|TiddlyXP]]
-* TiddlyWiki简易指南（教程）
+* TiddlyWiki简易指南（一份线性教程）
+** [[PDF版|https://github.com/tiddly-gittly/TiddlyWiki-Easy-Guide-to-TiddlyMemo-Edition/releases/latest/download/TiddlyWiki-Easy-Guide.PDF.pdf]]
 ** [[知乎文章|https://zhuanlan.zhihu.com/p/555893660]]
-** [[PDF版|https://github.com/tiddly-gittly/TiddlyWiki-Easy-Guide-to-TiddlyMemo-Edition/releases/download/2022-12-30/TiddlyWiki-Easy-Guide.PDF.pdf]]
-** [[TiddlyWiki简易指南之墨屉钓鱼版、简易指南源仓库|https://github.com/tiddly-gittly/TiddlyWiki-Easy-Guide-to-TiddlyMemo-Edition]]
+** [[TiddlyWiki简易指南、简易指南之墨屉钓鱼版源仓库|https://github.com/tiddly-gittly/TiddlyWiki-Easy-Guide-to-TiddlyMemo-Edition]]
 *  TiddlyWiki舞-基础文档简体中文教程：
 ** [[文档网址|https://bramchen.github.io/tw5-docs/zh-Hans/]]
 ** [[tiddlyhost备份|http://tw5-zh-hans.tiddlyspot.com/]]
