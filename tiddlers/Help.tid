@@ -1,7 +1,7 @@
 created: 20230712123209524
 creator: WhiteFall
 list-after: $:/plugins/linonetwo/itonnote/Sidebar/FolderMenu
-modified: 20230713032338824
+modified: 20230713032518634
 modifier: WhiteFall
 tags: $:/tags/SideBar
 title: Help
@@ -84,9 +84,10 @@ $body$
 ## [[回收站插件]]
 ## [[随机漫游条目与快照插件]]
 ## [[与SuperMemo互动]]
+">>
+#[[帮助 & 更多]]
+## <<toc-heading "Help & More" "
 ## [[桌面端Timimi的安装使用]]
 ## [[配置太微的中文语言]]
 ">>
-#[[帮助 & 更多]]
-## <<toc-heading "Help & More" "">>
 </div>
