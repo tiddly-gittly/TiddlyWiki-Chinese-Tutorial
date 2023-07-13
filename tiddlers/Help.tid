@@ -1,7 +1,7 @@
 created: 20230712123209524
 creator: WhiteFall
 list-after: $:/plugins/linonetwo/itonnote/Sidebar/FolderMenu
-modified: 20230713021227472
+modified: 20230713032338824
 modifier: WhiteFall
 tags: $:/tags/SideBar
 title: Help
@@ -23,9 +23,9 @@ $body$
 \end
 <div class="tc-table-of-contents">
 
-# [[介绍]]
+# [[Introduction]]
 
-# [[创建自己的知识库]]
+# [[创建知识库]]
 ## <<toc-heading "创建自己的知识库" "
 ## [[TiddlyWiki简介]]
 ## [[下载和安装]]
@@ -38,7 +38,7 @@ $body$
 ###[[不同功能多样性的太微模版]]
 ">>
 # [[开始使用知识库]]
-## <<toc-heading "开始使用知识库" "
+## <<toc-heading "开始使用TiddlyWik知识库" "
 ## [[创建第一个条目笔记]]
 ###[[指定标题]]
 ###[[段落格式]]
@@ -61,7 +61,7 @@ $body$
 ###[[嵌入在线视频]]
 ###[[常用的筛选器表达式]]
 ">>
-# [[如何使用TiddlyWiki构建笔记系统？]]
+# [[构建笔记系统]]
 ## <<toc-heading "如何使用TiddlyWiki构建笔记系统？" "
 ## [[时间序列记录法]]
 ## [[主题渐构笔记法]]
@@ -76,7 +76,7 @@ $body$
 ## [[分享和发布功能]]
 ## [[数据安全性与备份]]
 ">>
-#[[为知识库拓展新的功能与特性]]
+#[[拓展新的功能与特性]]
 ## <<toc-heading "为知识库拓展新的功能与特性" "
 ## [[Markdown插件]]
 ## [[反向链接插件]]
@@ -84,10 +84,9 @@ $body$
 ## [[回收站插件]]
 ## [[随机漫游条目与快照插件]]
 ## [[与SuperMemo互动]]
+## [[桌面端Timimi的安装使用]]
+## [[配置太微的中文语言]]
 ">>
-#[[帮助与更多]]
-## <<toc-heading "帮助与更多" "
-## 桌面端Timimi的安装使用
-## 配置太微的中文语言
-">>
+#[[帮助 & 更多]]
+## <<toc-heading "Help & More" "">>
 </div>

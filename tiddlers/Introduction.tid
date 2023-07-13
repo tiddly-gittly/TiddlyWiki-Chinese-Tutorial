@@ -1,10 +1,11 @@
 created: 20230713021321773
 creator: WhiteFall
-modified: 20230713021921490
+modified: 20230713031945422
 modifier: WhiteFall
 tags: help
-title: 介绍
+title: Introduction
 
+! TiddlyWiki Help
 
 太微比普通的笔记软件拥有更加强大的灵活性（这种灵活性是需要知识来支撑）。太微就像《果宝特攻》里面的机甲，所有的功能（包括更改外观）都可以通过安装、卸载配置模块（插件）实现。太微同时也是文档与软件一体化工具。普通软件修改外观等于几乎打碎整个UI重做。在太微中最简的使用方式是仅在桌面端通过edge打开TiddlyStow页面，选一个太微模板就可以使用记录笔记或日志，数据会保存在本地。
 
