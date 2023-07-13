@@ -1,0 +1,93 @@
+created: 20230712123209524
+creator: WhiteFall
+list-after: $:/plugins/linonetwo/itonnote/Sidebar/FolderMenu
+modified: 20230713021227472
+modifier: WhiteFall
+tags: $:/tags/SideBar
+title: Help
+
+\define toc-heading(caption,body)
+<$reveal type="nomatch" state=<<qualify "$:/state/toc/$caption$">> text="show">
+<$button set=<<qualify "$:/state/toc/$caption$">> setTo="show" class="tc-btn-invisible">{{$:/core/images/right-arrow}} $caption$
+</$button>
+</$reveal>
+<$reveal type="match" state=<<qualify "$:/state/toc/$caption$">> text="show">
+<$button set=<<qualify "$:/state/toc/$caption$">> setTo="hide" class="tc-btn-invisible">{{$:/core/images/down-arrow}} $caption$
+</$button>
+</$reveal>
+<$reveal type="match" state=<<qualify "$:/state/toc/$caption$">> text="show" retain="yes" animate="yes">
+
+$body$
+
+</$reveal>
+\end
+<div class="tc-table-of-contents">
+
+# [[介绍]]
+
+# [[创建自己的知识库]]
+## <<toc-heading "创建自己的知识库" "
+## [[TiddlyWiki简介]]
+## [[下载和安装]]
+## [[太微的基本介绍]]
+###[[概念：模板、文件、条目]]
+###[[太微的布局和控制面板]]
+###[[太微的查看模式]]
+###[[配置新的主题配色]]
+###[[中文插件库的安装使用]]
+###[[不同功能多样性的太微模版]]
+">>
+# [[开始使用知识库]]
+## <<toc-heading "开始使用知识库" "
+## [[创建第一个条目笔记]]
+###[[指定标题]]
+###[[段落格式]]
+###[[硬换行内容块]]
+###[[格式化字体]]
+###[[段落格式]]
+####[[项目列表与引述块的简单介绍]]
+####[[水平分隔线、破折号、数学公式、代码块]]
+####[[自定义样式段落块、类型段落块]]
+###[[WikiText表格]]
+###[[书写与显示文本]]
+###[[WikiText的解析器模式]]
+###[[删除单个条目]]
+## [[“文件目录”侧边栏]]
+## [[筛选器与双链功能]]
+###[[嵌入和链接（双链，重要）]]
+###[[嵌入、链接宏筛选器以及小部件之间的异同]]
+###[[图像的使用]]
+###[[条目的批量操作]]
+###[[嵌入在线视频]]
+###[[常用的筛选器表达式]]
+">>
+# [[如何使用TiddlyWiki构建笔记系统？]]
+## <<toc-heading "如何使用TiddlyWiki构建笔记系统？" "
+## [[时间序列记录法]]
+## [[主题渐构笔记法]]
+## [[关系图谱或图数据结构]]
+## [[线性写作的形式]]
+## [[渐进写作（增量写作）]]
+## [[自动化无压记录]]
+## [[随手记录，动态生成]]
+## [[卡片笔记写作法]]
+## [[PARA个人知识管理]]
+## [[书籍与书籍的分卷]]
+## [[分享和发布功能]]
+## [[数据安全性与备份]]
+">>
+#[[为知识库拓展新的功能与特性]]
+## <<toc-heading "为知识库拓展新的功能与特性" "
+## [[Markdown插件]]
+## [[反向链接插件]]
+## [[TOC自动化目录插件]]
+## [[回收站插件]]
+## [[随机漫游条目与快照插件]]
+## [[与SuperMemo互动]]
+">>
+#[[帮助与更多]]
+## <<toc-heading "帮助与更多" "
+## 桌面端Timimi的安装使用
+## 配置太微的中文语言
+">>
+</div>
