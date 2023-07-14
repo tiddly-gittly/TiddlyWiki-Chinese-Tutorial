@@ -1,8 +1,8 @@
 created: 20230525131358673
 creator: 马不前
-modified: 20230712133114834
+modified: 20230714133830744
 modifier: 马不前
-tags: 问题以及想法
+tags: 问题以及想法 筛选器类
 title: 页面按钮筛选显示
 type: text/vnd.tiddlywiki
 
@@ -15,3 +15,5 @@ type: text/vnd.tiddlywiki
 ```
 
 先是在当前条目里，筛选出type为常见wiki格式的，并排除标题前缀为`$:/`的，这就排除了系统条目。或者type类型没写的，也可以，但同样要排除标题前缀为`$:/`的。
+
+上面的代码可以简化为`<$list filter="[<currentTiddler>!prefix[$:/]]"></$list>`，这个非常实用，因为很多自定义设置不需要在系统条目里展示，比如当前条目位置。
