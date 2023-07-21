@@ -1,0 +1,36 @@
+created: 20230721075758337
+creator: 林一二
+modified: 20230721080230066
+modifier: 林一二
+tags: 写插件配置页面
+title: 在主题插件里用设置控制样式
+
+用config条目作中介，让开关只修改config条目，而不会去修改具体样式，这样在插件更新时，才不会发现用户覆盖了很多条目（变成[[影子条目]]）无法获得更新。
+
+!! Itonnote 主题中的例子
+
+‎src/settings.tid [[写插件配置页面]]
+
+```tid
+<$checkbox tiddler="$:/config/themes/itonnote/separate-title-and-button" field="text" checked="show" unchecked="hide" d…
+<$checkbox tiddler="$:/config/themes/itonnote/separate-title-and-button" field="text" checked="show" unchecked="hide" d…
+```
+
+‎src/separate-title-and-button.tid [[根据条件展示内容]]
+
+```tid
+title: $:/themes/linonetwo/itonnote/separate-title-and-button
+tags: $:/tags/Stylesheet
+
+<$reveal state="$:/config/themes/itonnote/separate-title-and-button" type="match" text="show">
+/**
+	让标题与按钮分隔开。
+```
+
+‎src/configs/separate-title-and-button.tid [[给插件配置提供预置值]]
+
+```tid
+title: $:/config/themes/itonnote/separate-title-and-button
+
+hide
+```

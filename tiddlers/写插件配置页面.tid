@@ -1,12 +1,13 @@
 created: 20230222052232170
 creator: 林一二
-modified: 20230626150942321
-modifier: 马不前
+keywords: 设置 config preference 设定
+modified: 20230721075755283
+modifier: 林一二
 tags: 插件开发
 title: 写插件配置页面
 type: text/vnd.tiddlywiki
 
-你可能会希望插件有一些让用户修改配置的地方。
+你可能会希望插件有一些让用户修改设置的地方。
 
 !! 添加配置页
 
