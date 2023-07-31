@@ -1,0 +1,41 @@
+created: 20230731065342830
+creator: 林一二
+keywords: evernote enex
+modified: 20230731075622914
+modifier: 林一二
+tags: 插件使用 从其它笔记软件迁移
+title: 导入印象笔记内容
+
+!! 把笔记从印象笔记中导出，生成enex格式
+
+使用[[vzhd1701/evernote-backup|https://github.com/vzhd1701/evernote-backup]]项目，安装方法见其 Readme。需要懂英文和使用命令行，不懂的可以配合AI解释。通用的安装方法为命令行里执行：
+
+```sh
+pip install --user evernote-backup
+```
+
+安装完毕后，命令行里执行
+
+```sh
+evernote-backup init-db --backend china --force
+```
+
+然后按提示输入用户名密码，这个是开源项目，不会窃取你的信息，一般可以放心。
+
+输入完毕后，使用它把数据同步下来：
+
+```sh
+evernote-backup sync
+```
+
+然后导出成 enex 文件，以 MacOS 系统为例是这样，你可以把 `~/Downloads/` 替换成你自己的别的保存路径：
+
+```sh
+evernote-backup export ~/Downloads/
+```
+
+现在这个文件夹里就会有很多个待导入太微的 enex 文件了，每个相当于一个印象笔记的笔记本，包含了图片和文本。
+
+!! 导入太微
+
+由于[[https://github.com/Jermolene/TiddlyWiki5/issues/3176#issuecomment-1657853596]]这个 bug，目前导入太微后图片和文本会分开来，建议等它修复了再进一步导入。
