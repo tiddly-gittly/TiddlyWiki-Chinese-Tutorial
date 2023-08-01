@@ -1,6 +1,6 @@
 created: 20230710113651406
 creator: 林一二
-modified: 20230727055747924
+modified: 20230801052607262
 modifier: 马不前
 tags: 更新插件 排查问题
 title: 插件更新后重启又要更新
@@ -18,3 +18,4 @@ title: 插件更新后重启又要更新
 * `$:/plugins/Gk0Wk/TW5-CodeMirror-Enhanced`
 * `$:/plugins/linonetwo/github-external-image`
 * `$:/plugins/linonetwo/zx-script`
+* `$__plugins_Gk0Wk_focused-tiddler.json.meta`
