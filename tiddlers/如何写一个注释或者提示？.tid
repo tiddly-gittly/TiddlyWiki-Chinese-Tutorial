@@ -1,7 +1,7 @@
 created: 20230521132616079
 creator: 马不前
-modified: 20230521133558108
-modifier: 马不前
+modified: 20230814033241137
+modifier: WhiteFall
 tags: 插件技巧类
 title: 如何写一个注释或者提示？
 type: text/vnd.tiddlywiki
@@ -14,4 +14,4 @@ test<<fnote "测试">>
 
 更多用法可以查看[[教程|https://kookma.github.io/TW-Refnotes/]]。
 
-当然也可以自己定义类似的宏文本，比如[[鼠标悬浮提示文本]]。
+当然也可以自己定义类似的宏文本，比如[[鼠标悬停嵌入]]。

@@ -1,0 +1,32 @@
+created: 20230505094846758
+creator: WhiteFall
+modified: 20230814033241134
+modifier: WhiteFall
+tags: 自定义宏类
+title: 鼠标悬停嵌入
+type: text/vnd.tiddlywiki
+
+\define mhp(name,desc)
+<span style="color:green; border-bottom: 1px dashed; cursor: help;" title="$desc$">$name$</span>
+\end
+
+\define mhe()
+[[$$]]
+\end
+
+【卡片集】
+
+* Author: 山岛竦峙
+* 描述：鼠标悬停嵌入。
+
+
+```
+条目标题：$:/plugins/my/Mouse Hover Embed（任意）
+标签：$:/tags/Macro
+```
+
+```
+\define mhe()
+[[$$]]
+\end
+```
