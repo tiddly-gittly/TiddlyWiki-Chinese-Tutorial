@@ -1,11 +1,14 @@
+class: autonumhead
 created: 20230809234409764
 creator: WhiteFall
-modified: 20230814015121555
+modified: 20230820010725638
 modifier: WhiteFall
 tags: 插件开发 笔记思维
 title: WikiText编程
 
-"编程"是我们为了完成某项任务，将解决问题的步骤，用计算机能够理解的语言写成指令，这就是"编程"。而后，计算机会根据这些指令一步步执行，最后完成任务。
+!! 编程定义 
+
+> "编程"是我们为了完成某项任务，将解决问题的步骤，用计算机能够理解的语言写成指令，这就是"编程"。而后，计算机会根据这些指令一步步执行，最后完成任务。
 
 "编程"涉及到3个组成部分：
 
@@ -13,19 +16,50 @@ title: WikiText编程
 # 我们，负责使用计算机能够理解的语言，来描述解决的步骤
 # 计算机，负责执行这些步骤
 
-TiddlyWiki可以大致分成几个部分wikitext写作，wikitext编程、插件开发。自定义可以归属于wikitext编程范围。
+!! 定义WikiText编程
 
-tree宏为我们提供了一种WikiText编程参考，
+TiddlyWiki可以大致分成几个部分wikitext写作，wikitext编程、插件开发。自定义可以归属于wikitext编程范围。tree宏为我们提供了一种WikiText编程参考。编辑器工具栏的文本片段snippet。似乎整个WikiText编程都围绕条目进行操作。
 
-WikiText编程核心是：小工具（Widget），小工具消息（Messages），和筛选器（Filters）。可以使用的WikiText变量（WikiText Variables），这些变量是由TiddlyWiki提供好的，具有特殊功能，可以直接引用的数据。
+WikiText编程核心是：小工具（Widget）{包含小工具消息（Messages）}、筛选器（Filters）、TiddlyWiki核心变量（被变量包含）等，这些由TiddlyWiki提供的类API的工具或功能集。
 
-https://bramchen.github.io/tw5-docs/zh-Hans/#Variable%20Usage 原来宏，进程，微件$set、$let、$vars、\function、javascript macros都可以是变量。
+“TiddlyWiki核心变量”，这些变量是由TiddlyWiki提供好的，具有特殊功能，可以直接引用的。
+
+TiddlyWiki 的显示是由一些底层的小工具驱动。这些小工具都组织成树状结构。小工具树是后续化为实际显示的中间表示。每个小工具的类别贡献一个特定功能，就像调用API一样。小工具提供 WikiText 更丰富的功能。它们与 HTML 元素 使用相同的标记方式，但是标记的名称前包含一个 $ 符号。小工具的属性因使用情景不同而被指定为多种不同形式。小工具是开始字符带有$符号，类似HTML文档中的元素标记，如`<$let><$let>`，使用这种标记生成专用的元素小工具。
+
+小工具消息乃由小工具生成，以回应用户的操作。消息具有一个 name、一个可选的主要 parameter，以及一个或多个可选的命名参数。这些消息沿着小工具树向上传播，在那里它们由上层小工具或核心本身处理。小工具消息通常是触发式的，这意味着常常有一个小工具生成，另一个小工具处理。或者任意方式生成，生成此小工具消息的小工具处理。
+
+机制（Mechanisms）：组成 TiddlyWiki 的内部机制。
+
+级联（Cascades）是用于构建和自定义 TiddlyWiki 用户界面的关键机制。
+
+!!! 方法
+
+维基文本解析器模式：为了显示条目（通常是 text 字段），维基文本解析器读取和解释内容，并应用维基文本规则。就是写在条目中笔记。比如你现在看到的内容就是。
+
+解析器有三种模式的其中一种：Pragmas（编译指示）是维基文本 的一个特殊组件，提供对剩余文本解析方式的控制。剩余的两种解析器模式都是笔记的解析渲染和正常显示。
+
+```tw
+Pragma: \define
+Pragma: \function
+Pragma: \import
+Pragma: \parameters
+Pragma: \procedure
+Pragma: \rules
+Pragma: \whitespace
+Pragma: \widget
+```
 
 你可以自己定义方法（动作）在TiddlyWiki中叫作进程或宏，推荐使用进程（Procedures），它可以接受参数，不同位置，变量是引用方式不一样。你可以使用小工具定义变量。也可以在某个小工具添加属性导出变量。在方法体中，你可以使用小工具、筛选器、小工具消息、变量进行一系列动作。
 
-你也可以定义函数，函数在TiddlyWiki中被定义为包含筛选器表达式的命名文本片段。函数可以具有命名参数，这些参数在函数内当作变量使用。感觉基本上是操作条目的各个字段，对字段内容进行增查删改。然后输出一组内容，表现形式为编程语言中的列表类型。
+筛选器作用于所有条目的所有字段，它是对条目字段进行操作的方法。或者说访问并操作所有条目字段数据的函数。TiddlyWiki提供一种方法，查找哪些条目符合给定的模型。
 
-似乎整个WikiText编程都围绕条目进行操作。
+定义函数，函数在TiddlyWiki中被定义为包含筛选器表达式的命名文本片段。函数可以具有命名参数，这些参数在函数内当作变量使用。感觉基本上是操作条目的各个字段，对字段内容进行增查删改。然后输出一组内容，表现形式为编程语言中的列表类型。
+
+!!! 变量
+
+变量的定义（待修改）：变量是一个文本片段，可以通过名称访问。该文本称为变量的值。变量由小工具定义。几个内核小工具定义了变量，最常见的是 $set、$let 和 $list 小工具。
+
+原来宏，进程，微件$set、$let、$vars、\function、javascript macros都可以是变量。https://bramchen.github.io/tw5-docs/zh-Hans/#Variable%20Usage 
 
 之所以叫WikiText编程是因为，WikiText编程核心由js实现且降低了复杂度但又和平常的记录笔记相差较大，更类似一种功能实现，即它介于写作与编程语言之间，且偏向编程语言的方面。
 
