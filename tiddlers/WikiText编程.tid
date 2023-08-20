@@ -1,7 +1,7 @@
 class: autonumhead
 created: 20230809234409764
 creator: WhiteFall
-modified: 20230820010725638
+modified: 20230820030427300
 modifier: WhiteFall
 tags: 插件开发 笔记思维
 title: WikiText编程
@@ -22,7 +22,7 @@ TiddlyWiki可以大致分成几个部分wikitext写作，wikitext编程、插件
 
 WikiText编程核心是：小工具（Widget）{包含小工具消息（Messages）}、筛选器（Filters）、TiddlyWiki核心变量（被变量包含）等，这些由TiddlyWiki提供的类API的工具或功能集。
 
-“TiddlyWiki核心变量”，这些变量是由TiddlyWiki提供好的，具有特殊功能，可以直接引用的。
+“TiddlyWiki核心变量”，这些变量是由TiddlyWiki提供好的，具有特殊功能，可以直接引用的。比如currentTiddler核心变量：`<$view tiddler=<<currentTiddler>> field=title/>`。
 
 TiddlyWiki 的显示是由一些底层的小工具驱动。这些小工具都组织成树状结构。小工具树是后续化为实际显示的中间表示。每个小工具的类别贡献一个特定功能，就像调用API一样。小工具提供 WikiText 更丰富的功能。它们与 HTML 元素 使用相同的标记方式，但是标记的名称前包含一个 $ 符号。小工具的属性因使用情景不同而被指定为多种不同形式。小工具是开始字符带有$符号，类似HTML文档中的元素标记，如`<$let><$let>`，使用这种标记生成专用的元素小工具。
 

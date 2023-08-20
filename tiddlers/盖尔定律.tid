@@ -1,0 +1,18 @@
+created: 20230820032638222
+creator: WhiteFall
+modified: 20230820032711697
+modifier: WhiteFall
+tags: 插件开发
+title: 盖尔定律
+
+!! 定义
+
+"All complex systems that work evolved from simpler systems that worked. [And conversely...] A complex system designed from scratch never works and cannot be patched up to make it work."
+
+所有切实可行的复杂系统势必是从切实可行的简单系统发展而来的。一个一开始就设计复杂系统永远无法运行，也无法通过修补使其工作。你必须从一个简单的系统开始。
+
+盖尔定律说明了设计高度复杂的系统很可能会失败。它们很难一蹴而就，更多的是从简单的系统逐渐演变而来。
+
+!!阐述
+
+仔细观察可以发现，无论是一个互联网软件系统的架构，还是一个城市的建设，载人航天飞机的建造，都不是一开始就事无巨细设计好的，没有任何人可以模拟真实场景中的各种内外部因素，也就是说在一个系统逐步成熟和复杂化的过程中，是不断对外部无数变量进行响应和调整的过程
