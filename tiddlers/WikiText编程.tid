@@ -1,8 +1,8 @@
 class: autonumhead
 created: 20230809234409764
 creator: WhiteFall
-modified: 20230820030427300
-modifier: WhiteFall
+modified: 20230820125727946
+modifier: 马不前
 tags: 插件开发 笔记思维
 title: WikiText编程
 
@@ -32,7 +32,7 @@ TiddlyWiki 的显示是由一些底层的小工具驱动。这些小工具都组
 
 级联（Cascades）是用于构建和自定义 TiddlyWiki 用户界面的关键机制。
 
-!!! 方法
+!!! 过程
 
 维基文本解析器模式：为了显示条目（通常是 text 字段），维基文本解析器读取和解释内容，并应用维基文本规则。就是写在条目中笔记。比如你现在看到的内容就是。
 
