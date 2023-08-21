@@ -1,6 +1,6 @@
 created: 20230430112539127
 creator: WhiteFall
-modified: 20230821105747890
+modified: 20230821110015500
 modifier: WhiteFall
 tags: 太微背景介绍
 title: 怎么最简单地使用TiddlyWiki？
@@ -12,7 +12,7 @@ type: text/vnd.tiddlywiki
 <$macrocall $name="alert" type="primary" src="
 # 减少应用场景的可能性和可选平台，仅使用TidGi。
 
-# 尽量不自己配置太微模板、配置插件，除非他们很简单。不涉及任何[[Wiki编程|Wiki编程的定义]]的部分，如果涉及你必须要有能力接受。仅使用wikitext、筛选器和模仿示例和说明去调用相关功能进行写作。
+# 尽量不自己配置太微模板、配置插件，除非他们很简单。不涉及任何关于[[Wiki编程|Wiki编程的定义]]的部分，如果涉及你必须要有能力接受。仅使用wikitext、筛选器和模仿示例和说明去调用相关功能进行写作。
 
 # 关于在使用太记以及太记默认TiddlyWiki模板遇到的问题（指程序设计问题，比如bug，UI混乱等等）可以在GitHub提交issue，然后等待处理。最好是去看一眼issues，很多问题之前已经提出了，得等林一二有时间修复。
 
