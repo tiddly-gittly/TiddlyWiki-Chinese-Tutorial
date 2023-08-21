@@ -1,6 +1,6 @@
 created: 20230430132454489
 creator: 马不前
-modified: 20230818122407605
+modified: 20230821023922922
 modifier: WhiteFall
 tags: 太微背景介绍 B站直播
 title: 极客和WikiText编程
@@ -11,7 +11,7 @@ video-link: https://www.bilibili.com/video/BV1TX4y1h7rp
 
 太微是一款[[开源软件|笔记软件开源不开源有什么区别]]，社区也非常活跃。因而里面也有很多极客。
 
-对于TiddlyWiki的功能分级，大概可以分成三个方面：[[WikiText写作|WikiText写作（进一步的可能）]]、[[WikiText编程|WikiText编程]]、[[插件开发]]，TiddlyWiki整体看和[[文学编程工具|文学编程与TiddlyWiki]]Jupyter notebook有些相似。
+对于TiddlyWiki的功能分级，大概可以分成三个方面：[[WikiText写作|WikiText写作（进一步的可能）]]、[[WikiText编程|WikiText编程的定义]]、[[插件开发]]，TiddlyWiki整体看和[[文学编程工具|文学编程与TiddlyWiki]]Jupyter notebook有些相似。
 
 在太微里，有很多内容都是可以自定义的，拓展性非常高。极客们就经常根据自身能力使用WikiText提供的编程能力搞各种“骚操作”，甚至可以像emacs那样，想怎么使用就怎么使用。但对于一般人，我并不推荐像极客一样去搞各种“骚操作”。只有非常需要时，才应该去折腾，不然浪费各自的时间。
 

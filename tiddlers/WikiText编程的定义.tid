@@ -1,10 +1,10 @@
 class: autonumhead
 created: 20230809234409764
 creator: WhiteFall
-modified: 20230821003933285
+modified: 20230821023922919
 modifier: WhiteFall
 tags: 插件开发 笔记思维
-title: WikiText编程
+title: WikiText编程的定义
 
 !! 编程定义 
 
@@ -18,7 +18,7 @@ title: WikiText编程
 
 !! WikiText编程定义
 
-TiddlyWiki可以大致分成几个部分wikitext写作，wikitext编程、插件开发。自定义可以归属于wikitext编程范围。tree宏为我们提供了一种WikiText编程参考。编辑器工具栏的文本片段snippet。似乎整个WikiText编程都围绕条目进行操作。
+TiddlyWiki可以大致分成几个部分wikitext写作，wikitext编程、插件开发。tree宏为我们提供了一种WikiText编程参考。编辑器工具栏的文本片段snippet。似乎整个WikiText编程都围绕条目进行操作。
 
 WikiText编程核心是：小工具（Widget）{包含小工具消息（Messages）}、筛选器（Filters）、TiddlyWiki核心变量（被变量包含）等，这些由TiddlyWiki提供的类API的工具或功能集。
 
@@ -39,6 +39,9 @@ TiddlyWiki 的显示是由一些底层的小工具驱动。这些小工具都组
 TW API就是TiddlyWiki提供定义好的微件（也称元素小工具，类似HTML元素）、微件消息（由微件提供）、筛选器、进程（宏，JS宏）、函数、核心变量、变量（$set $let $vars），JS代码定义好的JS模块类型，提供所有功能的全部定义。
 
 JS API就是TiddlyWiki JavaScript源代码级别的编程调用。
+
+
+现在，它不再使用 jQuery 和 DOM，而是将维基文本wikitext解析为通用的树形格式，然后将其渲染为文本 HTML。——TiddlyWiki5的诞生！
 
 !!! 过程
 
