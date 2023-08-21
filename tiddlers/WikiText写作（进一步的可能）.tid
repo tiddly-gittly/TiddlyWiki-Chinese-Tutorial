@@ -1,6 +1,6 @@
 created: 20230510094605285
 creator: WhiteFall
-modified: 20230821023922923
+modified: 20230821100441114
 modifier: WhiteFall
 tags: 任务 笔记思维
 title: WikiText写作（进一步的可能）
@@ -10,7 +10,7 @@ type: text/vnd.tiddlywiki
 
 什么是WikiText写作？
 
-WikiText写作是一种与编程完全无关或绝大部分无关的TiddlyWiki使用方式。基本要求是不创造新功能，尽可能的为自己的内容服务，尽可能让使用的wikitext语法变得简洁易懂。花费最少的时间等等。核心要件是服务于写作。简而言之，非[[WikiText编程的定义]]的部分都是wikitext写作的部分。用好软件和插件写好的功能即可。对于一些非逻辑与代码方面的自定义包含在此列中。参考TiddlyWiki舞的自定义TiddlyWiki。
+WikiText写作是一种与编程完全无关或绝大部分无关的TiddlyWiki使用方式。基本要求是不创造新功能，尽可能的为自己的内容服务，尽可能让使用的wikitext语法变得简洁易懂。花费最少的时间等等。核心要件是服务于写作。简而言之，非[[Wiki编程的定义]]的部分都是wikitext写作的部分。用好软件和插件写好的功能即可。对于一些非逻辑与代码方面的自定义包含在此列中。参考TiddlyWiki舞的自定义TiddlyWiki。
 
 
 !! 当工具的局限性消失后，你会用它做什么？

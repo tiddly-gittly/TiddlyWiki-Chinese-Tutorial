@@ -1,10 +1,10 @@
 class: autonumhead
 created: 20230809234409764
 creator: WhiteFall
-modified: 20230821023922919
+modified: 20230821100033055
 modifier: WhiteFall
 tags: 插件开发 笔记思维
-title: WikiText编程的定义
+title: Wiki编程的定义
 
 !! 编程定义 
 
@@ -16,7 +16,7 @@ title: WikiText编程的定义
 # 我们，负责使用计算机能够理解的语言，来描述解决的步骤
 # 计算机，负责执行这些步骤
 
-!! WikiText编程定义
+!! Wiki编程定义
 
 TiddlyWiki可以大致分成几个部分wikitext写作，wikitext编程、插件开发。tree宏为我们提供了一种WikiText编程参考。编辑器工具栏的文本片段snippet。似乎整个WikiText编程都围绕条目进行操作。
 
