@@ -1,8 +1,8 @@
 class: autonumhead
 created: 20230809234409764
 creator: WhiteFall
-modified: 20230820125727946
-modifier: 马不前
+modified: 20230821002729494
+modifier: WhiteFall
 tags: 插件开发 笔记思维
 title: WikiText编程
 
@@ -32,6 +32,14 @@ TiddlyWiki 的显示是由一些底层的小工具驱动。这些小工具都组
 
 级联（Cascades）是用于构建和自定义 TiddlyWiki 用户界面的关键机制。
 
+之所以叫WikiText编程是因为，WikiText编程核心由js实现且降低了复杂度但又和平常的记录笔记相差较大，更类似一种功能实现，即它介于写作与编程语言之间，且偏向编程语言的方面。
+
+!!! TW API & JS API
+
+TW API就是TiddlyWiki提供定义好的微件、微件消息、筛选器、进程（宏，JS宏）、函数、核心变量、变量（$set $let $vars）
+
+JS API就是TiddlyWiki JavaScript源代码级别的编程调用。
+
 !!! 过程
 
 维基文本解析器模式：为了显示条目（通常是 text 字段），维基文本解析器读取和解释内容，并应用维基文本规则。就是写在条目中笔记。比如你现在看到的内容就是。
@@ -59,7 +67,24 @@ Pragma: \widget
 
 变量的定义（待修改）：变量是一个文本片段，可以通过名称访问。该文本称为变量的值。变量由小工具定义。几个内核小工具定义了变量，最常见的是 $set、$let 和 $list 小工具。
 
-原来宏，进程，微件$set、$let、$vars、\function、javascript macros都可以是变量。https://bramchen.github.io/tw5-docs/zh-Hans/#Variable%20Usage 
+!!! 定义
 
-之所以叫WikiText编程是因为，WikiText编程核心由js实现且降低了复杂度但又和平常的记录笔记相差较大，更类似一种功能实现，即它介于写作与编程语言之间，且偏向编程语言的方面。
+# 可以作为变量的过程定义：进程（宏、JS宏）、微件、函数；
+# 变量定义：$set、$let、$vars、核心变量；
+# JS模块类型定义：包括所有TW API。例如：JS宏、微件、筛选器、通用模块等等
+
+JS模块类型：一个 模块 是包含可运行 JavaScript 的条目。可以用js定义小工具，筛选器，解析器，通用模块、JS宏等等。具体查看模块类型。
+
+> https://bramchen.github.io/tw5-docs/zh-Hans/#Variable%20Usage 
+
+!!! 调用
+
+可以使用的调用：
+
+# 对条目与数据条目进行函数访问的筛选器
+# TW提供的或定义的过程（进程（宏）、微件、函数、小工具、小工具消息）和变量。
+
+!!! 逻辑
+
+!!! 视图
 
