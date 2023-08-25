@@ -1,7 +1,7 @@
 class: autonumhead
 created: 20230809234409764
 creator: WhiteFall
-modified: 20230821110357426
+modified: 20230825060939521
 modifier: WhiteFall
 tags: 插件开发 笔记思维
 title: Wiki编程的定义
@@ -97,6 +97,24 @@ JS模块类型：一个 模块 是包含可运行 JavaScript 的条目。可以�
 
 !!! 视图
 
-TiddlyWiki 的显示是由一些底层的小工具驱动。这些小工具都组织成树状结构。小工具树是后续化为实际显示的中间表示。每个小工具的类别贡献一个特定功能，就像调用API一样。小工具提供 WikiText 更丰富的功能。它们与 HTML 元素 使用相同的标记方式，但是标记的名称前包含一个 $ 符号。小工具的属性因使用情景不同而被指定为多种不同形式。小工具是开始字符带有$符号，类似HTML文档中的元素标记，如`<$let><$let>`，使用这种标记生成专用的元素小工具。
 
-现在，它不再使用 jQuery 和 DOM，而是将维基文本wikitext解析为通用的树形格式，然后将其渲染为文本 HTML。——TiddlyWiki5的诞生！
+TiddlyWiki 的显示是由一些底层的小工具驱动。这些小工具都组织成树状结构。小工具树是后续化为实际显示的中间表示。每个小工具的类别贡献一个特定功能，就像调用API一样。小工具提供 WikiText 更丰富的功能。它们与 HTML 元素 使用相同的标记方式，但是标记的名称前包含一个 $ 符号。小工具的属性因使用情景不同而被指定为多种不同形式。小工具是开始字符带有$符号，类似[[HTML|https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics]]文档中的元素标记，如`<$let><$let>`，使用这种标记生成专用的元素小工具。
+
+> 现在，它不再使用 jQuery 和 DOM，而是将维基文本wikitext解析为通用的树形格式，然后将其渲染为文本 HTML。——TiddlyWiki5的诞生！
+
+元素微件通常由 标记（tag）、属性（Attribute）、内容（Content）组成。可以将一个元素置于其他元素之中 —— 称作嵌套。通过指定标记和属性完成微件的方法调用，根据微件行为定义生成行为效果，若有返回值则并将返回值作用或传递到内容中，但微件内容也可以作为一种数据输入，由微件进行处理。
+
+```xml
+<$set name="greeting" value="Hi">
+	<$set name="me" value={{!!title}}>
+		<$set name="sentence" value="helloworld" >
+			<<greeting>>! I am <<me>> and I say: <<sentence>>
+		</$set>
+	</$set>
+</$set>
+```
+
+!!! 调试
+
+action-log、log小工具、[[调试筛选器]]
+
