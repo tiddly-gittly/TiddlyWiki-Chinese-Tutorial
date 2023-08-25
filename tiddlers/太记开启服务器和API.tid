@@ -1,0 +1,25 @@
+created: 20230825040301493
+creator: 林一二
+modified: 20230825040642112
+modifier: 林一二
+tags: TidGi太记
+title: 太记开启服务器和API
+type: text/vnd.tiddlywiki
+
+!! 开启方法
+
+在太记侧边栏上：
+
+右键工作区图标-配置工作区-博客和服务器设置-启用HTTP API
+
+!! 开启的作用
+
+可以使用[[TW-MobiLe-Sync手机tiddloid移动端同步TidGi桌面端插件]]了，因为它是用HTTP API来同步数据的。
+
+可以开博客了，参考[[在手机上运行太微nodejs博客|https://wiki.onetwo.ren/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E8%BF%90%E8%A1%8C%E5%A4%AA%E5%BE%AEnodejs%E5%8D%9A%E5%AE%A2]]。
+
+可以和第三方应用互相同步数据，如果第三方应用适配了太记 HTTP API 的话。
+
+!! 注意安全
+
+开启后，同一个 Wifi 局域网里的其他人都能访问你的笔记，所以这个功能默认关闭。使用需要注意信息安全！

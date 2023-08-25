@@ -1,6 +1,6 @@
 created: 20220820082612147
 creator: 林一二
-modified: 20230502081910163
+modified: 20230825040602923
 modifier: 林一二
 tags: 插件使用
 title: TW-MobiLe-Sync手机tiddloid移动端同步TidGi桌面端插件
@@ -25,7 +25,8 @@ type: text/vnd.tiddlywiki
 
 !! 使用方式
 
-# 首先在手机端扫码，在浏览器打开当前这个知识库的网页
+# 首先在太记上[[太记开启服务器和API]]，这样才能在浏览器上访问太记的信息
+# 手机端扫码，在浏览器打开当前这个知识库的网页
 # ''使用浏览器的分享功能''，将这个网页分享给 Tiddloid 应用
 ## 使用分享功能创建 wiki，需要保证 Tiddloid 里没有设置过默认 wiki
 ### 通过在 Tiddloid 的 wiki 列表页面，长按某个 wiki 弹出设置窗口，可以设置默认 wiki
