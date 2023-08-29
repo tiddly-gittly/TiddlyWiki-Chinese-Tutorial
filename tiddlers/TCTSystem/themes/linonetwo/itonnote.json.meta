@@ -8,4 +8,4 @@ plugin-priority: 1
 plugin-type: theme
 title: $:/themes/linonetwo/itonnote
 type: application/json
-version: 0.2.21
+version: 0.2.23

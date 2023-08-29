@@ -1,12 +1,15 @@
 created: 20220504110544066
 creator: 林一二
-modified: 20230101101143144
+modified: 20230829053251819
 modifier: 马不前
 tags: 资源链接
 title: TW-PUB
 type: text/vnd.tiddlywiki
 
+这是目前在太微里导入epub图书最简单有效的方法。把epub转换成twpub，目前也有直接的转换工具。
+
 ! 资源站
 
 * [[墨屉共享书库|https://twpub-book.netlify.app/]]
 * [[代码仓库|https://github.com/Zacharia2/TWPUB-BOOK]]
+* [[转换工具|https://github.com/tiddly-gittly/Epub2twpub]]
