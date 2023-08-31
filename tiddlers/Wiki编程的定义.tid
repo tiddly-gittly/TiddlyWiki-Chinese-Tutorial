@@ -1,7 +1,7 @@
 class: autonumhead
 created: 20230809234409764
 creator: WhiteFall
-modified: 20230825060939521
+modified: 20230831091619062
 modifier: WhiteFall
 tags: 插件开发 笔记思维
 title: Wiki编程的定义
@@ -38,6 +38,16 @@ Wiki编程核心是：小工具（Widget）{包含小工具消息（Messages）}
 TW API就是TiddlyWiki提供定义好的微件（也称元素小工具，类似HTML元素）、微件消息（由微件提供）、筛选器、进程（宏，JS宏）、函数、核心变量、变量（$set $let $vars），JS代码定义好的JS模块类型，提供所有功能的全部定义。
 
 JS API就是TiddlyWiki JavaScript源代码级别的编程调用。
+
+!!!! 使用范围
+
+* 微件：wiki
+* 微件消息：wiki
+* 筛选器：js、wiki
+* 进程：wiki
+* 函数：wiki
+* 核心变量：js、wiki
+* JS模块类型：js，wiki
 
 !!! 过程
 
@@ -85,6 +95,8 @@ Pragma: \widget
 JS模块类型：一个 模块 是包含可运行 JavaScript 的条目。可以用js定义小工具，筛选器，解析器，通用模块、JS宏等等。具体查看模块类型。
 
 > https://bramchen.github.io/tw5-docs/zh-Hans/#Variable%20Usage 
+
+* [[定义微件和微件参数]]
 
 !!! 调用
 
