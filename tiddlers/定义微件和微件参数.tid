@@ -1,11 +1,13 @@
 created: 20230831044558847
 creator: WhiteFall
-modified: 20230831085004356
+modified: 20230831092419403
 modifier: WhiteFall
 tags: Wiki编程的定义 微件
 title: 定义微件和微件参数
 
 示例：Text微件，类封装方式。
+
+微件属性(参数)的对应不同情况的多种指定方式：https://bramchen.github.io/tw5-docs/zh-Hans/#Widget%20Attributes
 
 ```js
 /*\
