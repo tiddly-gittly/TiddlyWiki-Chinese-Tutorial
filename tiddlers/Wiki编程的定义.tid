@@ -1,7 +1,7 @@
 class: autonumhead
 created: 20230809234409764
 creator: WhiteFall
-modified: 20230901022103047
+modified: 20230901025050261
 modifier: WhiteFall
 tags: 插件开发 笔记思维
 title: Wiki编程的定义
@@ -19,6 +19,8 @@ title: Wiki编程的定义
 !! Wiki编程定义
 
 什么是Wiki编程？（解释）
+
+Wiki编程是在条目中进行定义、调用不同类型的方法和变量，为了完成某种任务，将解决问题的步骤写成指令，使TiddlyWiki根据这些指令一步步执行，最后完成任务。
 
 TiddlyWiki可以大致分成几个部分wikitext写作，wiki编程、插件开发。tree宏为我们提供了一种Wiki编程参考。编辑器工具栏的文本片段snippet。似乎整个Wiki编程都围绕条目进行操作。
 
@@ -51,7 +53,11 @@ JS API就是TiddlyWiki JavaScript源代码级别的编程调用。
 
 同一个方法在不同的方法实现（微件、筛选器、JS等等）中可能有相同的功能。比如获取条目内容，你可以使用筛选器的`[[tiddlerTitle]text[]]`，也可以使用js的`$tw.wiki.getTiddlerText(title)`。
 
-微件是wiki编程的核心部分，它几乎独立与JS/TS编程部分，且自给自足，更像是一个服务于wiki和写作的编程语言。所以关于UI和视图的部分可以大胆交给它完成。你可以使用html和元素小工具混用，并使用相应功能的元素小工具替代html标签。比如button可以使用button微件代替、img可以使用image微件代替、input可以使用[[定义输入框与变量]]描述的代替等等。
+微件是wiki编程的核心部分，它几乎独立与JS/TS编程部分，且自给自足，更像是一个服务于wiki和写作的编程语言。所以关于UI和视图的部分可以大胆交给它完成。你可以使用html和元素小工具混用，并使用相应功能的元素小工具替代html标签。比如button可以使用button微件代替、img可以使用image微件代替、input可以使用[[定义输入框与变量]]描述的代替等等。微件的目标结果感觉是视图。
+
+所以对于想要引入JS编程的想法来说，使用这些JS代码的入口点已知有：微件和微件参数定义，JS宏和宏参数定义、定义事件等等。你可以在微件或JS宏中引入js库，在tiddler中直接调用微件和js宏。
+
+但无论如何做，最终都是在条目中进行调用和编程。只是JS占比多少，是否更为简单优雅的区别。
 
 !!! 方法
 
