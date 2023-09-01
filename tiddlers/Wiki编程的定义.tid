@@ -1,7 +1,7 @@
 class: autonumhead
 created: 20230809234409764
 creator: WhiteFall
-modified: 20230901021531274
+modified: 20230901022103047
 modifier: WhiteFall
 tags: 插件开发 笔记思维
 title: Wiki编程的定义
@@ -49,7 +49,7 @@ JS API就是TiddlyWiki JavaScript源代码级别的编程调用。
 * 核心变量：js、wiki
 * JS模块类型：js，wiki
 
-同一个行为在不同的实现中可能有相同的功能。比如获取条目内容，你可以使用筛选器的`[[tiddlerTitle]text[]]`，也可以使用js的`$tw.wiki.getTiddlerText(title)`。
+同一个方法在不同的方法实现（微件、筛选器、JS等等）中可能有相同的功能。比如获取条目内容，你可以使用筛选器的`[[tiddlerTitle]text[]]`，也可以使用js的`$tw.wiki.getTiddlerText(title)`。
 
 微件是wiki编程的核心部分，它几乎独立与JS/TS编程部分，且自给自足，更像是一个服务于wiki和写作的编程语言。所以关于UI和视图的部分可以大胆交给它完成。你可以使用html和元素小工具混用，并使用相应功能的元素小工具替代html标签。比如button可以使用button微件代替、img可以使用image微件代替、input可以使用[[定义输入框与变量]]描述的代替等等。
 
@@ -120,7 +120,7 @@ TiddlyWiki 的显示是由一些底层的小工具驱动。这些小工具都组
 
 元素微件通常由 标记（tag）、属性（Attribute）、内容（Content）组成。可以将一个元素置于其他元素之中 —— 称作嵌套。通过指定标记和属性完成微件的方法调用，根据微件行为定义生成行为效果，若有返回值则并将返回值作用或传递到内容中，但微件内容也可以作为一种数据输入，由微件进行处理。
 
-```xml
+```html
 <$set name="greeting" value="Hi">
 	<$set name="me" value={{!!title}}>
 		<$set name="sentence" value="helloworld" >
