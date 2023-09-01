@@ -1,7 +1,7 @@
 class: autonumhead
 created: 20230809234409764
 creator: WhiteFall
-modified: 20230831091619062
+modified: 20230901021531274
 modifier: WhiteFall
 tags: 插件开发 笔记思维
 title: Wiki编程的定义
@@ -49,9 +49,13 @@ JS API就是TiddlyWiki JavaScript源代码级别的编程调用。
 * 核心变量：js、wiki
 * JS模块类型：js，wiki
 
-!!! 过程
+同一个行为在不同的实现中可能有相同的功能。比如获取条目内容，你可以使用筛选器的`[[tiddlerTitle]text[]]`，也可以使用js的`$tw.wiki.getTiddlerText(title)`。
 
-> 进程（宏）、函数、微件
+微件是wiki编程的核心部分，它几乎独立与JS/TS编程部分，且自给自足，更像是一个服务于wiki和写作的编程语言。所以关于UI和视图的部分可以大胆交给它完成。你可以使用html和元素小工具混用，并使用相应功能的元素小工具替代html标签。比如button可以使用button微件代替、img可以使用image微件代替、input可以使用[[定义输入框与变量]]描述的代替等等。
+
+!!! 方法
+
+> Wiki编程中方法有以下几类：进程（宏）、微件、函数
 
 维基文本解析器模式：为了显示条目（通常是 text 字段），维基文本解析器读取和解释内容，并应用维基文本规则。就是写在条目中笔记。比如你现在看到的内容就是。
 

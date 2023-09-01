@@ -1,0 +1,27 @@
+created: 20230901013833414
+creator: WhiteFall
+modified: 20230901015914234
+modifier: WhiteFall
+tags: Wiki编程的定义
+title: 定义输入框与变量
+
+<div class="tc-search tc-advanced-search" style="margin-bottom:-12px;">
+    <!-- negative margin for displaying matches -->
+    Combo search &nbsp;<$edit-text tiddler="$:/temp/commander/search-box" type="search" tag="input" default=""
+        placeholder="enter keywords or make a filter search e.g. [tag[myTag]]"
+        focus={{$:/plugins/kookma/commander/config/AutoFocus}} />
+</div>
+<br>
+
+你可以通过筛选器`[<searchboxTid>get[text]]`，获取输入框输入的内容。`<searchboxTid>`变量代指`$:/temp/commander/search-box`条目。
+
+你也可以使用`<$set name='myvar' tiddler='$:/temp/commander/search-box'>`定义变量，并从指定条目中读取值并作为变量的值。
+
+```html
+<div class="tc-search tc-advanced-search" style="margin-bottom:-12px;">
+    <!-- negative margin for displaying matches -->
+    Combo search &nbsp;<$edit-text tiddler="$:/temp/commander/search-box" type="search" tag="input" default=""
+        placeholder="enter keywords or make a filter search e.g. [tag[myTag]]"
+        focus={{$:/plugins/kookma/commander/config/AutoFocus}} />
+</div>
+```

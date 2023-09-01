@@ -1,11 +1,11 @@
 created: 20230831044558847
 creator: WhiteFall
-modified: 20230831092419403
+modified: 20230901021015899
 modifier: WhiteFall
 tags: Wiki编程的定义 微件
 title: 定义微件和微件参数
 
-示例：Text微件，类封装方式。
+示例：Text微件，JS类封装方式。
 
 微件属性(参数)的对应不同情况的多种指定方式：https://bramchen.github.io/tw5-docs/zh-Hans/#Widget%20Attributes
 
@@ -75,4 +75,12 @@ Text node widget, <$text text="string">
 	}
 	exports.text = TextNodeWidget;
 })();
+```
+
+使用widget编译指示定义微件
+
+```tw
+\widget $my.widget(attribute:"Default value")
+This is the widget, and the attribute is <<attribute>>.
+\end
 ```
