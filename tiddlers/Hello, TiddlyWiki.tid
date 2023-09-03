@@ -1,9 +1,9 @@
 created: 20230901061523927
 creator: WhiteFall
-modified: 20230901062733798
+modified: 20230903002442704
 modifier: WhiteFall
 tags: Wiki编程的定义
-title: "Hello, TiddlyWiki"
+title: Hello, TiddlyWiki
 
 \procedure main()
 <$text text="Hello, TiddlyWiki">

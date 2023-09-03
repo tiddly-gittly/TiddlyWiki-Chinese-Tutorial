@@ -1,7 +1,7 @@
 class: autonumhead
 created: 20230809234409764
 creator: WhiteFall
-modified: 20230901073545194
+modified: 20230903025847855
 modifier: WhiteFall
 tags: 插件开发 笔记思维
 title: Wiki编程的定义
@@ -135,6 +135,8 @@ JS变量是用于存储信息的“容器”。
 
 !!! 逻辑
 
+Wiki编程的逻辑运算是通过什么实现的？微件和筛选器？
+
 !!! 视图
 
 
@@ -160,7 +162,9 @@ action-log、log小工具、[[调试筛选器]]
 
 !!! 模块
 
-一个 TiddlyWiki5 的 模块 是包含可运行 JavaScript 的条目，其类型为`application/javascript`且其`modeule-type`字段为该模块的[[模块类型]]
+> 为Wiki编程工具封装JS代码。
+
+一个 TiddlyWiki5 的 模块 是包含可运行 JavaScript 的条目，其类型为`application/javascript`且其`modeule-type`字段为该模块的[[模块类型|$:/core/ui/ControlPanel/LoadedModules]]
 
 !!! 条目
 
