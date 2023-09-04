@@ -1,10 +1,12 @@
 created: 20230614130913849
 creator: WhiteFall
-modified: 20230904064923335
+modified: 20230904065852869
 modifier: WhiteFall
 tags: 太微自身的自定义设置
 title: 将md文件放到太微中
 type: text/vnd.tiddlywiki
+
+总览：就是在tiddlers文件夹下面，新建一个文件夹，然后再在此新建的文件夹下面新建一个tiddlywiki.files文件，然后把markdown文件全部和tiddlywiki.files放一起。重启服务就搞定了。
 
 TiddlyWiki知识库目录树（“.”为根目录）
 
