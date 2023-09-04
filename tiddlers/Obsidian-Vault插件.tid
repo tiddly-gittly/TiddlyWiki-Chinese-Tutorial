@@ -1,7 +1,7 @@
 created: 20230813235821320
 creator: WhiteFall
-modified: 20230814002512110
-modifier: WhiteFall
+modified: 20230904043049041
+modifier: 马不前
 tags: 插件使用 从其它笔记软件迁移
 title: Obsidian-Vault插件
 
@@ -16,3 +16,4 @@ Obsidian Vault发布工具 by NodeJS TiddlyWiki。（core-version	>=5.3.0）
 
 具体的使用方式和介绍，请查看Github仓库。
 
+[[视频链接|https://www.bilibili.com/video/BV13m4y1W7df/]]

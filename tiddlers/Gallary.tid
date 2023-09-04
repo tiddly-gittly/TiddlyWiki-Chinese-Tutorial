@@ -1,5 +1,7 @@
 created: 20230107061654711
-modified: 20230107065356092
+creator: 马不前
+modified: 20230904042219703
+modifier: 马不前
 tags: 
 title: Gallary
 type: text/vnd.tiddlywiki
@@ -14,9 +16,11 @@ type: text/vnd.tiddlywiki
 
 <center>
 	<div style="color:grey">点击图片放大</div>
-<<Fancybox """
+<<fbox """
 https://cdn.jsdelivr.net/gh/tiddly-gittly/TiddlyWiki-Chinese-Tutorial@master/tiddlers/gallary-1.png
 https://cdn.jsdelivr.net/gh/tiddly-gittly/TiddlyWiki-Chinese-Tutorial@master/tiddlers/gallary-2.png
-""">>
+"""
+caption: "xxx"
+width: 256>>
 </center>
 

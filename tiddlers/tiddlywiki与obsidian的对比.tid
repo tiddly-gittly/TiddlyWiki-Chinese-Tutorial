@@ -1,7 +1,7 @@
 created: 20230228081528347
 creator: zm
-modified: 20230531044758833
-modifier: 林一二
+modified: 20230904053400786
+modifier: 马不前
 tags: 太微背景介绍
 title: tiddlywiki与obsidian的对比
 type: text/vnd.tiddlywiki
@@ -24,3 +24,5 @@ TiddlyWiki 与 Obsidian 的简要对比：
 * TiddlyWiki 基于 WikiText（方言）语法，Obsidian 基于 Markdown，默认情况下前者的表格表现形式比后者更好（例如可以很轻松地合并单元格），语法优秀功能非常丰富，后者更加易上手，但是受语言限制较大
 * Tiddlywiki 自带单个笔记加密和整个笔记本加密（单文件版）功能，Obsidian 原生不支持加密功能（本质上是管理本地文件夹），通常通过插件或者第三方应用（如 VeraCrypt）
 * Tiddlywiki 内置[[筛选器]]功能，教程较多，而且可以和任何插件协作；Obsidian 需要靠 dataview 等第三方插件，无法与其他插件轻易互通，需要学习和折腾好多次
+
+[[如何把obsidian的笔记转移到tiddlywiki？]]
