@@ -1,6 +1,6 @@
 created: 20230614130913849
 creator: WhiteFall
-modified: 20230904064526162
+modified: 20230904064923335
 modifier: WhiteFall
 tags: 太微自身的自定义设置
 title: 将md文件放到太微中
@@ -20,7 +20,7 @@ TiddlyWiki知识库目录树（“.”为根目录）
     └─mdocs
 ```
 
-观察并模仿目录树，找到并在你的tiddlers文件夹下建立一个mdocs文件夹。
+在tiddlers文件夹下建立一个mdocs文件夹。如目录树所示。
 
 在mdocs文件夹中创建tiddlywiki.files文件。文件内容如下：
 
