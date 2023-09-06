@@ -1,11 +1,12 @@
 created: 20230101081024435
 creator: 马不前
-modified: 20230101094921005
-modifier: 马不前
+modified: 20230906064244523
+modifier: WhiteFall
 tags: 插件列表
 title: 编辑类插件
 type: text/vnd.tiddlywiki
 
+* Markdown风格硬换行符插件：[[Space Space Newline|https://wikilabs.github.io/editions/space-space-newline/]]
 * 底部选项卡[[buttontabs|http://bottomtabs.tiddlyspot.com/]]
 *  ❤️回收站Trashbin
 * 自动下载修改后的Tiddlers（官方库）Save Trail
