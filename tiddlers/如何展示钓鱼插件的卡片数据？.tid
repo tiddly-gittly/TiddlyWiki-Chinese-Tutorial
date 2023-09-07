@@ -1,0 +1,69 @@
+created: 20230907154752321
+creator: 马不前
+modified: 20230907155940678
+modifier: 马不前
+tags: 钓鱼插件 插件技巧类
+title: 如何展示钓鱼插件的卡片数据？
+
+[img[https://github.com/oflg/TiddlyMemo/assets/109711900/d86d85c0-d79b-456a-a97b-ac710ebeb411]]
+
+目前我是做到这种程度，我感觉还可以接受。不过这个展示需要[[设拉子插件|Shiraz宏包]]。因为里面的flex布局是设拉子里的。而且这个如果列数特别多的话，会自动换到下一行的。
+
+[img[https://github.com/oflg/TiddlyMemo/assets/109711900/ef999c78-615e-463c-9d38-1046b389e87c]]
+
+可惜笔记本电脑屏幕有点小。不然展示起来应该也是可以的。目前这样我是能接受的。可以考虑增加到插件里去。不过我对这些字段还不是十分了解。等下去查查是什么意思。 
+
+如何实现上面的效果，请按照下面步骤实现。
+
+# 新建一个条目，命名随便
+# 添加一个标签`$:/tags/ViewTemplate`
+# 添加一个字段`list-after`，其值为`$:/core/ui/ViewTemplate/body`
+# 正文中复制下面的代码加入进去。
+
+<$macrocall $name="code"  
+src=```
+<$let 
+a="[" 
+b="]"
+c="{"
+d="}&"
+e="},"
+jsondata={{{ [{!!history}search-replace<a>,[]search-replace<b>,[]split<e>join<d>] }}}
+>
+<$list filter="[<currentTiddler>tag[?]]">
+<details>
+<summary>查看数据内容</summary>
+<div class="flex-row">
+<div class="flex-col border">
+最近一次数据<br>
+review:&nbsp;&nbsp;<$text text={{{ [{!!review}format:date[YYYY-0MM-0DD 0hh:0ss]] }}} />&nbsp;&nbsp;<br>
+due:&nbsp;&nbsp;<$text text={{{ [{!!due}format:date[YYYY-0MM-0DD 0hh:0ss]] }}} />&nbsp;&nbsp;<br>
+grade:&nbsp;&nbsp;{{!!grade}}&nbsp;&nbsp;<br>
+interval:&nbsp;&nbsp;{{!!interval}}&nbsp;&nbsp;<br>
+lapses:&nbsp;&nbsp;{{!!lapses}}&nbsp;&nbsp;<br>
+reps:&nbsp;&nbsp;{{!!reps}}&nbsp;&nbsp;<br>
+difficulty:&nbsp;&nbsp;{{!!difficulty}}&nbsp;&nbsp;<br>
+retrievability:&nbsp;&nbsp;{{!!retrievability}}&nbsp;&nbsp;<br>
+stability:&nbsp;&nbsp;{{!!stability}}&nbsp;&nbsp;<br>
+</div>
+<$list filter="[<jsondata>split[&]enlist-input[]]"  variable="thisData">
+<div class="flex-col border">
+review:&nbsp;&nbsp;<$text text={{{ [<thisData>jsonget[review]format:date[YYYY-0MM-0DD 0hh:0ss]] }}} /><br>
+due:&nbsp;&nbsp;<$text text={{{ [<thisData>jsonget[due]format:date[YYYY-0MM-0DD 0hh:0ss]] }}} /><br>
+grade:&nbsp;&nbsp;<$text text={{{ [<thisData>jsonget[grade]] }}} /><br>
+interval:&nbsp;&nbsp;<$text text={{{ [<thisData>jsonget[interval]] }}} /><br>
+lapses:&nbsp;&nbsp;<$text text={{{ [<thisData>jsonget[lapses]] }}} /><br>
+reps:&nbsp;&nbsp;<$text text={{{ [<thisData>jsonget[reps]] }}} /><br>
+difficulty:&nbsp;&nbsp;<$text text={{{ [<thisData>jsonget[difficulty]] }}} /><br>
+retrievability:&nbsp;&nbsp;<$text text={{{ [<thisData>jsonget[retrievability]] }}} /><br>
+stability:&nbsp;&nbsp;<$text text={{{ [<thisData>jsonget[stability]] }}} /><br>
+</div>
+</$list>
+</div>
+</details>
+</$list>
+</$let>
+```
+caption="代码" />
+
+里面的筛选器是`[<currentTiddler>tag[?]]`，可以根据自己的需要进行修改。`&nbsp;`字符串表示的是空格含义，一般不需要特意删除。
