@@ -1,0 +1,44 @@
+created: 20230926084011139
+creator: 林一二
+modified: 20230926084600614
+modifier: 林一二
+tags: 基础知识
+title: 多布局切换功能
+
+!! Layout 目前翻译为「布局」。
+
+<<<
+之前也曾叫它「视图」，但是容易和 View 混淆。[[在繁体中文里翻译为「版面」|https://bramchen.github.io/tw5-docs/zh-Hans/#Alternative%20page%20layouts]]。
+<<<
+
+!! 常用视图
+
+!!! 白板
+
+[img[https://pic1.zhimg.com/80/v2-73dfc44959d9f793b6746910ea08ed58_1440w.webp]]
+
+!!! 日历（内容为林一二新冠一周病情日记）
+
+[img[https://pic2.zhimg.com/80/v2-bc2f1bea0dd0016a212bf004782c4431_1440w.webp]]
+
+!!! 默认故事流
+
+[img[https://pic2.zhimg.com/80/v2-13aa858ca7467849ce71f581546209f1_1440w.webp]]
+
+!! 视图切换
+
+可以用页面工具栏里的 Layout switcher 来打开视图列表切换
+
+[img[https://pic1.zhimg.com/80/v2-2cd7d142e8c902e2acf1dcac0523563c_1440w.webp]]
+
+快捷键：ctrl+shift+L
+
+[img[https://pic2.zhimg.com/80/v2-a257f0df025ea661ba60949ec009c9c5_1440w.webp]]
+
+有的视图插件也向页面工具栏提供了新按钮，例如这个一键切换到日历的按钮
+
+[img[https://pic2.zhimg.com/80/v2-993ca6a4b8a0acc2232518956486a67d_1440w.webp]]
+
+!! 开发新布局
+
+目前教程在 https://zhuanlan.zhihu.com/p/601040724，之后搬过来。
