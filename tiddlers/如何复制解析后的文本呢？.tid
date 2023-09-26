@@ -1,0 +1,41 @@
+created: 20230909173345697
+creator: 马不前
+modified: 20230910005354078
+modifier: 马不前
+tags: Wiki书写文本的解析器模式
+title: 如何复制解析后的文本呢？
+
+正常复制我们只能复制到源代码内容，并不能复制解析后的内容。那有没有办法可以复制解析后的文本内容呢？
+
+当然可以！这里我们需要使用[[Wikify微件|https://bramchen.github.io/tw5-docs/zh-Hans/#WikifyWidget]]，通过传递解析后的变量到复制领域。
+
+```
+<$vars txt="""
+
+Hello,
+
+We're currently doing something with <$text text={{{ [{$:/temp/name}!match[]] ~[[Name]] }}}/>
+
+Could you please confirm?
+
+""">
+<$wikify name="cliptxt" output="formattedtext" text=<<txt>>>
+<$macrocall $name="copy-to-clipboard-above-right" src=<<cliptxt>>/>
+<div style="white-space:pre;"><<txt>></div>
+</$wikify>
+```
+
+上面是来自[[论坛|https://talk.tiddlywiki.org/t/how-to-feed-text-containing-widgets-to-the-copy-to-clipboard-macro-so-that-it-copies-the-wikified-text/3046/2]]的一个示例。可以弥补官方文档中缺失的示例。
+
+可以把上面的`<$macrocall $name="copy-to-clipboard-above-right" src=<<cliptxt>>/>`
+
+替换成下面的
+
+```
+<$button>
+<$action-sendmessage $message="tm-copy-to-clipboard" $param=<<cliptxt>> />
+复制内容
+</$button>
+```
+
+这样就不是显示在右边的按钮了，按钮上的文本也可以随意更改了。

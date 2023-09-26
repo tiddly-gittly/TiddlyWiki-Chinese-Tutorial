@@ -1,12 +1,14 @@
 created: 20230614130913849
 creator: WhiteFall
-modified: 20230620140639571
+modified: 20230904065852869
 modifier: WhiteFall
 tags: 太微自身的自定义设置
 title: 将md文件放到太微中
 type: text/vnd.tiddlywiki
 
-TiddlyWiki知识库目录树
+总览：就是在tiddlers文件夹下面，新建一个文件夹，然后再在此新建的文件夹下面新建一个tiddlywiki.files文件，然后把markdown文件全部和tiddlywiki.files放一起。重启服务就搞定了。
+
+TiddlyWiki知识库目录树（“.”为根目录）
 
 ```
 .
@@ -17,12 +19,12 @@ TiddlyWiki知识库目录树
 ├─public
 ├─scripts
 └─tiddlers
-    └─md
+    └─mdocs
 ```
 
-在tiddlers文件夹下建立一个md文件夹。
+在tiddlers文件夹下建立一个mdocs文件夹。如目录树所示。
 
-在md文件夹中创建tiddlywiki.files文件。文件内容如下：
+在mdocs文件夹中创建tiddlywiki.files文件。文件内容如下：
 
 ```json
 {
@@ -44,7 +46,7 @@ TiddlyWiki知识库目录树
 }
 ```
 
-再将md类型的文件放到md文件夹中，之后重启服务就可以看到太微中出现md的文件条目了。条目名为基本文件名，无后缀。
+再将markdown类型的文件放到mdocs文件夹中，之后重启服务就可以看到太微中出现md的文件条目了。条目名为基本文件名，无后缀。
 
 
-具体可以参考：https://github.com/oeyoews/md-to-tiddlywiki
+推荐使用，导入Obsidian Vault插件（Import Obsidian Vault in TiddlyWiki5）：https://github.com/tiddly-gittly/tidgi-obsidian-manager —— [[Obsidian-Vault插件：导入Ob库到你的TiddlyWiki中]]

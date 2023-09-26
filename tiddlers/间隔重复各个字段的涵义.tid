@@ -1,0 +1,16 @@
+created: 20230908042432379
+creator: 马不前
+modified: 20230908042458838
+modifier: 马不前
+tags: 钓鱼插件
+title: 间隔重复各个字段的涵义
+
+* review，复习时间
+* due，下次复习时间
+* grade，评分
+* interval，间隔天数
+* lapses，连续错误次数
+* reps，复习次数
+* difficulty，难度
+* retrievability，可提取性
+* stability，稳定性

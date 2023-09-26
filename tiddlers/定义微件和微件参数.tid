@@ -1,0 +1,86 @@
+created: 20230831044558847
+creator: WhiteFall
+modified: 20230901021015899
+modifier: WhiteFall
+tags: Wiki编程的定义 微件
+title: 定义微件和微件参数
+
+示例：Text微件，JS类封装方式。
+
+微件属性(参数)的对应不同情况的多种指定方式：https://bramchen.github.io/tw5-docs/zh-Hans/#Widget%20Attributes
+
+```js
+/*\
+title: $:/core/modules/widgets/text.js
+type: application/javascript
+module-type: widget
+
+Text node widget, <$text text="string">
+
+\*/
+(function () {
+
+	/*jslint node: true, browser: true */
+	/*global $tw: false */
+	"use strict";
+
+	var Widget = require("$:/core/modules/widgets/widget.js").widget;
+
+	/**
+	 * Inherit from the base widget class
+	 */
+	class TextNodeWidget extends Widget {
+		constructor(parseTreeNode, options) {
+			super(parseTreeNode, options);
+		}
+
+		/**
+		 * Render this widget into the DOM
+		 * @param parent 
+		 * @param nextSibling 
+		 */
+		render(parent, nextSibling) {
+			this.parentDomNode = parent;
+			this.computeAttributes();
+			this.execute();
+			
+			//定义微件参数 text，并通过this.getAttribute()方法获取参数。
+			var text = this.getAttribute("text", this.parseTreeNode.text || "");
+			text = text.replace(/\r/mg, "");
+			
+			var textNode = this.document.createTextNode(text);
+			parent.insertBefore(textNode, nextSibling);
+			this.domNodes.push(textNode);
+		}
+
+		/**
+		 * 计算 widget 的内部状态
+		 */
+		execute() {
+			// 文本节点无事可做
+		}
+
+		/**
+		 * 在需要时选择性地刷新 widget。如果需要重新渲染 widget 或其任何子控件，则返回 true
+		 */
+		refresh(changedTiddlers) {
+			var changedAttributes = this.computeAttributes();
+			if (changedAttributes.text) {
+				this.refreshSelf();
+				return true;
+			} else {
+				return false;
+			}
+		}
+	}
+	exports.text = TextNodeWidget;
+})();
+```
+
+使用widget编译指示定义微件
+
+```tw
+\widget $my.widget(attribute:"Default value")
+This is the widget, and the attribute is <<attribute>>.
+\end
+```
