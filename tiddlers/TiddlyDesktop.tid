@@ -1,6 +1,13 @@
 created: 20230506131733526
 creator: 马不前
-modified: 20230506131733526
+modified: 20231001020834870
 modifier: 马不前
+tags: TiddlyWiki发行版本介绍
 title: TiddlyDesktop
 type: text/vnd.tiddlywiki
+
+[[介绍|https://bramchen.github.io/tw5-docs/zh-Hans/#Saving%20on%20TiddlyDesktop]]
+
+[[下载|https://github.com/TiddlyWiki/TiddlyDesktop/releases]]
+
+官方开发的桌面启动器，适合全平台，支持单文件版本和nodejs版本。
