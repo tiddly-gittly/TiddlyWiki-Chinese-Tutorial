@@ -1,7 +1,7 @@
 class: autonumhead
 created: 20230809234409764
 creator: WhiteFall
-modified: 20231001110703471
+modified: 20231001134023220
 modifier: WhiteFall
 tags: 插件开发
 title: Wiki编程的定义
@@ -190,8 +190,12 @@ action-log、log小工具、[[调试筛选器]]
 
 !!! 字符串
 
-JavaScript 模板字符串，模板字面量 是允许嵌入表达式的字符串字面量。在WIKI中使用【替换的属性值】实现这种方式。JS使用`this is ${foo} value`，wiki中使用`this is $(varname)$ and ${ filter expression}$` 实现。
+JavaScript 模板字符串，模板字面量 是允许嵌入表达式的字符串字面量。在WIKI中使用【替换的属性值】实现这种方式。
 
+```
+JS使用 `this is ${foo} value` 实现，
+wiki中使用 `this is $(varname)$ and ${ filter expression }$` 实现。
+```
 拼接（连接、串联）文本和变量：在JS中通常使用 '+' 符号实现。在WIKI中，【使用宏替换串联文本和变量】，在5.3.0版本中使用【替换属性值】或【替换筛选器表达式子】来连接文本和变量。
 
 
