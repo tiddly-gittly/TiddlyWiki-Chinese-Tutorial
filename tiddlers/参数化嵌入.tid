@@ -1,0 +1,33 @@
+created: 20231001061533332
+creator: WhiteFall
+modified: 20231001120736390
+modifier: WhiteFall
+tags: 嵌入
+title: 参数化嵌入
+
+参数化后的嵌入，为嵌入微件增加了更多的参数定义，允许传递自己定义的参数，允许将字符串和维基文本树传递给嵌入。
+
+嵌入不仅可以嵌入用于呈现任何类型的内容（维基文本、图像、视频），还可以调用特殊变量（进程（宏）、自定义微件等等）并且传递变量给它们。
+
+```js
+1. 这里定义了一个进程myproc，它有两个形式参数name, age。
+2. 然后通过嵌入调用myproc进程并传递参数为myproc进程的两个形式参数赋值。
+
+\procedure myproc(name,age)
+我的名字是 <<name>>，年龄为 <<age>>。
+\end
+
+<$transclude $variable="myproc" name="James" age="19"/>
+```
+
+自5.3.0起弃用macrocall微件改用transclude调用定义的特殊变量。例如：
+
+```js
+<$macrocall $name="my-macro" my-parameter="Elephant"/>
+
+<$transclude $variable="my-macro" my-parameter="Elephant"/>
+```
+
+你可以指定嵌入的内容的解析器模式为inline还是block。
+
+$transclude嵌入微件的属性都是以`$`字符开头（v5.3.0）。并且可以自己定义任意参数名，但不包含已经定义的属性名称作为参数名。若要传递以`$`字符开头的参数，你需要在它们前面在加一个`$`符号。列如：`$tiddler` -> `$$tiddler`。
