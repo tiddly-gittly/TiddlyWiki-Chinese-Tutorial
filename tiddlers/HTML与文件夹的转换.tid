@@ -1,13 +1,14 @@
 created: 20220815035633469
 creator: Miao
-modified: 20230602051217938
+modified: 20231001121936318
 modifier: WhiteFall
 tags: 编程知识类
 title: HTML与文件夹的转换
 type: text/vnd.tiddlywiki
 
-如果你想要换种方式使用，比将HTML文件变成文件夹然后用tidgi打开，可以使用nodejs搭配一条命令完成转换。或者在tidgi太记中你可以直接导入wiki.html。
+如果你想要换种方式使用，比将HTML文件变成文件夹然后用NodeJS版本太微打开，可以使用nodejs搭配一条命令完成转换。
 
+> 在tidgi太记中你可以直接导入wiki.html文件，TidGi会自动处理变成文件夹形式的WIKI。
 
 需要环境：NodeJS的安装与NodeJS版TiddlyWiki的安装。
 
