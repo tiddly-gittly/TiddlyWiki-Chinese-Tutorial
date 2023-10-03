@@ -1,12 +1,12 @@
 created: 20231001020203086
 creator: 马不前
 list: 官方单文件版本 TiddlyDesktop Tiddlyhost TiddlyWiki-xp TidGi太记 [[Quine 2]] Tiddloid Neotw定制版 墨屉 Stroll Noteself 其他常见版本
-modified: 20231001084346738
+modified: 20231001153254633
 modifier: 马不前
 tags: 幻灯片
 title: TiddlyWiki发行版本介绍
 
-这里只列举一些常见的选项，不是全部。tiddlywiki有太多发行版本了，因为用户可以diy自己搞一个。
+这里只列举一些常见的选项，不是全部。tiddlywiki有太多发行版本了，因为用户可以自己diy搞一个。装上相应的插件和配套设施就可以了。发行版本和启动器可以分开使用，也可以一起使用，差别不大。
 
 <$presentation $height="600">
 <$list filter="[tag[TiddlyWiki发行版本介绍]sortby[list]]">
