@@ -1,0 +1,50 @@
+created: 20231013022846023
+creator: WhiteFall
+modified: 20231013024141235
+modifier: WhiteFall
+tags: 高级知识 Wiki编程的定义
+title: 微件 wikify 用法示例
+
+```html
+<$let target-text={{条件语法!!text}} Snapshot-tiddler="Snapshot/条件语法" >
+
+	<$wikify text=<<target-text>> name="compiled" output="html">
+		<$button tooltip="Create" message="tm-copy-to-clipboard" param=<<compiled>> >
+			<$action-setfield $tiddler=<<Snapshot-tiddler>> $field="text" $value=<<compiled>> />
+			Create
+		</$button>
+		<$button tooltip="Delete">
+			<$action-deletetiddler $tiddler=<<Snapshot-tiddler>> />
+			<$action-sendmessage $message="tm-close-tiddler" $param=<<Snapshot-tiddler>> />
+			Delete
+		</$button>
+	</$wikify>
+
+	<$tiddler tiddler=<<Snapshot-tiddler>>>
+		<div style="border: 1px solid gray; border-style: dotted; padding: 0px 5px 0px 5px;">
+			<$transclude />
+		</div>
+	</$tiddler>
+</$let>
+```
+
+<$let target-text={{条件语法!!text}} Snapshot-tiddler="Snapshot/条件语法" >
+
+	<$wikify text=<<target-text>> name="compiled" output="html">
+		<$button tooltip="Create" message="tm-copy-to-clipboard" param=<<compiled>> >
+			<$action-setfield $tiddler=<<Snapshot-tiddler>> $field="text" $value=<<compiled>> />
+			Create
+		</$button>
+		<$button tooltip="Delete">
+			<$action-deletetiddler $tiddler=<<Snapshot-tiddler>> />
+			<$action-sendmessage $message="tm-close-tiddler" $param=<<Snapshot-tiddler>> />
+			Delete
+		</$button>
+	</$wikify>
+
+	<$tiddler tiddler=<<Snapshot-tiddler>>>
+		<div style="border: 1px solid gray; border-style: dotted; padding: 0px 5px 0px 5px;">
+			<$transclude />
+		</div>
+	</$tiddler>
+</$let>
