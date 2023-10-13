@@ -12,4 +12,4 @@ type: text/vnd.tiddlywiki
 <<fb Tiddlers [!is[system]count[]] yellow>> 
 <<fb Updated [!is[system]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]] 9cf>> 
 <<fb Plugins [plugin-type[plugin]count[]] green>>
-<img src="https://img.shields.io/badge/Powered by-太微-lightblue?style=flat&logo=dev.to&logoColor=green" />
+<img src="https://img.shields.io/badge/%E5%A4%AA%E5%BE%AE-black?style=flat&logo=tiddlywiki" />
