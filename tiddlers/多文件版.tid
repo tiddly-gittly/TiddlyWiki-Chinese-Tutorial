@@ -1,0 +1,15 @@
+created: 20231013042349244
+creator: 林一二
+modified: 20231013043156317
+modifier: 林一二
+tags: 基础知识
+title: 多文件版
+
+基于 NodeJS 技术的版本，在大型知识库上启动和保存速度更快，经实践表明可以支持 1GB 的图片相册库、3万条目的时间记录日记库等等。
+
+会将每个笔记和笔记的标签等元信息都在硬盘上保存成文本文件，可以直接打开查看和编辑内容。[[添加图片]]也会直接把图片放在文件夹里，可以直接查看和编辑。
+
+!! 相关启动器
+
+# 一键启动：[[TidGi太记]]
+# 服务器部署：也可以用[[TidGi太记]]，或[[按官网教程安装 NodeJS|https://bramchen.github.io/tw5-docs/zh-Hans/#Installing%20TiddlyWiki%20on%20Node.js]]

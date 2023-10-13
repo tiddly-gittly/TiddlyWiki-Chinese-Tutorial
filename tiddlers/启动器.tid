@@ -1,0 +1,12 @@
+created: 20231013041918525
+creator: 林一二
+modified: 20231013042059006
+modifier: 林一二
+tags: 如何保存
+title: 启动器
+
+[[太记|TidGi太记]]就是一个桌面版启动器，可以用于启动太微 TiddlyWiki。
+
+启动器可以帮你自动保存、自动备份等等，太微的其它启动器还有[[Tiddloid]]等，详见[[官方中文文档-开始使用|https://bramchen.github.io/tw5-docs/zh-Hans/#GettingStarted]]。
+
+太记默认会使用一个自带的仿 Notion 的发行版，但它也可以用于加载[[更多发行版|TiddlyWiki发行版本介绍]]。

@@ -1,6 +1,6 @@
 created: 20230613084608671
 creator: 林一二
-modified: 20231013021746607
+modified: 20231013043254089
 modifier: 林一二
 tags: 插件使用
 title: 剪藏网页
@@ -10,6 +10,8 @@ type: text/vnd.tiddlywiki
 
 !!! 「太微搜藏」浏览器插件
 
+主要用于[[多文件版]]。
+
 [img[https://talk.tiddlywiki.org/uploads/default/optimized/2X/f/f1fc9bb40133ba6683d1a2d363ceca698bdaa56d_2_1380x642.png]]
 
 安装和使用方法详见 [[太记功能手册/剪藏网页|https://tidgi.fun/#%E5%A4%AA%E8%AE%B0%E5%8A%9F%E8%83%BD%E6%89%8B%E5%86%8C%2F%E5%89%AA%E8%97%8F%E7%BD%91%E9%A1%B5]]
@@ -18,9 +20,11 @@ type: text/vnd.tiddlywiki
 
 !!! Tiddlyclip
 
+主要用于[[单文件版]]。
+
 [ext[官网介绍|https://bramchen.github.io/tw5-docs/zh-Hans/#TiddlyClip%20by%20buggyjay]]
 
-[ext[国际论坛上的 Tiddlyclip 教程|https://talk.tiddlywiki.org/t/file-uploads-plugin-beta-feedback/83]]
+[ext[国际论坛上的 Tiddlyclip 教程|https://talk.tiddlywiki.org/t/how-many-people-here-love-tiddlyclip-plug-in/2099]]
 
 [ext[Workflow using Tiddlyclip + html2tw macro + Section editor|https://talk.tiddlywiki.org/t/workflow-using-tiddlyclip-html2tw-macro-section-editor/4587]]
 
