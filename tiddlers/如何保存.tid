@@ -1,8 +1,8 @@
 created: 20211005050603937
 creator: 林一二
 list: 如何保存内容到社区仓库里 保存其他人的Wiki 保存私有内容 timimi浏览器扩展安装和使用
-modified: 20230904041729465
-modifier: 马不前
+modified: 20231013020922306
+modifier: 林一二
 tags: 欢迎来到太微！
 title: 如何保存
 type: text/vnd.tiddlywiki
@@ -19,15 +19,17 @@ type: text/vnd.tiddlywiki
 
 !!! 移动端/跨平台
 
-推荐 Android 手机用户使用开源免费的[[Tiddloid]]。
+推荐 Android 手机用户使用开源免费的 [[太记移动版]] 或 [[Tiddloid]]。其中 [[太记移动版]] 适合太记用户或 NodeJS 版用户，[[Tiddloid]] 适合单文件版用户。
 
-i0S 则使用 Quine2 等 AppStore 里的付费应用 。
-
-不论使用 Android 还是 i0S 手机 ， 都可以使用[[TW-MobiLe-Sync手机tiddloid移动端同步TidGi桌面端插件]]和[[TidGi太记]]同步数据。
+iOS 则使用 Quine2 等 AppStore 里的付费应用 。
 
 !! 常用插件
 
 !!! 手机和电脑同步数据
+
+不论使用 Android 还是 iOS 手机、用的是还是[[Tiddloid]]， 都可以使用[[TW-MobiLe-Sync手机tiddloid移动端同步TidGi桌面端插件]]和[[TidGi太记]]同步数据。
+
+详见[[在桌面端和移动端直接同步数据]]。
 
 !! 内置功能
 
