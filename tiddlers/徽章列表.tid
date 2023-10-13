@@ -12,5 +12,5 @@ type: text/vnd.tiddlywiki
 <$image source="https://api.netlify.com/api/v1/badges/2d87784e-fe3b-47a2-ae73-7a2f266f74a8/deploy-status" />
 </a>
 <a href="https://github.com/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/discussions" target="_blank">
-<img src="https://img.shields.io/badge/太微中文讨论区-blueviolet.svg?style=flat-square&logo=APache-Tomcat&logoColor=black" alt="太微中文讨论区" >
+<img src="https://img.shields.io/badge/太微中文讨论区-black.svg?style=flat-square&logo=tiddlywiki" alt="太微中文讨论区" >
 </a>
