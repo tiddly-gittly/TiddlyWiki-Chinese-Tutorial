@@ -9,4 +9,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: 计算投票结果
-        uses: myyk/git-democracy@v1
+        uses: myyk/git-democracy@v2
