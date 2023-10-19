@@ -1,6 +1,6 @@
 created: 20211028175214742
 creator: 林一二
-modified: 20231019094358471
+modified: 20231019095949697
 modifier: 林一二
 tags: 欢迎来到太微！
 title: header
@@ -15,7 +15,7 @@ type: text/vnd.tiddlywiki
 <<fb 更新 [!is[system]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]] 9cf>> 
 <<fb 插件 [plugin-type[plugin]count[]] green>>
 <a href="https://talk.tidgi.fun/" target="_blank">
-<img src="https://img.shields.io/badge/太微中文讨论区-black.svg?style=flat-square&logo=tiddlywiki" alt="太微中文讨论区" >
+<img src="https://img.shields.io/badge/太微中文论坛-black.svg?style=flat-square&logo=tiddlywiki" alt="太微中文论坛" >
 </a>
 </center>
 

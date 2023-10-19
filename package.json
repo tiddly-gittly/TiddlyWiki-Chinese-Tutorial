@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "server": "npx cross-env TIDDLYWIKI_PLUGIN_PATH='./plugins' TIDDLYWIKI_THEME_PATH='./themes' TIDDLYWIKI_LANGUAGE_PATH='./languages' npx tiddlywiki . --listen port=8080",
+    "start": "tiddlywiki --listen",
     "buildonline": "node -e \"require('./scripts/build').buildOnlineHTML('public-dist', 'index.html');\"",
     "buildoffline": "node -e \"require('./scripts/build').buildOfflineHTML('public-dist', 'offline.html');\"",
     "buildlibrary": "node -e \"require('./scripts/build').buildLibrary('[prefix[$:/]!prefix[$:/plugins/tiddlywiki/]!prefix[$:/themes/tiddlywiki/]!prefix[$:/languages/]!tag[$:/tags/PluginLibrary]!prefix[$:/plugins/kookma]]', 'public-dist/library');\""
@@ -8,7 +8,7 @@
   "devDependencies": {
     "cross-env": "7.0.3",
     "html-minifier-terser": "7.2.0",
-    "tiddlywiki": "5.3.0",
+    "tiddlywiki": "5.3.1",
     "uglify-js": "3.17.4",
     "workbox-cli": "7.0.0"
   }
