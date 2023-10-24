@@ -1,0 +1,87 @@
+created: 20230206024102298
+creator: zm
+modified: 20231024093012749
+modifier: zm
+tags: TiddlyWiki
+title: 如何在服务器上部署一个基于 Node.js 的 TiddlyWiki
+type: text/vnd.tiddlywiki
+
+!! 前置条件
+
+# 有一个域名
+# 有一个 VPS 服务器
+
+!! 安装 Node.js 和 TiddlyWiki
+
+* 更新软件包 `apt update`
+** RedHat 系使用 `yum`
+* 安装 Node.js `apt install npm`
+* 全局安装 TiddlyWiki `npm install -g tiddlywiki`
+* 检查 TiddlyWiki 版本 `tiddlywiki --version`
+* 创建 TiddlyWiki 目录 `mkdir ~/wiki` wiki 可以替换为想要的名字
+* 在 TiddlyWiki 目录下创建基本文件 `tiddlywiki wiki --init server`
+* 创建用户权限文本 `vim ~/wiki/users.csv` 或者用 nano 等文本工具
+
+`users.csv` 文本内容：
+
+```
+username,password
+johndoe,!@#$%^
+```
+
+其中首行为必填项，第二行为用户名和明文密码，英文小写逗号，不包含任何空格（具体参考官方文档：[[WebServer Parameter: credentials|https://tiddlywiki.com/#WebServer%20Parameter%3A%20credentials]]）
+
+!! 安装 Nginx 和 Let's Encrypt
+
+* 安装 Nginx `apt install nginx`
+* 创建并编辑代理服务器配置 `cd /etc/nginx/sites-available`  然后 `vim example.com`
+** 其中 example.com 为域名
+
+`example.com` 文本内容：
+
+```nginx
+server {
+    server_name example.com
+    client_max_body_size    100M;
+    
+    location / {
+    proxy_pass   http://127.0.0.1:8080;
+    proxy_set_header        Host             $host;
+    proxy_set_header        X-Real-IP        $remote_addr;
+    proxy_set_header        X-Forwarded-For  $proxy_add_x_forwarded_for;
+    }
+}
+```
+
+其中 `client_max_body_size` 条目设置最大上传文件大小
+
+* 链接并启用代理服务器 `ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled`
+* 安装 Let's Encrypt 以及激活 nginx 插件 `apt install certbot python3-certbot-nginx`
+* 创建 SSL 认证 `certbot --nginx` 按照说明进行设置
+* 运行 TiddlyWiki 并访问域名测试是否启动成功 `tiddlywiki wiki --listen credentials=users.csv "readers=(anon)" "writers=(authenticated)"` 
+* 其中 `creadentials` 字段指定用户权限文本名称，`readers` 为只读权限（此处的 `anon` 为匿名，即任意访客），`writers` 为读写权限（`authenticated` 读取 `credentials` 中指定的用户）
+
+!! 安装 pm2 并设置后台运行服务
+
+* 全局安装最新版本 pm2 `npm install -g pm2@latest`
+* 准备 TiddlyWiki 启动脚本 `vim ~/tw.sh`
+
+脚本内容：
+
+```
+cd /root
+tiddlywiki wiki --listen credentials=users.csv "readers=(anon)" "writers=(authenticated)"
+```
+
+* 赋予 `tw.sh` 权限 `chmod +x /root/tw.sh`
+* 通过 pm2 守护进程运行 TiddlyWiki `pm2 start /root/tw.sh`
+* 保存当前状态 `pm2 save`
+* 设置开机自启 `pm2 startup`
+
+!! 参考文献
+
+* [[Installing TiddlyWiki on Node.js|https://tiddlywiki.com/#Installing%20TiddlyWiki%20on%20Node.js]]
+* [[How to: TiddlyWiki on NodeJS + nginx proxy + LetsEncrypt|https://talk.tiddlywiki.org/t/how-to-tiddlywiki-on-nodejs-nginx-proxy-letsencrypt/1183]]
+* [[tiddlywiki-nodejs 安装部署|https://www.cnblogs.com/cathonzhd/p/16376972.html]]
+* [[Tiddlywiki builds a personal blog|https://programmerall.com/article/92502171339]]
+* [[如何构建基于 Node.js 的 TiddlyWiki 服务器版网站？|https://pimgeek.com/notes/how-to-build-a-nodejs-based-tiddlywiki-website]]
