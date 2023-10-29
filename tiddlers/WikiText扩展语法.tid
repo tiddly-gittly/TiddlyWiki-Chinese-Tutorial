@@ -1,0 +1,63 @@
+created: 20231029091341176
+creator: WhiteFall
+modified: 20231029094809673
+modifier: WhiteFall
+tags: 基础知识
+title: WikiText扩展语法
+
+!! Callout（标注）
+* shiraz-callout 插件
+* https://kookma.github.io/TW-Shiraz/shiraz-callout.html
+
+用法：
+
+```
+<<callout info Title src:"""
+
+这里可以嵌套或使用wikitext语法。
+<<callout danger src:"I am the first child here." status:open>>
+<<callout quote src:"Hi Mohammad">>
+
+""">>
+```
+
+!! TODO（代办）
+
+* 插件：tgrosinger/tw5-checklist、[[复选框或代办插件]]
+
+用法：
+
+```
+[ ] Milk
+[ ] Eggs
+[x] Bread
+```
+
+* 插件：Kara Plugin，基于宏调用的、[[复选框或代办插件]]
+
+用法：
+
+```
+<<checklist>>
+
+保存条码后然后就会显示一个UI，点击UI就可以动态修改添加任务列表。
+```
+
+!! hard（硬换行）
+
+* WikiText的Markdown风格硬换行符插件：[[Space Space Newline|https://wikilabs.github.io/editions/space-space-newline/]]
+
+用法：
+
+```
+添加一条 wikitext 规则，使用 <space><space><newLine> 或 <space><space><backslash> 创建硬换行符
+
+该行末尾有 2 个空格和 1 个换行符  
+因此，我们应该看到两行
+
+这一行的末尾有 2 个空格和一个 \
+因此，我们应该看到两行
+
+如果你想在这一行的末尾有一个可见的 \   
+您需要在行尾添加 2 个空格
+```
