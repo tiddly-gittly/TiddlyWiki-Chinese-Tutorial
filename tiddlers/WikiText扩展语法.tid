@@ -1,6 +1,6 @@
 created: 20231029091341176
 creator: WhiteFall
-modified: 20231029094809673
+modified: 20231030031124057
 modifier: WhiteFall
 tags: 基础知识
 title: WikiText扩展语法
@@ -40,12 +40,12 @@ title: WikiText扩展语法
 ```
 <<checklist>>
 
-保存条码后然后就会显示一个UI，点击UI就可以动态修改添加任务列表。
+保存条目后然后就会显示一个交互UI，点击操作UI就可以动态修改添加任务列表。
 ```
 
 !! hard（硬换行）
 
-* WikiText的Markdown风格硬换行符插件：[[Space Space Newline|https://wikilabs.github.io/editions/space-space-newline/]]
+* 插件：WikiText的Markdown风格硬换行符：[[Space Space Newline|https://wikilabs.github.io/editions/space-space-newline/]]
 
 用法：
 
@@ -60,4 +60,17 @@ title: WikiText扩展语法
 
 如果你想在这一行的末尾有一个可见的 \   
 您需要在行尾添加 2 个空格
+```
+
+!! 注释
+
+用法：
+
+```
+<!--这是单行注释-->
+<!--
+    这是多行注释
+    这是多行注释
+    这是多行注释
+-->
 ```
