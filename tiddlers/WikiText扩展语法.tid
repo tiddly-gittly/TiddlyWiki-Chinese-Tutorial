@@ -1,6 +1,6 @@
 created: 20231029091341176
 creator: WhiteFall
-modified: 20231030031124057
+modified: 20231030044249804
 modifier: WhiteFall
 tags: 基础知识
 title: WikiText扩展语法
@@ -14,7 +14,7 @@ title: WikiText扩展语法
 ```
 <<callout info Title src:"""
 
-这里可以嵌套或使用wikitext语法。
+这里可以嵌套Callout或使用wikitext语法。
 <<callout danger src:"I am the first child here." status:open>>
 <<callout quote src:"Hi Mohammad">>
 
@@ -46,12 +46,11 @@ title: WikiText扩展语法
 !! hard（硬换行）
 
 * 插件：WikiText的Markdown风格硬换行符：[[Space Space Newline|https://wikilabs.github.io/editions/space-space-newline/]]
+* Space Space Newline插件，添加了一条 wikitext 规则，使用 `<space><space><newLine>` 或 `<space><space><backslash>` 创建硬换行符
 
 用法：
 
 ```
-添加一条 wikitext 规则，使用 <space><space><newLine> 或 <space><space><backslash> 创建硬换行符
-
 该行末尾有 2 个空格和 1 个换行符  
 因此，我们应该看到两行
 
@@ -62,7 +61,7 @@ title: WikiText扩展语法
 您需要在行尾添加 2 个空格
 ```
 
-!! 注释
+!! comments（注释）
 
 用法：
 
