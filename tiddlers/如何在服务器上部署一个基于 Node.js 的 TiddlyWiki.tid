@@ -1,10 +1,12 @@
 created: 20230206024102298
 creator: zm
-modified: 20231024093012749
+modified: 20231031061959484
 modifier: zm
 tags: TiddlyWiki
 title: 如何在服务器上部署一个基于 Node.js 的 TiddlyWiki
 type: text/vnd.tiddlywiki
+
+2023-10-31 ''本方法问题多多，请酌情参考''
 
 !! 前置条件
 
@@ -14,7 +16,7 @@ type: text/vnd.tiddlywiki
 !! 安装 Node.js 和 TiddlyWiki
 
 * 更新软件包 `apt update`
-** RedHat 系使用 `yum`
+** RedHat 系~~使用 `yum`~~ ''新版本用 `dnf`''
 * 安装 Node.js `apt install npm`
 * 全局安装 TiddlyWiki `npm install -g tiddlywiki`
 * 检查 TiddlyWiki 版本 `tiddlywiki --version`
@@ -34,7 +36,8 @@ johndoe,!@#$%^
 !! 安装 Nginx 和 Let's Encrypt
 
 * 安装 Nginx `apt install nginx`
-* 创建并编辑代理服务器配置 `cd /etc/nginx/sites-available`  然后 `vim example.com`
+* 创建并编辑代理服务器配置 `cd /etc/nginx/sites-available` ''不同发行版打包的 Nginx 配置可能不同''
+* 然后 `vim example.com`
 ** 其中 example.com 为域名
 
 `example.com` 文本内容：
@@ -55,7 +58,7 @@ server {
 
 其中 `client_max_body_size` 条目设置最大上传文件大小
 
-* 链接并启用代理服务器 `ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled`
+* 链接并启用代理服务器 `ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled` ''不同发行版打包的 Nginx 配置可能不同''
 * 安装 Let's Encrypt 以及激活 nginx 插件 `apt install certbot python3-certbot-nginx`
 * 创建 SSL 认证 `certbot --nginx` 按照说明进行设置
 * 运行 TiddlyWiki 并访问域名测试是否启动成功 `tiddlywiki wiki --listen credentials=users.csv "readers=(anon)" "writers=(authenticated)"` 
@@ -63,10 +66,12 @@ server {
 
 !! 安装 pm2 并设置后台运行服务
 
+可选：`systemd` `init` 等
+
 * 全局安装最新版本 pm2 `npm install -g pm2@latest`
 * 准备 TiddlyWiki 启动脚本 `vim ~/tw.sh`
 
-脚本内容：
+脚本内容（''不建议跑在 `root` 下，仅供参考''）：
 
 ```
 cd /root
