@@ -1,7 +1,7 @@
 created: 20211003071706230
 creator: 林一二
-modified: 20211003081717354
-modifier: 林一二
+modified: 20231101091424649
+modifier: 马不前
 tags: 插件使用
 title: TW-Locator
 type: text/vnd.tiddlywiki
@@ -21,3 +21,5 @@ Locator 插件平时主要就是使用两点，往文件夹里放文件、展示
 主要是用了 `locator-view` 这个宏，它会给出以 `baseTitle` 这个笔记作为根文件夹的子文件夹树。
 
 详见[[TW-Locator例子：当前知识库的目录]]
+
+但这个插件会造成卡顿，所以现在不推荐使用这个插件。
