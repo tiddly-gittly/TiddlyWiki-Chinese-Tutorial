@@ -1,0 +1,18 @@
+created: 20231101092434958
+creator: 马不前
+modified: 20231101093348954
+modifier: 马不前
+tags: 基础知识
+title: 如何将系统条目与普通条目保存在不同文件夹里
+
+有群友在群里提问。正常情况下，我们不需要管。因为tiddlywiki不像obsidian那样，直接依赖实际的文件夹。所以系统条目和普通条目混在一起并不会影响什么。
+
+如果需要查询系统条目，可以直接在wiki里查找，然后用外部编辑器打开这个条目。
+
+也可以直接在`tiddlers`文件夹里，排序一下查找。也非常方便。
+
+我觉得唯一需要这样做的是处理图片，这一点可参考[[让导入的图片放在特定目录中]]条目。
+
+如果需要这样去做的话，那么可以参考[[$:/config/FileSystemPaths]]条目。这里是直接把系统条目前缀去除了，然后加上了`TCTSystem/`前缀。这样的话，比如正常的`$:/config/EditorToolbarButtons/Visibility/$:/core/ui/EditorToolbar/mono-block`条目，在实际的文件夹里应该是`$_config_EditorToolbarButtons_Visibility_$_core_ui_EditorToolbar_mono-block`的，把`/`替换成了`_`，这是因为windows系统下，不支持`/`作为文件名称，类似的还有其他一些字符。
+
+而用了[[$:/config/FileSystemPaths]]的话，就会变成文件夹路径`TiddlyWiki-Chinese-Tutorial\tiddlers\TCTSystem\config\EditorToolbarButtons\Visibility\$_\core\ui\EditorToolbar\mono-block.tid`，也就是会因为`/`而多出很多层次的文件夹路径。反而增加搜索负担，所以并不推荐。
