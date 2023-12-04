@@ -45,7 +45,7 @@ jobs:
           path: ./public-dist
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v3
 
       - uses: jsmrcaga/action-netlify-deploy@v2.0.0
         with:
