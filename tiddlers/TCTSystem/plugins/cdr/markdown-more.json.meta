@@ -1,0 +1,11 @@
+author: cdruan
+core-version: >=5.2.6
+dependents: 
+description: Extends the official Markdown plugin
+list: readme syntax
+name: MarkdownMore
+parent-plugin: $:/plugins/tiddlywiki/markdown
+plugin-type: plugin
+title: $:/plugins/cdr/markdown-more
+type: application/json
+version: 0.1.0

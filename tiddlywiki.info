@@ -1,6 +1,8 @@
 {
   "description": "太微中文教程",
   "plugins": [
+    "tiddlywiki/filesystem",
+    "tiddlywiki/tiddlyweb",
     "tiddlywiki/browser-sniff",
     "tiddlywiki/pluginlibrary",
     "tiddlywiki/highlight",

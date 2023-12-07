@@ -1,0 +1,29 @@
+created: 20211028175214742
+creator: 林一二
+modified: 20231019095949697
+modifier: 林一二
+tags: 欢迎来到太微！
+title: header
+type: text/vnd.tiddlywiki
+
+\define fb(label:label filter color:green)
+<$image source={{{ [[]addprefix[https://img.shields.io/badge/]] [<__label__>addsuffix[-]]  $filter$ [[-]addsuffix<__color__>] +[join[]] }}} />
+\end
+
+<center>
+<<fb 文章 [!is[system]count[]] yellow>> 
+<<fb 更新 [!is[system]!has[draft.of]!sort[modified]limit[1]get[modified]format:relativedate[]] 9cf>> 
+<<fb 插件 [plugin-type[plugin]count[]] green>>
+<a href="https://talk.tidgi.fun/" target="_blank">
+<img src="https://img.shields.io/badge/太微中文论坛-black.svg?style=flat-square&logo=tiddlywiki" alt="太微中文论坛" >
+</a>
+</center>
+
+<center>
+<<fbox """
+https://cdn.jsdelivr.net/gh/tiddly-gittly/TiddlyWiki-Chinese-Tutorial@master/tiddlers/gallary-1.png
+https://cdn.jsdelivr.net/gh/tiddly-gittly/TiddlyWiki-Chinese-Tutorial@master/tiddlers/gallary-2.png
+"""
+caption: "xxx"
+width: 256>>
+</center>
