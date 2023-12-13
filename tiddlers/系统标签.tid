@@ -1,0 +1,12 @@
+created: 20231213093845572
+creator: 马不前
+modified: 20231213094446828
+modifier: 马不前
+tags: 基础知识
+title: 系统标签
+
+系统标签有很多，详见[[官文文档|https://bramchen.github.io/tw5-docs/zh-Hans/#SystemTags]]。
+
+基本上是由拥有系统标签的条目控制着页面内容。比如添加系统标签`$:/tags/SideBar`，就可以把当前这个条目固定在侧边栏里了。
+
+对用户来说，不需要掌握全部的系统标签。但掌握一些常见的系统标签则对于进一步使用tiddlywiki有非常大的帮助。
