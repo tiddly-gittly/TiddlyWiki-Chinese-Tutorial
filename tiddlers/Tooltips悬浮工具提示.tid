@@ -3,13 +3,13 @@ creator: WhiteFall
 modified: 20230516132725518
 modifier: 马不前
 tags: 自定义样式修改类
-title: Tooltips悬浮工具提示
+title: Tooltips 悬浮工具提示
 type: text/vnd.tiddlywiki
 
 【卡片集】
 
 * Author：https://tooltips.tiddlyhost.com/
-* 描述：悬浮工具提示，拖动[[balloon.css]]到你的wiki导入，并为此条目添加`$:/tags/Stylesheet`标签即可全局使用。
+* 描述：悬浮工具提示，拖动[[balloon.css]]到你的 wiki 导入，并为此条目添加`$:/tags/Stylesheet`标签即可全局使用。
 * 文档和例子：https://tooltips.tiddlyhost.com/
 
 

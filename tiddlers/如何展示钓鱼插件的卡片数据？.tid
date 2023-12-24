@@ -7,7 +7,7 @@ title: 如何展示钓鱼插件的卡片数据？
 
 [img[https://github.com/oflg/TiddlyMemo/assets/109711900/d86d85c0-d79b-456a-a97b-ac710ebeb411]]
 
-目前我是做到这种程度，我感觉还可以接受。不过这个展示需要[[设拉子插件|Shiraz宏包]]。因为里面的flex布局是设拉子里的。而且这个如果列数特别多的话，会自动换到下一行的。
+目前我是做到这种程度，我感觉还可以接受。不过这个展示需要[[设拉子插件|Shiraz宏包]]。因为里面的 flex 布局是设拉子里的。而且这个如果列数特别多的话，会自动换到下一行的。
 
 [img[https://github.com/oflg/TiddlyMemo/assets/109711900/ef999c78-615e-463c-9d38-1046b389e87c]]
 

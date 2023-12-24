@@ -2,8 +2,8 @@ created: 20230902123617020
 creator: 马不前
 modified: 20230902124100839
 modifier: 马不前
-tags: 插件技巧类 Mermaid插件
-title: 如何让mermaid图谱的节点可以跳转？
+tags: 插件技巧类 Mermaid 插件
+title: 如何让 mermaid 图谱的节点可以跳转？
 
 参考[[论坛|https://talk.tiddlywiki.org/t/mermaid-tw5-plugin-update-to-mermaid-8-13-2-9-3-0/1117/19]]的用法就可以实现。
 
@@ -23,4 +23,4 @@ flowchart LR
 </$eventcatcher>
 ```
 
-需要安装mermaid插件。
+需要安装 mermaid 插件。

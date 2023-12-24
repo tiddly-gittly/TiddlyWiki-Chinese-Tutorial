@@ -7,8 +7,8 @@ title: 目录导航栏实例
 type: text/vnd.tiddlywiki
 
 <style>
-<!-- 修改下面的max-height数值就可以看到效果了-->
-<!-- 技术来源于EricShulman，我是在论坛上看到他的回答保存下来的。-->
+<!-- 修改下面的 max-height 数值就可以看到效果了-->
+<!-- 技术来源于 EricShulman，我是在论坛上看到他的回答保存下来的。-->
 .colortext
    { font-variant:small-caps; color: red; }
 .myTOC .tc-table-of-contents, .myTOC .tc-tabbed-table-of-contents-content

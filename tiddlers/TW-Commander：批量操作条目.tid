@@ -10,14 +10,14 @@ type: text/vnd.tiddlywiki
 
 !! 案例
 
-!!! 想问一下群里大佬一个问题，我要批量删除所有条目中的tmap.id这个属性该怎样做？
+!!! 想问一下群里大佬一个问题，我要批量删除所有条目中的 tmap.id 这个属性该怎样做？
 
 <<<
-可以用 tw commander，配合 [all[tiddlers+shadows]has[tmap.id]] 筛选器 ，从字段里全部删除。
+可以用 tw commander，配合 [all[tiddlers+shadows]has[tmap.id]] 筛选器，从字段里全部删除。
 <<<
 
-!!! 有没有办法给所有的tiddler批量添加标签，或者在筛选中选择添加？
+!!! 有没有办法给所有的 tiddler 批量添加标签，或者在筛选中选择添加？
 
 <<<
-可以用 tw commander，配合筛选器 ，然后使用 add tag 功能。
+可以用 tw commander，配合筛选器，然后使用 add tag 功能。
 <<<

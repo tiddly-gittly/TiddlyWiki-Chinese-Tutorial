@@ -42,7 +42,7 @@ type: text/vnd.tiddlywiki
 tiddlywiki ${repoFolder} --output ${folderToServe}/library --build library
 ```
 
-!! 在自己的Wiki里放入一个插件库条目
+!! 在自己的 Wiki 里放入一个插件库条目
 
 以 [[Kookma Plugin Library|$:/config/KookmaPluginLibrary]] 为例，条目内容类似：
 
@@ -58,4 +58,4 @@ Kookma plugin library is a set of plugins, themes, and scripts, to extend functi
 To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin Library|$:/config/KookmaPluginLibrary]]
 ```
 
-然后搞一个指向这个条目的链接，例如 `[[Kookma Plugin Library|$:/config/KookmaPluginLibrary]]`，这样用户只要拖这个链接到自己的Wiki里，就安装了这个插件库了。
+然后搞一个指向这个条目的链接，例如 `[[Kookma Plugin Library|$:/config/KookmaPluginLibrary]]`，这样用户只要拖这个链接到自己的 Wiki 里，就安装了这个插件库了。

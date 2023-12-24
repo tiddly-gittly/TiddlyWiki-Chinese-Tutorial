@@ -60,7 +60,7 @@ type: text/vnd.tiddlywiki
     <table class="noborder">
         <tr>
             <td>
-                搜索: <$edit-text tiddler="$:/config/Manager/Filter" tag="input" default="" placeholder={{$:/language/Manager/Controls/Search/Placeholder}} />
+                搜索：<$edit-text tiddler="$:/config/Manager/Filter" tag="input" default="" placeholder={{$:/language/Manager/Controls/Search/Placeholder}} />
             </td>
             <td>
                 Sort by: <<FieldChoice sortby>>
@@ -151,6 +151,6 @@ type: text/vnd.tiddlywiki
     </$set>
 </div>
 
-条目总数: <$list filter="[!is[system]!is[shadow]has{!!filteritem}!has{!!notitem}search{$:/config/Manager/Filter}tag:strict{!!filtertag}sort{!!sortby}order{!!sortdir}count[]]"/>
+条目总数：<$list filter="[!is[system]!is[shadow]has{!!filteritem}!has{!!notitem}search{$:/config/Manager/Filter}tag:strict{!!filtertag}sort{!!sortby}order{!!sortdir}count[]]"/>
 
-使用方法：在条目中钉上`表格字段`标签会自动在这个表格中增加一行。你可以自定义本条目的filtertag字段，修改成你需要的标签名。
+使用方法：在条目中钉上`表格字段`标签会自动在这个表格中增加一行。你可以自定义本条目的 filtertag 字段，修改成你需要的标签名。

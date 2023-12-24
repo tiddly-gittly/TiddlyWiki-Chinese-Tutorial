@@ -2,17 +2,17 @@ created: 20230512123031005
 creator: WhiteFall
 modified: 20230901023443551
 modifier: WhiteFall
-tags: Wiki编程的定义
-title: 通过自定义的WidGet微件调用JS模块
+tags: Wiki 编程的定义
+title: 通过自定义的 WidGet 微件调用 JS 模块
 type: text/vnd.tiddlywiki
 
 
-可以通过定义宏调用WidGet小工具，小工具在调用JS模块，然后button触发小工具设置actions触发活动调用定义的宏。
+可以通过定义宏调用 WidGet 小工具，小工具在调用 JS 模块，然后 button 触发小工具设置 actions 触发活动调用定义的宏。
 
 其他的[[触发小工具|https://bramchen.github.io/tw5-docs/zh-Hans/#TriggeringWidgets]]；
 
-* 触发小工具 => 宏 => 自定义的调用小工具 => JS模块
-* 自定义的调用小工具 => JS模块
+* 触发小工具 => 宏 => 自定义的调用小工具 => JS 模块
+* 自定义的调用小工具 => JS 模块
 
 ```wikitext
 <$button actions=<<macro—name>>></$button>
@@ -57,12 +57,12 @@ title: $:/plugins/作者/名称.js
 type: application/javascript
 module-type: library
 
-js模块描述
+js 模块描述
 
 \*/
 
 exports.js_module_name = name {
-// js模块
+// js 模块
 bar:"",
 data: [],
 foo: function () {},

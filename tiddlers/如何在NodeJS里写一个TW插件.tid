@@ -5,17 +5,17 @@ modified: 20220207045545206
 modifier: 林一二
 page-cover: https://unsplash.com/photos/tZc3vjPCk-Q/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTF8fGRlc2lnbnx8MHx8fHwxNjM4MzY4OTM4&force=true&w=1920
 tags: 插件开发
-title: 如何在NodeJS里写一个TW插件
+title: 如何在 NodeJS 里写一个 TW 插件
 type: text/vnd.tiddlywiki
 
 <<alert warning """
 !! 写在前面
 
-''注意''：本文适用于Linux、Unix和macOS类系统，如果是Windows，建议使用WSL等类Linux环境，同时本文默认你已具有一定的命令行使用经验，包括如何使用指令、如何定义环境变量等，否则请参考[[如何写一个TW插件(TiddlyGit版)]]。
+''注意''：本文适用于 Linux、Unix 和 macOS 类系统，如果是 Windows，建议使用 WSL 等类 Linux 环境，同时本文默认你已具有一定的命令行使用经验，包括如何使用指令、如何定义环境变量等，否则请参考[[如何写一个TW插件(TiddlyGit版)]]。
 
-''建议：''强烈建议使用NodeJS版本的TiddlyWiki进行插件开发，而不是[[使用单文件版本的TiddlyWiki|如何在单文件版里写一个TW插件]]，不然开发起来会很痛苦。本文只介绍在NodeJS环境下的插件开发。
+''建议：''强烈建议使用 NodeJS 版本的 TiddlyWiki 进行插件开发，而不是[[使用单文件版本的TiddlyWiki|如何在单文件版里写一个TW插件]]，不然开发起来会很痛苦。本文只介绍在 NodeJS 环境下的插件开发。
 
-''建议：''本教程需要简单使用Git和NodeJS的技能以及编写JSON文件的能力，如果没有相关的知识，应当先去学一下，并且在电脑上安装`git`和`node`。
+''建议：''本教程需要简单使用 Git 和 NodeJS 的技能以及编写 JSON 文件的能力，如果没有相关的知识，应当先去学一下，并且在电脑上安装`git`和`node`。
 
 @@position:absolute;bottom:10px;right:20px;margin:0;font-size:130px;line-height:1em;opacity:0.1;user-select:none;
 ⚠️
@@ -24,7 +24,7 @@ type: text/vnd.tiddlywiki
 
 !! 创建开发环境
 
-首先，在你喜欢的位置创建一个空文件夹，我们就假设这个文件夹叫`MyTWPlugin`吧，然后在这个文件夹中使用NodeJS创建一个项目：
+首先，在你喜欢的位置创建一个空文件夹，我们就假设这个文件夹叫`MyTWPlugin`吧，然后在这个文件夹中使用 NodeJS 创建一个项目：
 
 ```shell
 npm install cross-env tiddlywiki --save-dev
@@ -32,7 +32,7 @@ mkdir tmp && npx tiddlywiki tmp --init && mv tmp/* . && rm -rf tmp
 mkdir tiddlers plugins themes languages
 ```
 
-修改`tiddlywiki.info`，用VSCode等代码编辑器打开之，并将代码语言改成`JSON`。并在中添加一些插件和语言(@@color:red;注意省略号`...`代表其他内容，你可以按照自己的喜好添加别的内容，实际文件中请删除掉省略号`...`和每个`[]`中的最后一项的逗号`,`@@)：
+修改`tiddlywiki.info`，用 VSCode 等代码编辑器打开之，并将代码语言改成`JSON`。并在中添加一些插件和语言 (@@color:red;注意省略号`...`代表其他内容，你可以按照自己的喜好添加别的内容，实际文件中请删除掉省略号`...`和每个`[]`中的最后一项的逗号`,`@@)：
 
 ```json
 {
@@ -53,21 +53,21 @@ mkdir tiddlers plugins themes languages
 }
 ```
 
-好了，开发环境就搞定了。如果你乐意，可以在GitHub上新建一个repo，并把这个文件夹上传，具体方法就不讲了。
+好了，开发环境就搞定了。如果你乐意，可以在 GitHub 上新建一个 repo，并把这个文件夹上传，具体方法就不讲了。
 
 !! 介绍开发环境
 
 让我们看看现在目录下都有什么：
 
-* `node_modules`：NodeJS项目依赖，不用管。
-* `tiddlers`：存放一般的Tiddler的文件夹，一般不会手动去改而是通过TiddlyWiki修改，所以也不用管。
+* `node_modules`：NodeJS 项目依赖，不用管。
+* `tiddlers`：存放一般的 Tiddler 的文件夹，一般不会手动去改而是通过 TiddlyWiki 修改，所以也不用管。
 * `plugins`：你写的插件要放到这里面，后面会讲。
 * `themes`：如果你开发的是主题，那么就写在这里面。
 * `languages`：如果你开发的是语言翻译，那么就写在这里面。
-* `package-lock.json`和`package.json`：NodeJS配置文件，不用管。
-* `tiddlywiki.info`：TiddlyWiki项目的配置文件，其实是一个JSON文件，配置了项目的自定义指令、添加的主题、插件和语言。上面已经配置过。
+* `package-lock.json`和`package.json`：NodeJS 配置文件，不用管。
+* `tiddlywiki.info`：TiddlyWiki 项目的配置文件，其实是一个 JSON 文件，配置了项目的自定义指令、添加的主题、插件和语言。上面已经配置过。
 
-接下来还有一步，请先阅读[[如何启动一个NodeJS的TiddlyWiki项目]]，然后我想告诉你一些事情，如果想要编写和生成插件，仅仅使用`npx tiddlywiki . --listen port=8080`是不够的，这样会导致TiddlyWiki找不到你的写插件在哪，因此我们需要设置三个环境变量，让TiddlyWiki知道你写的插件在哪：
+接下来还有一步，请先阅读[[如何启动一个NodeJS的TiddlyWiki项目]]，然后我想告诉你一些事情，如果想要编写和生成插件，仅仅使用`npx tiddlywiki . --listen port=8080`是不够的，这样会导致 TiddlyWiki 找不到你的写插件在哪，因此我们需要设置三个环境变量，让 TiddlyWiki 知道你写的插件在哪：
 
 ```shell
 npx cross-env \
@@ -83,13 +83,13 @@ npx cross-env \
 
 !!! 在`tiddlywiki.info`中注册你的插件
 
-用VSCode等代码编辑器打开`tiddlywiki.info`，并将代码语言改成`JSON`。并在`plugins`中(如果想要编写主题或者语言则而分别在`themes`和`languages`中)添加`XiaoMing/abc`，注意JSON格式(比如用逗号分隔，但是最后一个末尾没有逗号)，否则会报错。
+用 VSCode 等代码编辑器打开`tiddlywiki.info`，并将代码语言改成`JSON`。并在`plugins`中 (如果想要编写主题或者语言则而分别在`themes`和`languages`中) 添加`XiaoMing/abc`，注意 JSON 格式 (比如用逗号分隔，但是最后一个末尾没有逗号)，否则会报错。
 
 !!! 创建插件文件夹
 
-在`plugins`文件夹中(如果你要写的是主题而非插件，则在`themes`文件夹中；如果你要写的是翻译，则在`languages`文件夹中；)下创建`XiaoMing`文件夹，并在`XiaoMing`文件夹下创建`abc`文件夹
+在`plugins`文件夹中 (如果你要写的是主题而非插件，则在`themes`文件夹中；如果你要写的是翻译，则在`languages`文件夹中；) 下创建`XiaoMing`文件夹，并在`XiaoMing`文件夹下创建`abc`文件夹
 
-现在，请在`abc`文件夹下创建一个空文件`plugin.info`，然后用VSCode等代码编辑器打开之，并将代码语言改成`JSON`，随后输入以下内容(这些字段的意义请看[[plugin.info文件介绍]])：
+现在，请在`abc`文件夹下创建一个空文件`plugin.info`，然后用 VSCode 等代码编辑器打开之，并将代码语言改成`JSON`，随后输入以下内容 (这些字段的意义请看[[plugin.info文件介绍]])：
 
 ```json
 {
@@ -107,23 +107,23 @@ npx cross-env \
 
 <a class="tc-tiddlylink tc-tiddlylink-resolves tc-plugin-info tc-popup-handle tc-popup-absolute"><div class="tc-plugin-info-chunk tc-plugin-info-toggle"><button class="tc-btn-invisible tc-btn-dropdown">{{$:/core/images/chevron-right}}</button></div><div class="tc-plugin-info-chunk tc-plugin-info-icon">{{$:/core/images/plugin-generic-plugin}}</div><div class="tc-plugin-info-chunk tc-plugin-info-description"><h1><strong>abc</strong>:&nbsp;XiaoMing's first plugin</h1><h2>~$:/plugins/XiaoMing/abc</h2><h2><div><em>0.0.1</em></div></h2></div></a>
 
-!!! 生成JSON插件
+!!! 生成 JSON 插件
 
-TiddlyWiki插件最方便的分享和安装管理方式便是`json`格式，理由有三：
+TiddlyWiki 插件最方便的分享和安装管理方式便是`json`格式，理由有三：
 
-* 安装与卸载方便：将json拖入浏览器页面中即可安装，删除对应的tiddler即可卸载，不需要配置环境变量；
-* 适用范围广：NodeJS和单文件形式的wiki都可以使用；
-* 方便推广与分享：json格式方便上传、下载和传输；
+* 安装与卸载方便：将 json 拖入浏览器页面中即可安装，删除对应的 tiddler 即可卸载，不需要配置环境变量；
+* 适用范围广：NodeJS 和单文件形式的 wiki 都可以使用；
+* 方便推广与分享：json 格式方便上传、下载和传输；
 
-因此，在开发时可以使用文件夹形式的插件；而发布插件时请使用JSON格式的插件。
+因此，在开发时可以使用文件夹形式的插件；而发布插件时请使用 JSON 格式的插件。
 
-接下来我们介绍如何生成JSON格式的插件。
+接下来我们介绍如何生成 JSON 格式的插件。
 
-还记得过滤器(filter)吗？因为现在你的项目中肯定不止你自己的插件，至少还会有`$:/plugins/tiddlerwiki/xxx`这样的插件，因此我们需要用到过滤器来过滤出你想要导出的插件。
+还记得过滤器 (filter) 吗？因为现在你的项目中肯定不止你自己的插件，至少还会有`$:/plugins/tiddlerwiki/xxx`这样的插件，因此我们需要用到过滤器来过滤出你想要导出的插件。
 
 如果你叫`XiaoMing`，你的插件应当都以`$:/plugins/XiaoMing/`开头，所以可以使用`[prefix[$:/plugins/XiaoMing/]]`来选择你自己开发的插件——如果你还想要导出别的插件，可以写自己的过滤器表达式。
 
-好了，有了过滤器表达式，我们就可以生成JSON插件了(留意一下过滤器表达式的位置)：
+好了，有了过滤器表达式，我们就可以生成 JSON 插件了 (留意一下过滤器表达式的位置)：
 
 ```shell
 npx cross-env \
@@ -135,7 +135,7 @@ npx cross-env \
 	--savelibrarytiddlers $:/UpgradeLibrary '[prefix[$:/plugins/XiaoMing/]]' ./
 ```
 
-目录下生成了一个`output`文件夹，里面生成了一个JSON格式的插件！
+目录下生成了一个`output`文件夹，里面生成了一个 JSON 格式的插件！
 
 ---
 接下来请继续阅读：

@@ -3,20 +3,20 @@ creator: WhiteFall
 modified: 20221227072546942
 modifier: WhiteFall
 tags: 如何保存 插件使用
-title: timimi浏览器扩展安装和使用
+title: timimi 浏览器扩展安装和使用
 type: text/vnd.tiddlywiki
 
 [[帮助手册源地址|https://ibnishak.github.io/Timimi/]]
 
 
-!!!安装
+!!! 安装
 
 
-* 从[[Chrome应用商店|https://chrome.google.com/webstore/detail/timimi/mnggafnmmhdoplbffagjihajeeikgbcg]]安装timimi浏览器扩展
+* 从[[Chrome应用商店|https://chrome.google.com/webstore/detail/timimi/mnggafnmmhdoplbffagjihajeeikgbcg]]安装 timimi 浏览器扩展
 * 在 Edge 浏览器中，打开扩展 > 扩展管理 > Timimi 选中“允许访问文件 URL”
-* 从[[Github|https://github.com/ibnishak/Timimi/releases]]下载并运行timimi-2-1-1-Windows-Chrome-Chromium-Opera.exe
+* 从[[Github|https://github.com/ibnishak/Timimi/releases]]下载并运行 timimi-2-1-1-Windows-Chrome-Chromium-Opera.exe
 
-!!!使用
+!!! 使用
 
 
 * 添加备份路径
@@ -37,12 +37,12 @@ type: text/vnd.tiddlywiki
  
 
 
-!!!备份方式
+!!! 备份方式
 
 
 *Every nth save（每 n 次保存）
 
-*Every nth minute（每隔n分钟）
+*Every nth minute（每隔 n 分钟）
 
 *First In First Out（先进先出）
 

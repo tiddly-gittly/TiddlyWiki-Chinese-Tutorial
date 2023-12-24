@@ -2,7 +2,7 @@ created: 20220612102246413
 creator: 林一二
 modified: 20230615134208020
 modifier: WhiteFall
-tags: 基础知识 TidGi太记 B站直播
+tags: 基础知识 TidGi 太记 B 站直播
 title: 打开外部文件
 type: text/vnd.tiddlywiki
 video-link: https://www.bilibili.com/video/BV1Ah411c7rc
@@ -51,4 +51,4 @@ video-link: https://www.bilibili.com/video/BV1Ah411c7rc
 [ext[file://~/Desktop/ItonNote Mobile.png]]
 ```
 
-在太记里想要直接显示外部图片，并把图片归类到文件夹里的话，可以参考[[让导入的图片放在特定目录中]]。其他pdf文件也是类似。唯一的是音频文件不好处理，可能会出错。
+在太记里想要直接显示外部图片，并把图片归类到文件夹里的话，可以参考[[让导入的图片放在特定目录中]]。其他 pdf 文件也是类似。唯一的是音频文件不好处理，可能会出错。

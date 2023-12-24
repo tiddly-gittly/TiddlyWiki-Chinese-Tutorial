@@ -12,10 +12,10 @@ type: text/vnd.tiddlywiki
 
 系统条目的命名规范详见[[中文文档-系统条目的命名|https://bramchen.github.io/tw5-docs/zh-Hans/#Naming%20of%20System%20Tiddlers]]
 
-!! 系统条目为核心的一部分，其命名规则如下:
+!! 系统条目为核心的一部分，其命名规则如下：
 
-|!命名空间 |!格式 |!描述 |
-|`$:/*` |~CamelCase |根用户接口条目 (例如控制台、 高端搜索) |
+|！命名空间 |！格式 |！描述 |
+|`$:/*` |~CamelCase |根用户接口条目 (例如控制台、高端搜索) |
 |`$:/config/*` |~CamelCase |用户导向的配置设置 |
 |`$:/core/images/*` |hyphen-case |核心图像 |
 |`$:/core/modules/*` |lowercase |JavaScript 模块条目 |
@@ -28,14 +28,14 @@ type: text/vnd.tiddlywiki
 |`$:/plugins/*` |lowercase |插件条目，与插件内容 |
 |`$:/snippets/*` |//inconsistent// |可重用的片段 (将由宏替换) |
 |`$:/state/*` |lowercase |用户接口状态条目 |
-|`$:/tags/*` |~CamelCase |用户接口配置标签|
+|`$:/tags/*` |~CamelCase |用户接口配置标签 |
 |`$:/temp/*` |lowercase |不应被保存的临时条目 |
 |`$:/themes/*` |lowercase |布景主题插件 |
 
 「格式」这一列的意思：
 
-* ''hyphen-case'' 指的是以连字号连接多个小写单字 （ hyphen就是连字符 - ）
-* ''~CamelCase'' 指的是直接连接多个首字母大写的小写单字 （ Camel 是骆驼，此处表示驼峰起伏的意思）
+* ''hyphen-case'' 指的是以连字号连接多个小写单字（hyphen 就是连字符 - ）
+* ''~CamelCase'' 指的是直接连接多个首字母大写的小写单字（Camel 是骆驼，此处表示驼峰起伏的意思）
 * ''lowercase'' 指的是直接连接多个小写单字
 * ''inconsistent'' 标志目前不一致的命名空间，可以随便用
 

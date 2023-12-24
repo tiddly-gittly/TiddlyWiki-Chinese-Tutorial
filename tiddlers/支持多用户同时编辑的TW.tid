@@ -3,26 +3,26 @@ creator: WhiteFall
 modified: 20221225035011407
 modifier: WhiteFall
 tags: 如何保存
-title: 支持多用户同时编辑的TW
+title: 支持多用户同时编辑的 TW
 type: text/vnd.tiddlywiki
 
 !! TW5-Bob
 
-运行在NodeJS环境的TiddlyWiki，支持多用户同时使用/编辑相同的wiki的插件：https://github.com/OokTech/TW5-Bob
+运行在 NodeJS 环境的 TiddlyWiki，支持多用户同时使用/编辑相同的 wiki 的插件：https://github.com/OokTech/TW5-Bob
 
-最简单的版本（捆绑应用程序）：https://github.com/OokTech/TW5-BobEXE 。适用系统linux、Windows、mac。
+最简单的版本（捆绑应用程序）：https://github.com/OokTech/TW5-BobEXE。适用系统 linux、Windows、mac。
 
-!! TW5-Bob它有什么作用？
+!! TW5-Bob 它有什么作用？
 
-# 多用户支持同时使用/编辑相同的wiki
+# 多用户支持同时使用/编辑相同的 wiki
 # 多维基支持 - 运行一次，为多个维基提供服务
 # 从根维基内部创建和配置新的维基
 # 以多种方式导出单个文件维基
 # 浏览器和文件系统之间的双向实时同步
 # 所有配置都可以从维基内部完成
-# 提供外部文件（如图像），以便您可以将它们包含在您的wiki中
+# 提供外部文件（如图像），以便您可以将它们包含在您的 wiki 中
 # 允许您从 wiki 内部运行 shell 脚本和命令
-# 可以用作插件库，使插件可供其他wiki使用（需要其他wiki上的TWederBob插件才能连接）
+# 可以用作插件库，使插件可供其他 wiki 使用（需要其他 wiki 上的 TWederBob 插件才能连接）
 # 服务器间联合。不同的 Bob 服务器可以与共享的 tiddler 和聊天服务器/中继进行通信
 # 用于与服务器交互的 HTTP API
 # 很多文档都在文档文件夹的 tiddler 文件中 的插件，或在 wiki 中的控制面板上的插件信息。
@@ -34,4 +34,4 @@ type: text/vnd.tiddlywiki
 
 !! 使用体验
 
-bug比较多，而且明显在一些功能设置方面缺乏认真仔细的规划，后台配置界面比原始版本的 TiddlyWiki 复杂很多，容易引起迷惑，关键是相关文档也不够清晰，难以在生产环境中放心使用。
+bug 比较多，而且明显在一些功能设置方面缺乏认真仔细的规划，后台配置界面比原始版本的 TiddlyWiki 复杂很多，容易引起迷惑，关键是相关文档也不够清晰，难以在生产环境中放心使用。

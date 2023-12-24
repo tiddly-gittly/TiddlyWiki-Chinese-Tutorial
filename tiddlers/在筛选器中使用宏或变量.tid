@@ -11,10 +11,10 @@ type: text/vnd.tiddlywiki
 软式 - 变量：`<like this>` 该参数是变量当前的值，角括号之间的文本为参数名称。
 
 * `[xxx]`就是指"xxx"字符串
-* `<xxx>`是指xxx变量
-* `{xxx}`是指xxx条目的text字段
-* `{xxx!!yyy}`是指xxx条目的yyy字段
-* `{!!yyy}`是指当前条目的yyy字段
+* `<xxx>`是指 xxx 变量
+* `{xxx}`是指 xxx 条目的 text 字段
+* `{xxx!!yyy}`是指 xxx 条目的 yyy 字段
+* `{!!yyy}`是指当前条目的 yyy 字段
 * `[<xxx>!match[]]`是判断当前变量存不存在
 
 简单来说，就是把原版宏两个的尖括号，变成一个就好。

@@ -2,7 +2,7 @@ created: 20230829224150779
 creator: 马不前
 modified: 20230830083558512
 modifier: 马不前
-tags: 插件技巧类 Shiraz宏包
+tags: 插件技巧类 Shiraz 宏包
 title: 如何自定义动态表格的表头
 
 今天才发现设拉子也是支持自定义模板的，还可以自定义各种功能。完美地契合了太微高度自定义的特性。特别是里面的动态表格，里面的内容也是可以自定义的，包括表头和表格里的内容。一个常见的需求是把某个时间格式转换成想要的格式。这些在[[文档里|https://kookma.github.io/TW-Shiraz/#demo%2Fdynamic-tables-template]]可以看到。

@@ -9,8 +9,8 @@ type: text/vnd.tiddlywiki
 【卡片集】
 
 * Author：机杼
-* 描述：目录导航栏，又名卡片图书。可以自定义卡片高度、图书的根条目（根目录，可以参考[[目录导航栏实例]]理解根条目的意思）。本目录下有三个条目，目录导航栏使用说明、Tabs加强版、目录导航栏实例。
-* 使用方法：参考[[目录导航栏使用说明]]、[[目录导航栏实例]]，拖放宏[[tabs加强版]]到你的wiki中。
+* 描述：目录导航栏，又名卡片图书。可以自定义卡片高度、图书的根条目（根目录，可以参考[[目录导航栏实例]]理解根条目的意思）。本目录下有三个条目，目录导航栏使用说明、Tabs 加强版、目录导航栏实例。
+* 使用方法：参考[[目录导航栏使用说明]]、[[目录导航栏实例]]，拖放宏[[tabs加强版]]到你的 wiki 中。
 
 
 ```
@@ -20,7 +20,7 @@ type: text/vnd.tiddlywiki
 ```
 
 
-<$let selected-tiddler="tabs加强版">
+<$let selected-tiddler="tabs 加强版">
 	<$macrocall $name="code" language={{{[<selected-tiddler>get[type]]}}} src={{{[<selected-tiddler>get[text]]}}} caption={{{[<selected-tiddler>get[title]]}}} />
 </$let>
 

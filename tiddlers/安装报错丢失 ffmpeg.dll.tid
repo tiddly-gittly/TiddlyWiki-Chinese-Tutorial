@@ -2,9 +2,9 @@ created: 20230628051557196
 creator: 林一二
 modified: 20230628051800607
 modifier: 林一二
-tags: 排查问题 TidGi太记
+tags: 排查问题 TidGi 太记
 title: 安装报错丢失 ffmpeg.dll
 
 太记在精简版 Win10 系统等老系统上安装时，可能会报错缺失 dll。
 
-这时安装一个 [ext[Steam桌面版|https://store.steampowered.com/]] （可能还需要随便装个游戏？），Steam 电脑大师会自动修复电脑上不利于游戏安装的依赖库缺失问题。
+这时安装一个 [ext[Steam 桌面版|https://store.steampowered.com/]] （可能还需要随便装个游戏？），Steam 电脑大师会自动修复电脑上不利于游戏安装的依赖库缺失问题。

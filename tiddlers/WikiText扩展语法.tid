@@ -3,7 +3,7 @@ creator: WhiteFall
 modified: 20231030044249804
 modifier: WhiteFall
 tags: 基础知识
-title: WikiText扩展语法
+title: WikiText 扩展语法
 
 !! Callout（标注）
 * shiraz-callout 插件
@@ -45,8 +45,8 @@ title: WikiText扩展语法
 
 !! hard（硬换行）
 
-* 插件：WikiText的Markdown风格硬换行符：[[Space Space Newline|https://wikilabs.github.io/editions/space-space-newline/]]
-* Space Space Newline插件，添加了一条 wikitext 规则，使用 `<space><space><newLine>` 或 `<space><space><backslash>` 创建硬换行符
+* 插件：WikiText 的 Markdown 风格硬换行符：[[Space Space Newline|https://wikilabs.github.io/editions/space-space-newline/]]
+* Space Space Newline 插件，添加了一条 wikitext 规则，使用 `<space><space><newLine>` 或 `<space><space><backslash>` 创建硬换行符
 
 用法：
 

@@ -6,7 +6,7 @@ tags: 蒯恩
 title: 能编辑自己的笔记
 type: text/vnd.tiddlywiki
 
-  Text（试着在这里打一个1):
+  Text（试着在这里打一个 1):
   <$edit-text
     field="text"
     class="tc-edit-texteditor tc-edit-texteditor-body"

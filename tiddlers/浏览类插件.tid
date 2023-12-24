@@ -6,28 +6,28 @@ tags: 插件列表
 title: 浏览类插件
 type: text/vnd.tiddlywiki
 
-* respawn 复位，当故事河（river）为空时打开默认的tiddlers。
-* Epub转TWpub：https://github.com/tiddly-gittly/Epub2twpub
+* respawn 复位，当故事河（river）为空时打开默认的 tiddlers。
+* Epub 转 TWpub：https://github.com/tiddly-gittly/Epub2twpub
 * TWPUB、Fishing
-* 目录插件Gk0Wk/page-toc
-* 脑图tidgraph
+* 目录插件 Gk0Wk/page-toc
+* 脑图 tidgraph
 * 链接弹出预览 preview glass
 * 调整侧边栏 siderbar resizer
 * 仿浏览器网页栏 tabstory
-* ❤️PPT演示文稿
-** [[sukima/reveal-js|https://sukima.github.io/tiddlywiki-reveal-js/ ]] CPL搜索reveal-js安装。
-** [[tamasha|https://kookma.github.io/TW-Tamasha/]] CPL搜Tamasha安装，就是提供了个宏。
-*  仿浏览器条目栏tabstory
+* ❤️PPT 演示文稿
+** [[sukima/reveal-js|https://sukima.github.io/tiddlywiki-reveal-js/ ]] CPL 搜索 reveal-js 安装。
+** [[tamasha|https://kookma.github.io/TW-Tamasha/]] CPL 搜 Tamasha 安装，就是提供了个宏。
+*  仿浏览器条目栏 tabstory
 * 图书追踪器 library tracker
 * [[TiddlerSets|https://tiddlersets.tiddlyhost.com/TiddlerSets]]
 * ❤️inverse-link-and-folder，双链插件。
 * ToC generic
 * 随机条目漫游：[[RandomTiddlerButton|https://sonephetr2.github.io/]] + [[random|https://tobibeer.github.io/tw5-plugins/#random]] 这两个插件要一起安装使用。
-* [[tiddlyremember|https://github.com/sobjornstad/TiddlyRemember]]（tw5与anki）和anki结合，有闪卡、增强阅读、问答题等附在⽂章下⾯。
+* [[tiddlyremember|https://github.com/sobjornstad/TiddlyRemember]]（tw5 与 anki）和 anki 结合，有闪卡、增强阅读、问答题等附在⽂章下⾯。
 * 条目加密（Encrypt Tiddler Plugin）
 **[[demo|https://danielorodriguez.com/TW5-EncryptTiddlerPlugin/]]
 **[[主页|https://github.com/danielo515/TW5-EncryptTiddlerPlugin]]
-* 条目别名tw5插件[[alias|https://github.com/hfichtenberger/tiddlywiki-aliasplugin]]
+* 条目别名 tw5 插件[[alias|https://github.com/hfichtenberger/tiddlywiki-aliasplugin]]
 * [[为tw加上rss|https://techlifeweb.com/tiddlywiki/tw5tribalknowledge/static/RSS%2520and%2520Atom%2520Feeds%2520for%2520your%2520TiddlyWiki.html]]
 * ❤️Locator：文件目录插件[[TW-Locator|https://tw-cn.netlify.app/#TW-Locator]]
-*  TiddlyTools网站中的时间工具[[timer|https://tiddlytools.com/timer.html]]  其中包括日历、时钟、计时器等等一些有趣的关于时间的工具。而且日历工具可以按时间日期显示条目。
+*  TiddlyTools 网站中的时间工具[[timer|https://tiddlytools.com/timer.html]]  其中包括日历、时钟、计时器等等一些有趣的关于时间的工具。而且日历工具可以按时间日期显示条目。

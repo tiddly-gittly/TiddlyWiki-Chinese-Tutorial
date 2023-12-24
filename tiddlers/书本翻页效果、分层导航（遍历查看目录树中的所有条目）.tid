@@ -9,7 +9,7 @@ type: text/vnd.tiddlywiki
 【卡片集】
 
 * Author：kookma
-* 描述：分层导航，或者称为简单导航是kookma/toc中的一个宏，可以实现遍历查看目录树的所有条目，点击条目底下的next按钮，就会实现像书籍一样的翻页功能。翻页顺序为文件目录中显示的顺序。
+* 描述：分层导航，或者称为简单导航是 kookma/toc 中的一个宏，可以实现遍历查看目录树的所有条目，点击条目底下的 next 按钮，就会实现像书籍一样的翻页功能。翻页顺序为文件目录中显示的顺序。
 * 使用方法：阅读下列操作说明。
 
 
@@ -30,5 +30,5 @@ type: text/vnd.tiddlywiki
 <!-- Call navigator -->
 <<multilevel-toc-navigation tag:"contents" close:"yes" class:"kk-toc-navigation colorful-btns" stateTiddler:"20210328143800">>
 ```
-位于条目最后的`multilevel-toc-navigation`宏中的tag字段的值"contents"，`<<multilevel-toc-navigation tag:"contents">>`
-将它改成你的文件夹条目，比如Index子文件夹条目。然后你就可以在这个文件夹条目以及子文件夹条目底部看到蓝色next按钮，这就说明成功了。
+位于条目最后的`multilevel-toc-navigation`宏中的 tag 字段的值"contents"，`<<multilevel-toc-navigation tag:"contents">>`
+将它改成你的文件夹条目，比如 Index 子文件夹条目。然后你就可以在这个文件夹条目以及子文件夹条目底部看到蓝色 next 按钮，这就说明成功了。

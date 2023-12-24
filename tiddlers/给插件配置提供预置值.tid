@@ -6,7 +6,7 @@ modifier: 林一二
 tags: 写插件配置页面
 title: 给插件配置提供预置值
 
-可以新建文件 `config.multids` 来提供一系列默认值， 内容类似：
+可以新建文件 `config.multids` 来提供一系列默认值，内容类似：
 
 ```tw5
 title: $:/config/ExternalAttachments/

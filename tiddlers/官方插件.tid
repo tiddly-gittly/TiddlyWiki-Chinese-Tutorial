@@ -8,111 +8,111 @@ title: 官方插件
 type: text/vnd.tiddlywiki
 
 
-! TiddlyWiki官方插件介绍
+! TiddlyWiki 官方插件介绍
 
 <<<
-''共62个插件：47 + 15（CodeMirror附加组件）。''
+''共 62 个插件：47 + 15（CodeMirror 附加组件）。''
 
-''大部分官方插件都是为了开发新的内容，所以一般用户可能暂时用不上，但新的插件代表着新的可能。我们期待tiddlywiki发展更好。''
+''大部分官方插件都是为了开发新的内容，所以一般用户可能暂时用不上，但新的插件代表着新的可能。我们期待 tiddlywiki 发展更好。''
 <<<
 
-!常用插件
+! 常用插件
 ;tiddlywiki/highlight-legacy
-:为传统浏览器提供Highlight.js语法高亮功能。
+:为传统浏览器提供 Highlight.js 语法高亮功能。
 ;tiddlywiki/menubar
 :该插件提供了一个具有多个功能的菜单栏。
 ;tiddlywiki/evernote
-:Evernote迁移工具。这个插件包含协助从Evernote ENEX文件迁移内容的工具。
+:Evernote 迁移工具。这个插件包含协助从 Evernote ENEX 文件迁移内容的工具。
 ;tiddlywiki/dynannotate
-:Dynannotate插件允许创建和显示文本内容的注释。这是钓鱼插件的配套插件，推荐安装。
+:Dynannotate 插件允许创建和显示文本内容的注释。这是钓鱼插件的配套插件，推荐安装。
 ;tiddlywiki/bibtex
-:BibTeX导入器，BibTeX插件提供了一个反序列化器，可以将.bib文件中的书目条目转换为单独的tiddlers。
+:BibTeX 导入器，BibTeX 插件提供了一个反序列化器，可以将.bib 文件中的书目条目转换为单独的 tiddlers。
 ;tiddlywiki/qrcode
-:二维码插件提供了一个宏，使任何文本都可以被呈现为二维码。智能手机可以使用或内置QR码阅读器，使其成为在设备间传输信息的便捷手段。
+:二维码插件提供了一个宏，使任何文本都可以被呈现为二维码。智能手机可以使用或内置 QR 码阅读器，使其成为在设备间传输信息的便捷手段。
 ;tiddlywiki/codemirror
-:CodeMirror编辑器及附加组件AddOns，这个插件提供了一个基于CodeMirror的增强型文本编辑器组件。基本配置被设计成尽可能的轻量级，大小只有235kb左右。其他功能可以通过插件库中的CodeMirror AddOns来安装。
+:CodeMirror 编辑器及附加组件 AddOns，这个插件提供了一个基于 CodeMirror 的增强型文本编辑器组件。基本配置被设计成尽可能的轻量级，大小只有 235kb 左右。其他功能可以通过插件库中的 CodeMirror AddOns 来安装。
 ;tiddlywiki/highlight
-:这个插件使用Ivan Sagalaev的highlight.js的11.4.0版本提供代码块的语法高亮。这个插件不能在不完全支持JavaScript ES6（2015）的浏览器上运行。
+:这个插件使用 Ivan Sagalaev 的 highlight.js 的 11.4.0 版本提供代码块的语法高亮。这个插件不能在不完全支持 JavaScript ES6（2015）的浏览器上运行。
 ;tiddlywiki/katex
-:用于数学排版的KaTeX库。这是一个用于数学和化学排版的TiddlyWiki插件，基于Khan Academy的KaTeX（v0.16）和通过Katex扩展的mhchem。它是完全独立的，不需要互联网连接就能工作。它可以在浏览器和Node.js下工作。
+:用于数学排版的 KaTeX 库。这是一个用于数学和化学排版的 TiddlyWiki 插件，基于 Khan Academy 的 KaTeX（v0.16）和通过 Katex 扩展的 mhchem。它是完全独立的，不需要互联网连接就能工作。它可以在浏览器和 Node.js 下工作。
 ;tiddlywiki/markdown
-:这是一个用于解析Markdown文本的TiddlyWiki插件，使用Remarkable库。如果安装了KaTeX TiddlyWiki插件，就可以使用 remarkable-katex Remarkable插件来启用KaTeX支持。它是完全独立的，不需要互联网连接就能工作。它在浏览器和Node.js下都能工作。
+:这是一个用于解析 Markdown 文本的 TiddlyWiki 插件，使用 Remarkable 库。如果安装了 KaTeX TiddlyWiki 插件，就可以使用 remarkable-katex Remarkable 插件来启用 KaTeX 支持。它是完全独立的，不需要互联网连接就能工作。它在浏览器和 Node.js 下都能工作。
 ;tiddlywiki/external-attachments
-:TiddlyDesktop的外部附件，这个插件提供了对作为外部附件导入tiddlers的支持。这意味着不是将二进制文件作为独立的tiddlers导入，而是将其作为 "瘦小的 "tiddlers导入，通过_canonical_uri字段引用原始文件。这减少了wiki的大小，从而提高了性能。然而，这确实意味着维基不再是完全独立的。
+:TiddlyDesktop 的外部附件，这个插件提供了对作为外部附件导入 tiddlers 的支持。这意味着不是将二进制文件作为独立的 tiddlers 导入，而是将其作为 "瘦小的 "tiddlers 导入，通过_canonical_uri 字段引用原始文件。这减少了 wiki 的大小，从而提高了性能。然而，这确实意味着维基不再是完全独立的。
 
-! tiddlywiki探索插件
+! tiddlywiki 探索插件
 ;tiddlywiki/internals
-:用于探索TiddlyWiki内部的工具.
+:用于探索 TiddlyWiki 内部的工具.
 ;tiddlywiki/tw5.com-docs
-:来自tiddlywiki.com的文档
+:来自 tiddlywiki.com 的文档
 ;tiddlywiki/twitter
-:Twitter嵌入工具
+:Twitter 嵌入工具
 ;tiddlywiki/savetrail
-:自动下载修改过的tiddlers，并保存为JSON。
+:自动下载修改过的 tiddlers，并保存为 JSON。
 ;tiddlywiki/help
 :浮动的帮助面板，这个插件在窗口的右下方提供了一个覆盖式帮助面板。
 ;tiddlywiki/github-fork-ribbon
-:这个插件提供了一个横跨窗口角落的对角线丝带。它类似于GitHub的 "Fork me on GitHub "色带的设计。
+:这个插件提供了一个横跨窗口角落的对角线丝带。它类似于 GitHub 的 "Fork me on GitHub "色带的设计。
 ;tiddlywiki/stacked-view
 :堆叠卡片故事视图，这个插件提供了一个新的故事可视化，以一叠卡片的形式显示各个花絮。它目前是实验性的，不完整的。
 ;tiddlywiki/dynaview
 :动态滚动和缩放效果，这个插件使得建立用户界面成为可能，它可以通过滚动或缩放动态地响应浏览器视口的变化。
 ;tiddlywiki/freelinks
-:这个插件增加了自动生成链接到tiddler标题的功能。请注意，当有大量的tiddlers时，自动生成链接的速度会非常慢。
+:这个插件增加了自动生成链接到 tiddler 标题的功能。请注意，当有大量的 tiddlers 时，自动生成链接的速度会非常慢。
 ;tiddlywiki/consent-banner
-:用于GDPR等的同意书横幅，它会显示一个横幅，邀请用户接受或拒绝cookie，并在本地存储中跟踪他们的同意，以便在后续访问时隐藏该横幅。
+:用于 GDPR 等的同意书横幅，它会显示一个横幅，邀请用户接受或拒绝 cookie，并在本地存储中跟踪他们的同意，以便在后续访问时隐藏该横幅。
 ;tiddlywiki/powered-by-tiddlywiki
-:这个插件添加了一个 "Powered by TiddlyWiki "的横幅，链接到https://tiddlywiki.com。目前它非常基本，但我们计划通过使它更容易定制来改进它。
+:这个插件添加了一个 "Powered by TiddlyWiki "的横幅，链接到 https://tiddlywiki.com。目前它非常基本，但我们计划通过使它更容易定制来改进它。
 ;tiddlywiki/classictools
-:TiddlyWiki经典工具，这个插件提供了与TiddlyWiki Classic一起工作的设施。它被用于TiddlyWiki Classic的构建过程。它的附加功能有，一个用于读取TiddlyWiki Classic .recipe文件的tiddlerdeserializer模块。用于构建TiddlyWiki Classic的模板。更多细节见https://github.com/TiddlyWiki/tiddlywiki.com。
+:TiddlyWiki 经典工具，这个插件提供了与 TiddlyWiki Classic 一起工作的设施。它被用于 TiddlyWiki Classic 的构建过程。它的附加功能有，一个用于读取 TiddlyWiki Classic .recipe 文件的 tiddlerdeserializer 模块。用于构建 TiddlyWiki Classic 的模板。更多细节见 https://github.com/TiddlyWiki/tiddlywiki.com。
 ;tiddlywiki/text-slicer
-:将文本切成片段的工具，依赖于tiddlywiki/sax插件。这个插件包含一些工具，帮助将长文本切成单独的小块。它目前可以直接处理XHTML文档，并通过转换为HTML处理与Microsoft Word兼容的DOCX文档。
+:将文本切成片段的工具，依赖于 tiddlywiki/sax 插件。这个插件包含一些工具，帮助将长文本切成单独的小块。它目前可以直接处理 XHTML 文档，并通过转换为 HTML 处理与 Microsoft Word 兼容的 DOCX 文档。
 ;tiddlywiki/xlsx-utils
-:XLSX电子表格实用工具，依赖插件tiddlywiki/jszip。这个插件提供了一种灵活的方式来从Excel文件中导入tiddlers。它基于js-xlsx库。
+:XLSX 电子表格实用工具，依赖插件 tiddlywiki/jszip。这个插件提供了一种灵活的方式来从 Excel 文件中导入 tiddlers。它基于 js-xlsx 库。
 ;tiddlywiki/innerwiki
-:截图和测试的内部维基，总的来说是在wiki中嵌入wiki（这个wiki称之为innerwikis）。在浏览器中，innerwikis是以嵌入式iframe的形式显示。在Node.js中，谷歌的Puppeteer被用来将innerwikis加载为屏幕外的网页，然后将其快照为PNG图像。
+:截图和测试的内部维基，总的来说是在 wiki 中嵌入 wiki（这个 wiki 称之为 innerwikis）。在浏览器中，innerwikis 是以嵌入式 iframe 的形式显示。在 Node.js 中，谷歌的 Puppeteer 被用来将 innerwikis 加载为屏幕外的网页，然后将其快照为 PNG 图像。
 ;tiddlywiki/cecily
-:可缩放的故事视图（塞西莉），这个实验性的插件提供了一个新的故事可视化，在一个无限的画布上以可调整大小的瓷砖形式显示单个的Tiddlers。Cecily是基于TiddlyWiki Classic的一个早期插件：http://jermolene.com/cecily。Cecily目前处于开发的早期阶段，还没有实现什么功能。
+:可缩放的故事视图（塞西莉），这个实验性的插件提供了一个新的故事可视化，在一个无限的画布上以可调整大小的瓷砖形式显示单个的 Tiddlers。Cecily 是基于 TiddlyWiki Classic 的一个早期插件：http://jermolene.com/cecily。Cecily 目前处于开发的早期阶段，还没有实现什么功能。
 ;tiddlywiki/share
-:通过URL共享tiddlers。这个实验性插件提供了通过URL共享tiddlers的工具，包括：在启动时从浏览器位置哈希中加载一组提示符的能力，用向导和模板从一组提示符中创建URLs
+:通过 URL 共享 tiddlers。这个实验性插件提供了通过 URL 共享 tiddlers 的工具，包括：在启动时从浏览器位置哈希中加载一组提示符的能力，用向导和模板从一组提示符中创建 URLs
 
 
 ! 供开发者参考的插件
 ;tiddlywiki/tw2parser
-:TiddlyWiki经典解析器。
+:TiddlyWiki 经典解析器。
 ;tiddlywiki/xmldom
-:xmldom库，这个插件将xmldom打包供其他插件使用。它不提供任何终端用户可见的功能。
+:xmldom 库，这个插件将 xmldom 打包供其他插件使用。它不提供任何终端用户可见的功能。
 ;tiddlywiki/comments
-:主题式标签的评论，这个插件提供了一个简单的手段来为tiddlers添加线程评论。
+:主题式标签的评论，这个插件提供了一个简单的手段来为 tiddlers 添加线程评论。
 ;tiddlywiki/railroad
-:这个插件提供了一个`<$railroad>`部件，用于将铁路图生成为SVG图像。
+:这个插件提供了一个`<$railroad>`部件，用于将铁路图生成为 SVG 图像。
 ;tiddlywiki/async
-:async.js库，这个插件将async.js打包供其他插件使用。它不提供任何终端用户可见的功能。
+:async.js 库，这个插件将 async.js 打包供其他插件使用。它不提供任何终端用户可见的功能。
 ;tiddlywiki/tahoelafs
-:Tahoe-LAFS saver，这个插件提供了一个保存模块，用于保存Tahoe最小权限文件系统下的更改。
+:Tahoe-LAFS saver，这个插件提供了一个保存模块，用于保存 Tahoe 最小权限文件系统下的更改。
 ;tiddlywiki/nodewebkitsaver
-:个插件提供了一个保存模块，用于在NW.js（以前称为node-webkit）下直接使用TiddlyWiki时保存更改。
+:个插件提供了一个保存模块，用于在 NW.js（以前称为 node-webkit）下直接使用 TiddlyWiki 时保存更改。
 ;tiddlywiki/hammerjs
-:HammerJS触摸手势库，这个插件将HammerJS打包供其他插件使用。它不提供任何终端用户可见的功能。
+:HammerJS 触摸手势库，这个插件将 HammerJS 打包供其他插件使用。它不提供任何终端用户可见的功能。
 ;tiddlywiki/jszip
-:JSZip library，这个插件提供了处理Zip文件的基元。它还使JSZip库可以被其他插件使用。
+:JSZip library，这个插件提供了处理 Zip 文件的基元。它还使 JSZip 库可以被其他插件使用。
 ;tiddlywiki/sax
-:这个插件将sax.js打包供其他插件使用。它不提供任何终端用户可见的功能。
+:这个插件将 sax.js 打包供其他插件使用。它不提供任何终端用户可见的功能。
 ;tiddlywiki/blog
-:博客发布工具，这个插件包含帮助发布博客的工具。用于建立静态HTML页面和文章的模板和工具。
+:博客发布工具，这个插件包含帮助发布博客的工具。用于建立静态 HTML 页面和文章的模板和工具。
 ;tiddlywiki/d3
-:D3插件是一个与D3.js数据可视化框架（http://d3js.org）整合的概念验证演示。它目前还没有达到可以用于任何有用的状态。
+:D3 插件是一个与 D3.js 数据可视化框架（http://d3js.org）整合的概念验证演示。它目前还没有达到可以用于任何有用的状态。
 ;tiddlywiki/mobiledragdrop
-:移动拖放式垫片，这个插件提供了一个 "垫片"，可以在移动浏览器上实现HTML 5兼容的拖放操作，包括iOS和Android。安装该插件后，有必要第二次保存HTML文件，才能完全启用。
+:移动拖放式垫片，这个插件提供了一个 "垫片"，可以在移动浏览器上实现 HTML 5 兼容的拖放操作，包括 iOS 和 Android。安装该插件后，有必要第二次保存 HTML 文件，才能完全启用。
 ;tiddlywiki/googleanalytics
-:来自谷歌的网站访问者统计数据，这个插件使你能够使用谷歌分析来跟踪访问你的在线TiddlyWiki文件。基于谷歌的官方代码。
+:来自谷歌的网站访问者统计数据，这个插件使你能够使用谷歌分析来跟踪访问你的在线 TiddlyWiki 文件。基于谷歌的官方代码。
 ;tiddlywiki/filesystem
-:将变化从node.js服务器同步到本地文件系统上。文件系统插件在Node.js下使用，将tiddler的变化同步到文件系统。在浏览器中使用时，它是惰性的。
+:将变化从 node.js 服务器同步到本地文件系统上。文件系统插件在 Node.js 下使用，将 tiddler 的变化同步到文件系统。在浏览器中使用时，它是惰性的。
 ;tiddlywiki/tiddlyweb
-:将变化从浏览器同步到TW5（node.js）或TiddlyWeb服务器上，这个插件在浏览器中运行，以同步TiddlyWeb兼容的服务器（包括TiddlyWiki 5本身，在Node.js上运行）的tiddler变化。在Node.js下运行时，它是惰性的。由于该插件提供了与服务器同步设置的机制，所以通过浏览器禁用该插件不能被撤销。
+:将变化从浏览器同步到 TW5（node.js）或 TiddlyWeb 服务器上，这个插件在浏览器中运行，以同步 TiddlyWeb 兼容的服务器（包括 TiddlyWiki 5 本身，在 Node.js 上运行）的 tiddler 变化。在 Node.js 下运行时，它是惰性的。由于该插件提供了与服务器同步设置的机制，所以通过浏览器禁用该插件不能被撤销。
 ;tiddlywiki/browser-sniff
 :浏览器特征检测，这个插件增加了一些$:/info/ tiddlers，包含了关于当前浏览器的信息。它允许你创建的内容以响应不同浏览器的方式呈现。例如，https://tiddlywiki.com 使用这个插件，根据用户的浏览器，为其提供最佳的入门选项。
 ;tiddlywiki/browser-storage
-:浏览器中的本地存储，这个插件使TiddlyWiki能够在浏览器本地存储中保存tiddlers。这意味着变化被储存在浏览器中，并在重新加载基本维基时自动重新应用。在启动时，该插件从本地存储中读取tiddlers。任何与文件中内置的tiddlers相同的都会从本地存储中删除。一旦wiki启动并运行，任何tiddler的变化都会直接写入本地存储中。请谨慎地使用这个插件。有一些未解决的问题和开放性问题。
+:浏览器中的本地存储，这个插件使 TiddlyWiki 能够在浏览器本地存储中保存 tiddlers。这意味着变化被储存在浏览器中，并在重新加载基本维基时自动重新应用。在启动时，该插件从本地存储中读取 tiddlers。任何与文件中内置的 tiddlers 相同的都会从本地存储中删除。一旦 wiki 启动并运行，任何 tiddler 的变化都会直接写入本地存储中。请谨慎地使用这个插件。有一些未解决的问题和开放性问题。
 ;tiddlywiki/aws
-:亚马逊网络服务的扩展和工具，这个插件提供了几个与亚马逊网络服务合作的工具。用于将TiddlyWiki保存为ZIP文件中的单个JavaScript文件的模板，可以作为AWS Lambda函数执行。在这种形式下，TiddlyWiki是一个自包含的单一文件，同时包含代码和数据，就像独立的HTML文件配置一样。在TiddlyWiki的Node.js和Lambda配置下，可用于与AWS服务互动的命令。一个新的 "aws-encodeuricomponent "过滤器，其作用与核心的 "encodeuricomponent "过滤器类似，只是它对单引号字符进行了额外编码。
+:亚马逊网络服务的扩展和工具，这个插件提供了几个与亚马逊网络服务合作的工具。用于将 TiddlyWiki 保存为 ZIP 文件中的单个 JavaScript 文件的模板，可以作为 AWS Lambda 函数执行。在这种形式下，TiddlyWiki 是一个自包含的单一文件，同时包含代码和数据，就像独立的 HTML 文件配置一样。在 TiddlyWiki 的 Node.js 和 Lambda 配置下，可用于与 AWS 服务互动的命令。一个新的 "aws-encodeuricomponent "过滤器，其作用与核心的 "encodeuricomponent "过滤器类似，只是它对单引号字符进行了额外编码。

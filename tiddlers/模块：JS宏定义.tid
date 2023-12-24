@@ -2,12 +2,12 @@ created: 20230903002115372
 creator: WhiteFall
 modified: 20230903003054672
 modifier: WhiteFall
-tags: Wiki编程的定义
-title: 模块：JS宏定义
+tags: Wiki 编程的定义
+title: 模块：JS 宏定义
 
 例子：$:/core/modules/macros/now.js
 
-其中exports.name为宏名称，exports.params为宏参数定义，exports.run为宏执行的方法。
+其中 exports.name 为宏名称，exports.params 为宏参数定义，exports.run 为宏执行的方法。
 
 ```js
 /*\

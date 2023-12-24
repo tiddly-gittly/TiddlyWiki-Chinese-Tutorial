@@ -2,10 +2,10 @@ created: 20230427143131720
 creator: 林一二
 modified: 20230427144816757
 modifier: 林一二
-tags: B站直播 $:/tags/ViewTemplate
+tags: B 站直播 $:/tags/ViewTemplate
 title: 展示直播链接的视图模板
 type: text/vnd.tiddlywiki
 
-<$list filter="[<currentTiddler>tag[B站直播]]">
-B站录播视频链接：{{!!video-link}}
+<$list filter="[<currentTiddler>tag[B 站直播]]">
+B 站录播视频链接：{{!!video-link}}
 </$list>

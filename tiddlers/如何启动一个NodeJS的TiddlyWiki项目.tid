@@ -3,10 +3,10 @@ creator: Sttot
 modified: 20230603023236861
 modifier: 马不前
 tags: 高级知识
-title: 如何启动一个NodeJS的TiddlyWiki项目
+title: 如何启动一个 NodeJS 的 TiddlyWiki 项目
 type: text/vnd.tiddlywiki
 
-首先确保已经安装了`TiddlyWiki`，我猜你可能用两种方式安装了TiddlyWiki：全局和非全局，两种安装方法下，运行的命令是不一样的：
+首先确保已经安装了`TiddlyWiki`，我猜你可能用两种方式安装了 TiddlyWiki：全局和非全局，两种安装方法下，运行的命令是不一样的：
 
 对于使用`npm install tiddlywiki -g`进行全局安装的情况，请执行：
 
@@ -14,13 +14,13 @@ type: text/vnd.tiddlywiki
 tiddlywiki . --listen port=8080
 ```
 
-反之就是非全局(安装的时候没有加`-g`，目录下有个`package.json`和`node_modules`)，执行：
+反之就是非全局 (安装的时候没有加`-g`，目录下有个`package.json`和`node_modules`)，执行：
 
 ```shell
 npx tiddlywiki . --listen port=8080
 ```
 
-就可以启动一个NodeJS项目了，现在命令行应该会有以下的输出：
+就可以启动一个 NodeJS 项目了，现在命令行应该会有以下的输出：
 
 ```
  syncer-server-filesystem: Dispatching 'save' task: $:/StoryList
@@ -39,7 +39,7 @@ Error: listen EADDRINUSE: address already in use 127.0.0.1:8080
 
 就说明`8080`号端口已经被占用，随便换几个试试，将`--listen port=8080`里面的`8080`换成`8081`什么的试试。
 
-对于HTMLWiki执行解压后的文件夹wiki，你可以使用这条命令：
+对于 HTMLWiki 执行解压后的文件夹 wiki，你可以使用这条命令：
 
 ```shell
 tiddlywiki +plugins/tiddlywiki/filesystem +plugins/tiddlywiki/tiddlyweb ./你的wiki文件夹目录 --listen port=8080（自定义且没有被占用的端口）

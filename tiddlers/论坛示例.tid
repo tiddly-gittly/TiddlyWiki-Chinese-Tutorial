@@ -22,9 +22,9 @@ type: text/vnd.tiddlywiki
 </$button>
 ```
 
-这个代码还挺复杂的，不过多少也可以了解。首先是设置`$:/StoryList`条目里的lsit的值。然后是一个超长的动态筛选器，先是排除所有系统条目，再排除有标签`z hidden`的，再判断其中得有`last-reviewed3`字段。
+这个代码还挺复杂的，不过多少也可以了解。首先是设置`$:/StoryList`条目里的 lsit 的值。然后是一个超长的动态筛选器，先是排除所有系统条目，再排除有标签`z hidden`的，再判断其中得有`last-reviewed3`字段。
 
-然后在这个基础上通过`filter`筛选器，里面有一个days筛选，筛选出`last-reviewed3`超过`interval3`天数的。也就是`last-reviewed3` 至少为`interval3`{未来|过去}天。当然这个因为没有实际的例子，不好直接理解。这好像是钓鱼插件里用来控制间隔天数的字段。
+然后在这个基础上通过`filter`筛选器，里面有一个 days 筛选，筛选出`last-reviewed3`超过`interval3`天数的。也就是`last-reviewed3` 至少为`interval3`{未来 | 过去}天。当然这个因为没有实际的例子，不好直接理解。这好像是钓鱼插件里用来控制间隔天数的字段。
 
 后面对筛选出来的条目进行排序，按`last-reviewed3`字段排序，格式是`titlelist`，也就是以标题清单的形式显示。后面的`join[ ]`是指，如果标题里含有空格，就用`[]`包含起来，不过我感觉这个效果不是很好的样子。
 

@@ -2,11 +2,11 @@ created: 20211004043451171
 creator: 林一二
 modified: 20211004050757541
 modifier: 林一二
-tags: WikiText与JavaScript的交互
-title: WikiText发送消息给JavaScript
+tags: WikiText 与 JavaScript 的交互
+title: WikiText 发送消息给 JavaScript
 type: text/vnd.tiddlywiki
 
-!! JS侧注册消息
+!! JS 侧注册消息
 
 ```js
 
@@ -28,7 +28,7 @@ $tw.rootWidget.addEventListener('open-command-palette', (e: IEvent) => this.open
 
 其余字段如 `param` 的来源可见 [[widgets/action-sendmessage.js SendMessageWidget.prototype.invokeAction|https://github.com/Jermolene/TiddlyWiki5/blob/ac022ec79f05715f62fd8382ebb6b49cd1c8f960/core/modules/widgets/action-sendmessage.js#L76]]。
 
-!! WikiText侧发送消息
+!! WikiText 侧发送消息
 
 ```html
 <$action-sendmessage $message="open-command-palette" $param=">"/>

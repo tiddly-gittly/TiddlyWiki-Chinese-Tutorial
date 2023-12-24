@@ -3,10 +3,10 @@ creator: 林一二
 modified: 20230825040602923
 modifier: 林一二
 tags: 插件使用
-title: TW-MobiLe-Sync手机tiddloid移动端同步TidGi桌面端插件
+title: TW-MobiLe-Sync 手机 tiddloid 移动端同步 TidGi 桌面端插件
 type: text/vnd.tiddlywiki
 
-本插件可以让你在基于NodeJS技术的桌面应用（例如太记）和基于HTML文件的手机端（例如Tiddloid安卓应用）之间同步数据。
+本插件可以让你在基于 NodeJS 技术的桌面应用（例如太记）和基于 HTML 文件的手机端（例如 Tiddloid 安卓应用）之间同步数据。
 
 手机应用 ↔ 桌面应用 ↔ 云端
 
@@ -14,14 +14,14 @@ type: text/vnd.tiddlywiki
 
 * 喜欢视频版可以看林一二录制的[[B站视频教程|https://www.bilibili.com/video/BV1Wg411r7Yu/?spm_id_from=333.999.0.0]]。
 ** 注意看评论区有没有更新的建议
-* [[代码仓库|https://github.com/tiddly-gittly/tw-mobile-sync]]，有bug来这里提issue。
+* [[代码仓库|https://github.com/tiddly-gittly/tw-mobile-sync]]，有 bug 来这里提 issue。
 
 !! 安装
 
 # 通过[[CPL|安装CPL插件源]]搜索 `tw-mobile-sync` 安装此插件（名字可能为「Mobile NodeJS Sync」）。
 # 还有通过官方插件源搜索 `qrcode` 安装 QRCode 插件（二维码插件）。
 
-（建议在安装好后，打开插件看这个插件的Readme，以查看最新的使用方式和相关链接）
+（建议在安装好后，打开插件看这个插件的 Readme，以查看最新的使用方式和相关链接）
 
 !! 使用方式
 
@@ -30,9 +30,9 @@ type: text/vnd.tiddlywiki
 # ''使用浏览器的分享功能''，将这个网页分享给 Tiddloid 应用
 ## 使用分享功能创建 wiki，需要保证 Tiddloid 里没有设置过默认 wiki
 ### 通过在 Tiddloid 的 wiki 列表页面，长按某个 wiki 弹出设置窗口，可以设置默认 wiki
-### 在有默认wiki的情况，从其它 app 例如网页分享的内容，就会变成新条目插入剪藏进 wiki 去了，例如分享网页就会创建新条目把分享的网址插进默认wiki里面
+### 在有默认 wiki 的情况，从其它 app 例如网页分享的内容，就会变成新条目插入剪藏进 wiki 去了，例如分享网页就会创建新条目把分享的网址插进默认 wiki 里面
 ## 如果分享功能导致报错，可以试着保存出 HTML 文件后（详见中文教程的[[如何保存|https://tw-cn.netlify.app/#TiddlyGit%E5%A4%AA%E8%AE%B0]]章节），在 Tiddloid 里打开保存的 HTML 文件
-### （可能需要先将文件移出下载目录不然Tiddloid无权限访问，详见其[[说明书|https://github.com/donmor/Tiddloid]]）。
+### （可能需要先将文件移出下载目录不然 Tiddloid 无权限访问，详见其[[说明书|https://github.com/donmor/Tiddloid]]）。
 ### 有些 wiki 用这种方式保存会导致后续保存 wiki 时报错，所以建议还是先尝试直接分享的方式
 
 这时你应该已经创建好 wiki 并打开它了。
@@ -42,7 +42,7 @@ type: text/vnd.tiddlywiki
 # 将上面扫码得到的 URL 复制一下，填入[[服务器列表|$:/plugins/linonetwo/tw-mobile-sync/ui/ServerList]]里的「智能识别黏贴框」
 ## 你也可以点击「扫二维码」按钮开始扫码，扫码结果会自动填入「智能识别黏贴框」内
 # 然后点击「智能识别」按钮，会自动将 URL 解析后填入相应框内。
-# 此时，「服务器IP」和「服务器端口」框里应该要已经填好了 ip 和端口号
+# 此时，「服务器 IP」和「服务器端口」框里应该要已经填好了 ip 和端口号
 # 你需要填写一下「服务器名」这个框
 # 点击「新增服务器」，会新建一个服务器信息条目，请确认创建此条目
 # 这时新的服务器应该就出现在服务器列表里了，你可以点击「启用同步并立即同步」按钮，这样就可以在桌面端和手机端同步数据了
@@ -54,6 +54,6 @@ type: text/vnd.tiddlywiki
 
 就是因为你新添加服务器后，它只会同步新建服务器之后新建的条目。''这是又因为新建服务器时会根据当前时间添加一个 lastSync 字段，目前在点击同步按钮时，只会同步这个时间点之后的内容。你可以手动把服务器条目里这个字段的时间改早一天，这样就会同步你今天添加的内容了。''未来我们将会添加更智能的同步方式，就不再需要这个字段了，就不会遇到这个问题了。
 
-!!! 提醒请设置默认wiki
+!!! 提醒请设置默认 wiki
 
-没有默认wiki的情况，via 浏览器会提醒请设置默认wiki，不会打开wiki。别的浏览器则可以通过分享直接创建wiki。
+没有默认 wiki 的情况，via 浏览器会提醒请设置默认 wiki，不会打开 wiki。别的浏览器则可以通过分享直接创建 wiki。

@@ -32,11 +32,11 @@ type: text/vnd.tiddlywiki
 
 `<<?tts "你好，世界">>`实现效果如下，点击按钮就可以听到声音了。
 
-<<?tts "你好，世界">><<fnote "因为本站没安装speech-synthesis插件，所以就听不出来。具体可去[[链接|https://dongrentianyu.github.io/WENAI/#%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E8%AF%AD%E9%9F%B3%E9%A2%98%EF%BC%9F]]里听。">>
+<<?tts "你好，世界">><<fnote "因为本站没安装 speech-synthesis 插件，所以就听不出来。具体可去[[链接|https://dongrentianyu.github.io/WENAI/#%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E8%AF%AD%E9%9F%B3%E9%A2%98%EF%BC%9F]]里听。">>
 
 当然为了更好地学习，我们还可以制作一个同钓鱼插件里其他编辑按钮一样的按钮。具体可参考这个条目的内容[[TTS-button]]。
 
-总结：安装`speech-synthesis`插件，把[[TTS宏]]和[[TTS-button]]和[[$:/images/forge-icons/play]]三个条目拖到你的wiki里去，就可以在钓鱼插件里制作语音题了。
+总结：安装`speech-synthesis`插件，把[[TTS宏]]和[[TTS-button]]和[[$:/images/forge-icons/play]]三个条目拖到你的 wiki 里去，就可以在钓鱼插件里制作语音题了。
 
 ---
 下面是制作条目页面上按钮。仅供参考。
@@ -48,9 +48,9 @@ type: text/vnd.tiddlywiki
   <$speech-synthesis text={{!!title}} />
 </$button>
 ```
-新建一个条目，把上面的代码放进去。其中`$:/core/images/erase`是随意找的官网的一个图标，可以替换成其他图标。`text={{!!title}}`其中的title是要读的内容。我们用钓鱼插件制卡的话，需要改成caption。也就是`text={{!!caption}}`。并加上标签`$:/tags/ViewToolbar`。
+新建一个条目，把上面的代码放进去。其中`$:/core/images/erase`是随意找的官网的一个图标，可以替换成其他图标。`text={{!!title}}`其中的 title 是要读的内容。我们用钓鱼插件制卡的话，需要改成 caption。也就是`text={{!!caption}}`。并加上标签`$:/tags/ViewToolbar`。
 
-点击就可以听到读caption的内容了。一般来说这样就够了。~~但有些人可能会想只有在做语音题的时候才用到这个功能，那就可以在前面加上一个list筛选器，然后这样就只会在筛选出来的条目标题上显示这个按钮了。其他条目上不会显示。~~
+点击就可以听到读 caption 的内容了。一般来说这样就够了。~~但有些人可能会想只有在做语音题的时候才用到这个功能，那就可以在前面加上一个 list 筛选器，然后这样就只会在筛选出来的条目标题上显示这个按钮了。其他条目上不会显示。~~
 
 完整代码如下
 

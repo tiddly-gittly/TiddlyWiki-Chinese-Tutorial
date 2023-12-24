@@ -17,7 +17,7 @@ type: text/vnd.tiddlywiki
 }
 ```
 
-但notebook主题比较特殊，需要用另外的代码来修改。具体参考下面的代码。
+但 notebook 主题比较特殊，需要用另外的代码来修改。具体参考下面的代码。
 
 ```
 .CodeMirror-lines {
@@ -28,4 +28,4 @@ type: text/vnd.tiddlywiki
 }
 ```
 
-里面font-size的数值可以自己调整。
+里面 font-size 的数值可以自己调整。

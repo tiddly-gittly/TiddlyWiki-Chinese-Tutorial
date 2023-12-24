@@ -2,7 +2,7 @@ created: 20230307085803297
 creator: 林一二
 modified: 20230516132339093
 modifier: 马不前
-tags: B站直播 自定义样式修改类
+tags: B 站直播 自定义样式修改类
 title: 如何添加在线字体
 type: text/vnd.tiddlywiki
 video-link: https://www.bilibili.com/video/BV1K84y1A7aJ/
@@ -18,7 +18,7 @@ video-link: https://www.bilibili.com/video/BV1K84y1A7aJ/
 ```
 找到网站右边复制一段类似上面的代码放到条目正文里。然后
 
-* 在控制面板-视觉外观-主题调整-设置-字型里使用这个字体名
+* 在控制面板 - 视觉外观 - 主题调整 - 设置 - 字型里使用这个字体名
 * 或者直接去[[$:/themes/tiddlywiki/vanilla/settings/fontfamily]]这个条目里添加上你选择的格式放在最前面。比如我的是`'Noto Serif SC', serif;`。保存刷新就可以看到效果了。
 
 不过我发现上面网站里没几款字体。楷体都没找到，只有这种宋体或者衬线体。另一款比较黑的，对英文支持不太好。英文根本就不能阅读了，简直是草书。目前先用这个字体吧，配合整体的绿色，感觉还是很小清新的。
@@ -31,7 +31,7 @@ video-link: https://www.bilibili.com/video/BV1K84y1A7aJ/
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css" />
 ```
 
-和上面描述的一样，需要加上`$:/tags/RawMarkup`标签，正文是一个link链接，直接复制就可以。type设置为`text/html`。再到[[$:/themes/tiddlywiki/vanilla/settings/fontfamily]]最前面添加`"LXGW WenKai Lite";`。然后需要在标签层级里把`霞鹜文楷`（或者你设置的标题）放到最前。
+和上面描述的一样，需要加上`$:/tags/RawMarkup`标签，正文是一个 link 链接，直接复制就可以。type 设置为`text/html`。再到[[$:/themes/tiddlywiki/vanilla/settings/fontfamily]]最前面添加`"LXGW WenKai Lite";`。然后需要在标签层级里把`霞鹜文楷`（或者你设置的标题）放到最前。
 
 不放到最前是看不到效果的。点开标签就可以看到层级。
 
@@ -45,16 +45,16 @@ https://www.jsdelivr.com/?query=lxgw
 
 !! 修改设置
 
-最后记得把字体名字填到 控制面板-视觉外观-主题调整-字形 里面，然后要刷新浏览器，不生效记得看看右键开发者工具-网络，里面字体文件网络加载成功没有
+最后记得把字体名字填到 控制面板 - 视觉外观 - 主题调整 - 字形 里面，然后要刷新浏览器，不生效记得看看右键开发者工具 - 网络，里面字体文件网络加载成功没有
 
-编辑器字体则是改那个 控制面板-视觉外观-主题调整-编辑器字形。还有个代码字形，是指预览状态下的代码块里的字体。
+编辑器字体则是改那个 控制面板 - 视觉外观 - 主题调整 - 编辑器字形。还有个代码字形，是指预览状态下的代码块里的字体。
 
 
 !! 常见问题
 
-!!! 如果你修改编辑器字形后不生效，可能因为要安装codemirro插件才行。
+!!! 如果你修改编辑器字形后不生效，可能因为要安装 codemirro 插件才行。
 
-如果你未安装codemirro插件，可能是因为你使用了太微空白版在从头配置一切，如果你是第一次使用太微，建议还是用[[TidGi太记]]，而不是从头配起，以免占用你本可以用于工作学习娱乐的宝贵时间。
+如果你未安装 codemirro 插件，可能是因为你使用了太微空白版在从头配置一切，如果你是第一次使用太微，建议还是用[[TidGi太记]]，而不是从头配起，以免占用你本可以用于工作学习娱乐的宝贵时间。
 
 !!! 装到电脑上行不行
 

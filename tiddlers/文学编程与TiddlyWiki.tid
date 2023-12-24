@@ -3,14 +3,14 @@ creator: 马不前
 modified: 20230901071924195
 modifier: WhiteFall
 tags: 编程知识类
-title: 文学编程与TiddlyWiki
+title: 文学编程与 TiddlyWiki
 type: text/vnd.tiddlywiki
 
-TiddlyWiki像是一种编程与写作的工具，更是一种“开发框架/知识管理操作系统”。
+TiddlyWiki 像是一种编程与写作的工具，更是一种“开发框架/知识管理操作系统”。
 
-> 1983年，Donald Knuth提出了一种新的编程范型，称为“文学编程”。他说文学编程是“一种将编程语言与文档语言相结合的方法，从而使编写的程序比只用高级语言编写的程序更强大、更便捷、更易维护，而且可以说更有趣。主要思想是把程序当作文学作品，用人的语言而不是计算机的”。
+> 1983 年，Donald Knuth 提出了一种新的编程范型，称为“文学编程”。他说文学编程是“一种将编程语言与文档语言相结合的方法，从而使编写的程序比只用高级语言编写的程序更强大、更便捷、更易维护，而且可以说更有趣。主要思想是把程序当作文学作品，用人的语言而不是计算机的”。
 
-即经过编程后的文学或笔记作品。因为TiddlyWiki是以写作为目标的工具，而不是编程为目标的工具，所以编程文学这个词可能比较合适。此外Jupyter notebook使用MD和anyCode编写文档和代码完成编程目标，而TiddlyWiki使用[[WikiText写作|WikiText笔记与写作（进一步的可能）]]和[[Wiki编程|Wiki编程的定义]]组织和编写文档完成写作目标。
+即经过编程后的文学或笔记作品。因为 TiddlyWiki 是以写作为目标的工具，而不是编程为目标的工具，所以编程文学这个词可能比较合适。此外 Jupyter notebook 使用 MD 和 anyCode 编写文档和代码完成编程目标，而 TiddlyWiki 使用[[WikiText写作|WikiText笔记与写作（进一步的可能）]]和[[Wiki编程|Wiki编程的定义]]组织和编写文档完成写作目标。
 
 !! 早期：Donald Knuth 在 1984 带来 Literate Programming 的概念
 
@@ -20,7 +20,7 @@ Leo Editor 等编辑器忠实还原了这个体验，将任意业务代码和注
 
 !! 科学计算和数据科学：Mathematica 在 1988 年引入了笔记本界面
 
-更广为人知人用的是 IPython → IPython Notebook → Jupyter notebook → Jupyter Lab ，自从 2014 年 Fernando Pérez and Brian Granger 从 IPython 中建立起 IPython Notebook，越来越多的人爱上了这种混合代码和文档的写作方式。
+更广为人知人用的是 IPython → IPython Notebook → Jupyter notebook → Jupyter Lab，自从 2014 年 Fernando Pérez and Brian Granger 从 IPython 中建立起 IPython Notebook，越来越多的人爱上了这种混合代码和文档的写作方式。
 
 这类笔记本应用通过缓存之前步骤结果，允许从程序逻辑中的断点处出发尝试新的方案，笔记本让使用者能更快地进行树状的实验迭代。这种编程/实验方式称为「探索式编程」（exploratory programming）。
 
@@ -37,10 +37,10 @@ Leo Editor 等编辑器忠实还原了这个体验，将任意业务代码和注
 
 !! 为什么传统的文式编程消失，新的文式编程不断简化
 
-其实用宏和JSDoc就能基本替代传统的文式编程了：
+其实用宏和 JSDoc 就能基本替代传统的文式编程了：
 
-# 宏允许我们在编译期复用代码，类似文式编程中的嵌入Transclusion
-# JSDoc可以在代码里写 Markdown，类似于文式编程里的代码笔记混写。
+# 宏允许我们在编译期复用代码，类似文式编程中的嵌入 Transclusion
+# JSDoc 可以在代码里写 Markdown，类似于文式编程里的代码笔记混写。
 
 而简化后的代码和文档混写的笔记本应用能与 IDE 分庭抗礼，甚至[[内置到VSCode中与代码模式共存|https://code.visualstudio.com/blogs/2021/11/08/custom-notebooks]]，是因为其断点续播的特性很适合实验阶段。工程阶段大家还是会继续使用 IDE，让笔记本和编程环境占有不同的两个生态位。
 

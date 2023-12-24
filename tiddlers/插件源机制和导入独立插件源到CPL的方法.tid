@@ -2,9 +2,9 @@ created: 20230515132341663
 creator: 林一二
 modified: 20230530052055391
 modifier: 马不前
-tags: B站直播
-title: 插件源机制和导入独立插件源到CPL的方法
+tags: B 站直播
+title: 插件源机制和导入独立插件源到 CPL 的方法
 type: text/vnd.tiddlywiki
 video-link: https://www.bilibili.com/video/BV1Bg4y1c7YW
 
-刚导入了 [[benwebber插件源]]， CPL 那个仓库可以用 npm run importlibrary 导入别的插件库
+刚导入了 [[benwebber插件源]]，CPL 那个仓库可以用 npm run importlibrary 导入别的插件库

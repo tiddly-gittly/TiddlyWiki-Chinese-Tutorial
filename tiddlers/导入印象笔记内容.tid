@@ -6,9 +6,9 @@ modifier: 林一二
 tags: 插件使用 从其它笔记软件迁移
 title: 导入印象笔记内容
 
-!! 把笔记从印象笔记中导出，生成enex格式
+!! 把笔记从印象笔记中导出，生成 enex 格式
 
-使用[[vzhd1701/evernote-backup|https://github.com/vzhd1701/evernote-backup]]项目，安装方法见其 Readme。需要懂英文和使用命令行，不懂的可以配合AI解释。通用的安装方法为命令行里执行：
+使用[[vzhd1701/evernote-backup|https://github.com/vzhd1701/evernote-backup]]项目，安装方法见其 Readme。需要懂英文和使用命令行，不懂的可以配合 AI 解释。通用的安装方法为命令行里执行：
 
 ```sh
 pip install --user evernote-backup

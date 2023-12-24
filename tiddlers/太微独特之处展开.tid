@@ -7,10 +7,10 @@ title: 太微独特之处展开
 type: text/vnd.tiddlywiki
 
 # 卡片化输入、卡片流展示：降低输入成本、灵活组织输出
-# 卡片的展示完全可自定义（视图-数据分离）：为自己的独特需求优化输入输出 （[[Projectify-日历表单|https://projectify.wiki/demo.html]]
-# 过滤器智能聚合：自动化组织输出，降低信息整理成本 （[[太微背景介绍]]）
-# 维基宏和微件（widget）：用简单的文本快速搭建复杂应用 （[[文件目录|$:/plugins/linonetwo/itonnote/Sidebar/FolderMenu]]）
-# 适配MD、WIKI语法等多种格式：可以直接打开 Obsidian、Typora、Foam 等笔记工具的文件夹
-# 开源开放的核心和插件社区：数据自有、存储永久；开发有力、激发创意 （详见[[入门幻灯片]]）
+# 卡片的展示完全可自定义（视图 - 数据分离）：为自己的独特需求优化输入输出（[[Projectify-日历表单|https://projectify.wiki/demo.html]]
+# 过滤器智能聚合：自动化组织输出，降低信息整理成本（[[太微背景介绍]]）
+# 维基宏和微件（widget）：用简单的文本快速搭建复杂应用（[[文件目录|$:/plugins/linonetwo/itonnote/Sidebar/FolderMenu]]）
+# 适配 MD、WIKI 语法等多种格式：可以直接打开 Obsidian、Typora、Foam 等笔记工具的文件夹
+# 开源开放的核心和插件社区：数据自有、存储永久；开发有力、激发创意（详见[[入门幻灯片]]）
 
 `// Demo 时间`

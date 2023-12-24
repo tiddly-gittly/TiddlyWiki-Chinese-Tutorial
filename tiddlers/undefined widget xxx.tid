@@ -16,6 +16,6 @@ type: text/vnd.tiddlywiki
 
 *根本原因
 
-有一个提供 xxx （例如例子里的 dynannotate） [[微件]] 的插件没有安装。
+有一个提供 xxx（例如例子里的 dynannotate） [[微件]] 的插件没有安装。
 
-可以去 CPL 搜索这个 xxx （例如例子里的 dynannotate），来补充安装。如果 CPL 里没搜到，就到[[官方插件源|使用插件源]]去安装。
+可以去 CPL 搜索这个 xxx（例如例子里的 dynannotate），来补充安装。如果 CPL 里没搜到，就到[[官方插件源|使用插件源]]去安装。

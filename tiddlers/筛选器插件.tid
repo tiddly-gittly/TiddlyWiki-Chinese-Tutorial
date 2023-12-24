@@ -6,8 +6,8 @@ tags: 插件列表
 title: 筛选器插件
 type: text/vnd.tiddlywiki
 
-* ❤️kin-filter（递归地查找tiddler titles之间的隶属关系）
+* ❤️kin-filter（递归地查找 tiddler titles 之间的隶属关系）
 * ❤️Tiddler Commander
 * ❤️内容搜索（context search）:danielo/context
 * 随机[[random|https://tobibeer.github.io/tw5-plugins/#random]]
-* ❤️FilterBuilder条目：xp/Aggregation的FilterBuilder条目快速构建一个筛选表达式
+* ❤️FilterBuilder 条目：xp/Aggregation 的 FilterBuilder 条目快速构建一个筛选表达式

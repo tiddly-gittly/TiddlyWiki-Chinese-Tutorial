@@ -58,9 +58,9 @@ html body, .tc-sidebar-scrollable-backdrop {
 
 注意 `font-family` 和 `src` 那边都改成字体的真实名字，例如黑体就是 `SimHei`。
 
-之后在控制面板-视觉外观-主题调整-设置-字型里就可以使用这个字体名了。
+之后在控制面板 - 视觉外观 - 主题调整 - 设置 - 字型里就可以使用这个字体名了。
 
-常见的字体格式是ttf，像[[如何添加在线字体]]里的例子，仓库里下载下来的就是ttf格式，但太微本身不支持这种格式，或者是因为这种格式中文字体非常大。所以需要把ttf字体格式转成woff2格式。可去这个[[网站|https://products.aspose.app/font/zh/conversion/ttf-to-woff2]]转换。霞鹜文楷字体我把转换文件放qq群里了。字体文件有点大，添加过程会有卡顿，稍微等一等。
+常见的字体格式是 ttf，像[[如何添加在线字体]]里的例子，仓库里下载下来的就是 ttf 格式，但太微本身不支持这种格式，或者是因为这种格式中文字体非常大。所以需要把 ttf 字体格式转成 woff2 格式。可去这个[[网站|https://products.aspose.app/font/zh/conversion/ttf-to-woff2]]转换。霞鹜文楷字体我把转换文件放 qq 群里了。字体文件有点大，添加过程会有卡顿，稍微等一等。
 
 
 !! 手动操作（高级）
@@ -73,4 +73,4 @@ html body, .tc-sidebar-scrollable-backdrop {
 
 正如[[Base64编码的 OpenType 字体使用数据 URI-Stack Overflow|https://stackoverflow.com/questions/35120217/base64-encoded-opentype-font-face-using-data-uri]]中所说的那样。
 
-例如: fix: fira 代码加载很慢，使用本地版本 · tiddle-gitonnote-theme@ff75e1a · GitHub 1
+例如：fix: fira 代码加载很慢，使用本地版本 · tiddle-gitonnote-theme@ff75e1a · GitHub 1

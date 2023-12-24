@@ -42,21 +42,21 @@ type: text/vnd.tiddlywiki
 
 !! 私有内容
 
-上面说的工作区称为主工作区，还有一种子工作区，它们对应的 git 仓库在用户电脑上通过 soft link （软链接、快捷方式）连接到别的工作区的 git 文件夹里。这种工作区，称为子工作区。
+上面说的工作区称为主工作区，还有一种子工作区，它们对应的 git 仓库在用户电脑上通过 soft link（软链接、快捷方式）连接到别的工作区的 git 文件夹里。这种工作区，称为子工作区。
 
 通过创建同步到 Github Private repo 的子工作区，然后将它在用户电脑上做一个这种快捷方式，就可以在本地的主工作区里看到所有笔记，但是在线上公开的 Github 仓库里则不会包含隐私内容。
 
-太微里有一个功能，可以根据条目所加的标签（及标签的树状父子关系等），把条目在文件系统上放入不同文件夹，所以就可以把加了 「Private」 标签的条目及其子条目自动放进去。
+太微里有一个功能，可以根据条目所加的标签（及标签的树状父子关系等），把条目在文件系统上放入不同文件夹，所以就可以把加了「Private」标签的条目及其子条目自动放进去。
 
 !! 前端和硬盘的同步
 
-太微里每个笔记（叫 Tiddlers ，条目，很小的小鱼的意思，寓意适合卡片笔记写作法）都是一个 JSON，其中 text 字段是具体的笔记内容，还有 title、created、tags、authors 等字段。
+太微里每个笔记（叫 Tiddlers，条目，很小的小鱼的意思，寓意适合卡片笔记写作法）都是一个 JSON，其中 text 字段是具体的笔记内容，还有 title、created、tags、authors 等字段。
 
-这个 JSON 会通过一个叫 `tiddlywiki/tiddlyweb` 的 SyncAdaptor （同步适配器）插件将渲染进程里的前端页面上新增的条目同步到客户端主进程里的内存中，然后通过 `tiddlywiki/filesystem` 这个同步适配器再将主进程内存中的 JSON 持久化到文件系统上，变成纯文本的 .tid 文件（顺应了很多用户喜欢看得见摸得着的文件的喜好，也方便 git diff）。
+这个 JSON 会通过一个叫 `tiddlywiki/tiddlyweb` 的 SyncAdaptor（同步适配器）插件将渲染进程里的前端页面上新增的条目同步到客户端主进程里的内存中，然后通过 `tiddlywiki/filesystem` 这个同步适配器再将主进程内存中的 JSON 持久化到文件系统上，变成纯文本的 .tid 文件（顺应了很多用户喜欢看得见摸得着的文件的喜好，也方便 git diff）。
 
 此后桌面端应用会用 [[tiddly-gittly/git-sync-js|https://github.com/tiddly-gittly/git-sync-js]] 包定时自动 rebase push 到 Github。
 
-在太记这个桌面应用中，主进程会为每一个工作区启动一个 worker_thread ，在里面启动一个 http 服务器运行太微，并通过 HTTP 路由插件提供 CRUD。渲染进程加载 `/` 路由获取 wiki 框架、加载插件和笔记，展示给用户。
+在太记这个桌面应用中，主进程会为每一个工作区启动一个 worker_thread，在里面启动一个 http 服务器运行太微，并通过 HTTP 路由插件提供 CRUD。渲染进程加载 `/` 路由获取 wiki 框架、加载插件和笔记，展示给用户。
 
 因此 `tiddlywiki/tiddlyweb` 同步适配器插件在主进程和渲染进程都各有一个实例，它们通过插件提供的 `PUT /tiddler` 等路由来同步笔记。
 
@@ -64,7 +64,7 @@ type: text/vnd.tiddlywiki
 
 太微里的插件可以访问到所有笔记内容，可以在主线程启动 HTTP 路由，因此可以随便手写一个 JS 脚本笔记来同步、导入导出数据。例如 `tw-mobile-sync` 插件就添加了一个 `POST /tw-mobile-sync/html-node-sync` 路由，让手机端的单 HTML WIKI 可以向桌面端 POST 新增的条目，并收到桌面端新增的条目，完成简单的同步。
 
-更正式一点的是符合 Saver 接口的 Saver （保存器）插件，例如 `github-saver` 插件会利用用户填的 token，将 wiki 内容序列化为 HTML 后，通过 HTTP 接口提交上去，新建一个 commit 完成备份。`fallback-saver` 则可以在其它保存方式不生效的时候，强制将序列化的 wiki 导出为 HTML 文件下载到本地。
+更正式一点的是符合 Saver 接口的 Saver（保存器）插件，例如 `github-saver` 插件会利用用户填的 token，将 wiki 内容序列化为 HTML 后，通过 HTTP 接口提交上去，新建一个 commit 完成备份。`fallback-saver` 则可以在其它保存方式不生效的时候，强制将序列化的 wiki 导出为 HTML 文件下载到本地。
 
 最高效的是符合同步适配器接口的插件，例如 [[linonetwo/solid-tiddlywiki-syncadaptor|https://github.com/linonetwo/solid-tiddlywiki-syncadaptor]] 会在用户将它启用后，在每次有笔记变更时被调用，自行将最新的变更提交到配置的后端上。同步适配器一般会从用户 wiki 中找到特定标题或加了特定标签的笔记，从中获取 token 以及同步地址 url。例如这个将数据持久化到 SoLiD 语义网服务器的同步适配器，将会尝试从标题为 `$:/plugins/linonetwo/solid-tiddlywiki-syncadaptor/TWContainers` 的条目中找 [[LDP|https://www.w3.org/TR/ldp/]] （互联数据平台）的 url，作为存储地址。
 

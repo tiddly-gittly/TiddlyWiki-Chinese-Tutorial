@@ -3,7 +3,7 @@ creator: 林一二
 modified: 20220416140935979
 modifier: 林一二
 tags: 排查问题
-title: 排查nodejs加载慢
+title: 排查 nodejs 加载慢
 type: text/vnd.tiddlywiki
 
 首先进到一个 tw npm 包文件夹里，例如
@@ -12,7 +12,7 @@ type: text/vnd.tiddlywiki
 cd /xxx/TiddlyGit-Desktop/node_modules/@tiddlygit/tiddlywiki
 ```
 
-然后加载一个wiki文件夹，以 `/xxx/wiki/wiki` 为例就是
+然后加载一个 wiki 文件夹，以 `/xxx/wiki/wiki` 为例就是
 
 ```shell
 node -prof ./tiddlywiki.js +plugins/tiddlywiki/filesystem +plugins/tiddlywiki/tiddlyweb /xxx/wiki/wiki --listen root-tiddler=$:/core/save/lazy-images

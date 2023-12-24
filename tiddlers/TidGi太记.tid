@@ -3,8 +3,8 @@ created: 20211005051214953
 creator: 林一二
 modified: 20231013042239012
 modifier: 林一二
-tags: 全平台软件和存储方式 TiddlyWiki发行版本介绍
-title: TidGi太记
+tags: 全平台软件和存储方式 TiddlyWiki 发行版本介绍
+title: TidGi 太记
 type: text/vnd.tiddlywiki
 
 TidGi 是 TiddlyWiki + Git 的缩写简称，因为太记除了作为太微的[[启动器]]以外，还能自动进行 Git 细粒度同步备份，在备份的同时节省硬盘空间。

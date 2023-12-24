@@ -6,7 +6,7 @@ tags: 主题集 自定义样式修改类
 title: 显示行号、高亮当前行、设置编辑区高度
 type: text/vnd.tiddlywiki
 
-安装官方的codemirror
+安装官方的 codemirror
 
 控制面板 -设置 -CodeMirror，找到这两个选项启用他们
 
@@ -25,4 +25,4 @@ $:/plugins/tiddlywiki/codemirror/lib/codemirror.css
 min-height:1px
 ```
 
-min-height修改为80px即可
+min-height 修改为 80px 即可

@@ -3,10 +3,10 @@ creator: WhiteFall
 modified: 20230516132221862
 modifier: 马不前
 tags: 自定义样式修改类
-title: TWPUB格式书籍CSS样式表
+title: TWPUB 格式书籍 CSS 样式表
 type: text/vnd.tiddlywiki
 
-新建条目：''Stylesheet_TWpubCSS''（任意条目名），订上`$:/tags/Stylesheet`标签，条目内容为下面CSS样式、条目类型为`text/css`。
+新建条目：''Stylesheet_TWpubCSS''（任意条目名），订上`$:/tags/Stylesheet`标签，条目内容为下面 CSS 样式、条目类型为`text/css`。
 
 ```css
 [id^="$:/plugins/twpub/"] {
@@ -15,6 +15,6 @@ type: text/vnd.tiddlywiki
     line-height: 1.5;
     /* 行间距 */
     text-indent: 2em;
-    /* 首行缩进2字符 */
+    /* 首行缩进 2 字符 */
 }
 ```

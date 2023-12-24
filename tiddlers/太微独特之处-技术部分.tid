@@ -2,14 +2,14 @@ created: 20220107111655244
 creator: 林一二
 modified: 20230901063036405
 modifier: WhiteFall
-tags: 科普幻灯片 Wiki编程的定义
-title: 太微独特之处-技术部分
+tags: 科普幻灯片 Wiki 编程的定义
+title: 太微独特之处 - 技术部分
 type: text/vnd.tiddlywiki
 
 太微的创造者、主力开发程序员 Jeremy 在[[talkytalky演讲|https://tiddlywiki.com/talkytalky/]]里这样介绍太微：
 
 <<<
-太微（TiddlyWiki）是一个通用的 JavaScript wiki，可以完全在浏览器中运行，也可以在 Node.js 下运行。 在内部，它是一个用于高效解析和渲染 wikitext 语言的渲染管线，该语言足够丰富以表达整个用户界面。 
+太微（TiddlyWiki）是一个通用的 JavaScript wiki，可以完全在浏览器中运行，也可以在 Node.js 下运行。在内部，它是一个用于高效解析和渲染 wikitext 语言的渲染管线，该语言足够丰富以表达整个用户界面。 
 <<<
 
 也就是说太微本质上是一个知识管理系统的''开发框架''，可以让用户快速定制开发出''适合自己''的「个人知识管理（PKM）系统」。但它丰富的插件市场让它的易用程度越来越高，普通用户也能即开即用，并在日常使用过程中潜移默化地也成为一名新的 PKM 开发者。

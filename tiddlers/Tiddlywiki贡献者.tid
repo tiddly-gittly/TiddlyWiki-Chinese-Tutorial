@@ -4,7 +4,7 @@ modified: 20230102072245638
 modifier: 马不前
 page-cover: 
 tags: 社区建设
-title: Tiddlywiki贡献者
+title: Tiddlywiki 贡献者
 type: text/vnd.tiddlywiki
 
 \define card-image(filter)
@@ -22,7 +22,7 @@ type: text/vnd.tiddlywiki
 </div>
 \end
 
-<<card-image filter:"[tag[Tiddlywiki贡献者]]">>
+<<card-image filter:"[tag[Tiddlywiki 贡献者]]">>
 
 ''说明''
 
@@ -30,4 +30,4 @@ type: text/vnd.tiddlywiki
 
 * 采用设拉子里的图片卡组设计。官网上的图片效果不知道如何处理，在这边效果显示不好。
 
-* 卡片主体由三部分组成，一部分是标题，为中文译名。显示为二级标题的样式。一部分为原英文名，有caption字段，正文里也有。格式为一级标题。突出重点。第三部分就是介绍和github链接了。
+* 卡片主体由三部分组成，一部分是标题，为中文译名。显示为二级标题的样式。一部分为原英文名，有 caption 字段，正文里也有。格式为一级标题。突出重点。第三部分就是介绍和 github 链接了。

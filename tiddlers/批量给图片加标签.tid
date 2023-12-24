@@ -12,7 +12,7 @@ type: text/vnd.tiddlywiki
 
 以 Mac 为例，多选文件后，右键就有「批量重命名」功能，给它们加上同一个前缀。
 
-[img[批量重命名Mac功能.png]]
+[img[批量重命名 Mac 功能.png]]
 
 !!! 图片拖入太微
 
@@ -22,10 +22,10 @@ type: text/vnd.tiddlywiki
 
 通过页面工具栏按钮里的 {{$:/plugins/kookma/commander/images/commander.svg}} ，打开[[TW-Commander|TW-Commander：批量操作条目]]插件。
 
-[img[对批量重命名的文件批量用commander插件操作.png]]
+[img[对批量重命名的文件批量用 commander 插件操作.png]]
 
 在顶部的搜索栏（Combo Search）里，使用 [[`prefix`|https://bramchen.github.io/tw5-docs/zh-Hans/#prefix%20Operator:%5B%5Bprefix%20Operator%5D%5D%20%5B%5Bprefix%20Operator%20(Examples)%5D%5D]] [[筛选器操作符]]来搜以特定文本开头的条目。
 
-然后在底部选择 Tag 标签页，选择「Add remove tags」子标签页，然后在 「New tag」输入框里填入想作为标签加到图片上的条目标题。
+然后在底部选择 Tag 标签页，选择「Add remove tags」子标签页，然后在「New tag」输入框里填入想作为标签加到图片上的条目标题。
 
 最后，点击「Add new tag」按钮即可。

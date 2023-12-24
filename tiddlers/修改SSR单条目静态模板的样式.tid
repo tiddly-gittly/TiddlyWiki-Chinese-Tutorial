@@ -2,8 +2,8 @@ created: 20230208071654375
 creator: 林一二
 modified: 20230208072227767
 modifier: 林一二
-tags: 如何启动一个NodeJS的TiddlyWiki项目
-title: 修改SSR单条目静态模板的样式
+tags: 如何启动一个 NodeJS 的 TiddlyWiki 项目
+title: 修改 SSR 单条目静态模板的样式
 type: text/vnd.tiddlywiki
 
 使用[[NodeJS服务端渲染单条目卡片]]时，样式表会额外加上一些内容，可能会长得和直接打开完整版 Wiki 不同。

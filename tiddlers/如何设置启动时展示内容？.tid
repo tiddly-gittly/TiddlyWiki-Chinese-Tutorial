@@ -6,7 +6,7 @@ tags: 太微自身的自定义设置
 title: 如何设置启动时展示内容？
 type: text/vnd.tiddlywiki
 
-可以看oeyoews写的[[代码|https://github.com/oeyoews/neotw/tree/main/archive/plugins/tiddlywiki-announcement/tiddlers]]。
+可以看 oeyoews 写的[[代码|https://github.com/oeyoews/neotw/tree/main/archive/plugins/tiddlywiki-announcement/tiddlers]]。
 
 可以新建一个条目，名称自取，把下面的代码复制下去。
 

@@ -9,9 +9,9 @@ type: text/vnd.tiddlywiki
 
 ! 使用、存储方式与全平台软件
 
-<<alert-leftbar secondary "思维导图（左上角）：https://www.zhixi.com/view/70759713 （因子，聚集，自由组合）" width:60%>>
+<<alert-leftbar secondary "思维导图（左上角）：https://www.zhixi.com/view/70759713（因子，聚集，自由组合）" width:60%>>
 
-<<alert info "''Notes''：TiddlyWiki非常灵活拥有：''HTML文件''与''文件夹'' 2种存储形式；''桌面浏览器''，''服务端软件''，''应用软件'' 3种使用方式。">>
+<<alert info "''Notes''：TiddlyWiki 非常灵活拥有：''HTML 文件''与''文件夹'' 2 种存储形式；''桌面浏览器''，''服务端软件''，''应用软件'' 3 种使用方式。">>
 
 <$macrocall $name="alert" type="primary" src="
 ''全平台软件列表：''
@@ -33,33 +33,33 @@ type: text/vnd.tiddlywiki
 ---
 NodeJS:[[如何启动一个NodeJS的TiddlyWiki项目]]
 
-WebDav: WsgiDAV(python通过PIP安装或者MSI安装程序)，Rclone，IIS WebDav
+WebDav: WsgiDAV(python 通过 PIP 安装或者 MSI 安装程序)，Rclone，IIS WebDav
 
-[[HTML与文件夹的转换]]:tiddlywiki单文件可以解压后提供给nodejs，TidGi使用
+[[HTML与文件夹的转换]]:tiddlywiki 单文件可以解压后提供给 nodejs，TidGi 使用
 <br><br>
 
-!安卓移动服务器
+! 安卓移动服务器
 
 将手机作为知识库存储位置吧。  
 
 安卓方案：Tiddloid + WebDav_Server_Pro_1.17
 
-WebDav_Server_Pro_1.17安装使用简单，支持太微文档列表、支持为太微在桌面创建快捷方式、支持备份、创建副本，支持其它设备通过浏览器、文件资源管理器和局域网访问，你可以和Tiddloid配合使用，解锁高级功能。
+WebDav_Server_Pro_1.17 安装使用简单，支持太微文档列表、支持为太微在桌面创建快捷方式、支持备份、创建副本，支持其它设备通过浏览器、文件资源管理器和局域网访问，你可以和 Tiddloid 配合使用，解锁高级功能。
 
-webdav服务器、系统与浏览器API、nodejs运行环境。移动服务器、桌面服务器、网站服务器、云盘与同步
+webdav 服务器、系统与浏览器 API、nodejs 运行环境。移动服务器、桌面服务器、网站服务器、云盘与同步
 
 <br><br>
 
-!Termux与NodeJS
+!Termux 与 NodeJS
 
 
-* Termux的bash.bashrc文件位置：$PREFIX/etc/bash.bashrc
-* Termux中手机内部存储位置：$HOME/storage/shared   
+* Termux 的 bash.bashrc 文件位置：$PREFIX/etc/bash.bashrc
+* Termux 中手机内部存储位置：$HOME/storage/shared   
 * [[在桌面端访问Termux终端]] 
-* 在Android中配置NodeJS：[[TiddlyWiki-XP Serving TW5 from Android|https://keatonlao.github.io/tiddlywiki-xp/#Serving%20TW5%20from%20Android]]
+* 在 Android 中配置 NodeJS：[[TiddlyWiki-XP Serving TW5 from Android|https://keatonlao.github.io/tiddlywiki-xp/#Serving%20TW5%20from%20Android]]
 <br><br>
 
 
-!HTML与文件夹的转换
+!HTML 与文件夹的转换
 
-{{HTML与文件夹的转换}}
+{{HTML 与文件夹的转换}}

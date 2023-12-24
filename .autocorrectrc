@@ -22,13 +22,9 @@ rules:
   halfwidth-punctuation: 1
   # Spellcheck
   spellcheck: 2
-textRules:
-  # Config special rules for some texts
-  # For example, if we wants to let "Hello你好" just warning, and "Hi你好" to ignore
-  # "Hello你好": 2
-  # "Hi你好": 0
+# textRules:
 fileTypes:
-  '.tid': markdown
+  '.tid': 'markdown'
 spellcheck:
   # Correct Words (Case insensitive) for by Spellcheck
   words:

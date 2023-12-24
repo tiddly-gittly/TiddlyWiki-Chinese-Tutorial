@@ -3,23 +3,23 @@ creator: WhiteFall
 modified: 20230602052213463
 modifier: WhiteFall
 tags: 插件开发
-title: 访问本地文件：route路由模块
+title: 访问本地文件：route 路由模块
 type: text/vnd.tiddlywiki
 
 备忘录。
 
 慢慢修改：
 
-route模块，使用正则匹配URL路径，然后这个路径可以专用于任意用途，比如用正则匹配/files路径，全拼https://xxx.xxx.xx:port/files/<绝对路径>
-可以获取到本地的任意文件。然后你可以使用 XMLHttpRequest().open()发送请求，其中参数填具体URL路径，比如专用的/files路径。也就是route的真正含义。
-这个路径你可以使用route模块自己定义，你可以定义为/md路径，并为他分配访问该路径时相应的动作或方法。然后使用XMLHttpRequest().open()发送请求，执行方法。
+route 模块，使用正则匹配 URL 路径，然后这个路径可以专用于任意用途，比如用正则匹配/files 路径，全拼 https://xxx.xxx.xx:port/files/<绝对路径>
+可以获取到本地的任意文件。然后你可以使用 XMLHttpRequest().open() 发送请求，其中参数填具体 URL 路径，比如专用的/files 路径。也就是 route 的真正含义。
+这个路径你可以使用 route 模块自己定义，你可以定义为/md 路径，并为他分配访问该路径时相应的动作或方法。然后使用 XMLHttpRequest().open() 发送请求，执行方法。
 
-这个东西就像端口一样，分配和访问不同的程序。一个端口一个程序，route则是一个路径定义分配一个相应响应处理方式。
+这个东西就像端口一样，分配和访问不同的程序。一个端口一个程序，route 则是一个路径定义分配一个相应响应处理方式。
 
 
-微件，需要配合 nodejs 那边的 route ，它们才能操作 nodejs 端的文件系统能力。
+微件，需要配合 nodejs 那边的 route，它们才能操作 nodejs 端的文件系统能力。
 
-在 route 里用 fs，服务端才能用fs，所以要在route里用。参考routes/get-file.js。
+在 route 里用 fs，服务端才能用 fs，所以要在 route 里用。参考 routes/get-file.js。
 
 routes/get-file.js赋予的能力：可以直接写绝对路径访问本地文件：`http://192.168.66.21:5213/files/D:/Dropbox/21-Sandox/10-Picture/wine.png`
 
@@ -28,7 +28,7 @@ routes/get-file.js赋予的能力：可以直接写绝对路径访问本地文�
 [[$:/core/modules/server/routes/get-file.js|https://bramchen.github.io/tw5-docs/zh-Hans/#%24%3A%2Fcore%2Fmodules%2Fserver%2Froutes%2Fget-file.js]]
 
 
-如何使用Widget访问route模块？
+如何使用 Widget 访问 route 模块？
 
 可以使用 Ajax 请求访问该路由。
 
@@ -38,7 +38,7 @@ https://github.com/Jermolene/TiddlyWiki5/blob/68a7655396d295d5070c46822d9022e264
 
 https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest/open
 
-ChatGPT的回答：
+ChatGPT 的回答：
 
 要在 TiddlyWiki 的 Widget 中使用 `$:/core/modules/server/routes/get-file.js`，您可以使用 Ajax 请求访问该路由。下面是一个例子：
 

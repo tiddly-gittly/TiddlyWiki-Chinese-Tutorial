@@ -3,7 +3,7 @@ creator: 林一二
 modified: 20220215123651368
 modifier: 林一二
 tags: 插件开发
-title: 交互式查看API
+title: 交互式查看 API
 type: text/vnd.tiddlywiki
 
 可以右键打开开发者工具，在控制台里输入 `$tw.` 来交互式地看太微提供了哪些 API。

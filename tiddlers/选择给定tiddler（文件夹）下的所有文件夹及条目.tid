@@ -3,16 +3,16 @@ creator: Miao
 modified: 20230516133555496
 modifier: 马不前
 tags: 自动化 筛选器类
-title: 选择给定tiddler（文件夹）下的所有文件夹及条目
+title: 选择给定 tiddler（文件夹）下的所有文件夹及条目
 type: text/vnd.tiddlywiki
 
 ! 删除或导出文件夹下所有文件（Kin 筛选器）
 
->''选择给定B条目的所有继承者''
+>''选择给定 B 条目的所有继承者''
 >
 >筛选器语法：[kin::to[B]]
 >
->[img[kinto选定.png]]
+>[img[kinto 选定.png]]
 
 
 

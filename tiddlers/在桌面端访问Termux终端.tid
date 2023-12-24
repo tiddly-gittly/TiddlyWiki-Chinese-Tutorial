@@ -3,33 +3,33 @@ creator: Miao
 modified: 20230516134615638
 modifier: 马不前
 tags: 如何保存 编程知识类
-title: 在桌面端访问Termux终端
+title: 在桌面端访问 Termux 终端
 type: text/vnd.tiddlywiki
 
-!! 在手机上安装Termux
+!! 在手机上安装 Termux
 
 下载地址：https://link.zhihu.com/?target=https%3A//f-droid.org/en/packages/com.termux/
 
-安装完成打开Termux，首先要换源，然后安装ssh，最后设置密码
+安装完成打开 Termux，首先要换源，然后安装 ssh，最后设置密码
 
-# 换源命令：termux-change-repo，空格切换选中状态，移动方向键切换选中项目，Enter键确认执行命令。
+# 换源命令：termux-change-repo，空格切换选中状态，移动方向键切换选中项目，Enter 键确认执行命令。
 
-# 安装ssh：apt install openssh，提示全部按回车键默认即可。
+# 安装 ssh：apt install openssh，提示全部按回车键默认即可。
 
 # 设置密码：passwd，然后输入密码，第二次确认密码。
 
 
-!! 电脑端连接Termux
+!! 电脑端连接 Termux
 
-首先我们将会使用win10，win10自带ssh，我会使用应用商店的【Windows 终端】，你可以使用Shift + 鼠标右键 打开命令行或者Powershell。输入命令连接。
+首先我们将会使用 win10，win10 自带 ssh，我会使用应用商店的【Windows 终端】，你可以使用 Shift + 鼠标右键 打开命令行或者 Powershell。输入命令连接。
 
-ssh连接命令：ssh -p 8022 <IP地址>     例如：ssh -p 8022 192.168.0.8  
+ssh 连接命令：ssh -p 8022 <IP 地址>     例如：ssh -p 8022 192.168.0.8  
 
 然后输入之前设置的密码既可连接。
 
 
 !! Termux 的两个使用场景
 
-# TiddlyWiki的nodejs版本或者webdav版本。使用桌面端键盘敲命令会比手机易用很多。
+# TiddlyWiki 的 nodejs 版本或者 webdav 版本。使用桌面端键盘敲命令会比手机易用很多。
 
-# nodejs、python、vim的学习使用等。
+# nodejs、python、vim 的学习使用等。

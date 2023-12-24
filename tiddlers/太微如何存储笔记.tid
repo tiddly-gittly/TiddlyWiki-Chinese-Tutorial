@@ -10,10 +10,10 @@ type: text/vnd.tiddlywiki
 
 !! HTML 版
 
-默认情况下，所有的 Tiddlers 都以JSON对象数组的形式存储在 `<script>` 标签中，其类属性为 `"tiddlywiki-tiddler-store"`，类型为 `"application/json"`。
+默认情况下，所有的 Tiddlers 都以 JSON 对象数组的形式存储在 `<script>` 标签中，其类属性为 `"tiddlywiki-tiddler-store"`，类型为 `"application/json"`。
 
 
-每个条目都是一个包含 `title` `text` 等字段的 JSON（如果使用了标准的语义网 URL 作为字段名，并用一个条目提供 `@context`，则也可以视为 JSON-LD ，形成一个语义网应用，降低插件社区协作开发的成本……）
+每个条目都是一个包含 `title` `text` 等字段的 JSON（如果使用了标准的语义网 URL 作为字段名，并用一个条目提供 `@context`，则也可以视为 JSON-LD，形成一个语义网应用，降低插件社区协作开发的成本……）
 
 ```js
 <script class="tiddlywiki-tiddler-store" type="application/json">[

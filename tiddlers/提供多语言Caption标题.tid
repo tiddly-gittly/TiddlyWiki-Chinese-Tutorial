@@ -3,7 +3,7 @@ creator: 林一二
 modified: 20230626150248808
 modifier: 马不前
 tags: 写插件配置页面 翻译内容
-title: 提供多语言Caption标题
+title: 提供多语言 Caption 标题
 
 在条目的 `caption` 字段里使用[[嵌入]]，嵌入另一个条目
 
@@ -35,6 +35,6 @@ title: $:/plugins/linonetwo/tidgi-external-attachments/settings/settings-caption
 
 注意这边
 
-# 最好使用 `\whitespace trim` 这个[ext[Pragma|https://tiddlywiki.com/#Pragma]]来去掉空格
+# 最好使用 `\whitespace trim` 这个[ext[Pragma|https://tiddlywiki.com/#Pragma]] 来去掉空格
 # 并使用 `<$transclude>` 微件来形成 inline 的 HTML 结构
 # 在 `<$list>` 微件和 `<$transclude>` 微件之间也只换一次行，不要多余换行。不然可能会让产生出来的标签页变得很粗大，和设置页面里别的标签页不像。

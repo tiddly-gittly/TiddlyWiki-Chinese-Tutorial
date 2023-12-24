@@ -10,7 +10,7 @@ type: text/vnd.tiddlywiki
 
 !! 添加新文本片段的方法
 
-# 打开编辑器，点击图章按钮stamp ({{$:/core/images/stamp}})
+# 打开编辑器，点击图章按钮 stamp ({{$:/core/images/stamp}})
 # 在打开的下拉列表里点击「添加您自己的」
 # 这会创建一个带 `$:/tags/TextEditor/Snippet` 标签的条目，里面的内容以后就会出现在图章的下拉列表里了
 # 在编辑器里打 `/` 也会唤出这些文本片段，并可以搜索取用

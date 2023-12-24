@@ -1,10 +1,10 @@
-caption: 当前文件夹树里的Task（列表）
+caption: 当前文件夹树里的 Task（列表）
 created: 20200610134316199
 creator: 林一二
 modified: 20211004042849355
 modifier: 林一二
 tags: $:/tags/TextEditor/Snippet
-title: 用kin-filter搜索当前文件夹树里的文件（展示为列表）
+title: 用 kin-filter 搜索当前文件夹树里的文件（展示为列表）
 type: text/vnd.tiddlywiki
 
 <$list filter="[tag<currentTiddler>]+[kin::to{currentTiddler}]">

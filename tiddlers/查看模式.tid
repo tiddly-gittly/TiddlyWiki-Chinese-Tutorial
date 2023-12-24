@@ -12,21 +12,21 @@ type: text/vnd.tiddlywiki
 太微自带的几个查看模式：
 
 * Classic：经典模式，打开条目是从上往下的动画，关闭是往左移动直到消失的动画关闭
-* POP：弹出模式，pop打开条目是从大缩小的动画，关闭条目是继续缩小直到看不见
+* POP：弹出模式，pop 打开条目是从大缩小的动画，关闭条目是继续缩小直到看不见
 
 这两个他们都是多个条目同时在的，往下翻可以看到多个条目。
 
 * Zoomin：缩放视图模式：这个模式只能看到一个条目，往下翻没有更多条目
 * Stacked：堆叠模式：堆叠特效
 
-Stacked模式与Zoomin模式在[[Echarts可视化插件]] 的 [[The Brain|$:/plugins/Gk0Wk/echarts/addons/TheBrain.js]] 视图下无法识别出当前的条目（Tid），即不可用。
+Stacked 模式与 Zoomin 模式在[[Echarts可视化插件]] 的 [[The Brain|$:/plugins/Gk0Wk/echarts/addons/TheBrain.js]] 视图下无法识别出当前的条目（Tid），即不可用。
 
-* 用于短文的模式Muuri，一键筛选出短文打开用这种感觉跟看杂志一样
+* 用于短文的模式 Muuri，一键筛选出短文打开用这种感觉跟看杂志一样
 
 <<<
-GitHub主页：https://github.com/BurningTreeC/tiddlywiki-muuri
+GitHub 主页：https://github.com/BurningTreeC/tiddlywiki-muuri
 
-Demo主页：https://burningtreec.github.io/tiddlywiki-muuri/
+Demo 主页：https://burningtreec.github.io/tiddlywiki-muuri/
 <<<
 
 

@@ -125,7 +125,7 @@ exports.onUpdate = function (echart, state) {
       pushBackLink(sourceTiddler, focussedTiddler)
     );
 
-    // 指向哪些tag
+    // 指向哪些 tag
     function pushTag(tiddlerTitle, source, stopRecursive) {
       if (!$tw.wiki.tiddlerExists(tiddlerTitle)) return;
       edges.push({

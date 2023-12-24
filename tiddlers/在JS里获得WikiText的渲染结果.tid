@@ -2,8 +2,8 @@ created: 20220422154133544
 creator: 林一二
 modified: 20220422154344135
 modifier: 林一二
-tags: WikiText与JavaScript的交互
-title: 在JS里获得WikiText的渲染结果
+tags: WikiText 与 JavaScript 的交互
+title: 在 JS 里获得 WikiText 的渲染结果
 type: text/vnd.tiddlywiki
 
 以渲染条目的 `caption` 字段为例：

@@ -9,6 +9,6 @@ tags: Tiddlywiki5Tip
 title: tips-20230429113605614
 type: text/vnd.tiddlywiki
 
-> ''安装插件注意事项''：插件要尤为注意插件之间的依赖关系，缺少依赖将会导致功能性错误或者其它的不可知问题。安装插件之前请谨慎备份自己的TiddlyWiki。
+> ''安装插件注意事项''：插件要尤为注意插件之间的依赖关系，缺少依赖将会导致功能性错误或者其它的不可知问题。安装插件之前请谨慎备份自己的 TiddlyWiki。
 
 <<random-author "WhiteFall" "https://github.com/Zacharia2">>

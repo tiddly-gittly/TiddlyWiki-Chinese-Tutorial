@@ -16,7 +16,7 @@ type: text/vnd.tiddlywiki
 
 安装和使用方法详见 [[太记功能手册/剪藏网页|https://tidgi.fun/#%E5%A4%AA%E8%AE%B0%E5%8A%9F%E8%83%BD%E6%89%8B%E5%86%8C%2F%E5%89%AA%E8%97%8F%E7%BD%91%E9%A1%B5]]
 
-太微搜藏（Tiddlywiki Collector）浏览器插件对太记、NodeJS版 Wiki 的支持最好，之后可能还会支持网页上展示双链、搜索栏搜索笔记等等功能。
+太微搜藏（Tiddlywiki Collector）浏览器插件对太记、NodeJS 版 Wiki 的支持最好，之后可能还会支持网页上展示双链、搜索栏搜索笔记等等功能。
 
 !!! Tiddlyclip
 

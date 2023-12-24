@@ -2,14 +2,14 @@ created: 20230603045303611
 creator: 马不前
 modified: 20230610045822029
 modifier: 马不前
-tags: 自定义样式修改类 B站直播
+tags: 自定义样式修改类 B 站直播
 title: 模仿太记官网样式
 type: text/vnd.tiddlywiki
 video-link: https://www.bilibili.com/video/BV1EM4y1Y7mc
 
 太记官网样式挺好看的，可以模仿一下。
 
-首先是安装官方主题插件里的`$:/themes/tiddlywiki/starlight`，这个会直接附带一个英文字体和一个背景图片。然后再安装一个主题插件`$:/themes/tiddlywiki/hidefurniture`，这个好像cpl里找不到，可以去[[太记官网|https://tiddly-gittly.github.io/TidGi-Official-Website/#:Index]]上拖过来。外观主题里选择`$:/themes/tiddlywiki/starlight`。
+首先是安装官方主题插件里的`$:/themes/tiddlywiki/starlight`，这个会直接附带一个英文字体和一个背景图片。然后再安装一个主题插件`$:/themes/tiddlywiki/hidefurniture`，这个好像 cpl 里找不到，可以去[[太记官网|https://tiddly-gittly.github.io/TidGi-Official-Website/#:Index]]上拖过来。外观主题里选择`$:/themes/tiddlywiki/starlight`。
 
 再然后是编辑`$:/themes/tiddlywiki/starlight/styles.tid`条目。把下面的代码剪切出来，形成一个新条目，并加上`$:/tags/Stylesheet`标签。这是因为如果修改了原条目的话，有可能造成里面的内容溢出。
 
@@ -26,8 +26,8 @@ html body, .tc-sidebar-scrollable-backdrop {
 
 如果觉得背景图片不好看，太单调肃穆了，可以把上面代码里的`background: url(<<datauri "$:/themes/tiddlywiki/starlight/ltbg.jpg">>);`删去。这样就不会有背景图片了。
 
-然后再安装一个中文字体，参考[[如何添加在线字体]]。或者直接把[[霞鹜文楷]]条目拖到你的wiki里。
+然后再安装一个中文字体，参考[[如何添加在线字体]]。或者直接把[[霞鹜文楷]]条目拖到你的 wiki 里。
 
-然后再修改上面的代码其中fnot-family，修改为`font-family: "Arvo","LXGW WenKai Lite", "Times";`，这里是用上面的霞鹜文楷字体，当然也可以换成其他字体格式。
+然后再修改上面的代码其中 fnot-family，修改为`font-family: "Arvo","LXGW WenKai Lite", "Times";`，这里是用上面的霞鹜文楷字体，当然也可以换成其他字体格式。
 
-然后因为这个主题按钮特别大，可以在设置-主外观-主题调整里，是否置顶按钮，选择否。
+然后因为这个主题按钮特别大，可以在设置 - 主外观 - 主题调整里，是否置顶按钮，选择否。

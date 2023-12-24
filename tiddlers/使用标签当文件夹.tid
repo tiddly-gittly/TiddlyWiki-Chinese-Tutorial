@@ -27,7 +27,7 @@ type: text/vnd.tiddlywiki
 
 标签相当于是一个条目「tags」字段下的数组，如果想描述更精确的三元组关系，例如「好朋友」，那么可以在「friends」字段下的数组里填朋友的名字。
 
-然后在太微（Tiddlywiki）里，可以把标签的 UI 「[[tag-picker 宏|https://bramchen.github.io/tw5-docs/zh-Hans/#tag-picker%20Macro]]」用于任何字段。所以可以自己放一个专门用于添加「好朋友」标签的标签栏在条目上，用于填这种精确的「三元组标签」。
+然后在太微（Tiddlywiki）里，可以把标签的 UI「[[tag-picker 宏|https://bramchen.github.io/tw5-docs/zh-Hans/#tag-picker%20Macro]]」用于任何字段。所以可以自己放一个专门用于添加「好朋友」标签的标签栏在条目上，用于填这种精确的「三元组标签」。
 
 例如这样用[[宏]]做一个上述用于填「好朋友」字段的，看起来像是标签的 UI 组件：
 

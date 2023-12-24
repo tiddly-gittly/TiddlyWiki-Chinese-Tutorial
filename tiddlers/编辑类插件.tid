@@ -6,34 +6,34 @@ tags: 插件列表
 title: 编辑类插件
 type: text/vnd.tiddlywiki
 
-* Markdown风格硬换行符插件：[[Space Space Newline|https://wikilabs.github.io/editions/space-space-newline/]]
+* Markdown 风格硬换行符插件：[[Space Space Newline|https://wikilabs.github.io/editions/space-space-newline/]]
 * 底部选项卡[[buttontabs|http://bottomtabs.tiddlyspot.com/]]
-*  ❤️回收站Trashbin
-* 自动下载修改后的Tiddlers（官方库）Save Trail
+*  ❤️回收站 Trashbin
+* 自动下载修改后的 Tiddlers（官方库）Save Trail
 *  [[Section Editor|https://kookma.github.io/TW-Section/]]
 * 大纲编辑器[[steams|https://saqimtiaz.github.io/streams/]]
-* 折叠subsume
-* 弹出appear
+* 折叠 subsume
+* 弹出 appear
 * 创建学术文本 refnotes + bibtex
-* 在底部显示annotation的功能插件[[Refnotes|https://kookma.github.io/TW-Refnotes/]]
+* 在底部显示 annotation 的功能插件[[Refnotes|https://kookma.github.io/TW-Refnotes/]]
 * 公式计算插件[[TiddlyWikiFormula|http://chronicles.wiki/TiddlyWikiFormula/]]
-* 全部展开折叠categoryLists
+* 全部展开折叠 categoryLists
 * 多列标签下拉列表 [[multi column tag dropdown|https://wikilabs.github.io/editions/multicol-dropdown/]]
-* ❤️ReLink：解决重新命名 Tiddler后链接更新的插件
+* ❤️ReLink：解决重新命名 Tiddler 后链接更新的插件
 * ❤️复制标题：oeyoews/copy-title，安装后在页面工具栏可以看到。
 * ❤️高亮文本，xp/mark-button，安装后，在编辑条目时的编辑工具栏图标显示为一个马克笔。
 * 段落编辑：Section Editor
 * [[MegaMenu|https://jc-ose.github.io/MegaMenu/]]
 * 侧边编辑器[[sideeditor|http://sideeditor.tiddlyspot.com/]]
-* [[快速创建字段|http://newtids.tiddlyspot.com/]] 这个挺好用，如果你有一个列表title,想快速创建所有列表文本的tid用这个很爽。
+* [[快速创建字段|http://newtids.tiddlyspot.com/]] 这个挺好用，如果你有一个列表 title，想快速创建所有列表文本的 tid 用这个很爽。
 * 音乐乐谱
 ** [[发布界面|https://burningtreec.github.io/tw5-musicsheets/]]
 ** [[论坛上的讨论|https://talk.tiddlywiki.org/t/musicsheets-a-new-release/154]]
 ** [[代码|https://github.com/BurningTreeC/tw5-musicsheets]]
-* tw5-monaco（vscode的编辑器移植）
-* [[zx-script|https://talk.tiddlywiki.org/t/interactive-code-executing-in-tiddlygit-like-ipython-notebook/780]]tid当作js执⾏，在tw中执⾏js，类似jupyter。
+* tw5-monaco（vscode 的编辑器移植）
+* [[zx-script|https://talk.tiddlywiki.org/t/interactive-code-executing-in-tiddlygit-like-ipython-notebook/780]]tid 当作 js 执⾏，在 tw 中执⾏ js，类似 jupyter。
 * 导入表格：xlsx-utils
-* markdown相关
-** 导出为MD：Markdown-Export
+* markdown 相关
+** 导出为 MD：Markdown-Export
 ** TiddlyWIki/Markdown
 ** linonetwo/markdown-transformer插件
