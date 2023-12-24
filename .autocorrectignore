@@ -1,0 +1,6 @@
+tiddlers/TCTSystem/
+**/*.json
+**/*.js
+**/*.meta
+**/*.yml
+**/*.yaml

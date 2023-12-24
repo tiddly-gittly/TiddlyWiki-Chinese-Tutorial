@@ -5,12 +5,17 @@
     "buildoffline": "node -e \"require('./scripts/build').buildOfflineHTML('public-dist', 'offline.html');\"",
     "buildlibrary": "node -e \"require('./scripts/build').buildLibrary('[prefix[$:/]!prefix[$:/plugins/tiddlywiki/]!prefix[$:/themes/tiddlywiki/]!prefix[$:/languages/]!tag[$:/tags/PluginLibrary]!prefix[$:/plugins/kookma]]', 'public-dist/library');\"",
     "dev": "tiddlywiki --listen",
-    "format": "autocorrect --fix"
+    "format": "autocorrect --fix",
+    "prepare": "simple-git-hooks"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm autocorrect --fix"
   },
   "devDependencies": {
     "autocorrect-node": "^2.9.0",
     "cross-env": "7.0.3",
     "html-minifier-terser": "7.2.0",
+    "simple-git-hooks": "^2.9.0",
     "tiddlywiki": "5.3.0",
     "uglify-js": "3.17.4",
     "workbox-cli": "7.0.0"
