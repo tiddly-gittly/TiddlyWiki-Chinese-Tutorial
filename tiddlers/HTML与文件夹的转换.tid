@@ -3,29 +3,29 @@ creator: Miao
 modified: 20231001121936318
 modifier: WhiteFall
 tags: 编程知识类
-title: HTML与文件夹的转换
+title: HTML 与文件夹的转换
 type: text/vnd.tiddlywiki
 
-如果你想要换种方式使用，比将HTML文件变成文件夹然后用NodeJS版本太微打开，可以使用nodejs搭配一条命令完成转换。
+如果你想要换种方式使用，比将 HTML 文件变成文件夹然后用 NodeJS 版本太微打开，可以使用 nodejs 搭配一条命令完成转换。
 
-> 在tidgi太记中你可以直接导入wiki.html文件，TidGi会自动处理变成文件夹形式的WIKI。
+> 在 tidgi 太记中你可以直接导入 wiki.html 文件，TidGi 会自动处理变成文件夹形式的 WIKI。
 
-需要环境：NodeJS的安装与NodeJS版TiddlyWiki的安装。
+需要环境：NodeJS 的安装与 NodeJS 版 TiddlyWiki 的安装。
 
-# 安装nvm（nodejs版本管理器）在链接：https://github.com/coreybutler/nvm-windows/releases  下载nvm-setup.zip，安装。
-# 打开命令行或者powershell输入：`nvm install lts` 安装最新的nodejs长期支持版。
-# 安装nodejs版TiddlyWiki，在命令行中输入：`npm install -g tiddlywiki` 等待安装成功
+# 安装 nvm（nodejs 版本管理器）在链接：https://github.com/coreybutler/nvm-windows/releases  下载 nvm-setup.zip，安装。
+# 打开命令行或者 powershell 输入：`nvm install lts` 安装最新的 nodejs 长期支持版。
+# 安装 nodejs 版 TiddlyWiki，在命令行中输入：`npm install -g tiddlywiki` 等待安装成功
 
 
-TiddlyWiki单文件转文件夹命令：
+TiddlyWiki 单文件转文件夹命令：
 
 ```sh
 tiddlywiki  --load  ./mywiki.html(你的wiki文件)  --savewikifolder  ./mywikifolder(你的wiki文件夹)
 ```
 
-TiddlyWiki文件夹转单文件命令:
+TiddlyWiki 文件夹转单文件命令：
 
-使用Version v0.8.0-prerelease9最新版的TidGi，将wiki文件夹添加到太记中，然后使用太记顶部的Wiki菜单栏中的“导出整个Wiki为HTML存入文件夹”功能，快速实现转换。
+使用 Version v0.8.0-prerelease9 最新版的 TidGi，将 wiki 文件夹添加到太记中，然后使用太记顶部的 Wiki 菜单栏中的“导出整个 Wiki 为 HTML 存入文件夹”功能，快速实现转换。
 
 ```sh
 tiddlywiki  ./mywikifolder(你的wiki文件夹)  --rendertiddler  '$:/core/save/all'  mywiki.html(你的wiki文件)  text/plain

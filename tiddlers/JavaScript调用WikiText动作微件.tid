@@ -2,8 +2,8 @@ created: 20220114073720842
 creator: 林一二
 modified: 20230901023328264
 modifier: WhiteFall
-tags: WikiText与JavaScript的交互
-title: JavaScript调用WikiText动作微件
+tags: WikiText 与 JavaScript 的交互
+title: JavaScript 调用 WikiText 动作微件
 type: text/vnd.tiddlywiki
 
 !! 调用带参数的动作微件（Action Widget）

@@ -3,14 +3,14 @@ creator: WhiteFall
 modified: 20230516134659640
 modifier: 马不前
 tags: 编程知识类
-title: Ob风格的wiki地图
+title: Ob 风格的 wiki 地图
 type: text/vnd.tiddlywiki
 
 【卡片集】
 
 * Author：linonetwo，WhiteFall，[[Peter Hajas|https://github.com/peterhajas]]
-* 描述：Ob风格的wiki地图。需要安装Gk0Wk/echarts插件。插件版本>=v0.2.2 。
-* 使用方法：根据下列提示创建并设置条目。来源：https://github.com/tiddly-gittly/tw-echarts/discussions/65 。
+* 描述：Ob 风格的 wiki 地图。需要安装 Gk0Wk/echarts 插件。插件版本>=v0.2.2。
+* 使用方法：根据下列提示创建并设置条目。来源：https://github.com/tiddly-gittly/tw-echarts/discussions/65。
 
 
 ```

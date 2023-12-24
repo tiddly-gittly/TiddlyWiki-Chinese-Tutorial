@@ -3,7 +3,7 @@ creator: WhiteFall
 modified: 20221216014908202
 modifier: WhiteFall
 tags: 目录导航栏 $:/tags/Macro
-title: tabs加强版
+title: tabs 加强版
 type: text/vnd.tiddlywiki
 
 \define navx(tag,sort:"",selectedTiddler:"$:/temp/toc/selectedTiddler",unselectedText,missingText,template:"")

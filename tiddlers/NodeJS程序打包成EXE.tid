@@ -3,10 +3,10 @@ creator: Miao
 modified: 20230508132526633
 modifier: WhiteFall
 tags: 插件开发
-title: NodeJS程序打包成EXE
+title: NodeJS 程序打包成 EXE
 type: text/vnd.tiddlywiki
 
-1. 安装pkg软件包
+1. 安装 pkg 软件包
 
 <<<
 软件包项目地址：https://github.com/vercel/pkg
@@ -23,4 +23,4 @@ npm install -g pkg
 pkg -t win 启动页.js
 ```
 
-注意：类似playwright 位置在用户目录下的，外置依赖程序，无法打包进去。
+注意：类似 playwright 位置在用户目录下的，外置依赖程序，无法打包进去。

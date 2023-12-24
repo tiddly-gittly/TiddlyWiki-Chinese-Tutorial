@@ -2,7 +2,7 @@ created: 20230901061523927
 creator: WhiteFall
 modified: 20230903002442704
 modifier: WhiteFall
-tags: Wiki编程的定义
+tags: Wiki 编程的定义
 title: Hello, TiddlyWiki
 
 \procedure main()
@@ -26,7 +26,7 @@ title: Hello, TiddlyWiki
 <<main>>
 ```
 
-定义方法，名为main的进程，并输出“Hello, TiddlyWiki”。
+定义方法，名为 main 的进程，并输出“Hello, TiddlyWiki”。
 然后使用`<<main>>`调用进程。
 
 ---
@@ -43,4 +43,4 @@ title: Hello, TiddlyWiki
 <<main1>>
 ```
 
-定义方法，名为main的进程，定义变量Hi，值为"Hello, TiddlyWiki"，然后输出结果，最后使用`<<main>>`调用进程。
+定义方法，名为 main 的进程，定义变量 Hi，值为"Hello, TiddlyWiki"，然后输出结果，最后使用`<<main>>`调用进程。

@@ -8,7 +8,7 @@ type: text/vnd.tiddlywiki
 
 <!--
 <center>
-	<div style="color:grey">点击图片放大(需要等待一会儿)</div>
+	<div style="color:grey">点击图片放大 (需要等待一会儿)</div>
 	<<FancyboxL gallary-1.png group:"tw gallary">>
 		<<FancyboxL gallary-2.png group:"tw gallary">>
 </center>

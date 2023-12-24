@@ -2,23 +2,23 @@ created: 20230520113144773
 creator: 林一二
 modified: 20230610125038165
 modifier: 林一二
-tags: B站直播 任务
-title: Jeremy来访
+tags: B 站直播 任务
+title: Jeremy 来访
 type: text/vnd.tiddlywiki
 
 [[杰里米·拉斯顿]]来与大家打招呼。
 
 待介绍的现状
 
-# 中文社区QQ群近千人，大都来自知乎和B站
-# 太记一千多star
+# 中文社区 QQ 群近千人，大都来自知乎和 B 站
+# 太记一千多 star
 # 群机器人，用太记上的中文教程作为数据库
 
 待问的问题：
 
 # 如何看待把太微比作操作系统、主要推荐发行版的观点。
 # 当时为啥做了 NodeJS wiki？
-# Wikitext 与其它 Wikitext 的兼容度，能引进一些markdown语法吗？
+# Wikitext 与其它 Wikitext 的兼容度，能引进一些 markdown 语法吗？
 # 最近生活、健康和收入如何，退休了吗？
 # TiddlyWeb 等商业化公司如何了？
 # 插件源的进度，是不是没空开发，还有哪些没空开发的方向？
@@ -29,14 +29,14 @@ type: text/vnd.tiddlywiki
 # 浏览太微类网站时，不少人会觉得重复浏览条目，从而浪费时间或者浪费注意力，对这一点怎么看呢？
 # 如何让太微更简单地上手？使用高级筛选器语法功能时如何更简单便利？
 # 如何实现跳转到条目指定位置，作为普遍性的用法，比标题链接更方便？
-# 如何用tiddlywiki来进行知识管理，使tiddlywiki成为第二大脑？
+# 如何用 tiddlywiki 来进行知识管理，使 tiddlywiki 成为第二大脑？
 # 有什么想和中文社区的用户说的。
 
 
 
 有时间可以问下。
 
-英文版，采用deepl翻译
+英文版，采用 deepl 翻译
 
 <<details label:"English" src:"# How do you feel about the idea of comparing tiddlywiki to an operating system, the main recommended distribution.
 # Why did you make a NodeJS wiki at that time?

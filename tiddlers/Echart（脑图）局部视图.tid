@@ -2,18 +2,18 @@ created: 20220817222315448
 creator: Miao
 modified: 20230516134630939
 modifier: 马不前
-tags: Echarts可视化插件 编程知识类
+tags: Echarts 可视化插件 编程知识类
 title: Echart（脑图）局部视图
 type: text/vnd.tiddlywiki
 
-! TheBrian的局部视图
+! TheBrian 的局部视图
 
 !! 局部视图
 
-[img[TheBrian视图4.png]]
+[img[TheBrian 视图 4.png]]
 
 
-TheBrain 各参数的用法 （来自林一二的QQ频道）：
+TheBrain 各参数的用法（来自林一二的 QQ 频道）：
 
 """
 参数：focussedTiddler 是图的中央节点
@@ -25,4 +25,4 @@ TheBrain 各参数的用法 （来自林一二的QQ频道）：
 
 !! 目录功能的条目
 
-[img[TheBrian视图3.png]]
+[img[TheBrian 视图 3.png]]

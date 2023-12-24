@@ -1,6 +1,6 @@
 /** Inspired by https://zhuanlan.zhihu.com/p/506929317 */
 /** initialize css counter */
-/**如果需要显示从二级标题开始前面加上数字序号，那么需要添加class字段，里面写autonumhead */
+/**如果需要显示从二级标题开始前面加上数字序号，那么需要添加 class 字段，里面写 autonumhead */
 
 
   .autonumhead .tc-tiddler-body {

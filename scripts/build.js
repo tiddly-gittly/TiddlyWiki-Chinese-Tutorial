@@ -5,11 +5,11 @@ const {
 
 /** 项目路径 */
 const repoFolder = path.join(path.dirname(__filename), '..');
-/** 获得TW版本号 */
+/** 获得 TW 版本号 */
 const getVersion = '$(npx tiddlywiki . --version | grep -Eo \'^[0-9]+\.[0-9]+\.[0-9]+.*$\' | head -n 1)';
 
-/** 设置环境变量，TW会同时在自己的源码路径以及环境变量定义的路径中寻找插件、主题和语言
- *  如果不这样写，plugins、themes、languages和editions里的内容就无法被加载
+/** 设置环境变量，TW 会同时在自己的源码路径以及环境变量定义的路径中寻找插件、主题和语言
+ *  如果不这样写，plugins、themes、languages 和 editions 里的内容就无法被加载
  */
 process.env.TIDDLYWIKI_PLUGIN_PATH = `${repoFolder}/plugins`;
 process.env.TIDDLYWIKI_THEME_PATH = `${repoFolder}/themes`;
@@ -19,7 +19,7 @@ process.env.TIDDLYWIKI_EDITION_PATH = `${repoFolder}/editions`;
 /**
  * 执行命令行指令，并打印该指令的结果
  * @param {string} command 要执行的命令
- * @param {object} options execSync的参数
+ * @param {object} options execSync 的参数
  */
 function shell(command, options) {
     if (options !== undefined) options = {};
@@ -31,7 +31,7 @@ function shell(command, options) {
 /**
  * 执行命令行指令，并打印该指令的结果，同时忽略任何错误
  * @param {string} command 要执行的命令
- * @param {object} options execSync的参数
+ * @param {object} options execSync 的参数
  */
 function shellI(command, options) {
     try {
@@ -42,11 +42,11 @@ function shellI(command, options) {
 }
 
 /**
- * 构建在线HTML版本：核心JS和资源文件不包括在HTML中， 下载后不能使用
+ * 构建在线 HTML 版本：核心 JS 和资源文件不包括在 HTML 中，下载后不能使用
  * @param {string} distDir 目标路径，空或者不填则默认为'dist'
- * @param {string} htmlName HTML名称，空或者不填则默认为'index.html'
- * @param {boolean} minify 是否最小化JS和HTML，默认为true
- * @param {string} excludeFilter 要排除的tiddler的过滤表达式，默认为'-[is[draft]]'
+ * @param {string} htmlName HTML 名称，空或者不填则默认为'index.html'
+ * @param {boolean} minify 是否最小化 JS 和 HTML，默认为 true
+ * @param {string} excludeFilter 要排除的 tiddler 的过滤表达式，默认为'-[is[draft]]'
  */
 function buildOnlineHTML(distDir, htmlName, minify, excludeFilter) {
     if (typeof distDir !== 'string' || distDir.length === 0) distDir = 'dist';
@@ -64,8 +64,8 @@ function buildOnlineHTML(distDir, htmlName, minify, excludeFilter) {
     shellI(`cp tiddlers/TiddlyWikiIconBlack.png ${distDir}/TiddlyWikiIconBlack.png &> /dev/null`);
     shellI(`cp vercel.json ${distDir}/vercel.json &> /dev/null`);
 
-    // 构建HTML
-    shell('cp -r tiddlers/ tmp_tiddlers_backup &> /dev/null'); // 备份 因为下面有改变tiddler的field的操作(媒体文件全部转为canonical)
+    // 构建 HTML
+    shell('cp -r tiddlers/ tmp_tiddlers_backup &> /dev/null'); // 备份 因为下面有改变 tiddler 的 field 的操作 (媒体文件全部转为 canonical)
     shell(`npx tiddlywiki . --output ${distDir}` +
         ' --deletetiddlers \'[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]\'' +
         ' --setfield \'[is[image]] [is[binary]] [type[application/msword]] [type[image/svg+xml]]\' _canonical_uri $:/core/templates/canonical-uri-external-image text/plain' +
@@ -80,7 +80,7 @@ function buildOnlineHTML(distDir, htmlName, minify, excludeFilter) {
     shell(`mv tiddlers/*.* ${distDir}/images &> /dev/null`); // 非二进制文件也就是资源文件的拷贝
     shell('rm -rf tiddlers && mv tmp_tiddlers_backup tiddlers &> /dev/null'); // 还原
 
-    // 最小化：核心JS和HTML
+    // 最小化：核心 JS 和 HTML
     if (minify) {
         shellI(`npx uglifyjs ${distDir}/tiddlywikicore.js -c -m --v8 --webkit --ie --output '${distDir}/tiddlywikicore-'${getVersion}'.js' && rm ${distDir}/tiddlywikicore.js`);
         shellI(`npx html-minifier-terser -c scripts/html-minifier-terser.config.json -o ${distDir}/${htmlName} ${distDir}/index-raw.html && rm ${distDir}/index-raw.html`);
@@ -91,11 +91,11 @@ function buildOnlineHTML(distDir, htmlName, minify, excludeFilter) {
 }
 
 /**
- * 构建离线HTML版本：核心JS和资源文件包括在HTML中， 下载后可以使用(就是单文件版本的wiki)
+ * 构建离线 HTML 版本：核心 JS 和资源文件包括在 HTML 中，下载后可以使用 (就是单文件版本的 wiki)
  * @param {string} distDir 目标路径，空或者不填则默认为'dist'
- * @param {string} htmlName HTML名称，空或者不填则默认为'index.html'
- * @param {boolean} minify 是否最小化JS和HTML，默认为true
- * @param {string} excludeFilter 要排除的tiddler的过滤表达式，默认为'-[is[draft]]'
+ * @param {string} htmlName HTML 名称，空或者不填则默认为'index.html'
+ * @param {boolean} minify 是否最小化 JS 和 HTML，默认为 true
+ * @param {string} excludeFilter 要排除的 tiddler 的过滤表达式，默认为'-[is[draft]]'
  */
 function buildOfflineHTML(distDir, htmlName, minify, excludeFilter) {
     if (typeof distDir !== 'string' || distDir.length === 0) distDir = 'dist';
@@ -103,7 +103,7 @@ function buildOfflineHTML(distDir, htmlName, minify, excludeFilter) {
     if (typeof minify !== 'boolean') minify = true;
     if (typeof excludeFilter !== 'string') excludeFilter = '-[is[draft]]';
 
-    // 构建HTML
+    // 构建 HTML
     shell(`npx tiddlywiki . --output ${distDir}` +
         ' --deletetiddlers \'[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]\'' +
         ` --rendertiddler $:/core/save/all index-raw.html text/plain "" publishFilter "${excludeFilter}"`
@@ -121,7 +121,7 @@ function buildOfflineHTML(distDir, htmlName, minify, excludeFilter) {
  * 构建插件源
  * @param {string} pluginFilter 要发布插件的过滤器，默认为 '[prefix[$:/plugins/]!prefix[$:/plugins/tiddlywiki/]!prefix[$:/languages/]!prefix[$:/themes/tiddlywiki/]!tag[$:/tags/PluginLibrary]]'
  * @param {string} distDir 目标路径，空或者不填则默认为'dist/library'
- * @param {boolean} minify 是否最小化HTML，默认为true
+ * @param {boolean} minify 是否最小化 HTML，默认为 true
  */
 function buildLibrary(pluginFilter, distDir, minify) {
     if (typeof pluginFilter !== 'string' || pluginFilter.length === 0) pluginFilter = '[prefix[$:/plugins/]!prefix[$:/plugins/tiddlywiki/]!prefix[$:/languages/]!prefix[$:/themes/tiddlywiki/]!tag[$:/tags/PluginLibrary]]';

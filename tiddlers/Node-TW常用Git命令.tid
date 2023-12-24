@@ -3,7 +3,7 @@ creator: WhiteFall
 modified: 20230516134615639
 modifier: 马不前
 tags: 编程知识类
-title: Node-TW常用Git命令
+title: Node-TW 常用 Git 命令
 type: text/vnd.tiddlywiki
 
 !! 前置知识
@@ -28,11 +28,11 @@ git push
 git push -f origin main
 ```
 
-* 主分支，可能为main，可能为master
+* 主分支，可能为 main，可能为 master
 * origin，表示远程仓库
-* -f force ，词典翻译：强迫; 强行;
+* -f force，词典翻译：强迫; 强行;
 
-> git 推送 强制 远程仓库 main分支
+> git 推送 强制 远程仓库 main 分支
 
 !! 查看历史提交记录
 
@@ -40,26 +40,26 @@ git push -f origin main
 git log
 ```
 
-!! 合并多个commit
+!! 合并多个 commit
 
 > 来源：https://zhuanlan.zhihu.com/p/91911809
 
 !!! 前置知识
-1. 合并从HEAD版本开始往过去数 n 个版本
+1. 合并从 HEAD 版本开始往过去数 n 个版本
 
 ```sh
 git rebase -i HEAD~n
 ```
 
-2. 合并指定区间的commit版本，该区间是一个前开后闭的区间。意思就是startpoint不参与合并
+2. 合并指定区间的 commit 版本，该区间是一个前开后闭的区间。意思就是 startpoint 不参与合并
 
 ```sh
 git rebase -i  [startpoint]  [endpoint]
 ```
 
-> rebase 变基，整理(分支)，即在当前分支外另一点上重新应用当前分支的提交历史，变基是Git整合变更的一种方式，另一种方式是合并。
+> rebase 变基，整理 (分支)，即在当前分支外另一点上重新应用当前分支的提交历史，变基是 Git 整合变更的一种方式，另一种方式是合并。
 
-此命令执行后会进入使用vim编辑的状态，修改分支前的关键字（pick、squash、drop）英文状态下按i进入编辑，合并commit就修改pick为squash，修改完成后按ESC，然后英文状态下按:wq(冒号、W、Q)，在按回车确认，保存修改。git就会自动执行合并commit动作。
+此命令执行后会进入使用 vim 编辑的状态，修改分支前的关键字（pick、squash、drop）英文状态下按 i 进入编辑，合并 commit 就修改 pick 为 squash，修改完成后按 ESC，然后英文状态下按:wq(冒号、W、Q)，在按回车确认，保存修改。git 就会自动执行合并 commit 动作。
 
 
 !!! 具体操作
@@ -68,14 +68,14 @@ git rebase -i  [startpoint]  [endpoint]
 
 2.执行 `git rebase -i HEAD~3` ，弹出操作窗口
 
-编辑commit内容，第二次、第三次提交的pick改为squash，把第二次、第三次提交都合并到第一次提交上。
+编辑 commit 内容，第二次、第三次提交的 pick 改为 squash，把第二次、第三次提交都合并到第一次提交上。
 
 ```
 pick 85697ee This is first commit.
 squash ee461c1 This is second commit.
 squash 326e415 This is third commit.
 ```
-3.然后保存退出，Git会压缩提交历史。
+3.然后保存退出，Git 会压缩提交历史。
 
 
 
@@ -85,10 +85,10 @@ squash 326e415 This is third commit.
 
 > 参考链接：[[如何瘦身Git仓库|https://linux.cn/article-8556-1.html]]
 
-!!! git仓库压缩瘦身
+!!! git 仓库压缩瘦身
 参考链接：https://blog.csdn.net/qq_40233736/article/details/86668768
 
-git gc命令：https://blog.csdn.net/yjl2055/article/details/101072073
+git gc 命令：https://blog.csdn.net/yjl2055/article/details/101072073
 
 
 
@@ -120,20 +120,20 @@ git push origin --force --all
 ```sh
 git reset --hard HEAD~n
 ```
-* HEAD 是当前分支中''当前的commit''。
-* HEAD的指向是可以改变的，比如你提交commit，切换仓库，分支，或者回滚版本，切换tag等。
+* HEAD 是当前分支中''当前的 commit''。
+* HEAD 的指向是可以改变的，比如你提交 commit，切换仓库，分支，或者回滚版本，切换 tag 等。
 
-硬回退，意味着放弃从当前commit版本到n版本的提交，并删除这段历史commit记录。
+硬回退，意味着放弃从当前 commit 版本到 n 版本的提交，并删除这段历史 commit 记录。
 
 !! 取消指定的提交
 
 ```sh
  git revert <commit id>
 ```
-该操作会恢复 所有文件内容历史状态 到 历史中选定某个commit的修改状态。例如当前A ，历史B，古历史C。 执行 git revert `<commit id>古历史C` 将会恢复所有文件内容至古历史C时候的提交状态。可以在Git可视化工具中看到文件的修改。此时在进行一次commit确认撤销。
+该操作会恢复 所有文件内容历史状态 到 历史中选定某个 commit 的修改状态。例如当前 A，历史 B，古历史 C。执行 git revert `<commit id>古历史C` 将会恢复所有文件内容至古历史 C 时候的提交状态。可以在 Git 可视化工具中看到文件的修改。此时在进行一次 commit 确认撤销。
 
 
-!! 清空Git仓库的所有历史记录
+!! 清空 Git 仓库的所有历史记录
 
 1. 切换到新的分支
 
@@ -141,7 +141,7 @@ git reset --hard HEAD~n
 git checkout --orphan tmp_branch
 ```
 
-2. 缓存所有文件（除了.gitignore中声明排除的）
+2. 缓存所有文件（除了.gitignore 中声明排除的）
 
 ```sh
 git add -A
@@ -153,25 +153,25 @@ git add -A
 git commit -am "commit message"
 ```
 
-4. 删除master分支（Delete the branch）
+4. 删除 master 分支（Delete the branch）
 
 ```sh
 git branch -D main # 注意：你的主分支也可能是master
 ```
 
-5. 重命名当前分支为main（Rename the current branch to main）
+5. 重命名当前分支为 main（Rename the current branch to main）
 
 ```sh
 git branch -m main # 注意：你的主分支也可能是main
 ```
 
-6. 提交到远程master分支 （Finally, force update your repository）
+6. 提交到远程 master 分支（Finally, force update your repository）
 
 ```sh
 git push -f origin main # 注意：你的主分支也可能是main
 ```
 
-通过以上几步就可以简单地把一个Git仓库的历史提交记录清除掉了，不过最好还是在平时的开发中严格要求一下提交日志的规范，尽量避免在里面输入一些敏感信息进来。
+通过以上几步就可以简单地把一个 Git 仓库的历史提交记录清除掉了，不过最好还是在平时的开发中严格要求一下提交日志的规范，尽量避免在里面输入一些敏感信息进来。
 
 
 !! Credential Helper Selector
@@ -184,9 +184,9 @@ git push -f origin main # 注意：你的主分支也可能是main
 打开对话框的方式：在终端中输入 `git credential-helper-selector` 命令，然后按回车键。 
 
 
-!! 有趣的Git动画视频和网站
+!! 有趣的 Git 动画视频和网站
 
-【纯享Git小动画！轻松看懂git命令-哔哩哔哩】 https://b23.tv/unZnX7j
+【纯享 Git 小动画！轻松看懂 git 命令 - 哔哩哔哩】https://b23.tv/unZnX7j
 
 
-如何优雅的使用Git：https://dangitgit.com/zh
+如何优雅的使用 Git：https://dangitgit.com/zh

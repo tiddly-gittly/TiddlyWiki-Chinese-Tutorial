@@ -3,7 +3,7 @@ creator: 林一二
 modified: 20220527055041793
 modifier: 林一二
 tags: 插件使用
-title: Shiraz宏包
+title: Shiraz 宏包
 type: text/vnd.tiddlywiki
 
 !! 安装
@@ -15,10 +15,10 @@ type: text/vnd.tiddlywiki
 就像 LaTeX 有很多美化样式的宏包，太微也有很多宏包，[[Shiraz|https://kookma.github.io/TW-Shiraz/]] 是其中的佼佼者，它除了提供样式美化，例如：
 
 ```tid
-<<alert primary "美化样式的封装了CSS的宏" width:60%>>
+<<alert primary "美化样式的封装了 CSS 的宏" width:60%>>
 ```
 
-<<alert primary "美化样式的封装了CSS的宏" width:60%>>
+<<alert primary "美化样式的封装了 CSS 的宏" width:60%>>
 
 还提供自动化操作宏包，例如我们在[[待开始任务列表]]里用的 dynamic-table 宏：
 

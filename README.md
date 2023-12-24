@@ -4,7 +4,7 @@
 
 [只读版访问地址 Netlify 加速版（国内中速访问）](https://tw-cn.netlify.app)
 
-[只读版访问地址机器人共用版（国内中速访问）](https://tw-cn.cpolar.top/) （QQ群内直接打「cn 搜索词」时，机器人就是使用它提取知识）
+[只读版访问地址机器人共用版（国内中速访问）](https://tw-cn.cpolar.top/) （QQ 群内直接打「cn 搜索词」时，机器人就是使用它提取知识）
 
 [只读版访问地址（翻墙 Github Pages）](https://tiddly-gittly.github.io/TiddlyWiki-Chinese-Tutorial/)
 
@@ -19,7 +19,7 @@
 
 ### 简单版
 
-0. 找QQ群主联系提供加入贡献团队。
+0. 找 QQ 群主联系提供加入贡献团队。
 1. 下载 [TidGi-Desktop](https://github.com/tiddly-gittly/TidGi-Desktop)，用于在本地打开和编辑 Wiki
 
 ![docs/image/clone-code-tg.png](https://cdn.jsdelivr.net/gh/tiddly-gittly/TiddlyWiki-Chinese-Tutorial/docs/image/clone-code-tg.png)
@@ -31,7 +31,7 @@
 
 然后就能编辑了，编辑结果会每 30 分钟自动同步上来，或是在重启应用后自动同步上来。也可以右键点击左侧边栏的工作区头像，有一个立即同步选项。
 
-![截屏2022-09-27 18 36 44](https://user-images.githubusercontent.com/3746270/192504211-8b11d325-343e-4d50-9be0-bde5987e6f76.png)
+![截屏 2022-09-27 18 36 44](https://user-images.githubusercontent.com/3746270/192504211-8b11d325-343e-4d50-9be0-bde5987e6f76.png)
 
 一段时间没修改后，如果要改，建议先点立即同步，把其他人的改动同步过来，以免发生冲突了麻烦。
 

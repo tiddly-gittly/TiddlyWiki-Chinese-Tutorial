@@ -3,9 +3,9 @@ creator: 马不前
 modified: 20230324114829728
 modifier: 马不前
 tags: 排查问题
-title: notebook主题切换导致标签丢失样式
+title: notebook 主题切换导致标签丢失样式
 type: text/vnd.tiddlywiki
 
-notebook主题里自带了几个配色。但除了`$:/tags/Palette`标签外，还有一个限制标签`$:/tags/notebook/Palette`。
+notebook 主题里自带了几个配色。但除了`$:/tags/Palette`标签外，还有一个限制标签`$:/tags/notebook/Palette`。
 
 如果没有去除上面的标签，而直接切换到其他主题，就会导致标签颜色丢失，看不到标签的内容。如果喜欢这个配色，可以去除掉`$:/tags/notebook/Palette`标签，切换主题就没问题了。
