@@ -1,9 +1,9 @@
 class: o-random-tip tc-modal-centered
 created: 20230429113726087
-creator: WhiteFall
+creator: 明玥
 mask-closable: yes
 modified: 20230607105956522
-modifier: WhiteFall
+modifier: 明玥
 subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
 tags: Tiddlywiki5Tip
 title: tips-2023042911372683
@@ -14,4 +14,4 @@ type: text/vnd.tiddlywiki
 
 > 更多的快捷键请查看：控制台 - [[快捷键|$:/core/ui/ControlPanel/KeyboardShortcuts]]选项卡。
 
-<<random-author "WhiteFall" "https://github.com/Zacharia2">>
+<<random-author "明玥" "https://github.com/Zacharia2">>

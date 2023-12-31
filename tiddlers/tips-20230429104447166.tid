@@ -1,9 +1,9 @@
 class: o-random-tip tc-modal-centered
 created: 20230429104447172
-creator: WhiteFall
+creator: 明玥
 mask-closable: yes
 modified: 20230429122521618
-modifier: WhiteFall
+modifier: 明玥
 subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
 tags: Tiddlywiki5Tip
 title: tips-20230429104447166
@@ -12,4 +12,4 @@ type: text/vnd.tiddlywiki
 > [[TidGi（太记）|https://github.com/tiddly-gittly/TidGi-Desktop]]、NodeJS版TiddlyWiki、[[Knowledge base Template（TidGi默认知识模版）|https://github.com/tiddly-gittly/Tiddlywiki-NodeJS-Github-Template]]、[[TiddlyMemo（墨屉）|https://tiddlymemo.org/manual/zh-Hans]]、[[TiddlyWiki XP（XP：快速体验）|https://keatonlao.github.io/tiddlywiki-xp/]] 等等，本质上都是TiddlyWiki（太微）。
 > 不同的是：TidGi更容易使用，因为它是应用而非系统或框架。
 
-<<random-author "WhiteFall" "https://github.com/Zacharia2">>
+<<random-author "明玥" "https://github.com/Zacharia2">>

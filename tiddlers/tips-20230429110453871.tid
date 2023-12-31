@@ -1,9 +1,9 @@
 class: o-random-tip tc-modal-centered
 created: 20230429110453874
-creator: WhiteFall
+creator: 明玥
 mask-closable: yes
 modified: 20230429110914654
-modifier: WhiteFall
+modifier: 明玥
 subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
 tags: Tiddlywiki5Tip
 title: tips-20230429110453871
@@ -11,4 +11,4 @@ type: text/vnd.tiddlywiki
 
 > 还记得奥卡姆剃刀原则吗？''如无必要，勿增实体。'' 功能越多，问题越多。简单实用稳定就是最好的！
 
-<<random-author "WhiteFall" "https://github.com/Zacharia2">>
+<<random-author "明玥" "https://github.com/Zacharia2">>
