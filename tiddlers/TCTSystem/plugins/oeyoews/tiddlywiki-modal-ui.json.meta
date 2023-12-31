@@ -1,10 +1,10 @@
 author: oeyoews
-core-version: >=5.2.5
+core-version: >=5.3.1
 dependents: 
 description: Tiddlywiki Modal Ui
-list: readme explore
+list: readme
 name: Tiddlywiki Modal Ui
 plugin-type: plugin
 title: $:/plugins/oeyoews/tiddlywiki-modal-ui
 type: application/json
-version: 0.0.1
+version: 0.1.0
