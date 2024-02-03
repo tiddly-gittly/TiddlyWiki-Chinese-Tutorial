@@ -1,6 +1,6 @@
 created: 20230602140440631
 creator: 马不前
-modified: 20230901071924195
+modified: 20240203080749211
 modifier: 明玥
 tags: 编程知识类
 title: 文学编程与TiddlyWiki
@@ -10,7 +10,7 @@ TiddlyWiki像是一种编程与写作的工具，更是一种“开发框架/知
 
 > 1983年，Donald Knuth提出了一种新的编程范型，称为“文学编程”。他说文学编程是“一种将编程语言与文档语言相结合的方法，从而使编写的程序比只用高级语言编写的程序更强大、更便捷、更易维护，而且可以说更有趣。主要思想是把程序当作文学作品，用人的语言而不是计算机的”。
 
-即经过编程后的文学或笔记作品。因为TiddlyWiki是以写作为目标的工具，而不是编程为目标的工具，所以编程文学这个词可能比较合适。此外Jupyter notebook使用MD和anyCode编写文档和代码完成编程目标，而TiddlyWiki使用[[WikiText写作|WikiText笔记与写作（进一步的可能）]]和[[Wiki编程|Wiki编程的定义]]组织和编写文档完成写作目标。
+即经过编程后的文学或笔记作品。因为TiddlyWiki是以写作为目标的工具，而不是编程为目标的工具，所以编程文学这个词可能比较合适。此外Jupyter notebook使用MD和anyCode编写文档和代码完成编程目标，而TiddlyWiki使用[[WikiText写作|笔记原理或知识组织]]和[[Wiki编程|Wiki编程的定义]]组织和编写文档完成写作目标。
 
 !! 早期：Donald Knuth 在 1984 带来 Literate Programming 的概念
 

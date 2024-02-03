@@ -1,16 +1,22 @@
 created: 20230510094605285
 creator: 明玥
-modified: 20230901070732363
+modified: 20240203080749208
 modifier: 明玥
 tags: 任务 笔记思维
-title: WikiText笔记与写作（进一步的可能）
+title: 笔记原理或知识组织
 type: text/vnd.tiddlywiki
 
-! WikiText笔记与写作
+! 笔记或知识组织
+
+我总结的知识结构有三种：线性、树、图。
+
+!! WikiText笔记与写作
 
 什么是WikiText笔记与写作？
 
 WikiText写作是一种与非编程与设计的TiddlyWiki使用方式。基本要求是尽可能的为自己的内容服务，尽可能让使用的wikitext语法变得简洁易懂。花费最少的时间等等。核心要件是服务于写作。简而言之，用好软件和插件提供的功能与设置即可。对于一些非逻辑与代码方面的自定义包含在此列中。参考TiddlyWiki舞的自定义TiddlyWiki。
+
+ZK笔记法的想法生成树非常适合tw。
 
 
 !! 当工具的局限性消失后，你会用它做什么？
