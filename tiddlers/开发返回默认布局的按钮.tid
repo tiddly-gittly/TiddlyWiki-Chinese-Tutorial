@@ -1,12 +1,12 @@
 created: 20230226013317471
 creator: 林一二
-modified: 20230305122817289
+modified: 20240327081940613
 modifier: 林一二
-tags: 开发新版面 版面
-title: 返回默认版面
+tags: 布局 插件开发
+title: 开发返回默认布局的按钮
 type: text/vnd.tiddlywiki
 
-通过把 `$:/layout` 系统状态条目的内容置空，就能返回默认版面了。
+通过把 `$:/layout` 系统状态条目的内容置空，就能返回默认布局（卡片流故事流布局）了。
 
 
 ```

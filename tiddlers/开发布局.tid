@@ -1,0 +1,10 @@
+created: 20240327080530232
+creator: 林一二
+modified: 20240327081804381
+modifier: 林一二
+tags: 插件开发 布局
+title: 开发布局
+
+太微里很多新的插件将功能都做成了布局，也就是「全屏应用」，以获得更好的界面设计自由度，不受卡片流的影响，可以随意布局自己的界面。
+
+例如[[游戏太微|https://tiddly-gittly.github.io/tw-gamification/]]框架，里面每个游戏就是一个布局。

@@ -1,13 +1,9 @@
 created: 20211003071732972
 creator: 林一二
-modified: 20211003071932534
+modified: 20240327083343535
 modifier: 林一二
 tags: TW-Locator
 title: TW-Locator例子：当前知识库的目录
 type: text/vnd.tiddlywiki
 
-```html
-<$macrocall $name="locator-view" baseTitle=欢迎来到太微！ />
-```
-
-<$macrocall $name="locator-view" baseTitle=欢迎来到太微！ />
+<<wikitext-example """<$macrocall $name="locator-view" baseTitle=欢迎来到太微！ />""">>

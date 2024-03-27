@@ -1,0 +1,10 @@
+created: 20240327083221669
+creator: 林一二
+modified: 20240327083329422
+modifier: 林一二
+tags: TW-Locator
+title: 用TOC宏替代Locator
+
+在大型知识库里，Locator 可能会比较卡，这时候我们可以用 TOC 宏来替代它：
+
+<<wikitext-example """<<toc-selective-expandable 欢迎来到太微！>>""">>

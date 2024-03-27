@@ -1,12 +1,18 @@
 created: 20220105142012545
 creator: 林一二
-modified: 20220217093939000
+modified: 20240327084149222
 modifier: 林一二
 tags: 欢迎来到太微！ 太微背景介绍
 title: 幻灯片
 type: text/vnd.tiddlywiki
 
-为方便宣讲，我们在此提供几类幻灯片，对应不同的宣讲场景：<$list filter="[tag[幻灯片]sort[title]]" />
+为方便宣讲，我们在此提供几类幻灯片，对应不同的宣讲场景：
+
+<$list filter="[tag[幻灯片]sort[title]]" counter="counter">
+	<div>
+		<<counter>>: ''<$link to=<<currentTiddler>>/>''
+	</div>
+</$list>
 
 !! 编辑内容
 

@@ -1,0 +1,18 @@
+created: 20240327084217460
+creator: 林一二
+modified: 20240327084426350
+modifier: 林一二
+tags: 自动化
+title: 用列表微件列出一系列条目
+
+使用 List [[微件]]，类似「智能文件夹」的效果
+
+<<wikitext-example """
+<$list filter="[tag[幻灯片]sort[title]]" counter="counter">
+	<div>
+		<<counter>>: ''<$link to=<<currentTiddler>>/>''
+	</div>
+</$list>
+""">>
+
+详见[[列表微件的官方文档|https://bramchen.github.io/tw5-docs/zh-Hans/#ListWidget]]，以及[[筛选器]]的用法。

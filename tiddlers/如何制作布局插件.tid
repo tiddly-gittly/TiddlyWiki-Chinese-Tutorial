@@ -1,0 +1,72 @@
+created: 20240327080537288
+creator: 林一二
+modified: 20240327080646381
+modifier: 林一二
+tags: 开发布局
+title: 如何制作布局插件
+
+!! 布局插件JS部分
+
+插件就是打包的笔记。插件提供的新视图一般用来展示一个微件。
+
+布局不一定要有 JS ，可以创建完全由 Wikitext 组成的布局。不过这里先假设你要用 JS 写一个微件，然后在布局里展示这个微件。例如先创建一个日历微件的 JS 侧代码
+
+src/calendar-widget/widget.ts
+
+```
+import { Calendar } from '@fullcalendar/core';
+import type { Widget as IWidget } from 'tiddlywiki';
+import './widget.css';
+
+const Widget = (require('$:/core/modules/widgets/widget.js') as { widget: typeof IWidget }).widget;
+
+class CalendarWidget extends Widget {
+  /**
+   * Lifecycle method: Render this widget into the DOM
+   */
+  render(parent: Node, _nextSibling: Node): void {
+    this.#calendar = new Calendar(this.#mountElement, { ...settings });
+    this.#calendar?.render();
+    parent.appendChild(this.#containerElement);
+  }
+}
+
+exports.widget = CalendarWidget;
+```
+
+!! Wikitext部分
+
+然后通过元信息文件，保存这个笔记的标题、标签、类型等元信息
+
+src/calendar-widget/widget.js.meta
+
+```
+creator: LinOnetwo
+title: $:/plugins/linonetwo/tw-calendar/calendar-widget/widget.js
+type: application/javascript
+module-type: widget
+hide-body: yes
+```
+
+之后就可以在维基文本侧使用定义的微件，用类似 XML 的语法使用它 `<$calendar height="100vh" />`
+
+```
+title: $:/plugins/linonetwo/tw-calendar/tiddlywiki-ui/PageLayout/CalendarLayout
+name: Calendar
+description: view tiddlers in agenda or calendar by their date related fields
+tags: $:/tags/Layout
+
+\import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
+
+<$navigator story="$:/StoryList" history="$:/HistoryList" openLinkFromInsideRiver={{$:/config/Navigation/openLinkFromInsideRiver}} openLinkFromOutsideRiver={{$:/config/Navigation/openLinkFromOutsideRiver}} relinkOnRename={{$:/config/RelinkOnRename}}>
+
+    <main class="tw-calendar-layout-main-area">
+      <$calendar height="100vh" />
+    </main>
+
+</$navigator>
+```
+
+通过给这个笔记加上 `tags: $:/tags/Layout` 这个标签，它就会被太微的框架部分使用到，展示在可用视图列表里
+
+并在它的 title 作为 `$:/layout` 这个笔记的内容时，替换掉默认的故事流视图，全屏展示这个新的视图。

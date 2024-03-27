@@ -1,0 +1,15 @@
+created: 20230305122730862
+creator: 林一二
+modified: 20240327082120285
+modifier: 林一二
+tags: 高级知识
+title: 布局
+type: text/vnd.tiddlywiki
+
+[[布局（Layout）|https://bramchen.github.io/tw5-docs/zh-Hans/#Alternative%20page%20layouts]]是太微提供多种全屏界面的方案。
+
+类似全屏的 App。太微是一个数据库，基于条目数据，可以运行很多个不同的全屏应用，也就是一个个不同的布局。
+
+效果可见[[多布局切换功能]]。
+
+作为开发者，你可以了解[[开发布局]]。使用者，可以到 CPL 上查看带 `Layout` 标签的插件。
