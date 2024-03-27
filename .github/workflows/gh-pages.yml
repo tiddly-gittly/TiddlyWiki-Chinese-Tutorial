@@ -15,28 +15,43 @@ jobs:
   deploy:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4.0.2
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: 18
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 'latest'
+          run_install: false
 
       - name: Cache dependencies
-        uses: actions/cache@v4
+        uses: actions/cache@v3
         with:
           path: |
             **/node_modules
-          key: ${{ runner.os }}-${{ hashFiles('**/package.json') }}
+            ~/.pnpm-store
+            ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+            ${{ runner.os }}-node-
 
-      - name: 安装 NodeJS 依赖
-        run: npm install
+      - name: Install Dependencies
+        run: pnpm install
+
       - name: 构建在线版本网页
-        run: npm run buildonline
+        run: pnpm run buildonline
       - name: 构建可下载离线版本的网页
-        run: npm run buildoffline
+        run: pnpm run buildoffline
       - name: Workbox 离线缓存
         run: npx workbox injectManifest workbox-config.js
       - name: 构建插件库
-        run: npm run buildlibrary
+        run: pnpm run buildlibrary
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
