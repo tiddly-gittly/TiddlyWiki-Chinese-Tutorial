@@ -15,8 +15,8 @@ devDependencies:
     specifier: ^16.14.18
     version: 16.14.18
   tiddlywiki:
-    specifier: 5.3.0
-    version: 5.3.0
+    specifier: 5.3.3
+    version: 5.3.3
   uglify-js:
     specifier: 3.17.4
     version: 3.17.4
@@ -5121,8 +5121,8 @@ packages:
     resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
     dev: true
 
-  /tiddlywiki@5.3.0:
-    resolution: {integrity: sha512-q18h1fT3MhyBrMGhWP1tmFdyhPcUrC22Ue6OFDp9V8offtFw5pV1zZ7okSu1JHHMjl4R5/ivv3KlXO9qcdmJkQ==}
+  /tiddlywiki@5.3.3:
+    resolution: {integrity: sha512-PkgVfZNpFFHyMmfFw91igXOJn8Z7IWg3NGXOX5EBqJwzGNeYYOIUg4FqCNsWoqBece20HxtkDue/vTf2jDtdZQ==}
     engines: {node: '>=0.8.2'}
     hasBin: true
     dev: true
