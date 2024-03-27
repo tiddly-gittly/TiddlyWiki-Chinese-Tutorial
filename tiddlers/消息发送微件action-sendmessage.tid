@@ -1,0 +1,96 @@
+created: 20240327064523271
+creator: 林一二
+modified: 20240327064542187
+modifier: 林一二
+tags: JS微件
+title: 消息发送微件action-sendmessage
+
+
+```ts
+import { widget as Widget } from '$:/core/modules/widgets/widget.js';
+import { IChangedTiddlers } from 'tiddlywiki';
+
+// 定义 SendMessageWidget 类，继承自 Widget 类
+class SendMessageWidget extends Widget {
+  private actionMessage: string;
+  private actionParam: string;
+  private actionName: string;
+  private actionValue: string;
+  private actionNames: string;
+  private actionValues: string;
+
+  // 构造函数，初始化 SendMessageWidget
+  constructor(parseTreeNode: any, options: any) {
+    super(parseTreeNode, options);
+    this.execute();
+  }
+
+  // 计算微件的内部状态
+  execute() {
+    this.actionMessage = this.getAttribute('$message');
+    this.actionParam = this.getAttribute('$param');
+    this.actionName = this.getAttribute('$name');
+    this.actionValue = this.getAttribute('$value', '');
+    this.actionNames = this.getAttribute('$names');
+    this.actionValues = this.getAttribute('$values');
+  }
+
+  // 将此微件渲染到 DOM 中
+  render(parent: Element, nextSibling: Element) {
+    this.parentDomNode = parent;
+    this.execute();
+  }
+
+  // 刷新微件，确保属性是最新的
+  refresh(changedTiddlers: IChangedTiddlers): boolean {
+    let changedAttributes = this.computeAttributes();
+    if (Object.keys(changedAttributes).length) {
+      this.refreshSelf();
+      return true;
+    }
+    return this.refreshChildren(changedTiddlers);
+  }
+
+  // 触发与此微件相关联的动作
+  invokeAction(triggeringWidget: Widget, event: Event): boolean {
+    let param = this.actionParam;
+    let paramObject: Record<string, string> = {};
+
+    if (this.actionNames && this.actionValues) {
+      let names = this.wiki.filterTiddlers(this.actionNames, this);
+      let values = this.wiki.filterTiddlers(this.actionValues, this);
+      names.forEach((name, index) => {
+        paramObject[name] = values[index] || '';
+      });
+    }
+
+    Object.keys(this.attributes).forEach(name => {
+      if (name.charAt(0) !== '$') {
+        paramObject[name] = this.attributes[name];
+      }
+    });
+
+    if (this.actionName) {
+      paramObject[this.actionName] = this.actionValue;
+    }
+
+    let params = {
+      type: this.actionMessage,
+      param: param,
+      paramObject: paramObject,
+      event: event,
+      tiddlerTitle: this.getVariable('currentTiddler'),
+      navigateFromTitle: this.getVariable('storyTiddler')
+    };
+
+    this.dispatchEvent(params);
+    return true; // 表示动作已被触发
+  }
+}
+
+// 将 SendMessageWidget 类导出为太微微件
+declare let exports: {
+  [key: string]: typeof SendMessageWidget;
+};
+exports['action-sendmessage'] = SendMessageWidget;
+```

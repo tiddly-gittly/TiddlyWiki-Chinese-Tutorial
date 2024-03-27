@@ -1,0 +1,88 @@
+created: 20240327064646408
+creator: 林一二
+modified: 20240327065601795
+modifier: 林一二
+tags: JS微件
+title: 微件收发信息addEventListener和dispatchEvent
+
+[[消息发送微件action-sendmessage]]的原理是调用 `dispatchEvent`。
+
+在微件的方法里调用 `dispatchEvent` 会实际调用 `Widget` 这个父类上的 `dispatchEvent` 方法，然后逐级顺着微件树向上传递，最终传到 `$tw.rootWidget` 上。
+
+最终遇到通过 `$tw.rootWidget.addEventListener` 注册了的事件监听器，或中间某一级微件注册了监听器，就会开始执行监听器里的逻辑。
+
+```ts
+class Widget {
+  private eventListeners: EventListener = {};
+
+  // 向微件添加事件监听器
+  addEventListener(type: string, handler: string | ((event: any) => boolean)) {
+    const self = this;
+    if (typeof handler === 'string') {
+      // 如果 handler 是字符串，则认为是这个微件上的一个方法名
+      this.eventListeners[type] = function(event) {
+        return self[handler].call(self, event);
+      };
+    } else {
+      // 如果 handler 是函数，则直接作为事件处理函数
+      this.eventListeners[type] = function(event) {
+        return handler.call(self, event);
+      };
+    }
+  }
+
+  // 向微件派发事件
+  dispatchEvent(event: any) {
+    event.widget = event.widget || this;
+    // 如果这个微件处理了这个事件，则派发它
+    const listener = this.eventListeners[event.type];
+    if (listener) {
+      // 如果监听器返回 false，则不再向上传播事件
+      if (!listener(event)) {
+        return false;
+      }
+    }
+    // 否则，将事件派发给父级微件
+    if (this.parentWidget) {
+      return this.parentWidget.dispatchEvent(event);
+    }
+    return true;
+  }
+
+  // 其他类方法
+}
+```
+
+使用方法
+
+```ts
+class MyWidget extends Widget {
+  constructor(parseTreeNode: any, options: any) {
+    super(parseTreeNode, options);
+    // 用法一：为 'myCustomEvent' 事件注册监听器
+		// 注意这只能捕获子微件，也就是被包在当前微件里的其它微件
+    this.addEventListener('myCustomEvent', this.handleMyCustomEvent);
+		
+		// 用法二：在根微件上注册监听器，这可以捕获任何地方发送的消息
+		$tw.rootWidget.addEventListener("tm-scroll",function(event) {
+			$tw.pageScroller.handleEvent(event);
+		});
+  }
+
+  // 定义一个方法来处理事件
+  handleMyCustomEvent(event: any): boolean {
+    console.log('接收到事件：', event);
+    // 返回 false 停止事件传播
+    return false;
+  }
+
+  // 在微件的某个地方触发事件
+  someMethod() {
+	  // 方法一：在自己身上发，然后让它逐级冒泡上去
+    this.dispatchEvent({ type: 'myCustomEvent', data: '一些数据' });
+		
+		// 方法二：直接发到根微件上
+		$tw.rootWidget.dispatchEvent({type: "tm-auto-save-wiki"});
+  }
+}
+```

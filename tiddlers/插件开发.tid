@@ -1,6 +1,6 @@
 created: 20211003091131848
 creator: 林一二
-modified: 20230207151252799
+modified: 20240327063401379
 modifier: 林一二
 page-cover: https://tiddlywiki.com/talkytalky/images/TiddlyWiki%2520Architecture.svg
 tags: 欢迎来到太微！
@@ -11,7 +11,7 @@ type: text/vnd.tiddlywiki
 
 !!! WikiText 插件
 
-只需要通读[[中文文档]]了解所有 WikiText 语法即可，然后推荐使用[[Gatha插件来开发|如何在单文件版里写一个TW插件]]。
+只需要通读[[中文文档]]了解所有 WikiText 语法即可，然后对 JavaScript 不熟悉的用户推荐使用[[Gatha插件来开发|如何在单文件版里写一个TW插件]]；对 JS 和 TS 熟悉的用户或想开发功能强大插件的则可以阅读[[Modern.TiddlyDev|https://tiddly-gittly.github.io/Modern.TiddlyDev/]]的教程，来学习功能更强大但有更多内容要学的高级开发方式。
 
 !!! JS 高级插件
 
@@ -19,7 +19,7 @@ type: text/vnd.tiddlywiki
 
 因为太微本身的 API 文档不完善，而且没有原生的 TS 类型。所以目前的学习主要靠阅读其它插件的代码，来了解写法。
 
-小伙伴们也在把 API 用法整理到[[TW5-Typed|https://github.com/tiddly-gittly/TW5-Typed]]里，方便使用 TS 开发 JS 插件。
+小伙伴们也在把 API 用法整理到[[TW5-Typed|https://tiddly-gittly.github.io/TW5-Typed/]]里，方便使用 TS 开发 JS 插件。
 
 !!! 值得一读的插件
 

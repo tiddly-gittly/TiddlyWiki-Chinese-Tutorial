@@ -1,0 +1,33 @@
+created: 20240327063449945
+creator: 林一二
+modified: 20240327065810228
+modifier: 林一二
+tags: 插件开发
+title: 在太微里使用JavaScript
+
+!! 推荐的方式：包装成微件
+
+例如最常见的动作微件：
+
+<<wikitext-example """
+<$button>
+	<$action-confirm $message="真的要让本条目自毁吗？" $prompt={{$:/state/promptUser}}>
+		<$action-deletefield $tiddler="在太微里使用JavaScript" $field="text"/>
+	</$action-confirm>
+	删除本条目
+</$button>
+""">>
+
+详见[[弹框确认微件action-confirm]]里的解析，它就是对 `window.confirm` 这个 JS 调用的包装。
+
+此外[[Modern.TiddlyDev|https://tiddly-gittly.github.io/Modern.TiddlyDev/]]的教程里也介绍了如何创建一个简单的按钮微件
+
+!! 包装成事件监听器
+
+看看消息是如何在[[消息发送微件action-sendmessage]]里发送的，以及是如何在[[微件收发信息addEventListener和dispatchEvent]]里接收的。
+
+!! 直接放入 RawMarkup
+
+详见[[SystemTag: $:/tags/RawMarkup|https://tiddlywiki.com/#SystemTag%3A%20%24%3A%2Ftags%2FRawMarkup]]
+
+这适合要全局生效的脚本，不过这样的用法不多，这个功能一般是用于放 Google Analysis 之类的第三方服务，或添加字体 CSS 用（[[如何添加在线字体]]）

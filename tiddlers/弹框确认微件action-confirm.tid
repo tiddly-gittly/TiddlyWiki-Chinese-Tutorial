@@ -1,0 +1,68 @@
+created: 20240327064131431
+creator: 林一二
+modified: 20240327064451603
+modifier: 林一二
+tags: JS微件
+title: 弹框确认微件action-confirm
+
+
+```ts
+import { widget as Widget } from '$:/core/modules/widgets/widget.js';
+import { IChangedTiddlers } from 'tiddlywiki';
+import './index.css';
+
+// 定义 ConfirmWidget 类，继承自 Widget
+class ConfirmWidget extends Widget {
+  private message: string;
+  private prompt: boolean;
+
+  // 构造函数，初始化 ConfirmWidget
+  constructor(parseTreeNode: any, options: any) {
+    super(parseTreeNode, options);
+    this.execute();
+  }
+
+  // 计算微件的内部状态
+  execute() {
+    this.message = this.getAttribute('$message', $tw.language.getString('ConfirmAction'));
+    this.prompt = this.getAttribute('$prompt', 'yes') !== 'no';
+    this.makeChildWidgets();
+  }
+
+  // 将此微件渲染到 DOM 中
+  render(parent: Element, nextSibling: Element) {
+    this.parentDomNode = parent;
+    this.renderChildren(parent, nextSibling);
+  }
+
+  // 刷新微件，确保属性是最新的
+  refresh(changedTiddlers: IChangedTiddlers): boolean {
+    let changedAttributes = this.computeAttributes();
+    if (changedAttributes['$message'] || changedAttributes['$prompt']) {
+      this.refreshSelf();
+      return true;
+    }
+    return this.refreshChildren(changedTiddlers);
+  }
+
+  // 触发与此微件相关联的动作
+  invokeAction(triggeringWidget: Widget, event: Event): boolean {
+    let invokeActions = true;
+    if (this.prompt) {
+      invokeActions = window.confirm(this.message);
+    }
+    return invokeActions ? this.invokeActions(triggeringWidget, event) : false;
+  }
+
+  // 控制动作传播的方法
+  allowActionPropagation(): boolean {
+    return false;
+  }
+}
+
+// 将 ConfirmWidget 类导出为太微微件
+declare let exports: {
+  [key: string]: typeof ConfirmWidget;
+};
+exports['action-confirm'] = ConfirmWidget;
+```
