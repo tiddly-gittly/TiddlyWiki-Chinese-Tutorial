@@ -12,6 +12,6 @@
     "npm-check-updates": "^16.14.18",
     "tiddlywiki": "5.3.3",
     "uglify-js": "3.17.4",
-    "workbox-cli": "7.0.0"
+    "workbox-cli": "7.1.0"
   }
 }
