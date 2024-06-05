@@ -1,9 +1,9 @@
 class: o-random-tip tc-modal-centered
 created: 20230429112332983
-creator: 明玥
+creator: 星蓝
 mask-closable: yes
 modified: 20230429122054209
-modifier: 明玥
+modifier: 星蓝
 subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
 tags: Tiddlywiki5Tip
 title: tips-20230429112332978
@@ -12,4 +12,4 @@ type: text/vnd.tiddlywiki
 > 如何升级Wiki.HTML（单文件Wiki）? 
 > 使用 官方的[[Upgrade Wizard|https://tiddlywiki.com/upgrade.html]]网页 升级你的单文件Wiki吧！
 
-<<random-author "明玥" "https://github.com/Zacharia2">>
+<<random-author "星蓝" "https://github.com/Zacharia2">>
