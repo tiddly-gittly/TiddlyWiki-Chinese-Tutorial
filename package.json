@@ -10,7 +10,7 @@
     "cross-env": "7.0.3",
     "html-minifier-terser": "7.2.0",
     "npm-check-updates": "^16.14.18",
-    "tiddlywiki": "5.3.3",
+    "tiddlywiki": "5.3.5",
     "uglify-js": "3.17.4",
     "workbox-cli": "7.0.0"
   }
