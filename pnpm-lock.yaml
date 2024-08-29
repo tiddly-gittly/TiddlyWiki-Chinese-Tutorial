@@ -18,8 +18,8 @@ devDependencies:
     specifier: 5.3.3
     version: 5.3.3
   uglify-js:
-    specifier: 3.17.4
-    version: 3.17.4
+    specifier: 3.19.3
+    version: 3.19.3
   workbox-cli:
     specifier: 7.0.0
     version: 7.0.0
@@ -5126,6 +5126,7 @@ packages:
     engines: {node: '>=0.8.2'}
     hasBin: true
     dev: true
+    bundledDependencies: []
 
   /tmp@0.0.33:
     resolution: {integrity: sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==}
@@ -5266,8 +5267,8 @@ packages:
       is-typedarray: 1.0.0
     dev: true
 
-  /uglify-js@3.17.4:
-    resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==}
+  /uglify-js@3.19.3:
+    resolution: {integrity: sha512-v3Xu+yuwBXisp6QYTcH4UbH+xYJXqnq2m/LtQVWKWzYc1iehYnLixoQDN9FH6/j9/oybfd6W9Ghwkl8+UMKTKQ==}
     engines: {node: '>=0.8.0'}
     hasBin: true
     dev: true
