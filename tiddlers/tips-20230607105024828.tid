@@ -1,9 +1,9 @@
 class: o-random-tip tc-modal-centered
 created: 20230607105024832
-creator: 明玥
+creator: 星蓝
 mask-closable: yes
 modified: 20230607105717502
-modifier: 明玥
+modifier: 星蓝
 subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
 tags: Tiddlywiki5Tip
 title: tips-20230607105024828

@@ -1,9 +1,9 @@
 class: o-random-tip tc-modal-centered
 created: 20230429114137800
-creator: 明玥
+creator: 星蓝
 mask-closable: yes
 modified: 20230429115259275
-modifier: 明玥
+modifier: 星蓝
 subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
 tags: Tiddlywiki5Tip
 title: tips-20230429114137795
@@ -13,4 +13,4 @@ type: text/vnd.tiddlywiki
 
 > 太微模板：[[TiddlyMemo（墨屉）|https://tiddlymemo.org/manual/zh-Hans]]、[[Knowledge base Template（太记默认模版）|https://github.com/tiddly-gittly/Tiddlywiki-NodeJS-Github-Template]]、[[TiddlyWiki XP|https://keatonlao.github.io/tiddlywiki-xp/]]
 
-<<random-author "明玥" "https://github.com/Zacharia2">>
+<<random-author "星蓝" "https://github.com/Zacharia2">>

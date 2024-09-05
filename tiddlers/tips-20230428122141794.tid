@@ -1,6 +1,6 @@
 class: o-random-tip tc-modal-centered
 created: 20230428122141798
-creator: 明玥
+creator: 星蓝
 mask-closable: yes
 modified: 20230430115845099
 modifier: 马不前
@@ -11,4 +11,4 @@ type: text/vnd.tiddlywiki
 
 > 阅读少量文章以便于快速认知和使用TidGi ：
 > ''选择TidGi(太记)'' -> [[安装和删除插件]] -> [[tiddlywiki简易教程|https://zhuanlan.zhihu.com/p/555893660]] -> [[插件列表]] -> [[学习Shiraz插件|$:/plugins/kookma/shiraz]] -> [[插件使用]] -> ''学习[[笔记思维]]''
-<<random-author "明玥" "https://github.com/Zacharia2">>
+<<random-author "星蓝" "https://github.com/Zacharia2">>

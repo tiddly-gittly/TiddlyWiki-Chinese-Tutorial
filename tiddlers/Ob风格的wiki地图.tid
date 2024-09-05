@@ -1,5 +1,5 @@
 created: 20221127111232331
-creator: 明玥
+creator: 星蓝
 modified: 20230516134659640
 modifier: 马不前
 tags: 编程知识类
@@ -8,7 +8,7 @@ type: text/vnd.tiddlywiki
 
 【卡片集】
 
-* Author：linonetwo，明玥，[[Peter Hajas|https://github.com/peterhajas]]
+* Author：linonetwo，星蓝，[[Peter Hajas|https://github.com/peterhajas]]
 * 描述：Ob风格的wiki地图。需要安装Gk0Wk/echarts插件。插件版本>=v0.2.2 。
 * 使用方法：根据下列提示创建并设置条目。来源：https://github.com/tiddly-gittly/tw-echarts/discussions/65 。
 
