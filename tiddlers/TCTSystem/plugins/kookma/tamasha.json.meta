@@ -9,4 +9,4 @@ plugin-type: plugin
 source: https://github.com/kookma/TW-Tamasha
 title: $:/plugins/kookma/tamasha
 type: application/json
-version: 0.6.0
+version: 0.6.1
