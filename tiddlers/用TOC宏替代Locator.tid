@@ -1,10 +1,16 @@
 created: 20240327083221669
 creator: 林一二
-modified: 20240327083329422
+modified: 20240905113913362
 modifier: 林一二
 tags: TW-Locator
 title: 用TOC宏替代Locator
 
-在大型知识库里，Locator 可能会比较卡，这时候我们可以用 TOC 宏来替代它：
+在大型知识库里，Locator 可能会比较卡，这时候我们可以用太微自带的 TOC 宏来替代它：
 
 <<wikitext-example """<<toc-selective-expandable 欢迎来到太微！>>""">>
+
+或像[[TidGi太记]]自带的[[文件目录|$:/plugins/linonetwo/itonnote/Sidebar/FolderMenu]]那样，使用来自[[库克马(穆罕默德•拉赫马尼)]]的[[kookma/toc|$:/plugins/kookma/toc]]插件：
+
+<<wikitext-example """\import [all[tiddlers+shadows]tag[$:/tags/Macro/Toc]]
+
+<$transclude $variable="toc-ui" tag=欢迎来到太微！ />""">>

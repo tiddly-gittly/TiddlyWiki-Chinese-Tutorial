@@ -3,7 +3,7 @@ created: 20210902044836979
 creator: 林一二
 icon: 🎉
 list: 太微背景介绍 幻灯片 如何保存 基础知识 高级知识 自动化 排查问题 资源链接 插件开发 插件使用 笔记思维 社区建设 徽章列表 使太微更易用 问题以及想法 欢迎来到太微！
-modified: 20240327083545391
+modified: 20240905114149903
 modifier: 林一二
 page-cover: https://pic4.zhimg.com/v2-881f391ae052f85939fcfeb40bc2056c
 title: 欢迎来到太微！
@@ -16,10 +16,10 @@ type: text/vnd.tiddlywiki
 
 !! 如何浏览此知识库
 
-# 可以翻阅右边侧边栏上的[[文档目录|用TOC宏替代Locator
-]]标签页，或点击「最近」标签页查看最新更新的内容
+# 可以翻阅右边侧边栏上的[[文档目录|用TOC宏替代Locator]]标签页，或点击「最近」标签页查看最新更新的内容
 # 查看每个[[条目]]底部的[[反向链接]]
 # 点击右边栏上的 {{$:/core/ui/Buttons/CommandPalette}} 按钮来打开搜索框（或直接点击 {{$:/core/ui/Buttons/CommandPalette}} ！）
+# 随意点击任何笔记上的编辑按钮 {{||$:/core/ui/Buttons/edit}} 来查看源文本，可以学习到很多高级用法
 
 !! 如何开始使用太微
 
