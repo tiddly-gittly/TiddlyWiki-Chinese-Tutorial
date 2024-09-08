@@ -1,6 +1,6 @@
 created: 20240908095325192
 creator: 林一二
-modified: 20240908103909407
+modified: 20240908105059510
 modifier: 林一二
 tags: 太微中文论坛
 title: 中文论坛NodeBB的部署
@@ -27,8 +27,10 @@ docker rename nodebb nodebb-backup
 
 然后拉取最新镜像，Docker Desktop 上应该可以直接点按钮拉取。
 
-拉取后直接用上述新建方法创建。
+拉取后直接用上述新建里的命令创建。
+
+创建后在 http://localhost:4567/ 会让你重新输入和之前一样的管理员账号密码，以及 MongoDB 地址，地址就用 `mongo` 和 `27017`，`mongo` 来自上面的 `--network mongo-net`。
 
 目前这些容器和镜像都在 WSL2 里，可以用 `wsl --list --verbose` 查看其物理位置。
 
-插件列表在 package.json 文件里，需要自行备份然后重装所有插件，因为插件和 nodebb 没有保存到硬盘上，都是和容器绑定的，升级镜像之前的插件就没了。可以让 AI 整理成一行 npm 安装命令，然后结合 npm 国内镜像源一次性安装。
+插件列表在 package.json 文件里，需要自行备份然后重装所有插件，因为插件和 nodebb 没有保存到硬盘上，都是和容器绑定的，升级镜像之前的插件就没了。可以让 AI 整理成一行 npm 安装命令，然后结合 npm 国内镜像源一次性安装。例如 `nodebb-plugin-dbsearch-rsjieba` 提供了中文搜索，每次升级 nodebb 都得重装。
