@@ -1,0 +1,32 @@
+created: 20240908095325192
+creator: 林一二
+modified: 20240908100818862
+modifier: 林一二
+tags: 太微中文论坛
+title: 中文论坛NodeBB的部署
+
+目前放在[[林一二]]的一台闲置的 Windows 服务器上，通过 Cpolar 内网穿透提供外网访问。
+
+!! 新建
+
+Docker 启动方式：
+
+```sh
+docker run -it --name mongo --restart always --network mongo-net -d  -v D:\tiddlywiki-cn-forum\mongodb:/data/db mongo --wiredTigerCacheSizeGB 0.4
+docker run -d -it --name nodebb --restart always --network mongo-net  -p 4567:4567 -v D:\tiddlywiki-cn-forum\forum:/usr/src/app/public/uploads --privileged=true elestio/nodebb
+```
+
+!! 更新 NodeBB 版本的方式
+
+首先备份旧的容器
+
+```sh
+docker rename mongo mongo-backup
+docker rename nodebb nodebb-backup
+```
+
+然后拉取最新镜像，Docker Desktop 上应该可以直接点按钮拉取。
+
+拉取后直接用上述新建方法创建。
+
+目前这些容器和镜像都在 WSL2 里，可以用 `wsl --list --verbose` 查看其物理位置。
