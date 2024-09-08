@@ -1,6 +1,6 @@
 created: 20240908095325192
 creator: 林一二
-modified: 20240908100818862
+modified: 20240908103909407
 modifier: 林一二
 tags: 太微中文论坛
 title: 中文论坛NodeBB的部署
@@ -30,3 +30,5 @@ docker rename nodebb nodebb-backup
 拉取后直接用上述新建方法创建。
 
 目前这些容器和镜像都在 WSL2 里，可以用 `wsl --list --verbose` 查看其物理位置。
+
+插件列表在 package.json 文件里，需要自行备份然后重装所有插件，因为插件和 nodebb 没有保存到硬盘上，都是和容器绑定的，升级镜像之前的插件就没了。可以让 AI 整理成一行 npm 安装命令，然后结合 npm 国内镜像源一次性安装。
