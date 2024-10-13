@@ -1,0 +1,61 @@
+created: 20241013185927631
+creator: 马不前
+modified: 20241013191127523
+modifier: 马不前
+tags: 太微自身的自定义设置
+title: 禁用拖放机制
+
+[[隐藏设置：禁用拖放|https://bramchen.github.io/tw5-docs/zh-Hans/#Hidden%20Setting%3A%20Disable%20Drag%20and%20Drop]]
+
+简单来说，太微的默认模板中在故事河的界面里设置了一个`dropzone`的微件用来允许用户很方便地直接在故事河中拖入内容并进行导入。可以导入文本，图片或者插件。在没有像CPL这样的工具之前，安装插件的方式就是直接拖到太微里导入的。当然在侧边栏的按钮中也有专门用于导入的按钮。
+
+但有些时候这种拖放机制会造成麻烦。比如经常无意中选中了一些文本想要察看，结果鼠标一移动就弹出了导入窗口，触发了太微的拖放机制。而去关闭导入窗口再重新回到条目上，会很麻烦，影响注意力。甚至几秒钟后又产生了这个问题。很是影响。
+
+所以我就去论坛上询问有没有什么方法可以解决这个问题。
+
+[[论坛的解决办法|https://talk.tiddlywiki.org/t/how-to-close-the-import-window-caused-by-moving-the-mouse-after-selecting-text/10911]]
+
+英文论坛上提供了两种解决办法。一种是找到条目`$:/config/DragAndDrop/Enable`，并设置值为`no`，这个操作会影响所有太微的拖放操作，除了不再有上面的导入因素外，也不能通过标签丸来改变标签的顺序。当然也可能产生其他不可控的因素。因为这相当于直接取消掉了这个微件。这种办法比较暴力，所以论坛后面又跟进了第二种解决办法。
+
+找到`$:/core/ui/PageTemplate`条目。这是核心里的默认模板条目，找到下面这段代码。
+
+
+```
+ <$dropzone enable=<<tv-enable-drag-and-drop>> class="tc-dropzone tc-page-container-inner"> 
+
+<$list filter="[all[shadows+tiddlers]tag[$:/tags/PageTemplate]!has[draft.of]]" variable="listItem">
+
+<$transclude tiddler=<<listItem>>/>
+
+</$list>
+
+</$dropzone> 
+```
+
+注释掉里面的`dropzone`微件，如下面代码所示。你可以添加一个注释字段或者在旁边注释为什么要这样做。目的是为了防止在故事河中无意中拖入而产生的弊端。
+
+
+```
+<!--- <$dropzone enable=<<tv-enable-drag-and-drop>> class="tc-dropzone tc-page-container-inner"> DISABLE DRAG-DROP IMPORTS -->
+
+<$list filter="[all[shadows+tiddlers]tag[$:/tags/PageTemplate]!has[draft.of]]" variable="listItem">
+
+<$transclude tiddler=<<listItem>>/>
+
+</$list>
+
+<!-- </$dropzone> -->
+```
+
+之后你可以新建一个条目，内容如下。并添加上`$:/tags/SideBar`标签，或任何你能找到这个条目的标签。
+
+
+```
+<$dropzone>
+<div style="width:100%;height:20em;border: 1px solid red;line-height:20em;text-align:center;font-size:200%;">
+Drag and drop to import
+</div>
+</$dropzone>
+```
+
+这样侧边栏里就会有这样一个条目，允许你导入文本或者图片或者插件等。
