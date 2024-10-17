@@ -1,0 +1,36 @@
+created: 20241017143628798
+creator: 马不前
+modified: 20241017144341121
+modifier: 马不前
+tags: TidGi太记
+title: 如何去除不想上传git的文件
+
+太记可以通过软件自带的git功能进行本地备份，同时可以上传到GitHub仓库上去。但有时候之前同步过的文件，之后觉得不需要再同步上传。那么怎么去除这些文件呢？可以查看下面这篇文章深入了解。
+
+[[如何在 Git 中取消文件的跟踪|https://www.cnblogs.com/echohye/p/18362333]]
+
+简单来说先在`.gitignore`文件中添加该文件。
+
+然后通过vscode的终端或者git的终端等，去执行下面的命令。
+
+```shell
+git update-index --assume-unchanged <file>
+```
+
+例如下面的示例
+
+```shell
+git update-index --assume-unchanged tiddlers/xxx.tid
+```
+
+恢复则是执行下面的命令，就把文件放出来了。
+
+```shell
+git update-index --no-assume-unchanged <file>
+```
+
+到这里都没什么特别之处。但这里最大坑在于Git，对于一些特殊符号有特殊处理。所以上面`xxx.tid`文件就不会有问题，但`tiddlers/$__config_ViewToolbarButtons_Visibility_$__core_ui_Buttons_edit.tid`类似的系统条目就会有问题。所以就需要你加上英文的单引号来处理。
+
+注意一定是单引号，不是双引号。这真的算是一个坑，因为git的反馈非常抽象，完全没有提示应该怎么做。
+
+总之记住了，执行不行的话，就用单引号试试。
