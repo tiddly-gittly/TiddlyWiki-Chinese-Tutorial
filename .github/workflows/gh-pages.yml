@@ -62,7 +62,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - uses: jsmrcaga/action-netlify-deploy@v2.2.0
+      - uses: jsmrcaga/action-netlify-deploy@v2.4.0
         with:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_PERSONAL_ACCESS_TOKEN }}
           NETLIFY_DEPLOY_TO_PROD: true
