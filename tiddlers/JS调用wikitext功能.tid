@@ -1,0 +1,16 @@
+created: 20250106041604700
+creator: 星蓝
+modified: 20250106041842392
+modifier: 星蓝
+tags: 插件开发
+title: JS调用wikitext功能
+
+可以用js的api调用筛选器、微件、宏、角括号等可以调用的wiki功能，它们将渲染后返回html文本结果。
+
+```js
+$tw.wiki.renderText("text/html", "text/vnd.tiddlywiki", "{{{ [tag[HelloThere]count[]] }}}")
+
+$tw.wiki.renderText("text/html", "text/vnd.tiddlywiki", "<$text text='string'/>")
+
+$tw.wiki.renderText("text/html", "text/vnd.tiddlywiki", "<<now>>")
+```
