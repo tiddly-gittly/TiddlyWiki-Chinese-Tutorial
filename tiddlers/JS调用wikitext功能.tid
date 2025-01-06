@@ -1,11 +1,13 @@
 created: 20250106041604700
 creator: 星蓝
-modified: 20250106041842392
+modified: 20250106103258005
 modifier: 星蓝
 tags: 插件开发
 title: JS调用wikitext功能
 
-可以用js的api调用筛选器、微件、宏、角括号等可以调用的wiki功能，它们将渲染后返回html文本结果。
+可以用 tiddlywiki 的 js api 调用筛选器、微件、宏、角括号等wiki功能，它们将渲染结果后返回html文本，然后解析html获取最终的输出结果。
+
+这项功能可以用于设计tiddlywiki布局，利用React进行二次设计。
 
 ```js
 $tw.wiki.renderText("text/html", "text/vnd.tiddlywiki", "{{{ [tag[HelloThere]count[]] }}}")
@@ -14,3 +16,7 @@ $tw.wiki.renderText("text/html", "text/vnd.tiddlywiki", "<$text text='string'/>"
 
 $tw.wiki.renderText("text/html", "text/vnd.tiddlywiki", "<<now>>")
 ```
+
+若要创建替代页面版面，并能够切换到该版面，您需要使用系统标签：`$:/tags/Layout` 创建替代页面模板。
+
+版面切换机制要求页面模板条目，具有在切换用户界面的清单中使用的字段 name 和 description。
