@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   deploy:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -50,8 +50,6 @@ jobs:
         run: pnpm run buildoffline
       - name: Workbox 离线缓存
         run: npx workbox injectManifest workbox-config.js
-      - name: 构建插件库
-        run: pnpm run buildlibrary
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
