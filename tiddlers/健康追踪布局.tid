@@ -1,0 +1,18 @@
+created: 20250326105920249
+creator: 林一二
+modified: 20250326105932426
+modifier: 林一二
+tags: 常用布局介绍
+title: 健康追踪布局
+
+健康追踪布局 （health-buff-debuff-tracker）
+
+* ''特点''：专门用于记录健康状况的表格视图
+* ''分类系统''：
+** Buff（增益）：有益健康的行为
+** Debuff（减益）：健康问题
+** Medicine（药物）：服用的药品
+** Condition（状态）：身体指标
+* ''获取方式''：安装 `linonetwo/health-buff-debuff-tracker` 插件
+
+[img[健康记录截图.png]]

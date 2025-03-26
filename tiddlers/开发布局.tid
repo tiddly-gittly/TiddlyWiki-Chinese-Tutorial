@@ -1,6 +1,6 @@
 created: 20240327080530232
 creator: 林一二
-modified: 20240327081804381
+modified: 20250326110136671
 modifier: 林一二
 tags: 插件开发 布局
 title: 开发布局
@@ -8,3 +8,63 @@ title: 开发布局
 太微里很多新的插件将功能都做成了布局，也就是「全屏应用」，以获得更好的界面设计自由度，不受卡片流的影响，可以随意布局自己的界面。
 
 例如[[游戏太微|https://tiddly-gittly.github.io/tw-gamification/]]框架，里面每个游戏就是一个布局。
+
+!! 为什么这些布局提供了太微的核心体验？
+
+# ''解决特定场景的深层需求''：每个布局都针对一类知识工作痛点提供完整解决方案
+## 提供最适合这类信息的输入输出方式（优化人机 I/O）。
+## 日历视图可能适合录入数据，但针对之前的某个日记作衍生思考或自我检讨时，横向手风琴布局就更合适了。
+# ''超越表面美化的功能创新''：重新设计而不仅是重新装饰交互方式
+## 太微允许开发者在布局里随意放置任何内容，而不会影响别的界面。
+## 可以去掉任何太微默认的按钮、工具栏，而设计自己觉得最合适的工具栏等等。
+# ''可组合性''：不同布局，同一个数据库。
+## 太微本身是一个图数据库（图论数据库，Graph Database），所有笔记都通过链接或字段的方式互相关联，自带筛选器表达式用于查询数据库
+## 所有布局都是基于同一个数据源，数据完全打通。
+## 在移动聊天式布局里录入的卡片笔记，可以在条目日历里按时间顺序查看，也可以添加到原则布局里作为行为准则去间隔重复。
+# ''个性化扩展''：基于通用模式但允许深度定制
+## 太微的插件都是开源的，而且大多基于维基文本（WikiText）书写，而不是使用 JavaScript 等编程语言，很易于普通人阅读和配合 AI 修改
+## 太微内的每个功能本质上都是一个个笔记，布局插件也是由一个个笔记组成的。可以直接修改这些笔记，然后就能看到界面被自己定制修改了。
+
+这些布局共同构成了太微区别于其他笔记工具的独特优势——它不是提供单一的知识容器，而是提供多种认知工具，让知识工作匹配人脑的真实运作方式。
+
+!! 如何创建自己的布局
+
+一般笔记应用的使用者可以跳过这段，但如果你想设计一个专用于某类数据的界面，可以尝试创建自己的布局。
+
+创建自定义布局需要创建一个带有 `$:/tags/Layout` 系统标签的替代页面模板条目。基本步骤包括：
+
+# 新建一个条目，添加 `$:/tags/Layout` 标签
+# 确保包含 `name` 和 `description` 字段（用于布局切换器中显示）
+# 基于以下通用模板开始构建：
+
+```tid
+\whitespace trim
+\import [subfilter{$:/core/config/GlobalImportFilter}]
+\define containerClasses()
+tc-page-container tc-language-$(languageTitle)$ your-plugin-name-container
+\end
+\procedure redirected-navigate-actions()
+  <$action-setfield $tiddler="$:/layout" text="" $timestamp="no" />
+  <$action-navigate $to=<<event-navigateTo>> $scroll="yes" />
+\end
+
+<$navigator story="$:/StoryList" history="$:/HistoryList" openLinkFromInsideRiver={{$:/config/Navigation/openLinkFromInsideRiver}} openLinkFromOutsideRiver={{$:/config/Navigation/openLinkFromOutsideRiver}} relinkOnRename={{$:/config/RelinkOnRename}}>
+	<$messagecatcher $tm-navigate=<<redirected-navigate-actions>>>
+		{{$:/core/ui/CommandPaletteTemplate}}
+		<div class=<<containerClasses>>>
+			<!-- Your layout content here -->
+		</div>
+	</$messagecatcher>
+</$navigator>
+```
+
+关键组成部分：
+
+* 导入标准布局中的全局可用宏
+* 定义顶层 CSS 类
+* 处理链接导航逻辑
+* 选择性包含标准界面元素（如命令面板）
+
+创建完成后，您的自定义布局将出现在布局切换器（`Ctrl+Shift+L`）的列表中。
+
+太微的布局功能为用户提供了极大的界面定制自由，从简洁的移动聊天界面到复杂的数据可视化仪表盘，几乎可以满足任何知识管理场景的需求。通过尝试不同的布局插件，您可以找到最适合自己工作流程的界面方案。当现有布局无法满足特定需求时，创建自定义布局的过程虽然需要一些技术知识，但为高级用户提供了无限的可能性。

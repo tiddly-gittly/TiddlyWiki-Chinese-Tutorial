@@ -1,0 +1,25 @@
+created: 20250326105415398
+creator: 林一二
+modified: 20250326105442058
+modifier: 林一二
+tags: 布局 插件使用
+title: 常用布局介绍
+
+
+!! 常用布局
+
+!!! 白板
+
+[img[https://pic1.zhimg.com/80/v2-73dfc44959d9f793b6746910ea08ed58_1440w.webp]]
+
+!!! 日历（内容为林一二新冠一周病情日记）
+
+[img[https://pic3.zhimg.com/80/v2-216795a7016265b86285eace39bcb902_1440w.webp]]
+
+!!! 默认故事流
+
+[img[https://pic2.zhimg.com/80/v2-13aa858ca7467849ce71f581546209f1_1440w.webp]]
+
+!!! 更多来自插件的布局
+
+比如 `captivate` 主题插件就有另外的布局，[[TiddlyFlex多栏布局插件|https://tw-cpl.netlify.app/#Plugin_202403170416726]]也将新功能以新布局的形式提供，从而不影响默认的卡片流布局的功能。

@@ -1,0 +1,16 @@
+created: 20250326105959765
+creator: 林一二
+modified: 20250326110020343
+modifier: 林一二
+tags: 常用布局介绍
+title: CPL插件源布局
+
+CPL 插件源：安装上述插件的应用市场
+
+CPL 插件源是由 [[太微(TiddlyWiki)中文社区|https://github.com/tiddly-gittly]] 维护的、致力于搜集网络上所有与 TiddlyWiki5 有关插件的、希望为中国以及全世界的太微用户提供一键安装、更新插件体验的公开插件源。
+
+如果还不了解该如何使用太微和本插件源，欢迎阅读 [[中文社区共建的太微（TiddlyWiki）教程|https://tw-cn.netlify.app]] 里插件相关的部分。如上提到的插件源和教程皆为开源项目，你可以在 [[GitHub|https://github.com/tiddly-gittly]] 中找到并参与贡献！如果乐意，可以通过 QQ 群等方式加入我们，详情请见如上提到的中文教程。
+
+可以通过 [ext[https://tw-cpl.netlify.app/]] 访问在线版，不过要往自己的知识库里安装插件，还是得使用本地版的 CPL 布局。
+
+[img[CPL插件源布局截图.png]]

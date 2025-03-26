@@ -1,0 +1,17 @@
+created: 20250326105936201
+creator: 林一二
+modified: 20250326105955301
+modifier: 林一二
+tags: 常用布局介绍
+title: 可视化大屏布局
+
+可视化仪表盘 （visualization-dashboard）
+
+* ''特点''：数据可视化大屏，展示知识库统计信息
+* ''功能亮点''：
+** 基于 ECharts 的图表系统
+** 可定制的仪表组件
+** 模板化快速创建新仪表
+* ''获取方式''：安装 `linonetwo/visualization-dashboard` 插件
+
+[img[可视化大屏截图.png]]

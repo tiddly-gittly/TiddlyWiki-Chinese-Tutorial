@@ -1,0 +1,17 @@
+[
+    {
+        "author": "linonetwo",
+        "dependents": "",
+        "description": "Allow edit tags without enter edit mode.",
+        "list": "readme",
+        "name": "edit-tags-on-view-mode",
+        "plugin-type": "plugin",
+        "stability": "STABILITY_1_EXPERIMENTAL",
+        "text": "{\"tiddlers\":{\"$:/plugins/linonetwo/edit-tags-on-view-mode/CascadeEditMode\":{\"title\":\"$:/plugins/linonetwo/edit-tags-on-view-mode/CascadeEditMode\",\"code-body\":\"yes\",\"tags\":\"$:/tags/ViewTemplateTagsFilter\",\"list-before\":\"$:/config/ViewTemplateTagsFilters/default\",\"text\":\"[[$:/state/edit-view-mode-tags/]addsuffix<currentTiddler>get[text]compare:string:eq[yes]then[$:/plugins/linonetwo/edit-tags-on-view-mode/EditMode]]\"},\"$:/plugins/linonetwo/edit-tags-on-view-mode/EditMode\":{\"title\":\"$:/plugins/linonetwo/edit-tags-on-view-mode/EditMode\",\"code-body\":\"yes\",\"text\":\"\\\\whitespace trim\\n<$reveal type=\\\"nomatch\\\" stateTitle=<<folded-state>> text=\\\"hide\\\" tag=\\\"div\\\" retain=\\\"yes\\\" animate=\\\"yes\\\">\\n  <div class=\\\"tc-tags-wrapper\\\" style=\\\"display:flex\\\">\\n    <$transclude tiddler=\\\"$:/core/ui/EditTemplate/tags\\\"/>\\n    <$button class=\\\"tc-btn-invisible\\\" style=\\\"width: 2em;\\\">\\n      {{$:/core/images/done-button}}\\n      <$action-deletetiddler $tiddler={{{ [[$:/state/edit-view-mode-tags/]addsuffix<storyTiddler>] }}}/>\\n    </$button>\\n  </div>\\n</$reveal>\\n\"},\"$:/plugins/linonetwo/edit-tags-on-view-mode/TriggerEdit\":{\"title\":\"$:/plugins/linonetwo/edit-tags-on-view-mode/TriggerEdit\",\"code-body\":\"yes\",\"tags\":\"$:/tags/ViewTemplate/Tags\",\"text\":\"\\\\whitespace trim\\n<%if [<storyTiddler>get[tags]!is[blank]] %>\\n  <$button class=\\\"tc-btn-invisible\\\" set={{{ [[$:/state/edit-view-mode-tags/]addsuffix<storyTiddler>] }}} setTo=\\\"yes\\\" tooltip=\\\"add tags\\\">\\n    {{$:/core/images/new-here-button}}\\n  </$button>\\n<%endif%>\\n\"},\"$:/plugins/linonetwo/edit-tags-on-view-mode/readme\":{\"title\":\"$:/plugins/linonetwo/edit-tags-on-view-mode/readme\",\"type\":\"text/vnd.tiddlywiki\",\"text\":\"! edit-tags-on-view-mode\\n\\nAllow edit tags without enter edit mode.\\n\\nForum: https://talk.tiddlywiki.org/t/any-plugin-to-edit-tag-on-view-mode/10313/7\\n\\nRelease until https://github.com/TiddlyWiki/TiddlyWiki5/pull/8462 gets merged.\\n\"}}}",
+        "title": "$:/plugins/linonetwo/edit-tags-on-view-mode",
+        "type": "application/json",
+        "version": "0.0.1",
+        "Modern.TiddlyDev#SHA256-Hashed": "50d7f86cc48a2f4d2e14007b10178fe1383a6b8bb3b14f837c78f7869cdb4afd",
+        "core-version": ">=5.3.6"
+    }
+]
