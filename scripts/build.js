@@ -59,6 +59,7 @@ function buildOnlineHTML(distDir, htmlName, minify, excludeFilter) {
 
     // 静态资源拷贝
     shellI(`cp -r public/ ${distDir} &> /dev/null`);
+    shellI(`cp -r files/ ${distDir} &> /dev/null`);
     shellI(`cp tiddlers/favicon.ico ${distDir}/favicon.ico &> /dev/null`);
     shellI(`cp tiddlers/TiddlyWikiIconWhite.png ${distDir}/TiddlyWikiIconWhite.png &> /dev/null`);
     shellI(`cp tiddlers/TiddlyWikiIconBlack.png ${distDir}/TiddlyWikiIconBlack.png &> /dev/null`);
@@ -68,8 +69,8 @@ function buildOnlineHTML(distDir, htmlName, minify, excludeFilter) {
     shell('cp -r tiddlers/ tmp_tiddlers_backup &> /dev/null'); // 备份 因为下面有改变tiddler的field的操作(媒体文件全部转为canonical)
     shell(`npx tiddlywiki . --output ${distDir}` +
         ' --deletetiddlers \'[[$:/UpgradeLibrary]] [[$:/UpgradeLibrary/List]]\'' +
-        ' --setfield \'[is[image]] [is[binary]] [type[application/msword]] [type[image/svg+xml]]\' _canonical_uri $:/core/templates/canonical-uri-external-image text/plain' +
-        ' --setfield \'[is[image]] [is[binary]] [type[application/msword]] [type[image/svg+xml]]\' text "" text/plain' + /* 注意这一步也会把所有媒体文件的内容变成空的 */
+        ' --setfield \'[is[image]] [is[binary]] +[!has[_canonical_uri]]\' _canonical_uri $:/core/templates/canonical-uri-external-image text/plain' +
+        ' --setfield \'[is[image]] [is[binary]] +[!has[_canonical_uri]]\' text "" text/plain' + /* 注意这一步也会把所有媒体文件的内容变成空的 */
         ` --rendertiddler $:/core/save/offline-external-js index-raw.html text/plain "" publishFilter "${excludeFilter}"` +
         ' --rendertiddler $:/core/templates/tiddlywiki5.js tiddlywikicore.js text/plain'
     );
