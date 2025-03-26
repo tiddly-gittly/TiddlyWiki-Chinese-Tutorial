@@ -59,7 +59,7 @@ function buildOnlineHTML(distDir, htmlName, minify, excludeFilter) {
 
     // 静态资源拷贝
     shellI(`cp -r public/ ${distDir} &> /dev/null`);
-    shellI(`cp -r files/ ${distDir} &> /dev/null`);
+    shellI(`cp -r files/ ${distDir}/files/ &> /dev/null`);
     shellI(`cp tiddlers/favicon.ico ${distDir}/favicon.ico &> /dev/null`);
     shellI(`cp tiddlers/TiddlyWikiIconWhite.png ${distDir}/TiddlyWikiIconWhite.png &> /dev/null`);
     shellI(`cp tiddlers/TiddlyWikiIconBlack.png ${distDir}/TiddlyWikiIconBlack.png &> /dev/null`);
