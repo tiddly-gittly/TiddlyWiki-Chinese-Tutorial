@@ -1,9 +1,9 @@
 class: o-random-tip tc-modal-centered
 created: 20230429115905510
-creator: 星蓝
+creator: 霆枢
 mask-closable: yes
 modified: 20230429115926617
-modifier: 星蓝
+modifier: 霆枢
 subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
 tags: Tiddlywiki5Tip
 title: tips-20230429115905506
@@ -11,4 +11,4 @@ type: text/vnd.tiddlywiki
 
 > 很久很久以前，在一条河流里，生活着许多许多的小鱼儿（Tiddlers），它们快活地在故事河（Story River）里游来游去。这些小鱼儿每一个都有自己的名字（条目名），自己的种类（内容类型），它携带的信息组成了鱼儿美丽的身体与骨架，附加的字段构成了它美丽的鳞片。
 
-<<random-author "星蓝" "https://github.com/Zacharia2">>
+<<random-author "霆枢" "https://github.com/Zacharia2">>
