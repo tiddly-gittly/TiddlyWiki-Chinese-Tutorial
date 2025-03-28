@@ -1,6 +1,6 @@
 class: o-random-tip tc-modal-centered
 created: 20230429105357802
-creator: 星蓝
+creator: 霆枢
 mask-closable: yes
 modified: 20230430115646821
 modifier: 马不前
@@ -11,5 +11,5 @@ type: text/vnd.tiddlywiki
 
 > [[太微是开发框架/知识管理操作系统，不是笔记软件|太微与太记的区别]] ——林一二
 
-<<random-author "星蓝" "https://github.com/Zacharia2">>
+<<random-author "霆枢" "https://github.com/Zacharia2">>
 

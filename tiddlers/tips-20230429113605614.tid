@@ -1,9 +1,9 @@
 class: o-random-tip tc-modal-centered
 created: 20230429113605622
-creator: 星蓝
+creator: 霆枢
 mask-closable: yes
 modified: 20230429122336398
-modifier: 星蓝
+modifier: 霆枢
 subtitle: {{$:/plugins/oeyoews/tiddlywiki-random-tid/did-you-know}}
 tags: Tiddlywiki5Tip
 title: tips-20230429113605614
@@ -11,4 +11,4 @@ type: text/vnd.tiddlywiki
 
 > ''安装插件注意事项''：插件要尤为注意插件之间的依赖关系，缺少依赖将会导致功能性错误或者其它的不可知问题。安装插件之前请谨慎备份自己的TiddlyWiki。
 
-<<random-author "星蓝" "https://github.com/Zacharia2">>
+<<random-author "霆枢" "https://github.com/Zacharia2">>
