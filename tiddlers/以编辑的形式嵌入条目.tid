@@ -1,0 +1,21 @@
+created: 20250410103456913
+creator: 马不前
+modified: 20250410104423550
+modifier: 马不前
+tags: 使用场景与方案
+title: 以编辑的形式嵌入条目
+
+
+```
+<$tiddler tiddler="$:/state/self/quick-note">
+	<$transclude $tiddler="$:/core/ui/EditTemplate/body/default"/>
+</$tiddler>
+```
+
+新建一个条目，复制上面的代码到text中，可以发现页面呈现出编辑状态。你可以直接进行编辑，每次编辑都是实时保存的。编辑的值存储在状态条目`$:/state/self/quick-note`中，需要做一个保存按钮来保存内容到条目中。
+
+也可以不使用状态条目，从而保持为一个具体的条目和值，放在侧边栏，方便随时打开查看。
+
+再搭配上一个保存按钮，就可以实现快速添加笔记条目，而且可以使用编辑按钮栏。
+
+* 参考[[维基文本中的嵌入|https://bramchen.github.io/tw5-docs/zh-Hans/#Transclusion%20in%20WikiText]]
