@@ -18,8 +18,8 @@ importers:
         specifier: ^17.1.1
         version: 17.1.1
       tiddlywiki:
-        specifier: 5.3.5
-        version: 5.3.5
+        specifier: 5.3.7
+        version: 5.3.7
       uglify-js:
         specifier: 3.19.3
         version: 3.19.3
@@ -2007,8 +2007,8 @@ packages:
   through@2.3.8:
     resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
 
-  tiddlywiki@5.3.5:
-    resolution: {integrity: sha512-8pTmnQdkcHbol9D86Op7OGK4sGDqm19HWT2qgpSxPHfDG0yJ2rSBUTRuOMuh9GoPP0Tcz9+1Pe8A1m6pvd/zYQ==}
+  tiddlywiki@5.3.7:
+    resolution: {integrity: sha512-BVVmqGUj47BC+wFZgNLU5qKuNJbTnWWTOB9mEELHtovdKaAchMF5DEXFvZEl0SOTjhF29ljecKhjla19vmoHPA==}
     engines: {node: '>=0.8.2'}
     hasBin: true
 
@@ -4437,7 +4437,7 @@ snapshots:
 
   through@2.3.8: {}
 
-  tiddlywiki@5.3.5: {}
+  tiddlywiki@5.3.7: {}
 
   tmp@0.0.33:
     dependencies:
