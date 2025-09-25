@@ -52,7 +52,7 @@ jobs:
         run: npx workbox injectManifest workbox-config.js
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           # Upload entire repository
           path: ./public-dist
