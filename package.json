@@ -9,7 +9,7 @@
   "devDependencies": {
     "cross-env": "7.0.3",
     "html-minifier-terser": "7.2.0",
-    "npm-check-updates": "^18.0.1",
+    "npm-check-updates": "^19.0.0",
     "tiddlywiki": "5.3.8",
     "uglify-js": "3.19.3",
     "workbox-cli": "7.3.0"

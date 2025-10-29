@@ -15,8 +15,8 @@ importers:
         specifier: 7.2.0
         version: 7.2.0
       npm-check-updates:
-        specifier: ^18.0.1
-        version: 18.0.3
+        specifier: ^19.0.0
+        version: 19.1.2
       tiddlywiki:
         specifier: 5.3.8
         version: 5.3.8
@@ -1577,9 +1577,9 @@ packages:
     resolution: {integrity: sha512-9UZCFRHQdNrfTpGg8+1INIg93B6zE0aXMVFkw1WFwvO4SlZywU6aLg5Of0Ap/PgcbSw4LNxvMWXMeugwMCX0AA==}
     engines: {node: '>=8'}
 
-  npm-check-updates@18.0.3:
-    resolution: {integrity: sha512-IMZWxgAa5gpDVEle2KOZOMLfCu2/9FV+xsXQjPFt2OV0dyZixn0OJrZ9NxUcWgr/ZTGogmZtE0Cb8x2wlsVULg==}
-    engines: {node: ^18.18.0 || >=20.0.0, npm: '>=8.12.1'}
+  npm-check-updates@19.1.2:
+    resolution: {integrity: sha512-FNeFCVgPOj0fz89hOpGtxP2rnnRHR7hD2E8qNU8SMWfkyDZXA/xpgjsL3UMLSo3F/K13QvJDnbxPngulNDDo/g==}
+    engines: {node: '>=20.0.0', npm: '>=8.12.1'}
     hasBin: true
 
   object-inspect@1.13.1:
@@ -3905,7 +3905,7 @@ snapshots:
 
   normalize-url@4.5.1: {}
 
-  npm-check-updates@18.0.3: {}
+  npm-check-updates@19.1.2: {}
 
   object-inspect@1.13.1: {}
 
