@@ -1,5 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/tiddly-gittly/TidGi-Desktop/master/src/services/workspaces/tidgi.config.schema.json",
   "version": 1,
-  "name": "TiddlyWiki-Chinese-Tutorial"
+  "name": "TiddlyWiki-Chinese-Tutorial",
+  "id": "QuuAtlab-cO9C4zKXdW2L"
 }
