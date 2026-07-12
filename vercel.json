@@ -1,5 +1,9 @@
 {
   "github": {
     "silent": true
-  }
+  },
+  "buildCommand": "pnpm run buildonline && pnpm run buildoffline && npx workbox injectManifest workbox-config.js",
+  "outputDirectory": "public-dist",
+  "installCommand": "pnpm install --frozen-lockfile",
+  "framework": null
 }
