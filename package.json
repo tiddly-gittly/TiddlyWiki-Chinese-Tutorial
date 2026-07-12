@@ -14,7 +14,7 @@
     "uglify-js": "3.19.3",
     "workbox-cli": "7.4.1"
   },
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@10.34.5",
   "engines": {
     "node": ">=18"
   }
