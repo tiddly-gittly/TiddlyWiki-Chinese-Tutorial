@@ -7,6 +7,6 @@ jobs:
   democracy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: 计算投票结果
         uses: myyk/git-democracy@v2
